@@ -43,32 +43,6 @@
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
         </script>
 
-        <!-- Custom JS scripts for mdbook-pdf PDF generation -->
-        <script type='text/javascript'>
-            let markAllContentHasLoadedForPrinting = () =>
-                window.setTimeout(
-                    () => {
-                        let p = document.createElement('div');
-                        p.setAttribute('id', 'content-has-all-loaded-for-mdbook-pdf-generation');
-                        document.body.appendChild(p);
-                    }, 100
-                );
-
-            window.addEventListener('load', () => {
-                // Expand all the <details> elements for printing.
-                r = document.getElementsByTagName('details');
-                for (let i of r)
-                    i.open = true;
-
-                try {
-                    MathJax.Hub.Register.StartupHook('End', markAllContentHasLoadedForPrinting);
-                } catch (e) {
-                    markAllContentHasLoadedForPrinting();
-                }
-            });
-        </script>
-    <div style="display: none"><a href="#f14_manual">f14_manual</a><a href="#intro-introduction">intro-introduction</a><a href="#cockpit-overview">cockpit-overview</a><a href="#systems-overview">systems-overview</a><a href="#stores-overview">stores-overview</a><a href="#procedures-overview">procedures-overview</a><a href="#emergency_procedures-overwiew">emergency_procedures-overwiew</a><a href="#dcs-overview">dcs-overview</a><a href="#abbreviations">abbreviations</a><a href="#tutorials">tutorials</a><a href="#imprint">imprint</a></div>
-
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -271,7 +245,7 @@ project at <a href="https://github.com/Heatblur-Simulations/f-14-manual">GitHub<
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="tutorials"><a class="header" href="#tutorials">Tutorials</a></h1>
 <blockquote>
-<p>🚧 TODO: Copy over stuff</p>
+<p>🚧 TODO: Copy over content</p>
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="imprint"><a class="header" href="#imprint">Imprint</a></h1>
 <p>Heatblur Simulations™<br />
@@ -307,22 +281,6 @@ Aleksander Studen-Kirchner, Lead Producer and Narrative Lead</p>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
