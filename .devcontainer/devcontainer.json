@@ -1,0 +1,22 @@
+{
+    "name": "Manual",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "hostRequirements": {
+      "cpus": 1,
+      "memory": "1gb",
+      "storage": "2gb"
+    },
+    "features": {
+      "ghcr.io/devcontainers/features/python:1": {}
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+			"george-alisson.html-preview-vscode",
+			"ms-python.vscode-pylance",
+			"ms-python.pylint",
+			"ms-python.python"
+		]
+      }
+    }
+  }

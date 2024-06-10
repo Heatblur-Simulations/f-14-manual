@@ -1,0 +1,34 @@
+name: Deploy mdBook to GH Pages
+
+on:
+  push:
+    branches:
+      - "master"
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v4.1.1
+        with:
+          token: ${{ secrets.GH_PAGES_DEPLOY_BOT_PAT }}
+
+      - name: Setup mdBook
+        uses: peaceiris/actions-mdbook@v2.0.0
+        with:
+          mdbook-version: "latest"
+      - run: mdbook build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4.0.0
+        if: ${{ github.ref == 'refs/heads/master' }}
+        with:
+          personal_token: ${{ secrets.GH_PAGES_DEPLOY_BOT_PAT }}
+          publish_dir: ./book/html
+          publish_branch: html
+          cname: f14.manuals.heatblur.se

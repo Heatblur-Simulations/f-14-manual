@@ -1,0 +1,35 @@
+name: Build and Deploy mdBook PDF
+
+on: 
+  push:
+    tags:
+    - '*'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+
+      - name: Setup mdBook
+        uses: peaceiris/actions-mdbook@v2.0.0
+        with:
+          mdbook-version: "latest"
+      - run: cargo install mdbook-pdf
+      - run: mdbook build
+
+      - name: Rename PDF
+        run: mv book/pdf/output.pdf book/pdf/f14_manual.pdf
+
+      - name: Release PDF
+        uses: ncipollo/release-action@v1.14.0
+        with:
+          artifactErrorsFailBuild: true
+          artifacts: "book/pdf/f14_manual.pdf"
+          artifactContentType: "application/pdf"
+          generateReleaseNotes: true
+          omitBody: true
+          omitName: true
