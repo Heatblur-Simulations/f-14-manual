@@ -17,6 +17,6 @@ Aleksander Studen-Kirchner, Lead Producer and Narrative Lead
 
 ### See You In The Skies
 
-![f4e_vapor_shot](img/Vapes_06.jpg)
+![F14 from behind](img/tomcat_flying_back.jpg)
 
-> 🚧 TODO: Tomcat pic
+> 🚧 TODO: Better pic
