@@ -51,10 +51,12 @@ the PDF will be created in `book/pdf`.
 
 ## GH Pages
 
+<!-- markdown-link-check-disable -->
 The project is automatically configured via a CI/CD to build and publish any
 change to `master` to a GH-Pages branch called `html`. GitHub will automatically
 publish the website on <https://heatblur-simulations.github.io/f-14-manual/>,
 linked to <https://f14.manuals.heatblur.se/> via CNAME.
+<!-- markdown-link-check-enable -->
 
 ## PDF Deploy
 <!-- markdown-link-check-disable -->
