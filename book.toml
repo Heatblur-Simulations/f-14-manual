@@ -1,0 +1,35 @@
+[book]
+title = "Heatblur F-14 Tomcat"
+description = "Manual of the F-14 Tomcat by Heatblur Simulations."
+authors = ["Heatblur Simulations", "Contributions from the Community"]
+language = "en"
+multilingual = false
+
+[output.html]
+git-repository-url = "https://github.com/Heatblur-Simulations/f-14-manual"
+edit-url-template = "https://github.com/Heatblur-Simulations/f-14-manual/edit/master/{path}"
+default-theme = "hb_light"
+preferred-dark-theme = "hb_dark"
+additional-css = [
+    'theme/visual.css',
+    'theme/hb_light.css',
+    'theme/hb_dark.css',
+    'theme/pdf.css'
+]
+additional-js = [
+    'js/jquery-3.7.1.min.js',
+    'js/extra.js'
+]
+mathjax-support = false
+
+[output.html.fold]
+enable = true
+level = 0
+
+[output.pdf]
+optional = true
+theme = "pdf"
+print-background = true
+display-header-footer = true
+header-template = "<h3 style='font-size:12px; margin-left: 42%' class='title'></h3>"
+footer-template = "<p style='font-size:12px; margin-left: 48%'><span class='pageNumber'></span> / <span class='totalPages'></span></p>"
