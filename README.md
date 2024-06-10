@@ -3,7 +3,7 @@
 <!-- markdown-link-check-disable-next-line -->
 [![license](https://img.shields.io/badge/license-CC_BY--NC--ND_4.0-blue)](https://github.com/Heatblur-Simulations/f-14-manual/blob/master/LICENSE)
 
-![Phantom from back](src/img/phantom_flying_back.jpg)
+![Tomcat from back](src/img/tomcat_flying_back.jpg)
 
 Manual of the F-14 Tomcat by Heatblur Simulations.
 This is a [mdBook](https://rust-lang.github.io/mdBook/) project, content is
