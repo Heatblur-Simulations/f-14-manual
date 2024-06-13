@@ -181,4 +181,3 @@ Control panel for the CTVS system which records the HUD when activated. Not impl
 
 ![canopydefog](../../img/canopydefog.png)
 The canopy air diffuser lever controls the flow of cabin air. The normal position, CABIN AIR, directs 70% of the conditioned air through the cockpit air diffusers and 30% through the canopy air diffusers. The CANOPY DEFOG position directs all airflow through the canopy air diffusers for canopy defog.
-

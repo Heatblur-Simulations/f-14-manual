@@ -6,7 +6,6 @@
 
 ![Hook Panel](../../img//hook.png)
 
-
 ### HOOK handle
 
 Arresting hook handle, selects arresting hook position.
@@ -30,7 +29,6 @@ Rounds remaining indicator for M-61A1 gun. Counts down from 676 but can be reset
 > **Note:** Image shows an F-14A with AN/ALR-45 having a third option on the HSD MODE and an ECM ORIDE which are not present in aircraft with the AN/ALR-67.
 
 Control panel for front cockpit displays.
-
 
 ### STEERING CMD selectors
 
@@ -96,7 +94,6 @@ Controls brightness of pitch ladder on HUD.
 ### HSD ECM ORIDE switch
 
 Sets if the ECM is allowed to override the current display on the HSD if a threat is detected. ORIDE allows override and OFF disables it. Only present in aircraft with AN/ALR-45.
-
 
 ## Elevation Lead Panel
 

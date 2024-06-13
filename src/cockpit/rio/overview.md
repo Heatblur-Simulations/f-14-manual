@@ -1,4 +1,4 @@
-## RIO Cockpit Layout
+# RIO Cockpit Layout
 
 > 🚧 TODO: Add an intro. Split the large side panels into chunks like the F-4.
 

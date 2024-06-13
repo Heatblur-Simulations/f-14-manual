@@ -98,4 +98,4 @@ Main radar control panel.
 | 24  | JAM/JET knob              | Control knob used to set the threshold at which a radar return is considered a jamming target. Currently non-functional in DCS. |
 | 25  | ACM THRLD knob            | Control knob used to control radar sensitivity level at close ranges. Usually set automatically with the knob in the detent position. |
 | 26  | PD THRLD knobs            | Control knobs used to set pulse doppler video threshold in the CLEAR (upper half of DDD) region and in the CLUTTER (lower half of the DDD) region. |
-| 27  | DDD radar display         | Main AWG-9 radar display.     
+| 27  | DDD radar display         | Main AWG-9 radar display.

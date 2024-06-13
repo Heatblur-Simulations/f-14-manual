@@ -1,6 +1,6 @@
 # Right Knee Panel
 
-### Fuel Quantity Indicator
+## Fuel Quantity Indicator
 
 ![fuelquantity](../../img/fuelquantity.png)
 Shows fuel quantity in the different aircraft tanks.
@@ -13,12 +13,12 @@ Shows fuel quantity in the different aircraft tanks.
 | 4   | FUS & FEED tapes         | Shows fuel quantity in respective fuselage tanks. Left tape indicates left feed and aft fuselage tanks. Right tape indicates right feed and forward fuselage tanks. |
 | 5   | SET knob                 | Knob used to set BINGO fuel quantity. Turn to set desired quantity.                           |
 
-### Accelerometer
+## Accelerometer
 
 ![accelerometer](../../img/accelerometer.png)
 Instrument showing current aircraft g-load (acceleration along the aircraft vertical axis). It’s graded in g from -5g to +10g. One pointer will show current g-load while the other two will indicate max reached negative and positive g-load. These can be reset by pushing the PUSH TO SET button on the lower left corner of the instrument.
 
-### Clock
+## Clock
 
 ![clock](../../img/clock.png)
 Mechanical wind-up clock.
@@ -27,8 +27,7 @@ The knob on the lower left corner is used to wind up the clock by turning it clo
 
 The control on the upper right corner is used to start, stop, and reset a 1-hour elapsed time counter.
 
-
-### Spoiler Failure Override
+## Spoiler Failure Override
 
 ![spoiler](../../img/spoiler.png)
 Contains controls to override failed spoiler sections, allowing the rest to continue to work after a MASTER RESET.
@@ -38,12 +37,12 @@ Contains controls to override failed spoiler sections, allowing the rest to cont
 | 1   | INBD                | Inboard spoiler override switch. ORIDE - Overrides inboard spoiler symmetry protection, allowing a functional inboard spoiler to continue to operate after a MASTER RESET if one fails. NORM - Normal (guarded position), in this mode, if an inboard spoiler fails up the rest are commanded to droop and the SPOILERS light illuminates on the caution panel. |
 | 2   | OUTBD               | Outboard spoiler override switch. ORIDE - Overrides outboard spoiler symmetry protection, allowing a functional outboard spoiler to continue to operate after a MASTER RESET if one fails. NORM - Normal (guarded position), in this mode, if an outboard spoiler fails up the rest are commanded to droop and the SPOILERS light illuminates on the caution panel. |
 
-### Liquid Oxygen Quantity Indicator
+## Liquid Oxygen Quantity Indicator
 
 ![liquidoxygen](../../img/liquidoxygen.png)
 Contains an indicator showing the remaining quantity of liquid oxygen available. Graduated in 1-liter increments. Also has an OFF flag that is shown in case of power failure to the indicator. The indicator is tested through the INST mode on the MASTER TEST panel and should read 2 liters.
 
-### Compass Control Panel
+## Compass Control Panel
 
 ![compasscontrol](../../img/compasscontrol.png)
 The compass control panel contains controls for selecting compass mode when using AHRS.
@@ -56,7 +55,7 @@ The compass control panel contains controls for selecting compass mode when usin
 | 4   | Mode switch           | Selects source of AHRS heading information. COMP - Compass, uses magnetic azimuth detector directly without stabilization from the directional gyro, used only for emergency operation and the displays automatically use the manual magnetic variation. SLAVED - Normal mode, uses the magnetic azimuth detector stabilized by the directional gyro. DG - Directional gyro mode, uses only the gyro and not the magnetic azimuth detector. |
 | 5   | HDG knob/button       | Used in DG and SLAVED modes. In SLAVED mode it’s used to sync the directional gyro with the magnetic azimuth detector and set magnetic heading on the BDHI. Button should be held until the synchronization indicator needle is over the null mark. In DG mode the button is depressed and rotated to select desired heading on the BDHI. The button can also be used to fast erect pitch and roll of the AHRS by depressing the button for up to 3 minutes. A new fast erect attempt can be done if a 1-minute wait is first observed. |
 
-### ARA-63 Control Panel
+## ARA-63 Control Panel
 
 ![ara-63](../../img/ara-63.png)
 Panel used to control the AN/ARA-63 ILS (ICLS).
@@ -68,7 +67,7 @@ Panel used to control the AN/ARA-63 ILS (ICLS).
 | 3   | POWER switch             | ON/OFF switch to energize the AN/ARA-63, switch must be pulled out to allow OFF position.     |
 | 4   | Indicator light          | Lights to indicate AN/ARA-63 power on.                                                       |
 
-### Caution - Advisory Indicator
+## Caution - Advisory Indicator
 
 ![caution](../../img/caution.png)
 Main pilot caution panel.
@@ -117,7 +116,7 @@ Main pilot caution panel.
 
 **Note:** F-14A specific lights not yet implemented.
 
-### Master Generator Control Panel
+## Master Generator Control Panel
 
 ![generator](../../img/generator.png)
 Panel controlling left and right engine generator.
@@ -127,7 +126,7 @@ Panel controlling left and right engine generator.
 | 1   | L & R MASTER GEN switch | Switches controlling connection and test of respective generator. Switch needs to be lifted to move from OFF/RESET. NORM - Normal, activating and connecting the generator to the main buses. OFF/RESET - Disconnects and deactivates the generator and resets tripped protection circuits. TEST - Activates the generator but does not connect it to the main buses, for testing purposes. |
 | 2   | EMERG switch          | Guarded switch controlling connection of the emergency generator to the essential buses. (Guarded position is NORM) NORM - Normal, the generator is automatically connected to essential buses if both main generators fail. OFF/RESET - Disconnects the generator from the essential buses regardless of the main generator status. Resets protection circuits. |
 
-### Master Light Control Panel
+## Master Light Control Panel
 
 ![masterlight](../../img/masterlight.png)
 Master light control panel, controlling most lights in/on the aircraft.
@@ -148,7 +147,7 @@ Master light control panel, controlling most lights in/on the aircraft.
 | 12  | RED FLOOD switch        | Switch controlling red instrument and console floodlights. BRT - Sets bright red instrument flood and console lights. MED - Red console floodlights. DIM - Dim red console floodlights. |
 | 13  | FORMATION thumbwheel    | Thumbwheel controlling external formation lights. 0 equals off, 1-14 sets the lights to an increasingly bright setting. |
 
-### Air Conditioning Control Panel
+## Air Conditioning Control Panel
 
 ![aircondition](../../img/aircondition.png)
 Panel controlling the environmental control system (ECS).
@@ -161,7 +160,7 @@ Panel controlling the environmental control system (ECS).
 | 4   | AIR SOURCE selectors   | Five mutually exclusive air source selectors. Rotates to indicate selection. RAM - Closes other air sources and opens the ram air door which is combined with hot bleed air to supply all users. L & R ENG - Selects either engine as the source for bleed air. BOTH ENG - Selects both engines as source for bleed air. Normal position. OFF - Closes all air sources but the ram air door. In this mode the ram air door cannot supply pressurization or air conditioning. Inhibits gun firing. |
 | 5   | TEMP thumbwheel        | Selects cockpit and pressure suit air temperature. 0-14 is selectable with COOL and WARM placarded at each end stop. In auto 7 approximately corresponds to 21º C or 70º F. In manual the thumbwheel needs to be set for each variation in airspeed and altitude. |
 
-### Master Test Panel
+## Master Test Panel
 
 ![mastertest](../../img/mastertest.png)
 Panel controlling OBC and various onboard BITs in addition to the emergency flight hydraulic setting.
@@ -174,7 +173,7 @@ Panel controlling OBC and various onboard BITs in addition to the emergency flig
 
 **Note:** Specific tests will be detailed in a future BIT chapter.
 
-### External Environmental Control Panel
+## External Environmental Control Panel
 
 ![externalenvironment](../../img/externalenvironment.png)
 Panel controlling windshield air and external anti-ice settings.
@@ -184,14 +183,14 @@ Panel controlling windshield air and external anti-ice settings.
 | 1   | WSHLD switch      | Switch controlling external heating of the windshield by blasting the exterior with warm air. AIR - Enables system. OFF - Disables system. |
 | 2   | ANTI-ICE switch   | Controls engine, probe, and AICS anti-ice settings. ORIDE/ON - Engages engine and probe anti-ice regardless of external conditions and enables the anti-ice setting in AICS. AUTO/OFF - Automatically engages engine and probe anti-ice as needed, turns off AICS anti-ice. OFF/OFF - Turns off both engine and probe anti-ice and AICS anti-ice. |
 
-### Hydraulic Transfer Pump Switch
+## Hydraulic Transfer Pump Switch
 
 ![hydraulictransferpump](../../img/hydraulictransferpump.png)
 Panel containing the control for the hydraulic transfer pump which equalizes pressure between the combined and flight hydraulic systems in case of a failure in one of them.
 
 The HYD TRANSFER PUMP switch has two positions, SHUTOFF and NORMAL (guarded position). The NORMAL position (also the standard setting) will have the hydraulic transfer pump pressurize a failed hydraulic system from the other, functioning system, when it drops below 2,100 psi. The SHUTOFF position (which can be accessed by lifting the guard) is used to turn off the transfer pump in case it can’t supply enough pressure to the failed system as that would risk disabling the still operational system.
 
-### HUD-Video Control Panel
+## HUD-Video Control Panel
 
 ![hudvideocontrol](../../img/hudvideocontrol.png)
 Control panel for the CTVS system which records the HUD when activated. Not implemented in DCS.
@@ -201,12 +200,12 @@ Control panel for the CTVS system which records the HUD when activated. Not impl
 | 1   | HUD CAM(E)RA switch      | TRG - Trigger, records while the second (firing) detent on the stick trigger is depressed. NORMAL - Records while the first detent on the stick trigger is depressed. OFF - Disables power to the CTVS. RUN - Records continuously. |
 | 2   | Switch 2 & 3.            | VTR - Video tape recorder.                                                                  |
 
-### Canopy Defog/Cabin Air Lever
+## Canopy Defog/Cabin Air Lever
 
 ![canopydefog](../../img/canopydefog.png)
 The canopy air diffuser lever controls the flow of cabin air. The normal position, CABIN AIR, directs 70% of the conditioned air through the cockpit air diffusers and 30% through the canopy air diffusers. The CANOPY DEFOG position directs all airflow through the canopy air diffusers for canopy defog.
 
-### Canopy Control Handle
+## Canopy Control Handle
 
 ![canopyhandle](../../img/canopyhandle.png)
 The canopy control handle controls canopy operation and is located on the right cockpit wall. The handle is mounted downwards beneath the box containing the handle mechanism and the handle position texts. The canopy control handle is duplicated in the RIO cockpit.

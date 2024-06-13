@@ -1,4 +1,4 @@
-## Canopy Control Handle
+# Canopy Control Handle
 
 > 🚧 TODO: Convert tables into text chunks like the F-4
 

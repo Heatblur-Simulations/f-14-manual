@@ -3,11 +3,13 @@
 > 🚧 TODO: Convert tables into text chunks like the F-4
 
 ## G-valve Button
+
 ![g-valve](../../img/g-valve.png)
 
 Pressed to test inflation of g-suit.
 
 ## Oxygen-Vent Airflow Control Panel
+
 ![oxygen-vent](../../img/oxygen-vent.png)
 
 Controls ventilation airflow to pressure suit or seat cushions and oxygen to pilot mask.
@@ -18,6 +20,7 @@ Controls ventilation airflow to pressure suit or seat cushions and oxygen to pil
 | 2   | OXYGEN switch      | Switch with ON/OFF positions. Controls oxygen flow to the mask.                              |
 
 ## Volume/TACAN Command Panel
+
 ![volume](../../img/volume.png)
 
 Panel controlling volume to Pilot headset and crewmember in control of TACAN.
@@ -30,6 +33,7 @@ Panel controlling volume to Pilot headset and crewmember in control of TACAN.
 | 4   | TACAN CMD switch  | Sets crewmember in command of the TACAN. Also indicates current setting.                        |
 
 ## TACAN Control Panel
+
 ![tacan](../../img/tacan.png)
 
 TACAN control panel letting the pilot control TACAN if in command of it.
@@ -44,6 +48,7 @@ TACAN control panel letting the pilot control TACAN if in command of it.
 | 6   | Mode knob         | Selects TACAN mode (OFF, REC, T/R, A/A, BCN).                               |
 
 ## ICS Control Panel
+
 ![ics](../../img/ics.png)
 
 Control panel for ICS.
@@ -55,6 +60,7 @@ Control panel for ICS.
 | 3   | ICS switch                 | Selects ICS function. RADIO OVERRIDE - Makes ICS audio override radio audio. HOT MIC - Allows talking to the RIO without pressing the PTT. COLD MIC - Allows talking to the RIO only while the PTT is pressed. |
 
 ## AFCS Control Panel
+
 ![afcs](../../img/afcs.png)
 
 Control panel for AFCS and autopilot.
@@ -70,6 +76,7 @@ Control panel for AFCS and autopilot.
 | 7   | ENGAGE switch         | ENGAGE/OFF. Engages autopilot. Note: All switches are spring-loaded to OFF position but held in position with solenoid to enable automatic disengagement when applicable. |
 
 ## UHF 1 (AN/ARC-159) Radio
+
 ![arc-159](../../img/arc-159.png)
 
 UHF radio 1. Radio and controls.
@@ -89,6 +96,7 @@ UHF radio 1. Radio and controls.
 | 11  | TONE button              | Transmits a TONE on current frequency.                                                           |
 
 ## ASYM Limiter/Engine Mode Select (F-14B only)
+
 ![asym](../../img/asym.png)
 
 Control panel for the asymmetric thrust limiter system and the control mode of each engine.
@@ -99,11 +107,13 @@ Control panel for the asymmetric thrust limiter system and the control mode of e
 | 2   | ENG MODE SELECT switches  | Switches selecting engine mode for their respective engine (PRI, SEC).            |
 
 ## Target Designate Switch
+
 ![target](../../img/target.png)
 
 Used to designate ground targets on the HUD and to control pilot ACM radar modes except PLM. Can be moved up/down and forward which is the designate position.
 
 ## Inlet Ramps/Throttle Control Panel
+
 ![inlet](../../img/inlet.png)
 
 Control panel for various engine systems, throttle settings and rudder trim.
@@ -118,6 +128,7 @@ Control panel for various engine systems, throttle settings and rudder trim.
 | 6   | RUDDER TRIM             | Switch adjusting rudder trim.                                                                   |
 
 ## Throttle
+
 ![throttle](../../img/throttle.png)
 
 The throttle grips contains various flight controls and HOTAS functions.
@@ -132,12 +143,14 @@ The throttle grips contains various flight controls and HOTAS functions.
 | 6   | ICS PTT switch          | Switch allowing pilot to key one or both radios and intercommunication to RIO.                  |
 
 ## Throttle Quadrant
-![throttles](../../img/throttles.png) 
+
+![throttles](../../img/throttles.png)
 ![throttles-schem](../../img/throttles-schem.png)
 
 The main throttle quadrant contains the two main-engine throttle controls, the flap lever and manual wing-sweep handle in addition to the HOTAS controls on the throttles themselves.
 
 ## Hydraulic Hand Pump
+>
 > 🚧 TODO: Add image for hydraulic hand pump
 
 The hydraulic hand pump is located inboards of the throttle quadrant, near the pilot’s left leg. It is used to manually add hydraulic pressure for brake operation (with gear handle in the down position) or for refueling probe operation in case of a failure in the hydraulic system.

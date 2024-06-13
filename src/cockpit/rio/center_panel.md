@@ -10,4 +10,3 @@ Two switch hats on the center RIO hand hold used to initiate release of counterm
 - **Down**: Initiates set chaff release program.
 - **Inboard**: Initiates set jammer release program.
 - **Outboard**: Initiates set flare release program.
-
