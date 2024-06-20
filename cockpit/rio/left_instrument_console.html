@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Left Instrument Panel - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/visual.css">
+        <link rel="stylesheet" href="../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../theme/pdf.css">
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <div class="menu-logo"><img src="/img/f14line.svg"></div>
+
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../f14_manual.html">F-14 Manual</a></li><li class="chapter-item "><a href="../../intro/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../cockpit/overview.html"><strong aria-hidden="true">2.</strong> Cockpit Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/pilot/overview.html"><strong aria-hidden="true">2.1.</strong> Pilot Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/pilot/left_console.html"><strong aria-hidden="true">2.1.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_vertical_console.html"><strong aria-hidden="true">2.1.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_knee_panel.html"><strong aria-hidden="true">2.1.3.</strong> Left Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_instrument_panel.html"><strong aria-hidden="true">2.1.4.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_windshield_frame.html"><strong aria-hidden="true">2.1.5.</strong> Left Windshield Frame</a></li><li class="chapter-item "><a href="../../cockpit/pilot/center_panel.html"><strong aria-hidden="true">2.1.6.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_windshield_frame.html"><strong aria-hidden="true">2.1.7.</strong> Right Windshield Frame</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_instrument_panel.html"><strong aria-hidden="true">2.1.8.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_knee_panel.html"><strong aria-hidden="true">2.1.9.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_vertical_console.html"><strong aria-hidden="true">2.1.10.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_console.html"><strong aria-hidden="true">2.1.11.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/canopy_control_handle.html"><strong aria-hidden="true">2.1.12.</strong> Canopy Control Handle</a></li></ol></li><li class="chapter-item expanded "><a href="../../cockpit/rio/overview.html"><strong aria-hidden="true">2.2.</strong> RIO Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/rio/left_console.html"><strong aria-hidden="true">2.2.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/left_vertical_console.html"><strong aria-hidden="true">2.2.2.</strong> Left Vertical Console</a></li><li class="chapter-item expanded "><a href="../../cockpit/rio/left_instrument_console.html" class="active"><strong aria-hidden="true">2.2.3.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/center_panel.html"><strong aria-hidden="true">2.2.4.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/center_console.html"><strong aria-hidden="true">2.2.5.</strong> Center Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/footwells.html"><strong aria-hidden="true">2.2.6.</strong> Left and Right Footwells</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_instrument_console.html"><strong aria-hidden="true">2.2.7.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_knee_panel.html"><strong aria-hidden="true">2.2.8.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_vertical_console.html"><strong aria-hidden="true">2.2.9.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_console.html"><strong aria-hidden="true">2.2.10.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/canopy_control_handle.html"><strong aria-hidden="true">2.2.11.</strong> Canopy Control Handle</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../systems/overview.html"><strong aria-hidden="true">3.</strong> Systems Overview</a></li><li class="chapter-item "><a href="../../stores/overview.html"><strong aria-hidden="true">4.</strong> Weapons & Stores</a></li><li class="chapter-item "><a href="../../procedures/overview.html"><strong aria-hidden="true">5.</strong> Normal Procedures</a></li><li class="chapter-item "><a href="../../emergency_procedures/overwiew.html"><strong aria-hidden="true">6.</strong> Emergency Procedures</a></li><li class="chapter-item "><a href="../../dcs/overview.html"><strong aria-hidden="true">7.</strong> DCS</a></li><li class="chapter-item "><a href="../../abbreviations.html"><strong aria-hidden="true">8.</strong> Abbreviations</a></li><li class="chapter-item "><a href="../../tutorials.html"><strong aria-hidden="true">9.</strong> Tutorials</a></li><li class="chapter-item "><a href="../../imprint.html"><strong aria-hidden="true">10.</strong> Imprint</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/cockpit/rio/left_instrument_console.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="left-instrument-panel"><a class="header" href="#left-instrument-panel">Left Instrument Panel</a></h1>
+<blockquote>
+<p>🚧 TODO: Convert tables into text chunks like the F-4</p>
+</blockquote>
+<h2 id="servopneumatic-altimeter"><a class="header" href="#servopneumatic-altimeter">Servopneumatic Altimeter</a></h2>
+<p><img src="../../img/altimeter1.png" alt="altimeter" />
+Control and indicator for the servopneumatic altimeter.</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>Altimeter readout</td><td>Displays altitude digitally on three drums showing 10,000, 1,000, and 100 of feet respectively. It also displays altitude on a pointer on a circular scale indicating 100’s of feet.</td></tr>
+<tr><td>2</td><td>Baroset knob</td><td>Sets local pressure in inches of mercury (in.Hg). Only used locally on the altimeter readout, all other digital indicators (via CADC) use a set 29.92 in.Hg value.</td></tr>
+<tr><td>3</td><td>Local Barometric Pressure</td><td>Indicates barometric pressure setting, also called the Kollsman Window.</td></tr>
+<tr><td>4</td><td>Mode switch</td><td>Three-position switch, spring-loaded to return from RESET. If power and altitude data from CADC are present, the switch can be held in RESET for 3 seconds to allow normal (servoed) mode of operation. If set to STBY or power or CADC data is absent for more than 3 seconds the system switches to backup (pressure) mode.</td></tr>
+<tr><td>5</td><td>STBY flag</td><td>Red flag reading STBY that appears if the system is in backup (stand-by) mode.</td></tr>
+</tbody></table>
+</div>
+<h2 id="airspeed-mach-indicator"><a class="header" href="#airspeed-mach-indicator">Airspeed Mach Indicator</a></h2>
+<p><img src="../../img/mach1.png" alt="mach" />
+Indicated airspeed and Mach number display.</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>Airspeed dial</td><td>Shows indicated airspeed on three scales, two for indicated airspeed and one moving for Mach number.</td></tr>
+<tr><td>2</td><td>Indicated airspeed scale (outer)</td><td>Used to indicate indicated airspeed up to 200 knots.</td></tr>
+<tr><td>3</td><td>Indicated airspeed scale (inner)</td><td>Used to indicate indicated airspeed from 200 knots to 850 knots. Covered by the airspeed dial until relevant.</td></tr>
+<tr><td>4</td><td>Mach number scale</td><td>Moving scale used to indicate Mach number. Moved to show the correct Mach number relative to indicated airspeed.</td></tr>
+<tr><td>5</td><td>Indicated airspeed index pointer</td><td>Can be set to the desired indicated airspeed.</td></tr>
+<tr><td>6</td><td>Mach number index pointer</td><td>Can be set to the desired Mach number. Not visible in image.</td></tr>
+<tr><td>7</td><td>Safe Mach number index pointer</td><td>Shows safe Mach number calculated by the CADC. Not visible in the image.</td></tr>
+<tr><td>8</td><td>Index knob</td><td>Knob with a pull-out and push-in position. One sets the indexer for indicated airspeed and the other for Mach number.</td></tr>
+</tbody></table>
+</div>
+<h2 id="standby-attitude-indicator"><a class="header" href="#standby-attitude-indicator">Standby Attitude Indicator</a></h2>
+<p><img src="../../img/standbyattitude1.png" alt="standbyattitude" />
+Standalone standby attitude indicator.</p>
+<p>An OFF flag is visible on the left side when caged or when unpowered.</p>
+<p>The knob below and to the right of the indicator cages/uncages the indicator and allows trim to correct pitch. In the pulled-out position, the indicator is caged. When pushed in, uncages the indicator and allows pitch trim by turning the knob.</p>
+<h2 id="uhf-remote-indicator"><a class="header" href="#uhf-remote-indicator">UHF Remote Indicator</a></h2>
+<p><img src="../../img/backremote.png" alt="backremote" />
+Remote indicator displaying set frequency or channel on UHF 1 (AN/ARC-159).</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>UHF 1 remote channel/frequency indicator</td><td>Displays a readout of the frequency or channel set for the UHF 1 radio.</td></tr>
+<tr><td>2</td><td>TEST</td><td>Initiates a test for the indicator, no fault resulting in 888.888 readout.</td></tr>
+<tr><td>3</td><td>DIM</td><td>Controls display brightness.</td></tr>
+</tbody></table>
+</div>
+<h1 id="center-panel"><a class="header" href="#center-panel">Center Panel</a></h1>
+<h2 id="chaffflare-dispense-switches"><a class="header" href="#chaffflare-dispense-switches">Chaff/Flare Dispense Switches</a></h2>
+<p><img src="../../img/cmhats.png" alt="cmhats" />
+Two switch hats on the center RIO handhold used to initiate the release of countermeasures. The switches are mirrored in regards to functionality.</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>Up</td><td>Initiates a single chaff release.</td></tr>
+<tr><td>2</td><td>Down</td><td>Initiates set chaff release program.</td></tr>
+<tr><td>3</td><td>Inboard</td><td>Initiates set jammer release program.</td></tr>
+<tr><td>4</td><td>Outboard</td><td>Initiates set flare release program.</td></tr>
+</tbody></table>
+</div>
+<h2 id="detail-data-display-panel"><a class="header" href="#detail-data-display-panel">Detail Data Display Panel</a></h2>
+<p><img src="../../img/DDD.png" alt="DDD" />
+Main radar control panel.</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>TGTS switch</td><td>Switch selecting target size for missile launch zones, WCS track calculations as well as missile ATC calculation.</td></tr>
+<tr><td>2</td><td>MLC switch</td><td>Switch selecting MLC mode of operation.</td></tr>
+<tr><td>3</td><td>AGC switch</td><td>Switch controlling AGC speed. Currently non-functional in DCS.</td></tr>
+<tr><td>4</td><td>PARAMP switch</td><td>Switch controlling the parametric amplification. Currently non-functional in DCS.</td></tr>
+<tr><td>5</td><td>PULSE VIDEO knob</td><td>Knob controlling video strength of pulse video on the DDD. No effect on pulse doppler video.</td></tr>
+<tr><td>6</td><td>Radar track indicator lights</td><td>Indicator lights indicating radar tracking in the STT modes. ANT TRK - Indicates the radar is tracking the target’s angle. RDROT - Indicates the target is within the range or rate gate and being tracked. JAT - Indicates the radar is tracking a jamming source’s angle. IROT - Indication of TCS angle tracking, called IROT as this was originally used for the IRST in the early -A.</td></tr>
+<tr><td>7</td><td>RANGE display</td><td>Rotary drum indicator displaying the currently selected radar range. Can also be blank if no range scale is used on the DDD.</td></tr>
+<tr><td>8</td><td>RANGE buttons</td><td>Buttons used to select radar range.</td></tr>
+<tr><td>9</td><td>BRIGHT knob</td><td>Knob used to control the brightness of the DDD by means of a polarized filter in front of the DDD.</td></tr>
+<tr><td>10</td><td>IR AUDIO THRLD knob</td><td>Knob used to control IR AUDIO threshold, non-functional with TCS.</td></tr>
+<tr><td>11</td><td>IR AUDIO VOL knob</td><td>Knob used to control IR AUDIO volume, non-functional with TCS.</td></tr>
+<tr><td>12</td><td>IR GAIN knob</td><td>Knob used to control IR GAIN, non-functional with TCS.</td></tr>
+<tr><td>13</td><td>XMTR CHAN wheel</td><td>12-position wheel used to control AWG-9 operating frequency. Currently non-functional in DCS.</td></tr>
+<tr><td>14</td><td>MSL CHAN wheel</td><td>6-position wheel used to control missile channel used by AIM-7 or AIM-54. Currently non-functional in DCS.</td></tr>
+<tr><td>15</td><td>DISPLAY buttons</td><td>Buttons used to control what to display on the DDD. IR button non-functional with TCS.</td></tr>
+<tr><td>16</td><td>WCS MODE buttons</td><td>Buttons used to select the current AWG-9 operating mode.</td></tr>
+<tr><td>17</td><td>WCS MODE display</td><td>Rotary drum indicator displaying current WCS mode.</td></tr>
+<tr><td>18</td><td>Vc switch</td><td>Switch used to select different closing velocity scales on the DDD in PD modes.</td></tr>
+<tr><td>19</td><td>ERASE knob</td><td>Knob used to control the intensity of the ERASE beam on the DDD, controlling how quickly the image on the DDD fades.</td></tr>
+<tr><td>20</td><td>PULSE GAIN knob</td><td>Knob used to control the gain of the AWG-9 in pulse mode, normally left in detent unless needed because of clutter or jamming.</td></tr>
+<tr><td>21</td><td>ASPECT switch</td><td>Switch used to control the rate region covered by the doppler filters in pulse doppler modes and if to use edge or centroid tracking in pulse mode. These settings correspond to expected target aspect.</td></tr>
+<tr><td>22</td><td>EL indicator</td><td>Meter with indicator needles indicating sensor elevation. Left indicator shows current actual radar antenna elevation. The right indicates commanded radar elevation while RDR is selected on HCU and TCS elevation while IR/TV is selected.</td></tr>
+<tr><td>23</td><td>CCM MODES buttons</td><td>Buttons used to set AWG-9 functionality countering jamming targets. Currently non-functional in DCS.</td></tr>
+<tr><td>24</td><td>JAM/JET knob</td><td>Control knob used to set the threshold at which a radar return is considered a jamming target. Currently non-functional in DCS.</td></tr>
+<tr><td>25</td><td>ACM THRLD knob</td><td>Control knob used to control radar sensitivity level at close ranges. Usually set automatically with the knob in the detent position.</td></tr>
+<tr><td>26</td><td>PD THRLD knobs</td><td>Control knobs used to set pulse doppler video threshold in the CLEAR (upper half of DDD) region and in the CLUTTER (lower half of the DDD) region.</td></tr>
+<tr><td>27</td><td>DDD radar display</td><td>Main AWG-9 radar display.</td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../cockpit/rio/left_vertical_console.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../cockpit/rio/center_panel.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../cockpit/rio/left_vertical_console.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../cockpit/rio/left_vertical_console.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../cockpit/rio/center_panel.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../cockpit/rio/center_panel.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>

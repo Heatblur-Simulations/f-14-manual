@@ -1,0 +1,429 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Right Side Console - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/visual.css">
+        <link rel="stylesheet" href="../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../theme/pdf.css">
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <div class="menu-logo"><img src="/img/f14line.svg"></div>
+
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../f14_manual.html">F-14 Manual</a></li><li class="chapter-item "><a href="../../intro/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../cockpit/overview.html"><strong aria-hidden="true">2.</strong> Cockpit Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/pilot/overview.html"><strong aria-hidden="true">2.1.</strong> Pilot Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/pilot/left_console.html"><strong aria-hidden="true">2.1.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_vertical_console.html"><strong aria-hidden="true">2.1.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_knee_panel.html"><strong aria-hidden="true">2.1.3.</strong> Left Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_instrument_panel.html"><strong aria-hidden="true">2.1.4.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_windshield_frame.html"><strong aria-hidden="true">2.1.5.</strong> Left Windshield Frame</a></li><li class="chapter-item "><a href="../../cockpit/pilot/center_panel.html"><strong aria-hidden="true">2.1.6.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_windshield_frame.html"><strong aria-hidden="true">2.1.7.</strong> Right Windshield Frame</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_instrument_panel.html"><strong aria-hidden="true">2.1.8.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_knee_panel.html"><strong aria-hidden="true">2.1.9.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_vertical_console.html"><strong aria-hidden="true">2.1.10.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_console.html"><strong aria-hidden="true">2.1.11.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/canopy_control_handle.html"><strong aria-hidden="true">2.1.12.</strong> Canopy Control Handle</a></li></ol></li><li class="chapter-item expanded "><a href="../../cockpit/rio/overview.html"><strong aria-hidden="true">2.2.</strong> RIO Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/rio/left_console.html"><strong aria-hidden="true">2.2.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/left_vertical_console.html"><strong aria-hidden="true">2.2.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/left_instrument_console.html"><strong aria-hidden="true">2.2.3.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/center_panel.html"><strong aria-hidden="true">2.2.4.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/center_console.html"><strong aria-hidden="true">2.2.5.</strong> Center Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/footwells.html"><strong aria-hidden="true">2.2.6.</strong> Left and Right Footwells</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_instrument_console.html"><strong aria-hidden="true">2.2.7.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_knee_panel.html"><strong aria-hidden="true">2.2.8.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_vertical_console.html"><strong aria-hidden="true">2.2.9.</strong> Right Vertical Console</a></li><li class="chapter-item expanded "><a href="../../cockpit/rio/right_console.html" class="active"><strong aria-hidden="true">2.2.10.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/canopy_control_handle.html"><strong aria-hidden="true">2.2.11.</strong> Canopy Control Handle</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../systems/overview.html"><strong aria-hidden="true">3.</strong> Systems Overview</a></li><li class="chapter-item "><a href="../../stores/overview.html"><strong aria-hidden="true">4.</strong> Weapons & Stores</a></li><li class="chapter-item "><a href="../../procedures/overview.html"><strong aria-hidden="true">5.</strong> Normal Procedures</a></li><li class="chapter-item "><a href="../../emergency_procedures/overwiew.html"><strong aria-hidden="true">6.</strong> Emergency Procedures</a></li><li class="chapter-item "><a href="../../dcs/overview.html"><strong aria-hidden="true">7.</strong> DCS</a></li><li class="chapter-item "><a href="../../abbreviations.html"><strong aria-hidden="true">8.</strong> Abbreviations</a></li><li class="chapter-item "><a href="../../tutorials.html"><strong aria-hidden="true">9.</strong> Tutorials</a></li><li class="chapter-item "><a href="../../imprint.html"><strong aria-hidden="true">10.</strong> Imprint</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/cockpit/rio/right_console.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="right-side-console"><a class="header" href="#right-side-console">Right Side Console</a></h1>
+<blockquote>
+<p>🚧 TODO: Convert tables into text chunks like the F-4</p>
+</blockquote>
+<h2 id="radar-warning-receiver-panel"><a class="header" href="#radar-warning-receiver-panel">Radar Warning Receiver Panel</a></h2>
+<p><img src="../../img/rwr.png" alt="rwr" /></p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>PWR switch</td><td>Switch controlling power to the ALR-67.</td></tr>
+<tr><td>2</td><td>DISPLAY TYPE selector</td><td>Selector switch controlling what type of threats to prioritize and display.</td></tr>
+<tr><td>3</td><td>MODE switch</td><td>Switch spring-loaded to center (OFF) position. Can be held to OFST (offset) and LMT (limit) position to enable respective function while held.</td></tr>
+<tr><td>4</td><td>TEST switch</td><td>Switch spring-loaded to center. Momentary selection of BIT indicates BIT in ALR-67. Selection of SPL (special) while BIT page 1 is displayed shows the special BIT status page while held and then for 3 seconds when released.</td></tr>
+<tr><td>5</td><td>VOL knob</td><td>Volume knob controlling ALR-67 audio to RIO.</td></tr>
+</tbody></table>
+</div>
+<h2 id="digital-data-indicator-ddi"><a class="header" href="#digital-data-indicator-ddi">Digital Data Indicator (DDI)</a></h2>
+<p><img src="../../img/ddi.png" alt="ddi" />
+Digital data indicator used to display commands received via the data link.</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>AFT VEC</td><td>Aircraft is being vectored to approach target from the rear hemisphere.</td></tr>
+<tr><td>2</td><td>COL VEC</td><td>Aircraft is being vectored on a collision course to target.</td></tr>
+<tr><td>3</td><td>NO MSG</td><td>No message at this time, indicates presence of data link communication while not receiving a command.</td></tr>
+<tr><td>4</td><td>TO WAY PT</td><td>Proceed to the point being indicated by target information.</td></tr>
+<tr><td>5</td><td>HANDOVER</td><td>TDS is handing own aircraft over to another control center.</td></tr>
+<tr><td>6</td><td>ORBIT</td><td>Assume orbit at present position maintaining maximum endurance.</td></tr>
+<tr><td>7</td><td>CHALNGE</td><td>Intercept and visually identify the target.</td></tr>
+<tr><td>8</td><td>ARM 1</td><td>Intercept and destroy the indicated hostile target using AIM-54.</td></tr>
+<tr><td>9</td><td>ARM 2</td><td>Intercept and destroy the indicated hostile target using AIM-7.</td></tr>
+<tr><td>10</td><td>ARM 3</td><td>Intercept and destroy the indicated hostile target using AIM-9.</td></tr>
+<tr><td>11</td><td>NOT CMD</td><td>Ignore currently received heading, speed, and altitude. Also means valid command BIT not yet available.</td></tr>
+<tr><td>12</td><td>FRE LAN</td><td>Free to attack the most suitable target.</td></tr>
+<tr><td>13</td><td>DIS’GAGE</td><td>Cease fire.</td></tr>
+<tr><td>14</td><td>ABORT</td><td>Abort action.</td></tr>
+<tr><td>15</td><td>BEAC ON</td><td>Enable APN-154 tracking beacon.</td></tr>
+<tr><td>16</td><td>BEAC DUB</td><td>Set APN-154 to double-pulse mode.</td></tr>
+<tr><td>17</td><td>DROP</td><td>Command to release a weapon in data link A/G attack, manually or automatically if in data link attack mode.</td></tr>
+<tr><td>18</td><td>BEAC OFF</td><td>Turn off APN-154 tracking beacon.</td></tr>
+<tr><td>19</td><td>RET BASE</td><td>Return to the indicated home base.</td></tr>
+<tr><td>20</td><td>WAVE OFF</td><td>Wave off, automatic AFCS disengagement.</td></tr>
+<tr><td>21</td><td>LAND CHECK</td><td>CATCC has a data link channel available for AFCS, complete landing checklist.</td></tr>
+<tr><td>22</td><td>ACL BEAC</td><td>Directed by carrier to enable APN-154 beacon.</td></tr>
+<tr><td>23</td><td>ACL RDY</td><td>ACL has locked onto aircraft APN-154 beacon and is transmitting zero pitch and bank signals. Glideslope information is now available to the pilot.</td></tr>
+<tr><td>24</td><td>A/P CPLR</td><td>ACL is ready to take control of the aircraft for the ACL approach, autopilot should be engaged.</td></tr>
+<tr><td>25</td><td>10 SEC</td><td>Indicates 10 seconds to the next action or waypoint. In ACL indicates that the ship's motion is taken into account for ACL.</td></tr>
+<tr><td>26</td><td>ADJ A/C</td><td>Indication from the control station of another aircraft near own aircraft.</td></tr>
+<tr><td>27</td><td>VOICE</td><td>Indicates ACL not available, switch to voice procedures.</td></tr>
+<tr><td>28</td><td>TILT</td><td>Indicates no data link message received in the last 10 seconds. In ACL indicates no messages in the last 2 seconds, will disengage AFCS.</td></tr>
+<tr><td>29</td><td>CMD CHG</td><td>Indicates imminent or recently changed command instructions.</td></tr>
+<tr><td>30</td><td>ALT CHG</td><td>Indicates imminent or recently changed altitude command.</td></tr>
+<tr><td>31</td><td>MON ALT</td><td>Message indicating altitude command not being followed with enough precision.</td></tr>
+<tr><td>32</td><td>MANUAL</td><td>Indicates autopilot should not be engaged.</td></tr>
+<tr><td>33</td><td>SPD CHG</td><td>Indicates imminent or recently changed speed command.</td></tr>
+<tr><td>34</td><td>MON SPD</td><td>Message indicating speed command not being followed with enough precision.</td></tr>
+<tr><td>35</td><td>CMD CTRL</td><td>Indicates aircraft under data link control for landing.</td></tr>
+<tr><td>36</td><td>CHG CHN</td><td>Command to change data link channel.</td></tr>
+<tr><td>37</td><td>HDG CHN</td><td>Indicates imminent or recently changed heading command.</td></tr>
+<tr><td>38</td><td>CANC RPY</td><td>TDS has canceled reply messages.</td></tr>
+<tr><td>39</td><td>FWD VEC</td><td>Aircraft is being vectored to approach the target from the front hemisphere.</td></tr>
+</tbody></table>
+</div>
+<h2 id="decm-control-panel"><a class="header" href="#decm-control-panel">DECM Control Panel</a></h2>
+<p><img src="../../img/decm.png" alt="decm" />
+Control panel for the DECM jammer (AN/ALQ-126).</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>STANDBY light</td><td>Orange light indicating warm-up when the system is placed in STBY. Goes out after complete warm-up. Indication during test or operation indicates a fault has occurred.</td></tr>
+<tr><td>2</td><td>DECM selector</td><td>DECM power/mode switch. Used to control power and function of DECM. OFF - Turns off power to AN/ALQ-126. STBY - Standby, applies power to warm-up system. TEST/HOLD 3 SEC - Should be held in this position for 3 seconds to prepare for system test. TEST/ACT - Starts AN/ALQ-126 BIT, used after 3 seconds in TEST/HOLD 3 SEC position. REC - Receive, enables AN/ALQ-126 to receive and analyze threat signals. Detected missile launch may force the system into repeat mode. RPT - Repeat, enables AN/ALQ-126 to use programmed responses to received threat signals.</td></tr>
+<tr><td>3</td><td>AUDIO knob</td><td>Volume knob, sets audio volume from AN/ALQ-126 to RIO headset.</td></tr>
+</tbody></table>
+</div>
+<h2 id="data-link-control-panel"><a class="header" href="#data-link-control-panel">Data Link Control Panel</a></h2>
+<p><img src="../../img/datalink.png" alt="datalink" />
+Control panel for the data link.</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>Transmission mode switch</td><td>Sets data link transmission mode. TEST - Starts system test. NORM - Normal operational mode. A/J - Anti-jam mode.</td></tr>
+<tr><td>2</td><td>Frequency select wheels</td><td>Thumbwheels used to set data link frequency.</td></tr>
+<tr><td>3</td><td>Data link power switch</td><td>Enables power to data link, also used to set AUX (auxiliary) mode.</td></tr>
+</tbody></table>
+</div>
+<h2 id="data-link-reply-and-antenna-control-panel"><a class="header" href="#data-link-reply-and-antenna-control-panel">Data Link Reply and Antenna Control Panel</a></h2>
+<p><img src="../../img/datalinkantenna.png" alt="datalinkantenna" />
+Panel used to control data link alignment, reply, and antenna.</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>ANTENNA switch</td><td>Switch selecting antenna in use for UHF 1 and data link.</td></tr>
+<tr><td>2</td><td>REPLY switch</td><td>Used to transmit data link reply, transmits in NORM (normal), disabled in CANC (cancelled).</td></tr>
+<tr><td>3</td><td>MODE switch</td><td>Switch spring-loaded to TAC but held by solenoid. Enables data link alignment and waypoint update. CAINS/WAYPT - Enables data link alignment and waypoint update. TAC - Enables manual selection of frequencies, stops data link alignment.</td></tr>
+<tr><td>4</td><td>ADDRESS thumbwheel</td><td>Sets what data link address own aircraft uses. (Sets two least significant digits, others set by ground crew.)</td></tr>
+</tbody></table>
+</div>
+<h2 id="anale-39-control-panel"><a class="header" href="#anale-39-control-panel">AN/ALE-39 Control Panel</a></h2>
+<p><img src="../../img/ale39.png" alt="ale39" /></p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>Inventory counters</td><td>Analog counters used to indicate remaining quantities of loaded countermeasures. Are manually set by pushing in and rotating the knob below each counter.</td></tr>
+<tr><td>2</td><td>PWR/MODE switch</td><td>Switch enabling power and selecting the operational mode of the AN/ALE-39. AUTO(CHAFF)/MAN - Allows manual release of countermeasures and automatic release of chaff by threat detection in the ECM systems. MAN - Allows manual release of countermeasures. OFF - Disables AN/ALE-39.</td></tr>
+<tr><td>3</td><td>SALVO FLARES switch</td><td>Enables parallel rapid firing of all flares. Switch needs to be lifted to move to the ON position.</td></tr>
+<tr><td>4</td><td>FLARE MODE switch</td><td>Switch selecting operational mode for launching flares. Also controls what countermeasure the DLC button on the pilot stick ejects while airborne. MULT - Multiple, each flare ejection command will eject one flare from each launcher subsection loaded with flares. Affects both manual and programmed releases. NORM - Normal, each flare ejection command will eject one flare in total. Affects both manual and programmed releases. PILOT - Enables the pilot to manually release flares with the pilot stick DLC button, the other positions release chaff with DLC button depression.</td></tr>
+<tr><td>5</td><td>Countermeasure release switches</td><td>Switches spring-loaded to center which controls respective countermeasure release actuation. PRGM - Program, switch needs to be lifted to enter this position, momentary actuation initiates programmed release. STBY - No release. SGL - Single, momentary actuation releases a single countermeasure.</td></tr>
+</tbody></table>
+</div>
+<h2 id="aa1-control-panel"><a class="header" href="#aa1-control-panel">AA1 Control Panel</a></h2>
+<p><img src="../../img/aa1.png" alt="aa1" />
+AN/APX-76 interrogator control panel.</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>M4 ALARM OVERRIDE switch</td><td>Switch disabling the mode 4 tone alarm in the RIO headset.</td></tr>
+<tr><td>2</td><td>TEST-CHAL CC switch</td><td>Switch spring-loaded to center controlling IFF challenge and test. TEST - Momentary actuation, tests the AN/APX-76 by interrogating own transponder, if the same codes are set two solid lines appear on DDD at 3 and 4 miles. CHAL CC - Momentary actuation, starts a 10 second interrogation cycle only showing returns with correct mode and code on DDD.</td></tr>
+<tr><td>3</td><td>CODE selector thumbwheels</td><td>Thumbwheels controlling mode and code used for interrogation. First wheel sets mode, last four set code.</td></tr>
+<tr><td>4</td><td>CHAL light</td><td>Light indicating active interrogation in progress.</td></tr>
+<tr><td>5</td><td>FAULT light</td><td>Light indicating fault in AN/APX-76.</td></tr>
+</tbody></table>
+</div>
+<h2 id="anale-39-programmer"><a class="header" href="#anale-39-programmer">AN/ALE-39 Programmer</a></h2>
+<p><img src="../../img/ale39programmer.png" alt="ale39programmer" />
+Programming panel used to program current countermeasure inventory into AN/ALE-39.</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>JAMR thumbwheels</td><td>Thumbwheels used to set jammer release program. QTY - Quantity, sets quantity of jammers to release in the program. INTV - Interval, sets interval in seconds between jammer releases in the program.</td></tr>
+<tr><td>2</td><td>CHAFF thumbwheels</td><td>Thumbwheels used to set chaff release program. B-QTY - Quantity, sets quantity of chaff to release in one program salvo, can also be set to C (continuous) or R (random). B-INTV - Interval, sets the interval between chaff bursts to release in one program salvo, can also be set to R (random). S-QTY - Quantity, selects the number of salvos to release in a program. S-INTV - Interval, selects the interval between salvos in a program.</td></tr>
+<tr><td>3</td><td>FLARE thumbwheels</td><td>Thumbwheels used to set flare release program. QTY - Quantity, sets the quantity of flares to be released in a program. INTV - Interval, sets the interval between flare releases in a program.</td></tr>
+<tr><td>4</td><td>LOAD control thumbwheels</td><td>Thumbwheels inputting into AN/ALE-39 what is loaded into each launcher subsection. L10 - Sets loaded countermeasure in Left 10 subsection. L20 - Sets loaded countermeasure in Left 20 subsection. R10 - Sets loaded countermeasure in Right 10 subsection. R20 - Sets loaded countermeasure in Right 20 subsection.</td></tr>
+<tr><td>5</td><td>RESET switch</td><td>Switch loading programmed settings into AN/ALE-39 and resetting sequencer switches to their starting positions.</td></tr>
+</tbody></table>
+</div>
+<h2 id="interior-light-control-panel"><a class="header" href="#interior-light-control-panel">Interior Light Control Panel</a></h2>
+<p><img src="../../img/light.png" alt="light" />
+Panel controlling lights in the RIO cockpit.</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>INSTRUMENT thumbwheel</td><td>Thumbwheel controlling instrument panel lights, 0 equals off, 1-14 sets the lights to an increasingly bright setting.</td></tr>
+<tr><td>2</td><td>WHITE FLOOD switch</td><td>Switch enabling white floodlights in the RIO cockpit. DIM and BRT (bright) settings available, switch locked to OFF unless pulled out.</td></tr>
+<tr><td>3</td><td>CONSOLE thumbwheel</td><td>Thumbwheel controlling console lights and red floodlights. 0 turns off both console and red floodlights, 1-14 sets the console lights to an increasingly bright setting.</td></tr>
+<tr><td>4</td><td>RED FLOOD switch</td><td>Switch controlling red instrument and console floodlights. BRT - Sets bright red instrument flood and console lights. MED - Red console floodlights. DIM - Dim red console floodlights.</td></tr>
+</tbody></table>
+</div>
+<h2 id="dataadf-switch"><a class="header" href="#dataadf-switch">Data/ADF Switch</a></h2>
+<p><img src="../../img/data.png" alt="data" />
+Switch controlling the display of data and ADF on the HSD and ECMD. BOTH enables the display of the ADF bug and navigation data block. DATA enables the display of only the navigation data block. OFF disables the display of either.</p>
+<h2 id="iff-transponder-control-panel"><a class="header" href="#iff-transponder-control-panel">IFF Transponder Control Panel</a></h2>
+<p><img src="../../img/transponder.png" alt="transponder" />
+Control panel for the AN/APX-72 transponder.</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>MODE 4 switch</td><td>Switch enabling mode 4.</td></tr>
+<tr><td>2</td><td>MODE 4 AUDIO/LIGHT switch</td><td>Switch enabling mode 4 audio and light monitoring. AUDIO - Enables audio monitoring of mode 4 interrogation and REPLY light monitoring of mode 4 replies. OUT - Disables audio and light monitoring of mode 4. LIGHT - Enables REPLY light monitoring of mode 4 replies.</td></tr>
+<tr><td>3</td><td>MODE 4 CODE selector</td><td>CODE selector switch, controlling what cipher code to use. ZERO - Erases both ciphers from the system. B - Selects the B cipher code for use. A - Selects the A cipher code for use. HOLD - Non-functional.</td></tr>
+<tr><td>4</td><td>MODE 4 REPLY light</td><td>Light indicating when a mode 4 reply is generated and transmitted. Can be pushed to test the light.</td></tr>
+<tr><td>5</td><td>TEST light</td><td>Light indicating correct test when the respective test switch is used. The light itself can be tested by pushing it.</td></tr>
+<tr><td>6</td><td>MASTER selector</td><td>Selector switch controlling AN/APX-72 mode of operation. OFF - Disables power to the AN/APX-72. STBY - Standby, enables standby for immediate operation upon selection of other operational modes. LOW - Activates replies to set modes in low sensitivity mode, only strong nearby interrogators are replied to. NORM - Normal, replies normally to all received interrogations. EMER - Activates emergency mode replies to mode 1, 2, and 3/A, and normal reply to mode C, regardless of mode switches.</td></tr>
+<tr><td>7</td><td>MODE switches</td><td>Switches controlling the operation of the different IFF modes. TEST - Tests the respective mode, correct operation if the TEST light illuminates. ON - Enables the respective IFF mode. OUT - Disables the respective IFF mode.</td></tr>
+<tr><td>8</td><td>RAD TEST-OUT-MON switch</td><td>Switch allowing ground test and monitoring of non-mode 4 replies. RAD TEST - Not used by the aircrew. OUT - Disables test and monitoring. MON - Monitor mode 1, 2, 3, and C by illuminating the test light when replies are generated and transmitted.</td></tr>
+<tr><td>9</td><td>IDENT-OUT-MIC switch</td><td>Switch controlling the operation of the mode 1-3 IDENT function. IDENT - Momentary position enabling IDENT reply for 15 to 30 seconds after switch release. OUT - IDENT function off. MIC - Transfers IDENT control to crewmember UHF PTT, enabling IDENT reply as per IDENT each time the PTT is keyed.</td></tr>
+<tr><td>10</td><td>CODE thumbwheels</td><td>Six thumbwheels selecting the code in use for mode 1 and 3.</td></tr>
+</tbody></table>
+</div>
+<h2 id="iff-antenna-controltest-panel"><a class="header" href="#iff-antenna-controltest-panel">IFF Antenna Control/Test Panel</a></h2>
+<p><img src="../../img/riotest.png" alt="riotest" />
+Panel containing controls for IFF antenna, tests, and ground cooling.</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>IFF ANT switch</td><td>Switch allowing control of which antenna the IFF transponder uses. Possible to select AUTO (automatic) or LWR (lower).</td></tr>
+<tr><td>2</td><td>IND LT/DDI BIT switch</td><td>Test switch allowing manual DDI BIT and test of RIO indicator lights.</td></tr>
+<tr><td>3</td><td>GND CLG switch</td><td>Switch allowing the use of external air to cool aircraft systems while on the ground. OBC/CABIN - Allows for external air into the cabin and to cool electronics and AWG-9/AIM-54 with reduced performance for OBC. OFF - External air not used for these functions. AWG-9/AIM-54 - Uses the external air to cool AWG-9 and AIM-54 coolant with better performance but disables external air to cabin.</td></tr>
+</tbody></table>
+</div>
+<h2 id="mid-compression-bypass-test-panel-f-14a-only"><a class="header" href="#mid-compression-bypass-test-panel-f-14a-only">Mid Compression Bypass Test Panel (F-14A only)</a></h2>
+<p><img src="../../img/mcb.png" alt="mcb" />
+Panel containing controls and indicators used to verify Mid Compression Bypass (MCB) circuit functionality.</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>Left and Right test lights</td><td>Indicators illuminating with MCB Test switch activation to indicate left and right successful MCB circuit test respectively.</td></tr>
+<tr><td>2</td><td>MCB Test switch</td><td>Test switch activating MCB circuit test to verify MCB circuit functionality.</td></tr>
+</tbody></table>
+</div>
+<h2 id="electrical-power-system-test-panel"><a class="header" href="#electrical-power-system-test-panel">Electrical Power System Test Panel</a></h2>
+<p><img src="../../img/powersystest.png" alt="powersystest" />
+Panel used by ground crew to test aircraft electrical systems.</p>
+<p>Note: Non-functional in DCS.</p>
+<h2 id="canopy-defogcabin-air-lever"><a class="header" href="#canopy-defogcabin-air-lever">Canopy Defog/Cabin Air Lever</a></h2>
+<p><img src="../../img/canopydefog1.png" alt="canopydefog" />
+The canopy air diffuser lever controls the flow of cabin air. The normal position, CABIN AIR, directs 70% of the conditioned air through the cockpit air diffusers and 30% through the canopy air diffusers. The CANOPY DEFOG position directs all airflow through the canopy air diffusers for canopy defog.</p>
+<h2 id="canopy-control-handle"><a class="header" href="#canopy-control-handle">Canopy Control Handle</a></h2>
+<p><img src="../../img/canopyhandle1.png" alt="canopyhandle" />
+The canopy control handle controls canopy operation and is located on the right cockpit wall. The handle is mounted downwards beneath the box containing the handle mechanism and the handle position texts. The canopy control handle is duplicated in the pilot cockpit.</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>BOOST</td><td>Closes the canopy using boost, used during cold weather or with a strong headwind.</td></tr>
+<tr><td>2</td><td>CLOSE</td><td>Closes the canopy, the default position during flight.</td></tr>
+<tr><td>3</td><td>HOLD</td><td>Holds the canopy at the current position for any position other than closed.</td></tr>
+<tr><td>4</td><td>OPEN</td><td>Opens the canopy.</td></tr>
+<tr><td>5</td><td>AUX OPEN</td><td>Allows manual opening of the canopy if system pressure is too low.</td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../cockpit/rio/right_vertical_console.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../cockpit/rio/canopy_control_handle.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../cockpit/rio/right_vertical_console.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../cockpit/rio/right_vertical_console.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../cockpit/rio/canopy_control_handle.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../cockpit/rio/canopy_control_handle.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>

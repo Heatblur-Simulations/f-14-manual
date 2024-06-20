@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Left Vertical Console - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/visual.css">
+        <link rel="stylesheet" href="../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../theme/pdf.css">
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <div class="menu-logo"><img src="/img/f14line.svg"></div>
+
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../f14_manual.html">F-14 Manual</a></li><li class="chapter-item "><a href="../../intro/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../cockpit/overview.html"><strong aria-hidden="true">2.</strong> Cockpit Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../cockpit/pilot/overview.html"><strong aria-hidden="true">2.1.</strong> Pilot Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/pilot/left_console.html"><strong aria-hidden="true">2.1.1.</strong> Left Side Console</a></li><li class="chapter-item expanded "><a href="../../cockpit/pilot/left_vertical_console.html" class="active"><strong aria-hidden="true">2.1.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_knee_panel.html"><strong aria-hidden="true">2.1.3.</strong> Left Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_instrument_panel.html"><strong aria-hidden="true">2.1.4.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_windshield_frame.html"><strong aria-hidden="true">2.1.5.</strong> Left Windshield Frame</a></li><li class="chapter-item "><a href="../../cockpit/pilot/center_panel.html"><strong aria-hidden="true">2.1.6.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_windshield_frame.html"><strong aria-hidden="true">2.1.7.</strong> Right Windshield Frame</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_instrument_panel.html"><strong aria-hidden="true">2.1.8.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_knee_panel.html"><strong aria-hidden="true">2.1.9.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_vertical_console.html"><strong aria-hidden="true">2.1.10.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_console.html"><strong aria-hidden="true">2.1.11.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/canopy_control_handle.html"><strong aria-hidden="true">2.1.12.</strong> Canopy Control Handle</a></li></ol></li><li class="chapter-item "><a href="../../cockpit/rio/overview.html"><strong aria-hidden="true">2.2.</strong> RIO Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/rio/left_console.html"><strong aria-hidden="true">2.2.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/left_vertical_console.html"><strong aria-hidden="true">2.2.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/left_instrument_console.html"><strong aria-hidden="true">2.2.3.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/center_panel.html"><strong aria-hidden="true">2.2.4.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/center_console.html"><strong aria-hidden="true">2.2.5.</strong> Center Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/footwells.html"><strong aria-hidden="true">2.2.6.</strong> Left and Right Footwells</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_instrument_console.html"><strong aria-hidden="true">2.2.7.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_knee_panel.html"><strong aria-hidden="true">2.2.8.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_vertical_console.html"><strong aria-hidden="true">2.2.9.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_console.html"><strong aria-hidden="true">2.2.10.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/canopy_control_handle.html"><strong aria-hidden="true">2.2.11.</strong> Canopy Control Handle</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../systems/overview.html"><strong aria-hidden="true">3.</strong> Systems Overview</a></li><li class="chapter-item "><a href="../../stores/overview.html"><strong aria-hidden="true">4.</strong> Weapons & Stores</a></li><li class="chapter-item "><a href="../../procedures/overview.html"><strong aria-hidden="true">5.</strong> Normal Procedures</a></li><li class="chapter-item "><a href="../../emergency_procedures/overwiew.html"><strong aria-hidden="true">6.</strong> Emergency Procedures</a></li><li class="chapter-item "><a href="../../dcs/overview.html"><strong aria-hidden="true">7.</strong> DCS</a></li><li class="chapter-item "><a href="../../abbreviations.html"><strong aria-hidden="true">8.</strong> Abbreviations</a></li><li class="chapter-item "><a href="../../tutorials.html"><strong aria-hidden="true">9.</strong> Tutorials</a></li><li class="chapter-item "><a href="../../imprint.html"><strong aria-hidden="true">10.</strong> Imprint</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/cockpit/pilot/left_vertical_console.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="left-vertical-console"><a class="header" href="#left-vertical-console">Left Vertical Console</a></h1>
+<blockquote>
+<p>🚧 TODO: Convert tables into text chunks like the F-4</p>
+</blockquote>
+<h2 id="fuel-management-panel"><a class="header" href="#fuel-management-panel">Fuel Management Panel</a></h2>
+<p><img src="../../img/fuel.png" alt="Fuel Management" /></p>
+<p>Control panel for various fuel-related systems, CADC master reset, and the anti-skid system.</p>
+<ul>
+<li>
+<p><strong>1: QTY SEL switch</strong></p>
+<ul>
+<li>Switch selecting what the fuel quantity tapes on the fuel quantity display shows. Spring-loaded to FEED.
+<ul>
+<li><strong>FEED</strong> - Shows respective feed and fuselage tank fuel quantity.</li>
+<li><strong>WING</strong> - Shows respective wing tank fuel quantity.</li>
+<li><strong>EXT</strong> - Shows respective external fuel tank quantity.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>2: FEED switch</strong></p>
+<ul>
+<li>Switch selecting fuel feed to the engines. Guard locks the switch to NORM until lifted.</li>
+</ul>
+</li>
+<li>
+<p><strong>3: WING/EXT TRANS switch</strong></p>
+<ul>
+<li>Switch selecting operation of the wing and external tanks.
+<ul>
+<li><strong>ORIDE</strong> - Override.</li>
+<li><strong>AUTO</strong> - Normal position.</li>
+<li><strong>OFF</strong> - Turns off fuel feed from the wing and external tanks.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>4: Refueling probe indicator light</strong></p>
+<ul>
+<li>Transition light illuminated when refueling probe is not in extended or retracted position.</li>
+</ul>
+</li>
+<li>
+<p><strong>5: DUMP switch</strong></p>
+<ul>
+<li>OFF/DUMP switch. Allows fuel dump when speed brakes are retracted, afterburner off and weight off wheels.</li>
+</ul>
+</li>
+<li>
+<p><strong>6: REFUEL PROBE switch</strong></p>
+<ul>
+<li>Selection switch toggling operation of refueling probe.
+<ul>
+<li><strong>ALL EXTD</strong> - All extended, extends refueling probe and allows refueling of all tanks. Also resets WING/EXT TRANS switch to AUTO.</li>
+<li><strong>FUS EXTD</strong> - Fuselage extended, extends refueling probe and allows refueling of only fuselage tanks.</li>
+<li><strong>RET</strong> - Retracted, retracts refueling probe.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>7: ANTI SKID SPOILER BK switch</strong></p>
+<ul>
+<li>Selection switch determining operation anti-skid and spoiler brake systems.
+<ul>
+<li><strong>BOTH</strong> - Enables both anti-skid and spoiler brake function with weight on wheels.</li>
+<li><strong>OFF</strong> - Turns off both systems.</li>
+<li><strong>SPOILER BK</strong> - Spoiler brake, enables spoiler brake function with weight on wheels.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>8: MASTER RESET button</strong></p>
+<ul>
+<li>Resets CADC failure detection system and associated fault displays.</li>
+</ul>
+</li>
+</ul>
+<h2 id="control-surface-position-indicator"><a class="header" href="#control-surface-position-indicator">Control Surface Position Indicator</a></h2>
+<p><img src="../../img/control.png" alt="Control Surface" /></p>
+<p>Indicator for indication of control surface positions.</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>SPOILER</td><td>Spoiler position indicators.<strong>DN</strong> - Down, flush with wings.<strong>Up</strong>-arrow - Extended above wing.<strong>Down</strong>-arrow - Drooped below wing surface.</td></tr>
+<tr><td>2</td><td>RUDDER</td><td>Rudder position indicators, shows position of left and right rudders, each marked L or R.</td></tr>
+<tr><td>3</td><td>HORIZ TAIL</td><td>Horizontal stabilizer position indicators, shows position of left and right stabilizer surfaces, marked L or R respectively.</td></tr>
+</tbody></table>
+</div>
+<h2 id="launch-bar-abort-panel"><a class="header" href="#launch-bar-abort-panel">Launch Bar Abort Panel</a></h2>
+<p><img src="../../img/launch-abort.png" alt="Launch Abort" /></p>
+<p>LAUNCH BAR – Selection switch – When held in ABORT lifts the launch bar for launch abortion. Spring-loaded to NORM (Normal) which is the standard position. Not currently used in DCS.</p>
+<h2 id="landing-gear-control-panel"><a class="header" href="#landing-gear-control-panel">Landing Gear Control Panel</a></h2>
+<p><img src="../../img/gear.png" alt="Gear Control" /></p>
+<p>Control panel for the main landing gear and emergency stores jettison.</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>LDG GEAR</td><td>Landing gear handle. Selects gear UP or DOWN.For emergency extension in DOWN position, push handle in, turn clockwise and pull out. This releases a compressed nitrogen charge for emergency extension.</td></tr>
+<tr><td>2</td><td>DOWN LOCK ORIDE</td><td>Indicates weight on wheels when moved down by solenoid. Can be lifted up to override. Non-functional in DCS.</td></tr>
+<tr><td>3</td><td>HYD ISOL</td><td>Switch isolating landing gear, nosewheel steering and wheel brakes from the combined hydraulic system. Automatically moved to T.O./LDG by LDG GEAR in DOWN position.FLT - In flight operation, isolates systems listed above.T.O./LDG - Take-off/landing, connects systems listed above, allowing them to operate.</td></tr>
+<tr><td>4</td><td>Transition light</td><td>Illuminates to indicate landing gear position not corresponding to current LDG GEAR handle position.</td></tr>
+<tr><td>5</td><td>EMERG STORES button</td><td>Emergency stores jettison. Illuminates to indicate activation when pressed.</td></tr>
+<tr><td>6</td><td>NOSE STRUT switch</td><td>Switch selecting nosewheel strut retraction.EXTD - Extend, extends nosewheel strut and raises and locks launch bar.OFF - Turns off nosewheel strut movement, spring-loaded to this position.KNEEL - Releases pressure from nosewheel strut to retract it, kneeling aircraft. Also unlocks launch bar.</td></tr>
+<tr><td>7</td><td>BRAKE-PULL handle</td><td>Parking brake, pull out to apply parking brake, push in to release.</td></tr>
+<tr><td>8</td><td>EJECT CMD indicator</td><td>Indicates ejection system mode for the back seat.PILOT - Pilot ejects both crewmembers, RIO only himself.MCO - Each position ejects both crewmen.</td></tr>
+</tbody></table>
+</div>
+<h2 id="wheels-and-flaps-position-indicator"><a class="header" href="#wheels-and-flaps-position-indicator">Wheels and Flaps Position Indicator</a></h2>
+<p>Indicates position of flaps and slats, speed brakes, and the landing gear. The slats are indicated as follows:</p>
+<blockquote>
+<p>🚧 TODO: Make the images not weird.</p>
+</blockquote>
+<div class="table-wrapper"><table><thead><tr><th><img src="../../img/off.png" alt="Power off" />{ width=100 height=100 }</th><th>Power off or maneuver slats extended.</th></tr></thead><tbody>
+<tr><td><img src="../../img/slats-ext.png" alt="Slats extended" />{ width=100 height=100 }</td><td>Slats extended.</td></tr>
+<tr><td><img src="../../img/slats-ret.png" alt="Slats retracted" />{ width=100 height=100 }</td><td>Slats retracted.</td></tr>
+</tbody></table>
+</div>
+<p>Flap Position is displayed by an indicator moving between UP and DOWN. The first marked section of the indicator indicates maneuver flap-range. The landing gear is indicated as follows:</p>
+<div class="table-wrapper"><table><thead><tr><th><img src="../../img/off.png" alt="Power off or unsafe gear" />{ width=100 height=100 }</th><th>Power off or unsafe gear.</th></tr></thead><tbody>
+<tr><td><img src="../../img/gear-down.png" alt="Gear down" />{ width=100 height=100 }</td><td>Gear down.</td></tr>
+<tr><td><img src="../../img/gear-up.png" alt="Gear retracted and doors closed" />{ width=100 height=100 }</td><td>Gear retracted and doors closed.</td></tr>
+</tbody></table>
+</div>
+<p>Speed brakes are indicated as follows:</p>
+<div class="table-wrapper"><table><thead><tr><th><img src="../../img/off.png" alt="Brake off" />{ width=100 height=100 }</th><th>Speed brake system power off.</th></tr></thead><tbody>
+<tr><td><img src="../../img/brake-partial.png" alt="Brake partial" />{ width=100 height=100 }</td><td>Speed brake partial extension, not in motion.</td></tr>
+<tr><td><img src="../../img/brake-out.png" alt="Brake out" />{ width=100 height=100 }</td><td>Speed brake fully extended.</td></tr>
+<tr><td><img src="../../img/brake-in.png" alt="Brake in" />{ width=100 height=100 }</td><td>Speed brake retracted.</td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../cockpit/pilot/left_console.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../cockpit/pilot/left_knee_panel.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../cockpit/pilot/left_console.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../cockpit/pilot/left_console.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../cockpit/pilot/left_knee_panel.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../cockpit/pilot/left_knee_panel.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>
