@@ -1,0 +1,900 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Navigation System - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/visual.css">
+        <link rel="stylesheet" href="../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../theme/pdf.css">
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <div class="menu-logo"><img src="/img/f14line.svg"></div>
+
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../f14_manual.html">F-14 Manual</a></li><li class="chapter-item "><a href="../../intro/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item "><a href="../../cockpit/overview.html"><strong aria-hidden="true">2.</strong> Cockpit Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/pilot/overview.html"><strong aria-hidden="true">2.1.</strong> Pilot Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/pilot/left_console.html"><strong aria-hidden="true">2.1.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_vertical_console.html"><strong aria-hidden="true">2.1.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_knee_panel.html"><strong aria-hidden="true">2.1.3.</strong> Left Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_instrument_panel.html"><strong aria-hidden="true">2.1.4.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_windshield_frame.html"><strong aria-hidden="true">2.1.5.</strong> Left Windshield Frame</a></li><li class="chapter-item "><a href="../../cockpit/pilot/center_panel.html"><strong aria-hidden="true">2.1.6.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_windshield_frame.html"><strong aria-hidden="true">2.1.7.</strong> Right Windshield Frame</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_instrument_panel.html"><strong aria-hidden="true">2.1.8.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_knee_panel.html"><strong aria-hidden="true">2.1.9.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_vertical_console.html"><strong aria-hidden="true">2.1.10.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_console.html"><strong aria-hidden="true">2.1.11.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/canopy_control_handle.html"><strong aria-hidden="true">2.1.12.</strong> Canopy Control Handle</a></li></ol></li><li class="chapter-item "><a href="../../cockpit/rio/overview.html"><strong aria-hidden="true">2.2.</strong> RIO Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/rio/left_console.html"><strong aria-hidden="true">2.2.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/left_vertical_console.html"><strong aria-hidden="true">2.2.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/left_instrument_console.html"><strong aria-hidden="true">2.2.3.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/center_panel.html"><strong aria-hidden="true">2.2.4.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/center_console.html"><strong aria-hidden="true">2.2.5.</strong> Center Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/footwells.html"><strong aria-hidden="true">2.2.6.</strong> Left and Right Footwells</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_instrument_console.html"><strong aria-hidden="true">2.2.7.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_knee_panel.html"><strong aria-hidden="true">2.2.8.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_vertical_console.html"><strong aria-hidden="true">2.2.9.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_console.html"><strong aria-hidden="true">2.2.10.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/canopy_control_handle.html"><strong aria-hidden="true">2.2.11.</strong> Canopy Control Handle</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../systems/overview.html"><strong aria-hidden="true">3.</strong> Systems Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/flight_controls_gear/overview.html"><strong aria-hidden="true">3.1.</strong> Flight Controls and Gear</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/flight_controls_gear/cadc.html"><strong aria-hidden="true">3.1.1.</strong> Central Air Data Computer (CADC)</a></li><li class="chapter-item "><a href="../../systems/flight_controls_gear/flight_controls.html"><strong aria-hidden="true">3.1.2.</strong> Flight Controls & AFCS</a></li><li class="chapter-item "><a href="../../systems/flight_controls_gear/wing_sweep.html"><strong aria-hidden="true">3.1.3.</strong> Wing-Sweep System</a></li><li class="chapter-item "><a href="../../systems/flight_controls_gear/gear_ground_handling.html"><strong aria-hidden="true">3.1.4.</strong> Gear & Ground Handling</a></li></ol></li><li class="chapter-item "><a href="../../systems/engines_and_fuel_systems/overview.html"><strong aria-hidden="true">3.2.</strong> Engines & Fuel Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/engines_and_fuel_systems/engines.html"><strong aria-hidden="true">3.2.1.</strong> Engines</a></li><li class="chapter-item "><a href="../../systems/engines_and_fuel_systems/fuel_system.html"><strong aria-hidden="true">3.2.2.</strong> Fuel System</a></li></ol></li><li class="chapter-item expanded "><a href="../../systems/nav_com/overview.html"><strong aria-hidden="true">3.3.</strong> Navigation & Communication</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../systems/nav_com/nav_sys.html" class="active"><strong aria-hidden="true">3.3.1.</strong> Navigation System</a></li><li class="chapter-item "><a href="../../systems/nav_com/ins.html"><strong aria-hidden="true">3.3.2.</strong> INS</a></li><li class="chapter-item "><a href="../../systems/nav_com/ahrs.html"><strong aria-hidden="true">3.3.3.</strong> Attitude and Heading Reference Set (AHRS)</a></li><li class="chapter-item "><a href="../../systems/nav_com/tacan.html"><strong aria-hidden="true">3.3.4.</strong> TACAN</a></li><li class="chapter-item "><a href="../../systems/nav_com/bdhi.html"><strong aria-hidden="true">3.3.5.</strong> BDHI</a></li><li class="chapter-item "><a href="../../systems/nav_com/icls.html"><strong aria-hidden="true">3.3.6.</strong> ICLS</a></li><li class="chapter-item "><a href="../../systems/nav_com/intercom.html"><strong aria-hidden="true">3.3.7.</strong> ICS - Intercom</a></li><li class="chapter-item "><a href="../../systems/nav_com/com/overview.html"><strong aria-hidden="true">3.3.8.</strong> Communication Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/nav_com/com/encryption.html"><strong aria-hidden="true">3.3.8.1.</strong> KY-28 Encryption</a></li><li class="chapter-item "><a href="../../systems/nav_com/com/uhf.html"><strong aria-hidden="true">3.3.8.2.</strong> AN/ARC-159 (UHF 1) Radio</a></li><li class="chapter-item "><a href="../../systems/nav_com/com/vuhf.html"><strong aria-hidden="true">3.3.8.3.</strong> AN/ARC-182 (V/UHF 2) Radio</a></li></ol></li><li class="chapter-item "><a href="../../systems/nav_com/link4.html"><strong aria-hidden="true">3.3.9.</strong> Link 4A & C Datalink</a></li></ol></li><li class="chapter-item "><a href="../../systems/identification_systems.html"><strong aria-hidden="true">3.4.</strong> Identification Systems</a></li><li class="chapter-item "><a href="../../systems/hydraulics.html"><strong aria-hidden="true">3.5.</strong> Hydraulics</a></li><li class="chapter-item "><a href="../../systems/enviornmental_control_system.html"><strong aria-hidden="true">3.6.</strong> Environmental Control System</a></li><li class="chapter-item "><a href="../../systems/utility.html"><strong aria-hidden="true">3.7.</strong> Utility</a></li><li class="chapter-item "><a href="../../systems/electrics.html"><strong aria-hidden="true">3.8.</strong> Electrics</a></li><li class="chapter-item "><a href="../../systems/lighting.html"><strong aria-hidden="true">3.9.</strong> Lighting</a></li><li class="chapter-item "><a href="../../systems/radar/overview.html"><strong aria-hidden="true">3.10.</strong> AN/AWG-9 Weapon Control System (WCS)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/radar/interface.html"><strong aria-hidden="true">3.10.1.</strong> Interface</a></li><li class="chapter-item "><a href="../../systems/radar/general_operation.html"><strong aria-hidden="true">3.10.2.</strong> AN/AWG-9 General Operation</a></li></ol></li><li class="chapter-item "><a href="../../systems/tcs.html"><strong aria-hidden="true">3.11.</strong> AN/AXX-1 TCS</a></li><li class="chapter-item "><a href="../../systems/weapon_systems/overview.html"><strong aria-hidden="true">3.12.</strong> Weapon Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/weapon_systems/lantirn/overview.html"><strong aria-hidden="true">3.12.1.</strong> LANTIRN</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/weapon_systems/lantirn/modes.html"><strong aria-hidden="true">3.12.1.1.</strong> Modes</a></li><li class="chapter-item "><a href="../../systems/weapon_systems/lantirn/other.html"><strong aria-hidden="true">3.12.1.2.</strong> Other</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../systems/defensive_systems/overview.html"><strong aria-hidden="true">3.13.</strong> Defensive Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/defensive_systems/countermeasures/overview.html"><strong aria-hidden="true">3.13.1.</strong> Countermeasures</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/defensive_systems/countermeasures/ale_39.html"><strong aria-hidden="true">3.13.1.1.</strong> ALE-39</a></li><li class="chapter-item "><a href="../../systems/defensive_systems/countermeasures/lau_138.html"><strong aria-hidden="true">3.13.1.2.</strong> LAU-138</a></li></ol></li><li class="chapter-item "><a href="../../systems/defensive_systems/radar_warning_receiver.html"><strong aria-hidden="true">3.13.2.</strong> Radar Warning Receiver</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/defensive_systems/alr_67.html"><strong aria-hidden="true">3.13.2.1.</strong> ALR-67</a></li><li class="chapter-item "><a href="../../systems/defensive_systems/alr_45-50.html"><strong aria-hidden="true">3.13.2.2.</strong> ALR-45/50</a></li></ol></li><li class="chapter-item "><a href="../../systems/defensive_systems/ecm.html"><strong aria-hidden="true">3.13.3.</strong> Electronic Countermeasures</a></li></ol></li><li class="chapter-item "><a href="../../systems/emergency.html"><strong aria-hidden="true">3.14.</strong> Emergency</a></li></ol></li><li class="chapter-item "><a href="../../stores/overview.html"><strong aria-hidden="true">4.</strong> Weapons & Stores</a></li><li class="chapter-item "><a href="../../procedures/overview.html"><strong aria-hidden="true">5.</strong> Normal Procedures</a></li><li class="chapter-item "><a href="../../emergency_procedures/overwiew.html"><strong aria-hidden="true">6.</strong> Emergency Procedures</a></li><li class="chapter-item "><a href="../../dcs/overview.html"><strong aria-hidden="true">7.</strong> DCS</a></li><li class="chapter-item "><a href="../../abbreviations.html"><strong aria-hidden="true">8.</strong> Abbreviations</a></li><li class="chapter-item "><a href="../../tutorials.html"><strong aria-hidden="true">9.</strong> Tutorials</a></li><li class="chapter-item "><a href="../../imprint.html"><strong aria-hidden="true">10.</strong> Imprint</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/systems/nav_com/nav_sys.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="navigation-system"><a class="header" href="#navigation-system">Navigation System</a></h1>
+<blockquote>
+<p>🚧 TODO: Add images. Redo CAP panel stuff</p>
+</blockquote>
+<h2 id="wcs-computer"><a class="header" href="#wcs-computer">WCS Computer</a></h2>
+<p>The WCS or weapon control system computer and CSDC use several alignment routines stored on a
+magnetic tape to perform the necessary computations to align the INS.</p>
+<p>These stored alignment routines in the WCS computer are called SMAL single mode alignment program.
+When alignment is initiated, the routines are loaded in the computer’s destructive readout memory
+from magnetic tape.</p>
+<p>This process is called “tape read-in” and is represented by an M on the TID. During the alignment of
+the IMU platform, the WCS communicates with the CSDC to address specific CSDC navigation routines.</p>
+<h2 id="imu-platform-alignment"><a class="header" href="#imu-platform-alignment">IMU Platform Alignment</a></h2>
+<p>When alignment mode is selected, the IMU platform first erects to a coarse alignment with the help
+of accelerometer output and gives an aircraft heading that represents the angular displacement from
+true north. This displacement is referred to as wander angle. The CSDC sends inertial velocity data
+to the WCS during the alignment process.</p>
+<p>The second stage – fine alignment – uses the precise measurement of gyroscope drift to calculate the
+aircraft’s true heading. This is possible because of the Earth’s rotation. At no point of alignment,
+is the magnetic heading used, and the whole process relies only on the sensing of the non-inertial
+movement of the platform within the 3d space.</p>
+<p>The WCS calculates terms for platform alignment corrections and estimates the value of the wander
+angle, it then sends this data to the CSDC. The CSDC uses these correction terms in the CSDC
+inertial equations to generate pulses for the platform torquing that are then transmitted to the
+IMU. The CSDC in return receives velocity information from the IMU and sends this new inertial
+velocity data to the WCS alignment program, upon which the cycle repeats. The exchange of data
+continues until INS is entered.</p>
+<p>The leveling process of the platform is achieved by the CSDC generating torquing pulses based on IMU
+accelerometer off-level indications being sent to the IMU by the CSDC. With each data exchange, the
+WCS calculates an error value (delta) between the values of the previous and current wander angle.
+This delta is largest at the beginning of the alignment and smallest at the end of alignment.</p>
+<p>The alignment is finished when the delta is near zero and near zero velocity is sensed along the
+platform X and Y axes. Variable factors required to align the platform are continuously calculated,
+updated, and saved as calibration data. When the alignment is complete, the system is ready to enter
+INS. The last used calibration data and wander angle are stored in the CSDC upon entry into INS.
+When in INS, the WCS accepts the velocity and position data and the wander angle from the CSDC.</p>
+<h2 id="navigation-modes"><a class="header" href="#navigation-modes">Navigation Modes</a></h2>
+<p>Three navigation data mode sources are used for general navigation:</p>
+<ol>
+<li>
+<p><strong>INS</strong> - The primary navigation mode set by the RIO once IMU alignment is complete. The IMU is
+the primary sensor supplying velocity data that is used to compute all inertial outputs. The IMU
+is the source for roll and pitch data.</p>
+</li>
+<li>
+<p><strong>IMU/AM</strong> - A backup mode that can either be selected by the RIO or is automatically entered
+when the CSDC determines the IMU inertial velocity data is unreliable. In this mode, true
+airspeed from the CADC and stored or entered winds are combined to provide ground speed and true
+heading for general navigation. The IMU is the source for pitch and roll.</p>
+</li>
+<li>
+<p><strong>AHRS/AM</strong> - An even further degraded mode that can be either selected by the RIO or
+automatically entered when the CSDC detects a total INS failure. Heading in this mode is derived
+from magnetic heading plus entered or stored magnetic variation (MAG VAR). This heading, TAS from
+the CADC, and entered or stored wind are used for general navigation. The AHRS is the source of
+pitch and roll.</p>
+</li>
+</ol>
+<h2 id="navigation-computations"><a class="header" href="#navigation-computations">Navigation Computations</a></h2>
+<p>The CSDC and the WCS are aware of the selected navigation mode. The CSDC sends the WCS navigation
+data parameters (TAS from the CADC, latitude and longitude, inertial velocities, true heading, etc.)
+required to support general navigation calculations. The WCS uses stored and input navigation data
+(based on the current navigation mode) to perform the required navigational computations. The WCS
+also performs additional computations so that the crew is provided with:</p>
+<ul>
+<li>Current latitude and longitude</li>
+<li>Attitude</li>
+<li>Heading true and magnetic</li>
+<li>Own ground speed and ground track</li>
+<li>Ability to store and display three waypoints, a fixed point (FP), an initial point (IP), a surface
+target (ST), a home base (HB), a defended point, and a hostile area</li>
+<li>Range, bearing, command course, command heading, and time-to-go to a selected destination point</li>
+<li>Calculated wind speed and direction</li>
+<li>Calculated magnetic variation</li>
+<li>Continuous monitoring of the status of the unit, and in case of failure inform the crew with
+advisory lights and appropriate acronyms displayed on the TID</li>
+<li>Backup navigation modes in case of partial system failure</li>
+<li>Backup present position</li>
+</ul>
+<h2 id="displays"><a class="header" href="#displays">Displays</a></h2>
+<p>Navigation information is displayed on the TID, HSD, multiple display indicator (MDI), HUD, and VDI,
+depending on the mode selected by the pilot and RIO. If an IMU or navigation computer failure
+occurs, two backup modes are available: IMU airmass (IMU/AM) or AHRS airmass (AHRS/AM).</p>
+<h3 id="navigational-controls"><a class="header" href="#navigational-controls">Navigational Controls</a></h3>
+<p>To control the INS, use the navigation control and data readout panel and the computer address
+panel. See Tactical Information Display (TID) and Associated Controls and Associated Controls and
+Computer Address Panel (CAP) for a more detailed description.</p>
+<p>The desired operation mode, alignment mode, and destination point can be selected at the navigation
+control and data readout panel. The CAP allows entering navigation data and the selected information
+to be displayed on the TID. The CATEGORY switch on the lower end of the panel determines the
+function of the MESSAGE button. The categories used for navigation are NAV and TAC DATA. The STBY
+and READY advisory lights on the navigation control and data readout panel indicate the status of
+the alignment program and navigation system.</p>
+<p>Failure indicators for the main components of the navigation system are on the caution/advisory
+light panels in both cockpits, however, the NAV COMP and IMU indicators are only present on the RIO
+cockpit caution/advisory light panel.</p>
+<p>The pilot displays (HUD, VDI, and HSD) and the RIO multiple display indicator are controlled with
+either the pilot display control panel or the multiple display indicator control panel.</p>
+<blockquote>
+<p><strong>Note:</strong> For detailed information on CAP operation, refer to Computer Address Panel (CAP).</p>
+</blockquote>
+<h4 id="navigation-category"><a class="header" href="#navigation-category">Navigation Category</a></h4>
+<p>If the CATEGORY switch is in NAV, the following matrix appears in the MESSAGE windows:</p>
+<blockquote>
+<p>🚧 TODO: Fix</p>
+</blockquote>
+<p>OWN<br />
+A/C TACAN<br />
+FIX<br />
+STORED<br />
+HDG<br />
+ALIGN<br />
+RDR<br />
+FIX<br />
+VIS<br />
+FIX<br />
+WIND<br />
+SPD HDG<br />
+FIX<br />
+ENABLE<br />
+MAG<br />
+VAR<br />
+(HDG)</p>
+<p>Each window has a designated button. Pressing this button tells the WCS computer which function of
+the matrix to use. If OWN AC, WIND, or MAG VAR is pressed, data can be entered and displayed for
+each.</p>
+<p>Own-aircraft airspeed and magnetic heading are displayed on the TID. If own-aircraft data file is
+hooked using the TID cursor, heading will be magnetic. If OWN AC button was selected (hooked) via
+the CAP, own-aircraft true heading, speed (groundspeed), altitude, or course can be displayed on the
+TID by depressing the appropriate prefix button:</p>
+<ol>
+<li>LAT or LONG button will display own-aircraft latitude and longitude.</li>
+<li>SPD button displays ground speed and magnetic course.</li>
+<li>True airspeed and true heading are displayed when the HDG prefix button is depressed.</li>
+<li>Altitude is displayed on the left TID readout (right is blank) when the ALT button is used.</li>
+<li>When pressing the WIND button, the TID displays present wind speed (left readout) and magnetic
+direction (right readout).</li>
+<li>The MAG VAR button is used for displaying and entering magnetic variation (MAG VAR).</li>
+</ol>
+<p>In order to change own-aircraft lat, long, true heading, or altitude, press the according prefix
+button followed by the desired quantity. During entry, the data is displayed on the upper middle
+readout on the TID. At the same time, existing data is being displayed on the two lower readouts. If
+new data is correct, the RIO can press the ENTER button and the new values will appear on the
+readout.</p>
+<p>To change wind data entry, press the WIND button, then either the SPD or HDG prefix button and the
+appropriate numbers: knots (0 to 512) for speed or degrees (000 to 359) for magnetic direction. The
+multiple display indicator data readout of WIND direction is always displayed as true.</p>
+<blockquote>
+<blockquote>
+<p><strong>Note:</strong> In the INS mode, wind is calculated and updated continuously. The manual entry of wind
+is ignored by the wind calculations even though the system accepts the entry.</p>
+</blockquote>
+</blockquote>
+<p>Depressing the MAG VAR button displays alternating values of computed MAG VAR (vC) and manual MAG
+VAR (vM) on the left readout and displays magnetic heading (MH) on the right readout. The two values
+alternate every 2 seconds. On the CAP sign/direction buttons, plus (+) corresponds to east variation
+and minus (-) to west variation.</p>
+<p>For manual MAG VAR, press the MAG VAR button. Press HDG, E, or W, the angle in degrees and tenths,
+and ENTER. Tenths of a degree must be entered even if zero. The TID displays including the NAV GRID
+will shift appropriately. Computed MAG VAR is constantly calculated in the AWG-9 by comparing the
+IMU’s true heading with the magnetic heading from AHRS. This difference is saved as computed MAG
+VAR. The table below shows the MAG VAR source used by the computer for displays and CAP entries.</p>
+<p>Computed MAG VAR and manual MAG VAR are compared by the AWG-9 computer. If they differ by a certain
+value, the acronym MV will alternate with the IN or IM navigation mode acronym on the TID and HSD.
+The acronym is cleared when the difference falls below 5°.</p>
+<div class="table-wrapper"><table><thead><tr><th>Condition</th><th>MAG VAR source</th></tr></thead><tbody>
+<tr><td>COMP mode selected.</td><td>Manual MAG VAR (vM).</td></tr>
+<tr><td>RIO updating manual MAG VAR after AHRS selection.</td><td>Manual MAG VAR (vM).</td></tr>
+<tr><td>RIO updating manual MAG VAR after IMU or AHRS failure.</td><td>Manual MAG VAR (vM).</td></tr>
+<tr><td>All other situations.</td><td>Current or last computed MAG VAR (vC).</td></tr>
+</tbody></table>
+</div>
+<p>If the selection of AHRS/AM occurs and no update (or re-entering of the same value) occurs last vC
+will be used.</p>
+<blockquote>
+<p><strong>Note:</strong> When operating in SLAVED or COMP mode near a magnetic disturbance, such as aboard a
+carrier, the MV acronym should be expected to appear.</p>
+</blockquote>
+<p>The table below shows error source analysis and response to the MV acronym appearing in flight.</p>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Condition</th><th>Action</th><th>Result</th></tr></thead><tbody>
+<tr><td>1</td><td>MV alternates with selected nav mode on TID without a failure light present.</td><td>Re-enter new corrected MAG VAR.</td><td>MV acronym should disappear.</td></tr>
+<tr><td>2</td><td>MV remains after step 1 action.</td><td>Compare heading on VDIG with standby compass while in INS, IMU/AM, or slaved compass mode and level unaccelerated flight.</td><td>If headings correlate, the problem is likely in the IMU. Continue with step 3.</td></tr>
+<tr><td>3</td><td>Source of suspected vC error is the IMU.</td><td>Pilot switches to COMP mode on AHRS controller and again compares headings.</td><td>If the headings still correlate, the IMU heading is wrong.</td></tr>
+<tr><td>4</td><td>IMU heading is wrong.</td><td>RIO selects AHRS/AM and enters correct MAG VAR.</td><td>MV acronym should disappear.</td></tr>
+<tr><td>5</td><td>The VDIG does not agree with the standby compass in step 2.</td><td>Synchronize AHRS with depression of the HDG button. If not possible set AHRS to COMP mode.</td><td>If now in COMP mode all computer and displays will use IMU true heading with manual MAG VAR. The MV acronym might not disappear and the BDHI using the MAD might not be correct depending on the failure.</td></tr>
+</tbody></table>
+</div>
+<h4 id="tactical-data-category"><a class="header" href="#tactical-data-category">Tactical Data Category</a></h4>
+<p>If the CATEGORY switch is in TAC DATA, the following matrix appears in the MESSAGE windows:</p>
+<blockquote>
+<p>🚧 TODO: FIX</p>
+</blockquote>
+<p>WAY<br />
+PT<br />
+1<br />
+HOME<br />
+BASE<br />
+WAY<br />
+PT<br />
+2<br />
+DEF<br />
+PT<br />
+WAY<br />
+PT<br />
+3<br />
+HOST<br />
+AREA<br />
+FIX<br />
+PT<br />
+SURF<br />
+TGT<br />
+IP<br />
+PT<br />
+TO<br />
+PT</p>
+<p>The functions in this category have a TID symbol each, except the PT to PT FUNCTION. When pressing
+any one of these MESSAGE buttons, the TID symbol brightens and the activated MESSAGE push button
+illuminates, indicating a successful hook. The RIO can then use the functions for which hooking was
+required. Data regarding the hooked point can be displayed on the TID by pressing the according
+prefix button. Additionally, the latitude, longitude, and altitude of the hooked point can be
+entered by pressing either the LAT, LONG, or ALT button followed by the desired numbers. Like
+before, existing data is being displayed on the two lower readouts. If the new data is correct, the
+RIO can press the ENTER button and the new values will appear on the readout.</p>
+<h3 id="navigational-caution-lights"><a class="header" href="#navigational-caution-lights">Navigational Caution Lights</a></h3>
+<p>In addition to the NAV COMP, AHRS, and IMU lights mentioned above, the RIO caution/advisory panel
+contains two other advisory lights, C&amp;D HOT and AWG-9 COND, that are indirectly related to
+navigation system operation. Illumination of either or both of these lights could mean degraded
+navigation operation and would require further investigation of the WCS.</p>
+<h2 id="radar-altimeter-system-anapn-194"><a class="header" href="#radar-altimeter-system-anapn-194">Radar Altimeter System (AN/APN-194)</a></h2>
+<p>The radar altimeter is a low-altitude (0 to 5,000 feet), pulsed, range-tracking radar that measures
+the surface or terrain clearance below the aircraft. Altitude information is obtained by radiating a
+short-duration RF pulse from the transmit antenna to the Earth’s surface and measuring elapsed time
+until RF energy returns through the receiver antenna. The altitude is continuously presented to the
+pilot on an indicator dial in feet AGL. If either Landing or Take off mode is selected on the PDCP,
+radar altitude is displayed on the HUD from 0 to 1,400 feet.</p>
+<p>The radar altimeter can operate in two modes. In the search mode, the system successively examines
+increments of range until the complete altitude range is searched for a return signal. When a return
+signal is detected, the system switches to the track mode and tracks the return signal to provide
+continuous altitude information.</p>
+<p>If the radar altimeter drops out of the track mode, an OFF flag appears and the pointer is hidden by
+a mask. The altimeter will remain inoperative until a return signal is received, at which point the
+altimeter will display altitude above ground again. Reliable system operation in the altitude range
+of 0 to 5,000 feet permits close altitude control at minimum altitudes. The system will operate
+normally in bank angles up to 45° and in climbs or dives except when the reflected signal is too
+weak.</p>
+<p>The system includes a height indicator (altimeter), a test light on the indicator, a low-altitude
+warning tone, a radar receiver-transmitter under the forward cockpit, and two antennas (transmit and
+receive), one on each side of the IR fairing, in the aircraft skin. During descent, the warning tone
+is heard momentarily when the aircraft passes through the altitude set on the limit index. When the
+aircraft is below this altitude, the red low-altitude warning light on the indicator will stay on.</p>
+<blockquote>
+<p><strong>Note:</strong> If radar altitude is unreliable, only the OFF flag is present.</p>
+</blockquote>
+<p>The radar altimeter has a minimum warmup time of 3 minutes. During warmup, failure indications and
+erroneous readouts should be disregarded.</p>
+<h3 id="radar-altimeter"><a class="header" href="#radar-altimeter">Radar Altimeter</a></h3>
+<p>The only controls for the system are on the Radar Altimeter on the pilot instrument panel. The
+indicator displays radar altitude above the Earth’s surface on a single-turn dial that is calibrated
+from 0 to 5,000 feet in decreasing scale to provide greater definition at lower altitudes. The
+control knob in the lower left corner of the indicator is a combination power switch, self-test
+switch, and positioning control for the low-altitude limit bug.</p>
+<h3 id="altimeter-bit"><a class="header" href="#altimeter-bit">Altimeter BIT</a></h3>
+<p>To energize the self-test circuitry press and hold the control knob and the green test light will
+illuminate, the indicator will read 100 ±10 feet, and the HUD altitude scale should read
+approximately 100 feet. If the indicator passes below the altimeter limit bug setting, the aural and
+visual warnings are triggered. To resume normal operation simply release the control knob again.</p>
+<h3 id="low-altitude-audio-warning"><a class="header" href="#low-altitude-audio-warning">Low-Altitude Audio Warning</a></h3>
+<p>A low-altitude 1,000-Hz tone provides an aural warning, modulated at two pulses per second, lasting
+for 3 seconds. The tone is played to both crew members when the aircraft descends below the altitude
+set on the low-altitude limit bug.</p>
+<h2 id="navigation-system-integration"><a class="header" href="#navigation-system-integration">Navigation System Integration</a></h2>
+<h3 id="navigational-modes"><a class="header" href="#navigational-modes">Navigational Modes</a></h3>
+<p>Three navigational modes exist in the F-14:</p>
+<ol>
+<li>
+<p><strong>Inertial Navigation Mode (INS)</strong></p>
+<ul>
+<li>Achieved by the INS, employing the IMU (and PSU) and the CSDC.</li>
+<li>Provides the flight crew with own-aircraft position, velocity, attitude, and heading
+information.</li>
+</ul>
+</li>
+<li>
+<p><strong>Inertial Measurement Unit/Airmass Mode (IMU/AM)</strong></p>
+<ul>
+<li>Serves as a backup navigation mode.</li>
+<li>Entry into this mode permanently degrades INS platform heading alignment.</li>
+</ul>
+</li>
+<li>
+<p><strong>AHRS/Air Mass Mode (AHRS/AM)</strong></p>
+<ul>
+<li>Utilizes the AHRS attitude and heading information in place of the IMU.</li>
+<li>Serves as an additional backup mode if both INS and IMU/AM modes fail.</li>
+</ul>
+</li>
+</ol>
+<h3 id="inertial-navigation-mode"><a class="header" href="#inertial-navigation-mode">Inertial Navigation Mode</a></h3>
+<ul>
+<li>INS mode should be entered following an alignment.</li>
+<li>READY light illuminates in GND and CVA alignment positions and stays on after launch in CAT
+alignment, indicating completion of alignment.</li>
+<li>If the INS mode is selected, both the STBY and READY lights will go out. However, if the INS mode
+is selected before the caret turns into a diamond, both the STBY and READY lights will illuminate,
+and the system will revert to the IMU/AM backup mode.</li>
+</ul>
+<h4 id="outputs-provided-by-imu-and-csdc-in-ins-mode"><a class="header" href="#outputs-provided-by-imu-and-csdc-in-ins-mode">Outputs provided by IMU and CSDC in INS mode</a></h4>
+<ul>
+<li>
+<p>Aircraft latitude and longitude</p>
+</li>
+<li>
+<p>Aircraft magnetic or true heading (depending on CAP prefix button selected)</p>
+</li>
+<li>
+<p>System altitude (barometric damped inertial altitude)</p>
+</li>
+<li>
+<p>Platform wander angle</p>
+</li>
+<li>
+<p>Velocity components (x, y, z)</p>
+</li>
+<li>
+<p>Vertical acceleration</p>
+</li>
+<li>
+<p>Aircraft magnetic heading is derived from the AHRS. If the AHRS fails, magnetic heading is derived
+by subtracting the MAG VAR from the true heading.</p>
+</li>
+<li>
+<p>The TID can display latitude, longitude, ground speed, ground track, true airspeed, wind (speed
+and direction), MAG VAR, altitude, and aircraft true or magnetic heading.</p>
+</li>
+<li>
+<p>The WCS computer makes calculations in true north coordinates for steering and uses the magnetic
+heading input from the AHRS to update the value.</p>
+</li>
+<li>
+<p>Wind is computed from the difference between inertial velocities and air mass velocities.</p>
+</li>
+<li>
+<p>The WCS and CSDC also provide the steering and cueing functions required for display to the flight
+crew.</p>
+</li>
+<li>
+<p>Destination or navigation points include waypoints 1, 2, or 3, fixed point, home base, surface
+target, and initial point, which may be designated by the DEST switch on the TID.</p>
+</li>
+<li>
+<p>Navigational points (latitude and longitude) can also be inserted by the RIO using the CAP or by
+datalink message (when on the deck) using either cable or the RF link.</p>
+</li>
+<li>
+<p>The course to set (heading to a selected navigational point), range, bearing, and time-to-go to a
+point are based on great circle calculations.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> If INS fails, the RIO should verify MAG VAR calculated and WIND data and update via
+manual entries as required.</p>
+</blockquote>
+<h3 id="imuam-navigation-mode"><a class="header" href="#imuam-navigation-mode">IMU/AM Navigation Mode</a></h3>
+<ul>
+<li>If a failure of the navigation computer section of the CSDC or certain failures in the IMU are
+detected, the IMU/AM mode is entered automatically.</li>
+<li>Failures are indicated by the STBY and READY lights illuminating and the NAV COMP light
+illuminating on the RIO CAUTION/ADVISORY panel.</li>
+<li>The switch to IMU/AM is indicated by the IN acronym on the TID and HSD changing to IM. The RIO
+should select IMU/AM on the NAV MODE switch to extinguish the STBY and READY lights.</li>
+<li>The IMU/AM mode can be entered manually by selecting IMU/AM with the NAV MODE switch.</li>
+<li>If the switch is turned off before selecting IMU/AM mode, the computer cannot enter the IMU/AM
+mode for approximately 3 to 5 minutes. During this time, the aircraft must remain stationary on
+the ground or in level unaccelerated flight.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> If an alignment past coarse exists with no NAV COMP failure and the RIO switches to
+IMU/AM, the READY light will flash, indicating that if the switch is not returned to INS within 5
+seconds the INS mode cannot be re-entered without completing a new alignment.</p>
+</blockquote>
+<ul>
+<li>The WCS computer performs dead-reckoning navigation in the IMU/AM mode, using heading information
+from the IMU and true airspeed from the CADC.</li>
+<li>Wind can be applied by either using the wind last computed in the INS mode or wind data manually
+entered through the CAP.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> After entering the IMU/AM mode, check wind and MAG VAR values. If MV is in error, enter
+own-aircraft true heading. If winds are in error, update.</p>
+</blockquote>
+<h4 id="imu-reset-procedure"><a class="header" href="#imu-reset-procedure">IMU Reset Procedure</a></h4>
+<ol>
+<li>NAV MODE switch - OFF, for a few seconds.</li>
+<li>NAV MODE switch - IMU.</li>
+<li>Fly straight and level for 5 minutes.</li>
+<li>Verify IM acronym.</li>
+</ol>
+<h3 id="ahrsair-mass-mode"><a class="header" href="#ahrsair-mass-mode">AHRS/Air Mass Mode</a></h3>
+<ul>
+<li>The AHRS/AM mode is another backup mode for navigation. It uses the last known aircraft position,
+either from the last navigation computer value or by manual data entry from the RIO. It then
+extrapolates the present position of the aircraft.</li>
+<li>AHRS/AM mode is automatically selected if the IMU fails or by switching to AHRS/AM on the NAV MODE
+switch. An IMU failure is indicated by the STBY and READY status lights and the IMU advisory light
+illuminating. Additionally, the attitude status readout on the TID changes to AH.</li>
+</ul>
+<p><strong>WARNING:</strong> The navigation mode will not automatically switch to AHRS/AM upon an IMU failure when
+the navigation system is in IMU/AM mode with a failed IMU quantizer and NAV COMP advisory light
+illuminated. Because the VDIG/TID/DDD are displaying invalid IMU attitudes, the NAV MODE switch
+should be moved to AHRS/AM.</p>
+<blockquote>
+<p><strong>Note:</strong> Although the navigation mode automatically switches to AHRS when the IMU fails, the STBY
+and READY lights will remain on until the RIO selects AHRS/AM on the NAV MODE switch.</p>
+</blockquote>
+<ul>
+<li>When AHRS/AM is selected on the NAV MODE switch, the AHRS provides heading information required
+for DR navigation in place of the IMU platform and the CSDC provides barometric altitude, altitude
+rate, and true airspeed as in the IMU/AM mode.</li>
+<li>To update wind speed and direction and magnetic variation, use the CAP.</li>
+</ul>
+<p>The AHRS can be operated in any of three subheading modes selected on the compass controller panel:</p>
+<ul>
+<li>
+<p><strong>SLAVED</strong> - Magnetic north referenced (flux value), directional gyro is slaved to flux value,
+used where reliable magnetic heading reference is available.</p>
+</li>
+<li>
+<p><strong>DG</strong> - Free azimuth gyro, compensated for drift because of Earth’s (polar operations), used
+where magnetic reference is unreliable.</p>
+</li>
+<li>
+<p><strong>COMP</strong> - Magnetic north reference direct (flux value), no gyro damping. The HUD, VDI, HSD, and
+multiple display indicator use manual magnetic variation (vM) automatically in this mode.</p>
+</li>
+<li>
+<p>The RIO can switch from either INS mode to AHRS/AM mode or from IMU/AM mode to AHRS/AM mode for
+comparison, without fear of degradation, since the AHRS is a separate system.</p>
+</li>
+<li>
+<p>This cannot be done with the INS and IMU/AM modes since the IMU is used in both cases and it would
+result in permanent degradation to the IMU alignment.</p>
+</li>
+<li>
+<p>In the case of an IMU failure, the nav system will automatically operate in the AHRS/AM mode with
+the navigation and data readout panel in INS, as long as the WCS computer receives heading from
+the AHRS and airspeed from the CADC.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> If takeoff is performed in the AHRS/AM mode, MAG VAR and WIND must be manually inserted
+via CAP for proper navigation computations.</p>
+</blockquote>
+<ul>
+<li>When the platform is aligned and the AHRS/AM backup navigation mode is selected, the STBY light is
+off but the READY light is on, indicating that the inertial navigation mode can be selected if
+desired. The same functions and outputs for display are computed as in INS, however since
+different inputs are used for some calculations a degraded navigation performance is to be
+expected.</li>
+</ul>
+<h3 id="steering"><a class="header" href="#steering">Steering</a></h3>
+<p>There are two basic types of steering: navigation and attack. Attack steering modes will be covered
+in the Weapons and Weapons Employment overview.</p>
+<ul>
+<li>Navigation steering is computed on either a great circle course or rhumb line to a fixed point on
+the Earth’s surface or as a deviation from a selected course or heading.</li>
+<li>The point used for steering can be the RIO’s selected destination (three waypoints, fixed point,
+identification point, surface target, or home base), a TACAN station, ADF information, ACLS
+information, or a data link waypoint.</li>
+</ul>
+<h3 id="flight-modes-and-steering-submodes"><a class="header" href="#flight-modes-and-steering-submodes">Flight Modes and Steering Submodes</a></h3>
+<p>The pilot can choose between five VDIG display formats (HUD modes) on the pilot display control
+panel. These five flight modes are arranged as five vertical, mutually exclusive buttons:</p>
+<ul>
+<li>Take Off (T.O.)</li>
+<li>Cruise (CRUISE)</li>
+<li>Air to Air (A/A)</li>
+<li>Air to Ground (A/G)</li>
+<li>Landing (LDG)</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> ACM cover open selection overrides all modes, except the T.O. and LDG modes.</p>
+</blockquote>
+<ul>
+<li>Apart from the VDIG displays, the flight mode selections also control AFCS, armament, and WCS
+logic. In addition to the essential data such as altitude, vertical speed indicator etc. the VDIG
+format also provides steering cues.</li>
+</ul>
+<p>In each of the flight modes, the pilot can choose between the following five types of steering
+commands:</p>
+<ul>
+<li>
+<p>TACAN (TACAN)</p>
+</li>
+<li>
+<p>Destination (DEST)</p>
+</li>
+<li>
+<p>AWL/PCD</p>
+</li>
+<li>
+<p>Vector (VEC)</p>
+</li>
+<li>
+<p>Manual (MAN)</p>
+</li>
+<li>
+<p>The five selections are arranged horizontally along the bottom of the PDCP. These steering modes
+determine the display format on the pilot HSD and the RIO multiple display indicator.</p>
+</li>
+<li>
+<p>The HSD and multiple display indicator present, in a horizontal plane, steering to the selected
+point.</p>
+</li>
+<li>
+<p>The HSD follows the five submodes when the pilot places the HSD-MODE switch to NAV.</p>
+</li>
+<li>
+<p>The RIO can do the same by setting the MODE switch on his multiple display indicator control panel
+to NAV.</p>
+</li>
+<li>
+<p>Also, when LDG is selected, the pilot has the option of displaying ICLS or ACL information via
+switches on the PDCP that can be used to individually and independently select the HUD and VDI for
+display. A typical choice would be to select ICLS (SPN-41 /ARA-63) for the HUD and for D/L the
+VDI.</p>
+</li>
+</ul>
+<p>A/A (air-to-air) and A/G (air-to-ground) modes are further explained in the Weapons and Weapons
+Employment overview.</p>
+<blockquote>
+<p><strong>Note:</strong> The STEERING indicator drum on the navigation control and data readout panel provides a
+readout for the RIO to inform him of what steering submode the pilot bas chosen.</p>
+</blockquote>
+<h3 id="takeoff-steering"><a class="header" href="#takeoff-steering">Takeoff Steering</a></h3>
+<ul>
+<li>To enter the takeoff steering mode, press the T.O. button on the display control panel. The VDIG
+will display a vertical speed indicator on the left side and an altitude scale on the right side
+in the HUD.</li>
+<li>Before takeoff, the pilot should check the magnetic heading on top of the HUD and VDI against a
+known reference (i.e., runway heading and most importantly BRC on the carrier, due to the large
+magnetic distortion on the ship). The vertical speed indicator should be used to verify a positive
+climb after takeoff.</li>
+<li>After takeoff, the navigation system normally computes wind and magnetic variation, which are
+needed for steering. For backup modes, the WCS uses the last computed or RIO-entered wind speed,
+direction, and magnetic variation.</li>
+</ul>
+<h4 id="take-off-tacan-steering"><a class="header" href="#take-off-tacan-steering">Take-Off-TACAN Steering</a></h4>
+<ul>
+<li>The TACAN steering submode works the same, whether used for takeoff, cruise, or landing, by
+providing the pilot with a TACAN deviation.</li>
+<li>The pilot can set the course or TACAN radial with the CRS control on the HSD. The TACAN displays
+are available on the HUD, VDI, HSD, and multiple display indicator. The HSD and the CMD display
+TACAN range and the relative bearing to a selected TACAN station.</li>
+<li>To enter the submode, press the TACAN button on the PDCP. After selection of TACAN course, the HUD
+and VDI display the TACAN deviation symbol and a TO and FROM symbology.</li>
+<li>On the HSD and multiple display indicator, an arrow on the deviation bar pointing in the same
+direction as the TACAN course indicates a course toward the station, an arrow pointing in the
+opposite direction indicates a course away from the station. On the HUD, a dashed line indicates
+FROM, a solid line indicates TO. On the VDI, a dark bar indicates FROM, a bright bar indicates TO.</li>
+<li>On the HUD, the deviation symbol moves 3° (linear) in the field of view for a 6° deviation from
+the selected TACAN radial. These limits prevent the symbol from leaving the field of view or
+interfering with the scales on the left and right side. On the VDI, the deviation symbol is scaled
+to move 1.5 inches (linear) for a 6° deviation.</li>
+</ul>
+<h4 id="takeoff-manual-steering"><a class="header" href="#takeoff-manual-steering">Takeoff Manual Steering</a></h4>
+<ul>
+<li>The manual steering mode is similar to the basic takeoff mode.</li>
+<li>The mode is entered by pressing the MAN button and selecting a desired course with the CRS control
+on the HSD.</li>
+<li>The navigation system will then display a command heading on the VDI as a small diamond under the
+magnetic heading scale.</li>
+</ul>
+<h3 id="cruise-steering"><a class="header" href="#cruise-steering">Cruise Steering</a></h3>
+<ul>
+<li>To enter the cruise flight mode, press the CRUISE button on the PDCP.</li>
+<li>There are four steering submodes available during cruise operations: TACAN, destination, manual,
+and vector.</li>
+<li>While it is physically possible to press the AWL/PCD steering button on the display control panel,
+the action is without function in cruise mode.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Should the AWL/PCD submode be selected while in CRUISE, it will inhibit the display of
+other steering cues.</p>
+</blockquote>
+<h4 id="cruise-tacan-steering"><a class="header" href="#cruise-tacan-steering">Cruise TACAN Steering</a></h4>
+<ul>
+<li>This submode works in the same way as take off TACAN steering and provides the same readouts and
+displays to the flight crew as described under take off TACAN steering.</li>
+</ul>
+<h4 id="cruise-destination-steering"><a class="header" href="#cruise-destination-steering">Cruise Destination Steering</a></h4>
+<ul>
+<li>To enter the cruise destination steering mode, press the DEST button on the PDCP.</li>
+<li>This will provide steering as a command heading symbol on the VDI and HSD to a waypoint selected
+by the RIO on the navigation control and data readout panel.</li>
+<li>The RIO can change latitude/longitude of the destination by hooking the point on the TID and
+inserting new data.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Destination steering to the defended point is provided by the RIO selecting MAN with the
+TID DEST switch. This option is not available in TARPS.</p>
+</blockquote>
+<ul>
+<li>In the destination steering submode, the destination selected by the RIO and the NAV MODE in use
+will be alternately displayed on the bottom center of the HSD.</li>
+</ul>
+<p><img src="images/cruiseman.png" alt="cruiseman" /><em>ECMD showing the navigational display for Cruise with Manual
+steering selected.</em></p>
+<p><img src="images/cruisetac.png" alt="cruisetac" /><em>VDI and HSD showing navigational displays for Cruise with TACAN
+steering selected.</em></p>
+<p><img src="images/cruisedest.png" alt="cruisedest" /><em>HSD showing navigational display for Cruise with Waypoint 1 set
+as Destination.</em></p>
+<h3 id="landing-steering-modes"><a class="header" href="#landing-steering-modes">Landing Steering Modes</a></h3>
+<ul>
+<li>To enter the landing steering mode, press the LDG button on the PDCP.</li>
+<li>Usually, the LDG mode is engaged at any point from marshal point on. In the case of a go-around,
+waveoff, or bolter, the pilot can press the T.O. button on the PDCP to engage the take-off
+steering mode.</li>
+<li>The landing mode symbology is in general the same as the takeoff mode symbology. Exceptions are
+the addition of angle-of-attack error symbol on the HUD (the E-bracket, referenced towards the
+displayed aircraft wings and not the velocity vector) and the velocity vector symbol, as well as
+5° pitch increments on the VDI.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> In all landing submodes, a VDIG breakaway symbol can be displayed upon receipt of a D/L
+waveoff message.</p>
+</blockquote>
+<ul>
+<li>There are three steering submodes available during landing: TACAN, VEC, and AWL/PCD.</li>
+<li>For the TACAN or VEC submodes of LDG, the HUD, VDI, and HSD displays are similar to the same
+submodes in CRUISE except that in LDG the HUD display includes the velocity vector symbol, the
+radar altitude symbol, and the vertical speed indicator symbol.</li>
+</ul>
+<h4 id="awl-steering"><a class="header" href="#awl-steering">AWL Steering</a></h4>
+<p>If ICLS information from the ARA-63 is available at the marshalling area, the pilot can select the
+AWL/PCD sub mode. To observe glideslope displays, the HUD and VDI AWL switches on the pilot display
+and control panel should be placed in the ILS position.</p>
+<p>The HUD and VDIG will then provide vertical and lateral precision course vector symbols, forming
+crossed pointers that are driven by the ICLS. On the HUD, full-scale vector deflection is limited to
+2°. Full-scale vector deflection on the VDI is 1.5°. In the AWL/PCD submode of LDG, the HSD will
+additionally display TACAN information if the HSD is set to NAV mode on the PDCP.</p>
+<p>At the acquisition window, the pilot can either continue with the ILS display, or, if ACL
+information from the SPN-42 data link is available, he can select ACL of the AWL switches for either
+the VDI or HUD displays or both. The ACL display uses the same vertical and lateral precision course
+vector symbols as the ICLS, but these are now driven by the SPN-42 data link. A typical display
+combination during the final stages of landing is ILS on the HUD and ACL on the VDI. With valid ACL
+data available, the AFCS may be engaged by selecting ACL on the VEC/PCD, OFF, and ACL switch located
+on the AFCS control panel.</p>
+<p><img src="images/landingtac.png" alt="landingtac" /><em>HUD showing Landing mode display with TACAN set as destination
+source.</em></p>
+<p><img src="images/landingaclhud.png" alt="landingaclhud" /><em>HUD showing Landing mode with AWL/PCD set as Destination
+source, ACL set as source of glideslope and localiser.</em></p>
+<p><img src="images/landingaclvdi.png" alt="landingaclvdi" /><em>VDI showing Landing mode with AWL/PCD set as Destination
+source, ILS (ICLS) set as source of glideslope and localiser.</em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../systems/nav_com/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../systems/nav_com/ins.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../systems/nav_com/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../systems/nav_com/overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../systems/nav_com/ins.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../systems/nav_com/ins.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Flight Controls &amp; AFCS - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/visual.css">
+        <link rel="stylesheet" href="../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../theme/pdf.css">
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <div class="menu-logo"><img src="/img/f14line.svg"></div>
+
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../f14_manual.html">F-14 Manual</a></li><li class="chapter-item "><a href="../../intro/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item "><a href="../../cockpit/overview.html"><strong aria-hidden="true">2.</strong> Cockpit Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/pilot/overview.html"><strong aria-hidden="true">2.1.</strong> Pilot Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/pilot/left_console.html"><strong aria-hidden="true">2.1.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_vertical_console.html"><strong aria-hidden="true">2.1.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_knee_panel.html"><strong aria-hidden="true">2.1.3.</strong> Left Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_instrument_panel.html"><strong aria-hidden="true">2.1.4.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_windshield_frame.html"><strong aria-hidden="true">2.1.5.</strong> Left Windshield Frame</a></li><li class="chapter-item "><a href="../../cockpit/pilot/center_panel.html"><strong aria-hidden="true">2.1.6.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_windshield_frame.html"><strong aria-hidden="true">2.1.7.</strong> Right Windshield Frame</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_instrument_panel.html"><strong aria-hidden="true">2.1.8.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_knee_panel.html"><strong aria-hidden="true">2.1.9.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_vertical_console.html"><strong aria-hidden="true">2.1.10.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_console.html"><strong aria-hidden="true">2.1.11.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/canopy_control_handle.html"><strong aria-hidden="true">2.1.12.</strong> Canopy Control Handle</a></li></ol></li><li class="chapter-item "><a href="../../cockpit/rio/overview.html"><strong aria-hidden="true">2.2.</strong> RIO Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/rio/left_console.html"><strong aria-hidden="true">2.2.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/left_vertical_console.html"><strong aria-hidden="true">2.2.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/left_instrument_console.html"><strong aria-hidden="true">2.2.3.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/center_panel.html"><strong aria-hidden="true">2.2.4.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/center_console.html"><strong aria-hidden="true">2.2.5.</strong> Center Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/footwells.html"><strong aria-hidden="true">2.2.6.</strong> Left and Right Footwells</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_instrument_console.html"><strong aria-hidden="true">2.2.7.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_knee_panel.html"><strong aria-hidden="true">2.2.8.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_vertical_console.html"><strong aria-hidden="true">2.2.9.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_console.html"><strong aria-hidden="true">2.2.10.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/canopy_control_handle.html"><strong aria-hidden="true">2.2.11.</strong> Canopy Control Handle</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../systems/overview.html"><strong aria-hidden="true">3.</strong> Systems Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../systems/flight_controls_gear/overview.html"><strong aria-hidden="true">3.1.</strong> Flight Controls and Gear</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/flight_controls_gear/cadc.html"><strong aria-hidden="true">3.1.1.</strong> Central Air Data Computer (CADC)</a></li><li class="chapter-item expanded "><a href="../../systems/flight_controls_gear/flight_controls.html" class="active"><strong aria-hidden="true">3.1.2.</strong> Flight Controls & AFCS</a></li><li class="chapter-item "><a href="../../systems/flight_controls_gear/wing_sweep.html"><strong aria-hidden="true">3.1.3.</strong> Wing-Sweep System</a></li><li class="chapter-item "><a href="../../systems/flight_controls_gear/gear_ground_handling.html"><strong aria-hidden="true">3.1.4.</strong> Gear & Ground Handling</a></li></ol></li><li class="chapter-item "><a href="../../systems/engines_and_fuel_systems/overview.html"><strong aria-hidden="true">3.2.</strong> Engines & Fuel Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/engines_and_fuel_systems/engines.html"><strong aria-hidden="true">3.2.1.</strong> Engines</a></li><li class="chapter-item "><a href="../../systems/engines_and_fuel_systems/fuel_system.html"><strong aria-hidden="true">3.2.2.</strong> Fuel System</a></li></ol></li><li class="chapter-item "><a href="../../systems/nav_com/overview.html"><strong aria-hidden="true">3.3.</strong> Navigation & Communication</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/nav_com/nav_sys.html"><strong aria-hidden="true">3.3.1.</strong> Navigation System</a></li><li class="chapter-item "><a href="../../systems/nav_com/ins.html"><strong aria-hidden="true">3.3.2.</strong> INS</a></li><li class="chapter-item "><a href="../../systems/nav_com/ahrs.html"><strong aria-hidden="true">3.3.3.</strong> Attitude and Heading Reference Set (AHRS)</a></li><li class="chapter-item "><a href="../../systems/nav_com/tacan.html"><strong aria-hidden="true">3.3.4.</strong> TACAN</a></li><li class="chapter-item "><a href="../../systems/nav_com/bdhi.html"><strong aria-hidden="true">3.3.5.</strong> BDHI</a></li><li class="chapter-item "><a href="../../systems/nav_com/icls.html"><strong aria-hidden="true">3.3.6.</strong> ICLS</a></li><li class="chapter-item "><a href="../../systems/nav_com/intercom.html"><strong aria-hidden="true">3.3.7.</strong> ICS - Intercom</a></li><li class="chapter-item "><a href="../../systems/nav_com/com/overview.html"><strong aria-hidden="true">3.3.8.</strong> Communication Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/nav_com/com/encryption.html"><strong aria-hidden="true">3.3.8.1.</strong> KY-28 Encryption</a></li><li class="chapter-item "><a href="../../systems/nav_com/com/uhf.html"><strong aria-hidden="true">3.3.8.2.</strong> AN/ARC-159 (UHF 1) Radio</a></li><li class="chapter-item "><a href="../../systems/nav_com/com/vuhf.html"><strong aria-hidden="true">3.3.8.3.</strong> AN/ARC-182 (V/UHF 2) Radio</a></li></ol></li><li class="chapter-item "><a href="../../systems/nav_com/link4.html"><strong aria-hidden="true">3.3.9.</strong> Link 4A & C Datalink</a></li></ol></li><li class="chapter-item "><a href="../../systems/identification_systems.html"><strong aria-hidden="true">3.4.</strong> Identification Systems</a></li><li class="chapter-item "><a href="../../systems/hydraulics.html"><strong aria-hidden="true">3.5.</strong> Hydraulics</a></li><li class="chapter-item "><a href="../../systems/enviornmental_control_system.html"><strong aria-hidden="true">3.6.</strong> Environmental Control System</a></li><li class="chapter-item "><a href="../../systems/utility.html"><strong aria-hidden="true">3.7.</strong> Utility</a></li><li class="chapter-item "><a href="../../systems/electrics.html"><strong aria-hidden="true">3.8.</strong> Electrics</a></li><li class="chapter-item "><a href="../../systems/lighting.html"><strong aria-hidden="true">3.9.</strong> Lighting</a></li><li class="chapter-item "><a href="../../systems/radar/overview.html"><strong aria-hidden="true">3.10.</strong> AN/AWG-9 Weapon Control System (WCS)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/radar/interface.html"><strong aria-hidden="true">3.10.1.</strong> Interface</a></li><li class="chapter-item "><a href="../../systems/radar/general_operation.html"><strong aria-hidden="true">3.10.2.</strong> AN/AWG-9 General Operation</a></li></ol></li><li class="chapter-item "><a href="../../systems/tcs.html"><strong aria-hidden="true">3.11.</strong> AN/AXX-1 TCS</a></li><li class="chapter-item "><a href="../../systems/weapon_systems/overview.html"><strong aria-hidden="true">3.12.</strong> Weapon Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/weapon_systems/lantirn/overview.html"><strong aria-hidden="true">3.12.1.</strong> LANTIRN</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/weapon_systems/lantirn/modes.html"><strong aria-hidden="true">3.12.1.1.</strong> Modes</a></li><li class="chapter-item "><a href="../../systems/weapon_systems/lantirn/other.html"><strong aria-hidden="true">3.12.1.2.</strong> Other</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../systems/defensive_systems/overview.html"><strong aria-hidden="true">3.13.</strong> Defensive Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/defensive_systems/countermeasures/overview.html"><strong aria-hidden="true">3.13.1.</strong> Countermeasures</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/defensive_systems/countermeasures/ale_39.html"><strong aria-hidden="true">3.13.1.1.</strong> ALE-39</a></li><li class="chapter-item "><a href="../../systems/defensive_systems/countermeasures/lau_138.html"><strong aria-hidden="true">3.13.1.2.</strong> LAU-138</a></li></ol></li><li class="chapter-item "><a href="../../systems/defensive_systems/radar_warning_receiver.html"><strong aria-hidden="true">3.13.2.</strong> Radar Warning Receiver</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/defensive_systems/alr_67.html"><strong aria-hidden="true">3.13.2.1.</strong> ALR-67</a></li><li class="chapter-item "><a href="../../systems/defensive_systems/alr_45-50.html"><strong aria-hidden="true">3.13.2.2.</strong> ALR-45/50</a></li></ol></li><li class="chapter-item "><a href="../../systems/defensive_systems/ecm.html"><strong aria-hidden="true">3.13.3.</strong> Electronic Countermeasures</a></li></ol></li><li class="chapter-item "><a href="../../systems/emergency.html"><strong aria-hidden="true">3.14.</strong> Emergency</a></li></ol></li><li class="chapter-item "><a href="../../stores/overview.html"><strong aria-hidden="true">4.</strong> Weapons & Stores</a></li><li class="chapter-item "><a href="../../procedures/overview.html"><strong aria-hidden="true">5.</strong> Normal Procedures</a></li><li class="chapter-item "><a href="../../emergency_procedures/overwiew.html"><strong aria-hidden="true">6.</strong> Emergency Procedures</a></li><li class="chapter-item "><a href="../../dcs/overview.html"><strong aria-hidden="true">7.</strong> DCS</a></li><li class="chapter-item "><a href="../../abbreviations.html"><strong aria-hidden="true">8.</strong> Abbreviations</a></li><li class="chapter-item "><a href="../../tutorials.html"><strong aria-hidden="true">9.</strong> Tutorials</a></li><li class="chapter-item "><a href="../../imprint.html"><strong aria-hidden="true">10.</strong> Imprint</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/systems/flight_controls_gear/flight_controls.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="flight-controls--afcs"><a class="header" href="#flight-controls--afcs">Flight Controls &amp; AFCS</a></h1>
+<blockquote>
+<p>🚧 TODO: Rework to add more imagery. Also fix the notes to use the new F-4 system.</p>
+</blockquote>
+<p>The flight control system on the F-14 Tomcat is driven by the two main hydraulic circuits, powered
+by pumps connected to each engine.</p>
+<p>For longitudinal (pitch) control both tail stabilizers are deflected in unison, acting in the same
+way as traditional elevators.</p>
+<p>Lateral (roll) control is produced by both the tail stabilizers and the spoilers working in unison.
+To produce roll the stabilizers are deflected opposite each other to act as ailerons in combination
+with the spoilers on the side to which roll is commanded.</p>
+<p>The rudders on the F-14 is a standard rudder configuration albeit in a two tail, two rudder
+configuration.</p>
+<p>Control surface position is indicated on the Control Surface Position Indicator and can also be used
+to check trim position with controls at neutral.</p>
+<blockquote>
+<p><strong>Note:</strong> Above 15 units AOA, the rudders should be used for lateral (roll) control due to the
+different airflow along the aircraft control surfaces.</p>
+</blockquote>
+<h2 id="trim"><a class="header" href="#trim">Trim</a></h2>
+<p>Longitudinal and lateral trim is accomplished via the trim hat on the Control Stick. This changes
+the stick neutral position, thus trimming the aircraft. Rudder trim is accomplished via the RUDDER
+TRIM switch on the Inlet Ramps/Throttle Control Panel, changing the neutral rudder position.</p>
+<p>The Mach Trim and ITS (Integrated Trim System) automatically trims to compensate for changes in
+longitudinal trim. The Mach Trim system compensates for transonic and supersonic trim changes and
+the ITS for trim changes due to flap and speedbrake position changes.</p>
+<h2 id="afcs-automatic-flight-control-system"><a class="header" href="#afcs-automatic-flight-control-system">AFCS Automatic Flight Control System</a></h2>
+<p>The AFCS or Automatic Flight Control System provides additional aircraft stability (SAS or Stability
+Augmentation System) via automatic control surface commands generated from AFCS sensors. The AFCS is
+controlled by switches on the AFCS Control Panel and pitch, roll and yaw can each be set
+individually.</p>
+<p>The pitch and roll switches are springloaded to off but normally held to on by solenoids meaning
+that if the system is turned off or inoperable the switches return to off. The yaw switch is purely
+mechanical.</p>
+<p>Roll SAS should not be used for situations involving flight at AOA above 15 units and should
+therefore be set to off for combat maneuvers.</p>
+<p>If the autopilot emergency disengage paddle on the control stick is held down the pitch and roll
+channels will be set to off.</p>
+<h2 id="autopilot"><a class="header" href="#autopilot">Autopilot</a></h2>
+<p>Apart from stability augmentation the AFCS is also used to provide autopilot functionality. To use
+the autopilot all three stabilisation channels must be enabled.</p>
+<p>The controls for the autopilot system are situated on the AFCS Control Panel.</p>
+<p>Autopilot modes available are attitude hold, heading hold, ground track, altitude hold, vector/pcd
+(precision course direction) and acl (automatic carrier landing).</p>
+<p>By setting the autopilot ENGAGE switch to on the attitude hold is engaged, maintaining current
+aircraft attitude. Limited to within 30° pitch and 60° roll angles and the aircraft will be
+automatically moved within this range. Current attitude can be changed with the control stick and
+will be held when the stick is released.</p>
+<p>The ENGAGE switch is also a prerequisite for all other autopilot modes.</p>
+<p>The HDG position on the HDG switch enables heading hold, maneuver the aircraft to desired heading
+and with a bank angle of less than 5° to set heading.</p>
+<p>The ground track mode is entered by setting the HDG switch to GT, wait for the A/P REF warning light
+on the left side of the Vertical Display Indicator (VDI) to illuminate and then press the nosewheel
+steering button on the control stick. The A/P REF warning light will then turn off and the ground
+track mode will be enabled, setting the autopilot to follow a ground track by compensating for
+aircraft wind drift.</p>
+<p>The altitude hold mode is set via the ALT, altitude, switch and like the ground track mode the A/P
+REF warning light will illuminate until the nosewheel steering button is depressed, enabling the
+mode.</p>
+<p>The Data Link Vector - Precision Course Direction mode is used to allow a Link 4 controller to
+remotely control the aircraft. This is not modelled in DCS.</p>
+<p>Finally the ACL or Automatic Carrier Landing mode is used to conduct automatic carrier landings in
+conjunction with the Link 4 data link and the on-board radar beacon. To enable the ACL, set the
+VEC/PCD switch to ACL which will cause the A/P REF warning light to illuminate. When intercepting
+the ACL glideslope and with the ACL READY and A/P CPLR warning lights illuminated on the VDI,
+depress the nosewheel steering button on the control stick. This engages the ACL and lets the data
+link control the aircraft. The A/P REF warning light will turn off.</p>
+<p>The ACL can be used in conjunction with the APC (see Throttle Controls) for a fully automatic
+landing. The ACL can be disengaged via the PLM button on the right throttle and the APC via the
+CAGE/SEAM button on the left throttle.</p>
+<p>All the autopilot modes can be overriden by enough force on the control stick or by depression of
+the autopilot emergency disengagement paddle, automatically resetting all autopilot switches to off.</p>
+<h2 id="spoilers"><a class="header" href="#spoilers">Spoilers</a></h2>
+<p>The spoilers located on the upper surfaces of the wings are used to control roll as detailed above
+under Flight Control System, for braking on the ground as part of the Antiskid system and as a part
+of the DLC system (see next header).</p>
+<p>The spoilers are only used forwards of 62° wing-sweep as further aft these conflict with the
+fuselage.</p>
+<p>In case of a spoiler malfunction the spoiler symmetry protection logic disables all of the spoilers
+in the same section as the failed spoiler, either inboard or outboard spoilers. If this occurs the
+SPOILERS caution light on the Caution - Advisory Indicator illuminates.</p>
+<p>To override this the switch corresponding to the relevant section on the Spoiler Failure Override
+can be set to override by lifting the guard and setting the switch to ORIDE and then depressing the
+MASTER RESET button on the Fuel Management Panel.</p>
+<p>Spoiler position can be seen on the Control Surface Position Indicator.</p>
+<h2 id="dlc-direct-lift-control"><a class="header" href="#dlc-direct-lift-control">DLC Direct Lift Control</a></h2>
+<p>The DLC or Direct Lift Control is used to control vertical glideslope position without pitch control
+inputs or engine throttle commands. The DLC uses the two inboard spoiler sections in conjunction
+with small corrections on the tail stabilizers to control lift.</p>
+<p>The DLC is engaged by depression of the DLC switch on the control stick with flaps down and
+throttles less than MIL. This causes the inboard spoilers to extend to half and enables the DLC &amp;
+maneuver flap command thumbwheel on the control stick to control them. The DLC also requires the
+AFCS roll and pitch channels, the inboard spoilers and the hydraulic systems to be operative as
+well.</p>
+<p>Rotation of the thumbwheel forwards extends the spoilers towards the max up position, decreasing
+lift and adjusting glideslope position downward. Rotation of the thumbwheel aft retracts the
+spoilers towards the flush position, increasing lift and adjusting glideslope position upward.</p>
+<p>Another depression of the DLC switch disengages the system.</p>
+<h2 id="flaps-and-slats"><a class="header" href="#flaps-and-slats">Flaps and Slats</a></h2>
+<p>The flaps and slats on the F-14 Tomcat can be used in two modes.</p>
+<p>The normal flap and slat extension is controlled using the FLAP handle on the Throttle Quadrant. The
+flaps can be set to anywhere between retracted and fully extended where the flaps will extend to 35°
+and the slats to 17°. The auxiliary flaps, the innermost section, only have two positions, retracted
+and extended. They will extend fully when the FLAP handle is at more than 5° extension.</p>
+<p>If a fault exists preventing retraction of flaps the FLAP handle should be moved to the UP position
+and then moved outboard and up to the EMER UP position, overriding faulty interlocks.</p>
+<p>The other mode is the maneuver flap system in which the CADC uses the flaps and slats automatically
+to improve aircraft performance. In this mode the flaps extends to 10° maximum and the slats to 7°
+maximum and the innermost flap section is disabled.</p>
+<p>While normally automatic the maneuver flap system can be manually controlled using the DLC &amp;
+maneuver flap command thumbwheel on the control stick. Forward thumbwheel rotation retracts the
+flaps and slats and aft thumbwheel rotation extends them.</p>
+<p>When sweeping the wings the flaps are limited by the wing-sweep position. Aft of 21° sweep the
+auxiliary (inboard flaps) are disabled up. Aft of 50° all flaps are disabled up. The slats are not
+inhibited by wing-sweep.</p>
+<p>Position of the flaps and slats are indicated on the Wheels-Flaps Position Indicator.</p>
+<p>The FLAP light on the pilot Caution - Advisory Indicator indicates a malfunction in the flap system
+with flaps at non symmetrical positions. The REDUCE SPEED warning light on the left side of the
+Vertical Display Indicator (VDI) indicates flaps not retracted above 225 knots indicated airspeed.</p>
+<h2 id="speedbrakes"><a class="header" href="#speedbrakes">Speedbrakes</a></h2>
+<p>The speedbrakes on the F-14 Tomcat consists of three sections on the tail located between the
+engines and these are powered by the combined hydrualic system.</p>
+<p>The speedbrake controls are located on the right Throttle and can be set to desired position
+depending on how long the switch is held to the extend position. Retraction always fully retracts
+the speedbrakes.</p>
+<p>To protect the speedbrakes they will start retracting above 400 knots and will continue to do so
+with increasing airspeed, additionally selection of MIL power or above automatically retracts them.</p>
+<p>As the speedbrakes disturb airflow around the tail the fuel dump is disabled with speedbrake
+extension as to not have the fuel hit the aircraft.</p>
+<p>Position of the speedbrakes can be seen on the Wheels-Flaps Position Indicator.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../systems/flight_controls_gear/cadc.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../systems/flight_controls_gear/wing_sweep.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../systems/flight_controls_gear/cadc.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../systems/flight_controls_gear/cadc.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../systems/flight_controls_gear/wing_sweep.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../systems/flight_controls_gear/wing_sweep.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>

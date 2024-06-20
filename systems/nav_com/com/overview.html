@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Communication Systems - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../theme/visual.css">
+        <link rel="stylesheet" href="../../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../../theme/pdf.css">
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <div class="menu-logo"><img src="/img/f14line.svg"></div>
+
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../../f14_manual.html">F-14 Manual</a></li><li class="chapter-item "><a href="../../../intro/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item "><a href="../../../cockpit/overview.html"><strong aria-hidden="true">2.</strong> Cockpit Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../cockpit/pilot/overview.html"><strong aria-hidden="true">2.1.</strong> Pilot Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../cockpit/pilot/left_console.html"><strong aria-hidden="true">2.1.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/left_vertical_console.html"><strong aria-hidden="true">2.1.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/left_knee_panel.html"><strong aria-hidden="true">2.1.3.</strong> Left Knee Panel</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/left_instrument_panel.html"><strong aria-hidden="true">2.1.4.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/left_windshield_frame.html"><strong aria-hidden="true">2.1.5.</strong> Left Windshield Frame</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/center_panel.html"><strong aria-hidden="true">2.1.6.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/right_windshield_frame.html"><strong aria-hidden="true">2.1.7.</strong> Right Windshield Frame</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/right_instrument_panel.html"><strong aria-hidden="true">2.1.8.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/right_knee_panel.html"><strong aria-hidden="true">2.1.9.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/right_vertical_console.html"><strong aria-hidden="true">2.1.10.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/right_console.html"><strong aria-hidden="true">2.1.11.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/canopy_control_handle.html"><strong aria-hidden="true">2.1.12.</strong> Canopy Control Handle</a></li></ol></li><li class="chapter-item "><a href="../../../cockpit/rio/overview.html"><strong aria-hidden="true">2.2.</strong> RIO Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../cockpit/rio/left_console.html"><strong aria-hidden="true">2.2.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../../cockpit/rio/left_vertical_console.html"><strong aria-hidden="true">2.2.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../../cockpit/rio/left_instrument_console.html"><strong aria-hidden="true">2.2.3.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../../cockpit/rio/center_panel.html"><strong aria-hidden="true">2.2.4.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../../cockpit/rio/center_console.html"><strong aria-hidden="true">2.2.5.</strong> Center Console</a></li><li class="chapter-item "><a href="../../../cockpit/rio/footwells.html"><strong aria-hidden="true">2.2.6.</strong> Left and Right Footwells</a></li><li class="chapter-item "><a href="../../../cockpit/rio/right_instrument_console.html"><strong aria-hidden="true">2.2.7.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../../cockpit/rio/right_knee_panel.html"><strong aria-hidden="true">2.2.8.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../../cockpit/rio/right_vertical_console.html"><strong aria-hidden="true">2.2.9.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../../cockpit/rio/right_console.html"><strong aria-hidden="true">2.2.10.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../../cockpit/rio/canopy_control_handle.html"><strong aria-hidden="true">2.2.11.</strong> Canopy Control Handle</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../systems/overview.html"><strong aria-hidden="true">3.</strong> Systems Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/flight_controls_gear/overview.html"><strong aria-hidden="true">3.1.</strong> Flight Controls and Gear</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/flight_controls_gear/cadc.html"><strong aria-hidden="true">3.1.1.</strong> Central Air Data Computer (CADC)</a></li><li class="chapter-item "><a href="../../../systems/flight_controls_gear/flight_controls.html"><strong aria-hidden="true">3.1.2.</strong> Flight Controls & AFCS</a></li><li class="chapter-item "><a href="../../../systems/flight_controls_gear/wing_sweep.html"><strong aria-hidden="true">3.1.3.</strong> Wing-Sweep System</a></li><li class="chapter-item "><a href="../../../systems/flight_controls_gear/gear_ground_handling.html"><strong aria-hidden="true">3.1.4.</strong> Gear & Ground Handling</a></li></ol></li><li class="chapter-item "><a href="../../../systems/engines_and_fuel_systems/overview.html"><strong aria-hidden="true">3.2.</strong> Engines & Fuel Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/engines_and_fuel_systems/engines.html"><strong aria-hidden="true">3.2.1.</strong> Engines</a></li><li class="chapter-item "><a href="../../../systems/engines_and_fuel_systems/fuel_system.html"><strong aria-hidden="true">3.2.2.</strong> Fuel System</a></li></ol></li><li class="chapter-item expanded "><a href="../../../systems/nav_com/overview.html"><strong aria-hidden="true">3.3.</strong> Navigation & Communication</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/nav_com/nav_sys.html"><strong aria-hidden="true">3.3.1.</strong> Navigation System</a></li><li class="chapter-item "><a href="../../../systems/nav_com/ins.html"><strong aria-hidden="true">3.3.2.</strong> INS</a></li><li class="chapter-item "><a href="../../../systems/nav_com/ahrs.html"><strong aria-hidden="true">3.3.3.</strong> Attitude and Heading Reference Set (AHRS)</a></li><li class="chapter-item "><a href="../../../systems/nav_com/tacan.html"><strong aria-hidden="true">3.3.4.</strong> TACAN</a></li><li class="chapter-item "><a href="../../../systems/nav_com/bdhi.html"><strong aria-hidden="true">3.3.5.</strong> BDHI</a></li><li class="chapter-item "><a href="../../../systems/nav_com/icls.html"><strong aria-hidden="true">3.3.6.</strong> ICLS</a></li><li class="chapter-item "><a href="../../../systems/nav_com/intercom.html"><strong aria-hidden="true">3.3.7.</strong> ICS - Intercom</a></li><li class="chapter-item expanded "><a href="../../../systems/nav_com/com/overview.html" class="active"><strong aria-hidden="true">3.3.8.</strong> Communication Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/nav_com/com/encryption.html"><strong aria-hidden="true">3.3.8.1.</strong> KY-28 Encryption</a></li><li class="chapter-item "><a href="../../../systems/nav_com/com/uhf.html"><strong aria-hidden="true">3.3.8.2.</strong> AN/ARC-159 (UHF 1) Radio</a></li><li class="chapter-item "><a href="../../../systems/nav_com/com/vuhf.html"><strong aria-hidden="true">3.3.8.3.</strong> AN/ARC-182 (V/UHF 2) Radio</a></li></ol></li><li class="chapter-item "><a href="../../../systems/nav_com/link4.html"><strong aria-hidden="true">3.3.9.</strong> Link 4A & C Datalink</a></li></ol></li><li class="chapter-item "><a href="../../../systems/identification_systems.html"><strong aria-hidden="true">3.4.</strong> Identification Systems</a></li><li class="chapter-item "><a href="../../../systems/hydraulics.html"><strong aria-hidden="true">3.5.</strong> Hydraulics</a></li><li class="chapter-item "><a href="../../../systems/enviornmental_control_system.html"><strong aria-hidden="true">3.6.</strong> Environmental Control System</a></li><li class="chapter-item "><a href="../../../systems/utility.html"><strong aria-hidden="true">3.7.</strong> Utility</a></li><li class="chapter-item "><a href="../../../systems/electrics.html"><strong aria-hidden="true">3.8.</strong> Electrics</a></li><li class="chapter-item "><a href="../../../systems/lighting.html"><strong aria-hidden="true">3.9.</strong> Lighting</a></li><li class="chapter-item "><a href="../../../systems/radar/overview.html"><strong aria-hidden="true">3.10.</strong> AN/AWG-9 Weapon Control System (WCS)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/radar/interface.html"><strong aria-hidden="true">3.10.1.</strong> Interface</a></li><li class="chapter-item "><a href="../../../systems/radar/general_operation.html"><strong aria-hidden="true">3.10.2.</strong> AN/AWG-9 General Operation</a></li></ol></li><li class="chapter-item "><a href="../../../systems/tcs.html"><strong aria-hidden="true">3.11.</strong> AN/AXX-1 TCS</a></li><li class="chapter-item "><a href="../../../systems/weapon_systems/overview.html"><strong aria-hidden="true">3.12.</strong> Weapon Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/weapon_systems/lantirn/overview.html"><strong aria-hidden="true">3.12.1.</strong> LANTIRN</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/weapon_systems/lantirn/modes.html"><strong aria-hidden="true">3.12.1.1.</strong> Modes</a></li><li class="chapter-item "><a href="../../../systems/weapon_systems/lantirn/other.html"><strong aria-hidden="true">3.12.1.2.</strong> Other</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../systems/defensive_systems/overview.html"><strong aria-hidden="true">3.13.</strong> Defensive Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/defensive_systems/countermeasures/overview.html"><strong aria-hidden="true">3.13.1.</strong> Countermeasures</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/defensive_systems/countermeasures/ale_39.html"><strong aria-hidden="true">3.13.1.1.</strong> ALE-39</a></li><li class="chapter-item "><a href="../../../systems/defensive_systems/countermeasures/lau_138.html"><strong aria-hidden="true">3.13.1.2.</strong> LAU-138</a></li></ol></li><li class="chapter-item "><a href="../../../systems/defensive_systems/radar_warning_receiver.html"><strong aria-hidden="true">3.13.2.</strong> Radar Warning Receiver</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/defensive_systems/alr_67.html"><strong aria-hidden="true">3.13.2.1.</strong> ALR-67</a></li><li class="chapter-item "><a href="../../../systems/defensive_systems/alr_45-50.html"><strong aria-hidden="true">3.13.2.2.</strong> ALR-45/50</a></li></ol></li><li class="chapter-item "><a href="../../../systems/defensive_systems/ecm.html"><strong aria-hidden="true">3.13.3.</strong> Electronic Countermeasures</a></li></ol></li><li class="chapter-item "><a href="../../../systems/emergency.html"><strong aria-hidden="true">3.14.</strong> Emergency</a></li></ol></li><li class="chapter-item "><a href="../../../stores/overview.html"><strong aria-hidden="true">4.</strong> Weapons & Stores</a></li><li class="chapter-item "><a href="../../../procedures/overview.html"><strong aria-hidden="true">5.</strong> Normal Procedures</a></li><li class="chapter-item "><a href="../../../emergency_procedures/overwiew.html"><strong aria-hidden="true">6.</strong> Emergency Procedures</a></li><li class="chapter-item "><a href="../../../dcs/overview.html"><strong aria-hidden="true">7.</strong> DCS</a></li><li class="chapter-item "><a href="../../../abbreviations.html"><strong aria-hidden="true">8.</strong> Abbreviations</a></li><li class="chapter-item "><a href="../../../tutorials.html"><strong aria-hidden="true">9.</strong> Tutorials</a></li><li class="chapter-item "><a href="../../../imprint.html"><strong aria-hidden="true">10.</strong> Imprint</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/systems/nav_com/com/overview.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="communications-systems"><a class="header" href="#communications-systems">Communications Systems</a></h1>
+<h2 id="antennas"><a class="header" href="#antennas">Antennas</a></h2>
+<p>Four VHF/UHF/L-band dual-blade antennas provide omnidirectional coverage for VHF/UHF voice, UHF data
+link, TACAN, and identification friend or foe/selective identification feature transponder (APX-72)
+operation. TACAN and VHF/UHF 2 voice communications use one set of antennas; UHF 1 voice
+communications, the data link, and IFF transponder use another set of antennas. Refer to the general
+arrangement illustration for antenna locations. The IFF interrogator (APX-76) antenna is an integral
+part of the AWG-9 WCS antenna.</p>
+<p>Each individual system is connected to the appropriate portion of an upper or lower antenna through
+a coaxial switch and diplexer. The V/UHF 2 ANT switch on the RIO communication TACAN CMD panel must
+be used to select the upper or lower antenna manually; there is no automatic actuation function in
+these aircraft. The data link (DIL) antennas are similarly selected manually. Upper or lower antenna
+is selected by means of ANTENNA switches on the DATA LINK control panel. The UHF 1 voice
+communication ARC-159 antenna is shared with the DIL antenna system and is always on the opposite
+antenna from the one selected by the ANTENNA switch.</p>
+<p>The upper V/UHF 2/TACAN antenna is the first one aft of the canopy on the turtleback, and the lower
+antenna is embedded in the bottom of the left ventral fin. Only one antenna is used at a time.
+Automatic switching between antennas prevents the loss of TACAN information. If a signal is lost or
+is too weak to hold receiver lockup, the TACAN automatically cycles between the two antennas every 6
+seconds seeking a stronger signal.</p>
+<p>During this cycling and search period, memory circuits retain range tracking for 8 to 12 seconds and
+bearing tracking for 8 seconds. The IFF antenna lobing switch is controlled by the IFF ANT switch on
+the RIO right outboard console. In AUTO, the lobing switch cycles the receiver-transmitter between
+the upper and lower antenna. In the LWR (lower) position, only the lower antenna is used to receive
+and transmit signals. The upper antenna pattern has a slight forward tilt; the lower pattern a
+slight aft tilt.</p>
+<blockquote>
+<p><strong>Note:</strong> In real life, it is often necessary to select LWR to improve ground station reception.
+However, due to the limitations of DCS, antenna switching is not modeled and thus not functional.
+The use of antennas is automated and/or neglected for the player. All radios and radio functions
+work through proper keying.</p>
+</blockquote>
+<h2 id="audio-warning-signals"><a class="header" href="#audio-warning-signals">Audio Warning Signals</a></h2>
+<p>Audio warning signals from the weapon system are available to either or both crewmen through the
+ICS. Each signal has a distinct tone. A visual display accompanies most audio signals so that the
+flight crew can expect the tone and interpret its meaning. Most audio signals may be attenuated or
+turned off if not required, allowing the flight crew to concentrate on more critical tones.</p>
+<p>Critical warning tones cannot be attenuated by any mode of ICS operation. The table below provides a
+glossary of audio warning signals available within the aircraft weapon systems. Approximately 1
+minute of warmup is required to achieve normal operating temperature.</p>
+<div class="table-wrapper"><table><thead><tr><th>Tone</th><th>Position</th><th>Controls</th><th>Function</th><th>Characteristics</th></tr></thead><tbody>
+<tr><td><strong>Sidewinder</strong></td><td>Pilot</td><td>Volume/TACAN Command Panel</td><td>Missile lock tone</td><td>High frequency, increases with lockon indication.</td></tr>
+<tr><td><strong>ALR-67</strong></td><td>Pilot &amp; RIO</td><td>Volume/TACAN Command Panel (pilot) &amp; Radar Warning Receiver Panel (RIO)</td><td>Threat indication</td><td>Low to high frequency, determined by threat level.</td></tr>
+<tr><td><strong>AN/ALQ-126</strong></td><td>RIO</td><td>DECM Control Panel</td><td>Threat indication</td><td>Raw PRF sound.</td></tr>
+<tr><td><strong>Radar Altimeter</strong></td><td>Pilot &amp; RIO</td><td>Radar Altimeter Indicator (Pilot)</td><td>Low altitude warning</td><td>1 000 Hz tone, modulated at 2 pulses per second for 3 seconds.</td></tr>
+<tr><td><strong>TACAN</strong></td><td>Pilot &amp; RIO</td><td>TACAN Control Panel</td><td>Station identification</td><td>TACAN station Morse code.</td></tr>
+<tr><td><strong>AN/ARC-159 (UHF 1)</strong></td><td>Pilot &amp; RIO</td><td>UHF 1 Control Panel (Pilot) &amp; RIO Communication/TACAN Command Panel</td><td>Own aircraft DF transmission</td><td>1 020 Hz</td></tr>
+<tr><td><strong>AN/ARC-182 (V/UHF 2)</strong></td><td>Pilot &amp; RIO</td><td>V/UHF 2 Control Panel (RIO) &amp; Volume/TACAN Command Panel (Pilot)</td><td>Other aircraft DF transmission</td><td>1 020 Hz, Morse code or voice.</td></tr>
+<tr><td><strong>Engine Stall/Overtemperature</strong></td><td>Pilot</td><td>None</td><td>Engine stall detection &amp; EGT overtemp warning</td><td>Modulated 320 Hz for 10 seconds or until fault is removed if before.</td></tr>
+</tbody></table>
+</div>
+<h2 id="pilot-volumetacan-command-panel"><a class="header" href="#pilot-volumetacan-command-panel">Pilot Volume/TACAN Command Panel</a></h2>
+<p><img src="../../../img/volume1.png" alt="volume1" /></p>
+<p>The Volume/TACAN command panel on the pilot left side console has three volume controls for
+regulating audio signals from the ALR-67, Sidewinder (SW), and V/UHF 2.</p>
+<div class="table-wrapper"><table><thead><tr><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td><strong>ALR-67 Volume control</strong></td><td>Controls volume for pilot ALR-67 indication.</td></tr>
+<tr><td><strong>SW (Sidewinder) Volume control</strong></td><td>Controls volume of the pilot’s Sidewinder tone.</td></tr>
+<tr><td><strong>V/UHF 2 Volume control</strong></td><td>Controls volume of pilot audio from V/UHF 2 (AN/ARC-182).</td></tr>
+<tr><td><strong>TACAN CMD control switch/indicator</strong></td><td>Controls and indicates crewmember in control of TACAN.</td></tr>
+</tbody></table>
+</div>
+<h2 id="rio-communicationtacan-command-panel"><a class="header" href="#rio-communicationtacan-command-panel">RIO Communication/TACAN Command Panel</a></h2>
+<p>Allows RIO to select either UHF 1 (AN/ARC-159), V/UHF 2 (AN/ARC-182), or both radios for
+transmitting.</p>
+<blockquote>
+<p><strong>Note:</strong> BOTH is not functional in DCS.</p>
+</blockquote>
+<ul>
+<li>The V/UHF 2 ANT switch allows the selection of upper or lower antenna to minimize interference
+between dual UHF or data link operation. Opposite antenna selection, frequency separation greater
+than 55 MHz, or turning one radio off is recommended. Additionally, the DATA LINK panel provides
+lower or upper antenna selection for UHF 1 and DIL operation.</li>
+<li>The TACAN CMD push buttons provide for the transfer of TACAN control functions between pilot and
+RIO. The crewmember (PLT or RIO) in control illuminates when selected.</li>
+<li>The UHF 1 VOL control allows the RIO to adjust the audio level of the ARC 159 UHF 1 radio. The KY
+MODE switch is operative only when the KY-58 is installed.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> The Heatblur F-14 version uses the KY-28 only.</p>
+</blockquote>
+<p><img src="../../../img/comtac1.png" alt="comtac1" /></p>
+<div class="table-wrapper"><table><thead><tr><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td><strong>XMTR SEL switch</strong></td><td>Selects desired VHF/UHF radio for use. UHF 1 - Selects ARC-159 UHF 1 radio. V/UHF 2 - Selects ARC-182 VHF/UHF radio. Both - Selects both radios. (Not functional in DCS)</td></tr>
+<tr><td><strong>V/UHF 2 ANT switch</strong></td><td>UPR - Selects upper antenna for V/UHF 2. LWR - Selects lower antenna for V/UHF 2.</td></tr>
+<tr><td><strong>TACAN CMD control switch/indicator</strong></td><td>Controls and indicates crewmember in control of TACAN.</td></tr>
+<tr><td><strong>UHF 1 VOL control</strong></td><td>Controls volume of RIO audio from UHF 1 (AN/ARC-159).</td></tr>
+<tr><td><strong>KY MODE switch</strong></td><td>Non-functional with KY-28.</td></tr>
+</tbody></table>
+</div>
+<h2 id="loading-saving-preset-channels-on-uhf-1-and-vuhf-2"><a class="header" href="#loading-saving-preset-channels-on-uhf-1-and-vuhf-2">Loading (saving) Preset Channel(s) on UHF 1 and V/UHF 2</a></h2>
+<ol>
+<li>MODE selection- T/R or T/R&amp;G.</li>
+<li>Frequency mode control - PRESET.</li>
+<li>CHAN SEL switch- Select desired channel.</li>
+<li>Frequency mode control- READ.</li>
+<li>Frequency select switches - Slew to desired Frequency.</li>
+<li>Frequency mode control - LOAD (frequency is stored in memory for the selected channel).</li>
+<li>Frequency mode control- READ, Verify frequency display.</li>
+<li>Repeat steps 2 through 7 for subsequent channels.</li>
+</ol>
+<h2 id="anarc-159-and-anarc-182-remote-displays"><a class="header" href="#anarc-159-and-anarc-182-remote-displays">AN/ARC-159 and AN/ARC-182 Remote Displays</a></h2>
+<p>Both the pilot and RIO have remote displays for the currently set channel or frequency of the
+radios. The pilot has remote displays for both UHF 1 and V/UHF 2 and the RIO only for UHF 1.</p>
+<div class="table-wrapper"><table><thead><tr><th><img src="../../../img/frontremote1.png" alt="frontremote1" /></th><th><img src="../../../img/backremote1.png" alt="backremote1" /></th></tr></thead><tbody>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td><strong>UHF 1 Remote Channel/Frequency Indicator (Pilot)</strong></td><td>Displays a readout of the frequency or channel set for the UHF 1 radio. TEST - Initiates test for the indicator, no fault resulting in 888.888 readout. BRT - Controls display brightness.</td></tr>
+<tr><td><strong>V/UHF 2 Remote Channel/Frequency Indicator (Pilot)</strong></td><td>Displays a readout of the frequency or channel set for the V/UHF 2 radio. TEST - Initiates test for the indicator, no fault resulting in 888.888 readout. BRT - Controls display brightness.</td></tr>
+<tr><td><strong>UHF 1 Remote Channel/Frequency Indicator (RIO)</strong></td><td>Displays a readout of the frequency or channel set for the UHF 1 radio. TEST - Initiates test for the indicator, no fault resulting in 888.888 readout. BRT - Controls display brightness.</td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../systems/nav_com/intercom.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../systems/nav_com/com/encryption.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../systems/nav_com/intercom.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../../systems/nav_com/intercom.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../../systems/nav_com/com/encryption.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../../systems/nav_com/com/encryption.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js"></script>
+        <script src="../../../mark.min.js"></script>
+        <script src="../../../searcher.js"></script>
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>

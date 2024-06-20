@@ -1,0 +1,479 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ALR-67 - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/visual.css">
+        <link rel="stylesheet" href="../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../theme/pdf.css">
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <div class="menu-logo"><img src="/img/f14line.svg"></div>
+
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../f14_manual.html">F-14 Manual</a></li><li class="chapter-item "><a href="../../intro/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item "><a href="../../cockpit/overview.html"><strong aria-hidden="true">2.</strong> Cockpit Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/pilot/overview.html"><strong aria-hidden="true">2.1.</strong> Pilot Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/pilot/left_console.html"><strong aria-hidden="true">2.1.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_vertical_console.html"><strong aria-hidden="true">2.1.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_knee_panel.html"><strong aria-hidden="true">2.1.3.</strong> Left Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_instrument_panel.html"><strong aria-hidden="true">2.1.4.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_windshield_frame.html"><strong aria-hidden="true">2.1.5.</strong> Left Windshield Frame</a></li><li class="chapter-item "><a href="../../cockpit/pilot/center_panel.html"><strong aria-hidden="true">2.1.6.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_windshield_frame.html"><strong aria-hidden="true">2.1.7.</strong> Right Windshield Frame</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_instrument_panel.html"><strong aria-hidden="true">2.1.8.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_knee_panel.html"><strong aria-hidden="true">2.1.9.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_vertical_console.html"><strong aria-hidden="true">2.1.10.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_console.html"><strong aria-hidden="true">2.1.11.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/canopy_control_handle.html"><strong aria-hidden="true">2.1.12.</strong> Canopy Control Handle</a></li></ol></li><li class="chapter-item "><a href="../../cockpit/rio/overview.html"><strong aria-hidden="true">2.2.</strong> RIO Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/rio/left_console.html"><strong aria-hidden="true">2.2.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/left_vertical_console.html"><strong aria-hidden="true">2.2.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/left_instrument_console.html"><strong aria-hidden="true">2.2.3.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/center_panel.html"><strong aria-hidden="true">2.2.4.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/center_console.html"><strong aria-hidden="true">2.2.5.</strong> Center Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/footwells.html"><strong aria-hidden="true">2.2.6.</strong> Left and Right Footwells</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_instrument_console.html"><strong aria-hidden="true">2.2.7.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_knee_panel.html"><strong aria-hidden="true">2.2.8.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_vertical_console.html"><strong aria-hidden="true">2.2.9.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_console.html"><strong aria-hidden="true">2.2.10.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/canopy_control_handle.html"><strong aria-hidden="true">2.2.11.</strong> Canopy Control Handle</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../systems/overview.html"><strong aria-hidden="true">3.</strong> Systems Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/flight_controls_gear/overview.html"><strong aria-hidden="true">3.1.</strong> Flight Controls and Gear</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/flight_controls_gear/cadc.html"><strong aria-hidden="true">3.1.1.</strong> Central Air Data Computer (CADC)</a></li><li class="chapter-item "><a href="../../systems/flight_controls_gear/flight_controls.html"><strong aria-hidden="true">3.1.2.</strong> Flight Controls & AFCS</a></li><li class="chapter-item "><a href="../../systems/flight_controls_gear/wing_sweep.html"><strong aria-hidden="true">3.1.3.</strong> Wing-Sweep System</a></li><li class="chapter-item "><a href="../../systems/flight_controls_gear/gear_ground_handling.html"><strong aria-hidden="true">3.1.4.</strong> Gear & Ground Handling</a></li></ol></li><li class="chapter-item "><a href="../../systems/engines_and_fuel_systems/overview.html"><strong aria-hidden="true">3.2.</strong> Engines & Fuel Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/engines_and_fuel_systems/engines.html"><strong aria-hidden="true">3.2.1.</strong> Engines</a></li><li class="chapter-item "><a href="../../systems/engines_and_fuel_systems/fuel_system.html"><strong aria-hidden="true">3.2.2.</strong> Fuel System</a></li></ol></li><li class="chapter-item "><a href="../../systems/nav_com/overview.html"><strong aria-hidden="true">3.3.</strong> Navigation & Communication</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/nav_com/nav_sys.html"><strong aria-hidden="true">3.3.1.</strong> Navigation System</a></li><li class="chapter-item "><a href="../../systems/nav_com/ins.html"><strong aria-hidden="true">3.3.2.</strong> INS</a></li><li class="chapter-item "><a href="../../systems/nav_com/ahrs.html"><strong aria-hidden="true">3.3.3.</strong> Attitude and Heading Reference Set (AHRS)</a></li><li class="chapter-item "><a href="../../systems/nav_com/tacan.html"><strong aria-hidden="true">3.3.4.</strong> TACAN</a></li><li class="chapter-item "><a href="../../systems/nav_com/bdhi.html"><strong aria-hidden="true">3.3.5.</strong> BDHI</a></li><li class="chapter-item "><a href="../../systems/nav_com/icls.html"><strong aria-hidden="true">3.3.6.</strong> ICLS</a></li><li class="chapter-item "><a href="../../systems/nav_com/intercom.html"><strong aria-hidden="true">3.3.7.</strong> ICS - Intercom</a></li><li class="chapter-item "><a href="../../systems/nav_com/com/overview.html"><strong aria-hidden="true">3.3.8.</strong> Communication Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/nav_com/com/encryption.html"><strong aria-hidden="true">3.3.8.1.</strong> KY-28 Encryption</a></li><li class="chapter-item "><a href="../../systems/nav_com/com/uhf.html"><strong aria-hidden="true">3.3.8.2.</strong> AN/ARC-159 (UHF 1) Radio</a></li><li class="chapter-item "><a href="../../systems/nav_com/com/vuhf.html"><strong aria-hidden="true">3.3.8.3.</strong> AN/ARC-182 (V/UHF 2) Radio</a></li></ol></li><li class="chapter-item "><a href="../../systems/nav_com/link4.html"><strong aria-hidden="true">3.3.9.</strong> Link 4A & C Datalink</a></li></ol></li><li class="chapter-item "><a href="../../systems/identification_systems.html"><strong aria-hidden="true">3.4.</strong> Identification Systems</a></li><li class="chapter-item "><a href="../../systems/hydraulics.html"><strong aria-hidden="true">3.5.</strong> Hydraulics</a></li><li class="chapter-item "><a href="../../systems/enviornmental_control_system.html"><strong aria-hidden="true">3.6.</strong> Environmental Control System</a></li><li class="chapter-item "><a href="../../systems/utility.html"><strong aria-hidden="true">3.7.</strong> Utility</a></li><li class="chapter-item "><a href="../../systems/electrics.html"><strong aria-hidden="true">3.8.</strong> Electrics</a></li><li class="chapter-item "><a href="../../systems/lighting.html"><strong aria-hidden="true">3.9.</strong> Lighting</a></li><li class="chapter-item "><a href="../../systems/radar/overview.html"><strong aria-hidden="true">3.10.</strong> AN/AWG-9 Weapon Control System (WCS)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/radar/interface.html"><strong aria-hidden="true">3.10.1.</strong> Interface</a></li><li class="chapter-item "><a href="../../systems/radar/general_operation.html"><strong aria-hidden="true">3.10.2.</strong> AN/AWG-9 General Operation</a></li></ol></li><li class="chapter-item "><a href="../../systems/tcs.html"><strong aria-hidden="true">3.11.</strong> AN/AXX-1 TCS</a></li><li class="chapter-item "><a href="../../systems/weapon_systems/overview.html"><strong aria-hidden="true">3.12.</strong> Weapon Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/weapon_systems/lantirn/overview.html"><strong aria-hidden="true">3.12.1.</strong> LANTIRN</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/weapon_systems/lantirn/modes.html"><strong aria-hidden="true">3.12.1.1.</strong> Modes</a></li><li class="chapter-item "><a href="../../systems/weapon_systems/lantirn/other.html"><strong aria-hidden="true">3.12.1.2.</strong> Other</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../systems/defensive_systems/overview.html"><strong aria-hidden="true">3.13.</strong> Defensive Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/defensive_systems/countermeasures/overview.html"><strong aria-hidden="true">3.13.1.</strong> Countermeasures</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/defensive_systems/countermeasures/ale_39.html"><strong aria-hidden="true">3.13.1.1.</strong> ALE-39</a></li><li class="chapter-item "><a href="../../systems/defensive_systems/countermeasures/lau_138.html"><strong aria-hidden="true">3.13.1.2.</strong> LAU-138</a></li></ol></li><li class="chapter-item expanded "><a href="../../systems/defensive_systems/radar_warning_receiver.html"><strong aria-hidden="true">3.13.2.</strong> Radar Warning Receiver</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../systems/defensive_systems/alr_67.html" class="active"><strong aria-hidden="true">3.13.2.1.</strong> ALR-67</a></li><li class="chapter-item "><a href="../../systems/defensive_systems/alr_45-50.html"><strong aria-hidden="true">3.13.2.2.</strong> ALR-45/50</a></li></ol></li><li class="chapter-item "><a href="../../systems/defensive_systems/ecm.html"><strong aria-hidden="true">3.13.3.</strong> Electronic Countermeasures</a></li></ol></li><li class="chapter-item "><a href="../../systems/emergency.html"><strong aria-hidden="true">3.14.</strong> Emergency</a></li></ol></li><li class="chapter-item "><a href="../../stores/overview.html"><strong aria-hidden="true">4.</strong> Weapons & Stores</a></li><li class="chapter-item "><a href="../../procedures/overview.html"><strong aria-hidden="true">5.</strong> Normal Procedures</a></li><li class="chapter-item "><a href="../../emergency_procedures/overwiew.html"><strong aria-hidden="true">6.</strong> Emergency Procedures</a></li><li class="chapter-item "><a href="../../dcs/overview.html"><strong aria-hidden="true">7.</strong> DCS</a></li><li class="chapter-item "><a href="../../abbreviations.html"><strong aria-hidden="true">8.</strong> Abbreviations</a></li><li class="chapter-item "><a href="../../tutorials.html"><strong aria-hidden="true">9.</strong> Tutorials</a></li><li class="chapter-item "><a href="../../imprint.html"><strong aria-hidden="true">10.</strong> Imprint</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/systems/defensive_systems/alr_67.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="analr-67-rwr"><a class="header" href="#analr-67-rwr">AN/ALR-67 RWR</a></h1>
+<blockquote>
+<p>🚧 TODO: Rework to add more imagery. Also fix the notes to use the new F-4 system.</p>
+</blockquote>
+<h2 id="description"><a class="header" href="#description">Description</a></h2>
+<p>The AN/ALR-67 radar warning receiver (RWR) is designed to inform and alert the F-14 crew about radar
+emitters in their general area. It’s also designed to help the crew defend themselves from hostile
+threats by indicate radar TRKing and engagement by radar guided weapons.</p>
+<p>The AN/ALR-67 was integrated in the F-14 to replace the ageing AN/ALR-45 and AN/ALR-50, at first for
+the F-14B and later on for parts of the F-14A fleet. Until the advent of the PMDIG upgrade the
+AN/ALR-67 used its own stand-alone display system only. The RWR is however connected to the
+AN/ALQ-126 allowing it to send info on threat emitters to the jammer and also display jammed targets
+on its own display. It can also trigger preprogrammed countermeasure programs set up in the
+AN/ALE-39 system.</p>
+<p>On later F-14B aircraft incorporating the PTID upgrade the AN/ALR-67 was also integrated into the
+MDIG diplays system, allowing for a more detailed threat display on the ECMD.</p>
+<p>The AN/ALR-67 on the F-14B has four small spiral high-band antennas, four wideband high-band
+quadrant receivers and a low-band array. Connected to these antennas is a narrowband superheterodyne
+receiver analysing the received signals and indicating emitters and threats to both pilot and RIO
+using two displays, one at each seat and by audio signals played to the ICS of both</p>
+<h2 id="controls"><a class="header" href="#controls">Controls</a></h2>
+<p><img src="images/control1.png" alt="Control Panel" /></p>
+<p>The AN/ALR-67 RWR is controlled by a control panel on the RIO right side horizontal panel.</p>
+<p>The PWR (power) switch control power to the RWR and should be set to ON to operate the system.</p>
+<p>The VOL (volume) control knob sets RIO audio level for the RWR sound indications. The pilot has a
+corresponding control on his Volume/TACAN command panel.</p>
+<p>The TEST switch has two selectable modes and is springloaded to center when not held. Momentary
+selection of the BIT position initiates the AN/ALR-67 built in test and if the switch is held in the
+SPL (special) position while on the first BIT page displays the special BIT status page as long as
+it’s held in that position.</p>
+<p>The MODE switch also has two selectable modes used while held in the respective position,
+springloaded to return to center when not held. When not activated enables normal operational mode,
+OFST enables the offset mode when held and LMT the limit mode when held. The offset mode is
+indicated by an O in the status ring on the display and separates overlapping threat symbols
+sacrificing azimuth accuracy to instead show all threats clearly. The limit mode is indicated by an
+L in the status ring on the display and limits the display to only show the threat symbols of the
+six highest prioritized threats.</p>
+<p>The DISPLAY TYPE selector sets what threat display priority to use on the RWR displays.</p>
+<p>NORM - Normal is indicated by a N in the status ring on the display and shows threat symbology
+according to the loaded threat library.</p>
+<p>AI - Airborne interceptor is indicated by an I in the status ring on the display and prioritizes all
+airborne interceptor threats above all other threats.</p>
+<p>AAA - Anti-aircraft artillery is indicated by an A in the status ring on the display and prioritizes
+all anti-aircraft artillery threats above all other threats.</p>
+<p>UNK - Unknown is indicated by a U in the status ring on the display and prioritizes all unknown
+threats above all other threats.</p>
+<p>FRIEND - Friendly is indicated by an F in the status ring on the display and allows for the same
+prioritization as in normal but also displays known friendly emitters.</p>
+<h2 id="displays"><a class="header" href="#displays">Displays</a></h2>
+<p><img src="images/display.png" alt="Display" /></p>
+<p>The RWR display is identical at both positions in the cockpit and uses three bands (circles) on the
+display to indicate the threat level of the displayed threat symbols.</p>
+<p>The outermost, critical band displays threat symbols belonging to emitters representing an imminent
+threat to own aircraft, either a locked on TRKing radar or a radar detected to be actively engaging
+own aircraft. A threat symbol belonging to a TRK detected as actively engaging own aircraft is
+enhanced by flashing of its symbol.</p>
+<p>The middle, lethal band displays threat symbols belonging to emitters representing threat systems
+deemed within lethal range of own aircraft but not actively TRKing or engaging it.</p>
+<p>The inner, non-lethal band displays threat symbols belonging to emitters not representing a system
+capable of engaging own aircraft or systems capable of but not deemed within range to engage it.</p>
+<p>The circle inside the threat bands is the system status circle, indicating various system modes in
+use or the presence of failures. The upper left quadrant displays what display type is set (N, I, A,
+U or F), the upper right quadrant showing an L if limited display mode is used and the lower half
+indicating either the use of the offset display mode by indicating an O, the presence of a BIT
+failure by showing B or that the system is thermally overloaded (too warm) by showing a T.</p>
+<p>On the lower right side is a knob controlling display intensity on display it’s attached to.</p>
+<blockquote>
+<p>🚧 Experimental way of showing the above info BEGIN</p>
+</blockquote>
+<p>The RWR display is identical at both positions in the cockpit and uses three bands (circles) on the
+display to indicate the threat level of the displayed threat symbols.</p>
+<ul>
+<li><strong>Outermost, critical band:</strong> Displays threat symbols belonging to emitters representing an
+imminent threat to own aircraft, either a locked-on TRKing radar or a radar detected to be
+actively engaging own aircraft. A threat symbol belonging to a TRK detected as actively engaging
+own aircraft is enhanced by flashing its symbol.</li>
+<li><strong>Middle, lethal band:</strong> Displays threat symbols belonging to emitters representing threat systems
+deemed within lethal range of own aircraft but not actively TRKing or engaging it.</li>
+<li><strong>Inner, non-lethal band:</strong> Displays threat symbols belonging to emitters not representing a
+system capable of engaging own aircraft or systems capable of but not deemed within range to
+engage it.</li>
+<li><strong>System status circle:</strong> Indicates various system modes in use or the presence of failures. The
+upper left quadrant displays what display type is set (N, I, A, U, or F), the upper right quadrant
+showing an L if limited display mode is used, and the lower half indicating either the use of the
+offset display mode by indicating an O, the presence of a BIT failure by showing B, or that the
+system is thermally overloaded (too warm) by showing a T.</li>
+<li><strong>Display intensity knob:</strong> On the lower right side, it controls display intensity on the display
+it’s attached to.</li>
+</ul>
+<blockquote>
+<p>🚧 Experimental way of showing the info END.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong> The ordering of the three threat bands has changed at least once since the introduction
+of the AN/ALR-67, and as the modeled AN/ALR-67 represents one of the earlier versions we’ve chosen
+the present order.</p>
+</blockquote>
+<h2 id="warning-lights"><a class="header" href="#warning-lights">Warning Lights</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Pilot</th><th>RIO</th></tr></thead><tbody>
+<tr><td><img src="images/pilotcaution.png" alt="Pilot Caution" /></td><td><img src="images/riocaution.png" alt="RIO Caution" /></td></tr>
+</tbody></table>
+</div>
+<p>The two crewmembers have warning lights dedicated to specific threats on their front cockpit panels.
+The pilot warning lights are situated on the right side of the HUD and the RIO warning lights on the
+right side of the TID. The RIO warning light panel also contains lights for the AN/ALQ-126 and the
+IFF transponder, those are detailed under their respective section.</p>
+<p>The different lights illuminate to indicate the presence of a certain type of threat in the critical
+band of the RWR and when an active engagement is detected the corresponding light starts flashing.
+The categories present are SAM (surface-to-air missile), AAA (anti-air artillery), AI (airborne
+interceptor), and (only in the RIO pit) CW (continuous wave).</p>
+<h2 id="threat-indication-alert-tones"><a class="header" href="#threat-indication-alert-tones">Threat Indication Alert Tones</a></h2>
+<p>The AN/ALR-67 uses four distinct audio tones to indicate threats and status changes of those
+threats.</p>
+<p>A single short tone is used to indicate the presence of a new emitter or when a threat is moved to
+another threat band.</p>
+<p>A slow warbling, alternating tone is used to indicate the presence of a threat in the critical band.</p>
+<p>A fast warbling, alternating tone is used to indicate that a threat is actively engaging own
+aircraft.</p>
+<p>A special four tone audio signal, pitch decreasing with each tone, is used to indicate a special
+event as programmed by the threat library. In the Heatblur DCS F-14 this represents a new threat
+tied to a system capable of silently engaging own aircraft, i.e. it can engage own aircraft without
+causing it’s threat symbol to move to the critical band and thus no additional audio warning tones.
+This capability is either because of that the launching aircraft is capable of launching missiles in
+a TWS mode or that a launching SAM system can guide missiles by other means than radar and thus not
+giving further warning of an active engagement.</p>
+<h2 id="bit"><a class="header" href="#bit">BIT</a></h2>
+<p><img src="images/bit.gif" alt="BIT" /></p>
+<p>The AN/ALR-67 BIT cycles between different test screens testing the screen, symbology and threat
+indication tones as well as displaying system revision and threat library information.</p>
+<p>The first page displayed shows system and threat library revision and the following screens test the
+symbol generation of the displays.</p>
+<p>The threat indication tones are also tested during the bit, first page tests the status change tone,
+second page the special tone, third page the threat in critical band tone and the fourth the fast
+warbling active threat tone.</p>
+<p>During the tests the threat warning lights also illuminate for both the pilot and the RIO.</p>
+<div class="table-wrapper"><table><thead><tr><th>Threat Symbol</th><th>Platform/Sensor</th><th>Special Tone</th></tr></thead><tbody>
+<tr><td><strong>Ships (Symbology enhanced by being enclosed by an enlarged U symbol.)</strong></td><td></td><td></td></tr>
+<tr><td>AB</td><td>Arleigh Burke class destroyer</td><td></td></tr>
+<tr><td>AK</td><td>Admiral Kuznetsov class aircraft carrier</td><td></td></tr>
+<tr><td>GR</td><td>Grisha 5 class corvette (Albatros)</td><td></td></tr>
+<tr><td>HP</td><td>Oliver Hazard Perry class frigate</td><td></td></tr>
+<tr><td>J2</td><td>Jiangkai II class frigate (Type 054A)</td><td></td></tr>
+<tr><td>KK</td><td>Krivak 3 class frigate (Rezky)</td><td></td></tr>
+<tr><td>KV</td><td>Kirov class battlecruiser (Pyotr Velikiy)</td><td></td></tr>
+<tr><td>L1</td><td>Luyang I class destroyer (Type 052B)</td><td></td></tr>
+<tr><td>L2</td><td>Luyang II class destroyer (Type 052C)</td><td></td></tr>
+<tr><td>LC</td><td>La Combattante IIa class fast attack craft</td><td></td></tr>
+<tr><td>N</td><td>Ships only carrying a navigational radar (civilian ships, submarines)</td><td></td></tr>
+<tr><td>NE</td><td>Neustrashimy class frigate</td><td></td></tr>
+<tr><td>NZ</td><td>Nimitz class aircraft carrier</td><td></td></tr>
+<tr><td>SV</td><td>Slava class cruiser (Moscow)</td><td></td></tr>
+<tr><td>TC</td><td>Ticonderoga class cruiser</td><td></td></tr>
+<tr><td>TT</td><td>Tarantul 3 class corvette (Molniya)</td><td></td></tr>
+<tr><td>TW</td><td>Tarawa class amphibious assault ship</td><td></td></tr>
+<tr><td>YU</td><td>Yuzhao class amphibious transport dock (Type 071)</td><td></td></tr>
+<tr><td><strong>Aircraft</strong></td><td></td><td></td></tr>
+<tr><td>14</td><td>F-14A/B</td><td>Yes</td></tr>
+<tr><td>15</td><td>F-15C/E</td><td>Yes</td></tr>
+<tr><td>16</td><td>F-16C</td><td>Yes</td></tr>
+<tr><td>17</td><td>JF-17</td><td>Yes</td></tr>
+<tr><td>18</td><td>F/A-18C</td><td>Yes</td></tr>
+<tr><td>19</td><td>Mig-19</td><td></td></tr>
+<tr><td>21</td><td>Mig-21bis</td><td></td></tr>
+<tr><td>23</td><td>Mig-23MLD</td><td></td></tr>
+<tr><td>24</td><td>Su-24M/MR</td><td></td></tr>
+<tr><td>25</td><td>Mig-25PD</td><td></td></tr>
+<tr><td>29</td><td>Su-27, Su-33, Mig-29A/G/S, and J-11A</td><td>Yes</td></tr>
+<tr><td>30</td><td>Su-30</td><td>Yes</td></tr>
+<tr><td>31</td><td>Mig-31</td><td></td></tr>
+<tr><td>34</td><td>Su-34</td><td>Yes</td></tr>
+<tr><td>37</td><td>AJS-37</td><td></td></tr>
+<tr><td>39</td><td>Su-25TM (Su-39)</td><td>Yes</td></tr>
+<tr><td>50</td><td>A-50</td><td></td></tr>
+<tr><td>52</td><td>B-52</td><td></td></tr>
+<tr><td>AN</td><td>AN-26B and AN-30M</td><td></td></tr>
+<tr><td>AP</td><td>AH-64D</td><td></td></tr>
+<tr><td>B1</td><td>B-1B</td><td></td></tr>
+<tr><td>BE</td><td>Tu-95 and Tu-142M</td><td></td></tr>
+<tr><td>BF</td><td>Tu-22M3</td><td></td></tr>
+<tr><td>BJ</td><td>Tu-160</td><td></td></tr>
+<tr><td>E2</td><td>E-2D</td><td></td></tr>
+<tr><td>E3</td><td>E-3C</td><td></td></tr>
+<tr><td>F4</td><td>F-4E</td><td></td></tr>
+<tr><td>F5</td><td>F-5E</td><td></td></tr>
+<tr><td>HX</td><td>Ka-27</td><td></td></tr>
+<tr><td>IL</td><td>IL-76MD and IL-78M</td><td></td></tr>
+<tr><td>KC</td><td>KC-135</td><td></td></tr>
+<tr><td>KJ</td><td>KJ-2000</td><td></td></tr>
+<tr><td>M2</td><td>Mirage 2000-C and 2000-5</td><td>Yes</td></tr>
+<tr><td>S3</td><td>S-3B</td><td></td></tr>
+<tr><td>SH</td><td>SH-60B</td><td></td></tr>
+<tr><td>TO</td><td>Tornado</td><td></td></tr>
+<tr><td>TR</td><td>C-130 and C-17A</td><td></td></tr>
+<tr><td><strong>Air Defense</strong></td><td></td><td></td></tr>
+<tr><td>2</td><td>SA-2 Guideline Fan Song track radar (S-75)</td><td></td></tr>
+<tr><td>3</td><td>SA-3 Goa Low Blow track radar (S-125)</td><td></td></tr>
+<tr><td>5</td><td>SA-5 Gammon Square Pair track radar</td><td></td></tr>
+<tr><td>6</td><td>SA-6 Gainful Straight Flush track radar (Kub)</td><td></td></tr>
+<tr><td>7</td><td>HQ-7 track radar</td><td></td></tr>
+<tr><td>8</td><td>SA-8 Gecko search and track radar (Osa)</td><td></td></tr>
+<tr><td>10</td><td>SA-10 Grumble Flap Lid track radar (S-300PS 30N6)</td><td></td></tr>
+<tr><td>11</td><td>SA-11 Gadfly Fire Dome track radar (Buk)</td><td></td></tr>
+<tr><td>15</td><td>SA-15 Gauntlet Scrum Half search and track radar (Tor 9A331)</td><td></td></tr>
+<tr><td>19</td><td>SA-19 Grison Hot Shot search and track radar (Tunguska 2C6M)</td><td>Yes</td></tr>
+<tr><td>A</td><td>Gepard, M-163 Vulcan, and ZSU-23-4 Shilka track radars</td><td></td></tr>
+<tr><td>BB</td><td>SA-10 Grumble Big Bird search radar (S-300PS 64H6E)</td><td></td></tr>
+<tr><td>BF</td><td>Rapier Blindfire track radar</td><td></td></tr>
+<tr><td>CS</td><td>SA-10 Grumble Clam Shell search radar (S-300PS 5N66M)</td><td></td></tr>
+<tr><td>DE</td><td>Sborka (Dog Ear) search radar</td><td></td></tr>
+<tr><td>FF</td><td>SA-2, SA-3, and SA-5 Flat Face search radar (S-125 P-19)</td><td></td></tr>
+<tr><td>GR</td><td>Roland MPDR-3002 S search radar</td><td></td></tr>
+<tr><td>HA</td><td>Hawk AN/MPQ-50 and AN/MPQ-55 search radars</td><td></td></tr>
+<tr><td>HK</td><td>Hawk AN/MPQ-46 track radar</td><td></td></tr>
+<tr><td>HQ</td><td>HQ-7 search radar</td><td></td></tr>
+<tr><td>NS</td><td>NASAMS AN/MPQ-64 Sentinel search radar</td><td>Yes</td></tr>
+<tr><td>PT</td><td>Patriot AN/MPQ-53 search radar</td><td></td></tr>
+<tr><td>RO</td><td>Roland MPDR-16 search radar and Domino 30 track radar</td><td></td></tr>
+<tr><td>RP</td><td>Rapier Dagger search radar</td><td></td></tr>
+<tr><td>S</td><td>1L13 and 55G6 early warning search radars</td><td></td></tr>
+<tr><td>SD</td><td>SA-11 Gadfly Snow Drift search radar (Buk)</td><td></td></tr>
+<tr><td>TS</td><td>SA-5 Gammon Tin Shield search radar</td><td></td></tr>
+<tr><td><strong>Missiles</strong></td><td></td><td></td></tr>
+<tr><td>M</td><td>AIM-54, AIM-120, MICA-EM, R-37, R-77, and SD-10</td><td></td></tr>
+<tr><td><strong>ATC (Air Traffic Control)</strong></td><td></td><td></td></tr>
+<tr><td>T</td><td>Airport ATC Radar</td><td></td></tr>
+</tbody></table>
+</div>
+<blockquote>
+<p><strong>Note:</strong> Aircraft only flown by own faction in a mission are automatically set as friendly and
+shown only when setting the DISPLAY TYPE selector to FRIEND. N are shown only in UNK and T only in
+FRIEND.</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../systems/defensive_systems/radar_warning_receiver.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../systems/defensive_systems/alr_45-50.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../systems/defensive_systems/radar_warning_receiver.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../systems/defensive_systems/radar_warning_receiver.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../systems/defensive_systems/alr_45-50.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../systems/defensive_systems/alr_45-50.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>

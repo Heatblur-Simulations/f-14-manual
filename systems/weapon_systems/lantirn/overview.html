@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>LANTIRN - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../theme/visual.css">
+        <link rel="stylesheet" href="../../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../../theme/pdf.css">
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <div class="menu-logo"><img src="/img/f14line.svg"></div>
+
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../../f14_manual.html">F-14 Manual</a></li><li class="chapter-item "><a href="../../../intro/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item "><a href="../../../cockpit/overview.html"><strong aria-hidden="true">2.</strong> Cockpit Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../cockpit/pilot/overview.html"><strong aria-hidden="true">2.1.</strong> Pilot Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../cockpit/pilot/left_console.html"><strong aria-hidden="true">2.1.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/left_vertical_console.html"><strong aria-hidden="true">2.1.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/left_knee_panel.html"><strong aria-hidden="true">2.1.3.</strong> Left Knee Panel</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/left_instrument_panel.html"><strong aria-hidden="true">2.1.4.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/left_windshield_frame.html"><strong aria-hidden="true">2.1.5.</strong> Left Windshield Frame</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/center_panel.html"><strong aria-hidden="true">2.1.6.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/right_windshield_frame.html"><strong aria-hidden="true">2.1.7.</strong> Right Windshield Frame</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/right_instrument_panel.html"><strong aria-hidden="true">2.1.8.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/right_knee_panel.html"><strong aria-hidden="true">2.1.9.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/right_vertical_console.html"><strong aria-hidden="true">2.1.10.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/right_console.html"><strong aria-hidden="true">2.1.11.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../../cockpit/pilot/canopy_control_handle.html"><strong aria-hidden="true">2.1.12.</strong> Canopy Control Handle</a></li></ol></li><li class="chapter-item "><a href="../../../cockpit/rio/overview.html"><strong aria-hidden="true">2.2.</strong> RIO Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../cockpit/rio/left_console.html"><strong aria-hidden="true">2.2.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../../cockpit/rio/left_vertical_console.html"><strong aria-hidden="true">2.2.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../../cockpit/rio/left_instrument_console.html"><strong aria-hidden="true">2.2.3.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../../cockpit/rio/center_panel.html"><strong aria-hidden="true">2.2.4.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../../cockpit/rio/center_console.html"><strong aria-hidden="true">2.2.5.</strong> Center Console</a></li><li class="chapter-item "><a href="../../../cockpit/rio/footwells.html"><strong aria-hidden="true">2.2.6.</strong> Left and Right Footwells</a></li><li class="chapter-item "><a href="../../../cockpit/rio/right_instrument_console.html"><strong aria-hidden="true">2.2.7.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../../cockpit/rio/right_knee_panel.html"><strong aria-hidden="true">2.2.8.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../../cockpit/rio/right_vertical_console.html"><strong aria-hidden="true">2.2.9.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../../cockpit/rio/right_console.html"><strong aria-hidden="true">2.2.10.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../../cockpit/rio/canopy_control_handle.html"><strong aria-hidden="true">2.2.11.</strong> Canopy Control Handle</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../systems/overview.html"><strong aria-hidden="true">3.</strong> Systems Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/flight_controls_gear/overview.html"><strong aria-hidden="true">3.1.</strong> Flight Controls and Gear</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/flight_controls_gear/cadc.html"><strong aria-hidden="true">3.1.1.</strong> Central Air Data Computer (CADC)</a></li><li class="chapter-item "><a href="../../../systems/flight_controls_gear/flight_controls.html"><strong aria-hidden="true">3.1.2.</strong> Flight Controls & AFCS</a></li><li class="chapter-item "><a href="../../../systems/flight_controls_gear/wing_sweep.html"><strong aria-hidden="true">3.1.3.</strong> Wing-Sweep System</a></li><li class="chapter-item "><a href="../../../systems/flight_controls_gear/gear_ground_handling.html"><strong aria-hidden="true">3.1.4.</strong> Gear & Ground Handling</a></li></ol></li><li class="chapter-item "><a href="../../../systems/engines_and_fuel_systems/overview.html"><strong aria-hidden="true">3.2.</strong> Engines & Fuel Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/engines_and_fuel_systems/engines.html"><strong aria-hidden="true">3.2.1.</strong> Engines</a></li><li class="chapter-item "><a href="../../../systems/engines_and_fuel_systems/fuel_system.html"><strong aria-hidden="true">3.2.2.</strong> Fuel System</a></li></ol></li><li class="chapter-item "><a href="../../../systems/nav_com/overview.html"><strong aria-hidden="true">3.3.</strong> Navigation & Communication</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/nav_com/nav_sys.html"><strong aria-hidden="true">3.3.1.</strong> Navigation System</a></li><li class="chapter-item "><a href="../../../systems/nav_com/ins.html"><strong aria-hidden="true">3.3.2.</strong> INS</a></li><li class="chapter-item "><a href="../../../systems/nav_com/ahrs.html"><strong aria-hidden="true">3.3.3.</strong> Attitude and Heading Reference Set (AHRS)</a></li><li class="chapter-item "><a href="../../../systems/nav_com/tacan.html"><strong aria-hidden="true">3.3.4.</strong> TACAN</a></li><li class="chapter-item "><a href="../../../systems/nav_com/bdhi.html"><strong aria-hidden="true">3.3.5.</strong> BDHI</a></li><li class="chapter-item "><a href="../../../systems/nav_com/icls.html"><strong aria-hidden="true">3.3.6.</strong> ICLS</a></li><li class="chapter-item "><a href="../../../systems/nav_com/intercom.html"><strong aria-hidden="true">3.3.7.</strong> ICS - Intercom</a></li><li class="chapter-item "><a href="../../../systems/nav_com/com/overview.html"><strong aria-hidden="true">3.3.8.</strong> Communication Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/nav_com/com/encryption.html"><strong aria-hidden="true">3.3.8.1.</strong> KY-28 Encryption</a></li><li class="chapter-item "><a href="../../../systems/nav_com/com/uhf.html"><strong aria-hidden="true">3.3.8.2.</strong> AN/ARC-159 (UHF 1) Radio</a></li><li class="chapter-item "><a href="../../../systems/nav_com/com/vuhf.html"><strong aria-hidden="true">3.3.8.3.</strong> AN/ARC-182 (V/UHF 2) Radio</a></li></ol></li><li class="chapter-item "><a href="../../../systems/nav_com/link4.html"><strong aria-hidden="true">3.3.9.</strong> Link 4A & C Datalink</a></li></ol></li><li class="chapter-item "><a href="../../../systems/identification_systems.html"><strong aria-hidden="true">3.4.</strong> Identification Systems</a></li><li class="chapter-item "><a href="../../../systems/hydraulics.html"><strong aria-hidden="true">3.5.</strong> Hydraulics</a></li><li class="chapter-item "><a href="../../../systems/enviornmental_control_system.html"><strong aria-hidden="true">3.6.</strong> Environmental Control System</a></li><li class="chapter-item "><a href="../../../systems/utility.html"><strong aria-hidden="true">3.7.</strong> Utility</a></li><li class="chapter-item "><a href="../../../systems/electrics.html"><strong aria-hidden="true">3.8.</strong> Electrics</a></li><li class="chapter-item "><a href="../../../systems/lighting.html"><strong aria-hidden="true">3.9.</strong> Lighting</a></li><li class="chapter-item "><a href="../../../systems/radar/overview.html"><strong aria-hidden="true">3.10.</strong> AN/AWG-9 Weapon Control System (WCS)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/radar/interface.html"><strong aria-hidden="true">3.10.1.</strong> Interface</a></li><li class="chapter-item "><a href="../../../systems/radar/general_operation.html"><strong aria-hidden="true">3.10.2.</strong> AN/AWG-9 General Operation</a></li></ol></li><li class="chapter-item "><a href="../../../systems/tcs.html"><strong aria-hidden="true">3.11.</strong> AN/AXX-1 TCS</a></li><li class="chapter-item expanded "><a href="../../../systems/weapon_systems/overview.html"><strong aria-hidden="true">3.12.</strong> Weapon Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../systems/weapon_systems/lantirn/overview.html" class="active"><strong aria-hidden="true">3.12.1.</strong> LANTIRN</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/weapon_systems/lantirn/modes.html"><strong aria-hidden="true">3.12.1.1.</strong> Modes</a></li><li class="chapter-item "><a href="../../../systems/weapon_systems/lantirn/other.html"><strong aria-hidden="true">3.12.1.2.</strong> Other</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../systems/defensive_systems/overview.html"><strong aria-hidden="true">3.13.</strong> Defensive Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/defensive_systems/countermeasures/overview.html"><strong aria-hidden="true">3.13.1.</strong> Countermeasures</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/defensive_systems/countermeasures/ale_39.html"><strong aria-hidden="true">3.13.1.1.</strong> ALE-39</a></li><li class="chapter-item "><a href="../../../systems/defensive_systems/countermeasures/lau_138.html"><strong aria-hidden="true">3.13.1.2.</strong> LAU-138</a></li></ol></li><li class="chapter-item "><a href="../../../systems/defensive_systems/radar_warning_receiver.html"><strong aria-hidden="true">3.13.2.</strong> Radar Warning Receiver</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../systems/defensive_systems/alr_67.html"><strong aria-hidden="true">3.13.2.1.</strong> ALR-67</a></li><li class="chapter-item "><a href="../../../systems/defensive_systems/alr_45-50.html"><strong aria-hidden="true">3.13.2.2.</strong> ALR-45/50</a></li></ol></li><li class="chapter-item "><a href="../../../systems/defensive_systems/ecm.html"><strong aria-hidden="true">3.13.3.</strong> Electronic Countermeasures</a></li></ol></li><li class="chapter-item "><a href="../../../systems/emergency.html"><strong aria-hidden="true">3.14.</strong> Emergency</a></li></ol></li><li class="chapter-item "><a href="../../../stores/overview.html"><strong aria-hidden="true">4.</strong> Weapons & Stores</a></li><li class="chapter-item "><a href="../../../procedures/overview.html"><strong aria-hidden="true">5.</strong> Normal Procedures</a></li><li class="chapter-item "><a href="../../../emergency_procedures/overwiew.html"><strong aria-hidden="true">6.</strong> Emergency Procedures</a></li><li class="chapter-item "><a href="../../../dcs/overview.html"><strong aria-hidden="true">7.</strong> DCS</a></li><li class="chapter-item "><a href="../../../abbreviations.html"><strong aria-hidden="true">8.</strong> Abbreviations</a></li><li class="chapter-item "><a href="../../../tutorials.html"><strong aria-hidden="true">9.</strong> Tutorials</a></li><li class="chapter-item "><a href="../../../imprint.html"><strong aria-hidden="true">10.</strong> Imprint</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/systems/weapon_systems/lantirn/overview.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="lantirn"><a class="header" href="#lantirn">LANTIRN</a></h1>
+<blockquote>
+<p>🚧 TODO: Make sure everything is right here. Perhaps shorten this down.</p>
+</blockquote>
+<p><img src="../../../img/lantirn.png" alt="LANTIRN" /> <em>U.S. Navy photo by Photographer’s Mate 2nd Class Felix Garza
+Jr. (030325-N-4142G-009)</em></p>
+<h2 id="description"><a class="header" href="#description">Description</a></h2>
+<p>The LANTIRN or Low Altitude Navigation and Targeting Infrared for Night began life as combined
+targeting and navigation pods designed for the F-15E and F-16. When the US Navy became interested in
+using the F-14 Tomcat in the A/G role Martin Marietta (now Lockheed Martin) began its own program to
+show that the LANTIRN could quickly be adapted for F-14 use.</p>
+<p>As the pod was adapted for the F-14 the secondary navigational pod was deleted, keeping only the
+targeting pod. The pod was wired up to its own control panel as the F-14 didn’t have the required
+1553-bus for complete integration. The control panel was patched into the TCS -&gt; TID video feed
+allowing it to select either the TCS or the LANTIRN for display on the TID and VDI.</p>
+<p>While the pod can read waypoints and selected weapon from the WCS, the pod has its own GPS receiver
+and is otherwise self-contained and controlled only via its own control panel. Additionally, it also
+has its own weapons release guidance removing the need to boresight the pod to the aircraft, a
+time-consuming task.</p>
+<p>The FLIR sensor itself has three different zoom levels or fields of view (FoV). The Wide FoV limits
+are 5.9° and allows a maximum slew rate of 8.5°/s. The Narrow FoV limits are 1.7° and allows a
+maximum slew rate of 1.8°/s. The last mode, the Expanded FoV is a digital zoom of the Narrow FoV,
+meaning that the resolution will be worse in this mode. The FoV limits for the Expanded FoV are 0.8°
+with a max slew rate of 0.7°/s.</p>
+<h2 id="controls-and-displays"><a class="header" href="#controls-and-displays">Controls and Displays</a></h2>
+<p>All the controls for the LANTIRN are situated on its own control panel mounted on the RIO’s left
+side console when the pod is present, including the switch controlling what video feed the TID and
+VDI display in the TV mode.</p>
+<h3 id="lantirn-video-elements"><a class="header" href="#lantirn-video-elements">LANTIRN Video Elements</a></h3>
+<p>The FLIR (Forward Looking InfraRed) video-feed from the LANTIRN has superimposed data readout for
+the crew’s use. This video-feed can be viewed both on the TID (in TV-mode) and on the VDI (also in
+TV-mode) when the FLIR feed is selected on the control panel.</p>
+<p>Amongst other things the displays show own aircraft position, target position as well as targeting
+cues to the crew. When using the LANTIRN for A/G attack these readouts are also used as targeting
+and release cues.</p>
+<p><img src="../../../img/FLIR.png" alt="FLIR" /></p>
+<p>Own aircraft data is shown in the upper left corner (1), showing position, altitude, groundspeed and
+pitch angle (dive).</p>
+<p>On the left side (2) the pod displays whether it’s using white hot or black hot (WHOT and BHOT) as
+well as if the AGC (Automatic Gain Control) or MGC (Manual Gain Control) is in use.</p>
+<p>The lower left datablock (3) shows pod information, SR is slant range (line of sight range), AZ and
+EL is pod line of sight azimuth and elevation relative aircraft ADL (with AZ having L or R for left
+or right of aircraft heading). Below that is current UTC time and then IBIT codes below that.</p>
+<blockquote>
+<p><strong>Note:</strong> IBIT codes are not implemented currently and the clock will show local time.</p>
+</blockquote>
+<p>The lower middle (4) shows current pod mode (A/A or A/G) and track mode (AREA, POINT or Q
+designations) on the left side. The right side shows currently selected weapon and laser code while
+above and in the center an L is shown when the laser is armed and flashing when firing the laser.</p>
+<p>The lower right (5) shows data for currently selected Q (slewpoint) except for QSNO, QADL and QHUD,
+TTG being time to go until on top of currently selected Q, the rows below that, bearing and range to
+Q, ELEV indicating elevation in feet of Q and lastly, below that, Q location.</p>
+<p>6 is the crosshairs showing tracked position, in this case we have a bounding box, indicating
+currently tracked target in point mode. The two widest zoom modes will have boxes showing the field
+of view for the next, narrower, mode. Additionally there’s a small white square (FLIR pointing cue)
+moving around showing the current pod line of sight relative to aircraft from a top down
+perspective. In this case it’s right next to the upside down ^, top center, indicating that the pod
+is looking ahead of the aircraft. If the square is centered the pod is looking straight down and
+below center it indicates the pod looking aft.</p>
+<p>Finally, 7 is the steering guidance towards the selected Q, the top one being commanded heading and
+the vertical one on the right the bomb release cue.</p>
+<p>The commanded heading shows current aircraft heading above the inverted ^, with the commanded
+heading being displayed as a relative bearing either L (Left) or R (Right) of current aircraft
+heading below the line. The commanded heading is also indicated by a vertical line bisecting the
+horizontal one.</p>
+<p>The right, bomb release cue, is only shown if the selected Q is QDES and shows a vertical line along
+which a release cue travels downwards. This release cue is only visible with a valid weapon
+selection (bomb) and when it reaches the two tick marks, that’s the cue to release. Below the line
+is the indicated TREL (Time to Release) in seconds, changing to TIMP (Time to Impact) after release.</p>
+<p>Around this all is the masking curve, indicating at what angles the pod will be masked by own
+aircraft (looking into the aircraft hull). This is relative to the FLIR pointing cue, when the cue
+moves outside the masking curve the sensor will be blocked by the hull.</p>
+<h3 id="control-panel"><a class="header" href="#control-panel">Control Panel</a></h3>
+<p>The control panel contains all the controls for the pod, including the control stick.</p>
+<p><img src="../../../img/panel.png" alt="Control Panel" /></p>
+<p>The power switch for the LANTIRN pod is located top left (1) with OFF disabling power to the system,
+IMU (blocked in above image) powering only the LANTIRN IMU and POD powering the whole system.</p>
+<blockquote>
+<p><strong>Note:</strong> IMU selection has no current DCS function.</p>
+</blockquote>
+<p>The MODE switch (2) switches the POD sensor between STBY (Standby) and OPER (Operational).</p>
+<p>The LASER ARMED (3) light illuminates when the laser is armed while the LASER switch (4) arms it.
+(ARM and SAFE positions available.)</p>
+<p>Down right is the VIDEO switch (5) which controls what video is fed to the TID and VDI, FLIR
+selecting LANTIRN FLIR video and TCS selecting TCS video.</p>
+<p>The four grouped indicator lights (6) indicate various error states in the LANTIRN system and the
+IBIT button (7) initiates the IBIT (Initialized Built-In-Test).</p>
+<blockquote>
+<p><strong>Note:</strong> The IBIT and fault indicators are not currently implemented in DCS.</p>
+</blockquote>
+<h3 id="control-stick"><a class="header" href="#control-stick">Control Stick</a></h3>
+<p>The control stick for the LANTIRN operates the LANTIRN’s sensor itself, note though that the stick
+itself does not move, the buttons and hats on the stick are used to control the pod.</p>
+<p><img src="../../../img/stick1.png" alt="Control Stick" /></p>
+<p>The left four-way hat, S3, (1) allows selection of QWp- and QWp+ (left/right) in addition to Point
+Track (up) and Area Track (down) modes.</p>
+<p>The center slew hat (2) is used to slew the sensor line of sight itself and depression of this hat
+switches between white hot (WHOT) and black hot (BHOT) sensor modes.</p>
+<p>The right four-way hat, S4, (3) allows for selection of QADL/QHUD (up), QDES (right) and QSNO (down)
+in addition to declutter level which is cycled by momentary depression of the hat. The left slider
+additionally changes the right hat function as detailed further down.</p>
+<p>The red button on top (4) is used to cycle between the three fields of view (zoom levels) of the IR
+sensor.</p>
+<p>The two-way hat on the side (5) selects either the A/G or A/A modes of operation for the pod.</p>
+<p>Located on the left side of the stick head is a two way slider (6), springloaded to return to
+center. This switch changes the function of the right four-way hat.</p>
+<p>Sliding it forwards allows for selection of manual gain while releasing and sliding it forwards
+again reselects automatic gain. Change of the manual gain with manual gain already selected can be
+done by sliding the switch forwards and holding it for 2 seconds. With this mode active up/down on
+the right hat increases and decreases the gain while left/right decreases and increases level.</p>
+<p>Sliding the switch aft momentarily allows selection of used laser code, while sliding it aft and
+holding allows for focus control. When set to laser code change, the right four-way hat selects
+digit to change with left/right and increases and decreases the selected digit with up/down. In
+focus control up/down increases and decreases focus.</p>
+<p>Located on the front of the stick (7) is a two-stage trigger, first detent manually lasing while the
+second detent fires the laser and designates QDES at current sensor position.</p>
+<p>Lastly on the front side of the stick (8) is the latched laser fire button. Selecting it fires the
+laser for 60 seconds which can be overriden by the pressing and releasing the first trigger detent.
+A renewed press on the laser latch button resets the latched laser fire timer to 60 seconds,
+beginning a new 60 second countdown.</p>
+<h2 id="startup"><a class="header" href="#startup">Startup</a></h2>
+<p>To start the LANTIRN from cold, set the power switch to POD. This will start the LANTIRN power-up
+sequence which takes 8 minutes. When ready, this will be indicated by the MODE switch showing STBY.</p>
+<p>When at STBY, depression of the MODE button switches the system to OPER (Operational), enabling the
+LANTIRN sensor after a 30-second initialization.</p>
+<p>Lastly, to allow display of LANTIRN FLIR video, select FLIR on the VIDEO switch.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../systems/weapon_systems/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../systems/weapon_systems/lantirn/modes.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../systems/weapon_systems/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../../systems/weapon_systems/overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../../systems/weapon_systems/lantirn/modes.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../../systems/weapon_systems/lantirn/modes.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js"></script>
+        <script src="../../../mark.min.js"></script>
+        <script src="../../../searcher.js"></script>
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Engines - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/visual.css">
+        <link rel="stylesheet" href="../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../theme/pdf.css">
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <div class="menu-logo"><img src="/img/f14line.svg"></div>
+
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../f14_manual.html">F-14 Manual</a></li><li class="chapter-item "><a href="../../intro/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item "><a href="../../cockpit/overview.html"><strong aria-hidden="true">2.</strong> Cockpit Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/pilot/overview.html"><strong aria-hidden="true">2.1.</strong> Pilot Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/pilot/left_console.html"><strong aria-hidden="true">2.1.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_vertical_console.html"><strong aria-hidden="true">2.1.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_knee_panel.html"><strong aria-hidden="true">2.1.3.</strong> Left Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_instrument_panel.html"><strong aria-hidden="true">2.1.4.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/left_windshield_frame.html"><strong aria-hidden="true">2.1.5.</strong> Left Windshield Frame</a></li><li class="chapter-item "><a href="../../cockpit/pilot/center_panel.html"><strong aria-hidden="true">2.1.6.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_windshield_frame.html"><strong aria-hidden="true">2.1.7.</strong> Right Windshield Frame</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_instrument_panel.html"><strong aria-hidden="true">2.1.8.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_knee_panel.html"><strong aria-hidden="true">2.1.9.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_vertical_console.html"><strong aria-hidden="true">2.1.10.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/right_console.html"><strong aria-hidden="true">2.1.11.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../cockpit/pilot/canopy_control_handle.html"><strong aria-hidden="true">2.1.12.</strong> Canopy Control Handle</a></li></ol></li><li class="chapter-item "><a href="../../cockpit/rio/overview.html"><strong aria-hidden="true">2.2.</strong> RIO Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cockpit/rio/left_console.html"><strong aria-hidden="true">2.2.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/left_vertical_console.html"><strong aria-hidden="true">2.2.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/left_instrument_console.html"><strong aria-hidden="true">2.2.3.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/center_panel.html"><strong aria-hidden="true">2.2.4.</strong> Center Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/center_console.html"><strong aria-hidden="true">2.2.5.</strong> Center Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/footwells.html"><strong aria-hidden="true">2.2.6.</strong> Left and Right Footwells</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_instrument_console.html"><strong aria-hidden="true">2.2.7.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_knee_panel.html"><strong aria-hidden="true">2.2.8.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_vertical_console.html"><strong aria-hidden="true">2.2.9.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/right_console.html"><strong aria-hidden="true">2.2.10.</strong> Right Side Console</a></li><li class="chapter-item "><a href="../../cockpit/rio/canopy_control_handle.html"><strong aria-hidden="true">2.2.11.</strong> Canopy Control Handle</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../systems/overview.html"><strong aria-hidden="true">3.</strong> Systems Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/flight_controls_gear/overview.html"><strong aria-hidden="true">3.1.</strong> Flight Controls and Gear</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/flight_controls_gear/cadc.html"><strong aria-hidden="true">3.1.1.</strong> Central Air Data Computer (CADC)</a></li><li class="chapter-item "><a href="../../systems/flight_controls_gear/flight_controls.html"><strong aria-hidden="true">3.1.2.</strong> Flight Controls & AFCS</a></li><li class="chapter-item "><a href="../../systems/flight_controls_gear/wing_sweep.html"><strong aria-hidden="true">3.1.3.</strong> Wing-Sweep System</a></li><li class="chapter-item "><a href="../../systems/flight_controls_gear/gear_ground_handling.html"><strong aria-hidden="true">3.1.4.</strong> Gear & Ground Handling</a></li></ol></li><li class="chapter-item expanded "><a href="../../systems/engines_and_fuel_systems/overview.html"><strong aria-hidden="true">3.2.</strong> Engines & Fuel Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../systems/engines_and_fuel_systems/engines.html" class="active"><strong aria-hidden="true">3.2.1.</strong> Engines</a></li><li class="chapter-item "><a href="../../systems/engines_and_fuel_systems/fuel_system.html"><strong aria-hidden="true">3.2.2.</strong> Fuel System</a></li></ol></li><li class="chapter-item "><a href="../../systems/nav_com/overview.html"><strong aria-hidden="true">3.3.</strong> Navigation & Communication</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/nav_com/nav_sys.html"><strong aria-hidden="true">3.3.1.</strong> Navigation System</a></li><li class="chapter-item "><a href="../../systems/nav_com/ins.html"><strong aria-hidden="true">3.3.2.</strong> INS</a></li><li class="chapter-item "><a href="../../systems/nav_com/ahrs.html"><strong aria-hidden="true">3.3.3.</strong> Attitude and Heading Reference Set (AHRS)</a></li><li class="chapter-item "><a href="../../systems/nav_com/tacan.html"><strong aria-hidden="true">3.3.4.</strong> TACAN</a></li><li class="chapter-item "><a href="../../systems/nav_com/bdhi.html"><strong aria-hidden="true">3.3.5.</strong> BDHI</a></li><li class="chapter-item "><a href="../../systems/nav_com/icls.html"><strong aria-hidden="true">3.3.6.</strong> ICLS</a></li><li class="chapter-item "><a href="../../systems/nav_com/intercom.html"><strong aria-hidden="true">3.3.7.</strong> ICS - Intercom</a></li><li class="chapter-item "><a href="../../systems/nav_com/com/overview.html"><strong aria-hidden="true">3.3.8.</strong> Communication Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/nav_com/com/encryption.html"><strong aria-hidden="true">3.3.8.1.</strong> KY-28 Encryption</a></li><li class="chapter-item "><a href="../../systems/nav_com/com/uhf.html"><strong aria-hidden="true">3.3.8.2.</strong> AN/ARC-159 (UHF 1) Radio</a></li><li class="chapter-item "><a href="../../systems/nav_com/com/vuhf.html"><strong aria-hidden="true">3.3.8.3.</strong> AN/ARC-182 (V/UHF 2) Radio</a></li></ol></li><li class="chapter-item "><a href="../../systems/nav_com/link4.html"><strong aria-hidden="true">3.3.9.</strong> Link 4A & C Datalink</a></li></ol></li><li class="chapter-item "><a href="../../systems/identification_systems.html"><strong aria-hidden="true">3.4.</strong> Identification Systems</a></li><li class="chapter-item "><a href="../../systems/hydraulics.html"><strong aria-hidden="true">3.5.</strong> Hydraulics</a></li><li class="chapter-item "><a href="../../systems/enviornmental_control_system.html"><strong aria-hidden="true">3.6.</strong> Environmental Control System</a></li><li class="chapter-item "><a href="../../systems/utility.html"><strong aria-hidden="true">3.7.</strong> Utility</a></li><li class="chapter-item "><a href="../../systems/electrics.html"><strong aria-hidden="true">3.8.</strong> Electrics</a></li><li class="chapter-item "><a href="../../systems/lighting.html"><strong aria-hidden="true">3.9.</strong> Lighting</a></li><li class="chapter-item "><a href="../../systems/radar/overview.html"><strong aria-hidden="true">3.10.</strong> AN/AWG-9 Weapon Control System (WCS)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/radar/interface.html"><strong aria-hidden="true">3.10.1.</strong> Interface</a></li><li class="chapter-item "><a href="../../systems/radar/general_operation.html"><strong aria-hidden="true">3.10.2.</strong> AN/AWG-9 General Operation</a></li></ol></li><li class="chapter-item "><a href="../../systems/tcs.html"><strong aria-hidden="true">3.11.</strong> AN/AXX-1 TCS</a></li><li class="chapter-item "><a href="../../systems/weapon_systems/overview.html"><strong aria-hidden="true">3.12.</strong> Weapon Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/weapon_systems/lantirn/overview.html"><strong aria-hidden="true">3.12.1.</strong> LANTIRN</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/weapon_systems/lantirn/modes.html"><strong aria-hidden="true">3.12.1.1.</strong> Modes</a></li><li class="chapter-item "><a href="../../systems/weapon_systems/lantirn/other.html"><strong aria-hidden="true">3.12.1.2.</strong> Other</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../systems/defensive_systems/overview.html"><strong aria-hidden="true">3.13.</strong> Defensive Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/defensive_systems/countermeasures/overview.html"><strong aria-hidden="true">3.13.1.</strong> Countermeasures</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/defensive_systems/countermeasures/ale_39.html"><strong aria-hidden="true">3.13.1.1.</strong> ALE-39</a></li><li class="chapter-item "><a href="../../systems/defensive_systems/countermeasures/lau_138.html"><strong aria-hidden="true">3.13.1.2.</strong> LAU-138</a></li></ol></li><li class="chapter-item "><a href="../../systems/defensive_systems/radar_warning_receiver.html"><strong aria-hidden="true">3.13.2.</strong> Radar Warning Receiver</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../systems/defensive_systems/alr_67.html"><strong aria-hidden="true">3.13.2.1.</strong> ALR-67</a></li><li class="chapter-item "><a href="../../systems/defensive_systems/alr_45-50.html"><strong aria-hidden="true">3.13.2.2.</strong> ALR-45/50</a></li></ol></li><li class="chapter-item "><a href="../../systems/defensive_systems/ecm.html"><strong aria-hidden="true">3.13.3.</strong> Electronic Countermeasures</a></li></ol></li><li class="chapter-item "><a href="../../systems/emergency.html"><strong aria-hidden="true">3.14.</strong> Emergency</a></li></ol></li><li class="chapter-item "><a href="../../stores/overview.html"><strong aria-hidden="true">4.</strong> Weapons & Stores</a></li><li class="chapter-item "><a href="../../procedures/overview.html"><strong aria-hidden="true">5.</strong> Normal Procedures</a></li><li class="chapter-item "><a href="../../emergency_procedures/overwiew.html"><strong aria-hidden="true">6.</strong> Emergency Procedures</a></li><li class="chapter-item "><a href="../../dcs/overview.html"><strong aria-hidden="true">7.</strong> DCS</a></li><li class="chapter-item "><a href="../../abbreviations.html"><strong aria-hidden="true">8.</strong> Abbreviations</a></li><li class="chapter-item "><a href="../../tutorials.html"><strong aria-hidden="true">9.</strong> Tutorials</a></li><li class="chapter-item "><a href="../../imprint.html"><strong aria-hidden="true">10.</strong> Imprint</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/systems/engines_and_fuel_systems/engines.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="engines"><a class="header" href="#engines">Engines</a></h1>
+<blockquote>
+<p>🚧 TODO: Rework to add more (or redo) imagery. Also fix the notes to use the new F-4 system.</p>
+</blockquote>
+<p>The F-14A is powered by two Pratt &amp; Whitney TF30-P-414A while the F-14B is powered by two General
+Electrics F110-GE-400, both of which are afterburning turbofan engines.</p>
+<p>To provide the engines with an even subsonic airflow the F-14 has the AICS or Air Inlet Control
+System. This system controls the variable geometry intakes by moving the variable ramps mounted in
+them to slow the airflow. This is accomplished using various sensor inputs run through a calculation
+using set schedules which decides the positions of the ramps.</p>
+<p>In addition, the TF30 uses two systems to improve reliable operation, the Mid Compression Bypass
+System (MCB) and the Mach Lever.</p>
+<p>The MCB helps mitigate high angle of attack airflow onto the compressor fans to reduce the risk of
+an engine stall. This system vents air from the compressor section to bypass duct to stabilize the
+airflow for later compressor stages. Normally this system uses angle of attack and Mach number
+sensor data to activate, but with the landing gear handle in the down position this it is only
+activated with zone 5 afterburner. Additionally the WCS commands the MCB to activate with extension
+of the refuelling probe as well as when launching AIM-7 or AIM-9 missiles, air to ground rockets or
+firing the M61 Vulcan gun.</p>
+<p>The Mach Lever also mitigates the risk of an engine stall by controlling min and max rpm allowed as
+a function of Mach number. In addition it also increases the minimum rpm in high angle of attack
+regimes while subsonic.</p>
+<p>The two F110s in F-14B, on the other hand, are controlled by the AFTC (Augmenter Fan Temperature
+Control unit). The AFTC is an early engine control computer akin to an early version of a FADEC
+(Full Authority Digital Engine Control) used on newer turbine engines. This system controls both the
+engine itself as well as the variable exhaust nozzles controlling the engine exhaust gases and
+removes the need for the MCB and Mach Lever for the F110. The lack of such a system in the F-14A
+controlling its TF30s is one of the reasons for them being deemed less reliable than the F110s.</p>
+<p>In case of a failure in the AFTC the MEC (Main engine control) is capable of assuming control of the
+engines to provide a fall-back, mechanical control. The normal mode, AFTC, is the primary mode (PRI)
+and called as such while the fall-back MEC is the secondary (SEC) mode. The selection of primary or
+secondary is automatic in case of a failure in the AFTC but can also be manually selected. Of note
+is that in secondary mode the engine nozzles are fully closed and disabled in addition to the
+afterburners being disabled with a corresponding loss of engine performance.</p>
+<p>In addition both engines also drive separate fuel, hydraulic and electric generators to create
+redundancy.</p>
+<blockquote>
+<p><strong>Note:</strong> The main difference between the TF30 and F110 engines (apart from lesser thrust in the
+TF30s) is that the TF30s are more sensitive to the quality of the airflow entering the compressor
+face. In general it is wise to avoid anything less than military power or afterburner while in
+high angle of attack maneuvers as well as avoiding large rudder inputs or asymmetric engine
+throttle settings. That said, the TF30s in the HB F-14A module have been extensively tuned using
+available data and SME expertise, resulting in an accurate modelling of an engine undeserving of
+its bad reputation. One “advantage” of the TF30’s mechanical fuel control is its high speed
+thrust, resulting in higher top speeds than the F110 can achieve. If flown within normal
+parameters, the TF30 engines behave well if a tad underpowered compared to the F110s.</p>
+</blockquote>
+<h2 id="throttle-controls"><a class="header" href="#throttle-controls">Throttle Controls</a></h2>
+<p><img src="../../img/throttles-schem1.png" alt="throttles" /></p>
+<p>The throttles in the F-14 have detents preventing unintentional engine start and shutdown and
+unintentional selection of afterburner. In addition the throttles also controls several different
+systems depending on throttle position as shown in the diagram above. The most critical of these
+being the fuel cutoff and ignition systems in the respective engines.</p>
+<p>For throttle operations there are three modes:</p>
+<p>The manual mode is a mechanical mode in which the engines are controlled by mechanical linkages
+directly from the throttles to the engines. The manual mode is designed as a backup mode and may be
+inexact becuase of the mechanical nature of the controls.</p>
+<p>Boost mode is the normal mode of operation in which electrical paths control actuators moving the
+same engine controls as the mechanical linkages but more exactly and with lesser force required.</p>
+<p>The third mode is the approach power compensator mode or the auto throttle mode which is a system
+which allows for automatic throttle control for optimal angle-of-attack during approaches.</p>
+<p>The controls for the throttle mode are located on the inlet ramps/throttle control panel to the side
+of the main throttles and allows for selection of all three modes. The auto throttle mode is
+solenoid held and will revert to boost mode if the criteria for automatic controls are not met.</p>
+<p>To allow selection of auto mode the throttles need to be between 75 to 90% rpm, the gear handle
+needs to be down and with no weight on the wheels. If these criteria are no longer met, the
+throttles are manually overriden with force or the Cage/SEAM button on the left throttle is
+depressed the solenoid releases the switch and it reverts to boost.</p>
+<p>For additional autothrottle tune the gain of the system can be set on the inlet ramps/throttle
+control panel. The settings are hot, normal or cold with hot increasing the throttle gain (and
+effective thrust) and cold decreasing it. These settings correspond to cold or hot external
+temperatures but should be set according to observed throttle control.</p>
+<p>The RATS or reduced arrestment thrust system is a system limiting engine thrust after touchdown to
+limit it to levels appropriate for carrier environments. The system is enabled by weight on either
+main landing gear and is disabled by selection of afterburner on the throttles.</p>
+<p>Finally, and implemented only for the F110-GE-400, is the asymmetric limiter, preventing asymmetric
+afterburner engagement if only one afterburner lights by keeping that afterburner at minimum
+afterburner thrust until the other afterburner also lights.</p>
+<h2 id="engine-and-throttle-control-switches-and-indicators"><a class="header" href="#engine-and-throttle-control-switches-and-indicators">Engine and Throttle Control Switches and Indicators</a></h2>
+<p><img src="../../img/inlet1.png" alt="inlet" /></p>
+<p>The inlet ramps/throttle control panel contains most other engine related controls.</p>
+<p>The inlet ramps/throttle control panel contains most other engine releated controls.</p>
+<p>The THROTTLE MODE (1) switch sets throttle mode to AUTO, BOOST or MAN modes respectively, with auto
+being springloaded back to boost but held in place electrically as mentioned above.</p>
+<p>The THROTTLE TEMP (2) switch controls the gain of the automatic throttle system also described
+above.</p>
+<p>The INLET RAMPS (3) switches enable (AUTO) or disable, stow (STOW) the variable intake ramps.</p>
+<p>The engine crank switch (4) is used to crank the engines to 20% rpm allowing for engine start by
+moving the respective throttle to idle from cut-off. The air to start the engine is sourced from an
+external air supply if connected or the other engine if no external source exists. At 50% rpm the
+crank switch automatically returns to off/center position. If this does not occur it should be
+manually set to off to prevent damage to the air turbine starter.</p>
+<p>The BACK UP IGNITION (5) switch enables the backup ignition system in case of a failure in the main
+ignition circuits that are normally enabled by moving the throttles out of the cut-off position.</p>
+<p><img src="../../img/asym1.png" alt="asym" /></p>
+<blockquote>
+<p><strong>Note:</strong> F-14B only.</p>
+</blockquote>
+<p>The ASYM LIMITER (1) on the ASYM limiter/engine mode select panel enables or disables the asymmetric
+afterburner thrust limiter. Default position is ON and the switch has a guard cover keeping it in
+that position.</p>
+<p>The other switches on that same panel are the ENG (engine) MODE SELECT switches (2), setting the
+left (L ENG) and right (R ENG) to PRI, primary or SEC, secondary modes respectively.</p>
+<p><img src="../../img/mcb1.png" alt="mcb" /></p>
+<blockquote>
+<p><strong>Note:</strong> F-14A only.</p>
+</blockquote>
+<p>The MCB Test Panel, located in the RIO pit on the right horisontal panel, is used to test if the MCB
+system functions. The TEST switch (2) set to the TEST position activates the test circuit which
+lights the two test lights (1) for the left and right engine respectively if their MCB circuits
+function.</p>
+<p><img src="../../img/externalenvironment1.png" alt="externalenvironment" /></p>
+<p>The ENG/PROBE ANTI-ICE switch on the external environmental control panel enables the engine
+anti-ice and intake ramp anti-ice mode in addition to the various probe heaters. The ORIDE position
+enables the system, the AUTO position enables the system if icing is detected and the OFF position
+disable it.</p>
+<h2 id="engine-instrument-group-eig-related-indicators-and-caution-lights"><a class="header" href="#engine-instrument-group-eig-related-indicators-and-caution-lights">Engine Instrument Group (EIG), Related Indicators and Caution Lights</a></h2>
+<p><img src="../../img/instrument-group1.png" alt="instrument-group" /></p>
+<p>The ENGINE INSTRUMENT GROUP displays engine RPM, TIT (Turbine Inlet Temperature, F-14A) or EGT
+(Exhaust Gas Temperature, F14B) and FF (fuel flow) to the pilot to allow for engine monitoring.</p>
+<blockquote>
+<p>🚧 TODO: Add image of the F110 EIG.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong> Pictured above are the TF30 engine indicators.</p>
+</blockquote>
+<p><img src="../../img/exhaust1.png" alt="exhaust" /></p>
+<p>The exhaust nozzle position indicators display respective engine’s current engine exhaust nozzle
+position, with zero being fully closed and full clockwise rotation being fully open. The F-14A
+indicates 0 to 6 units while the F-14B indicates 0 to 100 percent open (tens indicated on gauge).</p>
+<blockquote>
+<p><strong>Note</strong>: F-14B's Nozzle Percentage gauge is coming soon.</p>
+</blockquote>
+<p><img src="../../img/oil1.png" alt="oil" /></p>
+<p>The oil pressure indicators display respective engine oil pressure allowing the pilot to check that
+engine oil pressure is at acceptable levels.</p>
+<p>The caution lights relevant to engine operation are located on the pilot’s caution - advisory panel,
+and at the sides of the HUD.</p>
+<p>The caution lights on the sides of the HUD are the engine stall warning lights which flashes at a 3
+Hz rate when an engine stall is detected. The warning light on the left side of the HUD indicates an
+engine stall in the left engine and the one on the opposite side the right engine. This is also
+combined with an audio warning, a modulated tone at 320 Hz.</p>
+<p>Below the left engine stall warning light is, amongst others, the AUTO THROT (auto throttle) caution
+light which illuminates for 10 seconds when the auto throttle system is disengaged by other means
+than the throttle mode switch.</p>
+<p>On the main caution - advisory panel the relevant engine caution and warnings lights are:</p>
+<ul>
+<li><strong>INLET ICE:</strong> Caution light indicating ice detection on the detector in the left engine inlet.</li>
+<li><strong>L &amp; R INLET:</strong> Caution lights indicating failure in AICS for respective variable intake system.</li>
+<li><strong>OIL PRESS:</strong> Caution light indicating low oil pressure in either engine.</li>
+<li><strong>BLEED DUCT:</strong> Caution light indicating hot air leakage in either engine.</li>
+<li><strong>L &amp; R RAMPS:</strong> Caution lights indicating respective engine intake ramp not being locked into
+position when supposed to.</li>
+<li><strong>L &amp; R GEN:</strong> Caution lights indicating that respective engine generator is inoperative.</li>
+<li><strong>L &amp; R OIL HOT:</strong> Caution lights indicating that respective engine oil is too hot.</li>
+<li><strong>L &amp; R FUEL PRES:</strong> Caution lights indicating engine fuel pressure below 9 psi in respective
+engine fuel boost pump.</li>
+</ul>
+<p>F-14A TF30-P-414A only lights:</p>
+<ul>
+<li><strong>L &amp; R OVSP/VALVE:</strong> Caution lights indicating engine starter system malfunction or N1 rotor
+overspeed in respective engine.</li>
+</ul>
+<p>F-14B F110-GE-400 only lights:</p>
+<ul>
+<li><strong>START VALVE:</strong> Caution light indicating that the starter valve is open. Control engine crank
+position if lit after engine start completion.</li>
+<li><strong>L &amp; R ENG SEC:</strong> Caution lights indicating that respective engine is operating in secondary
+mode.</li>
+<li><strong>RATS:</strong> Caution light indicating that RATS (reduced arrestment thrust system) is enabled.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> F-14A specific lights not yet implemented.</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../systems/engines_and_fuel_systems/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../systems/engines_and_fuel_systems/fuel_system.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../systems/engines_and_fuel_systems/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../systems/engines_and_fuel_systems/overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../systems/engines_and_fuel_systems/fuel_system.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../systems/engines_and_fuel_systems/fuel_system.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>
