@@ -146,19 +146,19 @@ DDD as the observed speed of the returning ground returns will vary with azimuth
 Target groundspeed 900 knots, own airspeed 1200 knots. See table below for details, line of sight
 rate is the sum of target and own aircraft relative rate.
 
-| Look Angle | Line of Sight Rate | Target Heading |
-| ---------- | ------------------ | -------------- |
-| 60°        | 1490               | 180°           |
-| 45°        | 1500               | 120°           |
-| 30°        | 1428               | 100°           |
-| 0°         | 1200               | 90°            |
-| 30°        | 672                | 80°            |
-| 45°        | 210                | 60°            |
-| 60°        | -300               | 0°             |
+| No. | Look Angle | Line of Sight Rate | Target Heading |
+| --- | ---------- | ------------------ | -------------- |
+| 1   | 60°        | 1490               | 180°           |
+| 2   | 45°        | 1500               | 120°           |
+| 3   | 30°        | 1428               | 100°           |
+| 4   | 0°         | 1200               | 90°            |
+| 5   | 30°        | 672                | 80°            |
+| 6   | 45°        | 210                | 60°            |
+| 7   | 60°        | -300               | 0°             |
 
-**Note**: Position 4 has the target in a flanking or “notching” position making it disappear inside
-the MLC filter or MLC ground return. In a look-up situation with the MLC filter disabled the target
-would still be visible.
+> **Note**: Position 4 has the target in a flanking or “notching” position making it disappear
+> inside the MLC filter or MLC ground return. In a look-up situation with the MLC filter disabled
+> the target would still be visible.
 
 Additionally, all pulse doppler search modes use ground stabilization exclusively and thus the STAB
 switch is inoperative.

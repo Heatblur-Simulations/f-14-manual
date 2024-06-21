@@ -4,7 +4,8 @@
 
 ![cmhats](../../img/cmhats.png)
 
-Two switch hats on the center RIO hand hold used to initiate release of countermeasures. The switches are mirrored in regards to functionality.
+Two switch hats on the center RIO hand hold used to initiate release of countermeasures. The
+switches are mirrored in regards to functionality.
 
 - **Up**: Initiates a single chaff release.
 - **Down**: Initiates set chaff release program.
