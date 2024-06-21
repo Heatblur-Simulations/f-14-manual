@@ -2,8 +2,6 @@
 
 > 🚧 TODO: Rework to add more imagery. Also fix the notes to use the new F-4 system.
 
-## Description
-
 The AN/ALE-39 is the countermeasures dispensing set installed in the F-14 in this simulation. It
 controls its own set of launchers located between the engine nozzles on the underside of the so
 called beaver-tail.

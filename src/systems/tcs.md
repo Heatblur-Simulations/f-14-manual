@@ -21,7 +21,7 @@ the sensor can be displayed on the TID and the VDI in the front seat. Also, the 
 recorded using the airborne video tape recorder for later review. (Not currently implemented in
 DCS.)
 
-## TCS Controls and Symbology
+## Controls
 
 The controls for the TCS are located in the RIO cockpit at the sensor control panel, the DDD and the
 HCU/TID. The pilot display control panel contains a switch allowing display of TCS video on the VDI.
@@ -50,6 +50,22 @@ automatic acquisition mode with a search pattern, enabling acquisition of the cl
 outside current FOV. MAN selects purely manual acquisition with the HCU where the target needs to be
 pointed at directly. AUTO sets an automatic acquisition mode without a search pattern making the TCS
 snap to a target as long as it’s inside the TCS FOV.
+
+> 🚧 TODO: Below is taken from the AWG-9 Section. Reincorporate this into this section.
+
+The TCS TRIM knobs controls TCS calibration in azimuth (AZ) and elevation (EL). This is used to
+calibrate the TCS line of sight to be equal to the radar line of sight. Normally this is done by
+locking a target in STT, setting slave to TCS and then fine-tuning the calibration knobs until the
+TCS looks directly at the locked target.
+
+The last two switches controlling the TCS are the ACQ (acquisition) and FOV (field of view)
+switches. The ACQ switch controls how the TCS locks onto targets. AUTO SRCH means the TCS will move
+by itself in a limited search pattern trying to find a target. MAN (manual) means the TCS only locks
+onto targets if commanded to by the HCU in TCS mode and AUTO means the TCS automatically tries to
+lock onto targets entering its field of view. The FOV switch sets whether the WIDE or NAR (narrow)
+field of view is used by the TCS.
+
+> 🚧 END
 
 ### DDD
 
@@ -89,7 +105,7 @@ TID. Note that this disables the TID repeat on the HSD.
 Finally the CONTRAST and BRIGHTNESS knobs on the upper part of the TID can be used to control the
 TCS video shown on the TID.
 
-### Symbology
+## Symbology
 
 ![Symbology](../img/symbology.png)
 
@@ -147,3 +163,24 @@ instead just following the radar LOS.
 To unlock a tracked target when not being slaved to radar, select half-action and release.
 
 For information about RDR slaved to TCS check the relevant AN/AWG-9 section.
+
+### TCS Slave Radar Acquisition
+
+The TCS can be used to track a target in angle while still using the radar for range and rate. When
+selecting the radar to be slaved to the TCS line of sight via the sensor control panel (SLAVE in the
+RDR position) the radar will still be active but pointing in the direction of the TCS line of sight
+while the TCS has an active track instead of scanning.
+
+From this state it is possible to command half-action and then position the acquisition gates at the
+target video and then command full-action. This will result in either pulse doppler slaved or pulse
+slaved mode depending on previous radar mode. It is also possible to switch using the P STT and PD
+STT button on the DDD panel.
+
+The resulting submode entered is equivalent to an STT mode where the TCS is instead used to track
+the target's angle rather than the radar itself. The radar is still used to track range and rate, on
+the DDD the IROT lights instead of the ANT ROT, IROT relating to IR tracking which has been replaced
+by the TCS in the modeled F-14 versions.
+
+This mode can be used to guide missiles, active and CW modes if in pulse and in PD if in pulse
+doppler. If the SLAVE switch is set to INDEP from this mode the system reverts to true pulse STT or
+pulse doppler STT depending on current mode.

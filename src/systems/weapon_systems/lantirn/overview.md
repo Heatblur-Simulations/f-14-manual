@@ -5,8 +5,6 @@
 ![LANTIRN](../../../img/lantirn.png) _U.S. Navy photo by Photographer’s Mate 2nd Class Felix Garza
 Jr. (030325-N-4142G-009)_
 
-## Description
-
 The LANTIRN or Low Altitude Navigation and Targeting Infrared for Night began life as combined
 targeting and navigation pods designed for the F-15E and F-16. When the US Navy became interested in
 using the F-14 Tomcat in the A/G role Martin Marietta (now Lockheed Martin) began its own program to

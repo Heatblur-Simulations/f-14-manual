@@ -2,8 +2,6 @@
 
 > 🚧 TODO: Rework to add more imagery. Also fix the notes to use the new F-4 system.
 
-## Description
-
 The AN/ALR-67 radar warning receiver (RWR) is designed to inform and alert the F-14 crew about radar
 emitters in their general area. It’s also designed to help the crew defend themselves from hostile
 threats by indicate radar TRKing and engagement by radar guided weapons.
@@ -25,7 +23,7 @@ using two displays, one at each seat and by audio signals played to the ICS of b
 
 ## Controls
 
-![Control Panel](images/control1.png)
+![Control Panel](../../img/control1.png)
 
 The AN/ALR-67 RWR is controlled by a control panel on the RIO right side horizontal panel.
 
@@ -66,7 +64,7 @@ prioritization as in normal but also displays known friendly emitters.
 
 ## Displays
 
-![Display](images/display.png)
+![Display](../../img/display.png)
 
 The RWR display is identical at both positions in the cockpit and uses three bands (circles) on the
 display to indicate the threat level of the displayed threat symbols.
@@ -120,9 +118,9 @@ display to indicate the threat level of the displayed threat symbols.
 
 ## Warning Lights
 
-| Pilot                                     | RIO                                   |
-| ----------------------------------------- | ------------------------------------- |
-| ![Pilot Caution](images/pilotcaution.png) | ![RIO Caution](images/riocaution.png) |
+| Pilot                                        | RIO                                      |
+| -------------------------------------------- | ---------------------------------------- |
+| ![Pilot Caution](../../img/pilotcaution.png) | ![RIO Caution](../../img/riocaution.png) |
 
 The two crewmembers have warning lights dedicated to specific threats on their front cockpit panels.
 The pilot warning lights are situated on the right side of the HUD and the RIO warning lights on the
@@ -157,7 +155,7 @@ giving further warning of an active engagement.
 
 ## BIT
 
-![BIT](images/bit.gif)
+![BIT](../../img/bit.gif)
 
 The AN/ALR-67 BIT cycles between different test screens testing the screen, symbology and threat
 indication tones as well as displaying system revision and threat library information.
@@ -198,14 +196,14 @@ During the tests the threat warning lights also illuminate for both the pilot an
 | 16                                                                        | F-16C                                                                 | Yes          |
 | 17                                                                        | JF-17                                                                 | Yes          |
 | 18                                                                        | F/A-18C                                                               | Yes          |
-| 19                                                                        | Mig-19                                                                |              |
-| 21                                                                        | Mig-21bis                                                             |              |
-| 23                                                                        | Mig-23MLD                                                             |              |
+| 19                                                                        | MiG-19                                                                |              |
+| 21                                                                        | MiG-21bis                                                             |              |
+| 23                                                                        | MiG-23MLD                                                             |              |
 | 24                                                                        | Su-24M/MR                                                             |              |
-| 25                                                                        | Mig-25PD                                                              |              |
-| 29                                                                        | Su-27, Su-33, Mig-29A/G/S, and J-11A                                  | Yes          |
+| 25                                                                        | MiG-25PD                                                              |              |
+| 29                                                                        | Su-27, Su-33, MiG-29A/G/S, and J-11A                                  | Yes          |
 | 30                                                                        | Su-30                                                                 | Yes          |
-| 31                                                                        | Mig-31                                                                |              |
+| 31                                                                        | MiG-31                                                                |              |
 | 34                                                                        | Su-34                                                                 | Yes          |
 | 37                                                                        | AJS-37                                                                |              |
 | 39                                                                        | Su-25TM (Su-39)                                                       | Yes          |
@@ -241,7 +239,7 @@ During the tests the threat warning lights also illuminate for both the pilot an
 | 11                                                                        | SA-11 Gadfly Fire Dome track radar (Buk)                              |              |
 | 15                                                                        | SA-15 Gauntlet Scrum Half search and track radar (Tor 9A331)          |              |
 | 19                                                                        | SA-19 Grison Hot Shot search and track radar (Tunguska 2C6M)          | Yes          |
-| A                                                                         | Gepard, M-163 Vulcan, and ZSU-23-4 Shilka track radars                |              |
+| A                                                                         | Gepard, M163 Vulcan, and ZSU-23-4 Shilka track radars                 |              |
 | BB                                                                        | SA-10 Grumble Big Bird search radar (S-300PS 64H6E)                   |              |
 | BF                                                                        | Rapier Blindfire track radar                                          |              |
 | CS                                                                        | SA-10 Grumble Clam Shell search radar (S-300PS 5N66M)                 |              |
