@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="hb_light" dir="ltr">
+<html lang="en" class="hb_light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -14,7 +14,6 @@
         <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
@@ -34,15 +33,17 @@
         <link rel="stylesheet" href="theme/hb_light.css">
         <link rel="stylesheet" href="theme/hb_dark.css">
         <link rel="stylesheet" href="theme/pdf.css">
-    </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
+
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
         </script>
-
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -64,19 +65,16 @@
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
+            const html = document.documentElement;
             html.classList.remove('hb_light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add("js");
         </script>
 
         <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var body = document.querySelector('body');
             var sidebar = null;
             var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
@@ -86,42 +84,23 @@
                 sidebar = 'hidden';
             }
             sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <div class="menu-logo"><img src="/img/f14line.svg"></div>
-
-                <ol class="chapter"><li class="chapter-item affix "><a href="f14_manual.html">F-14 Manual</a></li><li class="chapter-item "><a href="intro/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item "><a href="cockpit/overview.html"><strong aria-hidden="true">2.</strong> Cockpit Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="cockpit/pilot/overview.html"><strong aria-hidden="true">2.1.</strong> Pilot Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="cockpit/pilot/left_console.html"><strong aria-hidden="true">2.1.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="cockpit/pilot/left_vertical_console.html"><strong aria-hidden="true">2.1.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="cockpit/pilot/left_knee_panel.html"><strong aria-hidden="true">2.1.3.</strong> Left Knee Panel</a></li><li class="chapter-item "><a href="cockpit/pilot/left_instrument_panel.html"><strong aria-hidden="true">2.1.4.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="cockpit/pilot/left_windshield_frame.html"><strong aria-hidden="true">2.1.5.</strong> Left Windshield Frame</a></li><li class="chapter-item "><a href="cockpit/pilot/center_panel.html"><strong aria-hidden="true">2.1.6.</strong> Center Panel</a></li><li class="chapter-item "><a href="cockpit/pilot/right_windshield_frame.html"><strong aria-hidden="true">2.1.7.</strong> Right Windshield Frame</a></li><li class="chapter-item "><a href="cockpit/pilot/right_instrument_panel.html"><strong aria-hidden="true">2.1.8.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="cockpit/pilot/right_knee_panel.html"><strong aria-hidden="true">2.1.9.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="cockpit/pilot/right_vertical_console.html"><strong aria-hidden="true">2.1.10.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="cockpit/pilot/right_console.html"><strong aria-hidden="true">2.1.11.</strong> Right Side Console</a></li><li class="chapter-item "><a href="cockpit/pilot/canopy_control_handle.html"><strong aria-hidden="true">2.1.12.</strong> Canopy Control Handle</a></li></ol></li><li class="chapter-item "><a href="cockpit/rio/overview.html"><strong aria-hidden="true">2.2.</strong> RIO Cockpit</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="cockpit/rio/left_console.html"><strong aria-hidden="true">2.2.1.</strong> Left Side Console</a></li><li class="chapter-item "><a href="cockpit/rio/left_vertical_console.html"><strong aria-hidden="true">2.2.2.</strong> Left Vertical Console</a></li><li class="chapter-item "><a href="cockpit/rio/left_instrument_console.html"><strong aria-hidden="true">2.2.3.</strong> Left Instrument Panel</a></li><li class="chapter-item "><a href="cockpit/rio/center_panel.html"><strong aria-hidden="true">2.2.4.</strong> Center Panel</a></li><li class="chapter-item "><a href="cockpit/rio/center_console.html"><strong aria-hidden="true">2.2.5.</strong> Center Console</a></li><li class="chapter-item "><a href="cockpit/rio/footwells.html"><strong aria-hidden="true">2.2.6.</strong> Left and Right Footwells</a></li><li class="chapter-item "><a href="cockpit/rio/right_instrument_console.html"><strong aria-hidden="true">2.2.7.</strong> Right Instrument Panel</a></li><li class="chapter-item "><a href="cockpit/rio/right_knee_panel.html"><strong aria-hidden="true">2.2.8.</strong> Right Knee Panel</a></li><li class="chapter-item "><a href="cockpit/rio/right_vertical_console.html"><strong aria-hidden="true">2.2.9.</strong> Right Vertical Console</a></li><li class="chapter-item "><a href="cockpit/rio/right_console.html"><strong aria-hidden="true">2.2.10.</strong> Right Side Console</a></li><li class="chapter-item "><a href="cockpit/rio/canopy_control_handle.html"><strong aria-hidden="true">2.2.11.</strong> Canopy Control Handle</a></li></ol></li></ol></li><li class="chapter-item "><a href="systems/overview.html"><strong aria-hidden="true">3.</strong> Systems Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="systems/flight_controls_gear/overview.html"><strong aria-hidden="true">3.1.</strong> Flight Controls and Gear</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="systems/flight_controls_gear/cadc.html"><strong aria-hidden="true">3.1.1.</strong> Central Air Data Computer (CADC)</a></li><li class="chapter-item "><a href="systems/flight_controls_gear/flight_controls.html"><strong aria-hidden="true">3.1.2.</strong> Flight Controls &amp; AFCS</a></li><li class="chapter-item "><a href="systems/flight_controls_gear/wing_sweep.html"><strong aria-hidden="true">3.1.3.</strong> Wing-Sweep System</a></li><li class="chapter-item "><a href="systems/flight_controls_gear/gear_ground_handling.html"><strong aria-hidden="true">3.1.4.</strong> Gear &amp; Ground Handling</a></li></ol></li><li class="chapter-item "><a href="systems/engines_and_fuel_systems/overview.html"><strong aria-hidden="true">3.2.</strong> Engines &amp; Fuel Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="systems/engines_and_fuel_systems/engines.html"><strong aria-hidden="true">3.2.1.</strong> Engines</a></li><li class="chapter-item "><a href="systems/engines_and_fuel_systems/fuel_system.html"><strong aria-hidden="true">3.2.2.</strong> Fuel System</a></li></ol></li><li class="chapter-item "><a href="systems/nav_com/overview.html"><strong aria-hidden="true">3.3.</strong> Navigation &amp; Communication</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="systems/nav_com/nav_sys.html"><strong aria-hidden="true">3.3.1.</strong> Navigation System</a></li><li class="chapter-item "><a href="systems/nav_com/ins.html"><strong aria-hidden="true">3.3.2.</strong> INS</a></li><li class="chapter-item "><a href="systems/nav_com/ahrs.html"><strong aria-hidden="true">3.3.3.</strong> Attitude and Heading Reference Set (AHRS)</a></li><li class="chapter-item "><a href="systems/nav_com/tacan.html"><strong aria-hidden="true">3.3.4.</strong> TACAN</a></li><li class="chapter-item "><a href="systems/nav_com/bdhi.html"><strong aria-hidden="true">3.3.5.</strong> BDHI</a></li><li class="chapter-item "><a href="systems/nav_com/icls.html"><strong aria-hidden="true">3.3.6.</strong> ICLS</a></li><li class="chapter-item "><a href="systems/nav_com/com/overview.html"><strong aria-hidden="true">3.3.7.</strong> Communication Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="systems/nav_com/com/intercom.html"><strong aria-hidden="true">3.3.7.1.</strong> Intercom</a></li><li class="chapter-item "><a href="systems/nav_com/com/encryption.html"><strong aria-hidden="true">3.3.7.2.</strong> KY-28 Encryption</a></li><li class="chapter-item "><a href="systems/nav_com/com/uhf.html"><strong aria-hidden="true">3.3.7.3.</strong> AN/ARC-159 (UHF 1) Radio</a></li><li class="chapter-item "><a href="systems/nav_com/com/vuhf.html"><strong aria-hidden="true">3.3.7.4.</strong> AN/ARC-182 (V/UHF 2) Radio</a></li></ol></li><li class="chapter-item "><a href="systems/nav_com/link4.html"><strong aria-hidden="true">3.3.8.</strong> Link 4A &amp; C Datalink</a></li></ol></li><li class="chapter-item "><a href="systems/identification_systems.html"><strong aria-hidden="true">3.4.</strong> Identification Systems</a></li><li class="chapter-item "><a href="systems/hydraulics.html"><strong aria-hidden="true">3.5.</strong> Hydraulics</a></li><li class="chapter-item "><a href="systems/enviornmental_control_system.html"><strong aria-hidden="true">3.6.</strong> Environmental Control System</a></li><li class="chapter-item "><a href="systems/utility.html"><strong aria-hidden="true">3.7.</strong> Utility</a></li><li class="chapter-item "><a href="systems/electrics.html"><strong aria-hidden="true">3.8.</strong> Electrics</a></li><li class="chapter-item "><a href="systems/lighting.html"><strong aria-hidden="true">3.9.</strong> Lighting</a></li><li class="chapter-item "><a href="systems/radar/overview.html"><strong aria-hidden="true">3.10.</strong> AN/AWG-9 Radar</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="systems/radar/interface.html"><strong aria-hidden="true">3.10.1.</strong> Interface</a></li><li class="chapter-item "><a href="systems/radar/general_operation.html"><strong aria-hidden="true">3.10.2.</strong> AN/AWG-9 General Operation</a></li><li class="chapter-item "><a href="systems/radar/acm_modes.html"><strong aria-hidden="true">3.10.3.</strong> ACM Modes</a></li></ol></li><li class="chapter-item "><a href="systems/tcs.html"><strong aria-hidden="true">3.11.</strong> AN/AXX-1 TCS</a></li><li class="chapter-item "><a href="systems/weapon_systems/overview.html"><strong aria-hidden="true">3.12.</strong> Weapon Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="systems/weapon_systems/lantirn/overview.html"><strong aria-hidden="true">3.12.1.</strong> LANTIRN</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="systems/weapon_systems/lantirn/modes.html"><strong aria-hidden="true">3.12.1.1.</strong> Modes</a></li><li class="chapter-item "><a href="systems/weapon_systems/lantirn/other.html"><strong aria-hidden="true">3.12.1.2.</strong> Other</a></li></ol></li></ol></li><li class="chapter-item "><a href="systems/defensive_systems/overview.html"><strong aria-hidden="true">3.13.</strong> Defensive Systems</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="systems/defensive_systems/countermeasures/overview.html"><strong aria-hidden="true">3.13.1.</strong> Countermeasures</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="systems/defensive_systems/countermeasures/ale_39.html"><strong aria-hidden="true">3.13.1.1.</strong> ALE-39</a></li><li class="chapter-item "><a href="systems/defensive_systems/countermeasures/lau_138.html"><strong aria-hidden="true">3.13.1.2.</strong> LAU-138</a></li></ol></li><li class="chapter-item "><a href="systems/defensive_systems/radar_warning_receiver.html"><strong aria-hidden="true">3.13.2.</strong> Radar Warning Receiver</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="systems/defensive_systems/alr_67.html"><strong aria-hidden="true">3.13.2.1.</strong> ALR-67</a></li><li class="chapter-item "><a href="systems/defensive_systems/alr_45-50.html"><strong aria-hidden="true">3.13.2.2.</strong> ALR-45/50</a></li></ol></li><li class="chapter-item "><a href="systems/defensive_systems/ecm.html"><strong aria-hidden="true">3.13.3.</strong> Electronic Countermeasures</a></li></ol></li><li class="chapter-item "><a href="systems/emergency.html"><strong aria-hidden="true">3.14.</strong> Emergency</a></li></ol></li><li class="chapter-item "><a href="stores/overview.html"><strong aria-hidden="true">4.</strong> Weapons &amp; Stores</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="stores/guns.html"><strong aria-hidden="true">4.1.</strong> M61A1 Vulcan</a></li><li class="chapter-item "><a href="stores/air_to_air/overview.html"><strong aria-hidden="true">4.2.</strong> Air to Air</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="stores/air_to_air/aim_54.html"><strong aria-hidden="true">4.2.1.</strong> AIM-54 Phoenix</a></li><li class="chapter-item "><a href="stores/air_to_air/aim_7.html"><strong aria-hidden="true">4.2.2.</strong> AIM-7 Sparrow</a></li><li class="chapter-item "><a href="stores/air_to_air/aim_9.html"><strong aria-hidden="true">4.2.3.</strong> AIM-9 Sidewinder</a></li></ol></li><li class="chapter-item "><a href="stores/air_to_ground/overview.html"><strong aria-hidden="true">4.3.</strong> Air to Ground</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="stores/air_to_ground/weapon_settings.html"><strong aria-hidden="true">4.3.1.</strong> Air-to-Ground Weapon Settings</a></li><li class="chapter-item "><a href="stores/air_to_ground/weapon_delivery.html"><strong aria-hidden="true">4.3.2.</strong> Air-to-Ground Weapon Delivery</a></li><li class="chapter-item "><a href="stores/air_to_ground/zuni.html"><strong aria-hidden="true">4.3.3.</strong> Zuni Rockets</a></li><li class="chapter-item "><a href="stores/air_to_ground/mk80_series.html"><strong aria-hidden="true">4.3.4.</strong> Mk-81, 82, 83, and 84 GP Bombs</a></li><li class="chapter-item "><a href="stores/air_to_ground/paveways.html"><strong aria-hidden="true">4.3.5.</strong> GBU-10, 12, 16 and 24</a></li><li class="chapter-item "><a href="stores/air_to_ground/rockeye.html"><strong aria-hidden="true">4.3.6.</strong> Mk-20 Rockeye</a></li><li class="chapter-item "><a href="stores/air_to_ground/practice_bombs.html"><strong aria-hidden="true">4.3.7.</strong> BDU-33 Practice Bombs</a></li><li class="chapter-item "><a href="stores/air_to_ground/tald.html"><strong aria-hidden="true">4.3.8.</strong> ADM-141 TALD</a></li><li class="chapter-item "><a href="stores/air_to_ground/luu_2.html"><strong aria-hidden="true">4.3.9.</strong> LUU-2 Parachute Flare</a></li><li class="chapter-item "><a href="stores/air_to_ground/smokewinder.html"><strong aria-hidden="true">4.3.10.</strong> Smokewinder</a></li></ol></li><li class="chapter-item "><a href="stores/pods.html"><strong aria-hidden="true">4.4.</strong> Pods</a></li><li class="chapter-item "><a href="stores/tanks.html"><strong aria-hidden="true">4.5.</strong> Tanks</a></li></ol></li><li class="chapter-item "><a href="procedures/overview.html"><strong aria-hidden="true">5.</strong> Normal Procedures</a></li><li class="chapter-item "><a href="emergency_procedures/overwiew.html"><strong aria-hidden="true">6.</strong> Emergency Procedures</a></li><li class="chapter-item "><a href="dcs/overview.html"><strong aria-hidden="true">7.</strong> DCS</a></li><li class="chapter-item "><a href="abbreviations.html"><strong aria-hidden="true">8.</strong> Abbreviations</a></li><li class="chapter-item "><a href="tutorials.html"><strong aria-hidden="true">9.</strong> Tutorials</a></li><li class="chapter-item "><a href="imprint.html"><strong aria-hidden="true">10.</strong> Imprint</a></li></ol>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
-
         <div id="page-wrapper" class="page-wrapper">
+
             <div class="page">
                 <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
@@ -136,9 +115,8 @@
                             <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
-
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -155,6 +133,7 @@
                         <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
+
                     </div>
                 </div>
 
@@ -190,6 +169,8 @@
 <li><a href="cockpit/overview.html">Cockpit Overview</a></li>
 <li><a href="systems/overview.html">Systems Overview</a></li>
 <li><a href="stores/overview.html">Weapons &amp; Stores</a></li>
+<li><a href="jester/overview.html">Jester</a></li>
+<li><a href="iceman/overview.html">Iceman</a></li>
 <li><a href="procedures/overview.html">Normal Procedures</a></li>
 <li><a href="emergency_procedures/overwiew.html">Emergency Procedures</a></li>
 <li><a href="dcs/overview.html">DCS</a></li>
@@ -199,9 +180,9 @@
 </ol>
 <!-- markdown-link-check-disable -->
 <p>This document is available <a href="https://f14.manuals.heatblur.se/">online</a>, as
-<a href="https://github.com/Heatblur-Simulations/f-14-manual/releases">PDF version</a>,
-embedded in-game as offline website and can be contributed to as open-source
-project at <a href="https://github.com/Heatblur-Simulations/f-14-manual">GitHub</a>.</p>
+<a href="https://github.com/Heatblur-Simulations/f-14-manual/releases">PDF version</a>, embedded in-game as
+offline website and can be contributed to as open-source project at
+<a href="https://github.com/Heatblur-Simulations/f-14-manual">GitHub</a>.</p>
 <!-- markdown-link-check-enable -->
 <div style="break-before: page; page-break-before: always;"></div><h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
 <p>Dear Reader,</p>
@@ -210,6 +191,144 @@ project at <a href="https://github.com/Heatblur-Simulations/f-14-manual">GitHub<
 </blockquote>
 <p>In the name of the entire Heatblur Team,<br />
 <em>Nicholas Dackard, Heatblur Simulations, CEO and Founder</em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="historical-background"><a class="header" href="#historical-background">Historical Background</a></h1>
+<blockquote>
+<p>🚧 TODO: Rewrite to be possibly more in depth like the F-4 manual as well as splitting up into
+multiple sections.</p>
+</blockquote>
+<h2 id="origins"><a class="header" href="#origins">Origins</a></h2>
+<p>The F-14 Tomcat traces its origins back to the 1950s, when the U.S. Navy identified the need for a
+carrier-based, long-range interceptor to fulfill the Fleet Air Defence role. This aircraft would
+require an advanced radar system and long-range air-to-air missiles, exceeding the capabilities of
+the F-4 Phantom.</p>
+<p>Under Defense Secretary Robert McNamara, the Navy was directed to join the Tactical Fighter
+Experimental (TFX) program in cooperation with the U.S. Air Force. The Navy resisted this move, and
+the resulting General Dynamics F-111B fell short of the Navy’s expectations.</p>
+<p>Grumman, originally a subcontractor on the F-111B, was awarded a contract to develop a new aircraft
+better suited to the Navy’s needs. This project retained key systems from the F-111B—most notably
+the AN/AWG-9 radar and AIM-54 Phoenix missile—and eventually became the F-14 Tomcat.</p>
+<p>The F-14 first flew on December 21, 1970, and entered service on September 22, 1974. The "Tomcat"
+name followed Grumman’s feline naming tradition and referenced Vice Admiral Thomas F. Connolly, an
+advocate for the aircraft.</p>
+<hr />
+<h2 id="service-life-upgrades"><a class="header" href="#service-life-upgrades">Service Life Upgrades</a></h2>
+<ul>
+<li><strong>F-14A</strong> was the original model, equipped with Pratt &amp; Whitney TF30 engines and an IRST system in
+the chinpod. These engines were underpowered and unreliable, later replaced by the General
+Electric F110-GE-400 in the <strong>F-14A+</strong>, which became the <strong>F-14B</strong>.</li>
+<li>The IRST system was replaced early in development by the <strong>TCS (Television Camera Set)</strong>, allowing
+for long-range visual ID of radar targets.</li>
+<li>Progressive upgrades included:
+<ul>
+<li>PTID/PMDIG programmable cockpit displays</li>
+<li>INS system enhancements</li>
+<li>Digital Flight Control System (DFCS)</li>
+<li>Upgraded RWR systems</li>
+</ul>
+</li>
+</ul>
+<p>The <strong>TARPS</strong> (Tactical Air Reconnaissance Pod System) was later added for photographic
+reconnaissance capability.</p>
+<hr />
+<h2 id="ground-attack-role"><a class="header" href="#ground-attack-role">Ground Attack Role</a></h2>
+<p>In the 1990s, as the air threat declined and conflicts like Desert Storm arose, the Navy
+reconsidered the F-14’s ground attack capabilities.</p>
+<p>Although designed to carry air-to-ground munitions, cost and risk had initially ruled out this role.
+Renewed interest led to the integration of the <strong>LANTIRN targeting pod</strong>, enabling precision
+laser-guided bomb delivery by the RIO.</p>
+<p>Later upgrades also allowed the F-14 to carry <strong>GPS-guided JDAMs</strong>. Most LANTIRN-equipped aircraft
+also featured the upgraded PTID display for improved integration.</p>
+<hr />
+<h2 id="f-14d"><a class="header" href="#f-14d">F-14D</a></h2>
+<p>The <strong>F-14D</strong>, introduced in the 1990s, featured:</p>
+<ul>
+<li>GE F110-GE-400 engines (same as F-14B)</li>
+<li>DFCS system (retrofitted to earlier variants)</li>
+<li>AN/APG-71 radar (successor to AN/AWG-9)</li>
+<li>Integrated TCS/IRST in a new chinpod</li>
+<li>Avionics suite overhaul</li>
+</ul>
+<hr />
+<h2 id="end-of-service"><a class="header" href="#end-of-service">End of Service</a></h2>
+<p>The F-14 was ultimately retired due to:</p>
+<ul>
+<li>Aging airframes</li>
+<li>High maintenance costs</li>
+<li>A diminishing need for Fleet Air Defence post–Cold War</li>
+</ul>
+<p>The Tomcat was officially retired by the U.S. Navy on <strong>September 22, 2006</strong>, at NAS Oceana.</p>
+<hr />
+<h2 id="iran"><a class="header" href="#iran">Iran</a></h2>
+<p>Iran was the only other operator of the F-14. The Shah of Iran ordered 80 F-14As for the Imperial
+Iranian Air Force. Following the 1979 revolution, the <strong>Islamic Republic of Iran Air Force (IRIAF)</strong>
+inherited the fleet.</p>
+<p>Sanctions cut off access to spare parts, forcing Iran to:</p>
+<ul>
+<li>Cannibalize aircraft</li>
+<li>Use black market sources</li>
+<li>Possibly develop indigenous parts</li>
+</ul>
+<p>Despite limitations, Iran successfully used the F-14 during the Iran–Iraq War, claiming significant
+air-to-air victories. As of today, Iran remains the only operator of the F-14, flying early F-14A
+models with TF30 engines and no TCS or IRST.</p>
+<hr />
+<h2 id="aim-54-phoenix"><a class="header" href="#aim-54-phoenix">AIM-54 Phoenix</a></h2>
+<p>Originally developed for the F-111B, the <strong>AIM-54 Phoenix</strong> missile was adopted for the F-14. Key
+features:</p>
+<ul>
+<li>Long-range engagement of bombers and cruise missiles</li>
+<li>Midcourse guidance via AN/AWG-9 radar, terminal phase via onboard active radar seeker</li>
+<li>Simultaneous engagement of up to six targets</li>
+</ul>
+<p>Variants:</p>
+<ul>
+<li><strong>AIM-54A</strong>: Original version with Mk 47 rocket motor</li>
+<li><strong>AIM-54C</strong>: Improved seeker and lower smoke motor</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="technical-specifications"><a class="header" href="#technical-specifications">Technical Specifications</a></h1>
+<blockquote>
+<p>🚧 TODO: Update this section.</p>
+</blockquote>
+<h2 id="f-14a"><a class="header" href="#f-14a">F-14A</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Attribute</th><th>Value</th></tr></thead><tbody>
+<tr><td>Wingspan (Extended)</td><td>64’1.5” (~19.5 m)</td></tr>
+<tr><td>Wingspan (Swept)</td><td>38’2.5” (~11.6 m)</td></tr>
+<tr><td>Wingspan (Oversweep)</td><td>33’3.5” (~10.1 m)</td></tr>
+<tr><td>Length</td><td>62’8.5” (~19.1 m)</td></tr>
+<tr><td>Height</td><td>16’ (~4.9 m)</td></tr>
+<tr><td>Wing Area</td><td>565 ft² (~52.5 m²)</td></tr>
+<tr><td>Empty Weight</td><td>40,104 lbs (~18,200 kg)</td></tr>
+<tr><td>Max Weight</td><td>72,000 lbs (~32,700 kg)</td></tr>
+<tr><td>Max Thrust (Dry)</td><td>34,154 lbf (152 kN)</td></tr>
+<tr><td>Wing Loading</td><td>92 lb/ft² (449.2 kg/m²)</td></tr>
+<tr><td>Max Speed</td><td>Mach 2.38 (~2,500 km/h)</td></tr>
+<tr><td>Ceiling</td><td>50,000+ ft (~15,200 m)</td></tr>
+<tr><td>Range</td><td>1,730 NM (~3,200 km)</td></tr>
+</tbody></table>
+</div>
+<h2 id="f-14b"><a class="header" href="#f-14b">F-14B</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Attribute</th><th>Value</th></tr></thead><tbody>
+<tr><td>Wingspan (Extended)</td><td>64’1.5” (~19.5 m)</td></tr>
+<tr><td>Wingspan (Swept)</td><td>38’2.5” (~11.6 m)</td></tr>
+<tr><td>Wingspan (Oversweep)</td><td>33’3.5” (~10.1 m)</td></tr>
+<tr><td>Length</td><td>62’8.5” (~19.1 m)</td></tr>
+<tr><td>Height</td><td>16’ (~4.9 m)</td></tr>
+<tr><td>Wing Area</td><td>565 ft² (~52.5 m²)</td></tr>
+<tr><td>Empty Weight</td><td>41,780 lbs (~19,000 kg)</td></tr>
+<tr><td>Max Weight</td><td>74,349 lbs (~33,700 kg)</td></tr>
+<tr><td>Max Thrust (Dry)</td><td>56,400 lbf (251 kN)</td></tr>
+<tr><td>Wing Loading</td><td>94 lb/ft² (458.9 kg/m²)</td></tr>
+<tr><td>Ceiling</td><td>53,000+ ft (~16,200 m)</td></tr>
+<tr><td>Range</td><td>2,050 NM (~3,800 km)</td></tr>
+</tbody></table>
+</div><!-- ---
+
+## Modeled F-14 Variants in DCS
+
+- **F-14A-95-GR IRIAF** *(Not Yet Implemented)*: Early export version for Iran, no TCS/IRST, limited missiles, TF30 engines.
+- **F-14A-135-GR (Early)** *(Not Yet Implemented)*: Early U.S. Navy version with TF30 engines and AN/ALR-45/50 RWR.
+- **F-14A-135-GR (Late)**: Later U.S. Navy version with AN/ALR-67 RWR.
+- **F-14B**: Upgraded F-14A+ with GE F110 engines, AN/ALR-67 RWR, LANTIRN targeting pod compatibility. -->
 <div style="break-before: page; page-break-before: always;"></div><h1 id="cockpit-overview"><a class="header" href="#cockpit-overview">Cockpit Overview</a></h1>
 <blockquote>
 <p>🚧 TODO: Copy stuff over. Create a cockpit overview section.
@@ -6551,7 +6670,7 @@ shows the current TCS line of sight.
 So effectually the TCS line of sight can be shown either by the movable reticle or the target
 designator depending on if a radar STT is also present and if a radar STT is present with AIM-9
 selected it’s not shown at all. -->
-<div style="break-before: page; page-break-before: always;"></div><h1 id="aim-54-phoenix"><a class="header" href="#aim-54-phoenix">AIM-54 Phoenix</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="aim-54-phoenix-1"><a class="header" href="#aim-54-phoenix-1">AIM-54 Phoenix</a></h1>
 <blockquote>
 <p>🚧 TODO: Rewrite this page to include more imagery and for accuracy.</p>
 </blockquote>
@@ -7089,17 +7208,456 @@ General Design and Systems Overview chapter.</p>
 <p>The FPU-1 fuel tank is carried by the F-14 Tomcat on stations 2 and 7 on each engine nacelle. They
 each carry up to 2,000 pounds of fuel and can be jettisoned in the same way as other stores using
 the normal procedures.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="jester"><a class="header" href="#jester">Jester</a></h1>
+<blockquote>
+<p>🚧 TODO: Rewrite to be correct for the current game version. Add a lot more information.</p>
+</blockquote>
+<p><img src="jester/./_images/jester.png" alt="Jester" /></p>
+<p>The <strong>Jester AI</strong> aims to be a functional AI Radar Intercept Officer (RIO) for the Heatblur DCS
+F-14, enabling a multicrew experience in a single-player (per aircraft) environment.</p>
+<p>He is fully integrated into the rear cockpit, controlling nearly all back seat systems, with a focus
+on systems not controllable from the pilot seat. He is also modeled to simulate human
+limitations—his head position, visual spotting range, and hand positions are all accounted for. When
+controlling systems at the RIO seat, he performs all actions a human RIO would.</p>
+<p>To control Jester, a <strong>command wheel</strong> is used for quick access. This wheel is dynamic based on the
+selected mode and the current situation. Feedback to the pilot is given via ICS using a library of
+recorded audio, simulating a RIO actually talking. In addition to acknowledging orders, Jester will
+provide pertinent information based on the situation.</p>
+<p>In multiplayer, if a human RIO disconnects mid-flight, Jester resumes control of the rear cockpit
+systems in the configuration left by the human player.</p>
+<hr />
+<h2 id="functionality"><a class="header" href="#functionality">Functionality</a></h2>
+<p><img src="jester/./_images/menu.png" alt="Menu" /></p>
+<p>The <strong>Jester menu</strong> is opened by default with the <code>A</code> key. Selection of items (1–8) is done using
+<code>CTRL + 1</code> through <code>CTRL + 8</code>. These controls can be remapped under the <strong>Jester</strong> category in the
+<strong>F-14 Pilot</strong> DCS keybinds. The menu system is designed to support 8-way hat switch mapping.
+Optionally, you can use your viewing angle in the cockpit to select menu petals by holding the
+Jester menu key for over 0.5 seconds—this can be toggled in the F-14 options.</p>
+<ul>
+<li>The first press brings up a <strong>contextual menu</strong> based on current aircraft mode and situation.</li>
+<li>A second press opens the <strong>Main Menu</strong>.</li>
+<li>A third press closes the menu.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><strong>Air-to-Air mode (airborne)</strong>: opens <em>Beyond Visual Range – Radar</em> menu.</li>
+<li><strong>Air-to-Ground mode</strong>: opens <em>Air-to-Ground – Weapons</em> menu.</li>
+<li><strong>Take-off/Landing</strong>: context-specific menus available.</li>
+</ul>
+<p>From these menus, pilots can control RIO systems. Menu contents can change based on prior
+selections. In some cases, menu petals act as inputs/keypads for entering data like frequencies or
+waypoints.</p>
+<p>You can also:</p>
+<ul>
+<li>Set a <strong>waypoint</strong> from an F10 map marker (menu shows time and name).</li>
+<li>Lock targets on the <strong>TID</strong> using options like <em>closest target</em> or <em>specific azimuth/range</em>.</li>
+<li>Run a <strong>startup checklist</strong> (see below).</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="iceman"><a class="header" href="#iceman">Iceman</a></h1>
+<blockquote>
+<p>🚧 TODO: Rewrite to be correct for the current game version. Add a lot more information.</p>
+</blockquote>
+<p><img src="iceman/./_images/pilot.png" alt="Pilot" /></p>
+<p><strong>Iceman</strong> is a basic autopilot AI and a subset of the Jester system. It is designed for
+singleplayer scenarios where a player may switch between the front and rear seats.</p>
+<p>When the player switches to the RIO seat:</p>
+<ul>
+<li>Iceman takes control of heading and altitude.</li>
+<li>The Iceman menu allows setting heading, altitude, and speed—either relative to a target or as
+absolute values.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="normal-procedures"><a class="header" href="#normal-procedures">Normal Procedures</a></h1>
 <blockquote>
-<p>🚧 TODO: Copy stuff over</p>
+<p>🚧 TODO: Add an overview.</p>
 </blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="emergency-procedures"><a class="header" href="#emergency-procedures">Emergency Procedures</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="preparation-for-flight-and-interior-inspection"><a class="header" href="#preparation-for-flight-and-interior-inspection">Preparation for Flight and Interior Inspection</a></h1>
+<blockquote>
+<p>🚧 TODO: Verify for accuracy.</p>
+</blockquote>
+<h2 id="interior-inspection"><a class="header" href="#interior-inspection">Interior Inspection</a></h2>
+<h3 id="pilot"><a class="header" href="#pilot">Pilot</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action/Details</th></tr></thead><tbody>
+<tr><td>1</td><td>OXYGEN</td><td>Switch ON: check airflow<br>Switch OFF: verify no airflow</td></tr>
+<tr><td>2</td><td>VENT AIRFLOW thumbwheel</td><td>Set to desired cockpit ventilation</td></tr>
+<tr><td>3</td><td>Tone VOLUME controls</td><td>Set</td></tr>
+<tr><td>4</td><td>TACAN function selector</td><td>OFF</td></tr>
+<tr><td></td><td>TACAN Channel</td><td>Set</td></tr>
+<tr><td></td><td>Mode switch</td><td>Set</td></tr>
+<tr><td></td><td>VOL knob</td><td>Counterclockwise</td></tr>
+<tr><td>5</td><td>ICS panel</td><td>VOL: as desired<br>Amplifier: NORM<br>Function selector: COLD MIC</td></tr>
+<tr><td>6</td><td>STAB AUG switches</td><td>OFF</td></tr>
+<tr><td>7</td><td>UHF function selector</td><td>OFF</td></tr>
+<tr><td>8</td><td>Wing-sweep switch</td><td>MAN <br>⚠️ Wings may move if control system is powered</td></tr>
+<tr><td>9</td><td>Left and Right Throttles</td><td>OFF</td></tr>
+<tr><td>10</td><td>Speed brake switch</td><td>RET</td></tr>
+<tr><td>11</td><td>Exterior lights master switch</td><td>Set as required</td></tr>
+<tr><td>12</td><td>FLAP handle</td><td>Set to current flap position</td></tr>
+<tr><td>13</td><td>ASYM LIMITER switch</td><td>ON (guard down)</td></tr>
+<tr><td>14</td><td>L and R ENG MODE SELECT switches</td><td>PRI</td></tr>
+<tr><td>15</td><td>BACKUP IGNITION switch</td><td>OFF</td></tr>
+<tr><td>16</td><td>THROTTLE TEMP switch</td><td>NORM</td></tr>
+<tr><td>17</td><td>THROTTLE MODE switch</td><td>BOOST</td></tr>
+<tr><td>18</td><td>L and R INLET RAMPS switches</td><td>AUTO</td></tr>
+<tr><td>19</td><td>ANTI SKID SPOILER BK switch</td><td>OFF</td></tr>
+<tr><td>20</td><td>FUEL panel</td><td>WING/EXT TRANS: AUTO<br>REFUEL PROBE: RET<br>DUMP: OFF<br>FEED: NORM (guard down)</td></tr>
+<tr><td>21</td><td>LDG GEAR handle</td><td>DN</td></tr>
+<tr><td>22</td><td>NOSE STRUT switch</td><td>OFF</td></tr>
+<tr><td>23</td><td>Parking brake</td><td>Pull</td></tr>
+<tr><td>24</td><td>Radar altimeter</td><td>OFF</td></tr>
+<tr><td>25</td><td>Altimeter</td><td>Set to current elevation</td></tr>
+<tr><td>26</td><td>Left and Right FUEL SHUT OFF handles</td><td>In</td></tr>
+<tr><td>27</td><td>ACM panel</td><td>ACM: OFF (guard down)<br>MASTER ARM: OFF (guard down)</td></tr>
+<tr><td>28</td><td>Weapon select</td><td>OFF</td></tr>
+<tr><td>29</td><td>HUD and VDI filters</td><td>As required</td></tr>
+<tr><td>30</td><td>Standby attitude gyro</td><td>Caged</td></tr>
+<tr><td>31</td><td>G-meter</td><td>Reset</td></tr>
+<tr><td>32</td><td>Clock</td><td>Wind and Set</td></tr>
+<tr><td>33</td><td>Fuel Bingo</td><td>Set</td></tr>
+<tr><td>34</td><td>Circuit breakers</td><td>Checked</td></tr>
+<tr><td>35</td><td>Brake accumulator pressure</td><td>Check (should be in green)</td></tr>
+<tr><td>36</td><td>HYD HAND PUMP</td><td>Check for pressure build-up</td></tr>
+<tr><td>37</td><td>HOOK handle</td><td>Set to current hook position</td></tr>
+<tr><td>38</td><td>DISPLAYS panel</td><td>MODE: T.O.<br>HUD DECLUTTER: OFF<br>HUD AWL: ACL<br>VDI MODE: NORM<br>VDI AWL: ACL<br>HSD MODE: NAV<br>STEER CMD: DEST<br>DISPLAYS POWER: OFF</td></tr>
+<tr><td>39</td><td>ELEV LEAD knob</td><td>Set</td></tr>
+<tr><td>40</td><td>INBD and OUTBD spoiler switches</td><td>NORM (guard down)</td></tr>
+<tr><td>41</td><td>L and R generator switches</td><td>NORM</td></tr>
+<tr><td>42</td><td>EMERG generator switch</td><td>NORM (guard down)</td></tr>
+<tr><td>43</td><td>Air-conditioning controls</td><td>TEMP mode: AUTO<br>Thumbwheel: desired (5–7 = medium)<br>CABIN PRESS: NORM<br>AIR SOURCE: OFF</td></tr>
+<tr><td>44</td><td>WSHLD AIR switch</td><td>OFF</td></tr>
+<tr><td>45</td><td>ANTI-ICE switch</td><td>AUTO/OFF</td></tr>
+<tr><td>46</td><td>COMPASS panel</td><td>Mode: SLAVED<br>Hemisphere: set N/S<br>LAT knob: set</td></tr>
+<tr><td>47</td><td>ARA-63 panel</td><td>CHANNEL: Set<br>POWER: OFF</td></tr>
+<tr><td>48</td><td>MASTER LIGHT panel controls</td><td>As required</td></tr>
+<tr><td>49</td><td>MASTER TEST switch</td><td>OFF</td></tr>
+<tr><td>50</td><td>EMERG FLT HYD switch</td><td>AUTO (guard down)</td></tr>
+<tr><td>51</td><td>HYD TRANSFER PUMP switch</td><td>SHUT OFF (guard up)</td></tr>
+<tr><td>52</td><td>CANOPY air diffuser lever</td><td>CABIN AIR</td></tr>
+<tr><td>53</td><td>VIDEO CONTROL switch</td><td>OFF</td></tr>
+</tbody></table>
+</div>
+<h3 id="rio"><a class="header" href="#rio">RIO</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action/Details</th></tr></thead><tbody>
+<tr><td>1</td><td>OXYGEN</td><td>Switch ON: check airflow<br>Switch OFF: verify airflow ceases</td></tr>
+<tr><td>2</td><td>VENT AIRFLOW thumbwheel</td><td>OFF</td></tr>
+<tr><td>3</td><td>SYS TEST - SYS PWR ground panel</td><td>Closed</td></tr>
+<tr><td>4</td><td>KY-28 or KY-58</td><td>Set to P/OFF</td></tr>
+<tr><td>5</td><td>ICS panel</td><td>VOL knob: Set<br>Amplifier: NORM<br>Function selector: COLD MIC</td></tr>
+<tr><td>6</td><td>TACAN function selector</td><td>OFF</td></tr>
+<tr><td>7</td><td>U/VHF MODE selector</td><td>OFF</td></tr>
+<tr><td>8</td><td>LIQ COOLING switch</td><td>OFF</td></tr>
+<tr><td>9</td><td>EJECT CMD lever</td><td>Set per squadron policy</td></tr>
+<tr><td>10</td><td>ARMAMENT control panel</td><td>Configure:<br>- WPN type: OFF<br>- ATTK MODE: MAN<br>- DLVY MODE: STP / SGL<br>- ELECT FUZE: Safe<br>- A/G GUN: OFF<br>- MECH FUZE: Safe<br>- SEL JETT: Safe<br>- JETT OPTIONS: MER TER<br>- INTERVAL / QTY: Set<br>- Stations 1–8: Safe<br>- MSL OPTIONS: NORM<br>- MSL SPD GATE: NOSE QTR</td></tr>
+<tr><td>11</td><td>Standby attitude gyro</td><td>Caged</td></tr>
+<tr><td>12</td><td>NAV MODE knob</td><td>OFF</td></tr>
+<tr><td>13</td><td>Clock</td><td>Wind and Set</td></tr>
+<tr><td>14</td><td>WCS switch</td><td>OFF</td></tr>
+<tr><td>15</td><td>IR/TV power switch</td><td>OFF</td></tr>
+<tr><td>16</td><td>RECORD switch</td><td>OFF</td></tr>
+<tr><td>17</td><td>RADAR WARNING RCVR PWR switch</td><td>OFF</td></tr>
+<tr><td>18</td><td>DECM selector knob</td><td>OFF</td></tr>
+<tr><td>19</td><td>AN/ALE-39 PWR/MODE switch</td><td>OFF</td></tr>
+<tr><td>20</td><td>DATA LINK ON-OFF-AUX ON switch</td><td>OFF</td></tr>
+<tr><td>21</td><td>APX-76</td><td>OFF</td></tr>
+<tr><td>22</td><td>INTERIOR LIGHTS panel</td><td>Check</td></tr>
+<tr><td>23</td><td>IFF MASTER knob</td><td>OFF</td></tr>
+<tr><td>24</td><td>MODE 4 switch</td><td>Out</td></tr>
+<tr><td>25</td><td>IFF ANT and TEST panel</td><td>Configure:<br>- IFF ANT switch: Off<br>- IND LT-DDI BIT switch: Off<br>- GND CLG switch: OFF</td></tr>
+<tr><td>26</td><td>RADAR BEACON switch</td><td>OFF</td></tr>
+<tr><td>27</td><td>RADAR BEACON MODE switch</td><td>Single or Double</td></tr>
+<tr><td>28</td><td>POWER SYS TEST switch</td><td>OFF</td></tr>
+<tr><td>29</td><td>DATA/ADF switch</td><td>OFF</td></tr>
+</tbody></table>
+</div>
+<h2 id="prestart-pilot"><a class="header" href="#prestart-pilot">Prestart (Pilot)</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action/Details</th></tr></thead><tbody>
+<tr><td>1</td><td>Ground crew</td><td>Connect starter air and external power</td></tr>
+<tr><td>2</td><td>Wing sweep circuit breakers</td><td>If not in OV SWP:<br>- Pull CBs (LE1, LE2)<br>- Use emergency WINGSWEEP handle</td></tr>
+<tr><td>3</td><td>ICS</td><td>Check</td></tr>
+<tr><td>4</td><td>Landing gear indicators</td><td>Check</td></tr>
+<tr><td>5</td><td>MASTER TEST switch</td><td>Check LTS, FIRE DET/EXT, INST responses</td></tr>
+<tr><td>6</td><td>Ejection seats</td><td>Armed</td></tr>
+<tr><td>7</td><td>CANOPY handle</td><td>Close</td></tr>
+<tr><td>8</td><td>ACM panel</td><td>Gun rate: Set<br>SW COOL: OFF<br>MSL PREP: OFF<br>MSL MODE: NORM<br>Status windows: Check</td></tr>
+<tr><td>9</td><td>EMERG STORES JETT light</td><td>Out</td></tr>
+<tr><td>10</td><td>LADDER light</td><td>Out (ladder stowed)</td></tr>
+<tr><td>11</td><td>RIO</td><td>Notify ready to start</td></tr>
+</tbody></table>
+</div>
+<h2 id="prestart-rio"><a class="header" href="#prestart-rio">Prestart (RIO)</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action/Details</th></tr></thead><tbody>
+<tr><td>1</td><td>External power and air</td><td>Verify connected<br>⚠️ Do not start WCS or displays without power</td></tr>
+<tr><td>2</td><td>ICS</td><td>Check two-way communication with pilot</td></tr>
+<tr><td>3</td><td>DL, TACAN, and U/VHF</td><td>Set per mission requirements</td></tr>
+<tr><td>4</td><td>Fuel quantity</td><td>Check</td></tr>
+<tr><td>5</td><td>Console and instrument lights</td><td>Check and adjust</td></tr>
+<tr><td>6</td><td>LTS test</td><td>Verify all caution, advisory, ECM, and DDI lights illuminate</td></tr>
+<tr><td>7</td><td>Ejection seats</td><td>Verify pilot's seat is armed and your seat is armed</td></tr>
+<tr><td>8</td><td>CANOPY handle</td><td>Close canopy when pilot ready</td></tr>
+<tr><td>9</td><td>Ready signal</td><td>Inform pilot: ready to start</td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="engine-startup"><a class="header" href="#engine-startup">Engine Startup</a></h1>
+<blockquote>
+<p>🚧 TODO: Verify for accuracy.</p>
+</blockquote>
+<h2 id="pilot-1"><a class="header" href="#pilot-1">Pilot</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action/Details</th></tr></thead><tbody>
+<tr><td>1</td><td>AIR SOURCE switch</td><td>Set to OFF</td></tr>
+<tr><td>2</td><td>HYD TRANSFER PUMP switch</td><td>Set to OFF (Guard up)</td></tr>
+<tr><td>3</td><td>EMERG FLT HYD switch</td><td>Set to LOW → Check ON flag<br>Set to HIGH → Check ON flag<br>Set to AUTO (LOW) → Verify both flags OFF</td></tr>
+<tr><td>4</td><td>ENG CRANK switch</td><td>Set to R (Right engine)<br>At ~20% RPM: check oil/hydraulic pressure, START/VALVE caution light</td></tr>
+<tr><td>5</td><td>Right throttle</td><td>Advance to IDLE at 20% RPM</td></tr>
+<tr><td>6</td><td>ENG CRANK switch</td><td>Verify it returns to OFF at ~50% RPM<br>START/VALVE caution light turns off</td></tr>
+<tr><td>7</td><td>R GEN caution light</td><td>Turns off at ~59% RPM</td></tr>
+<tr><td>8</td><td>R FUEL PRESS caution light</td><td>Turns off before idle RPM</td></tr>
+<tr><td>9</td><td>Engine instrument readings</td><td>RPM: 62–78%<br>EGT: ~500 °C<br>FF: 950–1400 Pph<br>NOZ: 100%<br>OIL: 25–35 psi<br>FLT HYD: ~3000 psi</td></tr>
+<tr><td>10</td><td>External electrical power</td><td>Disconnect (order plane captain)</td></tr>
+<tr><td>11</td><td>ENG CRANK switch</td><td>Set to L (Left engine)<br>Switch OFF after combined hydraulic pressure reaches 3000 psi</td></tr>
+<tr><td>12</td><td>HYD TRANSFER PUMP</td><td>Set to NORMAL<br>If no pressure in 10 sec → set to SHUTOFF</td></tr>
+<tr><td>13</td><td>Repeat</td><td>Perform steps 4–9 for Left Engine</td></tr>
+<tr><td>14</td><td>Starter air</td><td>Disconnect (order plane captain)</td></tr>
+<tr><td>15</td><td>AIR SOURCE switch</td><td>Cycle: L ENG → R ENG → BOTH ENG<br>Verify cockpit airflow</td></tr>
+<tr><td>16</td><td>HYD TRANSFER PUMP</td><td>Set to NORMAL</td></tr>
+</tbody></table>
+</div>
+<h2 id="rio-1"><a class="header" href="#rio-1">RIO</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action/Details</th></tr></thead><tbody>
+<tr><td>1</td><td>Monitor startup</td><td>Observe pilot procedures and plane captain signals for safety</td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="post-start"><a class="header" href="#post-start">Post Start</a></h1>
+<blockquote>
+<p>🚧 TODO: Verify for accuracy.</p>
+</blockquote>
+<h2 id="pilot-2"><a class="header" href="#pilot-2">Pilot</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action/Details</th></tr></thead><tbody>
+<tr><td>1</td><td>STAB AUG switches</td><td>All ON</td></tr>
+<tr><td>2</td><td>MASTER TEST switch</td><td>Set to EMERG GEN</td></tr>
+<tr><td>3</td><td>VMCU operation</td><td>Check for momentary illumination (~2s) of:<br>- PITCH STAB 1/2<br>- ROLL STAB 1/2<br>- YAW STAB OP/OUT<br>- SPOILERS<br>- HZ TAIL AUTH<br>- RUDDER AUTH<br>- AUTO PILOT<br>- MACH TRIM</td></tr>
+<tr><td>4</td><td>Notify RIO</td><td>Advise test complete</td></tr>
+<tr><td>5</td><td>STAB AUG switches</td><td>All ON</td></tr>
+<tr><td>6</td><td>AFTC</td><td>L/R ENG MODE SELECT: SEC → PRI</td></tr>
+<tr><td>7</td><td>Emergency WING SWEEP handle</td><td>If not overswept:<br>Move to 68°<br>Then full OV SW<br>Hold until HZ TAIL AUTH light goes out and OVER flag appears<br>Then stow</td></tr>
+<tr><td>8</td><td>Wing-sweep mode switch</td><td>AUTO</td></tr>
+<tr><td>9</td><td>WING SWEEP DRIVE NO.1 and WG SW DR NO.2/MANUV FLAP circuit breakers</td><td>In</td></tr>
+<tr><td>10</td><td>WING/EXT TRANS switch</td><td>OFF</td></tr>
+<tr><td>11</td><td>MASTER RESET pushbutton</td><td>Depress</td></tr>
+<tr><td>12</td><td>COMM/NAV/GEAR/DISPLAYS</td><td>Set all to ON:<br>- UHF to TR+G or BOTH<br>- TACAN to T/R<br>- ARA-63 to ON<br>- DISPLAYS power switches ON<br>- RADAR ALT ON</td></tr>
+<tr><td>13</td><td>Trim</td><td>Set to 000</td></tr>
+<tr><td>14</td><td>Standby attitude gyro</td><td>Erect</td></tr>
+<tr><td>15</td><td>MASTER RESET pushbutton</td><td>Depress</td></tr>
+<tr><td>16</td><td>MASTER TEST switch</td><td>Set to OBC</td></tr>
+<tr><td>17</td><td>Autopilot</td><td>Engage</td></tr>
+<tr><td>18</td><td>Speed brake switch</td><td>Extend → Retract</td></tr>
+<tr><td>19</td><td>REFUEL PROBE switch</td><td>Extend → Retract</td></tr>
+<tr><td>20</td><td>WSHLD AIR switch</td><td>Cycle</td></tr>
+<tr><td>21</td><td>OBC</td><td>OFF</td></tr>
+<tr><td>22</td><td>WING/EXT TRANS switch</td><td>OFF</td></tr>
+<tr><td>23</td><td>Trim</td><td>Re-check and set to 000</td></tr>
+</tbody></table>
+</div>
+<h2 id="rio-2"><a class="header" href="#rio-2">RIO</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action/Details</th></tr></thead><tbody>
+<tr><td>1</td><td>EMERG GEN check</td><td>Ensure completed before continuing</td></tr>
+<tr><td>2</td><td>ECS system</td><td>Allow ECS to run ≥ 3 minutes before powering avionics/AWG-9</td></tr>
+<tr><td>3</td><td>WCS switch</td><td>Set to STBY (AWG-9 COND light should illuminate)</td></tr>
+<tr><td>4</td><td>LIQ COOLING switch</td><td>Set to AWG-9 or AWG-9/AIM-54 (if loaded)</td></tr>
+<tr><td>5</td><td>IR/TV power switch</td><td>STBY or IR/TV</td></tr>
+<tr><td>6</td><td>CATEGORY knob</td><td>NAV</td></tr>
+<tr><td>7</td><td>NAV MODE switch</td><td>Align</td></tr>
+<tr><td>8</td><td>Communications</td><td>U/VHF MODE: T/R G<br>DATA LINK: ON</td></tr>
+<tr><td>9</td><td>TACAN</td><td>Set function selector to T/R</td></tr>
+<tr><td>10</td><td>RADAR WARNING RCVR panel</td><td>Display type: NORM<br>PWR: ON<br>TEST: SPL<br>MODE: LMT</td></tr>
+<tr><td>11</td><td>DECM knob</td><td>STBY<br>Wait for light to go off → HOLD 3 sec → ACT for OBC</td></tr>
+<tr><td>12</td><td>IFF MASTER knob</td><td>STBY<br>CODE: Set as required<br>Test panel: All test functions<br>ANT switch: AUTO</td></tr>
+<tr><td>13</td><td>AUTO BIT 2</td><td>Verify complete (on TID)</td></tr>
+<tr><td>14</td><td>CAP (nav init)</td><td>Enter own A/C lat/lon and elevation</td></tr>
+<tr><td>15</td><td>Altimeter</td><td>Reset</td></tr>
+<tr><td>16</td><td>Computer address panel</td><td>Enter mission data: WP, FP, etc.</td></tr>
+<tr><td>17</td><td>DDD (radar display)</td><td>Set</td></tr>
+<tr><td>18</td><td>TID controls</td><td>Set:<br>CONTRAST / BRIGHT<br>CLSN: OFF<br>ALT NUM / SYM ELEM / LAUNCH ZONE / VEL VECTOR: ON<br>DATA LINK / JAM STROBE: As required</td></tr>
+<tr><td>19</td><td>Multiple display indicator</td><td>TEST button: Press<br>BRIGHTNESS: Set</td></tr>
+<tr><td>20</td><td>DATA/ADF switch</td><td>Set to BOTH</td></tr>
+<tr><td>21</td><td>Hand control panel</td><td>Light test: Press<br>El Vernier: Set 0°</td></tr>
+<tr><td>22</td><td>AN/ALE-39</td><td>BURST: 3<br>INTERVAL: 0.1<br>SALVO: 2<br>SALVO INTERVAL: 0.4</td></tr>
+<tr><td>23</td><td>CANOPY DEFOG/CABIN AIR lever</td><td>Set to CABIN AIR</td></tr>
+<tr><td>24</td><td>D/L reply</td><td>As required</td></tr>
+<tr><td>25</td><td>AAI panel</td><td>TEST/CHAL CC switch: Test → check DDD display</td></tr>
+<tr><td>26</td><td>Indicator lights</td><td>Test</td></tr>
+<tr><td>27</td><td>DDI BIT</td><td>Test</td></tr>
+<tr><td>28</td><td>After INS alignment complete</td><td>NAV mode: INS<br>Program restart: Press<br>STBY/READY lights: OFF<br>TID NAV: INS</td></tr>
+<tr><td>29</td><td>DEST data</td><td>Verify</td></tr>
+<tr><td>30</td><td>BRG/DIST to destination</td><td>Check</td></tr>
+<tr><td>31</td><td>Own A/C groundspeed</td><td>Check</td></tr>
+<tr><td>32</td><td>Magnetic variation</td><td>Check</td></tr>
+<tr><td>33</td><td>KY-28/KY-58</td><td>Set as required</td></tr>
+<tr><td>34</td><td>Standby attitude gyro</td><td>Erect</td></tr>
+<tr><td>35</td><td>Notify pilot</td><td>Ready to taxi</td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="emergency-procedures"><a class="header" href="#emergency-procedures">Emergency Procedures</a></h1>
 <blockquote>
 <p>🚧 TODO: Copy stuff over</p>
 </blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="dcs"><a class="header" href="#dcs">DCS</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="emergency-procedures-1"><a class="header" href="#emergency-procedures-1">Emergency Procedures</a></h1>
 <blockquote>
-<p>🚧 TODO: Copy stuff over</p>
+<p>🚧 TODO: Verify for accuracy.</p>
+</blockquote>
+<h2 id="engine-airstart"><a class="header" href="#engine-airstart">Engine Airstart</a></h2>
+<p>The F110-GE-400 engines can be airstarted one-by-one or simultaneously.<br />
+Three restart methods are available:</p>
+<ul>
+<li><strong>Spooldown</strong></li>
+<li><strong>Cross-Bleed</strong></li>
+<li><strong>Windmill</strong></li>
+</ul>
+<p>All attempts should be made in the engine mode selected by the AFTC (normally PRI, or SEC if PRI
+fails).</p>
+<hr />
+<h2 id="spooldown-airstart"><a class="header" href="#spooldown-airstart">Spooldown Airstart</a></h2>
+<p>Spooldown airstart should be attempted immediately after engine loss, before significant spooldown
+occurs.</p>
+<ul>
+<li>May take up to <strong>10 seconds</strong> for RPM increase and <strong>90 seconds</strong> to reach commanded RPM.</li>
+<li>If PRI fails, retry in SEC.</li>
+</ul>
+<h3 id="spooldown-airstart-checklist"><a class="header" href="#spooldown-airstart-checklist">Spooldown Airstart Checklist</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action</th></tr></thead><tbody>
+<tr><td>1</td><td>Throttle</td><td>IDLE or above</td></tr>
+<tr><td>2</td><td>If no relight: Throttle</td><td>OFF then IDLE</td></tr>
+<tr><td>3</td><td>ENG MODE SELECT switch</td><td>SEC</td></tr>
+<tr><td>4</td><td>Throttle</td><td>If no start after mode switch: OFF then IDLE</td></tr>
+<tr><td>5</td><td>After successful start</td><td>Set ENG MODE SELECT to PRI if possible</td></tr>
+</tbody></table>
+</div>
+<hr />
+<h2 id="cross-bleed-airstart"><a class="header" href="#cross-bleed-airstart">Cross-Bleed Airstart</a></h2>
+<p>Use if:</p>
+<ul>
+<li>Spooldown failed</li>
+<li>One engine is already running</li>
+<li>Target engine is near windmill RPM</li>
+</ul>
+<h3 id="cross-bleed-airstart-checklist"><a class="header" href="#cross-bleed-airstart-checklist">Cross-Bleed Airstart Checklist</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action</th></tr></thead><tbody>
+<tr><td>1</td><td>Non-running throttle</td><td>OFF</td></tr>
+<tr><td>2</td><td>FUEL SHUT OFF handle</td><td>Verify handle IN</td></tr>
+<tr><td>3</td><td>Running engine throttle</td><td>Minimum 80% RPM</td></tr>
+<tr><td>4</td><td>BACK UP IGNITION switch</td><td>ON</td></tr>
+<tr><td>5</td><td>ENG CRANK switch</td><td>Set to non-running engine</td></tr>
+<tr><td>6</td><td>Non-running throttle</td><td>IDLE immediately after CRANK</td></tr>
+<tr><td>7</td><td>If no start: Throttle</td><td>OFF then IDLE</td></tr>
+<tr><td>8</td><td>ENG MODE SELECT switch</td><td>SEC</td></tr>
+<tr><td>9</td><td>Throttle</td><td>OFF then IDLE</td></tr>
+<tr><td>10</td><td>After successful start</td><td>BACK UP IGNITION: OFF</td></tr>
+<tr><td>11</td><td>ENG MODE SELECT switch</td><td>PRI if possible</td></tr>
+</tbody></table>
+</div>
+<hr />
+<h2 id="windmill-airstart"><a class="header" href="#windmill-airstart">Windmill Airstart</a></h2>
+<p>Used when:</p>
+<ul>
+<li>Airspeed ≥ 450 KIAS</li>
+<li>Altitude permits sufficient airflow through engine</li>
+</ul>
+<h3 id="windmill-airstart-checklist"><a class="header" href="#windmill-airstart-checklist">Windmill Airstart Checklist</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action</th></tr></thead><tbody>
+<tr><td>1</td><td>Airspeed</td><td>At or above 450 KIAS</td></tr>
+<tr><td>2</td><td>Throttle</td><td>IDLE or above</td></tr>
+<tr><td>3</td><td>BACK UP IGNITION switch</td><td>ON</td></tr>
+<tr><td>4</td><td>If no relight: Throttle</td><td>OFF then IDLE</td></tr>
+<tr><td>5</td><td>ENG MODE SELECT switch</td><td>SEC</td></tr>
+<tr><td>6</td><td>Throttle</td><td>OFF then IDLE</td></tr>
+<tr><td>7</td><td>After successful start</td><td>BACK UP IGNITION: OFF</td></tr>
+<tr><td>8</td><td>ENG MODE SELECT switch</td><td>PRI if possible</td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="dcs"><a class="header" href="#dcs">DCS</a></h1>
+<blockquote>
+<p>🚧 TODO: Rewrite to be correct for the current game version. Also reword to be similar to the
+F-4E's manual. Write an intro.</p>
+</blockquote>
+<h2 id="assisted-startup"><a class="header" href="#assisted-startup">Assisted Startup</a></h2>
+<p><img src="dcs/./_images/startup.png" alt="Startup" /></p>
+<p>For cold starts, <strong>Jester</strong> can:</p>
+<ul>
+<li>Perform a <strong>realistic RIO checklist</strong>.</li>
+<li>Provide <strong>assisted startup</strong> by reading the pilot checklist aloud.</li>
+</ul>
+<h3 id="normal-startup"><a class="header" href="#normal-startup">Normal Startup</a></h3>
+<p>Select <strong>Startup</strong> from the menu:</p>
+<ul>
+<li>Jester will walk through the RIO checklist.</li>
+<li>He’ll request comms checks and system tests (acknowledged via menu).</li>
+<li>Post-engine start, he’ll prompt for <strong>INS alignment selection</strong>.</li>
+</ul>
+<h3 id="assisted-startup-1"><a class="header" href="#assisted-startup-1">Assisted Startup</a></h3>
+<p>Select <strong>Assisted Start</strong> from the menu:</p>
+<ul>
+<li>Jester will read the checklist to the pilot.</li>
+<li>He will <strong>highlight relevant controls and indicators</strong>.</li>
+<li>Use the Jester menu to confirm completion of each step.</li>
+</ul>
+<p><img src="dcs/./_images/highlight.png" alt="Highlight" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="controls-2"><a class="header" href="#controls-2">Controls</a></h1>
+<blockquote>
+<p>🚧 TODO: Add this section similar to the F-4E manual.</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="special-options"><a class="header" href="#special-options">Special Options</a></h1>
+<blockquote>
+<p>🚧 TODO: Rewrite this section similar to the F-4E manual. Add a lot more information (and update
+information).</p>
+</blockquote>
+<p>Available under: <code>OPTIONS → SPECIAL → F-14</code></p>
+<div class="table-wrapper"><table><thead><tr><th>Control</th><th>Function</th></tr></thead><tbody>
+<tr><td>Radio Menu and PTT Behavior</td><td>Configures radio PTT integration, useful for SRS</td></tr>
+<tr><td>Use Head Movement in Jester Menu</td><td>Enables VR/TrackIR head control to select petals</td></tr>
+<tr><td>Boring Jester</td><td>Disables Jester’s jokes and embellishments (not yet implemented)</td></tr>
+<tr><td>Switch PD-STT to P-STT Lock in WVR</td><td>Jester switches to P-STT automatically within ACM range</td></tr>
+<tr><td>Jester Menu Camera</td><td>Enables live Jester camera feed in the radial menu</td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="tape-player"><a class="header" href="#tape-player">Tape Player</a></h1>
+<blockquote>
+<p>🚧 TODO: Add this.</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mission-editor"><a class="header" href="#mission-editor">Mission Editor</a></h1>
+<blockquote>
+<p>🚧 TODO: Rewrite this section similar to the F-4E manual.</p>
+</blockquote>
+<p>Aircraft-specific settings and waypoints are configured in the <strong>Mission Editor</strong>.</p>
+<h3 id="aircraft-group-properties"><a class="header" href="#aircraft-group-properties">Aircraft Group Properties</a></h3>
+<p>Set options under <code>Additional Properties for Aircraft</code> when the group includes F-14s.</p>
+<h3 id="navigation-target-points"><a class="header" href="#navigation-target-points">Navigation Target Points</a></h3>
+<p>Set most waypoints via the <strong>Navigation Target Points</strong> page:</p>
+<hr />
+<div class="table-wrapper"><table><thead><tr><th>Option</th><th>Sets</th></tr></thead><tbody>
+<tr><td>M-61 Burst Mode</td><td>Max burst length; "Manual" fires until empty</td></tr>
+<tr><td>AN/ALE-39 Loadout</td><td>Countermeasure loadout</td></tr>
+<tr><td>Fill LAU-138 With Chaff</td><td>Load LAU-138s with chaff at spawn</td></tr>
+<tr><td>INS Reference Alignment Stored</td><td>Whether INS reference is pre-aligned at spawn</td></tr>
+<tr><td>TACAN Channel Presel (0 = Auto)</td><td>Preselected TACAN channel; 0 = nearest station</td></tr>
+<tr><td>TACAN Band</td><td>Preselected band (X or Y)</td></tr>
+<tr><td>ILS Channel Presel</td><td>Preselected ICLS channel</td></tr>
+<tr><td>KY-28 Encryption Key</td><td>Encryption key loaded into KY-28</td></tr>
+<tr><td>Laser Code 1st–4th Digit</td><td>Preset code for laser-guided munitions</td></tr>
+</tbody></table>
+</div>
+<hr />
+<h2 id="f-14-waypoints-in-the-mission-editor"><a class="header" href="#f-14-waypoints-in-the-mission-editor">F-14 Waypoints in the Mission Editor</a></h2>
+<ul>
+<li><strong>Waypoints 1–3</strong>: Set directly in the mission editor.</li>
+<li><strong>Home Base</strong>: Set to the landing waypoint.</li>
+<li><strong>All others</strong>: Set by naming <em>Navigation Target Points</em> as below:</li>
+</ul>
+<div class="table-wrapper"><table><thead><tr><th>Waypoint</th><th>Name</th></tr></thead><tbody>
+<tr><td>Fix Point</td><td><code>FP</code></td></tr>
+<tr><td>Initial Point</td><td><code>IP</code></td></tr>
+<tr><td>Surface Target</td><td><code>ST</code></td></tr>
+<tr><td>Defended Point</td><td><code>DP</code></td></tr>
+<tr><td>Hostile Area</td><td><code>HA</code></td></tr>
+<tr><td>Datalink Waypoint 1–3</td><td><code>DLWP1</code>, <code>DLWP2</code>, <code>DLWP3</code></td></tr>
+<tr><td>Datalink Surface Target</td><td><code>DLST</code></td></tr>
+<tr><td>Datalink Fixed Point</td><td><code>DLFP</code></td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="training-missions"><a class="header" href="#training-missions">Training Missions</a></h1>
+<blockquote>
+<p>🚧 TODO: Add this section similar to the F-4E manual.</p>
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="acronyms-and-abbreviations"><a class="header" href="#acronyms-and-abbreviations">Acronyms and Abbreviations</a></h1>
 <h2 id="a"><a class="header" href="#a">A</a></h2>

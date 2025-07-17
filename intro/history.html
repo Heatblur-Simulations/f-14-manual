@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Historical Background - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/visual.css">
+        <link rel="stylesheet" href="../theme/hb_light.css">
+        <link rel="stylesheet" href="../theme/hb_dark.css">
+        <link rel="stylesheet" href="../theme/pdf.css">
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/intro/history.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="historical-background"><a class="header" href="#historical-background">Historical Background</a></h1>
+<blockquote>
+<p>🚧 TODO: Rewrite to be possibly more in depth like the F-4 manual as well as splitting up into
+multiple sections.</p>
+</blockquote>
+<h2 id="origins"><a class="header" href="#origins">Origins</a></h2>
+<p>The F-14 Tomcat traces its origins back to the 1950s, when the U.S. Navy identified the need for a
+carrier-based, long-range interceptor to fulfill the Fleet Air Defence role. This aircraft would
+require an advanced radar system and long-range air-to-air missiles, exceeding the capabilities of
+the F-4 Phantom.</p>
+<p>Under Defense Secretary Robert McNamara, the Navy was directed to join the Tactical Fighter
+Experimental (TFX) program in cooperation with the U.S. Air Force. The Navy resisted this move, and
+the resulting General Dynamics F-111B fell short of the Navy’s expectations.</p>
+<p>Grumman, originally a subcontractor on the F-111B, was awarded a contract to develop a new aircraft
+better suited to the Navy’s needs. This project retained key systems from the F-111B—most notably
+the AN/AWG-9 radar and AIM-54 Phoenix missile—and eventually became the F-14 Tomcat.</p>
+<p>The F-14 first flew on December 21, 1970, and entered service on September 22, 1974. The "Tomcat"
+name followed Grumman’s feline naming tradition and referenced Vice Admiral Thomas F. Connolly, an
+advocate for the aircraft.</p>
+<hr />
+<h2 id="service-life-upgrades"><a class="header" href="#service-life-upgrades">Service Life Upgrades</a></h2>
+<ul>
+<li><strong>F-14A</strong> was the original model, equipped with Pratt &amp; Whitney TF30 engines and an IRST system in
+the chinpod. These engines were underpowered and unreliable, later replaced by the General
+Electric F110-GE-400 in the <strong>F-14A+</strong>, which became the <strong>F-14B</strong>.</li>
+<li>The IRST system was replaced early in development by the <strong>TCS (Television Camera Set)</strong>, allowing
+for long-range visual ID of radar targets.</li>
+<li>Progressive upgrades included:
+<ul>
+<li>PTID/PMDIG programmable cockpit displays</li>
+<li>INS system enhancements</li>
+<li>Digital Flight Control System (DFCS)</li>
+<li>Upgraded RWR systems</li>
+</ul>
+</li>
+</ul>
+<p>The <strong>TARPS</strong> (Tactical Air Reconnaissance Pod System) was later added for photographic
+reconnaissance capability.</p>
+<hr />
+<h2 id="ground-attack-role"><a class="header" href="#ground-attack-role">Ground Attack Role</a></h2>
+<p>In the 1990s, as the air threat declined and conflicts like Desert Storm arose, the Navy
+reconsidered the F-14’s ground attack capabilities.</p>
+<p>Although designed to carry air-to-ground munitions, cost and risk had initially ruled out this role.
+Renewed interest led to the integration of the <strong>LANTIRN targeting pod</strong>, enabling precision
+laser-guided bomb delivery by the RIO.</p>
+<p>Later upgrades also allowed the F-14 to carry <strong>GPS-guided JDAMs</strong>. Most LANTIRN-equipped aircraft
+also featured the upgraded PTID display for improved integration.</p>
+<hr />
+<h2 id="f-14d"><a class="header" href="#f-14d">F-14D</a></h2>
+<p>The <strong>F-14D</strong>, introduced in the 1990s, featured:</p>
+<ul>
+<li>GE F110-GE-400 engines (same as F-14B)</li>
+<li>DFCS system (retrofitted to earlier variants)</li>
+<li>AN/APG-71 radar (successor to AN/AWG-9)</li>
+<li>Integrated TCS/IRST in a new chinpod</li>
+<li>Avionics suite overhaul</li>
+</ul>
+<hr />
+<h2 id="end-of-service"><a class="header" href="#end-of-service">End of Service</a></h2>
+<p>The F-14 was ultimately retired due to:</p>
+<ul>
+<li>Aging airframes</li>
+<li>High maintenance costs</li>
+<li>A diminishing need for Fleet Air Defence post–Cold War</li>
+</ul>
+<p>The Tomcat was officially retired by the U.S. Navy on <strong>September 22, 2006</strong>, at NAS Oceana.</p>
+<hr />
+<h2 id="iran"><a class="header" href="#iran">Iran</a></h2>
+<p>Iran was the only other operator of the F-14. The Shah of Iran ordered 80 F-14As for the Imperial
+Iranian Air Force. Following the 1979 revolution, the <strong>Islamic Republic of Iran Air Force (IRIAF)</strong>
+inherited the fleet.</p>
+<p>Sanctions cut off access to spare parts, forcing Iran to:</p>
+<ul>
+<li>Cannibalize aircraft</li>
+<li>Use black market sources</li>
+<li>Possibly develop indigenous parts</li>
+</ul>
+<p>Despite limitations, Iran successfully used the F-14 during the Iran–Iraq War, claiming significant
+air-to-air victories. As of today, Iran remains the only operator of the F-14, flying early F-14A
+models with TF30 engines and no TCS or IRST.</p>
+<hr />
+<h2 id="aim-54-phoenix"><a class="header" href="#aim-54-phoenix">AIM-54 Phoenix</a></h2>
+<p>Originally developed for the F-111B, the <strong>AIM-54 Phoenix</strong> missile was adopted for the F-14. Key
+features:</p>
+<ul>
+<li>Long-range engagement of bombers and cruise missiles</li>
+<li>Midcourse guidance via AN/AWG-9 radar, terminal phase via onboard active radar seeker</li>
+<li>Simultaneous engagement of up to six targets</li>
+</ul>
+<p>Variants:</p>
+<ul>
+<li><strong>AIM-54A</strong>: Original version with Mk 47 rocket motor</li>
+<li><strong>AIM-54C</strong>: Improved seeker and lower smoke motor</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../intro/introduction.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../intro/specification.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../intro/introduction.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../intro/introduction.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../intro/specification.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../intro/specification.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../js/jquery-3.7.1.min.js"></script>
+        <script src="../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>
