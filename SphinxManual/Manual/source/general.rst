@@ -2980,20 +2980,20 @@ The following table details the threat symbols used by the Heatblur DCS F-14 wit
 
 
 
-AN/ALR-45 AND AN/ALR-50 RWR (F-14A)
+AN/ALR-45/50 RWR (F-14A Early)
 ***********************************
 
 Description
 ===========
 
-The AN/ALR-45 and AN/ALR-50 combination was introduced during the early 70s as a response to the increasingly lethal AAA and SAM system introduced during that era.
+The AN/ALR-45 and AN/ALR-50 combination was introduced during the early 70s as a response to the increasingly lethal SAM and AAA systems introduced during that era.
 It's purpose is to inform the crew about threats and help them defend against them by indicating reception of threat emissions and when they pose a threat to the aircraft.
 
 The AN/ALR-45 has four quadrant receiver antennas located on the front sides of the engine intakes as well as the trailing outer edges of the stabilators to provide a 360 degree coverage of the aircraft.
 It provides a general ECM situational awareness as well as indicating emitters locking onto and attacking the aircraft.
 
 The AN/ALR-50 is a dedicated missile warning system and has one upper antenna located aft of the cockpit and another lower antenna located on one of the nose gear doors.
-The purpose of the AN/ALR-50 is purely to warn of active missile and other threats engaging the aircraft outside of the normal AN/ALR-45 band.
+The purpose of the AN/ALR-50 is to detect and warn about possible missile launches. It can identify **MA (missile alert)** and **ML (missile launch)** conditions for some of the radars which use missile command-link signals.
 
 Both systems are used as a combined set and can be used to trigger countermeasure program release from the AN/ALE-39 as well as triggering the DECM into transmission.
 
@@ -3015,29 +3015,29 @@ The lower position, **DEFEAT**, is locked out and the switch need to be lifted t
 
 The middle volume knob, **4**, controls the audio levels of the AN/ALR-45 and AN/ALR-50 in the RIO's headset.
 The outside part of the knob controls audio from the AN/ALR-45 and can be turned off if needed.
-The inside part controls audio from the AN/ALR-50 can't be completely turned off as it controls the missile alert tones.
+The inside part controls audio from the AN/ALR-50 can't be completely turned off as it controls the MA/ML tones.
 
 The **AAA** switch (**10**) enables or disables display of strobes relating to AAA threats, the threat acronym and indicator lights still function.
 **NORM** allows normal operation and display of AAA threats and **DEFEAT** disables the strobes.
 
-The **UNKNOWN** switch (**6**) disables display of normal threats and display all unknown signals not identified as normal threast as solid strobes, the UNK acronym will be display if there are any present.
+The **UNKNOWN** switch (**6**) disables display of normal threats and display all unknown signals not identified as normal threast as solid strobes, the UNK acronym will be display whenever there are any present.
 The **DISPLAY** position allows this display and is momentary and needs to be held and the **OFF** position allows normal AN/ALR-45 operation.
 
 The three test switches (**7**, **8** and **9**) are all springloaded to center and allows for activation of BIT for the selected band or system.
-The **TEST - ML/OFF** switch enables BIT of the AN/ALR-50 in the **ML** position and should result in flashing SAM lights and range rings on the display as well as associated audio tones.
-The **TEST - HIGH/OFF** switch enables BIT of the AN/ALR-45 high band in the **HIGH** position and should result in a dashed strobe in each of the four quadrants on the display as well as audio and associated warning lights and acronyms for AI and SAM HIGH.
-The **TEST - MID/OFF/LOW** switch enables BIT of the AN/ALR-45 mid and low bands in their respective positions.
-The **MID** position should result in a dot-dash strobe in each quadrant as well as audio and associated warning lights and acronyms for AAA/AI and SAM MID.
+The **TEST - LOW/OFF/MID** switch enables BIT of the AN/ALR-45 **LOW** and **MID** band.
 The **LOW** position should result in a dotted strobe in each quadrant as well as audio and associated warning lights and acronyms for AAA and SAM LOW.
+The **MID** position should result in a dot-dash strobe in each quadrant as well as audio and associated warning lights and acronyms for AAA/AI and SAM MID.
+The **TEST - ML/OFF** switch enables BIT of the AN/ALR-50 in the **ML** position and should result in flashing SAM lights and range rings on the display as well as associated audio tones.
+The **TEST - HIGH/OFF** switch enables BIT of the AN/ALR-45 high band in the **HIGH** band and should result in a dashed strobe in each of the four quadrants on the display as well as audio and associated warning lights and acronyms for AI and SAM HIGH.
 
 .. image:: /images/general/alr-45/display.png
 
-The **ECM DISPLAY** control panel is also located on the RIO's right horisontal console.
+The **ECM DISPLAY** control panel is also located on the RIO's right horizontal console.
 It controls the RIO's **ECMD** display as well as generic display settings for both displays.
 
 The **ECM - CORR** switch (**1**) allows setting how the two systems correlate their threats. It is springloaded back to **ML**.
-The **MA/ML** position is a momentary position and allows the RIO to correlate a AN/ALR-50 threat with only a **MA** condition to a AN/ALR-45 threat with or without a **ML** condition.
-The **ML** position, which is the normal switch position, sets the ECM to only correlate a AN/ALR-50 threat to an AN/ALR-45 threat if a **ML** condition occurs.
+The **MA/ML** position is a momentary position and allows the RIO to correlate AN/ALR-50 threats with a **MA** or **ML** condition to a AN/ALR-45 threats.
+The **ML** position, which is the normal switch position, sets the ECM to only correlate a AN/ALR-50 threats to an AN/ALR-45 threats if a **ML** condition occurs.
 The **OFF** position defeats (disables) the correlation momentarily allowing for normal uncorrelated threat display.
 
 The **ECM - ORIDE** switch (**2**) controls when the ECM can override the NAV display on the **ECMD**.
@@ -3061,6 +3061,19 @@ Displays
 
 Warning Lights
 ==============
+
++----------------------------------------------------+--------------------------------------------------+
+| .. image:: /images/general/alr-45/pilotcaution.png | .. image:: /images/general/alr-45/riocaution.png |
+|    :width: 150 px                                  |    :width: 250 px                                |
+|    :height: 350 px                                 |    :height: 800 px                               |
++----------------------------------------------------+--------------------------------------------------+
+
+The two crewmembers have warning lights dedicated to specific threats on their front cockpit panels.
+The pilot warning lights are situated on the right side of the HUD and the RIO warning lights on the right side of the TID.
+The RIO warning light panel also contains lights for the AN/ALQ-100 and the IFF transponder, those are detailed under their respective section.
+
+The different lights illuminate to indicate the presence of a certain type of threat.
+
 
 
 Threat Indication Alert Tones
