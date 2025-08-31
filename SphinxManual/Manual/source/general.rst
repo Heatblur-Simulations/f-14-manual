@@ -3004,7 +3004,7 @@ Controls
 ========
 .. image:: /images/general/alr-45/control.png
 
-The main **ECM** control panel for the AN/ALR-45 and AN/ALR-50 is located on the RIO's right horisontal console.
+The main **ECM** control panel for the AN/ALR-45 and AN/ALR-50 is located on the RIO's right horizontal console.
 The power switch for both system is located on the right side of this control panel and is labeled **PWR - ALR-45/50** (**5**).
 
 The three three-position switches (**1**, **2** and **3**) on the top control the three operating bands of the AN/ALR-45 allowing exclusive display of that band or removal of that band from the displays.
@@ -3052,11 +3052,10 @@ The **DATA/ADF** switch (**4**) controls what additional text information to dis
 The switch controlling display of ECM information to the pilot is located on the :ref:`dispctrlpanel` and the volume controls are located on the **TONE VOLUME CONTROL PANEL -- ADD LINK**.
 
 
-
-
-
 Displays
 ========
+
+TODO
 
 
 Warning Lights
@@ -3078,6 +3077,13 @@ The different lights illuminate to indicate the presence of a certain type of th
 
 Threat Indication Alert Tones
 =============================
+
+There are 4 types of sound:
+
+* ALR-45 Threat radar caution - depends on radar
+* ALR-50 MA (missile alert) tone - low frequency warble
+* ALR-50 ML (missile launch) tone - high frequency warble
+* ALQ-100/126 raw threat radar sound - depends on radar
 
 
 AN/ALE-39 Countermeasures Dispensing Set
