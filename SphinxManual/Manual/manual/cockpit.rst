@@ -165,7 +165,6 @@ F-14A (Early):
 | 4. V/UHF 2 knob     | Controls volume of audio from AN/ARC-182 to the pilot.     |
 +---------------------+------------------------------------------------------------+
 | 5. TACAN CMD switch | Sets crewmember in command of the TACAN.                   |
-|                     | Also indicates current setting.                            |
 +---------------------+------------------------------------------------------------+
 
 .. raw:: latex

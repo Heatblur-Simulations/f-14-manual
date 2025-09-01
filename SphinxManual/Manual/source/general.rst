@@ -2987,13 +2987,13 @@ Description
 ===========
 
 The AN/ALR-45 and AN/ALR-50 combination was introduced during the early 70s as a response to the increasingly lethal SAM and AAA systems introduced during that era.
-It's purpose is to inform the crew about threats and help them defend against them by indicating reception of threat emissions and when they pose a threat to the aircraft.
+It's purpose is to inform the crew about threats and help them defend against them by indicating reception of threat emissions and when they pose a threat to the aircraft. Similarly to ALR-67 it's working in cooperaiton with DECM jammer (ALQ-100).
 
 The AN/ALR-45 has four quadrant receiver antennas located on the front sides of the engine intakes as well as the trailing outer edges of the stabilators to provide a 360 degree coverage of the aircraft.
 It provides a general ECM situational awareness as well as indicating emitters locking onto and attacking the aircraft.
 
 The AN/ALR-50 is a dedicated missile warning system and has one upper antenna located aft of the cockpit and another lower antenna located on one of the nose gear doors.
-The purpose of the AN/ALR-50 is to detect and warn about possible missile launches. It can identify **MA (missile alert)** and **ML (missile launch)** conditions for some of the radars which use missile command-link signals.
+The purpose of the AN/ALR-50 is to detect and warn about possible missile launches. It can identify **MA (missile alert)** and **ML (missile launch)** conditions for some of the radars which use missile command-link signals. (Currently in DCS the MA should be interpreted as lock and ML as launch)
 
 Both systems are used as a combined set and can be used to trigger countermeasure program release from the AN/ALE-39 as well as triggering the DECM into transmission.
 
@@ -3078,13 +3078,11 @@ The different lights illuminate to indicate the presence of a certain type of th
 Threat Indication Alert Tones
 =============================
 
-There are 4 types of sound:
+There are 3 types of sound produced by ALR-45/50:
 
 * ALR-45 Threat radar caution - depends on radar
 * ALR-50 MA (missile alert) tone - low frequency warble
 * ALR-50 ML (missile launch) tone - high frequency warble
-* ALQ-100/126 raw threat radar sound - depends on radar
-
 
 AN/ALE-39 Countermeasures Dispensing Set
 ****************************************

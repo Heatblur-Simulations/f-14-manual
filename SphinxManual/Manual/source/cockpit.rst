@@ -1251,7 +1251,7 @@ ALR-45:
 
 * SAM - master SAM warning indication, lights steady for MA (missile alert), flashes for ML (missile launch)
 
-* AI/AAA - lights steady whenever an airborne interceptor and/or an amibgous AI/AAA radar is received
+* AI/AAA - lights steady whenever an ambiguous AI/AAA radar is received
 
 * AI - lights steady whenever an airborne interceptor radar is received
 
@@ -3001,23 +3001,23 @@ ALR-45:
 +=====================================+==============================================================================================================================+
 | SA TRK                              | Lights steady whenever a SAM tracking radar is received.                                                                     |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
-| SA2                                 | Lights steady for MA (missile alert), flashes for ML (missile launch).                                                       |
+| SA2                                 | SA-2 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).                                                       |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
-| SA3/NI                              | Lights steady for MA (missile alert), flashes for ML (missile launch).                                                       |
+| SA3/NI                              | SA-3 / SA-N-1 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).                               |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
-| SA4                                 | Lights steady for MA (missile alert), flashes for ML (missile launch).                                                       |
+| SA4                                 | SA-4 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).                                        |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
 | AI/AAA                              | Lights steady whenever an airborne interceptor and/or an amibgous AI/AAA radar is received.                                  |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
-| REC                                 | Lights steady whenever DECM jammer is receiving signal identified as threat.                                                 |
+| REC                                 | Lights steady whenever ALQ-100 is receiving signal identified as threat.                                                     |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
-| IFF                                 | From the APX-72.                                                                                                             |
+| IFF                                 | Advisory light indicating received mode 4 interrogation without own system generating reply.                                 |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
-| SA6                                 | Lights steady for MA (missile alert), flashes for ML (missile launch).                                                       |
+| SA6                                 | SA-6 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).                                        |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
 | AI                                  | Lights steady whenever an airborne interceptor radar is received.                                                            |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
-| REP                                 | Lights steady whenever DECM jammer is transmitting.                                                                          |
+| REP                                 | Lights steady whenever ALQ-100 is transmitting.                                                                              |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
 
 .. raw:: latex
