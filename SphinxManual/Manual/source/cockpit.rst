@@ -1235,14 +1235,25 @@ ECM Warning Lights
 ------------------
 .. image:: /images/cockpit/detail/pilot/rwrcaution.png
 
-Warning lights connected to the ALR-67 indicating different types of threats.
+Warning lights connected to the ALR-67/ALR-45 indicating different types of threats.
 
-SAM - SAM, steady illumination when detecting lock on from a SAM tracking radar. Flashes when missile launch is detected.
+ALR-67:
 
-AAA - AAA, steady illumination when detecting lock on from a AAA tracking radar. Flashes when AAA firing is detected.
+* SAM - steady illumination when detecting lock on from a SAM tracking radar. Flashes when missile launch is detected.
 
-AI - AI, steady illumination when detecting lock on from an airborne interceptor radar.
+* AAA - steady illumination when detecting lock on from a AAA tracking radar. Flashes when AAA firing is detected.
 
+* AI - steady illumination when detecting lock on from an airborne interceptor radar.
+
+ALR-45:
+
+* SA TRK - lights steady whenever a SAM tracking radar is received
+
+* SAM - master SAM warning indication, lights steady for MA (missile alert), flashes for ML (missile launch)
+
+* AI/AAA - lights steady whenever an ambiguous AI/AAA radar is received
+
+* AI - lights steady whenever an airborne interceptor radar is received
 
 .. _pstbycomp:
 
@@ -2962,6 +2973,8 @@ Threat Advisory and Master Caution Lights
 
 Master caution light and various ECM and IFF related advisory and warning lights.
 
+
+ALR-67:
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
 | Indicator                           | Function                                                                                                                     |
 +=====================================+==============================================================================================================================+
@@ -2980,6 +2993,31 @@ Master caution light and various ECM and IFF related advisory and warning lights
 | CW                                  | Warning light indicating detection of a continuous wave emitter.                                                             |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
 | AI                                  | Warning light, steady illumination when detecting lockon from an airborne interceptor radar.                                 |
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+
+ALR-45:
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| Indicator                           | Function                                                                                                                     |
++=====================================+==============================================================================================================================+
+| SA TRK                              | Lights steady whenever a SAM tracking radar is received.                                                                     |
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| SA2                                 | SA-2 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).                                                       |
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| SA3/NI                              | SA-3 / SA-N-1 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).                               |
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| SA4                                 | SA-4 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).                                        |
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| AI/AAA                              | Lights steady whenever an airborne interceptor and/or an amibgous AI/AAA radar is received.                                  |
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| REC                                 | Lights steady whenever ALQ-100 is receiving signal identified as threat.                                                     |
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| IFF                                 | Advisory light indicating received mode 4 interrogation without own system generating reply.                                 |
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| SA6                                 | SA-6 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).                                        |
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| AI                                  | Lights steady whenever an airborne interceptor radar is received.                                                            |
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| REP                                 | Lights steady whenever ALQ-100 is transmitting.                                                                              |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
 
 .. raw:: latex
