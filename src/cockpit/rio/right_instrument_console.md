@@ -40,6 +40,10 @@ Total fuel quantity readout, shows total fuel quantity in all aircraft tanks.
 
 ![threatmaster](../../img/threatmaster.png)
 
+Master caution light and various ECM and IFF related advisory and warning lights.
+
+ALR-67:
+
 | No. | Indicator                       | Function                                                                                                                       |
 | --- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | 1   | MASTER CAUTION light and button | Flashes to indicate status change on the RIO caution/advisory panel. Press to reset and turn off light until the next event.   |
@@ -50,6 +54,21 @@ Total fuel quantity readout, shows total fuel quantity in all aircraft tanks.
 | 6   | AAA                             | Warning light, steady illumination when detecting lockon from a AAA tracking radar. Flashes when AAA engagement is detected.   |
 | 7   | CW                              | Warning light indicating detection of a continuous wave emitter.                                                               |
 | 8   | AI                              | Warning light, steady illumination when detecting lockon from an airborne interceptor radar.                                   |
+
+ALR-45:
+
+| No. | Indicator | Function                                                                                       |
+| --- | --------- | ---------------------------------------------------------------------------------------------- |
+| 1   | SA TRK    | Lights steady whenever a SAM tracking radar is received.                                       |
+| 2   | SA2       | SA-2 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
+| 3   | SA3/NI    | SA-3 / SA-N-1 warning - Lights steady for MA (missile alert), flashes for ML (missile launch). |
+| 4   | SA4       | SA-4 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
+| 5   | AI/AAA    | Lights steady whenever an airborne interceptor and/or an amibgous AI/AAA radar is received.    |
+| 6   | REC       | Lights steady whenever ALQ-100 is receiving signal identified as threat.                       |
+| 7   | IFF       | Advisory light indicating received mode 4 interrogation without own system generating reply.   |
+| 8   | SA6       | SA-6 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
+| 9   | AI        | Lights steady whenever an airborne interceptor radar is received.                              |
+| 10  | REP       | Lights steady whenever ALQ-100 is transmitting.                                                |
 
 ## Bearing Distance Heading Indicator (BDHI)
 

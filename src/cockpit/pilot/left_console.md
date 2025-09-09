@@ -25,12 +25,24 @@ Controls ventilation airflow to pressure suit or seat cushions and oxygen to pil
 
 Panel controlling volume to Pilot headset and crewmember in control of TACAN.
 
+F-14B and F-14A (Late):
+
 | No. | Control/Indicator | Function                                                                 |
 | --- | ----------------- | ------------------------------------------------------------------------ |
 | 1   | ALR-67 knob       | Controls audio volume from the ALR-67 to the pilot.                      |
 | 2   | SW knob           | Controls volume of Sidewinder audio tone to the pilot.                   |
 | 3   | V/UHF 2 knob      | Controls volume of audio from AN/ARC-182 to the pilot.                   |
 | 4   | TACAN CMD switch  | Sets crewmember in command of the TACAN. Also indicates current setting. |
+
+F-14A (Early):
+
+| No. | Control/Indicator | Function                                                                 |
+| --- | ----------------- | ------------------------------------------------------------------------ |
+| 1   | ALR-45 knob       | Controls audio volume from the ALR-45 to the pilot.                      |
+| 2   | ALR-50 knob       | Controls audio volume from the ALR-50 to the pilot.                      |
+| 3   | SW knob           | Controls volume of Sidewinder audio tone to the pilot.                   |
+| 4   | V/UHF 2 knob      | Controls volume of audio from AN/ARC-182 to the pilot.                   |
+| 5   | TACAN CMD switch  | Sets crewmember in command of the TACAN. Also indicates current setting. |
 
 ## TACAN Control Panel
 
