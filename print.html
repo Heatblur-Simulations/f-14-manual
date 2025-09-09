@@ -374,11 +374,21 @@ Management)</p>
 <h2 id="volumetacan-command-panel"><a class="header" href="#volumetacan-command-panel">Volume/TACAN Command Panel</a></h2>
 <p><img src="cockpit/pilot/../../img/volume.png" alt="volume" /></p>
 <p>Panel controlling volume to Pilot headset and crewmember in control of TACAN.</p>
+<p>F-14B and F-14A (Late):</p>
 <div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
 <tr><td>1</td><td>ALR-67 knob</td><td>Controls audio volume from the ALR-67 to the pilot.</td></tr>
 <tr><td>2</td><td>SW knob</td><td>Controls volume of Sidewinder audio tone to the pilot.</td></tr>
 <tr><td>3</td><td>V/UHF 2 knob</td><td>Controls volume of audio from AN/ARC-182 to the pilot.</td></tr>
 <tr><td>4</td><td>TACAN CMD switch</td><td>Sets crewmember in command of the TACAN. Also indicates current setting.</td></tr>
+</tbody></table>
+</div>
+<p>F-14A (Early):</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>ALR-45 knob</td><td>Controls audio volume from the ALR-45 to the pilot.</td></tr>
+<tr><td>2</td><td>ALR-50 knob</td><td>Controls audio volume from the ALR-50 to the pilot.</td></tr>
+<tr><td>3</td><td>SW knob</td><td>Controls volume of Sidewinder audio tone to the pilot.</td></tr>
+<tr><td>4</td><td>V/UHF 2 knob</td><td>Controls volume of audio from AN/ARC-182 to the pilot.</td></tr>
+<tr><td>5</td><td>TACAN CMD switch</td><td>Sets crewmember in command of the TACAN. Also indicates current setting.</td></tr>
 </tbody></table>
 </div>
 <h2 id="tacan-control-panel"><a class="header" href="#tacan-control-panel">TACAN Control Panel</a></h2>
@@ -905,10 +915,19 @@ according to table below.</p>
 <h2 id="ecm-warning-lights"><a class="header" href="#ecm-warning-lights">ECM Warning Lights</a></h2>
 <p><img src="cockpit/pilot/../../img/rwrcaution.png" alt="rwrcaution" /></p>
 <p>Warning lights connected to the ALR-67 indicating different types of threats.</p>
+<p>ALR-67:</p>
 <div class="table-wrapper"><table><thead><tr><th>Indicator</th><th>Function</th></tr></thead><tbody>
 <tr><td>SAM</td><td>Steady illumination when detecting lock-on from a SAM tracking radar. Flashes when missile launch is detected.</td></tr>
 <tr><td>AAA</td><td>Steady illumination when detecting lock-on from a AAA tracking radar. Flashes when AAA firing is detected.</td></tr>
 <tr><td>AI</td><td>Steady illumination when detecting lock-on from an airborne interceptor radar.</td></tr>
+</tbody></table>
+</div>
+<p>ALR-45:</p>
+<div class="table-wrapper"><table><thead><tr><th>Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>SA TRK</td><td>Lights steady whenever a SAM tracking radar is received.</td></tr>
+<tr><td>SAM</td><td>Master SAM warning indication, lights steady for MA (missile alert), flashes for ML (missile launch)</td></tr>
+<tr><td>AI/AAA</td><td>Lights steady whenever an ambiguous AI/AAA radar is received.</td></tr>
+<tr><td>AI</td><td>Lights steady whenever an airborne interceptor radar is received.</td></tr>
 </tbody></table>
 </div>
 <h2 id="standby-compass"><a class="header" href="#standby-compass">Standby Compass</a></h2>
@@ -1801,6 +1820,8 @@ counter.</p>
 <p>Total fuel quantity readout, shows total fuel quantity in all aircraft tanks.</p>
 <h2 id="threat-advisory-and-master-caution-lights"><a class="header" href="#threat-advisory-and-master-caution-lights">Threat Advisory and Master Caution Lights</a></h2>
 <p><img src="cockpit/rio/../../img/threatmaster.png" alt="threatmaster" /></p>
+<p>Master caution light and various ECM and IFF related advisory and warning lights.</p>
+<p>ALR-67:</p>
 <div class="table-wrapper"><table><thead><tr><th>No.</th><th>Indicator</th><th>Function</th></tr></thead><tbody>
 <tr><td>1</td><td>MASTER CAUTION light and button</td><td>Flashes to indicate status change on the RIO caution/advisory panel. Press to reset and turn off light until the next event.</td></tr>
 <tr><td>2</td><td>IFF</td><td>Advisory light indicating received mode 4 interrogation without own system generating a reply.</td></tr>
@@ -1810,6 +1831,20 @@ counter.</p>
 <tr><td>6</td><td>AAA</td><td>Warning light, steady illumination when detecting lockon from a AAA tracking radar. Flashes when AAA engagement is detected.</td></tr>
 <tr><td>7</td><td>CW</td><td>Warning light indicating detection of a continuous wave emitter.</td></tr>
 <tr><td>8</td><td>AI</td><td>Warning light, steady illumination when detecting lockon from an airborne interceptor radar.</td></tr>
+</tbody></table>
+</div>
+<p>ALR-45:</p>
+<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>1</td><td>SA TRK</td><td>Lights steady whenever a SAM tracking radar is received.</td></tr>
+<tr><td>2</td><td>SA2</td><td>SA-2 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).</td></tr>
+<tr><td>3</td><td>SA3/NI</td><td>SA-3 / SA-N-1 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).</td></tr>
+<tr><td>4</td><td>SA4</td><td>SA-4 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).</td></tr>
+<tr><td>5</td><td>AI/AAA</td><td>Lights steady whenever an airborne interceptor and/or an amibgous AI/AAA radar is received.</td></tr>
+<tr><td>6</td><td>REC</td><td>Lights steady whenever ALQ-100 is receiving signal identified as threat.</td></tr>
+<tr><td>7</td><td>IFF</td><td>Advisory light indicating received mode 4 interrogation without own system generating reply.</td></tr>
+<tr><td>8</td><td>SA6</td><td>SA-6 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).</td></tr>
+<tr><td>9</td><td>AI</td><td>Lights steady whenever an airborne interceptor radar is received.</td></tr>
+<tr><td>10</td><td>REP</td><td>Lights steady whenever ALQ-100 is transmitting.</td></tr>
 </tbody></table>
 </div>
 <h2 id="bearing-distance-heading-indicator-bdhi-1"><a class="header" href="#bearing-distance-heading-indicator-bdhi-1">Bearing Distance Heading Indicator (BDHI)</a></h2>
@@ -6405,13 +6440,107 @@ warbling active threat tone.</p>
 shown only when setting the DISPLAY TYPE selector to FRIEND. N are shown only in UNK and T only in
 FRIEND.</p>
 </blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="alr-4550"><a class="header" href="#alr-4550">ALR-45/50</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="alr-4550-f-14a-early"><a class="header" href="#alr-4550-f-14a-early">ALR-45/50 (F-14A Early)</a></h1>
 <blockquote>
-<p><strong>Note</strong>: Not yet implemented in DCS.</p>
+<p>🚧 TODO: Perhaps elaborate on the system's specifics more.</p>
 </blockquote>
+<p>The AN/ALR-45 and AN/ALR-50 combination was introduced during the early 70s as a response to the
+increasingly lethal SAM and AAA systems introduced during that era. It's purpose is to inform the
+crew about threats and help them defend against them by indicating reception of threat emissions and
+when they pose a threat to the aircraft. Similarly to ALR-67 it's working in cooperaiton with DECM
+jammer (ALQ-100).</p>
+<p>The AN/ALR-45 has four quadrant receiver antennas located on the front sides of the engine intakes
+as well as the trailing outer edges of the stabilators to provide a 360 degree coverage of the
+aircraft. It provides a general ECM situational awareness as well as indicating emitters locking
+onto and attacking the aircraft.</p>
+<p>The AN/ALR-50 is a dedicated missile warning system and has one upper antenna located aft of the
+cockpit and another lower antenna located on one of the nose gear doors. The purpose of the
+AN/ALR-50 is to detect and warn about possible missile launches. It can identify <strong>MA (missile
+alert)</strong> and <strong>ML (missile launch)</strong> conditions for some of the radars which use missile
+command-link signals. (Currently in DCS the MA should be interpreted as lock and ML as launch)</p>
+<p>Both systems are used as a combined set and can be used to trigger countermeasure program release
+from the AN/ALE-39 as well as triggering the DECM into transmission.</p>
+<p>The system displays threats on the pilot HSD and the RIO ECMD when they are set to ECM. Via the
+display controls the ECM can be allowed to override the current display if a threat is detected.</p>
+<h2 id="controls-2"><a class="header" href="#controls-2">Controls</a></h2>
+<p><img src="systems/defensive_systems/../../../SphinxManual/Manual/source//images/general/alr-45/control.png" alt="Control Panel" /></p>
+<p>The main <strong>ECM</strong> control panel for the AN/ALR-45 and AN/ALR-50 is located on the RIO's right
+horizontal console. The power switch for both system is located on the right side of this control
+panel and is labeled <strong>PWR - ALR-45/50</strong> (<strong>5</strong>).</p>
+<p>The three three-position switches (<strong>1</strong>, <strong>2</strong> and <strong>3</strong>) on the top control the three operating
+bands of the AN/ALR-45 allowing exclusive display of that band or removal of that band from the
+displays. The upper position, <strong>BYPASS</strong>, is momentary and holding the switch to that position
+allows all signals in that band through regardless of their parameters, normally only those matching
+threats are passed through. Holding a band to <strong>BYPASS</strong> removes the other two band from the display
+completely though which is why the switch is automatically returned to <strong>NORM</strong> when released. The
+<strong>NORM</strong> position allows for normal operation of that band. The lower position, <strong>DEFEAT</strong>, is
+locked out and the switch need to be lifted to allow movement to this position. The <strong>DEFEAT</strong>
+position completely disables the selected band.</p>
+<p>The middle volume knob, <strong>4</strong>, controls the audio levels of the AN/ALR-45 and AN/ALR-50 in the RIO's
+headset. The outside part of the knob controls audio from the AN/ALR-45 and can be turned off if
+needed. The inside part controls audio from the AN/ALR-50 can't be completely turned off as it
+controls the MA/ML tones.</p>
+<p>The <strong>AAA</strong> switch (<strong>10</strong>) enables or disables display of strobes relating to AAA threats, the
+threat acronym and indicator lights still function. <strong>NORM</strong> allows normal operation and display of
+AAA threats and <strong>DEFEAT</strong> disables the strobes.</p>
+<p>The <strong>UNKNOWN</strong> switch (<strong>6</strong>) disables display of normal threats and display all unknown signals
+not identified as normal threast as solid strobes, the UNK acronym will be display whenever there
+are any present. The <strong>DISPLAY</strong> position allows this display and is momentary and needs to be held
+and the <strong>OFF</strong> position allows normal AN/ALR-45 operation.</p>
+<p>The three test switches (<strong>7</strong>, <strong>8</strong> and <strong>9</strong>) are all springloaded to center and allows for
+activation of BIT for the selected band or system. The <strong>TEST - LOW/OFF/MID</strong> switch enables BIT of
+the AN/ALR-45 <strong>LOW</strong> and <strong>MID</strong> band. The <strong>LOW</strong> position should result in a dotted strobe in
+each quadrant as well as audio and associated warning lights and acronyms for AAA and SAM LOW. The
+<strong>MID</strong> position should result in a dot-dash strobe in each quadrant as well as audio and associated
+warning lights and acronyms for AAA/AI and SAM MID. The <strong>TEST - ML/OFF</strong> switch enables BIT of the
+AN/ALR-50 in the <strong>ML</strong> position and should result in flashing SAM lights and range rings on the
+display as well as associated audio tones. The <strong>TEST - HIGH/OFF</strong> switch enables BIT of the
+AN/ALR-45 high band in the <strong>HIGH</strong> band and should result in a dashed strobe in each of the four
+quadrants on the display as well as audio and associated warning lights and acronyms for AI and SAM
+HIGH.</p>
+<p><img src="systems/defensive_systems/../../../SphinxManual/Manual/source//images/general/alr-45/display.png" alt="Display" /></p>
+<p>The <strong>ECM DISPLAY</strong> control panel is also located on the RIO's right horizontal console. It controls
+the RIO's <strong>ECMD</strong> display as well as generic display settings for both displays.</p>
+<p>The <strong>ECM - CORR</strong> switch (<strong>1</strong>) allows setting how the two systems correlate their threats. It is
+springloaded back to <strong>ML</strong>. The <strong>MA/ML</strong> position is a momentary position and allows the RIO to
+correlate AN/ALR-50 threats with a <strong>MA</strong> or <strong>ML</strong> condition to a AN/ALR-45 threats. The <strong>ML</strong>
+position, which is the normal switch position, sets the ECM to only correlate a AN/ALR-50 threats to
+an AN/ALR-45 threats if a <strong>ML</strong> condition occurs. The <strong>OFF</strong> position defeats (disables) the
+correlation momentarily allowing for normal uncorrelated threat display.</p>
+<p>The <strong>ECM - ORIDE</strong> switch (<strong>2</strong>) controls when the ECM can override the NAV display on the
+<strong>ECMD</strong>. The <strong>ML</strong> position allows override if a <strong>ML</strong> condition occurs. The <strong>ML/AI</strong> position
+allows override if a <strong>ML</strong> condition occurs or an <strong>AI</strong> (Airborne Intercept, i.e. fighter radar)
+is detected. The <strong>OFF</strong> position disables override.</p>
+<p>The <strong>MODE</strong> switch (<strong>3</strong>) selects which system to display on the <strong>ECMD</strong>. <strong>ECM</strong> displays the
+ECM and <strong>NAV</strong> displays NAV.</p>
+<p>The <strong>DATA/ADF</strong> switch (<strong>4</strong>) controls what additional text information to display in the NAV
+mode. <strong>BOTH</strong> displays ADF and general navigation information, <strong>DATA</strong> displays only the general
+navigation information and <strong>OFF</strong> disables all extra text.</p>
+<p>The switch controlling display of ECM information to the pilot is located on the
+<img src="systems/defensive_systems/../../cockpit/pilot/right_vertical_console.html#displays-control-panel" alt="Displays Control Panel" /> and
+the volume controls are located on the
+<img src="systems/defensive_systems/../../cockpit/pilot/left_console.html#volumetacan-command-panel" alt="Volume/TACAN Command Panel" />.</p>
+<h2 id="displays-2"><a class="header" href="#displays-2">Displays</a></h2>
 <blockquote>
-<p>🚧 TODO: Add a little blurb about it here.</p>
+<p>🚧 TODO (Mirrored from Sphinx Manual Version)</p>
 </blockquote>
+<h2 id="warning-lights-1"><a class="header" href="#warning-lights-1">Warning Lights</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Pilot</th><th>RIO</th></tr></thead><tbody>
+<tr><td><img src="systems/defensive_systems/../../../SphinxManual/Manual/source//images/general/alr-45/pilotcaution.png" alt="Pilot Caution" /></td><td><img src="systems/defensive_systems/../../../SphinxManual/Manual/source//images/general/alr-45/riocaution.png" alt="RIO Caution" /></td></tr>
+</tbody></table>
+</div>
+<p>The two crewmembers have warning lights dedicated to specific threats on their front cockpit panels.
+The pilot warning lights are situated on the right side of the HUD and the RIO warning lights on the
+right side of the TID. The RIO warning light panel also contains lights for the AN/ALQ-100 and the
+IFF transponder, those are detailed under their respective section.</p>
+<p>The different lights illuminate to indicate the presence of a certain type of threat.</p>
+<h2 id="threat-indication-alert-tones-1"><a class="header" href="#threat-indication-alert-tones-1">Threat Indication Alert Tones</a></h2>
+<p>There are 3 types of sound produced by ALR-45/50:</p>
+<ul>
+<li>ALR-45 Threat radar caution - depends on radar</li>
+<li>ALR-50 MA (missile alert) tone - low frequency warble</li>
+<li>ALR-50 ML (missile launch) tone - high frequency warble</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="electronic-countermeasures---analq-100--126-decm-defensive-electronic-countermeasures"><a class="header" href="#electronic-countermeasures---analq-100--126-decm-defensive-electronic-countermeasures">Electronic Countermeasures - AN/ALQ-100 &amp; 126 DECM (Defensive Electronic CounterMeasures)</a></h1>
 <blockquote>
 <p>🚧 TODO: Rework to add imagery.</p>
@@ -7595,7 +7724,7 @@ F-4E's manual. Write an intro.</p>
 <li>Use the Jester menu to confirm completion of each step.</li>
 </ul>
 <p><img src="dcs/./_images/highlight.png" alt="Highlight" /></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="controls-2"><a class="header" href="#controls-2">Controls</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="controls-3"><a class="header" href="#controls-3">Controls</a></h1>
 <blockquote>
 <p>🚧 TODO: Add this section similar to the F-4E manual.</p>
 </blockquote>
