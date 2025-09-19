@@ -3055,7 +3055,9 @@ The switch controlling display of ECM information to the pilot is located on the
 Displays
 ========
 
-TODO
+.. image:: /images/general/alr-45/general.png
+
+.. image:: /images/general/alr-45/strobes.png
 
 
 Warning Lights
@@ -3063,8 +3065,6 @@ Warning Lights
 
 +----------------------------------------------------+--------------------------------------------------+
 | .. image:: /images/general/alr-45/pilotcaution.png | .. image:: /images/general/alr-45/riocaution.png |
-|    :width: 150 px                                  |    :width: 250 px                                |
-|    :height: 350 px                                 |    :height: 800 px                               |
 +----------------------------------------------------+--------------------------------------------------+
 
 The two crewmembers have warning lights dedicated to specific threats on their front cockpit panels.
