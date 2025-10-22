@@ -203,7 +203,7 @@ Early F-14A version as sold to the IIAF (Imperial Iranian Air Force) which later
 This version has the early Pratt & Whitney TF30-P-414A engines, AN/ALR-45 radar warning receiver and lacks the Television Camera Set (TCS) and Link-4 data link system as well as being limited to the earlier air to air missiles available to Iran.
  
 
-F-14A-135-GR (Early) - Not yet implemented
+F-14A-135-GR (Early)
 ==========================================
 
 Early US Navy F-14A version.
