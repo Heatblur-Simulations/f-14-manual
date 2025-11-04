@@ -3238,7 +3238,7 @@ The control panel itself contains a STANDBY indicator light, a mode selector kno
 
 The STANDBY light indicates that system warmup is not yet completed and when completed turns off. At other times, illumination of this indicator indicates the presence of a fault in the system.
 
-The AUDIO (volume) knob controls the audio volume of the RIO sound from the system. The pilot has no access to this audio. The audio itself is generated from the PRF of recieved threats with PRF frequency being converted to audio frequency.
+The AUDIO (volume) knob controls the audio volume of the RIO sound from the system. The pilot has no access to this audio unless he put his amplifier selector to **EMER** (to use RIO amplifier). The audio itself is generated based on radar signal characteristics (mainly PRF).
 
 The mode selector knob controls power and operational mode that the system is in.
 
