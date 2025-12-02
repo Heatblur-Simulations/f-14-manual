@@ -28,7 +28,7 @@
     - [Center Panel](./cockpit/rio/center_panel.md)
     - [Center Console](./cockpit/rio/center_console.md)
     - [Footwells](./cockpit/rio/footwells.md)
-    - [Right Instrument Panel](./cockpit/rio/right_instrument_console.md)
+    - [Right Instrument Panel](./cockpit/rio/right_instrument_panel.md)
     - [Right Knee Panel](./cockpit/rio/right_knee_panel.md)
     - [Right Vertical Console](./cockpit/rio/right_vertical_console.md)
     - [Right Side Console](./cockpit/rio/right_console.md)

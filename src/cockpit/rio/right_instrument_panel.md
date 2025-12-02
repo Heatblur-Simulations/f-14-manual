@@ -1,48 +1,70 @@
 # Right Instrument Panel
 
-> 🚧 TODO: Convert tables into text chunks like the F-4
-
 ## Clock
 
-![clock](../../img/clock1.jpg)
+![clock](../../img/cockpit_detail_rio_clock.jpg)
 
 Mechanical wind-up clock.
 
-The knob on the lower left corner is used to wind up the clock by turning it clockwise and pulling
-it out and turning it to set the hour and minute hands.
+The knob on the lower left corner is used to wind up the clock by turning it
+clockwise and pulling it out and turning it to set the hour and minute hands.
 
-The control on the upper right corner is used to start, stop, and reset a 1-hour elapsed time
-counter.
+The control on the upper right corner is used to start, stop, and reset a 1-hour
+elapsed time counter.
 
 ## ALR-67 Indicator
 
-![alr-67](../../img/alr-671.jpg)
+![alr-67](../../img/cockpit_detail_rio_alr-67.jpg)
 
-Indicator showing emitters detected by the ALR-67 RWR (radar warning receiver) set.
+Indicator showing emitters detected by the ALR-67 RWR (radar warning receiver)
+set.
 
-| No. | Control/Indicator              | Function                                                                                                                                                                                                                                                                                                                  |
-| --- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | System status circle, area I   | Upper left quadrant of 1. Shows symbol indicating the type of threats selected to be shown. N - Normal priority I - AI, airborne interceptors prioritized. A - AAA, anti-air artillery prioritized. U - Unknown emitters prioritized. F - Friendly emitters shown in addition to other threats.                           |
-| 2   | System status circle, area II  | Upper right quadrant of 1. Indicates if limited mode is selected. (Blank) - Limited mode not selected. L - Limited mode selected, display shows only 6 highest prioritized threats.                                                                                                                                       |
-| 3   | System status circle, area III | Lower half of 1. Displays failure codes and if offset display is selected. (Blank) - No failure detected and offset not selected. B - BIT failure. T - Thermal overload. O - Offset display selected. Threats will be separated to allow readout of overlapping symbols. Bearing accuracy degraded for displaced threats. |
-| 4   | Non-lethal band                | Displays emitters not a direct threat to own aircraft, either because deemed out of range or lacking weaponry to do so.                                                                                                                                                                                                   |
-| 5   | Lethal band                    | Displays threats that are deemed within range and capable of engaging own aircraft but not currently doing so.                                                                                                                                                                                                            |
-| 6   | Critical band                  | Displays direct threats to own aircraft. Systems capable of engaging own aircraft and showing current intent of doing so.                                                                                                                                                                                                 |
-| 7   | INT knob                       | Intensity/brightness knob. Controls the brightness of the display.                                                                                                                                                                                                                                                        |
+| No. | Control/Indicator              | Function                                                                                                                  |
+| --- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| 1   | System status circle, area I   | Upper left quadrant of <num>1</num>. Shows symbol indicating type of threats selected to be shown.                        |
+| 2   | System status circle, area II  | Upper right quadrant of <num>1</num>. Indicates if limited mode is selected.                                              |
+| 3   | System status circle, area III | Lower half of <num>1</num>. Displays failure codes and if offset display is selected.                                     |
+| 4   | Non-lethal band                | Displays emitters not a direct threat to own aircraft, either because deemed out of range or lacking weaponry.            |
+| 5   | Lethal band                    | Displays threats that are deemed within range and capable of engaging own aircraft but not currently doing so.            |
+| 6   | Critical band                  | Displays direct threats to own aircraft. Systems capable of engaging own aircraft and showing current intent of doing so. |
+| 7   | INT knob                       | Intensity/brightness knob. Controls the brightness of the display.                                                        |
+
+### System Status Circle
+
+The upper left quadrant (Area I) can show the following symbols:
+
+- N - Normal
+- I - AI, airborne interceptors prioritized.
+- A - AAA, anti-air artillery prioritized.
+- U - Unknown emitters prioritized.
+- F - Friendly emitters shown in addition to other threats.
+
+The upper right quadrant (Area II) can either be blank (limited mode not
+selected) or show L if selected. Limited mode will only show the 6 highest
+prioritized threats on the display.
+
+The lower half shows system status codes:
+
+- _Blank_ - No failure detected and offset not selected.
+- B - BIT failure.
+- T - Thermal overload.
+- O - Offset display selected. Threats will be separated to allow readout of
+  overlapping symbols. Bearing accuracy degraded for displaced threats.
 
 ## Fuel Quantity Totalizer
 
-![fuel](../../img/fuel1.jpg)
+![fuel](../../img/cockpit_detail_rio_fuel.jpg)
 
 Total fuel quantity readout, shows total fuel quantity in all aircraft tanks.
 
 ## Threat Advisory and Master Caution Lights
 
-![threatmaster](../../img/threatmaster.jpg)
+![threat master](../../img/cockpit_detail_rio_threatmaster.jpg)
 
-Master caution light and various ECM and IFF related advisory and warning lights.
+Master caution light and various ECM and IFF related advisory and warning
+lights.
 
-ALR-67:
+### ALR-67 Caution Lights
 
 | No. | Indicator                       | Function                                                                                                                       |
 | --- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -55,7 +77,7 @@ ALR-67:
 | 7   | CW                              | Warning light indicating detection of a continuous wave emitter.                                                               |
 | 8   | AI                              | Warning light, steady illumination when detecting lockon from an airborne interceptor radar.                                   |
 
-ALR-45:
+### ALR-45 Caution Lights
 
 | No. | Indicator | Function                                                                                       |
 | --- | --------- | ---------------------------------------------------------------------------------------------- |
@@ -63,7 +85,7 @@ ALR-45:
 | 2   | SA2       | SA-2 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
 | 3   | SA3/NI    | SA-3 / SA-N-1 warning - Lights steady for MA (missile alert), flashes for ML (missile launch). |
 | 4   | SA4       | SA-4 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
-| 5   | AI/AAA    | Lights steady whenever an airborne interceptor and/or an amibgous AI/AAA radar is received.    |
+| 5   | AI/AAA    | Lights steady whenever an airborne interceptor and/or an ambiguous AI/AAA radar is received.   |
 | 6   | REC       | Lights steady whenever ALQ-100 is receiving signal identified as threat.                       |
 | 7   | IFF       | Advisory light indicating received mode 4 interrogation without own system generating reply.   |
 | 8   | SA6       | SA-6 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
@@ -72,7 +94,7 @@ ALR-45:
 
 ## Bearing Distance Heading Indicator (BDHI)
 
-![bdhi](../../img/bdhi1.jpg)
+![bdhi](../../img/cockpit_detail_rio_bdhi.jpg)
 
 Display indicating azimuth and bearing information.
 
@@ -85,6 +107,6 @@ Display indicating azimuth and bearing information.
 
 ## Canopy Jettison Handle
 
-![canopyjettison](../../img/canopyjettison1.jpg)
+![canopy jettison](../../img/cockpit_detail_rio_canopyjettison.jpg)
 
 Handle used to manually jettison canopy.
