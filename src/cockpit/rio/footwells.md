@@ -1,4 +1,4 @@
-# Left and Right Footwells
+# Footwells
 
 ## ICS Foot Button
 
@@ -10,5 +10,5 @@ RIO left footrest containing ICS PTT for COLD MIC intercommunication.
 
 ![right](../../img/right.jpg)
 
-RIO right footrest containing PTT for transmission on UHF 1, V/UHF 2, or both depending on ICS
-setting.
+RIO right footrest containing PTT for transmission on UHF 1, V/UHF 2, or both
+depending on ICS setting.
