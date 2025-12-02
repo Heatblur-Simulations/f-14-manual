@@ -1,7 +1,5 @@
 # Technical Specifications
 
-> 🚧 TODO: Update this section.
-
 ## F-14A
 
 | Attribute            | Value                   |

@@ -1,113 +1,153 @@
 # Historical Background
 
-> 🚧 TODO: Rewrite to be possibly more in depth like the F-4 manual as well as splitting up into
-> multiple sections.
-
 ## Origins
 
-The F-14 Tomcat traces its origins back to the 1950s, when the U.S. Navy identified the need for a
-carrier-based, long-range interceptor to fulfill the Fleet Air Defence role. This aircraft would
-require an advanced radar system and long-range air-to-air missiles, exceeding the capabilities of
-the F-4 Phantom.
+![U.S. Navy photo by LT J.G. Thomas Prochilo. (DN-SC-83-06680)](../img/intro_F-14TU95.jpg)
+_U.S. Navy photo by LT J.G. Thomas Prochilo. (DN-SC-83-06680)_
 
-Under Defense Secretary Robert McNamara, the Navy was directed to join the Tactical Fighter
-Experimental (TFX) program in cooperation with the U.S. Air Force. The Navy resisted this move, and
-the resulting General Dynamics F-111B fell short of the Navy’s expectations.
+The F-14 Tomcat can trace its origin back to the 1950's and the US Navy's need
+for a carrier based long range interceptor to fill the Fleet Air Defence role.
+It was decided that it needed an aircraft with a more advanced and longer ranged
+radar as well as longer ranged air-to-air missile than the F-4 Phantom.
 
-Grumman, originally a subcontractor on the F-111B, was awarded a contract to develop a new aircraft
-better suited to the Navy’s needs. This project retained key systems from the F-111B—most notably
-the AN/AWG-9 radar and AIM-54 Phoenix missile—and eventually became the F-14 Tomcat.
+The Navy was directed, by then defense secretary Robert McNamara, to join the
+Tactical Fighter Experimental or TFX program to procure this aircraft in a joint
+venture with the US Air Force. The Navy was opposed to this from the beginning
+and the proposed General Dynamics F-111B did not meet the Navy's expectations.
 
-The F-14 first flew on December 21, 1970, and entered service on September 22, 1974. The "Tomcat"
-name followed Grumman’s feline naming tradition and referenced Vice Admiral Thomas F. Connolly, an
-advocate for the aircraft.
+Grumman, which had been brought on board by General Dynamics for the Navy
+F-111B, was eventually awarded a contract to begin development of an aircraft
+more suited to the Navy's requirements. This led to the design that would
+eventually become the F-14, carrying over the radar (AN/AWG-9) and missiles
+(AIM-54 Phoenix) from the failed F-111B project.
 
----
+The F-14 Tomcat first flew on the 21st of December 1970 and entered service on
+the 22nd of September 1974. The name "Tomcat" follows Grumman's tradition of
+naming their aircraft after cats and also partially from the nickname "Tom's
+Cat" for Vice Admiral Thomas F. Connolly who was instrumental for the
+development of the F-14.
 
 ## Service Life Upgrades
 
-- **F-14A** was the original model, equipped with Pratt & Whitney TF30 engines and an IRST system in
-  the chinpod. These engines were underpowered and unreliable, later replaced by the General
-  Electric F110-GE-400 in the **F-14A+**, which became the **F-14B**.
-- The IRST system was replaced early in development by the **TCS (Television Camera Set)**, allowing
-  for long-range visual ID of radar targets.
-- Progressive upgrades included:
-  - PTID/PMDIG programmable cockpit displays
-  - INS system enhancements
-  - Digital Flight Control System (DFCS)
-  - Upgraded RWR systems
+The first version of the F-14, the F-14A was equipped with the Pratt & Whitney
+TF30 and carried an IRST system in the chinpod under the nose.
 
-The **TARPS** (Tactical Air Reconnaissance Pod System) was later added for photographic
-reconnaissance capability.
+The TF30 engines were generally regarded as temperamental and underpowered for
+the F-14A and were eventually replaced by the General Electric F110-400 engines
+in the F-14A+ (later F-14B).
 
----
+The IRST system was rather quickly determined to be underperforming and replaced
+with the TCS (Television Camera Set) in the chinpod allowing for greater than
+visual range identification of radar tracked targets.
+
+Both the F-14A and F-14B received continuous upgrades during their life,
+including new programmable cockpit displays (PTID and PMDIG) as well as a new
+INS system, a digital flight control system (DFCS) and an RWR system amongst
+others.
+
+Eventually the Tactical Reconnaissance mission was also added to the F-14's
+portfolio, enabled by the TARPS system, allowing the Tomcat to gather
+photographic reconnaissance material.
 
 ## Ground Attack Role
 
-In the 1990s, as the air threat declined and conflicts like Desert Storm arose, the Navy
-reconsidered the F-14’s ground attack capabilities.
+![Photo by LCDR Dave Parsons. (DN-SC-93-01299)](../img/intro_bombcat.jpg) _Photo
+by LCDR Dave Parsons. (DN-SC-93-01299)_
 
-Although designed to carry air-to-ground munitions, cost and risk had initially ruled out this role.
-Renewed interest led to the integration of the **LANTIRN targeting pod**, enabling precision
-laser-guided bomb delivery by the RIO.
+During the 1990's when the aerial threat to the fleets of the US Navy lessened
+and with the advent of operations like Desert Storm, the ground attack role was
+resurrected.
 
-Later upgrades also allowed the F-14 to carry **GPS-guided JDAMs**. Most LANTIRN-equipped aircraft
-also featured the upgraded PTID display for improved integration.
+The ability to carry and deliver air-to-ground munitions had been implemented in
+the F-14 from the beginning but ruled out by the Navy as cost and risk
+ineffective given the F-14's role as a Fleet Air Defence fighter.
 
----
+With the renewed interest for this role, some of the F-14As and F-14Bs were
+equipped to carry the LANTIRN targeting pod allowing the RIO to find and
+designate laser guided bombs for his own aircraft and others. Later on the
+ability to carry and deliver gps-guided JDAMs was also added.
+
+Most of the LANTIRN equipped aircraft were the ones upgraded with the
+programmable TID or (PTID) allowing for greater integration of the LANTIRN.
 
 ## F-14D
 
-The **F-14D**, introduced in the 1990s, featured:
+In the 1990's the ultimate F-14 version was beginning to see service, the F-14D.
 
-- GE F110-GE-400 engines (same as F-14B)
-- DFCS system (retrofitted to earlier variants)
-- AN/APG-71 radar (successor to AN/AWG-9)
-- Integrated TCS/IRST in a new chinpod
-- Avionics suite overhaul
+The F-14D used the same engines as the F-14B, the GE F110-400s in addition to
+using the digital flight control system, which was eventually retrofitted into
+operational F-14As and F-14Bs as well.
 
----
+In addition the F-14D also had a newer, more advanced version of the AN/AWG-9,
+the AN/APG-71, as well as a whole suite of upgraded avionics along with a new
+chinpod combining the TCS with a new, improved IRST system.
 
 ## End of Service
 
-The F-14 was ultimately retired due to:
+The F-14 Tomcat did eventually show its age, forcing the Navy to retire it due
+to increased maintenance costs and the general status of the now dated
+airframes. Additionally the Tomcat's primary role, the Fleet Air Defence role,
+seemingly disappeared with the end of the Cold War.
 
-- Aging airframes
-- High maintenance costs
-- A diminishing need for Fleet Air Defence post–Cold War
-
-The Tomcat was officially retired by the U.S. Navy on **September 22, 2006**, at NAS Oceana.
-
----
+The Tomcat was finally retired in a ceremony on the 22nd of September 2006 at
+NAS Oceana.
 
 ## Iran
 
-Iran was the only other operator of the F-14. The Shah of Iran ordered 80 F-14As for the Imperial
-Iranian Air Force. Following the 1979 revolution, the **Islamic Republic of Iran Air Force (IRIAF)**
-inherited the fleet.
+![IRIAF photo circa 1986](../img/intro_iranicats.jpg) _IRIAF photo circa 1986_
 
-Sanctions cut off access to spare parts, forcing Iran to:
+The only other operator of the F-14 Tomcat was the Imperial Iranian Air Force,
+later the Islamic Republic of Iran Air Force, for which the Shah of Iran,
+Mohammad Reza Pahlavi acquired 80 Tomcats.
 
-- Cannibalize aircraft
-- Use black market sources
-- Possibly develop indigenous parts
+The eventual fall of the Shah and the rise of the Islamic Republic of Iran meant
+that a country now opposed to the United States had access to one of its most
+advanced fighter aircraft. This meant that the Iranian F-14s now lost access to
+new spare parts and missiles, apart from black market sources, greatly
+increasing the difficulty of maintaining the aircraft.
 
-Despite limitations, Iran successfully used the F-14 during the Iran–Iraq War, claiming significant
-air-to-air victories. As of today, Iran remains the only operator of the F-14, flying early F-14A
-models with TF30 engines and no TCS or IRST.
+The F-14 Tomcat was used during the Iran-Iraq war, claiming a great number of
+air-to-air victories over the Iraqi Air Force, with some sources going so far as
+to claim that Iraqi pilots at times left the contested air space to avoid facing
+the AN/AWG-9 - AIM-54 combo.
 
----
+To this date the IRIAF continues to fly the F-14 Tomcat as the sole operator.
+It's not entirely known how the Iranians source their spare parts but it's
+assumed that they've had to cannibalize inoperable aircraft to keep a portion of
+their fleet flying. In addition rumours exist mentioning black market sources as
+well as indigenous production of some parts.
+
+The Iranian operated Tomcats are of the earlier F-14A revisions, using the TF30
+engines and lacking a TCS or IRST system.
 
 ## AIM-54 Phoenix
 
-Originally developed for the F-111B, the **AIM-54 Phoenix** missile was adopted for the F-14. Key
-features:
+![U.S. Navy photo by Capt. Dana Potts. (020924-N-1955P-001)](../img/intro_phoenix.jpg)
+_U.S. Navy photo by Capt. Dana Potts. (020924-N-1955P-001)_
 
-- Long-range engagement of bombers and cruise missiles
-- Midcourse guidance via AN/AWG-9 radar, terminal phase via onboard active radar seeker
-- Simultaneous engagement of up to six targets
+The AIM-54 long-range air-to-air missile was born from the same TFX program as
+that which eventually led to the F-14 Tomcat.
 
-Variants:
+It was designed for the F-111B and then adopted for the F-14 as a long-range
+missile capable of long range engagement of enemy bombers in addition to hostile
+cruise missiles. That's not to say that the AIM-54 Phoenix was a slouch at
+engaging other smaller targets as well.
 
-- **AIM-54A**: Original version with Mk 47 rocket motor
-- **AIM-54C**: Improved seeker and lower smoke motor
+Outstanding features of the AIM-54 missiles were their long range as well as
+their ability to be launched at up to six simultaneous targets, guided first by
+the AN/AWG-9 radar in the launching aircraft and then its own active radar
+seeker independently.
+
+The original AIM-54 Phoenix was the AIM-54A with a mk47 rocket motor. The motor
+was later on upgraded, creating the mk60 motor, increasing the missile's range.
+Eventually the AIM-54 itself was also upgraded, resulting in the AIM-54C with,
+amongst other things, an upgraded seeker head and a newer version of the mk47
+producing less smoke, making the missile hard to spot visually.
+
+The US Navy fired only three AIM-54 missiles in combat, all three over Iraq. The
+missiles never hit their intended targets though as two of the missiles' rocket
+motors failed with the third also missing its target as it turned tail and ran.
+
+While little is known for certain in the western hemisphere, the IRIAF claims at
+least 78 air-to-air victories using the AIM-54 against Iraqi MiG-21s, MiG-23s,
+MiG-25s, Mirage F-1s, Super Etendards and even some anti-ship cruise missiles.
