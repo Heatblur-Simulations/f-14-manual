@@ -135,7 +135,7 @@ sensor.
 
 The two-way hat on the side (5) selects either the A/G or A/A modes of operation for the pod.
 
-Located on the left side of the stick head is a two way slider (6), springloaded to return to
+Located on the left side of the stick head is a two way slider (6), spring-loaded to return to
 center. This switch changes the function of the right four-way hat.
 
 Sliding it forwards allows for selection of manual gain while releasing and sliding it forwards

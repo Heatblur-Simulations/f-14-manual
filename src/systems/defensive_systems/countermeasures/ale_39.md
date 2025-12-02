@@ -111,7 +111,7 @@ up in a situation were the counter is at 0 but additional cartridges are still a
 cases ejection pulses will still be sent but the counter will remain at 0.
 
 Below each counter each cartridge type has a switch for manual ejection commands. The switches are
-momentary and springloaded to center, each having three positions. PRGM initiates respective set
+momentary and spring-loaded to center, each having three positions. PRGM initiates respective set
 ejection program, SGL commands ejection of a single cartridge of respective type and STBY is the
 default center position not commanding manual ejection.
 
@@ -134,7 +134,7 @@ the switch is set a position other than PILOT the DLC button will command ejecti
 cartridge.
 
 Finally the SALVO FLARES switch initiates rapid ejection of all flares using a 0.125 second time
-interval. Normally springloaded to the OFF position. Can’t be stopped once initiated.
+interval. Normally spring-loaded to the OFF position. Can’t be stopped once initiated.
 
 ### RIO Hand Hold Switches
 

@@ -55,7 +55,7 @@ The MODE switch (3) controls whether the Link 4A operates in the normal TAC (Tac
 CAINS/WAYPT (Carrier Aircraft Inertial Navigation System/Waypoint) mode. The TAC mode is the normal
 airborne mode while the CAINS/WAYPT mode is used while on the carrier deck to receive preflight
 waypoints and INS alignment data from the ships INS system. The switch is solenoid held and
-springloaded to the TAC position, if the data link reception is lost or the power lost the switch
+spring-loaded to the TAC position, if the data link reception is lost or the power lost the switch
 automatically returns to the TAC mode, forcing an ongoing INS alignment to the backup handset mode.
 If the aircraft takes off with the switch in the CAINS/WAYPT position the weight on wheels sensor
 will also release it to TAC.

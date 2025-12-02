@@ -37,7 +37,7 @@ safety valve.
 The RAM AIR switch is used to modulate cockpit air supply temperature when the ram air door is in
 use by opening and closing the emergency ram air door. This is as in this mode that air is mixed
 directly with hot bleed air from the engines. INCR, increase, opens the ram door, decreasing
-temperature and DECR closes the door and increases temperature. Springloaded to center.
+temperature and DECR closes the door and increases temperature. spring-loaded to center.
 
 > **Note**: Selection of RAM or OFF inhibits gun firing.
 

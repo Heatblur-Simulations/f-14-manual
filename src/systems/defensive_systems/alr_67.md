@@ -32,13 +32,13 @@ The PWR (power) switch control power to the RWR and should be set to ON to opera
 The VOL (volume) control knob sets RIO audio level for the RWR sound indications. The pilot has a
 corresponding control on his Volume/TACAN command panel.
 
-The TEST switch has two selectable modes and is springloaded to center when not held. Momentary
+The TEST switch has two selectable modes and is spring-loaded to center when not held. Momentary
 selection of the BIT position initiates the AN/ALR-67 built in test and if the switch is held in the
 SPL (special) position while on the first BIT page displays the special BIT status page as long as
 it’s held in that position.
 
 The MODE switch also has two selectable modes used while held in the respective position,
-springloaded to return to center when not held. When not activated enables normal operational mode,
+spring-loaded to return to center when not held. When not activated enables normal operational mode,
 OFST enables the offset mode when held and LMT the limit mode when held. The offset mode is
 indicated by an O in the status ring on the display and separates overlapping threat symbols
 sacrificing azimuth accuracy to instead show all threats clearly. The limit mode is indicated by an
