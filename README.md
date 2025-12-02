@@ -17,13 +17,13 @@ PDF versions are available from the
 <!-- markdown-link-check-enable -->
 
 ## Setup
-
+<!-- markdown-link-check-disable -->
 Markdown is supported widely by most IDEs and text editors. We recommend
 [VSC](https://code.visualstudio.com/) and any JetBrains IDE, such as
 [Fleet](https://www.jetbrains.com/fleet/),
 [IntelliJ](https://www.jetbrains.com/idea/) or
 [CLion](https://www.jetbrains.com/clion/).
-
+<!-- markdown-link-check-enable -->
 You can also simply press `.` (dot) while on GitHub and it will open an instance
 of Visual Studio Code right in your browser, allowing you to contribute directly
 and conveniently.
@@ -51,12 +51,10 @@ the PDF will be created in `book/pdf`.
 
 ## GH Pages
 
-<!-- markdown-link-check-disable -->
 The project is automatically configured via a CI/CD to build and publish any
 change to `master` to a GH-Pages branch called `html`. GitHub will automatically
 publish the website on <https://heatblur-simulations.github.io/f-14-manual/>,
 linked to <https://f14.manuals.heatblur.se/> via CNAME.
-<!-- markdown-link-check-enable -->
 
 ## PDF Deploy
 <!-- markdown-link-check-disable -->
