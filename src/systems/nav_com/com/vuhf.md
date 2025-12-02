@@ -7,7 +7,7 @@ communications. The ARC-182 control panel is located on the RIO left console. Fr
 extends in four bands from 30 to 88, 108 to 156, 156 to 174, and 225 to 399.975 MHz on any of 11,960
 channels (separated by 25 kHz).
 
-> **Note:** The “Have Quick” anti-jam function is not implemented in DCS.
+> 💡 The “Have Quick” anti-jam function is not implemented in DCS.
 
 Transmission and reception are available in AM or FM bands. The modulation is selected automatically
 by the radio except in the 225 to 399.975 band (toggle switch). 30 preset channels are available.

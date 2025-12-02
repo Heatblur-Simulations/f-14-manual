@@ -7,7 +7,7 @@ from the INS is not available. At any time, the AHRS provides prime magnetic hea
 direct analog display and to the CSDC where it is converted to digital information for the VDIG,
 MDIG, and the WCS. Additionally, the autopilot gets its heading reference from the AHRS.
 
-> **Note:** The only analog cockpit display for magnetic heading is the BDHI. The HUD, VDI, TID,
+> 💡 The only analog cockpit display for magnetic heading is the BDHI. The HUD, VDI, TID,
 > HSD, and multiple display indicator are digital and receive their inputs from the AHRS through the
 > CSDC. Thus. in case of a CSDC failure, the only magnetic heading is displayed on the BDHI.
 
@@ -20,7 +20,7 @@ autopilot control. The directional gyro smoothens the flux valve heading signal 
 or provides a direct heading reference in the DG mode. The resulting heading is transmitted to the
 BDHI, the CSDC, and the WCS.
 
-> **Note:**
+> 💡
 >
 > - In the INS nav mode IMU true heading is used and must be converted to magnetic heading by adding
 >   or subtracting the magnetic variation to have a backup magnetic value, if needed. Under normal
@@ -43,7 +43,7 @@ When magnetic heading references are unreliable, operate the system in the DG mo
 magnetic reference is reliable, operate the system in the SLAVED mode. When DG or SLAVED modes are
 inoperable, the COMP mode can be used for emergencies.
 
-> **Note:** If both the IMU and the AHRS fail, pitch and roll attitude indications from the HUD,
+> 💡 If both the IMU and the AHRS fail, pitch and roll attitude indications from the HUD,
 > TID, and DDD will be removed, and the IMU and AHRS advisory lights illuminate. Select COMP mode on
 > the compass controller panel to possibly restore valid magnetic heading information to the HUD,
 > VDI, and HSD, the AHRS advisory lights will go off. Disregard the invalid pitch and roll attitude

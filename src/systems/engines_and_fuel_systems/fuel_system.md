@@ -75,7 +75,7 @@ fuel transfer systems, enabling dump of fuel in wings and external tanks in addi
 fuselage. If there’s weight on the wheels or the speed brake is not fully retracted the fuel dump is
 inhibited.
 
-> **Note:** Even though technically possible to engage the afterburners after a fuel dump is in
+> 💡 Even though technically possible to engage the afterburners after a fuel dump is in
 > progress, this is not allowed due to the possibility of igniting the dumped fuel.
 
 ## In-Flight Refueling
@@ -89,4 +89,4 @@ selecting the ALL position the fuel feed from the wings and external tanks are d
 refueling of these tanks. RET (Retract) retracts the refueling probe and resumes normal fuel system
 operation.
 
-> **Note:** Selecting EXTD ALL resets the WING/EXT TRANS switch to AUTO.
+> 💡 Selecting EXTD ALL resets the WING/EXT TRANS switch to AUTO.

@@ -54,7 +54,7 @@ The lower left datablock (3) shows pod information, SR is slant range (line of s
 EL is pod line of sight azimuth and elevation relative aircraft ADL (with AZ having L or R for left
 or right of aircraft heading). Below that is current UTC time and then IBIT codes below that.
 
-> **Note:** IBIT codes are not implemented currently and the clock will show local time.
+> 💡 IBIT codes are not implemented currently and the clock will show local time.
 
 The lower middle (4) shows current pod mode (A/A or A/G) and track mode (AREA, POINT or Q
 designations) on the left side. The right side shows currently selected weapon and laser code while
@@ -98,7 +98,7 @@ The control panel contains all the controls for the pod, including the control s
 The power switch for the LANTIRN pod is located top left (1) with OFF disabling power to the system,
 IMU (blocked in above image) powering only the LANTIRN IMU and POD powering the whole system.
 
-> **Note:** IMU selection has no current DCS function.
+> 💡 IMU selection has no current DCS function.
 
 The MODE switch (2) switches the POD sensor between STBY (Standby) and OPER (Operational).
 
@@ -111,7 +111,7 @@ selecting LANTIRN FLIR video and TCS selecting TCS video.
 The four grouped indicator lights (6) indicate various error states in the LANTIRN system and the
 IBIT button (7) initiates the IBIT (Initialized Built-In-Test).
 
-> **Note:** The IBIT and fault indicators are not currently implemented in DCS.
+> 💡 The IBIT and fault indicators are not currently implemented in DCS.
 
 ### Control Stick
 

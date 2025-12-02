@@ -42,7 +42,7 @@ afterburners being disabled with a corresponding loss of engine performance.
 In addition both engines also drive separate fuel, hydraulic and electric generators to create
 redundancy.
 
-> **Note:** The main difference between the TF30 and F110 engines (apart from lesser thrust in the
+> 💡 The main difference between the TF30 and F110 engines (apart from lesser thrust in the
 > TF30s) is that the TF30s are more sensitive to the quality of the airflow entering the compressor
 > face. In general it is wise to avoid anything less than military power or afterburner while in
 > high angle of attack maneuvers as well as avoiding large rudder inputs or asymmetric engine
@@ -122,7 +122,7 @@ ignition circuits that are normally enabled by moving the throttles out of the c
 
 ![asym](../../img/asym1.jpg)
 
-> **Note:** F-14B only.
+> 💡 F-14B only.
 
 The ASYM LIMITER (1) on the ASYM limiter/engine mode select panel enables or disables the asymmetric
 afterburner thrust limiter. Default position is ON and the switch has a guard cover keeping it in
@@ -133,7 +133,7 @@ left (L ENG) and right (R ENG) to PRI, primary or SEC, secondary modes respectiv
 
 ![mcb](../../img/mcb1.jpg)
 
-> **Note:** F-14A only.
+> 💡 F-14A only.
 
 The MCB Test Panel, located in the RIO pit on the right horisontal panel, is used to test if the MCB
 system functions. The TEST switch (2) set to the TEST position activates the test circuit which
@@ -156,7 +156,7 @@ The ENGINE INSTRUMENT GROUP displays engine RPM, TIT (Turbine Inlet Temperature,
 
 > 🚧 TODO: Add image of the F110 EIG.
 
-> **Note:** Pictured above are the TF30 engine indicators.
+> 💡 Pictured above are the TF30 engine indicators.
 
 ![exhaust](../../img/exhaust1.jpg)
 
@@ -209,4 +209,4 @@ F-14B F110-GE-400 only lights:
   mode.
 - **RATS:** Caution light indicating that RATS (reduced arrestment thrust system) is enabled.
 
-> **Note:** F-14A specific lights not yet implemented.
+> 💡 F-14A specific lights not yet implemented.

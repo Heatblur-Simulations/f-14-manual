@@ -24,7 +24,7 @@ light.
 Controls for the internal lights are on the Master Light Control Panel in pilot cockpit and Interior
 Light Control Panel in the RIO cockpit, each controlling their own cockpit lighting.
 
-> **Note:** The utility light function is not modeled in DCS, but the flashlight function, default
+> 💡 The utility light function is not modeled in DCS, but the flashlight function, default
 > keybind Left Alt + L, which moves with the cursor, can be used, providing a similar function.
 
 ## External Lighting

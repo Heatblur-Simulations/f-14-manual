@@ -68,7 +68,7 @@ The TACAN system has a built-in test that continuously monitors the TACAN functi
 an interruptive self-test. To start a 22-second interruptive self-test, use the momentary button
 (BIT switch) and monitor the GO (green) and NO-GO (amber) status lights.
 
-> **Note:** A BIT performed on TACAN stations within 2 NM can give an invalid indication. If a TCN
+> 💡 A BIT performed on TACAN stations within 2 NM can give an invalid indication. If a TCN
 > acronym or NO-GO response is observed while tuned to a local station, along with normal TACAN
 > azimuth and range, the acronym and/or the NO-GO should be disregarded.
 

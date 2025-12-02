@@ -112,7 +112,7 @@ display to indicate the threat level of the displayed threat symbols.
 
 > 🚧 Experimental way of showing the info END.
 
-> **Note:** The ordering of the three threat bands has changed at least once since the introduction
+> 💡 The ordering of the three threat bands has changed at least once since the introduction
 > of the AN/ALR-67, and as the modeled AN/ALR-67 represents one of the earlier versions we’ve chosen
 > the present order.
 
@@ -261,6 +261,6 @@ During the tests the threat warning lights also illuminate for both the pilot an
 | **ATC (Air Traffic Control)**                                             |                                                                       |              |
 | T                                                                         | Airport ATC Radar                                                     |              |
 
-> **Note:** Aircraft only flown by own faction in a mission are automatically set as friendly and
+> 💡 Aircraft only flown by own faction in a mission are automatically set as friendly and
 > shown only when setting the DISPLAY TYPE selector to FRIEND. N are shown only in UNK and T only in
 > FRIEND.

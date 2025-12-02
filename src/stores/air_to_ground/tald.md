@@ -16,4 +16,4 @@ fold-out wings.
 The F-14 can carry up to four ADM-141 TALDs, one each on stations 3 through 6, using a TER each to
 gain separation from the aircraft fuselage.
 
-**Note:** In DCS these currently glide straight ahead until they run out of speed and altitude.
+💡 In DCS these currently glide straight ahead until they run out of speed and altitude.

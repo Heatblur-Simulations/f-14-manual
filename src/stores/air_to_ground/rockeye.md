@@ -13,4 +13,4 @@ pilot. To arm the Rockeye correctly, the mechanical fuse should be set to nose (
 The F-14 can carry up to 10 Mk-20 Rockeyes using the Phoenix rails and substations as well as TERs
 on the glove pylons.
 
-**Note:** Additional fuse settings (FMU-140 fuse) pending additional weapon code implementation.
+💡 Additional fuse settings (FMU-140 fuse) pending additional weapon code implementation.

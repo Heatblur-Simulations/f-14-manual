@@ -30,7 +30,7 @@ the upper and lower antenna. In the LWR (lower) position, only the lower antenna
 and transmit signals. The upper antenna pattern has a slight forward tilt; the lower pattern a
 slight aft tilt.
 
-> **Note:** In real life, it is often necessary to select LWR to improve ground station reception.
+> 💡 In real life, it is often necessary to select LWR to improve ground station reception.
 > However, due to the limitations of DCS, antenna switching is not modeled and thus not functional.
 > The use of antennas is automated and/or neglected for the player. All radios and radio functions
 > work through proper keying.
@@ -54,7 +54,7 @@ regulating audio signals from the ALR-67, Sidewinder (SW), and V/UHF 2.
 Allows RIO to select either UHF 1 (AN/ARC-159), V/UHF 2 (AN/ARC-182), or both radios for
 transmitting.
 
-> **Note:** BOTH is not functional in DCS.
+> 💡 BOTH is not functional in DCS.
 
 - The V/UHF 2 ANT switch allows the selection of upper or lower antenna to minimize interference
   between dual UHF or data link operation. Opposite antenna selection, frequency separation greater
@@ -65,7 +65,7 @@ transmitting.
 - The UHF 1 VOL control allows the RIO to adjust the audio level of the ARC 159 UHF 1 radio. The KY
   MODE switch is operative only when the KY-58 is installed.
 
-> **Note:** The Heatblur F-14 version uses the KY-28 only.
+> 💡 The Heatblur F-14 version uses the KY-28 only.
 
 ![comtac1](../../../img/comtac1.jpg)
 

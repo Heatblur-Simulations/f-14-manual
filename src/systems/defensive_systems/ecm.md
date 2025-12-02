@@ -50,4 +50,4 @@ audio.
 RPT enables full system functionality, in addition to REC it also now tries to jam threats according
 to selected method.
 
-> **Note:** In DCS, jamming is always done with noise jamming, turning on as a threat is detected.
+> 💡 In DCS, jamming is always done with noise jamming, turning on as a threat is detected.

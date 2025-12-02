@@ -57,7 +57,7 @@ spun up. Also the system is not operational below 15 knots.
 The antiskid system switch also controls the spoiler brake system that deploys the spoilers as
 brakes when the throttles are set to IDLE while on the ground.
 
-> **Note:** The antiskid should be disabled during taxi as below 15 knots, the system may disturb
+> 💡 The antiskid should be disabled during taxi as below 15 knots, the system may disturb
 > normal braking even though the antiskid feature is not operational at those speeds.
 
 The ANTI SKID SPOILER BK switch on the Fuel Management Panel panel controls the system. OFF disables
@@ -81,12 +81,12 @@ This drains hydraulic fluid from the shock absorber, compressing the nosegear st
 compressed this also releases the lock on the launch bar which can then be lowered manually by the
 deck crew or by turning the nosegear more than 10° from center.
 
-> **Note:** In DCS, the launch bar is automatically lowered with nosegear kneel.
+> 💡 In DCS, the launch bar is automatically lowered with nosegear kneel.
 
 The aircraft can then be guided onto the catapult and connected to the shuttle, in DCS via default
 keybind U. The holdback bar is currently not modelled in DCS.
 
-> **Note:** Deselection of nosewheel steering should be done before final movement onto the shuttle
+> 💡 Deselection of nosewheel steering should be done before final movement onto the shuttle
 > and hookup to avoid misalignment.
 
 The final command to launch the aircraft, after proper procedures, is then to salute the “shooter”
@@ -129,6 +129,6 @@ If electrical power and hydraulic power are restored, it’s then possible to re
 rotating the handle 90° clockwise and pushing the handle back in and then setting it in the default
 UP position.
 
-> **Note:** Hook position also affects the AoA indexer and approach lights, making them flash with
+> 💡 Hook position also affects the AoA indexer and approach lights, making them flash with
 > gear down if the hook is not also down. This feature can be disabled using the HOOK BYPASS switch
 > on the Master Light Control Panel.

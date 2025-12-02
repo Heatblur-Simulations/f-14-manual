@@ -120,5 +120,5 @@ This mode can only eject air-to-ground stores and ejects them by actuating the n
 This means that the aircraft needs to fly straight and level as the stores are not ejected
 forcefully but instead just released and cleared using gravity.
 
-> **Note:** No jettison mode can jettison ITERs or stores loaded on those, they need to be dropped
+> 💡 No jettison mode can jettison ITERs or stores loaded on those, they need to be dropped
 > like normal, with or without the fuzes armed.

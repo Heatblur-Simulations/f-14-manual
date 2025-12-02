@@ -111,7 +111,7 @@ cockpit caution/advisory light panel.
 The pilot displays (HUD, VDI, and HSD) and the RIO multiple display indicator are controlled with
 either the pilot display control panel or the multiple display indicator control panel.
 
-> **Note:** For detailed information on CAP operation, refer to Computer Address Panel (CAP).
+> 💡 For detailed information on CAP operation, refer to Computer Address Panel (CAP).
 
 #### Navigation Category
 
@@ -164,7 +164,7 @@ To change wind data entry, press the WIND button, then either the SPD or HDG pre
 appropriate numbers: knots (0 to 512) for speed or degrees (000 to 359) for magnetic direction. The
 multiple display indicator data readout of WIND direction is always displayed as true.
 
-> > **Note:** In the INS mode, wind is calculated and updated continuously. The manual entry of wind
+> > 💡 In the INS mode, wind is calculated and updated continuously. The manual entry of wind
 > > is ignored by the wind calculations even though the system accepts the entry.
 
 Depressing the MAG VAR button displays alternating values of computed MAG VAR (vC) and manual MAG
@@ -192,7 +192,7 @@ The acronym is cleared when the difference falls below 5°.
 If the selection of AHRS/AM occurs and no update (or re-entering of the same value) occurs last vC
 will be used.
 
-> **Note:** When operating in SLAVED or COMP mode near a magnetic disturbance, such as aboard a
+> 💡 When operating in SLAVED or COMP mode near a magnetic disturbance, such as aboard a
 > carrier, the MV acronym should be expected to appear.
 
 The table below shows error source analysis and response to the MV acronym appearing in flight.
@@ -278,7 +278,7 @@ receive), one on each side of the IR fairing, in the aircraft skin. During desce
 is heard momentarily when the aircraft passes through the altitude set on the limit index. When the
 aircraft is below this altitude, the red low-altitude warning light on the indicator will stay on.
 
-> **Note:** If radar altitude is unreliable, only the OFF flag is present.
+> 💡 If radar altitude is unreliable, only the OFF flag is present.
 
 The radar altimeter has a minimum warmup time of 3 minutes. During warmup, failure indications and
 erroneous readouts should be disregarded.
@@ -359,7 +359,7 @@ Three navigational modes exist in the F-14:
 - The course to set (heading to a selected navigational point), range, bearing, and time-to-go to a
   point are based on great circle calculations.
 
-> **Note:** If INS fails, the RIO should verify MAG VAR calculated and WIND data and update via
+> 💡 If INS fails, the RIO should verify MAG VAR calculated and WIND data and update via
 > manual entries as required.
 
 ### IMU/AM Navigation Mode
@@ -375,7 +375,7 @@ Three navigational modes exist in the F-14:
   mode for approximately 3 to 5 minutes. During this time, the aircraft must remain stationary on
   the ground or in level unaccelerated flight.
 
-> **Note:** If an alignment past coarse exists with no NAV COMP failure and the RIO switches to
+> 💡 If an alignment past coarse exists with no NAV COMP failure and the RIO switches to
 > IMU/AM, the READY light will flash, indicating that if the switch is not returned to INS within 5
 > seconds the INS mode cannot be re-entered without completing a new alignment.
 
@@ -384,7 +384,7 @@ Three navigational modes exist in the F-14:
 - Wind can be applied by either using the wind last computed in the INS mode or wind data manually
   entered through the CAP.
 
-> **Note:** After entering the IMU/AM mode, check wind and MAG VAR values. If MV is in error, enter
+> 💡 After entering the IMU/AM mode, check wind and MAG VAR values. If MV is in error, enter
 > own-aircraft true heading. If winds are in error, update.
 
 #### IMU Reset Procedure
@@ -408,7 +408,7 @@ the navigation system is in IMU/AM mode with a failed IMU quantizer and NAV COMP
 illuminated. Because the VDIG/TID/DDD are displaying invalid IMU attitudes, the NAV MODE switch
 should be moved to AHRS/AM.
 
-> **Note:** Although the navigation mode automatically switches to AHRS when the IMU fails, the STBY
+> 💡 Although the navigation mode automatically switches to AHRS when the IMU fails, the STBY
 > and READY lights will remain on until the RIO selects AHRS/AM on the NAV MODE switch.
 
 - When AHRS/AM is selected on the NAV MODE switch, the AHRS provides heading information required
@@ -433,7 +433,7 @@ The AHRS can be operated in any of three subheading modes selected on the compas
   the navigation and data readout panel in INS, as long as the WCS computer receives heading from
   the AHRS and airspeed from the CADC.
 
-> **Note:** If takeoff is performed in the AHRS/AM mode, MAG VAR and WIND must be manually inserted
+> 💡 If takeoff is performed in the AHRS/AM mode, MAG VAR and WIND must be manually inserted
 > via CAP for proper navigation computations.
 
 - When the platform is aligned and the AHRS/AM backup navigation mode is selected, the STBY light is
@@ -464,7 +464,7 @@ panel. These five flight modes are arranged as five vertical, mutually exclusive
 - Air to Ground (A/G)
 - Landing (LDG)
 
-> **Note:** ACM cover open selection overrides all modes, except the T.O. and LDG modes.
+> 💡 ACM cover open selection overrides all modes, except the T.O. and LDG modes.
 
 - Apart from the VDIG displays, the flight mode selections also control AFCS, armament, and WCS
   logic. In addition to the essential data such as altitude, vertical speed indicator etc. the VDIG
@@ -494,7 +494,7 @@ commands:
 A/A (air-to-air) and A/G (air-to-ground) modes are further explained in the Weapons and Weapons
 Employment overview.
 
-> **Note:** The STEERING indicator drum on the navigation control and data readout panel provides a
+> 💡 The STEERING indicator drum on the navigation control and data readout panel provides a
 > readout for the RIO to inform him of what steering submode the pilot bas chosen.
 
 ### Takeoff Steering
@@ -544,7 +544,7 @@ Employment overview.
 - While it is physically possible to press the AWL/PCD steering button on the display control panel,
   the action is without function in cruise mode.
 
-> **Note:** Should the AWL/PCD submode be selected while in CRUISE, it will inhibit the display of
+> 💡 Should the AWL/PCD submode be selected while in CRUISE, it will inhibit the display of
 > other steering cues.
 
 #### Cruise TACAN Steering
@@ -560,7 +560,7 @@ Employment overview.
 - The RIO can change latitude/longitude of the destination by hooking the point on the TID and
   inserting new data.
 
-> **Note:** Destination steering to the defended point is provided by the RIO selecting MAN with the
+> 💡 Destination steering to the defended point is provided by the RIO selecting MAN with the
 > TID DEST switch. This option is not available in TARPS.
 
 - In the destination steering submode, the destination selected by the RIO and the NAV MODE in use
@@ -586,7 +586,7 @@ as Destination._
   displayed aircraft wings and not the velocity vector) and the velocity vector symbol, as well as
   5° pitch increments on the VDI.
 
-> **Note:** In all landing submodes, a VDIG breakaway symbol can be displayed upon receipt of a D/L
+> 💡 In all landing submodes, a VDIG breakaway symbol can be displayed upon receipt of a D/L
 > waveoff message.
 
 - There are three steering submodes available during landing: TACAN, VEC, and AWL/PCD.

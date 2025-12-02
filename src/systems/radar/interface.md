@@ -411,7 +411,7 @@ limitation being the grid only displaying along the threat axis and not all arou
 | 6.  | Enter YY location using the LAT/1 and LONG/6 or RNG/5 and BRG/0 CAP buttons. | Press CLEAR, LAT/1 and enter desired latitude followed by ENTER. Repeat for longitude using LONG/6 or use RNG/5 and BRG/0 instead of both for YY location referenced from own aircraft position. |
 | 7.  | Enter the threat axis using the HDG/8 CAP button.                            | Press CLEAR, HDG/8 and enter desired threat axis extending from YY followed by ENTER.                                                                                                            |
 
-> **Note:**
+> 💡
 >
 > - First pressing CLEAR is to make sure to reset any previously selected readout so that a
 >   subsequent press of a prefix sets a new readout for display and data entry and not enters new

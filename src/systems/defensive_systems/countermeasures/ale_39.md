@@ -24,7 +24,7 @@ can also initiate the chaff ejection program if set up correctly on the AN/ALE-3
 
 ## Controls and Operation
 
-> **Note:** In DCS the F-14 countermeasure loadout is set in the Mission Editor, see DCS Mission
+> 💡 In DCS the F-14 countermeasure loadout is set in the Mission Editor, see DCS Mission
 > Editor Functions Specific to the HB DCS F-14 or controlled through the radio menu under ground
 > crew. The default setting in the mission editor is bypassed. To see the real loadout check the
 > kneeboard.
@@ -79,7 +79,7 @@ QTY sets how many jammer cartridges to eject, possible settings are 1-4.
 INTV uses all three indicated thumbwheels to set time in seconds between each ejection in the
 program. Settings from 1 to 299 possible in 1 second increments.
 
-> **Note:** Jammer cartridges not currently implemented in DCS.
+> 💡 Jammer cartridges not currently implemented in DCS.
 
 The FLARE section controls ejection of flares when using programmed mode. QTY sets amount of flare
 cartridges to eject, possible settings being 2, 3, 4, 6, 8 and 10. INTV sets time interval between
@@ -91,7 +91,7 @@ switch used after loading new cartridges.
 The L10, L20, R10 and R20 thumbwheels can be set to C, J or F setting what cartridge is loaded into
 which section.
 
-> **Note:** Incorrectly setting type of cartridge loaded can result in the launch of the wrong type
+> 💡 Incorrectly setting type of cartridge loaded can result in the launch of the wrong type
 > of cartridge.
 
 The RESET switch needs to be used to reset the system's internal counters after loading new

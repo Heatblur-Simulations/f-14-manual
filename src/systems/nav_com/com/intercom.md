@@ -10,9 +10,9 @@ which permit duplex operation during normal operation. If one amplifier fails, i
 selecting either the B/U (backup) or EMER (emergency) position on the ICS control panel. This
 permits continued ICS operation.
 
-> **Note:** If two amplifiers fail at the same station, intercommunication is impossible.
+> 💡 If two amplifiers fail at the same station, intercommunication is impossible.
 
-> **Note 2:** By selecting EMER on the respective ICS control panel and using the other crewmember’s
+> 💡 By selecting EMER on the respective ICS control panel and using the other crewmember’s
 > amplifier, you can listen in on audio normally only available at that station (like SW-tone or
 > ALQ-126 PRF) but you lose the ability to control the volume of the audio you listen to.
 

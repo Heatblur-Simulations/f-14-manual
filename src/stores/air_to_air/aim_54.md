@@ -5,7 +5,7 @@
 ![AIM-54](../../img/aim-54.jpg) _U.S. Navy photo by Photographer’s Mate 2nd Class Felix Garza Jr.
 (030320-N-4142G-013)_
 
-**Note:** Depicted missile has yet to have the forward fins attached.
+💡 Depicted missile has yet to have the forward fins attached.
 
 The AIM-54 Phoenix is a long-range air-to-air missile originally designed for the F-111B fleet air
 defense fighter, which never materialized. When the F-111B project was scrapped, the AIM-54 and the
@@ -84,7 +84,7 @@ SARH mode.
 If the target is not detected actively by the seeker, it will still fall back to SARH until the
 seeker can acquire on its own, like in the two SARH modes.
 
-**Note:** Setting the MSL OPTIONS switch to PH ACT with an AIM-54 in the air will not make it go
+💡 Setting the MSL OPTIONS switch to PH ACT with an AIM-54 in the air will not make it go
 active; the PH ACT option can only be set before missile launch.
 
 ### ACM Active
