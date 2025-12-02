@@ -1,12 +1,11 @@
 # Canopy Control Handle
 
-> 🚧 TODO: Convert tables into text chunks like the F-4
+![canopy handle](../../img/cockpit_detail_rio_canopyhandle.jpg)
 
-![canopyhandle](../../img/canopyhandle1.jpg)
-
-The canopy control handle controls canopy operation and is located on the right cockpit wall. The
-handle is mounted downwards beneath the box containing the handle mechanism and the handle position
-texts. The canopy control handle is duplicated in the pilot cockpit.
+The canopy control handle controls canopy operation and is located on the right
+cockpit wall. The handle is mounted downwards beneath the box containing the
+handle mechanism and the handle position texts. The canopy control handle is
+duplicated in the pilot cockpit.
 
 | Control  | Function                                                                           |
 | -------- | ---------------------------------------------------------------------------------- |
