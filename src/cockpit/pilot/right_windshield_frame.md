@@ -2,11 +2,11 @@
 
 ## ECM Warning Lights
 
-![rwrcaution](../../img/rwrcaution.jpg)
+![rwr caution](../../img/cockpit_detail_pilot_rwrcaution.jpg)
 
 Warning lights connected to the ALR-67 indicating different types of threats.
 
-ALR-67:
+### ALR-67
 
 | Indicator | Function                                                                                                       |
 | --------- | -------------------------------------------------------------------------------------------------------------- |
@@ -14,7 +14,7 @@ ALR-67:
 | AAA       | Steady illumination when detecting lock-on from a AAA tracking radar. Flashes when AAA firing is detected.     |
 | AI        | Steady illumination when detecting lock-on from an airborne interceptor radar.                                 |
 
-ALR-45:
+### ALR-45
 
 | Indicator | Function                                                                                             |
 | --------- | ---------------------------------------------------------------------------------------------------- |
@@ -25,6 +25,6 @@ ALR-45:
 
 ## Standby Compass
 
-![compass](../../img/compass.jpg)
+![compass](../../img/cockpit_detail_pilot_compass.jpg)
 
 Conventional standby compass.
