@@ -22,8 +22,17 @@
 <!-- markdown-link-check-disable -->
 
 This document is available [online](https://f14.manuals.heatblur.se/), as
-[PDF version](https://github.com/Heatblur-Simulations/f-14-manual/releases), embedded in-game as
-offline website and can be contributed to as open-source project at
-[GitHub](https://github.com/Heatblur-Simulations/f-14-manual).
+[PDF version](https://github.com/Heatblur-Simulations/f-14-manual/releases),
+embedded in-game as offline website and can be contributed to as open-source
+project at [GitHub](https://github.com/Heatblur-Simulations/f-14-manual).
+
+> 💡 This manual provides comprehensive details on the F-14 Tomcat. For a more
+> hands-on approach it is recommended to check out
+> [Chuck's Guide](https://chucksguides.com/aircraft/dcs/f-14b/) as well.
 
 <!-- markdown-link-check-enable -->
+
+<pdf>
+💡 The PDF version has limited support and might be outdated. For the full experience,
+prefer using the <a href="https://f14.manuals.heatblur.se/">online version</a>.
+</pdf>
