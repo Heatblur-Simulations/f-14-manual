@@ -1,28 +1,31 @@
 # Left Windshield Frame
 
-> 🚧 TODO: Convert tables into text chunks like the F-4
-
 ## Approach Indexer
 
-![aoaindexer](../../img/aoaindexer.jpg) Contains three lights showing angle-of-attack (AOA) relative
-to on-speed AOA.
+![Approach Indexer](../../img/cockpit_detail_pilot_aoaindexer.jpg)
 
-Green being too slow, amber being on-speed AOA, and red being too fast.
+Contains three lights showing angle-of-attack (AOA) relative on-speed AOA:
 
-If the HOOK BY-PASS switch is set to CARRIER, the lights will flash if the arresting hook is up
-while the landing gear is down.
+- Green: too slow
+- Amber: on-speed AOA
+- Red: too fast
 
-These lights are repeated on the approach lights on the nosewheel strut, allowing the LSO to see
-aircraft AOA during carrier landings.
+If the HOOK BY-PASS switch is set to CARRIER the lights will flash if the
+arresting hook is up while the landing gear is down.
 
-## Wheels Warning/Brakes Warnings/ACLS/AP Caution/NWS Engage Caution/Auto Throttle Caution Lights
+These lights are repeated on the approach lights on the nosewheel strut,
+allowing the LSO to see aircraft AOA during carrier landings.
 
-![lefthudcaution](../../img/lefthudcaution.jpg) HUD left side indicators.
+## Caution Lights
 
-| No. | Indicator  | Function                                                                                                                   |
-| --- | ---------- | -------------------------------------------------------------------------------------------------------------------------- |
-| 1   | WHEELS     | Warning light flashes with landing gear not down and locked, flaps below 10°, and either throttle below 85%.               |
-| 2   | BRAKES     | Warning light indicating antiskid or brake failure. Also lights when parking brake is set.                                 |
-| 3   | ACLS/AP    | Caution light indicating that ACLS or autopilot is disengaged.                                                             |
-| 4   | NWS ENGA   | Caution light indicating nosewheel steering (NWS) is engaged.                                                              |
-| 5   | AUTO THROT | Caution light indicating disengagement of the automatic throttle control mode not resulting from the throttle mode switch. |
+![HUD left side indicators](../../img/cockpit_detail_pilot_lefthudcaution.jpg)
+
+To the left of the HUD are several caution light indications.
+
+| No. | Indicator  | Type    | Function                                                                                                        |
+| --- | ---------- | ------- | --------------------------------------------------------------------------------------------------------------- |
+| 1   | WHEELS     | Warning | Flashes with landing gear not down and locked, flaps below 10° and either throttle below 85%.                   |
+| 2   | BRAKES     | Warning | Indicates antiskid or brake failure. Also lights when parking brake is set.                                     |
+| 3   | ACLS/AP    | Caution | Shows that ACLS or autopilot is disengaged.                                                                     |
+| 4   | NWS ENGA   | Caution | Lit when nosewheel steering (NWS) is engaged.                                                                   |
+| 5   | AUTO THROT | Caution | When shown disengagement of the automatic throttle control mode is not resulting from the throttle mode switch. |
