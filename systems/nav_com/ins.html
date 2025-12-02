@@ -216,7 +216,7 @@ advisory light indicates that the INS is operating in a degraded mode as a resul
 selection by the RIO using the NAV MODE switch or automatic selection because of a failure of the
 CSDC or the IMU.</p>
 <blockquote>
-<p><strong>Note:</strong></p>
+<p>💡</p>
 <ul>
 <li>
 <p>When an IMU quantizer failure occurs in the INS mode, the system will automatically select the
@@ -307,7 +307,7 @@ or HB (homebase) for the following:</p>
 <li>Ship’s true heading.</li>
 </ul>
 <blockquote>
-<p><strong>Note:</strong> The parking brake must be on during initialization of any alignment. When the parking
+<p>💡 The parking brake must be on during initialization of any alignment. When the parking
 brake is released during coarse alignment, the STBY and READY lights flash and the align program
 will reinitialize. If the parking brake is released during fine alignment, a suspend align
 discrete is sent to the CSDC, the STBY or READY light blinks, and the time into alignment clock on
@@ -325,7 +325,7 @@ example, but if you didn’t, you will have between 90 to 120 seconds to enter y
 and you cannot wait for the alignment to finish, or it will trigger the observable error (O) and
 alignment will have to be reinitialized.</p>
 <blockquote>
-<p><strong>Note:</strong> If fine align has not been achieved, entry of the own aircraft’s latitude will restart
+<p>💡 If fine align has not been achieved, entry of the own aircraft’s latitude will restart
 the alignment. On completion of the alignment program read-in, the alignment display appears on
 the TID.</p>
 </blockquote>
@@ -354,7 +354,7 @@ alignment will not progress.</p>
 not disappear, there is a failure and the result will be a bad alignment. The S also appears if
 incoming SINS data is not valid, in which case the alignment should not be trusted.</p>
 <blockquote>
-<p><strong>Note:</strong></p>
+<p>💡</p>
 <ul>
 <li>
 <p>The CSDC and IMU outputs as well as data inputs are constantly monitored and if either an
@@ -384,7 +384,7 @@ progressively more accurate alignment. How much more accuracy is gained depends 
 alignment when fine align was completed. This can be rather minimal in some cases, but, when it is
 further left in alignment for long enough, it will always provide a certain amount of improvement.</p>
 <blockquote>
-<p><strong>Note:</strong> If alignment is suspended and the aircraft is taxied over a distance greater than 4000
+<p>💡 If alignment is suspended and the aircraft is taxied over a distance greater than 4000
 feet, the quality of the alignment becomes unknown to a point where it might be unreliable.
 Alignment reinitialization is advised.</p>
 </blockquote>
@@ -393,7 +393,7 @@ first and third ticks (coarse and fine), it means that alignment has been suspen
 stop counting if that is the case. If alignment continues, the clock resumes counting until switched
 out of alignment by NAV MODE switch or if the parking brake is released again.</p>
 <blockquote>
-<p><strong>Note:</strong> The alignment display will not go past the coarse align tick until the IMU temperature
+<p>💡 The alignment display will not go past the coarse align tick until the IMU temperature
 has reached 165°. When this temperature is reached, the T symbol will disappear. The temperature
 interlock is bypassed when performing a stored heading alignment. The IMU should be preheated for
 a stored heading alignment, as it usually completes in under 2 minutes, which could result in a
@@ -402,7 +402,7 @@ bad alignment.</p>
 <p>Selecting INS will turn off the READY light, terminate alignment and the tactical display will
 appear, and the normal navigation display will become available.</p>
 <blockquote>
-<p><strong>Note:</strong></p>
+<p>💡</p>
 <ul>
 <li>
 <p>When the NAV MODE switch is set to INS, the CSDC is in navigation mode and the READY light goes
@@ -457,7 +457,7 @@ method, follow these steps:</p>
 computer. The WCS computer compares the IMU data with the ship’s INS data and sends correction
 signals to the CSDC to fine align the IMU.</p>
 <blockquote>
-<p><strong>Note:</strong></p>
+<p>💡</p>
 <ul>
 <li>
 <p>If CVA or CAT ALIGN is selected prior to selecting OBC BIT, data link OBC testing is inhibited.
@@ -475,7 +475,7 @@ SINS data is intermittent, and handset alignment data is required.</p>
 the same manner as during GND ALIGN, depending on whether it has been induced during the coarse or
 fine alignment phase.</p>
 <blockquote>
-<p><strong>Note:</strong> If SINS data link is lost during taxi, a flashing HS will appear on the TID. This will
+<p>💡 If SINS data link is lost during taxi, a flashing HS will appear on the TID. This will
 disappear when data link is reacquired; however, because of align timing requirements, it may
 remain flashing up to 8 seconds after data link is reacquired. If the HS flashing does not stop 8
 seconds after resetting the parking brake, SINS data is lost but the alignment can continue by
@@ -486,7 +486,7 @@ a normal datalink CVA align will continue.</p>
 <p>To complete the alignment, set the NAV MODE switch to INS. A successfully aligned INS is indicated
 by both the STBY and READY lights off and the IN acronym in the status readout on the TID.</p>
 <blockquote>
-<p><strong>Note:</strong></p>
+<p>💡</p>
 <ul>
 <li>
 <p>Do not switch to INS while the ship is in a turn, even if fine align has been completed. This
@@ -506,7 +506,7 @@ Switching from RF data link to cable inputs is done automatically when the cable
 initiate a CVA align with SINS via cable, use the same steps as for the RF data link alignment. As
 cable and RF data link alignment are virtually the same, it has not been implemented in DCS.</p>
 <blockquote>
-<p><strong>Note:</strong> The SINS-cable is currently not implemented in DCS.</p>
+<p>💡 The SINS-cable is currently not implemented in DCS.</p>
 </blockquote>
 <h4 id="handset-alignment"><a class="header" href="#handset-alignment">Handset Alignment</a></h4>
 <p>The HS alignment mode is a manual alignment option available for carrier alignment, should SINS data
@@ -535,7 +535,7 @@ acronym will not flash and the alignment will continue. If data link is regained
 will disappear and normal CVA align via RF or cable data link will continue. When data link is
 regained, the acronym can remain for up to 8 seconds.</p>
 <blockquote>
-<p><strong>Note:</strong> If HS is not flashing, valid SINS data has already been entered. If it is flashing, SINS
+<p>💡 If HS is not flashing, valid SINS data has already been entered. If it is flashing, SINS
 data has to be entered manually.</p>
 </blockquote>
 <p>On the CAP NAV DATA matrix use OWN AC, and the LAT and LONG prefix push buttons; to enter the ships’
@@ -543,7 +543,7 @@ heading and speed use own-aircraft HDG and SPD buttons. Once this data has been 
 flashing and the alignment will progress like a normal GND ALIGN, but can take up to 3 times as
 long.</p>
 <blockquote>
-<p><strong>Note:</strong> The carrier needs to maintain a constant speed and heading during alignment for this
+<p>💡 The carrier needs to maintain a constant speed and heading during alignment for this
 method to be successful. Remember that handset alignment quality will always be inferior to a
 normal CVA ALIGN fine alignment quality.</p>
 </blockquote>
@@ -575,7 +575,7 @@ an advisory. Pressing once on the STORED HDG ALIGN on the CAP will end the ASH a
 normal alignment. The ASH acronym will disappear. Pressing the STORED HDG ALIGN a second time will
 reinitialize the stored heading alignment, however ASH won’t be displayed on the TID anymore.</p>
 <blockquote>
-<p><strong>Note:</strong> STBY/READY lights should be monitored for simultaneous illumination. If simultaneous
+<p>💡 STBY/READY lights should be monitored for simultaneous illumination. If simultaneous
 illumination appears after 42 to 45 seconds, a failure has caused the alignment to reinitiate and
 may result in an erroneous alignment. The RIO must turn NAV MODE switch to OFF for 1 second, then
 restart the alignment following normal ground or carrier alignment procedures.</p>
@@ -598,7 +598,7 @@ file through the following steps:</p>
 <li>Depress OWN A/C and enter aircraft longitude and latitude via the CAP data entry buttons.</li>
 </ol>
 <blockquote>
-<p><strong>Note:</strong> Depressing OWN A/C hooks own aircraft. If longitude and latitude is entered with the NAV
+<p>💡 Depressing OWN A/C hooks own aircraft. If longitude and latitude is entered with the NAV
 MODE switch set to OFF, own aircraft must be hooked when the NAV MODE switch is set from OFF to
 GND ALIGN again. Be aware that whatever has been hooked (OWN AC or HB) will provide the data that
 is entered when NAV MODE is set from OFF to GND ALIGN.</p>
@@ -618,7 +618,7 @@ appears in the diamond.</p>
 <li>NAV MODE - OFF.</li>
 </ol>
 <blockquote>
-<p><strong>Note:</strong> Unstable current or temporary loss of power will cause the CAINS to be deselected and
+<p>💡 Unstable current or temporary loss of power will cause the CAINS to be deselected and
 will be indicated by a flashing HS acronym. A reference alignment cannot be done through a handset
 alignment, even if continued to fine align complete. For a successful reference alignment the
 aircraft must not move and the parking brake must not be cycled after the reference heading has
@@ -677,7 +677,7 @@ selected position.</li>
 <li>FIX ENABLE button - Depress.</li>
 </ol>
 <blockquote>
-<p><strong>Note:</strong> To clear the previous hooked DDD cursor position, go to half action and then release
+<p>💡 To clear the previous hooked DDD cursor position, go to half action and then release
 prior to initiating full action for the new position hook.</p>
 </blockquote>
 <h2 id="tacan-update"><a class="header" href="#tacan-update">TACAN Update</a></h2>
@@ -698,7 +698,7 @@ station. The delta is then entered in the same manner as with a radar fix.</p>
 <li>FIX ENABLE button - Depress.</li>
 </ol>
 <blockquote>
-<p><strong>Note:</strong> During a TACAN FIX, the MAG VAR must be the same as the TACAN station magnetic
+<p>💡 During a TACAN FIX, the MAG VAR must be the same as the TACAN station magnetic
 variation, or the update will be in error. Given a TACAN station with a range of 100 NM from
 ownship, a 1°MAG VAR error introduces a 1.74nm error into the ownship’s TACAN update.</p>
 </blockquote>
@@ -742,7 +742,7 @@ select F/F NAV UPDATE on the CAP. This will enter the hooked aircraft’s coordi
 own-aircraft coordinates. To update the nav system on an aircraft that is not close, first obtain a
 radar STT on that aircraft, hook the STT-ed aircraft on the TID and then press F/F NAV UPDATE on the
 CAP.</p>
-<p><strong>Note:</strong> By updating to the selected aircraft’s INS, its calibration/drift can potentially
+<p>💡 By updating to the selected aircraft’s INS, its calibration/drift can potentially
 introduce a larger error into your own INS. Both aircraft will share the same error though.</p>
 <h2 id="position-marking"><a class="header" href="#position-marking">Position Marking</a></h2>
 <p>To mark the position of a pulse radar target, a visual target, or a TACAN station to be displayed on
@@ -750,7 +750,7 @@ the TID, use the SURF TGT position in the TAC DATA category. Once displayed on t
 longitude, range, bearing, and steering data are available, using the CAP or the navigation
 destination control or both.</p>
 <blockquote>
-<p><strong>Note:</strong> Do not use the position SURF TGT to update the navigation computer. The surface target
+<p>💡 Do not use the position SURF TGT to update the navigation computer. The surface target
 position symbol is repositioned with respect to own aircraft instead of own aircraft being updated
 in reference to the surface target.</p>
 </blockquote>
