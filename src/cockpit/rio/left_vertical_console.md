@@ -1,10 +1,8 @@
 # Left Vertical Console
 
-> 🚧 TODO: Convert tables into text chunks like the F-4
-
 ## Armament Panel
 
-![armamentpanel](../../img/armamentpanel.jpg)
+![armament panel](../../img/cockpit_detail_rio_armamentpanel.jpg)
 
 Main armament control panel in the RIO cockpit.
 
