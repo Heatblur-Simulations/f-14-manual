@@ -1,12 +1,8 @@
 # Pilot Cockpit Overview
 
-> 🚧 TODO: Add an intro. Convert all images. Split the large side panels into chunks like the F-4.
-> Refer to the F-4 manual on how to deal with multiple switches in a section (see Weapons
-> Management)
-
 ## Layout
 
-![pilot_cockpit](../../img/pilotcockpit.jpg)
+![pilot_cockpit](../../img/cockpit_overview_pilotcockpit.jpg)
 
 | Section | Name                                                |
 | :-----: | --------------------------------------------------- |
@@ -22,3 +18,8 @@
 |   10.   | [Right Vertical Console](right_vertical_console.md) |
 |   11    | [Right Side Console](right_console.md)              |
 |   12.   | [Canopy Control Handle](canopy_control_handle.md)   |
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OO3IdQjAdDA?si=_mawunE5OBnmxVqE"
+title=" Heatblur DCS: F-14 Tomcat - Episode 2: Pilot's Cockpit Walkaround " frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
