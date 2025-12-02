@@ -169,7 +169,7 @@
 and computer providing detection, tracking, and engagement of targets in the air-to-air and
 air-to-ground roles.</p>
 <h2 id="detail-data-display-ddd-and-panel"><a class="header" href="#detail-data-display-ddd-and-panel">Detail Data Display (DDD) and Panel</a></h2>
-<p><img src="../../img/dddpanel.png" alt="DDD Panel" /></p>
+<p><img src="../../img/dddpanel.jpg" alt="DDD Panel" /></p>
 <p>The DDD is the main control panel and display for the radar part of the AN/AWG-9 system. It contains
 all the controls for the radar except the scan volume and stabilization controls which are on the
 sensor control panel.</p>
@@ -301,8 +301,8 @@ detent, letting the WCS automatically control it.</p>
 </blockquote>
 <h2 id="detail-data-display"><a class="header" href="#detail-data-display">Detail Data Display</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Mode</th><th>Search</th><th>STT</th></tr></thead><tbody>
-<tr><td><strong>Pulse</strong></td><td><img src="../../img/PSEARCH.png" alt="Pulse Search" /></td><td><img src="../../img/PSTT.png" alt="Pulse STT" /></td></tr>
-<tr><td><strong>Pulse-Doppler</strong></td><td><img src="../../img/PDSEARCH.png" alt="Pulse Doppler Search" /></td><td><img src="../../img/PDSTT.png" alt="Pulse Doppler STT" /></td></tr>
+<tr><td><strong>Pulse</strong></td><td><img src="../../img/PSEARCH.jpg" alt="Pulse Search" /></td><td><img src="../../img/PSTT.jpg" alt="Pulse STT" /></td></tr>
+<tr><td><strong>Pulse-Doppler</strong></td><td><img src="../../img/PDSEARCH.jpg" alt="Pulse Doppler Search" /></td><td><img src="../../img/PDSTT.jpg" alt="Pulse Doppler STT" /></td></tr>
 </tbody></table>
 </div>
 <p>The DDD screen itself shows either only radar return data or radar returns combined with symbology
@@ -327,7 +327,7 @@ the previously set range scale while the IFF information is shown and in PD STT,
 hooked on the TID the DDD switches to a ±10 scale centered on the target while the IFF returns are
 shown.</p>
 <h2 id="tactical-information-display-tid-and-associated-controls"><a class="header" href="#tactical-information-display-tid-and-associated-controls">Tactical Information Display (TID) and Associated Controls</a></h2>
-<p><img src="../../img/tid1.png" alt="TID" /></p>
+<p><img src="../../img/tid1.jpg" alt="TID" /></p>
 <p>The TID is the main data display for the WCS. It displays a tactical picture to the RIO which is
 used to identify and select targets for the long range weapons on the F-14 Tomcat. Think of it as a
 top down map showing the relative coordinates of all presented tracks and symbols, but without a
@@ -385,7 +385,7 @@ display scale and TID mode. The buttons are:</p>
 </tbody></table>
 </div>
 <h3 id="tid-data-readouts"><a class="header" href="#tid-data-readouts">TID Data Readouts</a></h3>
-<p><img src="../../img/tidindicators.png" alt="TID Indicators" /></p>
+<p><img src="../../img/tidindicators.jpg" alt="TID Indicators" /></p>
 <div class="table-wrapper"><table><thead><tr><th>Indicator</th><th>Function</th></tr></thead><tbody>
 <tr><td><strong>Buffer Register</strong></td><td>Shows data that the RIO is currently entering into the WCS. Comparable to a scratchpad in newer aircraft. Functionality further expanded upon in the CAP section.</td></tr>
 <tr><td><strong>Data Readouts</strong></td><td>Readouts showing data selected for readout from the WCS. Can be, as examples, data from hooked tracks or own aircraft. Functionality further expanded upon in the CAP section.</td></tr>
@@ -402,67 +402,67 @@ display scale and TID mode. The buttons are:</p>
 <p>🚧 TODO: Rework all imagery to be small (and to be not PNGs).</p>
 </blockquote>
 <div class="table-wrapper"><table><thead><tr><th>Element</th><th>Shape</th><th>Function</th></tr></thead><tbody>
-<tr><td><strong>Center Dot</strong></td><td><img src="../../img/1.png" alt="Image" /></td><td>Marks coordinates of symbol, basic component of all symbols representing a coordinate.</td></tr>
-<tr><td><strong>Own Aircraft</strong></td><td><img src="../../img/2.png" alt="Image" /></td><td>Symbol representing own aircraft. Antenna scan limits, jamming strobes emanate from this symbol. Moves and has a velocity vector in ground stabilized mode. Stationary in aircraft stabilized and attack modes. If the symbol moves outside of TID presentation a line is drawn from the center of the display to the edge of the display indicating direction of the own aircraft symbol.</td></tr>
-<tr><td><strong>TID Cursor</strong></td><td><img src="../../img/26.png" alt="Image" /></td><td>Circle used as a hook cursor. Controlled by the HCU when in TID mode. Half-action on the HCU enables display of the symbol and also enables the HCU stick to move the cursor. The cursor location is set by stick deflection. Full-action on the HCU hooks (selects) the closest symbol if one is present within 0.125 inches of cursor center. The hooked symbol gets brighter to indicate hook.</td></tr>
-<tr><td><strong>TWS Steering Centroid</strong></td><td><img src="../../img/27.png" alt="Image" /></td><td>Steering centroid of TWS tracks selected by WCS for weapons engagement.</td></tr>
-<tr><td><strong>Unknown Onboard Sensor Target</strong></td><td><img src="../../img/3.png" alt="Image" /></td><td>Unknown sensor track in RWS, TWS, and STT modes.</td></tr>
-<tr><td><strong>Hostile Onboard Sensor Target</strong></td><td><img src="../../img/4.png" alt="Image" /></td><td>Track in TWS and STT modes designated as hostile by RIO.</td></tr>
-<tr><td><strong>Friend Onboard Sensor Target</strong></td><td><img src="../../img/5.png" alt="Image" /></td><td>Track in TWS and STT modes designated as friendly by RIO.</td></tr>
-<tr><td><strong>Angle-Tracked Radar Target</strong></td><td><img src="../../img/6.png" alt="Image" /></td><td>Radar target tracked only in angle (jamming target).</td></tr>
-<tr><td><strong>Angle-Tracked Radar Target with Altitude Difference</strong></td><td><img src="../../img/7.png" alt="Image" /></td><td>Radar target being tracked in angle only and range being computed by altitude difference ranging.</td></tr>
-<tr><td><strong>TCS-Angle Tracked Target</strong></td><td><img src="../../img/10.png" alt="Image" /></td><td>Target being tracked in angle by TCS.</td></tr>
-<tr><td><strong>TCS-Angle Tracked Target with Altitude Difference</strong></td><td><img src="../../img/11.png" alt="Image" /></td><td>Target being tracked in angle by TCS and range being computed by angle difference ranging.</td></tr>
-<tr><td><strong>Unknown Data Link Target</strong></td><td><img src="../../img/12.png" alt="Image" /></td><td>Data link track identified as unknown by source.</td></tr>
-<tr><td><strong>Hostile Data Link Target</strong></td><td><img src="../../img/13.png" alt="Image" /></td><td>Data link track identified as hostile by source.</td></tr>
-<tr><td><strong>Friend Data Link Target</strong></td><td><img src="../../img/14.png" alt="Image" /></td><td>Data link track identified as friendly by source.</td></tr>
+<tr><td><strong>Center Dot</strong></td><td><img src="../../img/1.jpg" alt="Image" /></td><td>Marks coordinates of symbol, basic component of all symbols representing a coordinate.</td></tr>
+<tr><td><strong>Own Aircraft</strong></td><td><img src="../../img/2.jpg" alt="Image" /></td><td>Symbol representing own aircraft. Antenna scan limits, jamming strobes emanate from this symbol. Moves and has a velocity vector in ground stabilized mode. Stationary in aircraft stabilized and attack modes. If the symbol moves outside of TID presentation a line is drawn from the center of the display to the edge of the display indicating direction of the own aircraft symbol.</td></tr>
+<tr><td><strong>TID Cursor</strong></td><td><img src="../../img/26.jpg" alt="Image" /></td><td>Circle used as a hook cursor. Controlled by the HCU when in TID mode. Half-action on the HCU enables display of the symbol and also enables the HCU stick to move the cursor. The cursor location is set by stick deflection. Full-action on the HCU hooks (selects) the closest symbol if one is present within 0.125 inches of cursor center. The hooked symbol gets brighter to indicate hook.</td></tr>
+<tr><td><strong>TWS Steering Centroid</strong></td><td><img src="../../img/27.jpg" alt="Image" /></td><td>Steering centroid of TWS tracks selected by WCS for weapons engagement.</td></tr>
+<tr><td><strong>Unknown Onboard Sensor Target</strong></td><td><img src="../../img/3.jpg" alt="Image" /></td><td>Unknown sensor track in RWS, TWS, and STT modes.</td></tr>
+<tr><td><strong>Hostile Onboard Sensor Target</strong></td><td><img src="../../img/4.jpg" alt="Image" /></td><td>Track in TWS and STT modes designated as hostile by RIO.</td></tr>
+<tr><td><strong>Friend Onboard Sensor Target</strong></td><td><img src="../../img/5.jpg" alt="Image" /></td><td>Track in TWS and STT modes designated as friendly by RIO.</td></tr>
+<tr><td><strong>Angle-Tracked Radar Target</strong></td><td><img src="../../img/6.jpg" alt="Image" /></td><td>Radar target tracked only in angle (jamming target).</td></tr>
+<tr><td><strong>Angle-Tracked Radar Target with Altitude Difference</strong></td><td><img src="../../img/7.jpg" alt="Image" /></td><td>Radar target being tracked in angle only and range being computed by altitude difference ranging.</td></tr>
+<tr><td><strong>TCS-Angle Tracked Target</strong></td><td><img src="../../img/10.jpg" alt="Image" /></td><td>Target being tracked in angle by TCS.</td></tr>
+<tr><td><strong>TCS-Angle Tracked Target with Altitude Difference</strong></td><td><img src="../../img/11.jpg" alt="Image" /></td><td>Target being tracked in angle by TCS and range being computed by angle difference ranging.</td></tr>
+<tr><td><strong>Unknown Data Link Target</strong></td><td><img src="../../img/12.jpg" alt="Image" /></td><td>Data link track identified as unknown by source.</td></tr>
+<tr><td><strong>Hostile Data Link Target</strong></td><td><img src="../../img/13.jpg" alt="Image" /></td><td>Data link track identified as hostile by source.</td></tr>
+<tr><td><strong>Friend Data Link Target</strong></td><td><img src="../../img/14.jpg" alt="Image" /></td><td>Data link track identified as friendly by source.</td></tr>
 </tbody></table>
 </div><div class="table-wrapper"><table><thead><tr><th><strong>Manually Entered Reference Points</strong></th><th></th><th></th></tr></thead><tbody>
-<tr><td><strong>Home base</strong></td><td><img src="../../img/15.png" alt="Image" /></td><td>Waypoint representing home base, carrier or airfield.</td></tr>
-<tr><td><strong>Waypoint</strong></td><td><img src="../../img/16.png" alt="Image" /></td><td>WCS navigational waypoint, supplanted by number indicating waypoint 1, 2 or 3.</td></tr>
-<tr><td><strong>Defended Point</strong></td><td><img src="../../img/17.png" alt="Image" /></td><td>Waypoint used to show area to protect.</td></tr>
-<tr><td><strong>Fixed Point</strong></td><td><img src="../../img/18.png" alt="Image" /></td><td>Generic fixed-point waypoint.</td></tr>
-<tr><td><strong>Hostile Area</strong></td><td><img src="../../img/19.png" alt="Image" /></td><td>Waypoint indicating a hostile area.</td></tr>
-<tr><td><strong>Surface Target</strong></td><td><img src="../../img/20.png" alt="Image" /></td><td>Waypoint indicating a surface target.</td></tr>
-<tr><td><strong>IP</strong></td><td><img src="../../img/21.png" alt="Image" /></td><td>Waypoint used for air-to-ground engagement, see Computer Initial Point.</td></tr>
+<tr><td><strong>Home base</strong></td><td><img src="../../img/15.jpg" alt="Image" /></td><td>Waypoint representing home base, carrier or airfield.</td></tr>
+<tr><td><strong>Waypoint</strong></td><td><img src="../../img/16.jpg" alt="Image" /></td><td>WCS navigational waypoint, supplanted by number indicating waypoint 1, 2 or 3.</td></tr>
+<tr><td><strong>Defended Point</strong></td><td><img src="../../img/17.jpg" alt="Image" /></td><td>Waypoint used to show area to protect.</td></tr>
+<tr><td><strong>Fixed Point</strong></td><td><img src="../../img/18.jpg" alt="Image" /></td><td>Generic fixed-point waypoint.</td></tr>
+<tr><td><strong>Hostile Area</strong></td><td><img src="../../img/19.jpg" alt="Image" /></td><td>Waypoint indicating a hostile area.</td></tr>
+<tr><td><strong>Surface Target</strong></td><td><img src="../../img/20.jpg" alt="Image" /></td><td>Waypoint indicating a surface target.</td></tr>
+<tr><td><strong>IP</strong></td><td><img src="../../img/21.jpg" alt="Image" /></td><td>Waypoint used for air-to-ground engagement, see Computer Initial Point.</td></tr>
 </tbody></table>
 </div><div class="table-wrapper"><table><thead><tr><th><strong>Data Link Reference Points</strong></th><th></th><th></th></tr></thead><tbody>
-<tr><td><strong>Home Base</strong></td><td><img src="../../img/22.png" alt="Image" /></td><td>Data link waypoint representing home base.</td></tr>
-<tr><td><strong>Waypoint</strong></td><td><img src="../../img/23.png" alt="Image" /></td><td>Data link generic waypoint.</td></tr>
-<tr><td><strong>Data Link Fixed Point</strong></td><td><img src="../../img/24.png" alt="Image" /></td><td>Data link waypoint representing a fixed point.</td></tr>
-<tr><td><strong>Data Link Surface Target</strong></td><td><img src="../../img/25.png" alt="Image" /></td><td>Data link waypoint representing a surface target.</td></tr>
+<tr><td><strong>Home Base</strong></td><td><img src="../../img/22.jpg" alt="Image" /></td><td>Data link waypoint representing home base.</td></tr>
+<tr><td><strong>Waypoint</strong></td><td><img src="../../img/23.jpg" alt="Image" /></td><td>Data link generic waypoint.</td></tr>
+<tr><td><strong>Data Link Fixed Point</strong></td><td><img src="../../img/24.jpg" alt="Image" /></td><td>Data link waypoint representing a fixed point.</td></tr>
+<tr><td><strong>Data Link Surface Target</strong></td><td><img src="../../img/25.jpg" alt="Image" /></td><td>Data link waypoint representing a surface target.</td></tr>
 </tbody></table>
 </div><div class="table-wrapper"><table><thead><tr><th><strong>Position Symbol Modifiers</strong></th><th></th><th></th></tr></thead><tbody>
-<tr><td><strong>Mandatory Attack</strong></td><td><img src="../../img/28.png" alt="Image" /></td><td>Additional symbology on a TWS track (horizontal bar through center dot) selected as mandatory attack by the RIO. Only one target can be designated thusly and always receives an engagement priority number.</td></tr>
-<tr><td><strong>Data link Destroy</strong></td><td><img src="../../img/29.png" alt="Image" /></td><td>Additional symbology on a data link track (horizontal bar through center dot) designated to be destroyed by data link source. Does not affect target prioritization in WCS.</td></tr>
-<tr><td><strong>Do Not Attack</strong></td><td><img src="../../img/30.png" alt="Image" /></td><td>Additional symbology on a TWS or data link track (vertical bar through center dot) designated as do not attack (by RIO) or disengage (via data link). If set by RIO removes target from WCS target prioritization.</td></tr>
-<tr><td><strong>Multiple Targets</strong></td><td><img src="../../img/31.png" alt="Image" /></td><td>Additional symbology on a TWS or data link track (horizontal bar on left side of symbol) indicating that the track represents multiple targets. Can be set manually by RIO or received via data link.</td></tr>
-<tr><td><strong>Data Link Challenge</strong></td><td><img src="../../img/32.png" alt="Image" /></td><td>Additional symbology on a data link track (small V with apex at center dot) representing data link command to visually identify target.</td></tr>
-<tr><td><strong>Track Extrapolated</strong></td><td><img src="../../img/33.png" alt="Image" /></td><td>Additional symbology on TWS or STT track (small X with center at center dot) indicating that no update to target has occurred within 8 seconds. Track will be deleted after 14 seconds or 2 minutes if track hold function is enabled.</td></tr>
+<tr><td><strong>Mandatory Attack</strong></td><td><img src="../../img/28.jpg" alt="Image" /></td><td>Additional symbology on a TWS track (horizontal bar through center dot) selected as mandatory attack by the RIO. Only one target can be designated thusly and always receives an engagement priority number.</td></tr>
+<tr><td><strong>Data link Destroy</strong></td><td><img src="../../img/29.jpg" alt="Image" /></td><td>Additional symbology on a data link track (horizontal bar through center dot) designated to be destroyed by data link source. Does not affect target prioritization in WCS.</td></tr>
+<tr><td><strong>Do Not Attack</strong></td><td><img src="../../img/30.jpg" alt="Image" /></td><td>Additional symbology on a TWS or data link track (vertical bar through center dot) designated as do not attack (by RIO) or disengage (via data link). If set by RIO removes target from WCS target prioritization.</td></tr>
+<tr><td><strong>Multiple Targets</strong></td><td><img src="../../img/31.jpg" alt="Image" /></td><td>Additional symbology on a TWS or data link track (horizontal bar on left side of symbol) indicating that the track represents multiple targets. Can be set manually by RIO or received via data link.</td></tr>
+<tr><td><strong>Data Link Challenge</strong></td><td><img src="../../img/32.jpg" alt="Image" /></td><td>Additional symbology on a data link track (small V with apex at center dot) representing data link command to visually identify target.</td></tr>
+<tr><td><strong>Track Extrapolated</strong></td><td><img src="../../img/33.jpg" alt="Image" /></td><td>Additional symbology on TWS or STT track (small X with center at center dot) indicating that no update to target has occurred within 8 seconds. Track will be deleted after 14 seconds or 2 minutes if track hold function is enabled.</td></tr>
 <tr><td><strong>Hooked Symbol</strong></td><td>Symbol brightens</td><td>When a symbol is hooked by HCU or CAP functions it brightens to indicate hook.</td></tr>
 <tr><td><strong>Target Under Missile Attack</strong></td><td>Symbol brightens</td><td>In TWS and STT symbols of tracks being engaged by own aircraft brightens during computed missile flight time plus 15 seconds to indicate missile engagement in progress.</td></tr>
 <tr><td><strong>Target in Optimum Missile Launch Zone</strong></td><td>Symbol blinks</td><td>In TWS and STT symbols, launch zones and firing order numerics of target tracks blink when time to optimum missile range is less than 8 seconds.</td></tr>
-<tr><td><strong>Altitude Numerics</strong></td><td><img src="../../img/34.png" alt="Image" /></td><td>When altitude numerics are selected for display a number on the left side of the tracks indicate track altitude to nearest ten thousands of feet. The number four as an example indicates an altitude between 35,000 and 45,000 feet. Available on radar and data link tracks.</td></tr>
-<tr><td><strong>Firing Order Numerics</strong></td><td><img src="../../img/35.png" alt="Image" /></td><td>Indicates AIM-54 phoenix target prioritization (1 to 6) in WCS when in the TWS mode. Next missile launch will target track with number 1 and remove the number from that track to advance the other 5 track numbers one step to prepare for next launch. Mandatory attack selection on a target forces the WCS to always include that target in the prioritization. Next launch selection automatically sets hooked target as number one.</td></tr>
-<tr><td><strong>Time-to-Impact (TTI)</strong></td><td><img src="../../img/47.png" alt="Image" /></td><td>After AIM-54 launch the firing order number on a track is replaced with the TTI or time-to-impact indication, showing WCS calculated time until missile intercepts the target track. When the AIM-54 active command is sent the TTI numbers flash to indicate this.</td></tr>
-<tr><td><strong>Velocity Vector</strong></td><td><img src="../../img/36.png" alt="Image" /></td><td>Velocity vector emanating from center dot of tracks when velocity vector display is selected. Vector direction represents track heading and length represents track speed so that the max indicated speed (1,800 knots) is 1.5 inches on the TID. In TID ground stabilized mode the vector direction represents track true heading and the vector length represents track ground speed.</td></tr>
-<tr><td><strong>Launch Zone Vectors</strong></td><td><img src="../../img/37.png" alt="Image" /></td><td><img src="../../img/lzv.png" alt="Image" /> TUMR (Time Until Minimum Range), TUOR (Time Until Optimum Range) and TUIR (Time Until In-Range/Maximum Range). The launch zone vectors are activated manually by the RIO or when time to maximum launch range is less than 60 seconds and replaces the normal track velocity vectors.</td></tr>
-<tr><td><strong>Jamming Strobe</strong></td><td><img src="../../img/38.png" alt="Image" /></td><td>Line extending from own aircraft symbol to edge of TID to indicate a jammer exceeding the set JAM/JET threshold.</td></tr>
-<tr><td><strong>Radar Antenna Scan Pattern Azimuth Limits</strong></td><td><img src="../../img/39.png" alt="Image" /></td><td>The limits of the radar scan pattern in azimuth is displayed as two dashed lines extending from own aircraft symbol. Each dash and space represent 20 nautical miles each in all radar modes. In STT the two lines converge to a single tracking strobe to indicate that the antenna tracks a single target.</td></tr>
-<tr><td><strong>Data Link Jamming Strobe</strong></td><td><img src="../../img/40.png" alt="Image" /></td><td>Jamming strobe received via data link indicated by a line emanating from a data link point towards the jammers direction.</td></tr>
-<tr><td><strong>Data Link Pointer</strong></td><td><img src="../../img/41.png" alt="Image" /></td><td>Brightened cursor (circle) around a data link track used to indicate data link operator concern about the specific track.</td></tr>
-<tr><td><strong>Data link Priority Kill</strong></td><td><img src="../../img/42.png" alt="Image" /></td><td>Additional symbology on a data link track indicating a target that must be destroyed. Will not by itself affect WCS prioritization.</td></tr>
-<tr><td><strong>Artificial Horizon</strong></td><td><img src="../../img/43.png" alt="Image" /></td><td>Artificial horizon on TID representing aircraft roll and pitch. Angle of the line represents roll and vertical deflection on display represents pitch.</td></tr>
-<tr><td><strong>Steering Guidance Symbol</strong></td><td><img src="../../img/44.png" alt="Image" /></td><td>Symbol representing steering error from optimal missile launch direction. Should be placed by the pilot as near as possible to the center of the ASE circle and at launch should be inside of that same circle.</td></tr>
-<tr><td><strong>Allowable Steering Error Circle</strong></td><td><img src="../../img/45.png" alt="Image" /></td><td>ASE circle used to indicate the allowable steering error for missile launch. Size varies with attack geometry, mode and selected missile.</td></tr>
-<tr><td><strong>Breakaway Indication</strong></td><td><img src="../../img/27.png" alt="Image" /></td><td>Large cross appearing in the center of the TID when target range is less than minimum missile launch range or gun firing range.</td></tr>
+<tr><td><strong>Altitude Numerics</strong></td><td><img src="../../img/34.jpg" alt="Image" /></td><td>When altitude numerics are selected for display a number on the left side of the tracks indicate track altitude to nearest ten thousands of feet. The number four as an example indicates an altitude between 35,000 and 45,000 feet. Available on radar and data link tracks.</td></tr>
+<tr><td><strong>Firing Order Numerics</strong></td><td><img src="../../img/35.jpg" alt="Image" /></td><td>Indicates AIM-54 phoenix target prioritization (1 to 6) in WCS when in the TWS mode. Next missile launch will target track with number 1 and remove the number from that track to advance the other 5 track numbers one step to prepare for next launch. Mandatory attack selection on a target forces the WCS to always include that target in the prioritization. Next launch selection automatically sets hooked target as number one.</td></tr>
+<tr><td><strong>Time-to-Impact (TTI)</strong></td><td><img src="../../img/47.jpg" alt="Image" /></td><td>After AIM-54 launch the firing order number on a track is replaced with the TTI or time-to-impact indication, showing WCS calculated time until missile intercepts the target track. When the AIM-54 active command is sent the TTI numbers flash to indicate this.</td></tr>
+<tr><td><strong>Velocity Vector</strong></td><td><img src="../../img/36.jpg" alt="Image" /></td><td>Velocity vector emanating from center dot of tracks when velocity vector display is selected. Vector direction represents track heading and length represents track speed so that the max indicated speed (1,800 knots) is 1.5 inches on the TID. In TID ground stabilized mode the vector direction represents track true heading and the vector length represents track ground speed.</td></tr>
+<tr><td><strong>Launch Zone Vectors</strong></td><td><img src="../../img/37.jpg" alt="Image" /></td><td><img src="../../img/lzv.jpg" alt="Image" /> TUMR (Time Until Minimum Range), TUOR (Time Until Optimum Range) and TUIR (Time Until In-Range/Maximum Range). The launch zone vectors are activated manually by the RIO or when time to maximum launch range is less than 60 seconds and replaces the normal track velocity vectors.</td></tr>
+<tr><td><strong>Jamming Strobe</strong></td><td><img src="../../img/38.jpg" alt="Image" /></td><td>Line extending from own aircraft symbol to edge of TID to indicate a jammer exceeding the set JAM/JET threshold.</td></tr>
+<tr><td><strong>Radar Antenna Scan Pattern Azimuth Limits</strong></td><td><img src="../../img/39.jpg" alt="Image" /></td><td>The limits of the radar scan pattern in azimuth is displayed as two dashed lines extending from own aircraft symbol. Each dash and space represent 20 nautical miles each in all radar modes. In STT the two lines converge to a single tracking strobe to indicate that the antenna tracks a single target.</td></tr>
+<tr><td><strong>Data Link Jamming Strobe</strong></td><td><img src="../../img/40.jpg" alt="Image" /></td><td>Jamming strobe received via data link indicated by a line emanating from a data link point towards the jammers direction.</td></tr>
+<tr><td><strong>Data Link Pointer</strong></td><td><img src="../../img/41.jpg" alt="Image" /></td><td>Brightened cursor (circle) around a data link track used to indicate data link operator concern about the specific track.</td></tr>
+<tr><td><strong>Data link Priority Kill</strong></td><td><img src="../../img/42.jpg" alt="Image" /></td><td>Additional symbology on a data link track indicating a target that must be destroyed. Will not by itself affect WCS prioritization.</td></tr>
+<tr><td><strong>Artificial Horizon</strong></td><td><img src="../../img/43.jpg" alt="Image" /></td><td>Artificial horizon on TID representing aircraft roll and pitch. Angle of the line represents roll and vertical deflection on display represents pitch.</td></tr>
+<tr><td><strong>Steering Guidance Symbol</strong></td><td><img src="../../img/44.jpg" alt="Image" /></td><td>Symbol representing steering error from optimal missile launch direction. Should be placed by the pilot as near as possible to the center of the ASE circle and at launch should be inside of that same circle.</td></tr>
+<tr><td><strong>Allowable Steering Error Circle</strong></td><td><img src="../../img/45.jpg" alt="Image" /></td><td>ASE circle used to indicate the allowable steering error for missile launch. Size varies with attack geometry, mode and selected missile.</td></tr>
+<tr><td><strong>Breakaway Indication</strong></td><td><img src="../../img/27.jpg" alt="Image" /></td><td>Large cross appearing in the center of the TID when target range is less than minimum missile launch range or gun firing range.</td></tr>
 </tbody></table>
 </div>
 <blockquote>
 <p>Note: Some of these symbols pertain to functions not yet implemented in DCS.</p>
 </blockquote>
 <h2 id="navigation-command-and-control-grid-nav-grid"><a class="header" href="#navigation-command-and-control-grid-nav-grid">Navigation Command and Control Grid (NAV GRID)</a></h2>
-<p><img src="../../img/navgrid.png" alt="NAV GRID" /></p>
+<p><img src="../../img/navgrid.jpg" alt="NAV GRID" /></p>
 <p>The Navigation Command and Control Grid or NAV GRID was designed to enable easy navigation and CAP
 control from a common fixed reference point. It enables TID readout of bearing and range from that
 set reference point, called YY. While NAV GRID is active displayed range and bearing on the TID for
@@ -526,7 +526,7 @@ wheel. He can enter YY using the same methods available for waypoints as well as
 waypoint’s location as YY.</p>
 <p>With a human RIO he/she will have to enter it manually.</p>
 <h2 id="hand-control-unit-hcu"><a class="header" href="#hand-control-unit-hcu">Hand Control Unit (HCU)</a></h2>
-<p><img src="../../img/hcu1.png" alt="HCU" /></p>
+<p><img src="../../img/hcu1.jpg" alt="HCU" /></p>
 <p>The hand control unit (HCU), stick and corresponding controls are the main input controlling the RIO
 WCS displays. It contains the power controls and indicators for the WCS and TCS in addition to the
 stick and it’s controls.</p>
@@ -591,7 +591,7 @@ azimuth. In the radar mode X controls the range or rate of the radar acquisition
 Y controls the gate in azimuth in a similar fashion. In the two cursor modes X controls up/down of
 the cursor on the respective screen and Y controls left/right of the same.</p>
 <h3 id="computer-address-panel-cap"><a class="header" href="#computer-address-panel-cap">Computer Address Panel (CAP)</a></h3>
-<p><img src="../../img/cap1.png" alt="CAP" /></p>
+<p><img src="../../img/cap1.jpg" alt="CAP" /></p>
 <p>The computer address panel (CAP) is the RIO’s main interface for controlling and entering/reading
 data into/from the WCS computer.</p>
 <h3 id="numeric-keypad-3"><a class="header" href="#numeric-keypad-3">Numeric Keypad (3)</a></h3>
@@ -627,27 +627,27 @@ to indicate activation.</p>
 <p>🚧 TODO: REWRITE THIS ENTIRE SECTION</p>
 </blockquote>
 <h3 id="bit-built-in-test"><a class="header" href="#bit-built-in-test">BIT (Built in Test)</a></h3>
-<div class="table-wrapper"><table><thead><tr><th><img src="../../img/bit.png" alt="BIT" /></th><th>The BIT category contains message button functions pertaining to BIT initiation of different aircraft systems. These might be functions normally run during OBC during startup or separate tests only available from here. This will be detailed in a separate chapter about on board tests and BIT when implemented, not currently implemented in this simulation.</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><img src="../../img/bit.jpg" alt="BIT" /></th><th>The BIT category contains message button functions pertaining to BIT initiation of different aircraft systems. These might be functions normally run during OBC during startup or separate tests only available from here. This will be detailed in a separate chapter about on board tests and BIT when implemented, not currently implemented in this simulation.</th></tr></thead><tbody>
 </tbody></table>
 </div>
 <h3 id="spl-special"><a class="header" href="#spl-special">SPL (Special)</a></h3>
-<div class="table-wrapper"><table><thead><tr><th><img src="../../img/spl.png" alt="SPL" /></th><th>The SPL category contains various message button functions not contained under the other categories. Currently only the IP TO TGT function is implemented and used for the Computer Initial Point air to ground mode, see Computer Initial Point. It also contains a button for manually initiating the OBC routine (OBC BIT), a button for displaying latest OBC results (MAINT DISP) and a button for clearing the latest OBC results (OBC DISPL). These and the other functions are not yet implemented.</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><img src="../../img/spl.jpg" alt="SPL" /></th><th>The SPL category contains various message button functions not contained under the other categories. Currently only the IP TO TGT function is implemented and used for the Computer Initial Point air to ground mode, see Computer Initial Point. It also contains a button for manually initiating the OBC routine (OBC BIT), a button for displaying latest OBC results (MAINT DISP) and a button for clearing the latest OBC results (OBC DISPL). These and the other functions are not yet implemented.</th></tr></thead><tbody>
 </tbody></table>
 </div>
 <h3 id="nav-navigation"><a class="header" href="#nav-navigation">NAV (Navigation)</a></h3>
-<div class="table-wrapper"><table><thead><tr><th><img src="../../img/nav.png" alt="NAV" /></th><th>The NAV category contains message button functions used for navigational fixes and updating data used by for INS operation and alignment. The OWN A/C (own aircraft) button selects own aircraft for data readout and entry, the same as hooking the own aircraft symbol on the TID. Its used to enter data critical for INS alignment like aircraft coordinates and altitude (and heading and speed if on a moving carrier) and can also be used for readout of the various data available about own aircraft. The STORED HDG ALIGN button is used to store and indicate if a stored heading align is available. It also allows deselection of the function resulting in a normal alignment. The WIND SPD HDG button selects entry and display of wind data, can also be used to enter wind speed and heading manually for backup navigation. The MAG VAR (HDG) button is used to display and enter magnetic variation used by the navigational system. The four FIX buttons, TACAN FIX, RDR FIX (radar), VIS FIX (visual) and FIX ENABLE are used to update aircraft position to correct for INS drift. Basic function is the selection of type of fix followed by FIX ENABLE to enter it into the system. Full procedures for these fixes can be found in the navigational section in this chapter. The two TARPS buttons are non-functional in a non TARPS aircraft.</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><img src="../../img/nav.jpg" alt="NAV" /></th><th>The NAV category contains message button functions used for navigational fixes and updating data used by for INS operation and alignment. The OWN A/C (own aircraft) button selects own aircraft for data readout and entry, the same as hooking the own aircraft symbol on the TID. Its used to enter data critical for INS alignment like aircraft coordinates and altitude (and heading and speed if on a moving carrier) and can also be used for readout of the various data available about own aircraft. The STORED HDG ALIGN button is used to store and indicate if a stored heading align is available. It also allows deselection of the function resulting in a normal alignment. The WIND SPD HDG button selects entry and display of wind data, can also be used to enter wind speed and heading manually for backup navigation. The MAG VAR (HDG) button is used to display and enter magnetic variation used by the navigational system. The four FIX buttons, TACAN FIX, RDR FIX (radar), VIS FIX (visual) and FIX ENABLE are used to update aircraft position to correct for INS drift. Basic function is the selection of type of fix followed by FIX ENABLE to enter it into the system. Full procedures for these fixes can be found in the navigational section in this chapter. The two TARPS buttons are non-functional in a non TARPS aircraft.</th></tr></thead><tbody>
 </tbody></table>
 </div>
 <h3 id="tac-data-tactical-data"><a class="header" href="#tac-data-tactical-data">TAC DATA (Tactical Data)</a></h3>
-<div class="table-wrapper"><table><thead><tr><th><img src="../../img/tacdata.png" alt="TAC DATA" /></th><th>The TAC DATA category contains message button functionality allowing for hook/selection of the different waypoints available in the WCS navigational system. The same hook can be made via HCU hook on the TID. Hooking the waypoints enables them to be updated via the CAP keypad. The PT TO PT button is non-functional.</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><img src="../../img/tacdata.jpg" alt="TAC DATA" /></th><th>The TAC DATA category contains message button functionality allowing for hook/selection of the different waypoints available in the WCS navigational system. The same hook can be made via HCU hook on the TID. Hooking the waypoints enables them to be updated via the CAP keypad. The PT TO PT button is non-functional.</th></tr></thead><tbody>
 </tbody></table>
 </div>
 <h3 id="data-link"><a class="header" href="#data-link">DATA LINK</a></h3>
-<div class="table-wrapper"><table><thead><tr><th><img src="../../img/dl.png" alt="DATA LINK" /></th><th>The DATA LINK category contains message button functionality for RIO data link responses to data link controller commands. The WILCO (will comply), CANTCO (can not comply) tells the controller if own aircraft can or can not comply to a command. POINT enables the RIO to mark a hooked track sent to the controller for special attention. ENGAGE likewise indicates own intention to engage a hooked track. The NAV GRID button enables the NAV GRID functionality on the TID, see Navigation Command and Control Grid (NAV GRID). The TID AVIA button enables the AVIA display on the TID. Not yet implemented. The F/F NAV UPDATE allows for Link-4C fighter to fighter navigational updates. See the navigation chapter. Remaining buttons are non-functional.</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><img src="../../img/dl.jpg" alt="DATA LINK" /></th><th>The DATA LINK category contains message button functionality for RIO data link responses to data link controller commands. The WILCO (will comply), CANTCO (can not comply) tells the controller if own aircraft can or can not comply to a command. POINT enables the RIO to mark a hooked track sent to the controller for special attention. ENGAGE likewise indicates own intention to engage a hooked track. The NAV GRID button enables the NAV GRID functionality on the TID, see Navigation Command and Control Grid (NAV GRID). The TID AVIA button enables the AVIA display on the TID. Not yet implemented. The F/F NAV UPDATE allows for Link-4C fighter to fighter navigational updates. See the navigation chapter. Remaining buttons are non-functional.</th></tr></thead><tbody>
 </tbody></table>
 </div>
 <h3 id="target-data"><a class="header" href="#target-data">TARGET DATA</a></h3>
-<div class="table-wrapper"><table><thead><tr><th><img src="../../img/tgtdata.png" alt="TARGET DATA" /></th><th>The TARGET DATA category contains message button functionality used to modify hooked track symbols. The FRIEND, UNK (Unknown), HOST (Hostile) and MULT TGT (Multiple Target) message functions are used to mark a hooked symbol as the respective category (multiple target can be set in addition to the other three). The DO NOT ATTK button sets a target as a do not attack target, removing it from the WCS firing order. The DATA TRANS (Data Transfer) function enables a hooked jam strobe to be correlated with another hooked track symbol. This is used to allow the WCS to better use both data sources to track the target. The strobe needs to be hooked before the symbol. Currently not implemented. TEST TGT (Test Target) calls up a simulated test target in the WCS for test purposes. Currently not implemented. The SYM DELETE (Symbol Delete) allows the RIO to manually drop/remove a track or waypoint from the TID if no longer relevant. Own aircraft and data link track symbols can not be removed. IFT AUX LAUNCH and GND MAP are non-functional.</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><img src="../../img/tgtdata.jpg" alt="TARGET DATA" /></th><th>The TARGET DATA category contains message button functionality used to modify hooked track symbols. The FRIEND, UNK (Unknown), HOST (Hostile) and MULT TGT (Multiple Target) message functions are used to mark a hooked symbol as the respective category (multiple target can be set in addition to the other three). The DO NOT ATTK button sets a target as a do not attack target, removing it from the WCS firing order. The DATA TRANS (Data Transfer) function enables a hooked jam strobe to be correlated with another hooked track symbol. This is used to allow the WCS to better use both data sources to track the target. The strobe needs to be hooked before the symbol. Currently not implemented. TEST TGT (Test Target) calls up a simulated test target in the WCS for test purposes. Currently not implemented. The SYM DELETE (Symbol Delete) allows the RIO to manually drop/remove a track or waypoint from the TID if no longer relevant. Own aircraft and data link track symbols can not be removed. IFT AUX LAUNCH and GND MAP are non-functional.</th></tr></thead><tbody>
 </tbody></table>
 </div>
 <h3 id="program-restart-button"><a class="header" href="#program-restart-button">Program Restart Button</a></h3>
@@ -673,7 +673,7 @@ entry.</p>
 checks it is correct and then enters it with the ENTER key. The TID readout is then updated with the
 new data. To clear the data without entering it, instead use the CLEAR key.</p>
 <h2 id="sensor-control-panel"><a class="header" href="#sensor-control-panel">Sensor Control Panel</a></h2>
-<p><img src="../../img/radarircontrol1.png" alt="Radar and IR Control Panel" /></p>
+<p><img src="../../img/radarircontrol1.jpg" alt="Radar and IR Control Panel" /></p>
 <p>The sensor control panel contains the main controls for the AN/AWG-9 radar antenna scan patterns. It
 also contains various TCS controls, a control allowing the RIO to slave the radar to the TCS and
 vice versa and controls for the airborne video tape recorder (AVTR).</p>

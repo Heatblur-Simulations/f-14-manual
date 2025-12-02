@@ -162,22 +162,20 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="left-side-console"><a class="header" href="#left-side-console">Left Side Console</a></h1>
-<blockquote>
-<p>🚧 TODO: Convert tables into text chunks like the F-4</p>
-</blockquote>
 <h2 id="g-valve-button"><a class="header" href="#g-valve-button">G-valve Button</a></h2>
-<p><img src="../../img/g-valve.png" alt="g-valve" /></p>
+<p><img src="../../img/cockpit_detail_pilot_g-valve.jpg" alt="g-valve" /></p>
 <p>Pressed to test inflation of g-suit.</p>
 <h2 id="oxygen-vent-airflow-control-panel"><a class="header" href="#oxygen-vent-airflow-control-panel">Oxygen-Vent Airflow Control Panel</a></h2>
-<p><img src="../../img/oxygen-vent.png" alt="oxygen-vent" /></p>
-<p>Controls ventilation airflow to pressure suit or seat cushions and oxygen to pilot mask.</p>
+<p><img src="../../img/cockpit_detail_pilot_oxygen-vent.jpg" alt="oxygen-vent" /></p>
+<p>Controls ventilation airflow to pressure suit or seat cushions and oxygen to
+pilot mask.</p>
 <div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control</th><th>Function</th></tr></thead><tbody>
 <tr><td>1</td><td>VENT AIRFLOW dial</td><td>Used to control airflow through the pressure suit or seat cushions if no pressure suit is worn.</td></tr>
 <tr><td>2</td><td>OXYGEN switch</td><td>Switch with ON/OFF positions. Controls oxygen flow to the mask.</td></tr>
 </tbody></table>
 </div>
 <h2 id="volumetacan-command-panel"><a class="header" href="#volumetacan-command-panel">Volume/TACAN Command Panel</a></h2>
-<p><img src="../../img/volume.png" alt="volume" /></p>
+<p><img src="../../img/cockpit_detail_pilot_volume.jpg" alt="volume" /></p>
 <p>Panel controlling volume to Pilot headset and crewmember in control of TACAN.</p>
 <p>F-14B and F-14A (Late):</p>
 <div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
@@ -193,11 +191,11 @@
 <tr><td>2</td><td>ALR-50 knob</td><td>Controls audio volume from the ALR-50 to the pilot.</td></tr>
 <tr><td>3</td><td>SW knob</td><td>Controls volume of Sidewinder audio tone to the pilot.</td></tr>
 <tr><td>4</td><td>V/UHF 2 knob</td><td>Controls volume of audio from AN/ARC-182 to the pilot.</td></tr>
-<tr><td>5</td><td>TACAN CMD switch</td><td>Sets crewmember in command of the TACAN. Also indicates current setting.</td></tr>
+<tr><td>5</td><td>TACAN CMD switch</td><td>Sets crewmember in command of the TACAN.</td></tr>
 </tbody></table>
 </div>
 <h2 id="tacan-control-panel"><a class="header" href="#tacan-control-panel">TACAN Control Panel</a></h2>
-<p><img src="../../img/tacan.png" alt="tacan" /></p>
+<p><img src="../../img/cockpit_detail_pilot_tacan.jpg" alt="tacan" /></p>
 <p>TACAN control panel letting the pilot control TACAN if in command of it.</p>
 <div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
 <tr><td>1</td><td>Dual rotary switch</td><td>Outer dial selects first two digits and inner dial selects last digit for TACAN channel selection.</td></tr>
@@ -205,20 +203,43 @@
 <tr><td>3</td><td>BIT button</td><td>Button initiating TACAN BIT.</td></tr>
 <tr><td>4</td><td>MODE switches</td><td>Switches mode for TACAN operation and selects X or Y channels. INVERSE mode not functional.</td></tr>
 <tr><td>5</td><td>VOL knob</td><td>Volume control knob for TACAN audio to the pilot.</td></tr>
-<tr><td>6</td><td>Mode knob</td><td>Selects TACAN mode (OFF, REC, T/R, A/A, BCN).</td></tr>
+<tr><td>6</td><td>Mode knob</td><td>Selects TACAN mode</td></tr>
 </tbody></table>
 </div>
+<p>The following modes are available:</p>
+<ul>
+<li>OFF - TACAN is off</li>
+<li>REC - Receive only</li>
+<li>T/R - Transmit and receive, enables range readout</li>
+<li>A/A - Air to air TACAN mode</li>
+<li>BCN - Beacon TACAN mode (not functional)</li>
+</ul>
 <h2 id="ics-control-panel"><a class="header" href="#ics-control-panel">ICS Control Panel</a></h2>
-<p><img src="../../img/ics.png" alt="ics" /></p>
+<p><img src="../../img/cockpit_detail_pilot_ics.jpg" alt="ics" /></p>
 <p>Control panel for ICS.</p>
 <div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control</th><th>Function</th></tr></thead><tbody>
 <tr><td>1</td><td>VOL knob</td><td>Volume control knob for intercommunication audio from the RIO to the pilot.</td></tr>
 <tr><td>2</td><td>Amplifier selection knob</td><td>Knob selecting which amplifier to use for pilot’s headset audio.</td></tr>
-<tr><td>3</td><td>ICS switch</td><td>Selects ICS function. RADIO OVERRIDE - Makes ICS audio override radio audio. HOT MIC - Allows talking to the RIO without pressing the PTT. COLD MIC - Allows talking to the RIO only while the PTT is pressed.</td></tr>
+<tr><td>3</td><td>ICS switch</td><td>Selects ICS function.</td></tr>
 </tbody></table>
 </div>
+<p>The following amplifiers are available:</p>
+<ul>
+<li>B/U - Backup amplifier</li>
+<li>NORM - Normal amplifier</li>
+<li>EMER - Emergency amplifier, uses RIO's amplifier and his volume settings.
+Disallows listening to audio only available to the pilot such as the
+Sidewinder tone and engine stall/overtemperature warnings</li>
+</ul>
+<p>Available ICS functions are:</p>
+<ul>
+<li>RADIO OVERRIDE - Makes ICS audio override radio audio.</li>
+<li>HOT MIC - Allows talking to the RIO without pressing the PTT. Also allows the
+groundcrew to talk to the crew via the external interphone.</li>
+<li>COLD MIC - Allows talking to the RIO only while the PTT is pressed.</li>
+</ul>
 <h2 id="afcs-control-panel"><a class="header" href="#afcs-control-panel">AFCS Control Panel</a></h2>
-<p><img src="../../img/afcs.png" alt="afcs" /></p>
+<p><img src="../../img/cockpit_detail_pilot_afcs.jpg" alt="afcs" /></p>
 <p>Control panel for AFCS and autopilot.</p>
 <div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control</th><th>Function</th></tr></thead><tbody>
 <tr><td>1</td><td>PITCH switch</td><td>Enables pitch stability augmentation.</td></tr>
@@ -227,11 +248,30 @@
 <tr><td>4</td><td>VEC/PCD/ACL switch</td><td>Switch controlling the remote control modes of autopilot.</td></tr>
 <tr><td>5</td><td>ALT switch</td><td>ON/OFF switch, enables altitude hold. Engaged by NWS button on pilot stick.</td></tr>
 <tr><td>6</td><td>HDG switch</td><td>Selects HDG hold mode.</td></tr>
-<tr><td>7</td><td>ENGAGE switch</td><td>ENGAGE/OFF. Engages autopilot. Note: All switches are spring-loaded to OFF position but held in position with solenoid to enable automatic disengagement when applicable.</td></tr>
+<tr><td>7</td><td>ENGAGE switch</td><td>ENGAGE/OFF. Engages autopilot.</td></tr>
 </tbody></table>
 </div>
+<blockquote>
+<p>💡 All switches are spring-loaded to OFF position but held in position with
+solenoid to enable automatic disengagement when applicable.</p>
+</blockquote>
+<h3 id="vecpcdacl-switch"><a class="header" href="#vecpcdacl-switch">VEC/PCD/ACL Switch</a></h3>
+<p>Remote controlling offers the following functions:</p>
+<ul>
+<li>VEC/PCD - Vector/PCD mode. Roll and pitch axis is controlled by data link.
+Engaged by NWS button on pilot stick.</li>
+<li>OFF - Function off</li>
+<li>ACL - Automatic carrier landing mode. Engaged by NWS button on pilot stick.</li>
+</ul>
+<h3 id="hdg-switch"><a class="header" href="#hdg-switch">HDG Switch</a></h3>
+<p>Available Heading Hold modes include:</p>
+<ul>
+<li>HDG - Engages heading hold mode</li>
+<li>OFF - Heading hold off</li>
+<li>GT - Ground track mode, engaged by NWS button on pilot stick</li>
+</ul>
 <h2 id="uhf-1-anarc-159-radio"><a class="header" href="#uhf-1-anarc-159-radio">UHF 1 (AN/ARC-159) Radio</a></h2>
-<p><img src="../../img/arc-159.png" alt="arc-159" /></p>
+<p><img src="../../img/cockpit_detail_pilot_arc-159.jpg" alt="arc-159" /></p>
 <p>UHF radio 1. Radio and controls.</p>
 <div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
 <tr><td>1</td><td>VOL knob</td><td>Controls volume of UHF 1 audio to pilot headset.</td></tr>
@@ -241,38 +281,71 @@
 <tr><td>5</td><td>READ button</td><td>Button toggling display of selected channel while held.</td></tr>
 <tr><td>6</td><td>BRT knob</td><td>Knob controlling display brightness.</td></tr>
 <tr><td>7</td><td>LOAD button</td><td>Button toggling load of set frequency to set channel.</td></tr>
-<tr><td>8</td><td>Function selector knob</td><td>Selector knob selecting radio function (ADF, BOTH, MAIN, OFF).</td></tr>
-<tr><td>9</td><td>CHAN SEL knob</td><td>Selects preset channel to use. Preset channels chart used to record frequencies or use for preset channels.</td></tr>
-<tr><td>10</td><td>Mode selector knob</td><td>Knob selecting radio frequency select mode.</td></tr>
-<tr><td>11</td><td>TONE button</td><td>Transmits a TONE on current frequency.</td></tr>
+<tr><td>8</td><td>Function selector knob</td><td>Selector knob selecting radio function.</td></tr>
+<tr><td>9</td><td>CHAN SEL knob</td><td>Selects preset channel to use.</td></tr>
+<tr><td>10</td><td>Preset channels chart</td><td>Chart used to record frequencies or use for preset channels.</td></tr>
+<tr><td>11</td><td>Mode selector knob</td><td>Knob selecting radio frequency select mode.</td></tr>
+<tr><td>12</td><td>TONE button</td><td>Transmits a TONE on current frequency.</td></tr>
 </tbody></table>
 </div>
+<blockquote>
+<p>💡 ADF is nonfunctional with the AN/ARC-159, use the V/UHF 2 instead.</p>
+</blockquote>
 <h2 id="asym-limiterengine-mode-select-f-14b-only"><a class="header" href="#asym-limiterengine-mode-select-f-14b-only">ASYM Limiter/Engine Mode Select (F-14B only)</a></h2>
-<p><img src="../../img/asym.png" alt="asym" /></p>
-<p>Control panel for the asymmetric thrust limiter system and the control mode of each engine.</p>
+<p><img src="../../img/cockpit_detail_pilot_asym.jpg" alt="asym" /></p>
+<p>Control panel for the asymmetric thrust limiter system and the control mode of
+each engine.</p>
 <div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control</th><th>Function</th></tr></thead><tbody>
 <tr><td>1</td><td>ASYM LIMITER switch</td><td>ON/OFF switch enabling afterburner thrust asymmetry limiter.</td></tr>
-<tr><td>2</td><td>ENG MODE SELECT switches</td><td>Switches selecting engine mode for their respective engine (PRI, SEC).</td></tr>
+<tr><td>2</td><td>ENG MODE SELECT switches</td><td>Switches selecting engine mode for their respective engine.</td></tr>
 </tbody></table>
 </div>
+<p>Selectable Engine modes are:</p>
+<ul>
+<li>PRI - Primary engine control mode</li>
+<li>SEC - Secondary engine control mode</li>
+</ul>
 <h2 id="target-designate-switch"><a class="header" href="#target-designate-switch">Target Designate Switch</a></h2>
-<p><img src="../../img/target.png" alt="target" /></p>
-<p>Used to designate ground targets on the HUD and to control pilot ACM radar modes except PLM. Can be
-moved up/down and forward which is the designate position.</p>
+<p><img src="../../img/cockpit_detail_pilot_target.jpg" alt="target" /></p>
+<p>Used to designate ground targets on the HUD and to control pilot ACM radar modes
+except PLM. Can be moved up/down and forward which is the designate position.</p>
+<p>In air-to-ground mode up and down moves the designator and forward designates.
+In all other cases up and down selects VSL HI and VSL LO ACM-modes respectively
+and forward selects PAL.</p>
 <h2 id="inlet-rampsthrottle-control-panel"><a class="header" href="#inlet-rampsthrottle-control-panel">Inlet Ramps/Throttle Control Panel</a></h2>
-<p><img src="../../img/inlet.png" alt="inlet" /></p>
+<p><img src="../../img/cockpit_detail_pilot_inlet.jpg" alt="inlet" /></p>
 <p>Control panel for various engine systems, throttle settings and rudder trim.</p>
 <div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>THROTTLE MODE</td><td>Switch selecting throttle operation mode (AUTO, BOOST, MAN).</td></tr>
-<tr><td>2</td><td>THROTTLE TEMP</td><td>Switch selecting throttle computer gain (HOT, NORM, COLD).</td></tr>
-<tr><td>3</td><td>INLET RAMPS</td><td>Switches selecting operational modes for respective engine inlet ramps (STOW, AUTO).</td></tr>
+<tr><td>1</td><td>THROTTLE MODE</td><td>Switch selecting throttle operation mode.</td></tr>
+<tr><td>2</td><td>THROTTLE TEMP</td><td>Switch selecting throttle computer gain.</td></tr>
+<tr><td>3</td><td>INLET RAMPS</td><td>Switches selecting operational modes for respective engine inlet ramps.</td></tr>
 <tr><td>4</td><td>ENG CRANK</td><td>Selector switch selecting engine crank for either left or right engine.</td></tr>
 <tr><td>5</td><td>BACK UP IGNITION</td><td>Switch toggling engine backup ignition ON or OFF.</td></tr>
 <tr><td>6</td><td>RUDDER TRIM</td><td>Switch adjusting rudder trim.</td></tr>
 </tbody></table>
 </div>
+<h3 id="throttle-mode"><a class="header" href="#throttle-mode">Throttle Mode</a></h3>
+<p>Switch selecting throttle operation mode.</p>
+<ul>
+<li>AUTO - Automatic</li>
+<li>BOOST - Boosted</li>
+<li>MAN - Manual</li>
+</ul>
+<h3 id="throttle-temp"><a class="header" href="#throttle-temp">Throttle Temp</a></h3>
+<p>Switch selecting throttle computer gain.</p>
+<ul>
+<li>HOT - Hot</li>
+<li>NORM - Normal</li>
+<li>COLD - Cold</li>
+</ul>
+<h3 id="inlet-ramps"><a class="header" href="#inlet-ramps">Inlet Ramps</a></h3>
+<p>Switches selecting operational modes for respective engine inlet ramps.</p>
+<ul>
+<li>STOW - Stowed</li>
+<li>AUTO - Automatic Mode</li>
+</ul>
 <h2 id="throttle"><a class="header" href="#throttle">Throttle</a></h2>
-<p><img src="../../img/throttle.png" alt="throttle" /></p>
+<p><img src="../../img/cockpit_detail_pilot_throttle.jpg" alt="throttle" /></p>
 <p>The throttle grips contains various flight controls and HOTAS functions.</p>
 <div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control</th><th>Function</th></tr></thead><tbody>
 <tr><td>1</td><td>Speed brake switch</td><td>Switch controlling extension of the speed brake.</td></tr>
@@ -283,17 +356,67 @@ moved up/down and forward which is the designate position.</p>
 <tr><td>6</td><td>ICS PTT switch</td><td>Switch allowing pilot to key one or both radios and intercommunication to RIO.</td></tr>
 </tbody></table>
 </div>
+<h3 id="speed-brake-switch"><a class="header" href="#speed-brake-switch">Speed Brake Switch</a></h3>
+<p>Switch controlling extension of the speed brake.</p>
+<ul>
+<li>EXT - Momentary position returning to center when released. Incrementally
+extends speed brake while held. Speed brake remains in position it's at when
+released.</li>
+<li>RET - Toggle position retracting speed brake.</li>
+</ul>
+<h3 id="wing-sweep-switch"><a class="header" href="#wing-sweep-switch">Wing-Sweep Switch</a></h3>
+<p>Switch controlling wing-sweep function. Manual mode only allows positions aft of
+CADC set position.</p>
+<ul>
+<li>AUTO - Wing-sweep automatically set by CADC.</li>
+<li>FWD - Sweeps wings forward manually.</li>
+<li>AFT - Sweeps wings aft manually.</li>
+<li>BOMB - Sets wing-sweep to 55° if forwards of that. When the CADC position is
+aft of 55° it will follow that setting instead.</li>
+</ul>
+<h3 id="exterior-light-switch"><a class="header" href="#exterior-light-switch">Exterior Light Switch</a></h3>
+<p>Switch used to control exterior lights.</p>
+<ul>
+<li>OFF - disable all exterior lights and increases approach light intensity.</li>
+<li>ON - enables all exterior lights and dims approach lights.</li>
+</ul>
+<h3 id="ics-ptt-switch"><a class="header" href="#ics-ptt-switch">ICS PTT Switch</a></h3>
+<p>Switch allowing pilot to key one or both radios and intercommunication to RIO.</p>
+<ul>
+<li>ICS - Keys intercommunication to RIO.</li>
+<li>BOTH - Keys both UHF 1 and V/UHF 2 for transmission.</li>
+<li>UHF1 - Keys UHF 1 for transmission.</li>
+<li>UHF2 - Keys V/UHF 2 for transmission.</li>
+</ul>
 <h2 id="throttle-quadrant"><a class="header" href="#throttle-quadrant">Throttle Quadrant</a></h2>
-<p><img src="../../img/throttles.png" alt="throttles" /> <img src="../../img/throttles-schem.png" alt="throttles-schem" /></p>
-<p>The main throttle quadrant contains the two main-engine throttle controls, the flap lever and manual
-wing-sweep handle in addition to the HOTAS controls on the throttles themselves.</p>
+<div class="table-wrapper"><table><thead><tr><th>Quadrant</th><th>Schema</th></tr></thead><tbody>
+<tr><td><img src="../../img/cockpit_detail_pilot_throttles.jpg" alt="throttles" /></td><td><img src="../../img/general_engine_throttles-schem.jpg" alt="throttles-schema" /></td></tr>
+</tbody></table>
+</div>
+<p>The main throttle quadrant contains the two main-engine throttle controls, the
+flap lever and manual wing-sweep handle in addition to the HOTAS controls on the
+throttles themselves. The throttles have detents in the OFF, IDLE and MIL
+positions.</p>
+<p>Moving the throttles to the IDLE position from OFF arms the ignition and
+disengages the fuel cutoff. The sideways movements of the throttles are not
+spring loaded, this is so the pilot can have the throttle resting at MIL power
+for catapult launches and prevents accidental spool down of the engines. A
+friction lever for selection of desired throttle movement friction is located on
+the left side of the throttle quadrant, beneath the flap lever.</p>
+<p>The flap lever has a stepless range of motion between up and down and has two
+emergency positions, one emergency up and one emergency down. Both emergency
+positions have detents, the lever needs to be moved outboards to continue
+movement into these positions. Emergency up forces the flaps up, overriding the
+normal flap logic. Emergency down is non-functional.</p>
+<p>The manual/emergency wing-sweep handle is protected by a guard and is normally
+pushed in and stowed. The handle-top is extended for manual operation. For more
+information see
+<a href="../../systems/flight_controls_gear/wing_sweep.html">Wing-Sweep System</a>.</p>
 <h2 id="hydraulic-hand-pump"><a class="header" href="#hydraulic-hand-pump">Hydraulic Hand Pump</a></h2>
-<blockquote>
-<p>🚧 TODO: Add image for hydraulic hand pump</p>
-</blockquote>
-<p>The hydraulic hand pump is located inboards of the throttle quadrant, near the pilot’s left leg. It
-is used to manually add hydraulic pressure for brake operation (with gear handle in the down
-position) or for refueling probe operation in case of a failure in the hydraulic system.</p>
+<p>The hydraulic hand pump is located inboards of the throttle quadrant, near the
+pilot’s left leg. It is used to manually add hydraulic pressure for brake
+operation (with gear handle in the down position) or for refueling probe
+operation in case of a failure in the hydraulic system.</p>
 
                     </main>
 

@@ -162,105 +162,31 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="left-knee-panel"><a class="header" href="#left-knee-panel">Left Knee Panel</a></h1>
-<blockquote>
-<p>🚧 TODO: Convert tables into text chunks like the F-4</p>
-</blockquote>
 <h2 id="hydraulic-pressure-indicator"><a class="header" href="#hydraulic-pressure-indicator">Hydraulic Pressure Indicator</a></h2>
-<p><img src="../../img/hydraulic.png" alt="Hydraulic Pressure Indicator" /></p>
-<p>Shows hydraulic pressure of the combined and flight hydraulic systems. The SPOIL (Spoiler)
-ON/OFF-flag indicates pressurization of the outboard spoiler module. EMER FLT HI ON/OFF-flags
-indicate backup flight hydraulic system pressures when HI or LOW is selected respectively.</p>
+<p><img src="../../img/cockpit_detail_pilot_hydraulic.jpg" alt="Hydraulic Pressure Indicator" /></p>
+<p>Shows hydraulic pressure of the combined and flight hydraulic systems.</p>
+<ul>
+<li>SPOIL (Spoiler): ON/OFF-flag indicates pressurization of outboard spoiler
+module.</li>
+<li>EMER FLT HI: ON/OFF-flags indicates backup flight hydraulic system pressures
+when HI or LOW is selected respectively.</li>
+</ul>
 <h2 id="oil-pressure-indicator"><a class="header" href="#oil-pressure-indicator">Oil Pressure Indicator</a></h2>
-<p><img src="../../img/oil.png" alt="Oil Pressure Indicator" /></p>
-<p>Displays oil pressure for each engine. Range is 0 - 100 psi, normal range is 25 - 65 psi, varying
-with engine rpm.</p>
+<p><img src="../../img/cockpit_detail_pilot_oil.jpg" alt="Oil Pressure Indicator" /></p>
+<p>Displays oil pressure for each engine. Range is 0 - 100 psi, normal range is
+25 - 65 psi, varying with engine rpm.</p>
 <h2 id="exhaust-nozzle-position-indicator"><a class="header" href="#exhaust-nozzle-position-indicator">Exhaust Nozzle Position Indicator</a></h2>
-<p><img src="../../img/exhaust.png" alt="Exhaust Nozzle Position Indicator" /></p>
-<p>Displays position of engine nozzles. Range 0 – 5 with 5 being fully open.</p>
+<p><img src="../../img/cockpit_detail_pilot_exhaust.jpg" alt="Exhaust Nozzle Position Indicator" /></p>
+<p>Displays position of engine nozzles. Range 0 - 5 with 5 being fully open.</p>
 <h2 id="electronic-instrument-group"><a class="header" href="#electronic-instrument-group">Electronic Instrument Group</a></h2>
-<p><img src="../../img/instrument-group.png" alt="Electronic Instrument Group" /></p>
-<p>Displays engine RPM (High-pressure compressor rotor speed (N2)), EGT (Exhaust Gas Temperature) and
-FF (Fuel Flow) for respective engine.</p>
+<p><img src="../../img/cockpit_detail_pilot_instrument-group.jpg" alt="Electronic Instrument Group" /></p>
+<p>Displays engine RPM (High-pressure compressor rotor speed (N2)), EGT (Exhaust
+Gas Temperature) and FF (Fuel Flow) for respective engine.</p>
 <blockquote>
-<p><strong>💡 Note:</strong> Image shows TF-30 engine instruments, F110 EIG coming soon.</p>
+<p>💡 Image shows TF-30 engine instruments, F110 EIG coming soon.</p>
+<p>FF is not indicated for the additional fuel used in afterburner.</p>
 </blockquote>
-<blockquote>
-<p><strong>💡 Note 2:</strong> FF is not indicated for the additional fuel used in afterburner.</p>
-</blockquote>
-<h2 id="radar-altimeter"><a class="header" href="#radar-altimeter">Radar Altimeter</a></h2>
-<p><img src="../../img/radaraltimeter.png" alt="Radar Altimeter" /></p>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>Radar altimeter control knob</td><td>Fully counterclockwise position turns the altimeter off. Rotation clockwise sets the altitude warning level, increasing clockwise. Depressing the knob starts the altimeter BIT.</td></tr>
-<tr><td>2</td><td>OFF flag</td><td>Shown if the system is off, power is off or the system loses ground lock.</td></tr>
-<tr><td>3</td><td>Low altitude warning light</td><td>Red light illuminated when below set altitude warning level.</td></tr>
-<tr><td>4</td><td>Self-test light</td><td>Green light that should illuminate when the altimeter BIT is run. The readout should also display 100 feet +/- 10.</td></tr>
-<tr><td>5</td><td>Low-altitude limit index</td><td>Small triangular bug moving along outer edge, displays set altitude warning level.</td></tr>
-</tbody></table>
-</div>
-<blockquote>
-<p><strong>💡 Note:</strong> Radio override does not disable low-altitude warning tone.</p>
-</blockquote>
-<h2 id="servopneumatic-altimeter"><a class="header" href="#servopneumatic-altimeter">Servopneumatic Altimeter</a></h2>
-<p><img src="../../img/altimeter.png" alt="Servopneumatic Altimeter" /></p>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>Altimeter readout</td><td>Displays altitude digitally on three drums showing 10 000, 1 000 and 100 of feet respectively. It also displays altitude on a pointer on a circular scale indicating 100’s of feet.</td></tr>
-<tr><td>2</td><td>Baroset knob</td><td>Sets local pressure in inches of mercury (in.Hg). Only used locally on the altimeter readout, all other digital indicators (via CADC) uses a set 29.92 in.Hg value.</td></tr>
-<tr><td>3</td><td>Mode switch</td><td>Three-position switch, springloaded to return from RESET. If power and altitude data from CADC is present, switch can be held in RESET for 3 seconds to allow normal (servoed) mode of operation. If set to STBY or power or CADC data is absent for more than 3 seconds system switches to backup (pressure) mode.</td></tr>
-<tr><td>4</td><td>STBY flag</td><td>Red flag reading STBY that appears if system is in backup (stand-by) mode.</td></tr>
-</tbody></table>
-</div>
-<blockquote>
-<p><strong>💡 Note:</strong> At high speeds and below 10,000 feet, due to pressure changes, errors in readout up
-to as much as 1,200 feet when transonic and up to as much as 4,000 feet when supersonic can occur.</p>
-</blockquote>
-<h2 id="airspeed-mach-indicator"><a class="header" href="#airspeed-mach-indicator">Airspeed Mach Indicator</a></h2>
-<p><img src="../../img/mach.png" alt="Airspeed Mach Indicator" /></p>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>Airspeed dial</td><td>Shows indicated airspeed on three scales, two for indicated airspeed and one moving for Mach number.</td></tr>
-<tr><td>2</td><td>Indicated airspeed scale (outer)</td><td>Readout for indicated airspeed up to 200 knots.</td></tr>
-<tr><td>3</td><td>Indicated airspeed scale (inner)</td><td>Readout for indicated airspeed from 200 knots to 850 knots. Covered by airspeed dial until relevant.</td></tr>
-<tr><td>4</td><td>Mach number scale</td><td>Readout for Mach number. Moved to show correct Mach number relative indicated airspeed.</td></tr>
-<tr><td>5</td><td>Indicated airspeed index pointer</td><td>Can be set to desired indicated airspeed.</td></tr>
-<tr><td>6</td><td>Mach number index pointer</td><td>Can be set to desired Mach number. Not visible in image.</td></tr>
-<tr><td>7</td><td>Safe Mach number index pointer</td><td>Shows safe Mach number calculated by the CADC. Not visible in image.</td></tr>
-<tr><td>8</td><td>Index knob</td><td>Knob with a pull-out and push-in position. One sets indexer for indicated airspeed and the other for Mach number.</td></tr>
-</tbody></table>
-</div>
-<h2 id="vertical-velocity-indicator"><a class="header" href="#vertical-velocity-indicator">Vertical Velocity Indicator</a></h2>
-<p><img src="../../img/vvi.png" alt="Vertical Velocity Indicator" /></p>
-<p>Shows vertical velocity in thousands of feet. Can show erroneous readings if sudden or abrupt
-changes of attitude occur because of the changing airflow over the static probe.</p>
-<h2 id="left-engine-fuel-shutoff-handle"><a class="header" href="#left-engine-fuel-shutoff-handle">Left Engine Fuel Shutoff Handle</a></h2>
-<p><img src="../../img/leftengineshutoff.png" alt="Left Engine Fuel Shutoff Handle" /></p>
-<p>Pull to shut off fuel to the left engine in case of emergency. Push in to re-enable fuel-flow to the
-engine. Should not be used to secure the engine.</p>
-<p>Left engine fire extinguishing button is located behind the handle, accessible when the handle is
-pulled out.</p>
-<h2 id="angle-of-attack-indicator"><a class="header" href="#angle-of-attack-indicator">Angle-of-Attack Indicator</a></h2>
-<p><img src="../../img/aoa.png" alt="Angle-of-Attack Indicator" /></p>
-<p>Tape indicating angle of attack (AOA) on a scale of 0 to 30 units. (Equivalent to -10° to +40°
-rotation of the AoA probe.)</p>
-<p>The indicator has markers on the right for climb (5), cruise (8.5), and stall (29), and a reference
-bar for on-speed approach (15).</p>
-<h2 id="left-windshield-frame"><a class="header" href="#left-windshield-frame">Left Windshield Frame</a></h2>
-<h3 id="approach-indexer"><a class="header" href="#approach-indexer">Approach Indexer</a></h3>
-<p><img src="../../img/aoaindexer.png" alt="Approach Indexer" /></p>
-<p>Contains three lights showing angle-of-attack (AOA) relative on-speed AOA: Green being too slow,
-amber being on-speed AOA, and red being too fast.</p>
-<p>If the HOOK BY-PASS switch is set to CARRIER the lights will flash if the arresting hook is up while
-the landing gear is down.</p>
-<p>These lights are repeated on the approach lights on the nosewheel strut, allowing the LSO to see
-aircraft AOA during carrier landings.</p>
-<h2 id="wheels-warningbrakes-warningsaclsap-cautionnws-engage-cautionauto-throttle-caution-lights"><a class="header" href="#wheels-warningbrakes-warningsaclsap-cautionnws-engage-cautionauto-throttle-caution-lights">Wheels Warning/Brakes Warnings/ACLS/AP Caution/NWS Engage Caution/Auto Throttle Caution Lights</a></h2>
-<p><img src="../../img/lefthudcaution.png" alt="HUD left side indicators" /></p>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Indicator</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>WHEELS</td><td>Warning light flashes with landing gear not down and locked, flaps below 10° and either throttle below 85%.</td></tr>
-<tr><td>2</td><td>BRAKES</td><td>Warning light indicating antiskid or brake failure. Also lights when parking brake is set.</td></tr>
-<tr><td>3</td><td>ACLS/AP</td><td>Caution light indicating that ACLS or autopilot is disengaged.</td></tr>
-<tr><td>4</td><td>NWS ENGA</td><td>Caution light indicating nosewheel steering (NWS) is engaged.</td></tr>
-<tr><td>5</td><td>AUTO THROT</td><td>Caution light indicating disengagement of the automatic throttle control mode not resulting from the throttle mode switch.</td></tr>
-</tbody></table>
-</div>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
