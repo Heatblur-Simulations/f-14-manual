@@ -8,7 +8,7 @@
 | :-----: | ------------------------------------------------------------ |
 |   1.    | [Left Side Console](../rio/left_console.md)                  |
 |   2.    | [Left Vertical Console](../rio/left_vertical_console.md)     |
-|   3.    | [Left Instrument Panel](../rio/left_instrument_console.md)   |
+|   3.    | [Left Instrument Panel](../rio/left_instrument_panel.md)     |
 |   4.    | [Center Panel](../rio/center_panel.md)                       |
 |   5.    | [Center Console](../rio/center_console.md)                   |
 |   6.    | [Footwells](../rio/footwells.md)                             |
