@@ -4,13 +4,13 @@
 
 ## G-valve Button
 
-![g-valve](../../img/g-valve.png)
+![g-valve](../../img/g-valve.jpg)
 
 Pressed to test inflation of g-suit.
 
 ## Oxygen-Vent Airflow Control Panel
 
-![oxygen-vent](../../img/oxygen-vent.png)
+![oxygen-vent](../../img/oxygen-vent.jpg)
 
 Controls ventilation airflow to pressure suit or seat cushions and oxygen to pilot mask.
 
@@ -21,7 +21,7 @@ Controls ventilation airflow to pressure suit or seat cushions and oxygen to pil
 
 ## Volume/TACAN Command Panel
 
-![volume](../../img/volume.png)
+![volume](../../img/volume.jpg)
 
 Panel controlling volume to Pilot headset and crewmember in control of TACAN.
 
@@ -46,7 +46,7 @@ F-14A (Early):
 
 ## TACAN Control Panel
 
-![tacan](../../img/tacan.png)
+![tacan](../../img/tacan.jpg)
 
 TACAN control panel letting the pilot control TACAN if in command of it.
 
@@ -61,7 +61,7 @@ TACAN control panel letting the pilot control TACAN if in command of it.
 
 ## ICS Control Panel
 
-![ics](../../img/ics.png)
+![ics](../../img/ics.jpg)
 
 Control panel for ICS.
 
@@ -73,7 +73,7 @@ Control panel for ICS.
 
 ## AFCS Control Panel
 
-![afcs](../../img/afcs.png)
+![afcs](../../img/afcs.jpg)
 
 Control panel for AFCS and autopilot.
 
@@ -89,7 +89,7 @@ Control panel for AFCS and autopilot.
 
 ## UHF 1 (AN/ARC-159) Radio
 
-![arc-159](../../img/arc-159.png)
+![arc-159](../../img/arc-159.jpg)
 
 UHF radio 1. Radio and controls.
 
@@ -109,7 +109,7 @@ UHF radio 1. Radio and controls.
 
 ## ASYM Limiter/Engine Mode Select (F-14B only)
 
-![asym](../../img/asym.png)
+![asym](../../img/asym.jpg)
 
 Control panel for the asymmetric thrust limiter system and the control mode of each engine.
 
@@ -120,14 +120,14 @@ Control panel for the asymmetric thrust limiter system and the control mode of e
 
 ## Target Designate Switch
 
-![target](../../img/target.png)
+![target](../../img/target.jpg)
 
 Used to designate ground targets on the HUD and to control pilot ACM radar modes except PLM. Can be
 moved up/down and forward which is the designate position.
 
 ## Inlet Ramps/Throttle Control Panel
 
-![inlet](../../img/inlet.png)
+![inlet](../../img/inlet.jpg)
 
 Control panel for various engine systems, throttle settings and rudder trim.
 
@@ -142,7 +142,7 @@ Control panel for various engine systems, throttle settings and rudder trim.
 
 ## Throttle
 
-![throttle](../../img/throttle.png)
+![throttle](../../img/throttle.jpg)
 
 The throttle grips contains various flight controls and HOTAS functions.
 
@@ -157,7 +157,7 @@ The throttle grips contains various flight controls and HOTAS functions.
 
 ## Throttle Quadrant
 
-![throttles](../../img/throttles.png) ![throttles-schem](../../img/throttles-schem.png)
+![throttles](../../img/throttles.jpg) ![throttles-schem](../../img/throttles-schem.jpg)
 
 The main throttle quadrant contains the two main-engine throttle controls, the flap lever and manual
 wing-sweep handle in addition to the HOTAS controls on the throttles themselves.

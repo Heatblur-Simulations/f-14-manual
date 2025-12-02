@@ -4,7 +4,7 @@
 
 ## Hydraulic Pressure Indicator
 
-![Hydraulic Pressure Indicator](../../img/hydraulic.png)
+![Hydraulic Pressure Indicator](../../img/hydraulic.jpg)
 
 Shows hydraulic pressure of the combined and flight hydraulic systems. The SPOIL (Spoiler)
 ON/OFF-flag indicates pressurization of the outboard spoiler module. EMER FLT HI ON/OFF-flags
@@ -12,20 +12,20 @@ indicate backup flight hydraulic system pressures when HI or LOW is selected res
 
 ## Oil Pressure Indicator
 
-![Oil Pressure Indicator](../../img/oil.png)
+![Oil Pressure Indicator](../../img/oil.jpg)
 
 Displays oil pressure for each engine. Range is 0 - 100 psi, normal range is 25 - 65 psi, varying
 with engine rpm.
 
 ## Exhaust Nozzle Position Indicator
 
-![Exhaust Nozzle Position Indicator](../../img/exhaust.png)
+![Exhaust Nozzle Position Indicator](../../img/exhaust.jpg)
 
 Displays position of engine nozzles. Range 0 – 5 with 5 being fully open.
 
 ## Electronic Instrument Group
 
-![Electronic Instrument Group](../../img/instrument-group.png)
+![Electronic Instrument Group](../../img/instrument-group.jpg)
 
 Displays engine RPM (High-pressure compressor rotor speed (N2)), EGT (Exhaust Gas Temperature) and
 FF (Fuel Flow) for respective engine.
@@ -36,7 +36,7 @@ FF (Fuel Flow) for respective engine.
 
 ## Radar Altimeter
 
-![Radar Altimeter](../../img/radaraltimeter.png)
+![Radar Altimeter](../../img/radaraltimeter.jpg)
 
 | No. | Control/Indicator            | Function                                                                                                                                                                         |
 | --- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,7 +50,7 @@ FF (Fuel Flow) for respective engine.
 
 ## Servopneumatic Altimeter
 
-![Servopneumatic Altimeter](../../img/altimeter.png)
+![Servopneumatic Altimeter](../../img/altimeter.jpg)
 
 | No. | Control/Indicator | Function                                                                                                                                                                                                                                                                                                            |
 | --- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -64,7 +64,7 @@ FF (Fuel Flow) for respective engine.
 
 ## Airspeed Mach Indicator
 
-![Airspeed Mach Indicator](../../img/mach.png)
+![Airspeed Mach Indicator](../../img/mach.jpg)
 
 | No. | Control/Indicator                | Function                                                                                                          |
 | --- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -79,14 +79,14 @@ FF (Fuel Flow) for respective engine.
 
 ## Vertical Velocity Indicator
 
-![Vertical Velocity Indicator](../../img/vvi.png)
+![Vertical Velocity Indicator](../../img/vvi.jpg)
 
 Shows vertical velocity in thousands of feet. Can show erroneous readings if sudden or abrupt
 changes of attitude occur because of the changing airflow over the static probe.
 
 ## Left Engine Fuel Shutoff Handle
 
-![Left Engine Fuel Shutoff Handle](../../img/leftengineshutoff.png)
+![Left Engine Fuel Shutoff Handle](../../img/leftengineshutoff.jpg)
 
 Pull to shut off fuel to the left engine in case of emergency. Push in to re-enable fuel-flow to the
 engine. Should not be used to secure the engine.
@@ -96,7 +96,7 @@ pulled out.
 
 ## Angle-of-Attack Indicator
 
-![Angle-of-Attack Indicator](../../img/aoa.png)
+![Angle-of-Attack Indicator](../../img/aoa.jpg)
 
 Tape indicating angle of attack (AOA) on a scale of 0 to 30 units. (Equivalent to -10° to +40°
 rotation of the AoA probe.)
@@ -108,7 +108,7 @@ bar for on-speed approach (15).
 
 ### Approach Indexer
 
-![Approach Indexer](../../img/aoaindexer.png)
+![Approach Indexer](../../img/aoaindexer.jpg)
 
 Contains three lights showing angle-of-attack (AOA) relative on-speed AOA: Green being too slow,
 amber being on-speed AOA, and red being too fast.
@@ -121,7 +121,7 @@ aircraft AOA during carrier landings.
 
 ## Wheels Warning/Brakes Warnings/ACLS/AP Caution/NWS Engage Caution/Auto Throttle Caution Lights
 
-![HUD left side indicators](../../img/lefthudcaution.png)
+![HUD left side indicators](../../img/lefthudcaution.jpg)
 
 | No. | Indicator  | Function                                                                                                                   |
 | --- | ---------- | -------------------------------------------------------------------------------------------------------------------------- |

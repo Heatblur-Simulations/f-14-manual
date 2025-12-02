@@ -4,7 +4,7 @@
 
 ## Radar Altimeter
 
-![radaraltimeter](../../img/radaraltimeter.png)
+![radaraltimeter](../../img/radaraltimeter.jpg)
 
 Control and indicator for the radar altimeter.
 
@@ -20,7 +20,7 @@ Control and indicator for the radar altimeter.
 
 ## Servopneumatic Altimeter
 
-![altimeter](../../img/altimeter.png)
+![altimeter](../../img/altimeter.jpg)
 
 Control and indicator for the servopneumatic altimeter.
 
@@ -37,7 +37,7 @@ much as 1,200 feet when transonic and up to as much as 4,000 feet when supersoni
 
 ## Airspeed Mach Indicator
 
-![mach](../../img/mach.png)
+![mach](../../img/mach.jpg)
 
 Indicated airspeed and Mach number display.
 
@@ -54,14 +54,14 @@ Indicated airspeed and Mach number display.
 
 ## Vertical Velocity Indicator
 
-![vvi](../../img/vvi.png)
+![vvi](../../img/vvi.jpg)
 
 Shows vertical velocity in thousands of feet. Can show erroneous readings if sudden or abrupt
 changes of attitude occur because of the changing airflow over the static probe.
 
 ## Left Engine Fuel Shutoff Handle
 
-![leftengineshutoff](../../img/leftengineshutoff.png) Pull to shut off fuel to the left engine in
+![leftengineshutoff](../../img/leftengineshutoff.jpg) Pull to shut off fuel to the left engine in
 case of emergency. Push in to re-enable fuel flow to the engine. Should not be used to secure the
 engine.
 
@@ -70,7 +70,7 @@ pulled out.
 
 ## Angle-of-Attack Indicator
 
-![aoa](../../img/aoa.png)
+![aoa](../../img/aoa.jpg)
 
 Tape indicating angle of attack (AOA) on a scale of 0 to 30 units. (Equivalent to -10° to +40°
 rotation of the AoA probe.)

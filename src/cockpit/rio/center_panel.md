@@ -2,7 +2,7 @@
 
 ## Chaff/Flare Dispense Switches
 
-![cmhats](../../img/cmhats.png)
+![cmhats](../../img/cmhats.jpg)
 
 Two switch hats on the center RIO hand hold used to initiate release of countermeasures. The
 switches are mirrored in regards to functionality.

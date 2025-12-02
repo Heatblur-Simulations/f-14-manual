@@ -2,7 +2,7 @@
 
 ## Electronic Countermeasures Display (ECMD)
 
-![mdi](../../img/mdi.png)
+![mdi](../../img/mdi.jpg)
 
 Display used for navigational information and AN/ALR-45 ECM (only in F-14A with AN/ALR-45). Has a
 brightness control knob, test button and a BIT indicator showing the status of the display (solid

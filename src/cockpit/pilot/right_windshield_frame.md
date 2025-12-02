@@ -2,7 +2,7 @@
 
 ## ECM Warning Lights
 
-![rwrcaution](../../img/rwrcaution.png)
+![rwrcaution](../../img/rwrcaution.jpg)
 
 Warning lights connected to the ALR-67 indicating different types of threats.
 
@@ -25,6 +25,6 @@ ALR-45:
 
 ## Standby Compass
 
-![compass](../../img/compass.png)
+![compass](../../img/compass.jpg)
 
 Conventional standby compass.

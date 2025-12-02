@@ -5,7 +5,7 @@
 
 ## Assisted Startup
 
-![Startup](./_images/startup.png)
+![Startup](./_images/startup.jpg)
 
 For cold starts, **Jester** can:
 
@@ -28,4 +28,4 @@ Select **Assisted Start** from the menu:
 - He will **highlight relevant controls and indicators**.
 - Use the Jester menu to confirm completion of each step.
 
-![Highlight](./_images/highlight.png)
+![Highlight](./_images/highlight.jpg)

@@ -18,7 +18,7 @@ other munitions.
 
 ## Missile Preparation
 
-![Missile Preparation](../../img/swcool.png) The cooling of the AIM-9 seeker head needs to be
+![Missile Preparation](../../img/swcool.jpg) The cooling of the AIM-9 seeker head needs to be
 enabled before launch. This is done by pressing the SW COOL switch on the pilot ACM panel or by
 selecting the ACM mode on the same panel. This commands cooling of the missile's seeker head. The
 missile will immediately show ready, but full seeker head performance will take at least 60 seconds.
@@ -55,7 +55,7 @@ If the BRSIT switch is not used or the ACM mode is active, the AIM-9 will use th
 missile to use the double-D scan pattern. If a WCS target is present, the seeker head will scan
 around the radar or TCS line of sight; otherwise, the missile will scan around the ADL.
 
-![SEAM Lock](../../img/seamlock.png) To enable lock-on to a target in SEAM, the pilot depresses the
+![SEAM Lock](../../img/seamlock.jpg) To enable lock-on to a target in SEAM, the pilot depresses the
 CAGE/SEAM pushbutton on the left throttle. This illuminates the SEAM LOCK light on the ACM panel and
 uncages the seeker for 4.5 seconds, allowing it to track a target present in the seeker's field of
 view. If no IR source is found, the missile is again caged and the SEAM LOCK light is deactivated.

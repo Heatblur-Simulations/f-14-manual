@@ -21,7 +21,7 @@ of flight critical systems within 1 second.
 
 ## Controls and Indicators
 
-![generator](../../img/generator1.png)
+![generator](../../img/generator1.jpg)
 
 The controls for the electrical systems are located on the master generator control panel.
 

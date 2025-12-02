@@ -4,7 +4,7 @@
 
 ## Clock
 
-![clock](../../img/clock1.png)
+![clock](../../img/clock1.jpg)
 
 Mechanical wind-up clock.
 
@@ -16,7 +16,7 @@ counter.
 
 ## ALR-67 Indicator
 
-![alr-67](../../img/alr-671.png)
+![alr-67](../../img/alr-671.jpg)
 
 Indicator showing emitters detected by the ALR-67 RWR (radar warning receiver) set.
 
@@ -32,13 +32,13 @@ Indicator showing emitters detected by the ALR-67 RWR (radar warning receiver) s
 
 ## Fuel Quantity Totalizer
 
-![fuel](../../img/fuel1.png)
+![fuel](../../img/fuel1.jpg)
 
 Total fuel quantity readout, shows total fuel quantity in all aircraft tanks.
 
 ## Threat Advisory and Master Caution Lights
 
-![threatmaster](../../img/threatmaster.png)
+![threatmaster](../../img/threatmaster.jpg)
 
 Master caution light and various ECM and IFF related advisory and warning lights.
 
@@ -72,7 +72,7 @@ ALR-45:
 
 ## Bearing Distance Heading Indicator (BDHI)
 
-![bdhi](../../img/bdhi1.png)
+![bdhi](../../img/bdhi1.jpg)
 
 Display indicating azimuth and bearing information.
 
@@ -85,6 +85,6 @@ Display indicating azimuth and bearing information.
 
 ## Canopy Jettison Handle
 
-![canopyjettison](../../img/canopyjettison1.png)
+![canopyjettison](../../img/canopyjettison1.jpg)
 
 Handle used to manually jettison canopy.

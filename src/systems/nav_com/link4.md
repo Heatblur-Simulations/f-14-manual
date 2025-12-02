@@ -25,7 +25,7 @@ Indicator (VDI)) and the RIO DDI panel (Digital Data Indicator (DDI)).
 
 ## Link 4 Controls
 
-![Data Link Control Panel](../../img/datalink1.png)
+![Data Link Control Panel](../../img/datalink1.jpg)
 
 The Data Link Control Panel contains the main Link 4 system power switches and the frequency
 selection wheels.
@@ -40,7 +40,7 @@ The frequency thumbwheels (2) are used to set used data link frequency, note tha
 The third switch (3) controls power and operational mode of the Link 4. ON turns on and enables the
 Link 4A data link, OFF disables the system and AUX enables the Link 4C data link.
 
-![Data Link Reply and Antenna Control Panel](../../img/datalinkantenna1.png)
+![Data Link Reply and Antenna Control Panel](../../img/datalinkantenna1.jpg)
 
 The Data Link Reply and Antenna Control Panel is used to select what antenna to use, own aircraft
 data link address, whether to transmit and which mode the Link 4A is used in.

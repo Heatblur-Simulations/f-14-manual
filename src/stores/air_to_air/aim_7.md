@@ -22,7 +22,7 @@ doppler illumination in addition to CW as opposed to only CW.
 
 ## Missile Preparation
 
-![Missile Preparation](../../img/mslprep.png) Before launch, the AIM-7 missiles need to be prepared
+![Missile Preparation](../../img/mslprep.jpg) Before launch, the AIM-7 missiles need to be prepared
 by the selection of the MSL PREP-ON pushbutton on the pilot ACM panel. This commands the WCS to
 start missile preparation for the AIM-7 and AIM-54.
 
@@ -46,7 +46,7 @@ mode will be used.
 
 ### Normal Mode
 
-![Missile Options](../../img/msloptionsp.png) As the normal mode is used to engage a target tracked
+![Missile Options](../../img/msloptionsp.jpg) As the normal mode is used to engage a target tracked
 in STT, the WCS is capable of using both CW and pulse doppler for guidance. When using CW in the
 normal mode, the AN/AWG-9 radar uses a dedicated CW antenna to spotlight the tracked target more
 directly than via the flood antenna. While CW is the normal guidance mode for all AIM-7 variants, it
@@ -69,4 +69,4 @@ track the strongest target return within the flood area. In addition to when lau
 mode, the radar will also switch to flood mode when a target is lost, either before launch or after
 launch, enabling the pilot to try and save the shot by keeping the target within the flood area.
 
-![CW Flood](../../img/cwflood.png)
+![CW Flood](../../img/cwflood.jpg)

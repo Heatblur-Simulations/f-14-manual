@@ -4,7 +4,7 @@
 
 ## Servopneumatic Altimeter
 
-![altimeter](../../img/altimeter1.png)
+![altimeter](../../img/altimeter1.jpg)
 
 Control and indicator for the servopneumatic altimeter.
 
@@ -18,7 +18,7 @@ Control and indicator for the servopneumatic altimeter.
 
 ## Airspeed Mach Indicator
 
-![mach](../../img/mach1.png)
+![mach](../../img/mach1.jpg)
 
 Indicated airspeed and Mach number display.
 
@@ -35,7 +35,7 @@ Indicated airspeed and Mach number display.
 
 ## Standby Attitude Indicator
 
-![standbyattitude](../../img/standbyattitude1.png)
+![standbyattitude](../../img/standbyattitude1.jpg)
 
 Standalone standby attitude indicator.
 
@@ -47,7 +47,7 @@ indicator and allows pitch trim by turning the knob.
 
 ## UHF Remote Indicator
 
-![backremote](../../img/backremote.png)
+![backremote](../../img/backremote.jpg)
 
 Remote indicator displaying set frequency or channel on UHF 1 (AN/ARC-159).
 
@@ -61,7 +61,7 @@ Remote indicator displaying set frequency or channel on UHF 1 (AN/ARC-159).
 
 ### Chaff/Flare Dispense Switches
 
-![cmhats](../../img/cmhats.png)
+![cmhats](../../img/cmhats.jpg)
 
 Two switch hats on the center RIO handhold used to initiate the release of countermeasures. The
 switches are mirrored in regards to functionality.
@@ -75,7 +75,7 @@ switches are mirrored in regards to functionality.
 
 ### Detail Data Display Panel
 
-![DDD](../../img/DDD.png)
+![DDD](../../img/DDD.jpg)
 
 Main radar control panel.
 

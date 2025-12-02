@@ -4,7 +4,7 @@
 
 ## Wing-Sweep Indicator
 
-![wingsweep](../../img/wingsweep.png)
+![wingsweep](../../img/wingsweep.jpg)
 
 Indicator detailing the status of the wing-sweep system.
 
@@ -17,7 +17,7 @@ Indicator detailing the status of the wing-sweep system.
 
 ## Right Engine Fuel Shutoff Handle
 
-![rightengineshutoff](../../img/rightengineshutoff.png)
+![rightengineshutoff](../../img/rightengineshutoff.jpg)
 
 Pull to shut off fuel to the right engine in case of emergency. Push in to re-enable fuel flow to
 the engine. Should not be used to secure the engine.
@@ -27,7 +27,7 @@ pulled out.
 
 ## Standby Attitude Indicator
 
-![standbyattitude](../../img/standbyattitude.png)
+![standbyattitude](../../img/standbyattitude.jpg)
 
 Standalone standby attitude indicator.
 
@@ -38,7 +38,7 @@ Standalone standby attitude indicator.
 
 ## UHF/VHF Remote Indicators
 
-![frontremote](../../img/frontremote.png)
+![frontremote](../../img/frontremote.jpg)
 
 Remote indicators displaying set frequency or channel of UHF 1 (AN/ARC-159) and V/UHF 2
 (AN/ARC-182).
@@ -50,7 +50,7 @@ Remote indicators displaying set frequency or channel of UHF 1 (AN/ARC-159) and 
 
 ## Bearing Distance Heading Indicator (BDHI)
 
-![bdhi](../../img/bdhi.png)
+![bdhi](../../img/bdhi.jpg)
 
 Display indicating azimuth and bearing information.
 
@@ -63,7 +63,7 @@ Display indicating azimuth and bearing information.
 
 ## ALR-67 Indicator
 
-![alr-67](../../img/alr-67.png)
+![alr-67](../../img/alr-67.jpg)
 
 Indicator showing emitters detected by the ALR-67 RWR (radar warning receiver) set.
 
@@ -79,6 +79,6 @@ Indicator showing emitters detected by the ALR-67 RWR (radar warning receiver) s
 
 ## Canopy Jettison Handle
 
-![canopyjettison](../../img/canopyjettison.png)
+![canopyjettison](../../img/canopyjettison.jpg)
 
 Used to jettison canopy manually.

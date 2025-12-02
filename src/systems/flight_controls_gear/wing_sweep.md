@@ -2,7 +2,7 @@
 
 > 🚧 TODO: Rework to add more imagery. Also fix the notes to use the new F-4 system.
 
-![sweepschedule](../../img/sweepschedule.png)
+![sweepschedule](../../img/sweepschedule.jpg)
 
 Wing-sweep schedule as function of Mach number and related flap interlocks.
 
@@ -89,7 +89,7 @@ The AFT and FWD (forward) positions enable manual movement aft of the CADC sched
 The emergency wing-sweep handle on the throttle quadrant is used to control the mechanical emergency
 mode, see emergency mode above.
 
-![wingsweep](../../img/wingsweep1.png)
+![wingsweep](../../img/wingsweep1.jpg)
 
 The wing-sweep indicator to the right of the ACM panel is used to indicate the current wing-sweep
 positions. The pointer on the left side shows the CADC scheduled wing position. The left tape shows

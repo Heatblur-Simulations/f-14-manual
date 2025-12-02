@@ -42,7 +42,7 @@ unpowered ground operation but can be used as a backup in the air.
 
 ## Controls and Indicators
 
-![hydraulic](../../img/hydraulic1.png)
+![hydraulic](../../img/hydraulic1.jpg)
 
 The HYD PRESS, hydraulic pressure indicator, contains two gauges indicating COMB, combined, and FLT,
 flight system hydraulic pressure in thousands of psi. The scales have markings for the nominal 3,000
@@ -52,13 +52,13 @@ Below the gauges are flags indicating hydraulic pressure availability to the spo
 operation of the EMER FLT, emergency flight hydraulic pump. The HI flag indicates on if the
 emergency flight hydraulic pump is operating in high and the LOW if it’s operating in low.
 
-![brakepressure](../../img/brakepressure1.png)
+![brakepressure](../../img/brakepressure1.jpg)
 
 The BRAKE PRESSURE gauge shows available pressure in the brake accumulators. PARK indicating parking
 brake pressure and the AUX indicating wheel brake pressure. The green area represents a pressure
 from about 2,150 psi to 3,000 psi and the red a pressure below that.
 
-![hydraulictransferpump](../../img/hydraulictransferpump1.png)
+![hydraulictransferpump](../../img/hydraulictransferpump1.jpg)
 
 The HYD TRANSFER PUMP, hydraulic transfer pump switch is located on its own panel on the pilot’s
 right side console. The switch allows for manual shut-off of the pump (SHUTOFF) but is normally in

@@ -4,7 +4,7 @@
 
 ## Approach Indexer
 
-![aoaindexer](../../img/aoaindexer.png) Contains three lights showing angle-of-attack (AOA) relative
+![aoaindexer](../../img/aoaindexer.jpg) Contains three lights showing angle-of-attack (AOA) relative
 to on-speed AOA.
 
 Green being too slow, amber being on-speed AOA, and red being too fast.
@@ -17,7 +17,7 @@ aircraft AOA during carrier landings.
 
 ## Wheels Warning/Brakes Warnings/ACLS/AP Caution/NWS Engage Caution/Auto Throttle Caution Lights
 
-![lefthudcaution](../../img/lefthudcaution.png) HUD left side indicators.
+![lefthudcaution](../../img/lefthudcaution.jpg) HUD left side indicators.
 
 | No. | Indicator  | Function                                                                                                                   |
 | --- | ---------- | -------------------------------------------------------------------------------------------------------------------------- |

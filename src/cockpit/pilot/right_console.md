@@ -4,7 +4,7 @@
 
 ## Spoiler Failure Override
 
-![spoiler](../../img/spoiler.png)
+![spoiler](../../img/spoiler.jpg)
 
 Contains controls to override failed spoiler sections, allowing the rest to continue to work after a
 MASTER RESET.
@@ -16,7 +16,7 @@ MASTER RESET.
 
 ## Liquid Oxygen Quantity Indicator
 
-![liquidoxygen](../../img/liquidoxygen.png)
+![liquidoxygen](../../img/liquidoxygen.jpg)
 
 Contains an indicator showing the remaining quantity of liquid oxygen available. Graduated in
 1-liter increments. Also has an OFF flag that is shown in case of power failure to the indicator.
@@ -24,7 +24,7 @@ The indicator is tested through the INST mode on the MASTER TEST panel and shoul
 
 ## Compass Control Panel
 
-![compasscontrol](../../img/compasscontrol.png)
+![compasscontrol](../../img/compasscontrol.jpg)
 
 The compass control panel contains controls for selecting compass mode when using AHRS.
 
@@ -38,7 +38,7 @@ The compass control panel contains controls for selecting compass mode when usin
 
 ## ARA-63 Control Panel
 
-![ara-63](../../img/ara-63.png)
+![ara-63](../../img/ara-63.jpg)
 
 Panel used to control the AN/ARA-63 ILS (ICLS).
 
@@ -51,7 +51,7 @@ Panel used to control the AN/ARA-63 ILS (ICLS).
 
 ## Caution - Advisory Indicator
 
-![caution](../../img/caution.png)
+![caution](../../img/caution.jpg)
 
 Main pilot caution panel.
 
@@ -103,7 +103,7 @@ Main pilot caution panel.
 
 ## Master Generator Control Panel
 
-![generator](../../img/generator.png)
+![generator](../../img/generator.jpg)
 
 Panel controlling left and right engine generator.
 
@@ -114,7 +114,7 @@ Panel controlling left and right engine generator.
 
 ## Master Light Control Panel
 
-![masterlight](../../img/masterlight.png)
+![masterlight](../../img/masterlight.jpg)
 
 Master light control panel, controlling most lights in/on the aircraft.
 
@@ -136,7 +136,7 @@ Master light control panel, controlling most lights in/on the aircraft.
 
 ## Air Conditioning Control Panel
 
-![aircondition](../../img/aircondition.png)
+![aircondition](../../img/aircondition.jpg)
 
 Panel controlling the environmental control system (ECS).
 
@@ -150,7 +150,7 @@ Panel controlling the environmental control system (ECS).
 
 ## Master Test Panel
 
-![mastertest](../../img/mastertest.png)
+![mastertest](../../img/mastertest.jpg)
 
 Panel controlling OBC and various onboard BITs in addition to the emergency flight hydraulic
 setting.
@@ -165,7 +165,7 @@ setting.
 
 ## External Environmental Control Panel
 
-![externalenvironment](../../img/externalenvironment.png)
+![externalenvironment](../../img/externalenvironment.jpg)
 
 Panel controlling windshield air and external anti-ice settings.
 
@@ -176,7 +176,7 @@ Panel controlling windshield air and external anti-ice settings.
 
 ## Hydraulic Transfer Pump Switch
 
-![hydraulictransferpump](../../img/hydraulictransferpump.png)
+![hydraulictransferpump](../../img/hydraulictransferpump.jpg)
 
 Panel containing the control for the hydraulic transfer pump which equalizes pressure between the
 combined and flight hydraulic systems in case of a failure in one of them.
@@ -190,7 +190,7 @@ operational system.
 
 ## HUD-Video Control Panel
 
-![hudvideocontrol](../../img/hudvideocontrol.png)
+![hudvideocontrol](../../img/hudvideocontrol.jpg)
 
 Control panel for the CTVS system which records the HUD when activated. Not implemented in DCS.
 
@@ -201,7 +201,7 @@ Control panel for the CTVS system which records the HUD when activated. Not impl
 
 ## Canopy Defog/Cabin Air Lever
 
-![canopydefog](../../img/canopydefog.png)
+![canopydefog](../../img/canopydefog.jpg)
 
 The canopy air diffuser lever controls the flow of cabin air. The normal position, CABIN AIR,
 directs 70% of the conditioned air through the cockpit air diffusers and 30% through the canopy air

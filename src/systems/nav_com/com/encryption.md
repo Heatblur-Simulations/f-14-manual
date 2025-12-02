@@ -11,7 +11,7 @@ normal UHF communications. The cipher mode is used when secure voice communicati
 radio sets must be ON to attain secure operation. The receiving station must be properly equipped to
 receive transmissions in the proper cipher mode.
 
-![ky-281](../../../img/ky-281.png)
+![ky-281](../../../img/ky-281.jpg)
 
 | Control/Indicator       | Function                                                                                                                                                                                                                                                                                                                                              |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -4,7 +4,7 @@
 
 ## Radar Warning Receiver Panel
 
-![rwr](../../img/rwr.png)
+![rwr](../../img/rwr.jpg)
 
 | No. | Control               | Function                                                                                                                                                                                                                        |
 | --- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -16,7 +16,7 @@
 
 ## Digital Data Indicator (DDI)
 
-![ddi](../../img/ddi.png)
+![ddi](../../img/ddi.jpg)
 
 Digital data indicator used to display commands received via the data link.
 
@@ -64,7 +64,7 @@ Digital data indicator used to display commands received via the data link.
 
 ## DECM Control Panel
 
-![decm](../../img/decm.png)
+![decm](../../img/decm.jpg)
 
 Control panel for the DECM jammer (AN/ALQ-126).
 
@@ -76,7 +76,7 @@ Control panel for the DECM jammer (AN/ALQ-126).
 
 ## Data Link Control Panel
 
-![datalink](../../img/datalink.png)
+![datalink](../../img/datalink.jpg)
 
 Control panel for the data link.
 
@@ -88,7 +88,7 @@ Control panel for the data link.
 
 ## Data Link Reply and Antenna Control Panel
 
-![datalinkantenna](../../img/datalinkantenna.png)
+![datalinkantenna](../../img/datalinkantenna.jpg)
 
 Panel used to control data link alignment, reply, and antenna.
 
@@ -101,7 +101,7 @@ Panel used to control data link alignment, reply, and antenna.
 
 ## AN/ALE-39 Control Panel
 
-![ale39](../../img/ale39.png)
+![ale39](../../img/ale39.jpg)
 
 | No. | Control/Indicator               | Function                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | --- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -113,7 +113,7 @@ Panel used to control data link alignment, reply, and antenna.
 
 ## AA1 Control Panel
 
-![aa1](../../img/aa1.png)
+![aa1](../../img/aa1.jpg)
 
 AN/APX-76 interrogator control panel.
 
@@ -127,7 +127,7 @@ AN/APX-76 interrogator control panel.
 
 ## AN/ALE-39 Programmer
 
-![ale39programmer](../../img/ale39programmer.png)
+![ale39programmer](../../img/ale39programmer.jpg)
 
 Programming panel used to program current countermeasure inventory into AN/ALE-39.
 
@@ -141,7 +141,7 @@ Programming panel used to program current countermeasure inventory into AN/ALE-3
 
 ## Interior Light Control Panel
 
-![light](../../img/light.png)
+![light](../../img/light.jpg)
 
 Panel controlling lights in the RIO cockpit.
 
@@ -154,7 +154,7 @@ Panel controlling lights in the RIO cockpit.
 
 ## Data/ADF Switch
 
-![data](../../img/data.png)
+![data](../../img/data.jpg)
 
 Switch controlling the display of data and ADF on the HSD and ECMD. BOTH enables the display of the
 ADF bug and navigation data block. DATA enables the display of only the navigation data block. OFF
@@ -162,7 +162,7 @@ disables the display of either.
 
 ## IFF Transponder Control Panel
 
-![transponder](../../img/transponder.png)
+![transponder](../../img/transponder.jpg)
 
 Control panel for the AN/APX-72 transponder.
 
@@ -181,7 +181,7 @@ Control panel for the AN/APX-72 transponder.
 
 ## IFF Antenna Control/Test Panel
 
-![riotest](../../img/riotest.png)
+![riotest](../../img/riotest.jpg)
 
 Panel containing controls for IFF antenna, tests, and ground cooling.
 
@@ -193,7 +193,7 @@ Panel containing controls for IFF antenna, tests, and ground cooling.
 
 ## Mid Compression Bypass Test Panel (F-14A only)
 
-![mcb](../../img/mcb.png)
+![mcb](../../img/mcb.jpg)
 
 Panel containing controls and indicators used to verify Mid Compression Bypass (MCB) circuit
 functionality.
@@ -205,7 +205,7 @@ functionality.
 
 ## Electrical Power System Test Panel
 
-![powersystest](../../img/powersystest.png)
+![powersystest](../../img/powersystest.jpg)
 
 Panel used by ground crew to test aircraft electrical systems.
 
@@ -213,7 +213,7 @@ Note: Non-functional in DCS.
 
 ## Canopy Defog/Cabin Air Lever
 
-![canopydefog](../../img/canopydefog1.png)
+![canopydefog](../../img/canopydefog1.jpg)
 
 The canopy air diffuser lever controls the flow of cabin air. The normal position, CABIN AIR,
 directs 70% of the conditioned air through the cockpit air diffusers and 30% through the canopy air
@@ -222,7 +222,7 @@ defog.
 
 ## Canopy Control Handle
 
-![canopyhandle](../../img/canopyhandle1.png)
+![canopyhandle](../../img/canopyhandle1.jpg)
 
 The canopy control handle controls canopy operation and is located on the right cockpit wall. The
 handle is mounted downwards beneath the box containing the handle mechanism and the handle position

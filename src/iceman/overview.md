@@ -2,7 +2,7 @@
 
 > 🚧 TODO: Rewrite to be correct for the current game version. Add a lot more information.
 
-![Pilot](./_images/pilot.png)
+![Pilot](./_images/pilot.jpg)
 
 **Iceman** is a basic autopilot AI and a subset of the Jester system. It is designed for
 singleplayer scenarios where a player may switch between the front and rear seats.

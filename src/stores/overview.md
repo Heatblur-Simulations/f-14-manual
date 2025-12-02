@@ -32,7 +32,7 @@ The following diagram gives an overview of all stores that can be loaded on the 
 > 💡 In practice, not all combinations might be possible, as there are a lot of technical factors
 > resulting in restrictions.
 
-![Station Overview](../img/F14.png)
+![Station Overview](../img/F14.jpg)
 
 | Weapon Station        | 1A  | 1B  | 2   | 3   | 4   | 5   | 6   | 7   | 8B  | 8A  | Total  |
 | --------------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ------ |

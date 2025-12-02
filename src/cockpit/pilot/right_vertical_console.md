@@ -4,7 +4,7 @@
 
 ## Arresting Hook Panel
 
-![Hook Panel](../../img//hook.png)
+![Hook Panel](../../img//hook.jpg)
 
 ### HOOK handle
 
@@ -28,7 +28,7 @@ with the knob on the right side.
 
 ## Displays Control Panel
 
-![Displays Panel](../../img//displays.png)
+![Displays Panel](../../img//displays.jpg)
 
 > **Note:** Image shows an F-14A with AN/ALR-45 having a third option on the HSD MODE and an ECM
 > ORIDE which are not present in aircraft with the AN/ALR-67.
@@ -107,7 +107,7 @@ allows override and OFF disables it. Only present in aircraft with AN/ALR-45.
 
 ## Elevation Lead Panel
 
-![Gun Elevation](../../img//gunelevation.png)
+![Gun Elevation](../../img//gunelevation.jpg)
 
 Used to set gun elevation lead in mils for the manual A/A and A/G gun modes. Limits are -263 and +87
 mils.

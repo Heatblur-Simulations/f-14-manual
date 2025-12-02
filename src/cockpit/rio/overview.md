@@ -2,7 +2,7 @@
 
 > 🚧 TODO: Add an intro. Split the large side panels into chunks like the F-4.
 
-![RIO Cockpit Layout](../../img/riocockpit.png)
+![RIO Cockpit Layout](../../img/riocockpit.jpg)
 
 | Section | Name                                                         |
 | :-----: | ------------------------------------------------------------ |

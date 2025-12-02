@@ -4,7 +4,7 @@
 
 ## Fuel Management Panel
 
-![Fuel Management](../../img/fuel.png)
+![Fuel Management](../../img/fuel.jpg)
 
 Control panel for various fuel-related systems, CADC master reset, and the anti-skid system.
 
@@ -57,7 +57,7 @@ Control panel for various fuel-related systems, CADC master reset, and the anti-
 
 ## Control Surface Position Indicator
 
-![Control Surface](../../img/control.png)
+![Control Surface](../../img/control.jpg)
 
 Indicator for indication of control surface positions.
 
@@ -69,14 +69,14 @@ Indicator for indication of control surface positions.
 
 ## Launch Bar Abort Panel
 
-![Launch Abort](../../img/launch-abort.png)
+![Launch Abort](../../img/launch-abort.jpg)
 
 LAUNCH BAR – Selection switch – When held in ABORT lifts the launch bar for launch abortion.
 Spring-loaded to NORM (Normal) which is the standard position. Not currently used in DCS.
 
 ## Landing Gear Control Panel
 
-![Gear Control](../../img/gear.png)
+![Gear Control](../../img/gear.jpg)
 
 Control panel for the main landing gear and emergency stores jettison.
 
@@ -98,23 +98,23 @@ as follows:
 
 > 🚧 TODO: Make the images not weird.
 
-| ![Power off](../../img/off.png){ width=100 height=100 }             | Power off or maneuver slats extended. |
+| ![Power off](../../img/off.jpg){ width=100 height=100 }             | Power off or maneuver slats extended. |
 | ------------------------------------------------------------------- | ------------------------------------- |
-| ![Slats extended](../../img/slats-ext.png){ width=100 height=100 }  | Slats extended.                       |
-| ![Slats retracted](../../img/slats-ret.png){ width=100 height=100 } | Slats retracted.                      |
+| ![Slats extended](../../img/slats-ext.jpg){ width=100 height=100 }  | Slats extended.                       |
+| ![Slats retracted](../../img/slats-ret.jpg){ width=100 height=100 } | Slats retracted.                      |
 
 Flap Position is displayed by an indicator moving between UP and DOWN. The first marked section of
 the indicator indicates maneuver flap-range. The landing gear is indicated as follows:
 
-| ![Power off or unsafe gear](../../img/off.png){ width=100 height=100 }            | Power off or unsafe gear.        |
+| ![Power off or unsafe gear](../../img/off.jpg){ width=100 height=100 }            | Power off or unsafe gear.        |
 | --------------------------------------------------------------------------------- | -------------------------------- |
-| ![Gear down](../../img/gear-down.png){ width=100 height=100 }                     | Gear down.                       |
-| ![Gear retracted and doors closed](../../img/gear-up.png){ width=100 height=100 } | Gear retracted and doors closed. |
+| ![Gear down](../../img/gear-down.jpg){ width=100 height=100 }                     | Gear down.                       |
+| ![Gear retracted and doors closed](../../img/gear-up.jpg){ width=100 height=100 } | Gear retracted and doors closed. |
 
 Speed brakes are indicated as follows:
 
-| ![Brake off](../../img/off.png){ width=100 height=100 }               | Speed brake system power off.                 |
+| ![Brake off](../../img/off.jpg){ width=100 height=100 }               | Speed brake system power off.                 |
 | --------------------------------------------------------------------- | --------------------------------------------- |
-| ![Brake partial](../../img/brake-partial.png){ width=100 height=100 } | Speed brake partial extension, not in motion. |
-| ![Brake out](../../img/brake-out.png){ width=100 height=100 }         | Speed brake fully extended.                   |
-| ![Brake in](../../img/brake-in.png){ width=100 height=100 }           | Speed brake retracted.                        |
+| ![Brake partial](../../img/brake-partial.jpg){ width=100 height=100 } | Speed brake partial extension, not in motion. |
+| ![Brake out](../../img/brake-out.jpg){ width=100 height=100 }         | Speed brake fully extended.                   |
+| ![Brake in](../../img/brake-in.jpg){ width=100 height=100 }           | Speed brake retracted.                        |

@@ -4,7 +4,7 @@
 
 ## Heads-Up Display
 
-![hud](../../img/hud.png) Projects flight and weapons data onto the forward section of the
+![hud](../../img/hud.jpg) Projects flight and weapons data onto the forward section of the
 canopy/windscreen. Night mode can be selected using the control on the right side of the VDI.
 
 Has two engine stall warning lights (L STALL & R STALL) mounted on the left and right sides,
@@ -15,14 +15,14 @@ Employment Overview.
 
 ## Cockpit Television Sensor (CTVS)
 
-![ctvs](../../img/ctvs.png) The cockpit television sensor (CTVS) records the HUD for registration of
+![ctvs](../../img/ctvs.jpg) The cockpit television sensor (CTVS) records the HUD for registration of
 weapons delivery.
 
 > **Note:** Not implemented in DCS.
 
 ## Air Combat Maneuver Panel
 
-![acm](../../img/acm.png) Main pilot armament control panel.
+![acm](../../img/acm.jpg) Main pilot armament control panel.
 
 | No. | Control/Indicator               | Function                                                                                                                                                                                                                                                                                                 |
 | --- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -43,7 +43,7 @@ weapons delivery.
 
 ## Vertical Display Indicator (VDI)
 
-![vdi](../../img/vdi.png) Display that complements the HUD in displaying flight and weapons data.
+![vdi](../../img/vdi.jpg) Display that complements the HUD in displaying flight and weapons data.
 
 | No. | Control/Indicator  | Function                                                 |
 | --- | ------------------ | -------------------------------------------------------- |
@@ -55,7 +55,7 @@ weapons delivery.
 | 6   | VDI TRIM control   | Allows adjustment/trim of pitch lines on VDI.            |
 | 7   | VDI caution lights | VDI-mounted caution lights. See images and tables below. |
 
-![vdicaution](../../img/vdicaution.png) Data link warning and caution lights situated at the VDI
+![vdicaution](../../img/vdicaution.jpg) Data link warning and caution lights situated at the VDI
 panel.
 
 | No. | Indicator    | Function                                                                                                                                                                                   |
@@ -76,7 +76,7 @@ panel.
 
 ## Horizontal Situation Display Indicator (HSD)
 
-![HSD](../../img/HSD.png) The horizontal situation display is used to display navigational
+![HSD](../../img/HSD.jpg) The horizontal situation display is used to display navigational
 information to the pilot. It can also be used to repeat the RIO’s TID to the pilot.
 
 | No. | Control/Indicator | Function                                                                                                                                    |
@@ -92,12 +92,12 @@ Tactical Information Display (TID) and Associated Controls.
 
 ## Cabin Pressure Altimeter
 
-![cabinpressure](../../img/cabinpressure.png) Displays cabin pressure in 1,000-foot increments from
+![cabinpressure](../../img/cabinpressure.jpg) Displays cabin pressure in 1,000-foot increments from
 0 to 50,000 feet.
 
 ## Emergency Brake Pressure Indicator
 
-![brakepressure](../../img/brakepressure.png) Displays hydraulic pressure available from the
+![brakepressure](../../img/brakepressure.jpg) Displays hydraulic pressure available from the
 emergency brake accumulators to the auxiliary and parking wheel brake systems.
 
 | No. | Indicator | Function                                                                                                                                                                                                                                                         |
@@ -107,7 +107,7 @@ emergency brake accumulators to the auxiliary and parking wheel brake systems.
 
 ## Control Stick
 
-![stick](../../img/stick.png) Used to control aircraft roll and pitch. Also various other functions
+![stick](../../img/stick.jpg) Used to control aircraft roll and pitch. Also various other functions
 according to table below.
 
 | No. | Control                                               | Function                                                                                                                                                                                                                                                                                                                                                                             |

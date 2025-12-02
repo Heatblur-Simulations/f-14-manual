@@ -54,7 +54,7 @@ redundancy.
 
 ## Throttle Controls
 
-![throttles](../../img/throttles-schem1.png)
+![throttles](../../img/throttles-schem1.jpg)
 
 The throttles in the F-14 have detents preventing unintentional engine start and shutdown and
 unintentional selection of afterburner. In addition the throttles also controls several different
@@ -97,7 +97,7 @@ afterburner thrust until the other afterburner also lights.
 
 ## Engine and Throttle Control Switches and Indicators
 
-![inlet](../../img/inlet1.png)
+![inlet](../../img/inlet1.jpg)
 
 The inlet ramps/throttle control panel contains most other engine related controls.
 
@@ -120,7 +120,7 @@ manually set to off to prevent damage to the air turbine starter.
 The BACK UP IGNITION (5) switch enables the backup ignition system in case of a failure in the main
 ignition circuits that are normally enabled by moving the throttles out of the cut-off position.
 
-![asym](../../img/asym1.png)
+![asym](../../img/asym1.jpg)
 
 > **Note:** F-14B only.
 
@@ -131,7 +131,7 @@ that position.
 The other switches on that same panel are the ENG (engine) MODE SELECT switches (2), setting the
 left (L ENG) and right (R ENG) to PRI, primary or SEC, secondary modes respectively.
 
-![mcb](../../img/mcb1.png)
+![mcb](../../img/mcb1.jpg)
 
 > **Note:** F-14A only.
 
@@ -140,7 +140,7 @@ system functions. The TEST switch (2) set to the TEST position activates the tes
 lights the two test lights (1) for the left and right engine respectively if their MCB circuits
 function.
 
-![externalenvironment](../../img/externalenvironment1.png)
+![externalenvironment](../../img/externalenvironment1.jpg)
 
 The ENG/PROBE ANTI-ICE switch on the external environmental control panel enables the engine
 anti-ice and intake ramp anti-ice mode in addition to the various probe heaters. The ORIDE position
@@ -149,7 +149,7 @@ disable it.
 
 ## Engine Instrument Group (EIG), Related Indicators and Caution Lights
 
-![instrument-group](../../img/instrument-group1.png)
+![instrument-group](../../img/instrument-group1.jpg)
 
 The ENGINE INSTRUMENT GROUP displays engine RPM, TIT (Turbine Inlet Temperature, F-14A) or EGT
 (Exhaust Gas Temperature, F14B) and FF (fuel flow) to the pilot to allow for engine monitoring.
@@ -158,7 +158,7 @@ The ENGINE INSTRUMENT GROUP displays engine RPM, TIT (Turbine Inlet Temperature,
 
 > **Note:** Pictured above are the TF30 engine indicators.
 
-![exhaust](../../img/exhaust1.png)
+![exhaust](../../img/exhaust1.jpg)
 
 The exhaust nozzle position indicators display respective engine’s current engine exhaust nozzle
 position, with zero being fully closed and full clockwise rotation being fully open. The F-14A
@@ -166,7 +166,7 @@ indicates 0 to 6 units while the F-14B indicates 0 to 100 percent open (tens ind
 
 > **Note**: F-14B's Nozzle Percentage gauge is coming soon.
 
-![oil](../../img/oil1.png)
+![oil](../../img/oil1.jpg)
 
 The oil pressure indicators display respective engine oil pressure allowing the pilot to check that
 engine oil pressure is at acceptable levels.

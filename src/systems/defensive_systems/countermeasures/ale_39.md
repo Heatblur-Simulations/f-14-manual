@@ -31,7 +31,7 @@ can also initiate the chaff ejection program if set up correctly on the AN/ALE-3
 
 ### Programmer
 
-![Programmer](../../../../img/programmer.png)
+![Programmer](../../../../img/programmer.jpg)
 
 > 🚧 TODO: Rewrite this to look better!
 
@@ -99,7 +99,7 @@ cartridges into the launchers. Needs to be held to reset for at least 5 seconds 
 
 ### Control Panel
 
-![Controller](../../../img/controller.png)
+![Controller](../../../img/controller.jpg)
 
 The control panel is used to control system power, to set up automatic ejections and to manually
 eject cartridges and is also located on the RIO right horizontal console.
@@ -138,7 +138,7 @@ interval. Normally springloaded to the OFF position. Can’t be stopped once ini
 
 ### RIO Hand Hold Switches
 
-![CM Hats](../../../img/cmhats1.png)
+![CM Hats](../../../img/cmhats1.jpg)
 
 Two four-way direction hats are mounted on the RIO hand hold above the DDD to enable quick access to
 countermeasure ejection. The two switches are mirrored and UP commands ejection of a single chaff

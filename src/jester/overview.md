@@ -2,7 +2,7 @@
 
 > 🚧 TODO: Rewrite to be correct for the current game version. Add a lot more information.
 
-![Jester](./_images/jester.png)
+![Jester](./_images/jester.jpg)
 
 The **Jester AI** aims to be a functional AI Radar Intercept Officer (RIO) for the Heatblur DCS
 F-14, enabling a multicrew experience in a single-player (per aircraft) environment.
@@ -24,7 +24,7 @@ systems in the configuration left by the human player.
 
 ## Functionality
 
-![Menu](./_images/menu.png)
+![Menu](./_images/menu.jpg)
 
 The **Jester menu** is opened by default with the `A` key. Selection of items (1–8) is done using
 `CTRL + 1` through `CTRL + 8`. These controls can be remapped under the **Jester** category in the

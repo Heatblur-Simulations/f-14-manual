@@ -4,7 +4,7 @@
 
 <!-- ## HUD Symbology for Air-to-Air Missiles
 
-![a2ahud](../../img/a2ahud.png)
+![a2ahud](../../img/a2ahud.jpg)
 
 The above image shows the HUD with Phoenixes selected while in air-to-air display mode.
 

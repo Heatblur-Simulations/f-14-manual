@@ -4,7 +4,7 @@
 
 ## Armament Panel
 
-![armamentpanel](../../img/armamentpanel.png)
+![armamentpanel](../../img/armamentpanel.jpg)
 
 Main armament control panel in the RIO cockpit.
 

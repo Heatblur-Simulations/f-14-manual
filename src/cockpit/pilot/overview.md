@@ -6,7 +6,7 @@
 
 ## Layout
 
-![pilot_cockpit](../../img/pilotcockpit.png)
+![pilot_cockpit](../../img/pilotcockpit.jpg)
 
 | Section | Name                                                |
 | :-----: | --------------------------------------------------- |

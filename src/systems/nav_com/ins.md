@@ -173,7 +173,7 @@ In addition, if handset alignment is used on the carrier, the following values m
 > discrete is sent to the CSDC, the STBY or READY light blinks, and the time into alignment clock on
 > the TID stops.
 
-![Alignment Display](images/align.png)
+![Alignment Display](images/align.jpg)
 
 ## Non-SAT Alignments
 

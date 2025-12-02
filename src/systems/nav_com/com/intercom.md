@@ -21,7 +21,7 @@ HOT MIC, ground personnel can communicate with the cockpit stations. In DCS, thi
 selecting the ground crew communication menu in the DCS radio communication menu when activating ICS
 PTT.
 
-| ![throttle1](../../../img/throttle1.png) | ![ics2](../../../img/ics2.png) |
+| ![throttle1](../../../img/throttle1.jpg) | ![ics2](../../../img/ics2.jpg) |
 | ---------------------------------------- | ------------------------------ |
 
 > 🚧 TODO: Table converted below to comply with linter. Double check if its correct!

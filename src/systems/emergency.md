@@ -20,7 +20,7 @@ Indicator) if temperatures above 575 °F (about 302 °C) are detected.
 
 | Left                       | Right                        |
 | -------------------------- | ---------------------------- |
-| ![left1](../img/left1.png) | ![right1](../img/right1.png) |
+| ![left1](../img/left1.jpg) | ![right1](../img/right1.jpg) |
 
 The fire suppression system in the F-14 contains two bottles filled with a fire suppression agent
 capable of being discharged into one engine selected by the pilot. Though the system contains two

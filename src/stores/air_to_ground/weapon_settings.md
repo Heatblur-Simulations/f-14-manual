@@ -2,7 +2,7 @@
 
 > 🚧 TODO: Rewrite this page to include more imagery and for accuracy.
 
-![Armament Panel](images/armamentpanel1.png) The air-to-ground weapon delivery is set up by the RIO
+![Armament Panel](images/armamentpanel1.jpg) The air-to-ground weapon delivery is set up by the RIO
 on his armament panel on the left vertical panel of the RIO cockpit.
 
 The type of munition for delivery is set up by the wheel on the top of the panel, turning it to the

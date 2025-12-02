@@ -2,7 +2,7 @@
 
 > 🚧 TODO: Convert tables into text chunks like the F-4
 
-![canopyhandle](../../img/canopyhandle.png)
+![canopyhandle](../../img/canopyhandle.jpg)
 
 The canopy control handle controls canopy operation and is located on the right cockpit wall. The
 handle is mounted downwards beneath the box containing the handle mechanism and the handle position

@@ -74,7 +74,7 @@ being used. This increases the effective range of the AIM-54 seeker slightly.
 
 ### Active-Radar Homing (ARH)
 
-![Active-Radar Homing](../../img/msloptionph.png) The AIM-54 can also be commanded to go active
+![Active-Radar Homing](../../img/msloptionph.jpg) The AIM-54 can also be commanded to go active
 directly after launch in both TWS and pulse doppler STT modes by setting the MSL OPTIONS switch to
 PH ACT before launch. This tells the WCS to immediately command the AIM-54 to go active in the first
 guidance command after launch. If launched at a target within 6 NM in the target's rear hemisphere
@@ -145,7 +145,7 @@ also displayed on the VDI, DDD, and TID.
 
 For more info regarding the applicable TID symbology, see TID Symbology.
 
-![TWS](../../img/TWS.png) It is possible to force the WCS to include a target by setting it to
+![TWS](../../img/TWS.jpg) It is possible to force the WCS to include a target by setting it to
 mandatory attack using the CAP and also to exclude a target by setting it to do not attack on the
 same panel. In addition, it is possible to command the WCS to set a track as priority 1 in the
 firing order by hooking it and pressing NEXT LAUNCH on the RIO armament panel.

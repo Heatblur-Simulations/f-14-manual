@@ -2,7 +2,7 @@
 
 > 🚧 TODO: Rework to add more (or redo) imagery. Also fix the notes to use the new F-4 system.
 
-![tanks](../../img/tanks.png)
+![tanks](../../img/tanks.jpg)
 
 _Refueling Probe, 2. Ground refueling Port (Right Side), 3. Forward Fuselage Tank, 4. Left External
 Drop Tank, 5. Left Box Beam Tank, 6. Left Wing Tank, 7. Vent Tank, 8. Fuel Dump Mast, 9. Aft
@@ -26,7 +26,7 @@ The total useable fuel quantity is roughly 20,000 pounds distributed as in the t
 
 ## Fuel Quantity Indicators and Controls
 
-![fuelquantity](../../img/fuelquantity1.png)
+![fuelquantity](../../img/fuelquantity1.jpg)
 
 The fuel quantity indicator on the pilot right knee panel displays internal and external fuel
 carried.
@@ -49,7 +49,7 @@ The FUS & FEED tapes (fuselage and feed) shows the AFT & L (aft fuselage and lef
 Additionally the RIO has a total fuel quantity display on the right instrument panel. This display
 counter can only show total fuel quantity. (See Fuel Quantity Totalizer.)
 
-![fuel](../../img/fuel2.png)
+![fuel](../../img/fuel2.jpg)
 
 The fuel management panel on the pilot’s left vertical console contains the applicable controls for
 the fuel system.

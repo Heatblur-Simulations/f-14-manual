@@ -26,7 +26,7 @@ The available attack modes in the F-14 are set by the **ATTK MODE** selector in 
 
 ## Computer Target
 
-![Computer Target](images/cmptrtgt.png) The computer target mode allows the pilot to designate a
+![Computer Target](images/cmptrtgt.jpg) The computer target mode allows the pilot to designate a
 target onto which the WCS then guides the pilot towards store release. This mode is usable for all
 air-to-ground stores, including rockets.
 
@@ -82,7 +82,7 @@ All other functions of this mode are identical to the Computer Target mode.
 
 ## Computer Pilot
 
-![Computer Pilot](images/cmptrpilot.png) The computer pilot mode uses the WCS to continually
+![Computer Pilot](images/cmptrpilot.jpg) The computer pilot mode uses the WCS to continually
 calculate and display an impact point for the configured store on the HUD.
 
 When selected, the HUD displays the current store impact point in real-time using the pipper
@@ -99,7 +99,7 @@ store is within range and then use the control stick trigger to fire the rockets
 
 ## Manual
 
-![Manual](images/man.png) The manual air-to-ground mode is used as a backup when the other modes are
+![Manual](images/man.jpg) The manual air-to-ground mode is used as a backup when the other modes are
 unavailable.
 
 By principle, it works the same as the Computer Pilot mode in that the pilot should fly the pipper

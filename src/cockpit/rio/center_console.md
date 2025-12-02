@@ -4,7 +4,7 @@
 
 ## Tactical Information Display (TID)
 
-![tid](../../img/tid.png)
+![tid](../../img/tid.jpg)
 
 Tactical information display and corresponding and navigational controls.
 
@@ -25,7 +25,7 @@ Tactical information display and corresponding and navigational controls.
 
 ## Hand Control Unit (HCU)
 
-![hcu](../../img/hcu.png)
+![hcu](../../img/hcu.jpg)
 
 Main radar and TCS control stick.
 

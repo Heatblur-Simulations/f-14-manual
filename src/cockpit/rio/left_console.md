@@ -4,13 +4,13 @@
 
 ## G-Valve Button
 
-![g-valve](../../img/g-valve1.png)
+![g-valve](../../img/g-valve1.jpg)
 
 Pressed to test inflation of g-suit.
 
 ## Oxygen-Vent Airflow Control Panel
 
-![oxygen-vent](../../img/oxygen-vent1.png)
+![oxygen-vent](../../img/oxygen-vent1.jpg)
 
 Controls ventilation airflow to pressure suit or seat cushions and oxygen to RIO mask.
 
@@ -21,14 +21,14 @@ Controls ventilation airflow to pressure suit or seat cushions and oxygen to RIO
 
 ## Data Stowage Compartment
 
-![datastowage](../../img/datastowage.png)
+![datastowage](../../img/datastowage.jpg)
 
 The data stowage panel is a small compartment for equipment storage and mission briefing materials
 etc.
 
 ## TACAN Control Panel
 
-![tacan](../../img/tacan1.png)
+![tacan](../../img/tacan1.jpg)
 
 TACAN control panel letting the RIO control TACAN if in command of it.
 
@@ -43,7 +43,7 @@ TACAN control panel letting the RIO control TACAN if in command of it.
 
 ## Communication/TACAN Command Panel
 
-![comtac](../../img/comtac.png)
+![comtac](../../img/comtac.jpg)
 
 Panel controlling ICS radio settings and crewmember in control of TACAN.
 
@@ -57,7 +57,7 @@ Panel controlling ICS radio settings and crewmember in control of TACAN.
 
 ## V/UHF 2 (AN/ARC-182) Radio
 
-![arc-182](../../img/arc-182.png)
+![arc-182](../../img/arc-182.jpg)
 
 V/UHF radio 2. Radio and controls.
 
@@ -75,7 +75,7 @@ V/UHF radio 2. Radio and controls.
 
 ## KY-28 Control Panel
 
-![ky-28](../../img/ky-28.png)
+![ky-28](../../img/ky-28.jpg)
 
 | No. | Control             | Function                                        |
 | --- | ------------------- | ----------------------------------------------- |
@@ -85,7 +85,7 @@ V/UHF radio 2. Radio and controls.
 
 ## Radar Beacon Control Panel
 
-![beacon](../../img/beacon.png)
+![beacon](../../img/beacon.jpg)
 
 Panel controlling AN/APN-154 radar beacon.
 
@@ -97,7 +97,7 @@ Panel controlling AN/APN-154 radar beacon.
 
 ## Liquid Cooling Control Panel
 
-![liquidcooling](../../img/liquidcooling.png)
+![liquidcooling](../../img/liquidcooling.jpg)
 
 LIQ COOLING switch controlling the liquid cooling system for the AWG-9 and AIM-54. The AWG-9 circuit
 can be enabled independently of the AIM-54. This switch needs to be enabled for the respective
@@ -105,7 +105,7 @@ system before AWG-9 operation or AIM-54 missile preparation.
 
 ## ICS Control Panel
 
-![ics](../../img/ics1.png) Control panel for ICS.
+![ics](../../img/ics1.jpg) Control panel for ICS.
 
 | No. | Control                  | Function                                                                                                                                                                                                           |
 | --- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -115,7 +115,7 @@ system before AWG-9 operation or AIM-54 missile preparation.
 
 ## Eject Command Lever
 
-![ejectcommand](../../img/ejectcommand.png)
+![ejectcommand](../../img/ejectcommand.jpg)
 
 A pilot initiated ejection will always eject both crew members. The EJECT CMD lever controls what
 happens when the RIO ejects: In PILOT mode (lever forward), only the RIO will be ejected. In MCO
@@ -123,7 +123,7 @@ mode, both pilot and RIO initiated ejection will eject both crew members.
 
 ## Sensor Control Panel
 
-![radarircontrol](../../img/radarircontrol.png)
+![radarircontrol](../../img/radarircontrol.jpg)
 
 Control panel for AWG-9 scan settings, the TCS, and the airborne video tape recorder.
 
@@ -146,7 +146,7 @@ Control panel for AWG-9 scan settings, the TCS, and the airborne video tape reco
 
 ## Computer Address Panel
 
-![cap](../../img/cap.png)
+![cap](../../img/cap.jpg)
 
 The CAP is used to enter data into the WCS. The MESSAGE indicator drum and buttons work similarly to
 the buttons on MFDs on newer aircraft.

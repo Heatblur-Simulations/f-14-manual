@@ -28,7 +28,7 @@ to a ±10 NM display to enable display of multiple returns in case of closely gr
 
 ### AA1 Control Panel
 
-![aa1](../../img/aa1.png) AN/APX-76 interrogator control panel.
+![aa1](../../img/aa1.jpg) AN/APX-76 interrogator control panel.
 
 > 🚧 TODO: Table converted below to comply with linter. Double check if its correct!
 

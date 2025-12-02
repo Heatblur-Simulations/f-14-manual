@@ -14,7 +14,7 @@ which will be in effect until the pilot releases the PLM button.
 
 ## Pilot Lockon Mode (PLM)
 
-![PLM](../../img/plm.png)
+![PLM](../../img/plm.jpg)
 
 The PLM is the ACM mode with the highest priority, it always overrides any other radar mode and is
 enabled when the pilot presses the PLM button on the front of the right throttle. Depression of that
@@ -28,7 +28,7 @@ pulse search instead.
 
 ## Vertical Scan Lockon (VSL)
 
-![VSL](../../img/vsl.png)
+![VSL](../../img/vsl.jpg)
 
 The VSL mode is enabled by the pilot or the RIO and is used to acquire a target at own aircraft's
 current heading from an elevation of -15° to +55°. The RIO can use the VSL switch on the sensor
@@ -53,7 +53,7 @@ PAL commands the antenna to an 8-bar ±20° scan pattern locking onto the first 
 
 ## Manual Rapid Lockon (MRL)
 
-![MRL](../../img/mrl.png)
+![MRL](../../img/mrl.jpg)
 
 The manual rapid lockon (MRL) mode allows the RIO to quickly acquire a target within the antenna
 limits out to 5 NM. When the MRL button on the right side of the HCU stick is depressed it commands

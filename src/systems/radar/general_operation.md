@@ -32,7 +32,7 @@ The radar has two pulse modes, pulse search and pulse single target track (P-STT
 
 ### Pulse Search (PULSE SRCH)
 
-![Pulse Search](../../img/PSEARCH.png)
+![Pulse Search](../../img/PSEARCH.jpg)
 
 Pulse search is used to search for and find airborne targets at range.
 
@@ -52,7 +52,7 @@ sensor control panel.
 
 ### Pulse Single Target Track (P-STT)
 
-![Pulse STT](../../img/PSTT.png)
+![Pulse STT](../../img/PSTT.jpg)
 
 Pulse STT is used to track a single target, like pulse search mode it is not susceptible to notching
 but it is to ground clutter. The fact that the STT modes use gates to track the target, in this case
@@ -92,7 +92,7 @@ FM-ranging to enable range indication of tracked targets.
 
 ### Pulse Doppler Search Modes
 
-![Pulse Doppler Search](../../img/PDSEARCH.png)
+![Pulse Doppler Search](../../img/PDSEARCH.jpg)
 
 The DDD in the pulse doppler search modes displays returns at azimuth versus rate (closing speed)
 meaning that by reading only the DDD the RIO can only discern target closing speed and azimuth. The
@@ -141,7 +141,7 @@ airspeed from a target at 45° will be less than a target at 0° as own speed ve
 away from it slightly. This is the reason for the mainlobe clutter trace presenting a curve on the
 DDD as the observed speed of the returning ground returns will vary with azimuth.
 
-![PD](../../img/pd.png)
+![PD](../../img/pd.jpg)
 
 Target groundspeed 900 knots, own airspeed 1200 knots. See table below for details, line of sight
 rate is the sum of target and own aircraft relative rate.
@@ -210,7 +210,7 @@ For additional information about TWS symbology and missile guidance see TWS and 
 
 ### Pulse Doppler Single Target Track (PD-STT)
 
-![Pulse Doppler STT](../../img/PDSTT.png)
+![Pulse Doppler STT](../../img/PDSTT.jpg)
 
 The pulse doppler STT works and looks much like the pulse STT mode. It does however have the same
 advantages and disadvantages compared to pulse STT as the other pulse doppler modes compared to the

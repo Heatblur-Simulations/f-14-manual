@@ -37,7 +37,7 @@ slight aft tilt.
 
 ## Pilot Volume/TACAN Command Panel
 
-![volume1](../../../img/volume1.png)
+![volume1](../../../img/volume1.jpg)
 
 The Volume/TACAN command panel on the pilot left side console has three volume controls for
 regulating audio signals from the ALR-67, Sidewinder (SW), and V/UHF 2.
@@ -67,7 +67,7 @@ transmitting.
 
 > **Note:** The Heatblur F-14 version uses the KY-28 only.
 
-![comtac1](../../../img/comtac1.png)
+![comtac1](../../../img/comtac1.jpg)
 
 | Control/Indicator                      | Function                                                                                                                                                                 |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -93,7 +93,7 @@ transmitting.
 Both the pilot and RIO have remote displays for the currently set channel or frequency of the
 radios. The pilot has remote displays for both UHF 1 and V/UHF 2 and the RIO only for UHF 1.
 
-| ![frontremote1](../../../img/frontremote1.png) | ![backremote1](../../../img/backremote1.png) |
+| ![frontremote1](../../../img/frontremote1.jpg) | ![backremote1](../../../img/backremote1.jpg) |
 | ---------------------------------------------- | -------------------------------------------- |
 
 | Control/Indicator                                      | Function                                                                                                                                                                                     |

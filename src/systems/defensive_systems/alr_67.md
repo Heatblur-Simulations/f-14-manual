@@ -23,7 +23,7 @@ using two displays, one at each seat and by audio signals played to the ICS of b
 
 ## Controls
 
-![Control Panel](../../img/control1.png)
+![Control Panel](../../img/control1.jpg)
 
 The AN/ALR-67 RWR is controlled by a control panel on the RIO right side horizontal panel.
 
@@ -64,7 +64,7 @@ prioritization as in normal but also displays known friendly emitters.
 
 ## Displays
 
-![Display](../../img/display.png)
+![Display](../../img/display.jpg)
 
 The RWR display is identical at both positions in the cockpit and uses three bands (circles) on the
 display to indicate the threat level of the displayed threat symbols.
@@ -120,7 +120,7 @@ display to indicate the threat level of the displayed threat symbols.
 
 | Pilot                                        | RIO                                      |
 | -------------------------------------------- | ---------------------------------------- |
-| ![Pilot Caution](../../img/pilotcaution.png) | ![RIO Caution](../../img/riocaution.png) |
+| ![Pilot Caution](../../img/pilotcaution.jpg) | ![RIO Caution](../../img/riocaution.jpg) |
 
 The two crewmembers have warning lights dedicated to specific threats on their front cockpit panels.
 The pilot warning lights are situated on the right side of the HUD and the RIO warning lights on the

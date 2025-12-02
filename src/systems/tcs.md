@@ -2,7 +2,7 @@
 
 > 🚧 TODO: Rework to add more imagery.
 
-![TCS](../img/tcs.png) _U.S. Navy photo by Photographer’s Mate Airman Justin S. Osborne.
+![TCS](../img/tcs.jpg) _U.S. Navy photo by Photographer’s Mate Airman Justin S. Osborne.
 (030418-N-0382O-591)_
 
 The television camera set, or TCS, was constructed as a replacement for the IRST which was present
@@ -28,7 +28,7 @@ HCU/TID. The pilot display control panel contains a switch allowing display of T
 
 ### Sensor Control Panel
 
-![Sensor Control Panel](../img/scp.png)
+![Sensor Control Panel](../img/scp.jpg)
 
 The controls on the sensor control panel for the TCS are; the TCS trim knobs, the SLAVE switch, the
 field of view, FOV, switch and the acquire, ACQ, switch.
@@ -69,7 +69,7 @@ field of view is used by the TCS.
 
 ### DDD
 
-![DDD](../img/tcsddd.png)
+![DDD](../img/tcsddd.jpg)
 
 The DDD contains two indicators pertaining to the TCS.
 
@@ -81,7 +81,7 @@ which the TCS replaced.
 
 ### HCU/TID
 
-![HCU/TID](../img/hcu2.png)
+![HCU/TID](../img/hcu2.jpg)
 
 The HCU contains the power switch and indicator for the TCS as well as a button enabling selection
 for using the HCU to control the TCS while the TID itself has a control knob enabling display of the
@@ -107,7 +107,7 @@ TCS video shown on the TID.
 
 ## Symbology
 
-![Symbology](../img/symbology.png)
+![Symbology](../img/symbology.jpg)
 
 On the TID in non TV mode a TCS track is indicated by a 1.5” strobe at TCS LOS azimuth with a hollow
 circle at the end.

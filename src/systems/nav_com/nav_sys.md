@@ -566,13 +566,13 @@ Employment overview.
 - In the destination steering submode, the destination selected by the RIO and the NAV MODE in use
   will be alternately displayed on the bottom center of the HSD.
 
-![cruiseman](images/cruiseman.png)_ECMD showing the navigational display for Cruise with Manual
+![cruiseman](images/cruiseman.jpg)_ECMD showing the navigational display for Cruise with Manual
 steering selected._
 
-![cruisetac](images/cruisetac.png)_VDI and HSD showing navigational displays for Cruise with TACAN
+![cruisetac](images/cruisetac.jpg)_VDI and HSD showing navigational displays for Cruise with TACAN
 steering selected._
 
-![cruisedest](images/cruisedest.png)_HSD showing navigational display for Cruise with Waypoint 1 set
+![cruisedest](images/cruisedest.jpg)_HSD showing navigational display for Cruise with Waypoint 1 set
 as Destination._
 
 ### Landing Steering Modes
@@ -613,11 +613,11 @@ combination during the final stages of landing is ILS on the HUD and ACL on the 
 data available, the AFCS may be engaged by selecting ACL on the VEC/PCD, OFF, and ACL switch located
 on the AFCS control panel.
 
-![landingtac](images/landingtac.png)_HUD showing Landing mode display with TACAN set as destination
+![landingtac](images/landingtac.jpg)_HUD showing Landing mode display with TACAN set as destination
 source._
 
-![landingaclhud](images/landingaclhud.png)_HUD showing Landing mode with AWL/PCD set as Destination
+![landingaclhud](images/landingaclhud.jpg)_HUD showing Landing mode with AWL/PCD set as Destination
 source, ACL set as source of glideslope and localiser._
 
-![landingaclvdi](images/landingaclvdi.png)_VDI showing Landing mode with AWL/PCD set as Destination
+![landingaclvdi](images/landingaclvdi.jpg)_VDI showing Landing mode with AWL/PCD set as Destination
 source, ILS (ICLS) set as source of glideslope and localiser._

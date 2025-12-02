@@ -12,7 +12,7 @@ by the DECM logic as to when it’s on or off and thus work the same.
 
 ## DECM Controls and Indicators
 
-![Control Panel](../../img/control2.png)
+![Control Panel](../../img/control2.jpg)
 
 The controls for the DECM are all located on the right horizontal panel in the RIO pit, panel as
 image above. In addition there are two indication lights co-located with the RWR threat indicators
