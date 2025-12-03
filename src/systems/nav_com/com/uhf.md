@@ -1,19 +1,19 @@
 # AN/ARC-159 (UHF 1) Radio
 
-> 🚧 TODO: Rework images. Rework table.
+The UHF 1 (ARC-159) radio provides air-to-air and air-to-surface voice
+communications. Radio frequency range extends from 225.000 to 399.975 MHz. The
+equipment allows AM mode transmission and reception on any of the 20 preset
+channels and a guard channel (243.000 MHz). Guard frequency may be monitored
+simultaneously with any other frequency selected. The ARC-159 has a possible
+7,000 frequencies available by manually tuning in 25-kHz steps. The ARC-159
+radio is a solid-state, self-contained unit with a minimum RF output of 10
+watts. All controls for operation of the radio are on the front panel of the
+radio. The radio is located on the pilot left console.
 
-The UHF 1 (ARC-159) radio provides air-to-air and air-to-surface voice communications. Radio
-frequency range extends from 225.000 to 399.975 MHz. The equipment allows AM mode transmission and
-reception on any of the 20 preset channels and a guard channel (243.000 MHz). Guard frequency may be
-monitored simultaneously with any other frequency selected. The ARC-159 has a possible 7,000
-frequencies available by manually tuning in 25-kHz steps. The ARC-159 radio is a solid-state,
-self-contained unit with a minimum RF output of 10 watts. All controls for operation of the radio
-are on the front panel of the radio. The radio is located on the pilot left console.
+> 💡 The UHF 1 (ARC-159) ADF position is non-functional in the modeled version
+> of the F-14; use the DF mode of V/UHF 2 ARC-182.
 
-> 💡 The UHF 1 (ARC-159) ADF position is non-functional in the modeled version of the F-14;
-> use the DF mode of V/UHF 2 ARC-182.
-
-![arc-1591](../../../img/arc-1591.jpg)
+![arc-159](../../../img/general_communications_arc-159.jpg)
 
 | Control/Indicator             | Function                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -30,13 +30,15 @@ are on the front panel of the radio. The radio is located on the pilot left cons
 | **Mode Selector switch**      | GUARD – Main transceiver is energized and shifted to guard frequency of 243.0 MHz permitting transmission and reception. In this position, both preset and manual frequency selections are not available. MANUAL – Frequency tuning controls are used to tune the main transceiver to any frequency (7,000 available) within the range of the set. The frequency selected is displayed in the readout window. In this position, PRESET selections are not available. PRESET – Used to tune the transceiver to any of 20 preset channels using the PRESET channel selector. The selected channel is displayed in the readout window. |
 | **TONE button**               | Depressing button causes a steady tone (1 020 Hz) to be transmitted on the frequency or channel selected.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-> 💡 UHF communication interference with the D/L may cause the TILT light to illuminate and
-> the autopilot ACL or VEC/PCD mode to disengage. Data link interference with the UHF radios may
-> cause audible chirping at the D/L message reply rate. Although antenna switching is not
-> implemented in DCS, it is still recommended to use a frequency separation greater than 55 MHz, and
-> if necessary along with turning UHF 1 or V/UHF 2 radio OFF to avoid mutual interference between
-> UHF communications.
+> 💡 UHF communication interference with the D/L may cause the TILT light to
+> illuminate and the autopilot ACL or VEC/PCD mode to disengage. Data link
+> interference with the UHF radios may cause audible chirping at the D/L message
+> reply rate. Although antenna switching is not implemented in DCS, it is still
+> recommended to use a frequency separation greater than 55 MHz, and if
+> necessary along with turning UHF 1 or V/UHF 2 radio OFF to avoid mutual
+> interference between UHF communications.
 
-> 💡 Transmissions on both UHF 1 and V/UHF 2 radios, while operating on the same frequency,
-> may result in a squeal. This feedback is a normal condition caused by RF interaction between the
-> two radios operating on the same frequency in close proximity to each other.
+> 💡 Transmissions on both UHF 1 and V/UHF 2 radios, while operating on the same
+> frequency, may result in a squeal. This feedback is a normal condition caused
+> by RF interaction between the two radios operating on the same frequency in
+> close proximity to each other.

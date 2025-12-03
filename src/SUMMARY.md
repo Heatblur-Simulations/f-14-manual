@@ -48,7 +48,6 @@
     - [Attitude and Heading Reference Set (AHRS)](./systems/nav_com/ahrs.md)
     - [TACAN](./systems/nav_com/tacan.md)
     - [BDHI](./systems/nav_com/bdhi.md)
-    - [ICLS](./systems/nav_com/icls.md)
     - [Communication Systems](./systems/nav_com/com/overview.md)
       - [Intercom](./systems/nav_com/com/intercom.md)
       - [KY-28 Encryption](./systems/nav_com/com/encryption.md)
