@@ -68,7 +68,6 @@
   - [Weapon Systems](./systems/weapon_systems/overview.md)
     - [LANTIRN](./systems/weapon_systems/lantirn/overview.md)
       - [Modes](./systems/weapon_systems/lantirn/modes.md)
-      - [Other](./systems/weapon_systems/lantirn/other.md)
   - [Defensive Systems](systems/defensive_systems/overview.md)
     - [Countermeasures](./systems/defensive_systems/countermeasures/overview.md)
       - [ALE-39](./systems/defensive_systems/countermeasures/ale_39.md)
