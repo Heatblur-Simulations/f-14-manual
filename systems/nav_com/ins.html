@@ -162,81 +162,89 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="inertial-navigation-system-ins"><a class="header" href="#inertial-navigation-system-ins">Inertial Navigation System (INS)</a></h1>
-<blockquote>
-<p>🚧 TODO: Add images. Make sure everything works</p>
-</blockquote>
-<p>An important feature of the INS is its fast alignment capability over a wide range of temperature.
-The INS is a dead-reckoning system that derives speed as a function of aircraft accelerations. Two
-accelerometers are used to measure acceleration in the horizontal plane. These outputs result in
-velocities along the X and Y axes after corrections for the Earth’s rotational velocity (coriolis
-acceleration) and integration inputs. These X and Y velocities can be resolved in the IMU platform
-coordinate system through wander angle and put in the Earth referenced north/east/down system.
-Integration about the north and east axes also provides increments of latitude and longitude.
-Navigation in such manner gives the flight crew detailed and precise knowledge of the position,
-direction and velocity of their aircraft at any time.</p>
-<p>An INS device like the AN/ASN-92 requires a high precision of measurements of the acceleration and
-the attitude, because even the smallest inaccuracy can result in a significant error when
-accumulated over extended time.</p>
-<p>Consider an example: the inertial platform is slightly tilted from the nominal position, let’s say
-by 0.002°. Then, the horizontal accelerometers are no longer parallel to the ground, and this means
-that they start to be sensitive to gravity. If not corrected, this gravitational component is
-interpreted by the navigation computer as a horizontal acceleration. If the wrong attitude is kept
-constant for one hour, it will result in an error of the measured position of over one nautical
-mile. It is a significant inaccuracy, and it comes as a result of such a minimal alignment error.</p>
-<p>The accuracy of the INS degrades with time – usually the longer they operate in the navigation mode,
-the higher the error they accumulate.</p>
+<p>An important feature of the INS is its fast alignment capability over a wide
+range of temperature. The INS is a dead-reckoning system that derives speed as a
+function of aircraft accelerations. Two accelerometers are used to measure
+acceleration in the horizontal plane. These outputs result in velocities along
+the X and Y axes after corrections for the Earth’s rotational velocity (coriolis
+acceleration) and integration inputs. These X and Y velocities can be resolved
+in the IMU platform coordinate system through wander angle and put in the Earth
+referenced north/east/down system. Integration about the north and east axes
+also provides increments of latitude and longitude. Navigation in such manner
+gives the flight crew detailed and precise knowledge of the position, direction
+and velocity of their aircraft at any time.</p>
+<p>An INS device like the AN/ASN-92 requires a high precision of measurements of
+the acceleration and the attitude, because even the smallest inaccuracy can
+result in a significant error when accumulated over extended time.</p>
+<p>Consider an example: the inertial platform is slightly tilted from the nominal
+position, let’s say by 0.002°. Then, the horizontal accelerometers are no longer
+parallel to the ground, and this means that they start to be sensitive to
+gravity. If not corrected, this gravitational component is interpreted by the
+navigation computer as a horizontal acceleration. If the wrong attitude is kept
+constant for one hour, it will result in an error of the measured position of
+over one nautical mile. It is a significant inaccuracy, and it comes as a result
+of such a minimal alignment error.</p>
+<p>The accuracy of the INS degrades with time – usually the longer they operate in
+the navigation mode, the higher the error they accumulate.</p>
 <h2 id="inertial-measurement-unit"><a class="header" href="#inertial-measurement-unit">Inertial Measurement Unit</a></h2>
-<p>The IMU is a three-axis, four-gimbal, all-attitude unit containing two gyros and three
-accelerometers. The gyros and the accelerometers are mounted to a platform that is free to rotate
-with respect to the base (aircraft). The four-gimbal system provides gimbal-lock free rotation and
-uses torquer motors to correct platform attitude errors. The gyros sense angular rotation about
-their sensitive axes and are the source of information about the aircraft attitude. They also
-stabilize the whole platform and keep the constant orientation of the accelerometers with respect to
-the ground (gravity). Two accelerometers are used to measure acceleration in the horizontal plane;
-the third accelerometer measures vertical acceleration. The sensitive axes of the accelerometers are
-orthogonal. Their displacement is sensed by pickoff coils that develop a signal that is amplified,
-then applied to a torquer that restores the mass to its null position. The magnitude of torquing
-current required is proportional to the acceleration. The sensed acceleration signal is integrated
-in the computer and used to calculate aircraft velocity and displacement from the initial position.
-The attitude of the platform is also corrected continuously to account for the effects associated
-with the Earth’s rotation and device inaccuracies.</p>
-<p>This design is widespread for gimballed inertial navigation systems. It was used for the F-14, but
-also for the Space Shuttle and many other aircraft of the era.</p>
+<p>The IMU is a three-axis, four-gimbal, all-attitude unit containing two gyros and
+three accelerometers. The gyros and the accelerometers are mounted to a platform
+that is free to rotate with respect to the base (aircraft). The four-gimbal
+system provides gimbal-lock free rotation and uses torquer motors to correct
+platform attitude errors. The gyros sense angular rotation about their sensitive
+axes and are the source of information about the aircraft attitude. They also
+stabilize the whole platform and keep the constant orientation of the
+accelerometers with respect to the ground (gravity). Two accelerometers are used
+to measure acceleration in the horizontal plane; the third accelerometer
+measures vertical acceleration. The sensitive axes of the accelerometers are
+orthogonal. Their displacement is sensed by pick-off coils that develop a signal
+that is amplified, then applied to a torquer that restores the mass to its null
+position. The magnitude of torquing current required is proportional to the
+acceleration. The sensed acceleration signal is integrated in the computer and
+used to calculate aircraft velocity and displacement from the initial position.
+The attitude of the platform is also corrected continuously to account for the
+effects associated with the Earth’s rotation and device inaccuracies.</p>
+<p>This design is widespread for gimballed inertial navigation systems. It was used
+for the F-14, but also for the Space Shuttle and many other aircraft of the era.</p>
 <h3 id="imu-bit"><a class="header" href="#imu-bit">IMU BIT</a></h3>
-<p>In case of IMU failure, the CSDC automatically switches to a backup navigation mode. The IMU BIT
-monitors the temperature, internal error signals, and electrical characteristics of the IMU.</p>
-<p>If the CSDC detects a failure in the IMU, it informs the WCS computer and the IMU acronym indicating
-the component of the INS that failed is displayed on the TID. The IMU advisory light illuminates on
-the RIO caution/advisory panel.</p>
+<p>In case of IMU failure, the CSDC automatically switches to a backup navigation
+mode. The IMU BIT monitors the temperature, internal error signals, and
+electrical characteristics of the IMU.</p>
+<p>If the CSDC detects a failure in the IMU, it informs the WCS computer and the
+IMU acronym indicating the component of the INS that failed is displayed on the
+TID. The IMU advisory light illuminates on the RIO caution/advisory panel.</p>
 <h3 id="nav-comp-light"><a class="header" href="#nav-comp-light">NAV COMP Light</a></h3>
-<p>If the NAV MODE switch is in INS, and the NAV COMP light illuminates, there is a failure in the INS
-or CSDC; the navigation system will automatically switch to a backup mode. The NAV COMP light
-remains illuminated and the RIO should set the NAV MODE switch to IMU/AM position. The NAV COMP
-advisory light indicates that the INS is operating in a degraded mode as a result of manual
-selection by the RIO using the NAV MODE switch or automatic selection because of a failure of the
+<p>If the NAV MODE switch is in INS, and the NAV COMP light illuminates, there is a
+failure in the INS or CSDC; the navigation system will automatically switch to a
+backup mode. The NAV COMP light remains illuminated and the RIO should set the
+NAV MODE switch to IMU/AM position. The NAV COMP advisory light indicates that
+the INS is operating in a degraded mode as a result of manual selection by the
+RIO using the NAV MODE switch or automatic selection because of a failure of the
 CSDC or the IMU.</p>
 <blockquote>
 <p>💡</p>
 <ul>
 <li>
-<p>When an IMU quantizer failure occurs in the INS mode, the system will automatically select the
-IMU/AM mode and the STBY/READY and NAV COMP lights will illuminate. The RIO should move the NAV
-MODE switch from the INS to IMU/AM. The STBY/READY lights go out - but the NAV COMP light will
-remain illuminated.</p>
+<p>When an IMU quantizer failure occurs in the INS mode, the system will
+automatically select the IMU/AM mode and the STBY/READY and NAV COMP lights
+will illuminate. The RIO should move the NAV MODE switch from the INS to
+IMU/AM. The STBY/READY lights go out - but the NAV COMP light will remain
+illuminated.</p>
 </li>
 <li>
-<p>With a NAV COMP light and a CSI ACRO displayed on the TID, there is no auto-switch to a backup
-attitude source for the HUD or the VDI nor is the RIO able to manually switch to any backup
-mode.</p>
+<p>With a NAV COMP light and a CSI ACRO displayed on the TID, there is no
+auto-switch to a backup attitude source for the HUD or the VDI nor is the
+RIO able to manually switch to any backup mode.</p>
 </li>
 </ul>
 </blockquote>
 <h3 id="imu-light"><a class="header" href="#imu-light">IMU Light</a></h3>
-<p>If there is a failure in the IMU, the IMU advisory light will illuminate; the navigation system
-switches to the AHRS/AM mode and accuracy may become degraded Attitude information for the VDIG and
-missile control system are now provided by the AHRS. The IMU light remains illuminated until the RIO
-selects AHRS/AM. With an AHRS light computed magnetic variation (vC) should be verified and updated
-if necessary.</p>
+<p>If there is a failure in the IMU, the IMU advisory light will illuminate; the
+navigation system switches to the AHRS/AM mode and accuracy may become degraded
+Attitude information for the VDIG and missile control system are now provided by
+the AHRS. The IMU light remains illuminated until the RIO selects AHRS/AM. With
+an AHRS light computed magnetic variation (vC) should be verified and updated if
+necessary.</p>
 <div class="table-wrapper"><table><thead><tr><th>Standby light</th><th>Ready light</th><th>Description</th></tr></thead><tbody>
 <tr><td>ON</td><td>ON</td><td>Selected navigational mode not functioning correctly due to failure. Normal during first 45 seconds of alignment initialization.</td></tr>
 <tr><td>ON</td><td>OFF</td><td>Alignment underway (after first 45 seconds) or IMU/AM selected prior to coarse align. Leave switch in selected mode to complete alignment or to wait for IMU erection.</td></tr>
@@ -248,276 +256,321 @@ if necessary.</p>
 <tr><td>OFF</td><td>Flashing</td><td>If selection of IMU/AM occurs with system aligned the ready light will flash for 5 seconds indicating that INS should be reselected. After this timeframe, the alignment is lost.</td></tr>
 </tbody></table>
 </div>
-<p><strong>WARNING:</strong> After RIO selection IMU/AM because of a failure, and a complete IMU failure occurs
-afterwards, the system will display erroneous attitude information to the pilot. The CSDC will
-neither automatically exit IMU/AM to the AHRS/AM mode (if a valid AHRS exists) nor remove
-VDIG/TID/DDD attitude displays. The RIO should manually switch to the AHRS/AM mode.</p>
-<p>Whenever the NAV COMP light illuminates the flight crew should be cautious of attitude displays and
-frequently cross-reference the VDIG/TID/DDD and standby attitude indicator, particularly during
-non-VFR conditions and be alert for an IMU failure. If an IMU failure is indicated by the IMU light,
-display of IMU acronym in OBC continuous monitor, removal of the IM acronym in the TID attitude
-reference source buffer, and the NAV COMP light goes out, the RIO should move the NAV MODE switch
-from the IMU/AM to the AHRS/AM and disregard the READY light. If a valid AHRS exists, its attitude
-information will be displayed, otherwise the VDIG/TID/DDD attitude displays will be removed.</p>
+<blockquote>
+<p>🟡 CAUTION: After RIO selection IMU/AM because of a failure, and a complete
+IMU failure occurs afterwards, the system will display erroneous attitude
+information to the pilot. The CSDC will neither automatically exit IMU/AM to
+the AHRS/AM mode (if a valid AHRS exists) nor remove VDIG/TID/DDD attitude
+displays. The RIO should manually switch to the AHRS/AM mode.</p>
+</blockquote>
+<p>Whenever the NAV COMP light illuminates the flight crew should be cautious of
+attitude displays and frequently cross-reference the VDIG/TID/DDD and standby
+attitude indicator, particularly during non-VFR conditions and be alert for an
+IMU failure. If an IMU failure is indicated by the IMU light, display of IMU
+acronym in OBC continuous monitor, removal of the IM acronym in the TID attitude
+reference source buffer, and the NAV COMP light goes out, the RIO should move
+the NAV MODE switch from the IMU/AM to the AHRS/AM and disregard the READY
+light. If a valid AHRS exists, its attitude information will be displayed,
+otherwise the VDIG/TID/DDD attitude displays will be removed.</p>
 <h3 id="ahrs-light"><a class="header" href="#ahrs-light">AHRS Light</a></h3>
-<p>If the AHRS self-test has detected a failure the AHRS Light will illuminate. The magnetic heading on
-the HUD and VDI is now controlled by the WCS computer. Because it uses the last known value for
-magnetic variation, the heading will degrade over long distances and time unless new values of
-magnetic variation are entered by the RIO via the CAP. IFR flight should be avoided completely.</p>
+<p>If the AHRS self-test has detected a failure the AHRS Light will illuminate. The
+magnetic heading on the HUD and VDI is now controlled by the WCS computer.
+Because it uses the last known value for magnetic variation, the heading will
+degrade over long distances and time unless new values of magnetic variation are
+entered by the RIO via the CAP. IFR flight should be avoided completely.</p>
 <h3 id="navigation-power-supply"><a class="header" href="#navigation-power-supply">Navigation Power Supply</a></h3>
-<p>The NPS provides electrical power for the IMU and CSDC. A nickel-cadmium battery provides power to
-the IMU and CSDC for up to 10 seconds if there is a power interruption or transient.</p>
+<p>The NPS provides electrical power for the IMU and CSDC. A nickel-cadmium battery
+provides power to the IMU and CSDC for up to 10 seconds if there is a power
+interruption or transient.</p>
 <h2 id="ins-alignment-modes"><a class="header" href="#ins-alignment-modes">INS Alignment Modes</a></h2>
-<p>Before INS can be used for navigation, the inertial platform must be aligned so that it is level
-relative to local vertical and its orientation relative to true north. This is done automatically in
-two phases: coarse alignment and fine alignment.</p>
-<p>The coarse phase begins when the initialization sequence is complete and performs initial coarse
-estimates of the IMU platform wander angle. The successful completion of this phase requires a
-minimum local level error in the IMU platform to proceed to the fine alignment phase.</p>
-<p>IMU elements that require warmup are being heated by the IMU heaters. In addition, the IMU gimbals
-(roll, pitch, azimuth) are caged through their respective synchros to the IMU case (airframe
-reference). The IMU gyros are brought up to running speed, and coarse leveling is performed using
-the accelerometer outputs.</p>
-<p>When power is applied to the NPS and IMU, the SMAL program from the bulk storage tape is read into
-the WCS computer nonwrite-protected memory. The alignment program estimates a wander angle, velocity
-errors, and gyro-torquing correction signals.</p>
-<p>These values are sent to the CSDC to align the IMU and to initialize the CSDC NAV program. The
-following assemblies are used during alignment: IMU, NPS, CSDC, WCS computer, CAP (computer address
-panel), navigation control and data readout panel. For carrier alignment also the data link
-receiver-processor is used.</p>
-<p>There are four primary alignment modes: SAT ground and carrier alignment, and NON SAT ground and
-carrier alignment. SAT operation allows OBC testing during the alignment. Either alignment mode can
-be used in SAT or NON SAT. (SAT modes are not yet implemented in DCS)</p>
-<p>The basic TID display formats are represented in the image below. The automatic sequence is the same
-for all modes, except for CVA ALIGN, where the ship’s motion is inserted by the data link.</p>
-<p>The CAT ALIGN overrides the requirement for the parking brake to be on (suspend align). There are
-two more alignment submodes: stored heading and handset. The handset mode is used for CVA ALIGN when
-SINS data is not available. The stored heading mode is used for rapid alignment, by using a previous
-alignment (reference alignment) to align the system quickly.</p>
-<p>Initialization of any alignment mode requires entry of the following values in either own aircraft
-or HB (homebase) for the following:</p>
+<p>Before INS can be used for navigation, the inertial platform must be aligned so
+that it is level relative to local vertical and its orientation relative to true
+north. This is done automatically in two phases: coarse alignment and fine
+alignment.</p>
+<p>The coarse phase begins when the initialization sequence is complete and
+performs initial coarse estimates of the IMU platform wander angle. The
+successful completion of this phase requires a minimum local level error in the
+IMU platform to proceed to the fine alignment phase.</p>
+<p>IMU elements that require warmup are being heated by the IMU heaters. In
+addition, the IMU gimbals (roll, pitch, azimuth) are caged through their
+respective synchros to the IMU case (airframe reference). The IMU gyros are
+brought up to running speed, and coarse leveling is performed using the
+accelerometer outputs.</p>
+<p>When power is applied to the NPS and IMU, the SMAL program from the bulk storage
+tape is read into the WCS computer non-write-protected memory. The alignment
+program estimates a wander angle, velocity errors, and gyro-torquing correction
+signals.</p>
+<p>These values are sent to the CSDC to align the IMU and to initialize the CSDC
+NAV program. The following assemblies are used during alignment: IMU, NPS, CSDC,
+WCS computer, CAP (computer address panel), navigation control and data readout
+panel. For carrier alignment also the data link receiver-processor is used.</p>
+<p>There are four primary alignment modes: SAT ground and carrier alignment, and
+NON SAT ground and carrier alignment. SAT operation allows OBC testing during
+the alignment. Either alignment mode can be used in SAT or NON SAT. (SAT modes
+are not yet implemented in DCS)</p>
+<p>The basic TID display formats are represented in the image below. The automatic
+sequence is the same for all modes, except for CVA ALIGN, where the ship’s
+motion is inserted by the data link.</p>
+<p>The CAT ALIGN overrides the requirement for the parking brake to be on (suspend
+align). There are two more alignment sub-modes: stored heading and handset. The
+handset mode is used for CVA ALIGN when SINS data is not available. The stored
+heading mode is used for rapid alignment, by using a previous alignment
+(reference alignment) to align the system quickly.</p>
+<p>Initialization of any alignment mode requires entry of the following values in
+either own aircraft or HB (homebase) for the following:</p>
 <ul>
 <li>Latitude</li>
 <li>Longitude</li>
 <li>Corrected pressure altitude.</li>
 </ul>
-<p>In addition, if handset alignment is used on the carrier, the following values must also be entered:</p>
+<p>In addition, if handset alignment is used on the carrier, the following values
+must also be entered:</p>
 <ul>
 <li>Speed</li>
 <li>Ship’s true heading.</li>
 </ul>
 <blockquote>
-<p>💡 The parking brake must be on during initialization of any alignment. When the parking
-brake is released during coarse alignment, the STBY and READY lights flash and the align program
-will reinitialize. If the parking brake is released during fine alignment, a suspend align
-discrete is sent to the CSDC, the STBY or READY light blinks, and the time into alignment clock on
-the TID stops.</p>
+<p>💡 The parking brake must be on during initialization of any alignment. When
+the parking brake is released during coarse alignment, the STBY and READY
+lights flash and the align program will reinitialize. If the parking brake is
+released during fine alignment, a suspend align discrete is sent to the CSDC,
+the STBY or READY light blinks, and the time into alignment clock on the TID
+stops.</p>
 </blockquote>
-<p><img src="images/align.jpg" alt="Alignment Display" /></p>
+<p><img src="../../img/general_navigation_align.jpg" alt="Alignment Display" /></p>
 <h2 id="non-sat-alignments"><a class="header" href="#non-sat-alignments">Non-SAT Alignments</a></h2>
 <h3 id="ground-alignment"><a class="header" href="#ground-alignment">Ground Alignment</a></h3>
-<p>For land-based operations, the ground alignment procedure is used to align the IMU. Aircraft or
-homebase latitude, longitude, and altitude are entered into the WCS computer via the CAP. This may
-be accomplished before or after selecting GND align. Selecting GND ALIGN on the NAV MODE switch
-initiates the align operation. However note that whatever has been hooked when switching to ALIGN,
-is injected as your own coordinates. You can use homebase or preset own aircraft coordinates for
-example, but if you didn’t, you will have between 90 to 120 seconds to enter your own coordinates
-and you cannot wait for the alignment to finish, or it will trigger the observable error (O) and
-alignment will have to be reinitialized.</p>
+<p>For land-based operations, the ground alignment procedure is used to align the
+IMU. Aircraft or homebase latitude, longitude, and altitude are entered into the
+WCS computer via the CAP. This may be accomplished before or after selecting GND
+align. Selecting GND ALIGN on the NAV MODE switch initiates the align operation.
+However note that whatever has been hooked when switching to ALIGN, is injected
+as your own coordinates. You can use homebase or preset own aircraft coordinates
+for example, but if you didn’t, you will have between 90 to 120 seconds to enter
+your own coordinates and you cannot wait for the alignment to finish, or it will
+trigger the observable error (O) and alignment will have to be reinitialized.</p>
 <blockquote>
-<p>💡 If fine align has not been achieved, entry of the own aircraft’s latitude will restart
-the alignment. On completion of the alignment program read-in, the alignment display appears on
-the TID.</p>
+<p>💡 If fine align has not been achieved, entry of the own aircraft’s latitude
+will restart the alignment. On completion of the alignment program read-in,
+the alignment display appears on the TID.</p>
 </blockquote>
-<p>During the initialization, the TID will display an alignment time of 0.7. After 42 to 45 seconds,
-the NAV COMP light on the caution/advisory panel goes out, indicating that the IMU has entered the
-ready state; the READY light also goes out. The alignment program will begin with the computation of
-the alignment parameters.</p>
-<p>At this time an alignment status indicator, called a caret (v), will start to move from left to
-right. The status of the alignment is indicated by where the caret appears in relationship to three
-alignment-tick indicators. The first tick indicator is called the coarse-align complete marker, the
-second is the alert launch criteria marker, and the third indicator is the fine-align complete
+<p>During the initialization, the TID will display an alignment time of 0.7. After
+42 to 45 seconds, the NAV COMP light on the caution/advisory panel goes out,
+indicating that the IMU has entered the ready state; the READY light also goes
+out. The alignment program will begin with the computation of the alignment
+parameters.</p>
+<p>At this time an alignment status indicator, called a caret (v), will start to
+move from left to right. The status of the alignment is indicated by where the
+caret appears in relationship to three alignment-tick indicators. The first tick
+indicator is called the coarse-align complete marker, the second is the alert
+launch criteria marker, and the third indicator is the fine-align complete
 marker. An elapsed time indicator provides alignment time in minutes and tenths.</p>
-<p>The clock indicator will begin with 0.7 displayed and continue after a 42-second delay. After 9.9
-minutes, the clock display will pass through zero and begin again. If the alignment is suspended
-(parking brake), the clock will stop counting until alignment is resumed.</p>
-<p>Between the first and second ticks are the telltale status indicators that indicate a failure of one
-of four systems: C = calibration data fail, T = temperature (cold IMU), S = SINS data invalid, and 0
-= observable (alignment data bad, i.e., LAT, LONG, SPEED, etc.). The letter that appears indicates
-which system has a failure.</p>
-<p>A C indicates a failure in the transfer of calibration data between the IMU and the CSDC, and the
-alignment will not progress.</p>
-<p>The T appears normally at the start of alignment and disappears when the IMU has reached operating
-temperature. If the T does not disappear, there is a failure in the system and a non-stored heading
-alignment will not progress.</p>
-<p>The S can appear at the start of any CV alignment and will disappear shortly after. If the S does
-not disappear, there is a failure and the result will be a bad alignment. The S also appears if
-incoming SINS data is not valid, in which case the alignment should not be trusted.</p>
+<p>The clock indicator will begin with 0.7 displayed and continue after a 42-second
+delay. After 9.9 minutes, the clock display will pass through zero and begin
+again. If the alignment is suspended (parking brake), the clock will stop
+counting until alignment is resumed.</p>
+<p>Between the first and second ticks are the telltale status indicators that
+indicate a failure of one of four systems: C = calibration data fail, T =
+temperature (cold IMU), S = SINS data invalid, and 0 = observable (alignment
+data bad, i.e., LAT, LONG, SPEED, etc.). The letter that appears indicates which
+system has a failure.</p>
+<p>A C indicates a failure in the transfer of calibration data between the IMU and
+the CSDC, and the alignment will not progress.</p>
+<p>The T appears normally at the start of alignment and disappears when the IMU has
+reached operating temperature. If the T does not disappear, there is a failure
+in the system and a non-stored heading alignment will not progress.</p>
+<p>The S can appear at the start of any CV alignment and will disappear shortly
+after. If the S does not disappear, there is a failure and the result will be a
+bad alignment. The S also appears if incoming SINS data is not valid, in which
+case the alignment should not be trusted.</p>
 <blockquote>
 <p>💡</p>
 <ul>
 <li>
-<p>The CSDC and IMU outputs as well as data inputs are constantly monitored and if either an
-excessive value in the X or Y acceleration is sensed, or a bad value from wrong lat or long data
-input, a 0 (bad observable) is posted on the TID and the alignment stalls (ceases to continue).</p>
+<p>The CSDC and IMU outputs as well as data inputs are constantly monitored and
+if either an excessive value in the X or Y acceleration is sensed, or a bad
+value from wrong lat or long data input, a 0 (bad observable) is posted on
+the TID and the alignment stalls (ceases to continue).</p>
 </li>
 <li>
-<p>The IMU may be preheated by selecting IMU/AM on the TID NAV MODE switch when operating on ground
-or aircraft power. This energizes the IMU and navigation power supply, which turns on the IMU
-heater prior to start of a ground or carrier alignment. The IMU should not be preheated for
-longer than 5 minutes.</p>
+<p>The IMU may be preheated by selecting IMU/AM on the TID NAV MODE switch when
+operating on ground or aircraft power. This energizes the IMU and navigation
+power supply, which turns on the IMU heater prior to start of a ground or
+carrier alignment. The IMU should not be preheated for longer than 5
+minutes.</p>
 </li>
 </ul>
 </blockquote>
-<p>During coarse alignment, the alignment caret moves based on the wander angle error. If the parking
-brake is released during this phase, the alignment will reset.</p>
-<p>The V will reach the first tick when coarse alignment is complete. When the program switches to fine
-alignment, the caret changes into a diamond, which indicates to the pilot that he may release the
-parking brake (suspend alignment) and taxi, if OBC is complete. After the parking brake is reset,
-alignment will continue and the diamond will move right as alignment improves.</p>
-<p>At the second tick, which indicates that alignment meets the minimum criteria to launch weapons, the
-STBY light will go off and the READY light will illuminate. The INS mode may be entered at this
-point. If INS is not selected, the diamond continues to move to the right. When it reaches the third
-tick, it indicates that fine alignment is completed and a dot will appear in the diamond (&lt;&gt;).</p>
-<p>You can leave the system in alignment mode even after fine align is complete, which will provide a
-progressively more accurate alignment. How much more accuracy is gained depends on the quality of
-alignment when fine align was completed. This can be rather minimal in some cases, but, when it is
-further left in alignment for long enough, it will always provide a certain amount of improvement.</p>
+<p>During coarse alignment, the alignment caret moves based on the wander angle
+error. If the parking brake is released during this phase, the alignment will
+reset.</p>
+<p>The V will reach the first tick when coarse alignment is complete. When the
+program switches to fine alignment, the caret changes into a diamond, which
+indicates to the pilot that he may release the parking brake (suspend alignment)
+and taxi, if OBC is complete. After the parking brake is reset, alignment will
+continue and the diamond will move right as alignment improves.</p>
+<p>At the second tick, which indicates that alignment meets the minimum criteria to
+launch weapons, the STBY light will go off and the READY light will illuminate.
+The INS mode may be entered at this point. If INS is not selected, the diamond
+continues to move to the right. When it reaches the third tick, it indicates
+that fine alignment is completed and a dot will appear in the diamond (&lt;&gt;).</p>
+<p>You can leave the system in alignment mode even after fine align is complete,
+which will provide a progressively more accurate alignment. How much more
+accuracy is gained depends on the quality of alignment when fine align was
+completed. This can be rather minimal in some cases, but, when it is further
+left in alignment for long enough, it will always provide a certain amount of
+improvement.</p>
 <blockquote>
-<p>💡 If alignment is suspended and the aircraft is taxied over a distance greater than 4000
-feet, the quality of the alignment becomes unknown to a point where it might be unreliable.
-Alignment reinitialization is advised.</p>
+<p>💡 If alignment is suspended and the aircraft is taxied over a distance
+greater than 4000 feet, the quality of the alignment becomes unknown to a
+point where it might be unreliable. Alignment reinitialization is advised.</p>
 </blockquote>
-<p>If the caret (v) or diamond stop moving, the program has stopped aligning. If they stop between the
-first and third ticks (coarse and fine), it means that alignment has been suspended. The clock will
-stop counting if that is the case. If alignment continues, the clock resumes counting until switched
-out of alignment by NAV MODE switch or if the parking brake is released again.</p>
+<p>If the caret (v) or diamond stop moving, the program has stopped aligning. If
+they stop between the first and third ticks (coarse and fine), it means that
+alignment has been suspended. The clock will stop counting if that is the case.
+If alignment continues, the clock resumes counting until switched out of
+alignment by NAV MODE switch or if the parking brake is released again.</p>
 <blockquote>
-<p>💡 The alignment display will not go past the coarse align tick until the IMU temperature
-has reached 165°. When this temperature is reached, the T symbol will disappear. The temperature
-interlock is bypassed when performing a stored heading alignment. The IMU should be preheated for
-a stored heading alignment, as it usually completes in under 2 minutes, which could result in a
-bad alignment.</p>
+<p>💡 The alignment display will not go past the coarse align tick until the IMU
+temperature has reached 165°. When this temperature is reached, the T symbol
+will disappear. The temperature interlock is bypassed when performing a stored
+heading alignment. The IMU should be preheated for a stored heading alignment,
+as it usually completes in under 2 minutes, which could result in a bad
+alignment.</p>
 </blockquote>
-<p>Selecting INS will turn off the READY light, terminate alignment and the tactical display will
-appear, and the normal navigation display will become available.</p>
+<p>Selecting INS will turn off the READY light, terminate alignment and the
+tactical display will appear, and the normal navigation display will become
+available.</p>
 <blockquote>
 <p>💡</p>
 <ul>
 <li>
-<p>When the NAV MODE switch is set to INS, the CSDC is in navigation mode and the READY light goes
-out.</p>
+<p>When the NAV MODE switch is set to INS, the CSDC is in navigation mode and
+the READY light goes out.</p>
 </li>
 <li>
-<p>After selecting the INS navigation mode, the AWG-9 align program continues for approximately
-three align data cycles (18 seconds) before entering INS. This also applies if the aircraft
-takes off before INS is selected.</p>
+<p>After selecting the INS navigation mode, the AWG-9 align program continues
+for approximately three align data cycles (18 seconds) before entering INS.
+This also applies if the aircraft takes off before INS is selected.</p>
 </li>
 </ul>
 </blockquote>
-<p>The RIO and pilot can then observe an IN acronym on the attitude status readout on the TID or TID
-repeat.</p>
-<p>If you want to reinitialize an alignment when observing an acronym during fine alignment or if
-noting a stalled alignment, the following methods can be used:</p>
+<p>The RIO and pilot can then observe an IN acronym on the attitude status readout
+on the TID or TID repeat.</p>
+<p>If you want to reinitialize an alignment when observing an acronym during fine
+alignment or if noting a stalled alignment, the following methods can be used:</p>
 <ul>
-<li>Select both INS mode switch and WCS PWR switch to off. Allow TID displays to collapse. Proceed
-with normal start sequence.</li>
+<li>Select both INS mode switch and WCS PWR switch to off. Allow TID displays to
+collapse. Proceed with normal start sequence.</li>
 <li>INS mode switch to desired align mode.</li>
-<li>INS mode switch to INS. Verify system in INS (IN acronym on TID), cycle mode switch to off and
-back to desired alignment mode.</li>
+<li>INS mode switch to INS. Verify system in INS (IN acronym on TID), cycle mode
+switch to off and back to desired alignment mode.</li>
 </ul>
-<p>Failing to follow above procedures when reinitializing a fine alignment will result in severely
-degraded alignment quality. To reinitialize the program during coarse align, the RIO has to unselect
-GND ALIGN, re-enter LAT and LONG and reselect GND ALIGN.</p>
+<p>Failing to follow above procedures when reinitializing a fine alignment will
+result in severely degraded alignment quality. To reinitialize the program
+during coarse align, the RIO has to unselect GND ALIGN, re-enter LAT and LONG
+and reselect GND ALIGN.</p>
 <h3 id="carrier-alignment"><a class="header" href="#carrier-alignment">Carrier Alignment</a></h3>
-<p>When aligning on a carrier with a changing latitude, longitude, and heading, the carrier alignment
-procedure is used. INS can be aligned in three different ways on a carrier: with RF data link
-alignment and manual (handset) alignment - deck-edge cable alignment is not implemented in DCS. TID
-displays the same information as during a GND ALIGN procedure.</p>
-<p>Note that you will get erroneous heading readings on a carrier, even if fine align is complete. The
-heading can deviate up to 20 or 30 degrees, depending on the parking position on the carrier and the
-carrier’s heading, due to the carrier’s own magnetic field and induced magnetic field. It is
-important that the flight crew know the carrier’s BRC. The magnetic variation caused by the
-carrier’s magnetic distortion will go away shortly after take off. This magnetic distortion does not
-impact the alignment quality.</p>
+<p>When aligning on a carrier with a changing latitude, longitude, and heading, the
+carrier alignment procedure is used. INS can be aligned in three different ways
+on a carrier: with RF data link alignment and manual (handset) alignment -
+deck-edge cable alignment is not implemented in DCS. TID displays the same
+information as during a GND ALIGN procedure.</p>
+<p>Note that you will get erroneous heading readings on a carrier, even if fine
+align is complete. The heading can deviate up to 20 or 30 degrees, depending on
+the parking position on the carrier and the carrier’s heading, due to the
+carrier’s own magnetic field and induced magnetic field. It is important that
+the flight crew know the carrier’s BRC. The magnetic variation caused by the
+carrier’s magnetic distortion will go away shortly after take off. This magnetic
+distortion does not impact the alignment quality.</p>
 <h4 id="carrier-data-link-alignment"><a class="header" href="#carrier-data-link-alignment">Carrier Data Link Alignment</a></h4>
-<p>The primary carrier alignment mode is the RF data link alignment (CAINS). This mode uses the ship’s
-INS (SINS) to align the IMU. Inertial inputs including the ship’s longitude, latitude, north and
-east velocity as well as roll, pitch, heading, and heading rate are transmitted to the WCS computer
-via the RF data link.</p>
-<p>The data is transmitted by the ship’s data link equipment. To align the INS by the CVA alignment
-method, follow these steps:</p>
+<p>The primary carrier alignment mode is the RF data link alignment (CAINS). This
+mode uses the ship’s INS (SINS) to align the IMU. Inertial inputs including the
+ship’s longitude, latitude, north and east velocity as well as roll, pitch,
+heading, and heading rate are transmitted to the WCS computer via the RF data
+link.</p>
+<p>The data is transmitted by the ship’s data link equipment. To align the INS by
+the CVA alignment method, follow these steps:</p>
 <ol>
 <li>Turn on the power to the data link system</li>
 <li>Turn the WCS power to STBY</li>
 <li>Set the D/L mode on the DATA LINK control panel to CAINS/WAYPT</li>
 <li>Select CVA ALIGN on the NAV MODE switch.</li>
 </ol>
-<p>The received data is processed by the data link equipment in the aircraft and transmitted to the WCS
-computer. The WCS computer compares the IMU data with the ship’s INS data and sends correction
-signals to the CSDC to fine align the IMU.</p>
+<p>The received data is processed by the data link equipment in the aircraft and
+transmitted to the WCS computer. The WCS computer compares the IMU data with the
+ship’s INS data and sends correction signals to the CSDC to fine align the IMU.</p>
 <blockquote>
 <p>💡</p>
 <ul>
 <li>
-<p>If CVA or CAT ALIGN is selected prior to selecting OBC BIT, data link OBC testing is inhibited.
-(Not implemented yet)</p>
+<p>If CVA or CAT ALIGN is selected prior to selecting OBC BIT, data link OBC
+testing is inhibited. (Not implemented yet)</p>
 </li>
 <li>
-<p>The fine alignment complete tick mark indicates completion of fine align and whether alignment
-data is SINS or handset. When good SINS data is not received during a filter cycle, the fine
-alignment complete tick mark jumps to the left approximately 0.75 inches. The jump indicates the
-SINS data is intermittent, and handset alignment data is required.</p>
+<p>The fine alignment complete tick mark indicates completion of fine align and
+whether alignment data is SINS or handset. When good SINS data is not
+received during a filter cycle, the fine alignment complete tick mark jumps
+to the left approximately 0.75 inches. The jump indicates the SINS data is
+intermittent, and handset alignment data is required.</p>
 </li>
 </ul>
 </blockquote>
-<p>CVA ALIGN is much similar to GND ALIGN, and alignment is suspended, stalled, and reinitialized in
-the same manner as during GND ALIGN, depending on whether it has been induced during the coarse or
-fine alignment phase.</p>
+<p>CVA ALIGN is much similar to GND ALIGN, and alignment is suspended, stalled, and
+reinitialized in the same manner as during GND ALIGN, depending on whether it
+has been induced during the coarse or fine alignment phase.</p>
 <blockquote>
-<p>💡 If SINS data link is lost during taxi, a flashing HS will appear on the TID. This will
-disappear when data link is reacquired; however, because of align timing requirements, it may
-remain flashing up to 8 seconds after data link is reacquired. If the HS flashing does not stop 8
-seconds after resetting the parking brake, SINS data is lost but the alignment can continue by
-entering carrier speed and true heading into the own aircraft file and completing the align in
-handset mode. If datalink is reacquired during this period, the HS will disappear from the TID and
-a normal datalink CVA align will continue.</p>
+<p>💡 If SINS data link is lost during taxi, a flashing HS will appear on the
+TID. This will disappear when data link is reacquired; however, because of
+align timing requirements, it may remain flashing up to 8 seconds after data
+link is reacquired. If the HS flashing does not stop 8 seconds after resetting
+the parking brake, SINS data is lost but the alignment can continue by
+entering carrier speed and true heading into the own aircraft file and
+completing the align in handset mode. If datalink is reacquired during this
+period, the HS will disappear from the TID and a normal datalink CVA align
+will continue.</p>
 </blockquote>
-<p>To complete the alignment, set the NAV MODE switch to INS. A successfully aligned INS is indicated
-by both the STBY and READY lights off and the IN acronym in the status readout on the TID.</p>
+<p>To complete the alignment, set the NAV MODE switch to INS. A successfully
+aligned INS is indicated by both the STBY and READY lights off and the IN
+acronym in the status readout on the TID.</p>
 <blockquote>
 <p>💡</p>
 <ul>
 <li>
-<p>Do not switch to INS while the ship is in a turn, even if fine align has been completed. This
-will degrade the alignment quality significantly. If you wait until the ship’s turn is complete,
-alignment quality will not be affected. Handset alignment is not affected.</p>
+<p>Do not switch to INS while the ship is in a turn, even if fine align has
+been completed. This will degrade the alignment quality significantly. If
+you wait until the ship’s turn is complete, alignment quality will not be
+affected. Handset alignment is not affected.</p>
 </li>
 <li>
-<p>If during a CVA alignment the CAINS/WAYPT-TAC switch is unlatched to TAC by power transient, or
-data link signal is lost, the INS will revert to a handset alignment (HS).</p>
+<p>If during a CVA alignment the CAINS/WAYPT-TAC switch is unlatched to TAC by
+power transient, or data link signal is lost, the INS will revert to a
+handset alignment (HS).</p>
 </li>
 </ul>
 </blockquote>
 <h4 id="carrier-cable-alignment"><a class="header" href="#carrier-cable-alignment">Carrier Cable Alignment</a></h4>
-<p>The deck-edge cable alignment (SINS) is an alternative to the RF data link alignment, where inputs
-are sent over a secure cable to the data link from the deck-edge outlet box of the carrier.
-Switching from RF data link to cable inputs is done automatically when the cable is connected. To
-initiate a CVA align with SINS via cable, use the same steps as for the RF data link alignment. As
-cable and RF data link alignment are virtually the same, it has not been implemented in DCS.</p>
+<p>The deck-edge cable alignment (SINS) is an alternative to the RF data link
+alignment, where inputs are sent over a secure cable to the data link from the
+deck-edge outlet box of the carrier. Switching from RF data link to cable inputs
+is done automatically when the cable is connected. To initiate a CVA align with
+SINS via cable, use the same steps as for the RF data link alignment. As cable
+and RF data link alignment are virtually the same, it has not been implemented
+in DCS.</p>
 <blockquote>
 <p>💡 The SINS-cable is currently not implemented in DCS.</p>
 </blockquote>
 <h4 id="handset-alignment"><a class="header" href="#handset-alignment">Handset Alignment</a></h4>
-<p>The HS alignment mode is a manual alignment option available for carrier alignment, should SINS data
-from RF data link or cable not be available, inaccurate, or interrupted (indicated by the TILT light
-on the DDI and/or the fine alignment complete tick mark jumping to the left about 0.75 inches). The
-HS is also very similar to the GND ALIGN mode, but the RIO has to input more data and the computer
-takes longer to process because of the ship movement.</p>
-<p>IF CVA ALIGN is selected with the NAV MODE switch and no SINS data is available, a flashing HS
-acronym will appear on the TID. Whenever HS flashes on the TID before alignment starts and the RIO
-chooses to align the system with handset align, he must enter the according ship’s data in the
-following order:</p>
+<p>The HS alignment mode is a manual alignment option available for carrier
+alignment, should SINS data from RF data link or cable not be available,
+inaccurate, or interrupted (indicated by the TILT light on the DDI and/or the
+fine alignment complete tick mark jumping to the left about 0.75 inches). The HS
+is also very similar to the GND ALIGN mode, but the RIO has to input more data
+and the computer takes longer to process because of the ship movement.</p>
+<p>IF CVA ALIGN is selected with the NAV MODE switch and no SINS data is available,
+a flashing HS acronym will appear on the TID. Whenever HS flashes on the TID
+before alignment starts and the RIO chooses to align the system with handset
+align, he must enter the according ship’s data in the following order:</p>
 <ul>
 <li>Speed</li>
 <li>Ship’s true heading</li>
@@ -525,87 +578,102 @@ following order:</p>
 <li>Longitude</li>
 <li>Corrected pressure altitude.</li>
 </ul>
-<p>If during coarse align data link is lost (RF or cable) or during any portion of a stored heading
-alignment, the alignment will reinitialize and the HS acronym will be flashing. The alignment can
-then be continued with the handset mode as described above.</p>
-<p>If the reinitialization occurs during the fine align phase of a stored heading alignment, the CSDC
-alignment routine must be reset first by turning the AWG-9 OFF for 6 seconds.</p>
-<p>If data link is lost during a normal fine align phase, HS will be entered automatically, but the
-acronym will not flash and the alignment will continue. If data link is regained, the HS acronym
-will disappear and normal CVA align via RF or cable data link will continue. When data link is
-regained, the acronym can remain for up to 8 seconds.</p>
+<p>If during coarse align data link is lost (RF or cable) or during any portion of
+a stored heading alignment, the alignment will reinitialize and the HS acronym
+will be flashing. The alignment can then be continued with the handset mode as
+described above.</p>
+<p>If the reinitialization occurs during the fine align phase of a stored heading
+alignment, the CSDC alignment routine must be reset first by turning the AWG-9
+OFF for 6 seconds.</p>
+<p>If data link is lost during a normal fine align phase, HS will be entered
+automatically, but the acronym will not flash and the alignment will continue.
+If data link is regained, the HS acronym will disappear and normal CVA align via
+RF or cable data link will continue. When data link is regained, the acronym can
+remain for up to 8 seconds.</p>
 <blockquote>
-<p>💡 If HS is not flashing, valid SINS data has already been entered. If it is flashing, SINS
-data has to be entered manually.</p>
+<p>💡 If HS is not flashing, valid SINS data has already been entered. If it is
+flashing, SINS data has to be entered manually.</p>
 </blockquote>
-<p>On the CAP NAV DATA matrix use OWN AC, and the LAT and LONG prefix push buttons; to enter the ships’
-heading and speed use own-aircraft HDG and SPD buttons. Once this data has been entered HS will stop
-flashing and the alignment will progress like a normal GND ALIGN, but can take up to 3 times as
-long.</p>
+<p>On the CAP NAV DATA matrix use OWN AC, and the LAT and LONG prefix push buttons;
+to enter the ships’ heading and speed use own-aircraft HDG and SPD buttons. Once
+this data has been entered HS will stop flashing and the alignment will progress
+like a normal GND ALIGN, but can take up to 3 times as long.</p>
 <blockquote>
-<p>💡 The carrier needs to maintain a constant speed and heading during alignment for this
-method to be successful. Remember that handset alignment quality will always be inferior to a
-normal CVA ALIGN fine alignment quality.</p>
+<p>💡 The carrier needs to maintain a constant speed and heading during alignment
+for this method to be successful. Remember that handset alignment quality will
+always be inferior to a normal CVA ALIGN fine alignment quality.</p>
 </blockquote>
 <h3 id="reinitialization"><a class="header" href="#reinitialization">Reinitialization</a></h3>
-<p>To reinitialize an alignment during the fine align phase, if an observable acronym (O) or a stalled
-alignment has been noticed, the RIO can use any of the following methods:</p>
+<p>To reinitialize an alignment during the fine align phase, if an observable
+acronym (O) or a stalled alignment has been noticed, the RIO can use any of the
+following methods:</p>
 <ol>
-<li>Set NAV MODE switch and WCS switch to OFF. Allow TID displays to collapse. Proceed with normal
-start sequence.</li>
+<li>Set NAV MODE switch and WCS switch to OFF. Allow TID displays to collapse.
+Proceed with normal start sequence.</li>
 <li>Set NAV MODE switch to OFF. Set NAV MODE switch to desired align mode.</li>
-<li>Set NAV MODE switch to INS. Verify system in INS (IN acronym on TID). Cycle NAV MODE switch to
-OFF and back to desired alignment mode.</li>
+<li>Set NAV MODE switch to INS. Verify system in INS (IN acronym on TID). Cycle
+NAV MODE switch to OFF and back to desired alignment mode.</li>
 </ol>
-<p>Failing to follow above procedures when reinitializing a fine alignment will result in severely
-degraded alignment quality. To reinitialize the program during coarse align, the RIO has to unselect
-GND ALIGN, re-enter LAT and LONG and reselect GND ALIGN.</p>
+<p>Failing to follow above procedures when reinitializing a fine alignment will
+result in severely degraded alignment quality. To reinitialize the program
+during coarse align, the RIO has to unselect GND ALIGN, re-enter LAT and LONG
+and reselect GND ALIGN.</p>
 <h2 id="stored-heading-alignment"><a class="header" href="#stored-heading-alignment">Stored Heading Alignment</a></h2>
-<p>A feature of the INS that allows for quick-reaction response is the stored-heading alignment. The
-aircraft has to be parked and tied down in the alert position (wheel-chocks in DCS) for this
-procedure to be successful. Additionally, the aircraft heading has to be stored with a reference
-alignment before the aircraft is being powered down (and back up again).</p>
-<p>When the aircraft is powered back up, the system takes less than 2 minutes to align the INS from the
-stored heading, while providing almost the same accuracy like a full, fine ground or carrier
-alignment. When align is selected and a reference alignment is available, an ASH acronym for
-automatic stored heading will be displayed on the TID and STORED HDG ALIGN will illuminate on the
-CAP. The ASH acronym tells the RIO that a stored heading has been entered automatically.</p>
-<p>No further action from the RIO is needed, ASH align will continue and ASH will remain on the TID as
-an advisory. Pressing once on the STORED HDG ALIGN on the CAP will end the ASH align and initiate
-normal alignment. The ASH acronym will disappear. Pressing the STORED HDG ALIGN a second time will
-reinitialize the stored heading alignment, however ASH won’t be displayed on the TID anymore.</p>
+<p>A feature of the INS that allows for quick-reaction response is the
+stored-heading alignment. The aircraft has to be parked and tied down in the
+alert position (wheel-chocks in DCS) for this procedure to be successful.
+Additionally, the aircraft heading has to be stored with a reference alignment
+before the aircraft is being powered down (and back up again).</p>
+<p>When the aircraft is powered back up, the system takes less than 2 minutes to
+align the INS from the stored heading, while providing almost the same accuracy
+like a full, fine ground or carrier alignment. When align is selected and a
+reference alignment is available, an ASH acronym for automatic stored heading
+will be displayed on the TID and STORED HDG ALIGN will illuminate on the CAP.
+The ASH acronym tells the RIO that a stored heading has been entered
+automatically.</p>
+<p>No further action from the RIO is needed, ASH align will continue and ASH will
+remain on the TID as an advisory. Pressing once on the STORED HDG ALIGN on the
+CAP will end the ASH align and initiate normal alignment. The ASH acronym will
+disappear. Pressing the STORED HDG ALIGN a second time will reinitialize the
+stored heading alignment, however ASH won’t be displayed on the TID anymore.</p>
 <blockquote>
-<p>💡 STBY/READY lights should be monitored for simultaneous illumination. If simultaneous
-illumination appears after 42 to 45 seconds, a failure has caused the alignment to reinitiate and
-may result in an erroneous alignment. The RIO must turn NAV MODE switch to OFF for 1 second, then
-restart the alignment following normal ground or carrier alignment procedures.</p>
+<p>💡 STBY/READY lights should be monitored for simultaneous illumination. If
+simultaneous illumination appears after 42 to 45 seconds, a failure has caused
+the alignment to re-initiate and may result in an erroneous alignment. The RIO
+must turn NAV MODE switch to OFF for 1 second, then restart the alignment
+following normal ground or carrier alignment procedures.</p>
 </blockquote>
-<p>The reference alignment can be done with either internal or external power. To do a reference
-alignment, enter the latitude and longitude via the CAP into the own-aircraft file. This can be
-achieved by an automatic transfer from homebase entry into own-aircraft before selecting GND ALIGN,
-or entry into own-aircraft file after GND ALIGN has been selected.</p>
-<p>The aircraft’s latitude and longitude can be entered into homebase and transferred into own-aircraft
-file through the following steps:</p>
+<p>The reference alignment can be done with either internal or external power. To
+do a reference alignment, enter the latitude and longitude via the CAP into the
+own-aircraft file. This can be achieved by an automatic transfer from homebase
+entry into own-aircraft before selecting GND ALIGN, or entry into own-aircraft
+file after GND ALIGN has been selected.</p>
+<p>The aircraft’s latitude and longitude can be entered into homebase and
+transferred into own-aircraft file through the following steps:</p>
 <ol>
 <li>Set the NAV MODE switch to GND ALIGN.</li>
 <li>Select CAP category TAC DATA.</li>
-<li>Depress HOME BASE and enter aircraft longitude and latitude via the CAP data entry buttons.</li>
+<li>Depress HOME BASE and enter aircraft longitude and latitude via the CAP data
+entry buttons.</li>
 </ol>
-<p>Aircraft latitude and longitude can be entered directly through the following steps:</p>
+<p>Aircraft latitude and longitude can be entered directly through the following
+steps:</p>
 <ol>
 <li>Set the NAV MODE switch to either OFF or GND ALIGN.</li>
 <li>Select CAP category NAV.</li>
-<li>Depress OWN A/C and enter aircraft longitude and latitude via the CAP data entry buttons.</li>
+<li>Depress OWN A/C and enter aircraft longitude and latitude via the CAP data
+entry buttons.</li>
 </ol>
 <blockquote>
-<p>💡 Depressing OWN A/C hooks own aircraft. If longitude and latitude is entered with the NAV
-MODE switch set to OFF, own aircraft must be hooked when the NAV MODE switch is set from OFF to
-GND ALIGN again. Be aware that whatever has been hooked (OWN AC or HB) will provide the data that
-is entered when NAV MODE is set from OFF to GND ALIGN.</p>
+<p>💡 Depressing OWN A/C hooks own aircraft. If longitude and latitude is entered
+with the NAV MODE switch set to OFF, own aircraft must be hooked when the NAV
+MODE switch is set from OFF to GND ALIGN again. Be aware that whatever has
+been hooked (OWN AC or HB) will provide the data that is entered when NAV MODE
+is set from OFF to GND ALIGN.</p>
 </blockquote>
-<p>For a reference alignment, alignment has to reach fine align complete. Both CVA ALIGN and GND ALIGN
-can be used to establish a reference alignment. The reference alignment is complete when a dot
-appears in the diamond.</p>
+<p>For a reference alignment, alignment has to reach fine align complete. Both CVA
+ALIGN and GND ALIGN can be used to establish a reference alignment. The
+reference alignment is complete when a dot appears in the diamond.</p>
 <p>To establish a reference alignment follow these steps:</p>
 <ol>
 <li>WCS switch - STBY.</li>
@@ -618,78 +686,91 @@ appears in the diamond.</p>
 <li>NAV MODE - OFF.</li>
 </ol>
 <blockquote>
-<p>💡 Unstable current or temporary loss of power will cause the CAINS to be deselected and
-will be indicated by a flashing HS acronym. A reference alignment cannot be done through a handset
-alignment, even if continued to fine align complete. For a successful reference alignment the
-aircraft must not move and the parking brake must not be cycled after the reference heading has
-been stored. For a valid reference alignment, it isn’t necessary to switch NAV MODE to INS,
-instead it can be switched directly to OFF from either CVA or GND ALIGN.</p>
+<p>💡 Unstable current or temporary loss of power will cause the CAINS to be
+deselected and will be indicated by a flashing HS acronym. A reference
+alignment cannot be done through a handset alignment, even if continued to
+fine align complete. For a successful reference alignment the aircraft must
+not move and the parking brake must not be cycled after the reference heading
+has been stored. For a valid reference alignment, it isn’t necessary to switch
+NAV MODE to INS, instead it can be switched directly to OFF from either CVA or
+GND ALIGN.</p>
 </blockquote>
 <h2 id="catapult-alignment"><a class="header" href="#catapult-alignment">Catapult Alignment</a></h2>
-<p>The CAT ALIGN mode is used to prevent suspend align when positioned on the catapult and the parking
-brake has been released. The purpose of the catapult align mode is to provide normal CVA ALIGN as
-long as possible. When CAT ALIGN is selected, large roll, pitch, speed, and heading changes of the
-ship can cause the program to automatically switch to INS.</p>
+<p>The CAT ALIGN mode is used to prevent suspend align when positioned on the
+catapult and the parking brake has been released. The purpose of the catapult
+align mode is to provide normal CVA ALIGN as long as possible. When CAT ALIGN is
+selected, large roll, pitch, speed, and heading changes of the ship can cause
+the program to automatically switch to INS.</p>
 <h2 id="navigation-fix-update"><a class="header" href="#navigation-fix-update">Navigation Fix Update</a></h2>
-<p>An error of latitude or longitude in the computer position of the aircraft can be corrected by a
-navigation fix update. Updating is especially important in the backup modes (AHRS AM and IMU/ AM)
-because of the estimated winds and magnetic variation changes. A nav fix is done via a
-ground-reference-point (latitude and longitude) position. The range and bearing of this position to
-the present aircraft position is used to update or correct existing values. The nav system may be
-updated by either a radar fix, a TACAN fix, or a visual fix.</p>
-<p>Before performing a nav fix, the latitude and longitude of the desired update point (radar, TACAN,
-or visual) must be stored in one of eight navigation point locations (three WPs, FIX PT, HOME BASE,
-HOST AREA, DEF PT, and IP). This data can be stored prior to flight by data link or by manual
-insertion. Then follow these steps:</p>
+<p>An error of latitude or longitude in the computer position of the aircraft can
+be corrected by a navigation fix update. Updating is especially important in the
+backup modes (AHRS AM and IMU/ AM) because of the estimated winds and magnetic
+variation changes. A nav fix is done via a ground-reference-point (latitude and
+longitude) position. The range and bearing of this position to the present
+aircraft position is used to update or correct existing values. The nav system
+may be updated by either a radar fix, a TACAN fix, or a visual fix.</p>
+<p>Before performing a nav fix, the latitude and longitude of the desired update
+point (radar, TACAN, or visual) must be stored in one of eight navigation point
+locations (three WPs, FIX PT, HOME BASE, HOST AREA, DEF PT, and IP). This data
+can be stored prior to flight by data link or by manual insertion. Then follow
+these steps:</p>
 <ol>
 <li>Hook the Waypoint you choose to select for the nav fix.</li>
 <li>Check the stored latitude and longitude on the TID.</li>
 <li>Rotate the CATEGORY switch to NAV and select the desired type of update.</li>
 </ol>
-<p>Note that updating the position while in INS, and to a lesser degree while in IMU, can introduce a
-greater navigational position error than already present, in particular if a radar fix is used to
-update the nav system. Updates with a visual or TACAN fix provide reasonable accuracy (assuming a
-good MAG VAR during TACAN updates). Updating your nav system via a nav fix should be primarily used
+<p>Note that updating the position while in INS, and to a lesser degree while in
+IMU, can introduce a greater navigational position error than already present,
+in particular if a radar fix is used to update the nav system. Updates with a
+visual or TACAN fix provide reasonable accuracy (assuming a good MAG VAR during
+TACAN updates). Updating your nav system via a nav fix should be primarily used
 in the AHRS mode.</p>
 <h2 id="radar-update"><a class="header" href="#radar-update">Radar Update</a></h2>
-<p>A RDR FIX may be selected before or after positioning the DDD cursors. If the RDR FIX button is
-depressed, the computer computes the present position of the aircraft by measuring the range and
-bearing from the selected point. The delta between the computer position and the position determined
-by the INS is then displayed on the TID. If entry of this delta into the navigation computations is
-desired, press the FIX ENABLE button. If the delta does not appear to be correct, the computer and
-the readout can be cleared by pressing the RDR FIX button. The fix may then be attempted again. The
-RIO should also perform periodic checks of own aircraft system altitude and update the altitude if
+<p>A RDR FIX may be selected before or after positioning the DDD cursors. If the
+RDR FIX button is depressed, the computer computes the present position of the
+aircraft by measuring the range and bearing from the selected point. The delta
+between the computer position and the position determined by the INS is then
+displayed on the TID. If entry of this delta into the navigation computations is
+desired, press the FIX ENABLE button. If the delta does not appear to be
+correct, the computer and the readout can be cleared by pressing the RDR FIX
+button. The fix may then be attempted again. The RIO should also perform
+periodic checks of own aircraft system altitude and update the altitude if
 necessary.</p>
 <p>Radar updating is performed as follows:</p>
 <ol>
 <li>TID CURSOR/CAP - Hook Desired Navigation Point for Update.</li>
 <li>PULSE SRCH button - Depress.</li>
-<li>On sensor control panel: STAB switch - IN. EL BARS switch - 1. AZ SCAN switch - As Desired.</li>
+<li>On sensor control panel: STAB switch - IN. EL BARS switch - 1. AZ SCAN
+switch - As Desired.</li>
 <li>RDR FIX button - Depress.</li>
 <li>DDD CURSOR button - Depress.</li>
 <li>Action switch - Half Action (first detent).</li>
 <li>Cursor is displayed on DDD.</li>
 <li>Manipulate hand control DDD cursor over desired ground map point.</li>
-<li>Action switch - Full Action and Release. (This will cause the DDD cursor to remain at the
-selected position.</li>
+<li>Action switch - Full Action and Release. (This will cause the DDD cursor to
+remain at the selected position.)</li>
 <li>Observe the delta for LAT and LONG on TID.</li>
-<li>If readouts are unsatisfactory, deselect RDR FIX and repeat steps 4 through 12.</li>
+<li>If readouts are unsatisfactory, deselect RDR FIX and repeat steps 4
+through 12.</li>
 <li>FIX ENABLE button - Depress.</li>
 </ol>
 <blockquote>
-<p>💡 To clear the previous hooked DDD cursor position, go to half action and then release
-prior to initiating full action for the new position hook.</p>
+<p>💡 To clear the previous hooked DDD cursor position, go to half action and
+then release prior to initiating full action for the new position hook.</p>
 </blockquote>
 <h2 id="tacan-update"><a class="header" href="#tacan-update">TACAN Update</a></h2>
-<p>To perform a nav fix by TACAN, it requires that a prestored waypoint shares identical LAT and LONG
-values with the TACAN station that will be used for the fix. Select the TACAN channel for the
-desired station and verify by listening to the coded identifier tone in the headset.</p>
-<p>Press the TACAN FIX button to update the aircraft position from a TACAN station. The WCS computer
-then calculates the own aircraft position error based on the range and bearing from the TACAN
-station. The delta is then entered in the same manner as with a radar fix.</p>
+<p>To perform a nav fix by TACAN, it requires that a pre-stored waypoint shares
+identical LAT and LONG values with the TACAN station that will be used for the
+fix. Select the TACAN channel for the desired station and verify by listening to
+the coded identifier tone in the headset.</p>
+<p>Press the TACAN FIX button to update the aircraft position from a TACAN station.
+The WCS computer then calculates the own aircraft position error based on the
+range and bearing from the TACAN station. The delta is then entered in the same
+manner as with a radar fix.</p>
 <p>Perform a TACAN fix following these steps:</p>
 <ol>
-<li>Select a TACAN channel whose latitude and longitude correspond to an update point.</li>
+<li>Select a TACAN channel whose latitude and longitude correspond to an update
+point.</li>
 <li>Hook the desired update point (WAYPT 1, FIX PT, HOME BASE, etc.).</li>
 <li>CATEGORY switch - NAV.</li>
 <li>TACAN FIX button - Depress.</li>
@@ -698,61 +779,72 @@ station. The delta is then entered in the same manner as with a radar fix.</p>
 <li>FIX ENABLE button - Depress.</li>
 </ol>
 <blockquote>
-<p>💡 During a TACAN FIX, the MAG VAR must be the same as the TACAN station magnetic
-variation, or the update will be in error. Given a TACAN station with a range of 100 NM from
-ownship, a 1°MAG VAR error introduces a 1.74nm error into the ownship’s TACAN update.</p>
+<p>💡 During a TACAN FIX, the MAG VAR must be the same as the TACAN station
+magnetic variation, or the update will be in error. Given a TACAN station with
+a range of 100 NM from ownship, a 1°MAG VAR error introduces a 1.74nm error
+into the ownship’s TACAN update.</p>
 </blockquote>
 <h2 id="visual-update"><a class="header" href="#visual-update">Visual Update</a></h2>
-<p>To perform a visual fix, fly over a prestored waypoint and press the VIS FIX button. Estimate your
-timing, because the aircraft nose and fuselage can obscure the fix point during overflight. It is
-also difficult to estimate when directly overhead a waypoint if the aircraft altitude is greater
-than 10,000 feet. The delta for the visual fix is displayed on the TID. Enter the delta by pressing
+<p>To perform a visual fix, fly over a pre-stored waypoint and press the VIS FIX
+button. Estimate your timing, because the aircraft nose and fuselage can obscure
+the fix point during overflight. It is also difficult to estimate when directly
+overhead a waypoint if the aircraft altitude is greater than 10,000 feet. The
+delta for the visual fix is displayed on the TID. Enter the delta by pressing
 FIX ENABLE.</p>
 <p>To perform a visual fix use the following steps:</p>
 <ol>
 <li>Hook the desired update point (WAY PT, HB, IP, etc.).</li>
 <li>Select NAV category on CAP.</li>
-<li>Overfly the selected prestored point and when over the point, depress the VIS FIX button on the
-cap.</li>
-<li>If the delta is not satisfactory, press VIS FIX again to clear the delta and repeat from step 1.</li>
-<li>If a satisfactory delta is displayed, depress the FIX ENABLE button; this causes the delta
-correction of own-aircraft position to be inserted into the computer.</li>
+<li>Overfly the selected pre-stored point and when over the point, depress the
+VIS FIX button on the cap.</li>
+<li>If the delta is not satisfactory, press VIS FIX again to clear the delta and
+repeat from step 1.</li>
+<li>If a satisfactory delta is displayed, depress the FIX ENABLE button; this
+causes the delta correction of own-aircraft position to be inserted into the
+computer.</li>
 </ol>
 <h2 id="data-link-update"><a class="header" href="#data-link-update">Data Link Update</a></h2>
-<p>To perform a data link update of the aircraft INS to the TDS frame of reference, the aircraft and
-TDS must share a prebriefed waypoint, identical in latitude and longitude. Enter this LAT/LONG data
-into the HOST AREA pseudo target file. The TDS will uplink the common reference point as a data link
-waypoint. When the aircraft and TDS INS systems agree, the data link waypoint and host area symbols
-will be superimposed on the TID. If they drift apart, the two pseudo targets on the TID will drift
-as well.</p>
+<p>To perform a data link update of the aircraft INS to the TDS frame of reference,
+the aircraft and TDS must share a pre-briefed waypoint, identical in latitude
+and longitude. Enter this LAT/LONG data into the HOST AREA pseudo target file.
+The TDS will uplink the common reference point as a data link waypoint. When the
+aircraft and TDS INS systems agree, the data link waypoint and host area symbols
+will be superimposed on the TID. If they drift apart, the two pseudo targets on
+the TID will drift as well.</p>
 <p>To perform an update via data link, use the following steps:</p>
 <ol>
-<li>Hook the data link waypoint corresponding prebriefed reference point.</li>
+<li>Hook the data link waypoint corresponding pre-briefed reference point.</li>
 <li>Select the NAV category on CAP.</li>
-<li>Overfly the hooked data link waypoint. When immediately over the point, press VIS FIX button on
-CAP.</li>
+<li>Overfly the hooked data link waypoint. When immediately over the point, press
+VIS FIX button on CAP.</li>
 <li>Observe delta LAT and LONG on TID.</li>
 <li>If deltas are satisfactory and update is desired, depress FIX ENABLE.</li>
 </ol>
-<p>After a data link update, HOST AREA and data link waypoint should be superimposed on the TID again.</p>
+<p>After a data link update, HOST AREA and data link waypoint should be
+superimposed on the TID again.</p>
 <h2 id="fighter-to-fighter-navigation-update"><a class="header" href="#fighter-to-fighter-navigation-update">Fighter-to-Fighter Navigation Update</a></h2>
-<p>Net aircraft that use fighter-to-fighter data link can update their navigation system in the FF/DL
-mode. To update LAT/LONG hook the net aircraft symbol of an aircraft that is in close proximity and
-select F/F NAV UPDATE on the CAP. This will enter the hooked aircraft’s coordinates into the INS as
-own-aircraft coordinates. To update the nav system on an aircraft that is not close, first obtain a
-radar STT on that aircraft, hook the STT-ed aircraft on the TID and then press F/F NAV UPDATE on the
-CAP.</p>
-<p>💡 By updating to the selected aircraft’s INS, its calibration/drift can potentially
-introduce a larger error into your own INS. Both aircraft will share the same error though.</p>
-<h2 id="position-marking"><a class="header" href="#position-marking">Position Marking</a></h2>
-<p>To mark the position of a pulse radar target, a visual target, or a TACAN station to be displayed on
-the TID, use the SURF TGT position in the TAC DATA category. Once displayed on the TID, latitude,
-longitude, range, bearing, and steering data are available, using the CAP or the navigation
-destination control or both.</p>
+<p>Net aircraft that use fighter-to-fighter data link can update their navigation
+system in the FF/DL mode. To update LAT/LONG hook the net aircraft symbol of an
+aircraft that is in close proximity and select F/F NAV UPDATE on the CAP. This
+will enter the hooked aircraft’s coordinates into the INS as own-aircraft
+coordinates. To update the nav system on an aircraft that is not close, first
+obtain a radar STT on that aircraft, hook the STT-ed aircraft on the TID and
+then press F/F NAV UPDATE on the CAP.</p>
 <blockquote>
-<p>💡 Do not use the position SURF TGT to update the navigation computer. The surface target
-position symbol is repositioned with respect to own aircraft instead of own aircraft being updated
-in reference to the surface target.</p>
+<p>💡 By updating to the selected aircraft’s INS, its calibration/drift can
+potentially introduce a larger error into your own INS. Both aircraft will
+share the same error though.</p>
+</blockquote>
+<h2 id="position-marking"><a class="header" href="#position-marking">Position Marking</a></h2>
+<p>To mark the position of a pulse radar target, a visual target, or a TACAN
+station to be displayed on the TID, use the SURF TGT position in the TAC DATA
+category. Once displayed on the TID, latitude, longitude, range, bearing, and
+steering data are available, using the CAP or the navigation destination control
+or both.</p>
+<blockquote>
+<p>💡 Do not use the position SURF TGT to update the navigation computer. The
+surface target position symbol is repositioned with respect to own aircraft
+instead of own aircraft being updated in reference to the surface target.</p>
 </blockquote>
 <p>To mark a pulse radar target on the TID, follow these steps:</p>
 <ol>
@@ -763,18 +855,20 @@ in reference to the surface target.</p>
 <li>Selecting full action.</li>
 <li>Select RDR FIX.</li>
 </ol>
-<p>This will display a delta from the hooked point to the surface target. Ignore the delta and select
-FIX ENABLE to position the surface target over the previously identified radar position. A very
-accurate readout of latitude, longitude, and steering information will become available for the
-Surface Target Waypoint.</p>
-<p>The method for visual targets is the same, but a visual fix is required. You can also mark a TACAN
-station by using the same method and following the TACAN fix procedures. After completing any of the
-above procedures, the SURF TGT symbol will be displayed on the TID at the computed latitude and
-longitude coordinates.</p>
-<p>The surface target symbol can also be used as a destination point. If its position has been
-previously entered, the symbol will appear on the TID. One method for special position marking is to
-hook any point on the TID and select SURF TGT. The surface target symbol now appears over the hooked
-point and its new position will be stored in the WCS computer.</p>
+<p>This will display a delta from the hooked point to the surface target. Ignore
+the delta and select FIX ENABLE to position the surface target over the
+previously identified radar position. A very accurate readout of latitude,
+longitude, and steering information will become available for the Surface Target
+Waypoint.</p>
+<p>The method for visual targets is the same, but a visual fix is required. You can
+also mark a TACAN station by using the same method and following the TACAN fix
+procedures. After completing any of the above procedures, the SURF TGT symbol
+will be displayed on the TID at the computed latitude and longitude coordinates.</p>
+<p>The surface target symbol can also be used as a destination point. If its
+position has been previously entered, the symbol will appear on the TID. One
+method for special position marking is to hook any point on the TID and select
+SURF TGT. The surface target symbol now appears over the hooked point and its
+new position will be stored in the WCS computer.</p>
 
                     </main>
 

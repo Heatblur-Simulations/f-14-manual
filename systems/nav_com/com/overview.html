@@ -163,40 +163,47 @@
                     <main>
                         <h1 id="communications-systems"><a class="header" href="#communications-systems">Communications Systems</a></h1>
 <h2 id="antennas"><a class="header" href="#antennas">Antennas</a></h2>
-<p>Four VHF/UHF/L-band dual-blade antennas provide omnidirectional coverage for VHF/UHF voice, UHF data
-link, TACAN, and identification friend or foe/selective identification feature transponder (APX-72)
-operation. TACAN and VHF/UHF 2 voice communications use one set of antennas; UHF 1 voice
-communications, the data link, and IFF transponder use another set of antennas. Refer to the general
-arrangement illustration for antenna locations. The IFF interrogator (APX-76) antenna is an integral
-part of the AWG-9 WCS antenna.</p>
-<p>Each individual system is connected to the appropriate portion of an upper or lower antenna through
-a coaxial switch and diplexer. The V/UHF 2 ANT switch on the RIO communication TACAN CMD panel must
-be used to select the upper or lower antenna manually; there is no automatic actuation function in
-these aircraft. The data link (DIL) antennas are similarly selected manually. Upper or lower antenna
-is selected by means of ANTENNA switches on the DATA LINK control panel. The UHF 1 voice
-communication ARC-159 antenna is shared with the DIL antenna system and is always on the opposite
-antenna from the one selected by the ANTENNA switch.</p>
-<p>The upper V/UHF 2/TACAN antenna is the first one aft of the canopy on the turtleback, and the lower
-antenna is embedded in the bottom of the left ventral fin. Only one antenna is used at a time.
-Automatic switching between antennas prevents the loss of TACAN information. If a signal is lost or
-is too weak to hold receiver lockup, the TACAN automatically cycles between the two antennas every 6
-seconds seeking a stronger signal.</p>
-<p>During this cycling and search period, memory circuits retain range tracking for 8 to 12 seconds and
-bearing tracking for 8 seconds. The IFF antenna lobing switch is controlled by the IFF ANT switch on
-the RIO right outboard console. In AUTO, the lobing switch cycles the receiver-transmitter between
-the upper and lower antenna. In the LWR (lower) position, only the lower antenna is used to receive
-and transmit signals. The upper antenna pattern has a slight forward tilt; the lower pattern a
-slight aft tilt.</p>
+<p>Four VHF/UHF/L-band dual-blade antennas provide omnidirectional coverage for
+VHF/UHF voice, UHF data link, TACAN, and identification friend or foe/selective
+identification feature transponder (APX-72) operation. TACAN and VHF/UHF 2 voice
+communications use one set of antennas; UHF 1 voice communications, the data
+link, and IFF transponder use another set of antennas. Refer to the general
+arrangement illustration for antenna locations. The IFF interrogator (APX-76)
+antenna is an integral part of the AWG-9 WCS antenna.</p>
+<p>Each individual system is connected to the appropriate portion of an upper or
+lower antenna through a coaxial switch and diplexer. The V/UHF 2 ANT switch on
+the RIO communication TACAN CMD panel must be used to select the upper or lower
+antenna manually; there is no automatic actuation function in these aircraft.
+The data link (DIL) antennas are similarly selected manually. Upper or lower
+antenna is selected by means of ANTENNA switches on the DATA LINK control panel.
+The UHF 1 voice communication ARC-159 antenna is shared with the DIL antenna
+system and is always on the opposite antenna from the one selected by the
+ANTENNA switch.</p>
+<p>The upper V/UHF 2/TACAN antenna is the first one aft of the canopy on the
+turtleback, and the lower antenna is embedded in the bottom of the left ventral
+fin. Only one antenna is used at a time. Automatic switching between antennas
+prevents the loss of TACAN information. If a signal is lost or is too weak to
+hold receiver lockup, the TACAN automatically cycles between the two antennas
+every 6 seconds seeking a stronger signal.</p>
+<p>During this cycling and search period, memory circuits retain range tracking for
+8 to 12 seconds and bearing tracking for 8 seconds. The IFF antenna lobing
+switch is controlled by the IFF ANT switch on the RIO right outboard console. In
+AUTO, the lobing switch cycles the receiver-transmitter between the upper and
+lower antenna. In the LWR (lower) position, only the lower antenna is used to
+receive and transmit signals. The upper antenna pattern has a slight forward
+tilt; the lower pattern a slight aft tilt.</p>
 <blockquote>
-<p>💡 In real life, it is often necessary to select LWR to improve ground station reception.
-However, due to the limitations of DCS, antenna switching is not modeled and thus not functional.
-The use of antennas is automated and/or neglected for the player. All radios and radio functions
-work through proper keying.</p>
+<p>💡 In real life, it is often necessary to select LWR to improve ground station
+reception. However, due to the limitations of DCS, antenna switching is not
+modeled and thus not functional. The use of antennas is automated and/or
+neglected for the player. All radios and radio functions work through proper
+keying.</p>
 </blockquote>
 <h2 id="pilot-volumetacan-command-panel"><a class="header" href="#pilot-volumetacan-command-panel">Pilot Volume/TACAN Command Panel</a></h2>
-<p><img src="../../../img/volume1.jpg" alt="volume1" /></p>
-<p>The Volume/TACAN command panel on the pilot left side console has three volume controls for
-regulating audio signals from the ALR-67, Sidewinder (SW), and V/UHF 2.</p>
+<p><img src="../../../img/general_communications_volume.jpg" alt="volume" /></p>
+<p>The Volume/TACAN command panel on the pilot left side console has three volume
+controls for regulating audio signals from the ALR-67, Sidewinder (SW), and
+V/UHF 2.</p>
 <div class="table-wrapper"><table><thead><tr><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
 <tr><td><strong>ALR-67 Volume control</strong></td><td>Controls volume for pilot ALR-67 indication.</td></tr>
 <tr><td><strong>SW (Sidewinder) Volume control</strong></td><td>Controls volume of the pilot’s Sidewinder tone.</td></tr>
@@ -205,25 +212,27 @@ regulating audio signals from the ALR-67, Sidewinder (SW), and V/UHF 2.</p>
 </tbody></table>
 </div>
 <h2 id="rio-communicationtacan-command-panel"><a class="header" href="#rio-communicationtacan-command-panel">RIO Communication/TACAN Command Panel</a></h2>
-<p>Allows RIO to select either UHF 1 (AN/ARC-159), V/UHF 2 (AN/ARC-182), or both radios for
-transmitting.</p>
+<p>Allows RIO to select either UHF 1 (AN/ARC-159), V/UHF 2 (AN/ARC-182), or both
+radios for transmitting.</p>
 <blockquote>
 <p>💡 BOTH is not functional in DCS.</p>
 </blockquote>
 <ul>
-<li>The V/UHF 2 ANT switch allows the selection of upper or lower antenna to minimize interference
-between dual UHF or data link operation. Opposite antenna selection, frequency separation greater
-than 55 MHz, or turning one radio off is recommended. Additionally, the DATA LINK panel provides
-lower or upper antenna selection for UHF 1 and DIL operation.</li>
-<li>The TACAN CMD push buttons provide for the transfer of TACAN control functions between pilot and
-RIO. The crewmember (PLT or RIO) in control illuminates when selected.</li>
-<li>The UHF 1 VOL control allows the RIO to adjust the audio level of the ARC 159 UHF 1 radio. The KY
-MODE switch is operative only when the KY-58 is installed.</li>
+<li>The V/UHF 2 ANT switch allows the selection of upper or lower antenna to
+minimize interference between dual UHF or data link operation. Opposite
+antenna selection, frequency separation greater than 55 MHz, or turning one
+radio off is recommended. Additionally, the DATA LINK panel provides lower or
+upper antenna selection for UHF 1 and DIL operation.</li>
+<li>The TACAN CMD push buttons provide for the transfer of TACAN control functions
+between pilot and RIO. The crewmember (PLT or RIO) in control illuminates when
+selected.</li>
+<li>The UHF 1 VOL control allows the RIO to adjust the audio level of the ARC 159
+UHF 1 radio. The KY MODE switch is operative only when the KY-58 is installed.</li>
 </ul>
 <blockquote>
 <p>💡 The Heatblur F-14 version uses the KY-28 only.</p>
 </blockquote>
-<p><img src="../../../img/comtac1.jpg" alt="comtac1" /></p>
+<p><img src="../../../img/general_communications_comtac.jpg" alt="com tac" /></p>
 <div class="table-wrapper"><table><thead><tr><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
 <tr><td><strong>XMTR SEL switch</strong></td><td>Selects desired VHF/UHF radio for use. UHF 1 - Selects ARC-159 UHF 1 radio. V/UHF 2 - Selects ARC-182 VHF/UHF radio. Both - Selects both radios. (Not functional in DCS)</td></tr>
 <tr><td><strong>V/UHF 2 ANT switch</strong></td><td>UPR - Selects upper antenna for V/UHF 2. LWR - Selects lower antenna for V/UHF 2.</td></tr>
@@ -239,14 +248,16 @@ MODE switch is operative only when the KY-58 is installed.</li>
 <li>CHAN SEL switch- Select desired channel.</li>
 <li>Frequency mode control- READ.</li>
 <li>Frequency select switches - Slew to desired Frequency.</li>
-<li>Frequency mode control - LOAD (frequency is stored in memory for the selected channel).</li>
+<li>Frequency mode control - LOAD (frequency is stored in memory for the selected
+channel).</li>
 <li>Frequency mode control- READ, Verify frequency display.</li>
 <li>Repeat steps 2 through 7 for subsequent channels.</li>
 </ol>
 <h2 id="anarc-159-and-anarc-182-remote-displays"><a class="header" href="#anarc-159-and-anarc-182-remote-displays">AN/ARC-159 and AN/ARC-182 Remote Displays</a></h2>
-<p>Both the pilot and RIO have remote displays for the currently set channel or frequency of the
-radios. The pilot has remote displays for both UHF 1 and V/UHF 2 and the RIO only for UHF 1.</p>
-<div class="table-wrapper"><table><thead><tr><th><img src="../../../img/frontremote1.jpg" alt="frontremote1" /></th><th><img src="../../../img/backremote1.jpg" alt="backremote1" /></th></tr></thead><tbody>
+<p>Both the pilot and RIO have remote displays for the currently set channel or
+frequency of the radios. The pilot has remote displays for both UHF 1 and V/UHF
+2 and the RIO only for UHF 1.</p>
+<div class="table-wrapper"><table><thead><tr><th><img src="../../../img/general_communications_frontremote.jpg" alt="front remote" /></th><th><img src="../../../img/general_communications_backremote.jpg" alt="back remote" /></th></tr></thead><tbody>
 </tbody></table>
 </div><div class="table-wrapper"><table><thead><tr><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
 <tr><td><strong>UHF 1 Remote Channel/Frequency Indicator (Pilot)</strong></td><td>Displays a readout of the frequency or channel set for the UHF 1 radio. TEST - Initiates test for the indicator, no fault resulting in 888.888 readout. BRT - Controls display brightness.</td></tr>
@@ -258,7 +269,7 @@ radios. The pilot has remote displays for both UHF 1 and V/UHF 2 and the RIO onl
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Navigation button at bottom -->
-                            <a rel="prev" href="../../../systems/nav_com/icls.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../../systems/nav_com/bdhi.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
                             </a>
 
@@ -270,11 +281,11 @@ radios. The pilot has remote displays for both UHF 1 and V/UHF 2 and the RIO onl
                     </nav>
                     <nav class="nav-wide-wrapper" aria-label="Page navigation">
                             <!-- Navigation button at bottom -->
-                            <a rel="prev" href="../../../systems/nav_com/icls.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../../systems/nav_com/bdhi.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
                             </a>
                             <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
-                            <a rel="prev" href="../../../systems/nav_com/icls.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../../systems/nav_com/bdhi.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
                             </a>
 
