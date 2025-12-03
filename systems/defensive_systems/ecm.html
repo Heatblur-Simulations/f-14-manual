@@ -162,51 +162,57 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="electronic-countermeasures---analq-100--126-decm-defensive-electronic-countermeasures"><a class="header" href="#electronic-countermeasures---analq-100--126-decm-defensive-electronic-countermeasures">Electronic Countermeasures - AN/ALQ-100 &amp; 126 DECM (Defensive Electronic CounterMeasures)</a></h1>
-<blockquote>
-<p>🚧 TODO: Rework to add imagery.</p>
-</blockquote>
-<p>The AN/ALQ-100 and 126 jammers are designed to detect radar threats, analyze them, select the
-optimum countermeasure technique available and apply it. Available techniques for jamming are
-amongst others, mainlobe blanking, inverse con-scan, range-gate pull-off and swept square modes.</p>
-<p>In real life these two systems differ greatly with the AN/ALR-126 being by far the most effective
-system. In DCS both are modelled as a simple noise jammers due to engine limitations but controlled
-by the DECM logic as to when it’s on or off and thus work the same.</p>
+<p>The AN/ALQ-100 and 126 jammers are designed to detect radar threats, analyze
+them, select the optimum countermeasure technique available and apply it.
+Available techniques for jamming are amongst others, mainlobe blanking, inverse
+con-scan, range-gate pull-off and swept square modes.</p>
+<p>In real life these two systems differ greatly with the AN/ALR-126 being by far
+the most effective system. In DCS both are modelled as a simple noise jammers
+due to engine limitations but controlled by the DECM logic as to when it’s on or
+off and thus work the same.</p>
 <h2 id="decm-controls-and-indicators"><a class="header" href="#decm-controls-and-indicators">DECM Controls and Indicators</a></h2>
-<p><img src="../../img/control2.jpg" alt="Control Panel" /></p>
-<p>The controls for the DECM are all located on the right horizontal panel in the RIO pit, panel as
-image above. In addition there are two indication lights co-located with the RWR threat indicators
-on the right side of the TID.</p>
-<p>The two indication lights on the threat advisory are RCV (recieve) and XMIT (transmit). RCV
-illuminates up when the system detects and analyzes a threat while the XMIT illuminates up when it’s
-actively jamming a threat.</p>
-<p>The control panel itself contains a STANDBY indicator light, a mode selector knob and an AUDIO
-volume knob.</p>
-<p>The STANDBY light indicates that system warmup is not yet completed and when completed turns off. At
-other times, illumination of this indicator indicates the presence of a fault in the system.</p>
-<p>The AUDIO (volume) knob controls the audio volume of the RIO sound from the system. The pilot has no
-access to this audio. The audio itself is generated from the PRF of recieved threats with PRF
-frequency being converted to audio frequency.</p>
-<p>The mode selector knob controls power and operational mode that the system is in.</p>
-<p>OFF turns off power to the system. STBY begins pre-warming of the system, taking in all around 5
-minutes.</p>
-<p>TEST - HOLD 3 SEC is used to prepare the system for BIT, after 3 seconds in this mode, turn the knob
-to TEST - ACT.</p>
-<p>TEST - ACT starts the BIT in the system. The BIT takes approximately 30 seconds and the RCV light
-will be illuminated the whole time while the XMIT light will flash twice. If the STANDBY light
-illuminates it indicates that a no-go condition exists in the system.</p>
-<p>REC enables the system in recieve only mode, enabling analysation of threats and also the threat
-audio.</p>
-<p>RPT enables full system functionality, in addition to REC it also now tries to jam threats according
-to selected method.</p>
+<p><img src="../../img/general_alq-126_control.jpg" alt="Control Panel" /></p>
+<p>The controls for the DECM are all located on the right horizontal panel in the
+RIO pit, panel as image above. In addition there are two indication lights
+co-located with the RWR threat indicators on the right side of the TID.</p>
+<p>The two indication lights on the threat advisory are RCV (recieve) and XMIT
+(transmit). RCV illuminates up when the system detects and analyzes a threat
+while the XMIT illuminates up when it's actively jamming a threat.</p>
+<p>The control panel itself contains a STANDBY indicator light, a mode selector
+knob and an AUDIO volume knob.</p>
+<p>The STANDBY light indicates that system warmup is not yet completed and when
+completed turns off. At other times, illumination of this indicator indicates
+the presence of a fault in the system.</p>
+<p>The AUDIO (volume) knob controls the audio volume of the RIO sound from the
+system. The pilot has no access to this audio unless he put his amplifier
+selector to <strong>EMER</strong> (to use RIO amplifier). The audio itself is generated based
+on radar signal characteristics (mainly PRF).</p>
+<p>The mode selector knob controls power and operational mode that the system is
+in.</p>
+<ul>
+<li><strong>OFF</strong> turns off power to the system. <strong>STBY</strong> begins pre-warming of the
+system, taking in all around 5 minutes.</li>
+<li><strong>TEST - HOLD 3 SEC</strong> is used to prepare the system for BIT, after 3 seconds
+in this mode, turn the knob to TEST - ACT.</li>
+<li><strong>TEST - ACT</strong> starts the BIT in the system. The BIT takes approximately 30
+seconds and the RCV light will be illuminated the whole time while the XMIT
+light will flash twice. If the STANDBY light illuminates it indicates that a
+no-go condition exists in the system.</li>
+<li><strong>REC</strong> enables the system in recieve only mode, enabling analysis of threats
+and also the threat audio.</li>
+<li><strong>RPT</strong> enables full system functionality, in addition to REC it also now
+tries to jam threats according to selected method.</li>
+</ul>
 <blockquote>
-<p>💡 In DCS, jamming is always done with noise jamming, turning on as a threat is detected.</p>
+<p>💡 In DCS jamming is always done with noise jamming, turning on as a threat is
+detected.</p>
 </blockquote>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Navigation button at bottom -->
-                            <a rel="prev" href="../../systems/defensive_systems/alr_45-50.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../systems/defensive_systems/rwr/alr_45-50.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
                             </a>
 
@@ -218,11 +224,11 @@ to selected method.</p>
                     </nav>
                     <nav class="nav-wide-wrapper" aria-label="Page navigation">
                             <!-- Navigation button at bottom -->
-                            <a rel="prev" href="../../systems/defensive_systems/alr_45-50.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../systems/defensive_systems/rwr/alr_45-50.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
                             </a>
                             <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
-                            <a rel="prev" href="../../systems/defensive_systems/alr_45-50.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../systems/defensive_systems/rwr/alr_45-50.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
                             </a>
 

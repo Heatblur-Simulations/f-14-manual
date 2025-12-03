@@ -12,34 +12,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="../../favicon.svg">
-        <link rel="stylesheet" href="../../css/variables.css">
-        <link rel="stylesheet" href="../../css/general.css">
-        <link rel="stylesheet" href="../../css/chrome.css">
-        <link rel="stylesheet" href="../../css/print.css" media="print">
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../../fonts/fonts.css">
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../../highlight.css">
-        <link rel="stylesheet" href="../../tomorrow-night.css">
-        <link rel="stylesheet" href="../../ayu-highlight.css">
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="../../theme/visual.css">
-        <link rel="stylesheet" href="../../theme/hb_light.css">
-        <link rel="stylesheet" href="../../theme/hb_dark.css">
-        <link rel="stylesheet" href="../../theme/pdf.css">
+        <link rel="stylesheet" href="../../../theme/visual.css">
+        <link rel="stylesheet" href="../../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../../theme/pdf.css">
 
         <!-- Provide site root to javascript -->
         <script>
-            var path_to_root = "../../";
+            var path_to_root = "../../../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../toc.js"></script>
+        <script src="../../../toc.js"></script>
     </head>
     <body>
     <div id="body-container">
@@ -91,7 +91,7 @@
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
-                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
             </noscript>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -123,7 +123,7 @@
                     <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
 
                     <div class="right-buttons">
-                        <a href="../../print.html" title="Print this manual" aria-label="Print this manual">
+                        <a href="../../../print.html" title="Print this manual" aria-label="Print this manual">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
@@ -132,7 +132,7 @@
                         <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/systems/defensive_systems/alr_67.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/systems/defensive_systems/rwr/alr_67.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -162,141 +162,142 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="analr-67-rwr"><a class="header" href="#analr-67-rwr">AN/ALR-67 RWR</a></h1>
-<blockquote>
-<p>🚧 TODO: Rework to add more imagery. Also fix the notes to use the new F-4 system.</p>
-</blockquote>
-<p>The AN/ALR-67 radar warning receiver (RWR) is designed to inform and alert the F-14 crew about radar
-emitters in their general area. It’s also designed to help the crew defend themselves from hostile
-threats by indicate radar TRKing and engagement by radar guided weapons.</p>
-<p>The AN/ALR-67 was integrated in the F-14 to replace the ageing AN/ALR-45 and AN/ALR-50, at first for
-the F-14B and later on for parts of the F-14A fleet. Until the advent of the PMDIG upgrade the
-AN/ALR-67 used its own stand-alone display system only. The RWR is however connected to the
-AN/ALQ-126 allowing it to send info on threat emitters to the jammer and also display jammed targets
-on its own display. It can also trigger preprogrammed countermeasure programs set up in the
-AN/ALE-39 system.</p>
-<p>On later F-14B aircraft incorporating the PTID upgrade the AN/ALR-67 was also integrated into the
-MDIG diplays system, allowing for a more detailed threat display on the ECMD.</p>
-<p>The AN/ALR-67 on the F-14B has four small spiral high-band antennas, four wideband high-band
-quadrant receivers and a low-band array. Connected to these antennas is a narrowband superheterodyne
-receiver analysing the received signals and indicating emitters and threats to both pilot and RIO
-using two displays, one at each seat and by audio signals played to the ICS of both</p>
+<p>The AN/ALR-67 radar warning receiver (RWR) is designed to inform and alert the
+F-14 crew about radar emitters in their general area. It’s also designed to help
+the crew defend themselves from hostile threats by indicate radar TRKing and
+engagement by radar guided weapons.</p>
+<p>The AN/ALR-67 was integrated in the F-14 to replace the ageing AN/ALR-45 and
+AN/ALR-50, at first for the F-14B and later on for parts of the F-14A fleet.
+Until the advent of the PMDIG upgrade the AN/ALR-67 used its own stand-alone
+display system only. The RWR is however connected to the AN/ALQ-126 allowing it
+to send info on threat emitters to the jammer and also display jammed targets on
+its own display. It can also trigger preprogrammed countermeasure programs set
+up in the AN/ALE-39 system.</p>
+<p>On later F-14B aircraft incorporating the PTID upgrade the AN/ALR-67 was also
+integrated into the MDIG displays system, allowing for a more detailed threat
+display on the ECMD.</p>
+<p>The AN/ALR-67 on the F-14B has four small spiral high-band antennas, four
+wide-band high-band quadrant receivers and a low-band array. Connected to these
+antennas is a narrow-band superheterodyne receiver analyzing the received
+signals and indicating emitters and threats to both pilot and RIO using two
+displays, one at each seat and by audio signals played to the ICS of both</p>
 <h2 id="controls"><a class="header" href="#controls">Controls</a></h2>
-<p><img src="../../img/control1.jpg" alt="Control Panel" /></p>
-<p>The AN/ALR-67 RWR is controlled by a control panel on the RIO right side horizontal panel.</p>
-<p>The PWR (power) switch control power to the RWR and should be set to ON to operate the system.</p>
-<p>The VOL (volume) control knob sets RIO audio level for the RWR sound indications. The pilot has a
-corresponding control on his Volume/TACAN command panel.</p>
-<p>The TEST switch has two selectable modes and is spring-loaded to center when not held. Momentary
-selection of the BIT position initiates the AN/ALR-67 built in test and if the switch is held in the
-SPL (special) position while on the first BIT page displays the special BIT status page as long as
-it’s held in that position.</p>
-<p>The MODE switch also has two selectable modes used while held in the respective position,
-spring-loaded to return to center when not held. When not activated enables normal operational mode,
-OFST enables the offset mode when held and LMT the limit mode when held. The offset mode is
-indicated by an O in the status ring on the display and separates overlapping threat symbols
-sacrificing azimuth accuracy to instead show all threats clearly. The limit mode is indicated by an
-L in the status ring on the display and limits the display to only show the threat symbols of the
-six highest prioritized threats.</p>
-<p>The DISPLAY TYPE selector sets what threat display priority to use on the RWR displays.</p>
-<p>NORM - Normal is indicated by a N in the status ring on the display and shows threat symbology
-according to the loaded threat library.</p>
-<p>AI - Airborne interceptor is indicated by an I in the status ring on the display and prioritizes all
-airborne interceptor threats above all other threats.</p>
-<p>AAA - Anti-aircraft artillery is indicated by an A in the status ring on the display and prioritizes
-all anti-aircraft artillery threats above all other threats.</p>
-<p>UNK - Unknown is indicated by a U in the status ring on the display and prioritizes all unknown
-threats above all other threats.</p>
-<p>FRIEND - Friendly is indicated by an F in the status ring on the display and allows for the same
-prioritization as in normal but also displays known friendly emitters.</p>
-<h2 id="displays"><a class="header" href="#displays">Displays</a></h2>
-<p><img src="../../img/display.jpg" alt="Display" /></p>
-<p>The RWR display is identical at both positions in the cockpit and uses three bands (circles) on the
-display to indicate the threat level of the displayed threat symbols.</p>
-<p>The outermost, critical band displays threat symbols belonging to emitters representing an imminent
-threat to own aircraft, either a locked on TRKing radar or a radar detected to be actively engaging
-own aircraft. A threat symbol belonging to a TRK detected as actively engaging own aircraft is
-enhanced by flashing of its symbol.</p>
-<p>The middle, lethal band displays threat symbols belonging to emitters representing threat systems
-deemed within lethal range of own aircraft but not actively TRKing or engaging it.</p>
-<p>The inner, non-lethal band displays threat symbols belonging to emitters not representing a system
-capable of engaging own aircraft or systems capable of but not deemed within range to engage it.</p>
-<p>The circle inside the threat bands is the system status circle, indicating various system modes in
-use or the presence of failures. The upper left quadrant displays what display type is set (N, I, A,
-U or F), the upper right quadrant showing an L if limited display mode is used and the lower half
-indicating either the use of the offset display mode by indicating an O, the presence of a BIT
-failure by showing B or that the system is thermally overloaded (too warm) by showing a T.</p>
-<p>On the lower right side is a knob controlling display intensity on display it’s attached to.</p>
-<blockquote>
-<p>🚧 Experimental way of showing the above info BEGIN</p>
-</blockquote>
-<p>The RWR display is identical at both positions in the cockpit and uses three bands (circles) on the
-display to indicate the threat level of the displayed threat symbols.</p>
+<p><img src="../../../img/general_alr-67_control.jpg" alt="Control Panel" /></p>
+<p>The AN/ALR-67 RWR is controlled by a control panel on the RIO right side
+horizontal panel.</p>
+<p>The PWR (power) switch control power to the RWR and should be set to ON to
+operate the system.</p>
+<p>The VOL (volume) control knob sets RIO audio level for the RWR sound
+indications. The pilot has a corresponding control on his Volume/TACAN command
+panel.</p>
+<p>The TEST switch has two selectable modes and is spring-loaded to center when not
+held. Momentary selection of the BIT position initiates the AN/ALR-67 built in
+test and if the switch is held in the SPL (special) position while on the first
+BIT page displays the special BIT status page as long as it’s held in that
+position.</p>
+<p>The MODE switch also has two selectable modes used while held in the respective
+position, spring-loaded to return to center when not held. When not activated
+enables normal operational mode, OFST enables the offset mode when held and LMT
+the limit mode when held. The offset mode is indicated by an O in the status
+ring on the display and separates overlapping threat symbols sacrificing azimuth
+accuracy to instead show all threats clearly. The limit mode is indicated by an
+L in the status ring on the display and limits the display to only show the
+threat symbols of the six highest prioritized threats.</p>
+<p>The DISPLAY TYPE selector sets what threat display priority to use on the RWR
+displays.</p>
 <ul>
-<li><strong>Outermost, critical band:</strong> Displays threat symbols belonging to emitters representing an
-imminent threat to own aircraft, either a locked-on TRKing radar or a radar detected to be
-actively engaging own aircraft. A threat symbol belonging to a TRK detected as actively engaging
-own aircraft is enhanced by flashing its symbol.</li>
-<li><strong>Middle, lethal band:</strong> Displays threat symbols belonging to emitters representing threat systems
-deemed within lethal range of own aircraft but not actively TRKing or engaging it.</li>
-<li><strong>Inner, non-lethal band:</strong> Displays threat symbols belonging to emitters not representing a
-system capable of engaging own aircraft or systems capable of but not deemed within range to
-engage it.</li>
-<li><strong>System status circle:</strong> Indicates various system modes in use or the presence of failures. The
-upper left quadrant displays what display type is set (N, I, A, U, or F), the upper right quadrant
-showing an L if limited display mode is used, and the lower half indicating either the use of the
-offset display mode by indicating an O, the presence of a BIT failure by showing B, or that the
-system is thermally overloaded (too warm) by showing a T.</li>
-<li><strong>Display intensity knob:</strong> On the lower right side, it controls display intensity on the display
-it’s attached to.</li>
+<li><strong>NORM</strong> - Normal is indicated by a N in the status ring on the display and
+shows threat symbology according to the loaded threat library.</li>
+<li><strong>AI</strong> - Airborne interceptor is indicated by an I in the status ring on the
+display and prioritizes all airborne interceptor threats above all other
+threats.</li>
+<li><strong>AAA</strong> - Anti-aircraft artillery is indicated by an A in the status ring on
+the display and prioritizes all anti-aircraft artillery threats above all
+other threats.</li>
+<li><strong>UNK</strong> - Unknown is indicated by a U in the status ring on the display and
+prioritizes all unknown threats above all other threats.</li>
+<li><strong>FRIEND</strong> - Friendly is indicated by an F in the status ring on the display
+and allows for the same prioritization as in normal but also displays known
+friendly emitters.</li>
+</ul>
+<h2 id="displays"><a class="header" href="#displays">Displays</a></h2>
+<p><img src="../../../img/general_alr-67_display.jpg" alt="Display" /></p>
+<p>The RWR display is identical at both positions in the cockpit and uses three
+bands (circles) on the display to indicate the threat level of the displayed
+threat symbols.</p>
+<ul>
+<li><strong>Outermost, critical band:</strong> Displays threat symbols belonging to emitters
+representing an imminent threat to own aircraft, either a locked-on TRKing
+radar or a radar detected to be actively engaging own aircraft. A threat
+symbol belonging to a TRK detected as actively engaging own aircraft is
+enhanced by flashing its symbol.</li>
+<li><strong>Middle, lethal band:</strong> Displays threat symbols belonging to emitters
+representing threat systems deemed within lethal range of own aircraft but not
+actively TRKing or engaging it.</li>
+<li><strong>Inner, non-lethal band:</strong> Displays threat symbols belonging to emitters not
+representing a system capable of engaging own aircraft or systems capable of
+but not deemed within range to engage it.</li>
+<li><strong>System status circle:</strong> Indicates various system modes in use or the
+presence of failures. The upper left quadrant displays what display type is
+set (N, I, A, U, or F), the upper right quadrant showing an L if limited
+display mode is used, and the lower half indicating either the use of the
+offset display mode by indicating an O, the presence of a BIT failure by
+showing B, or that the system is thermally overloaded (too warm) by showing a
+T.</li>
+<li><strong>Display intensity knob:</strong> On the lower right side, it controls display
+intensity on the display it’s attached to.</li>
 </ul>
 <blockquote>
-<p>🚧 Experimental way of showing the info END.</p>
-</blockquote>
-<blockquote>
-<p>💡 The ordering of the three threat bands has changed at least once since the introduction
-of the AN/ALR-67, and as the modeled AN/ALR-67 represents one of the earlier versions we’ve chosen
-the present order.</p>
+<p>💡 The ordering of the three threat bands has changed at least once since the
+introduction of the AN/ALR-67, and as the modeled AN/ALR-67 represents one of
+the earlier versions we’ve chosen the present order.</p>
 </blockquote>
 <h2 id="warning-lights"><a class="header" href="#warning-lights">Warning Lights</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Pilot</th><th>RIO</th></tr></thead><tbody>
-<tr><td><img src="../../img/pilotcaution.jpg" alt="Pilot Caution" /></td><td><img src="../../img/riocaution.jpg" alt="RIO Caution" /></td></tr>
+<tr><td><img src="../../../img/general_alr-67_pilotcaution.jpg" alt="Pilot Caution" /></td><td><img src="../../../img/general_alr-67_riocaution.jpg" alt="RIO Caution" /></td></tr>
 </tbody></table>
 </div>
-<p>The two crewmembers have warning lights dedicated to specific threats on their front cockpit panels.
-The pilot warning lights are situated on the right side of the HUD and the RIO warning lights on the
-right side of the TID. The RIO warning light panel also contains lights for the AN/ALQ-126 and the
-IFF transponder, those are detailed under their respective section.</p>
-<p>The different lights illuminate to indicate the presence of a certain type of threat in the critical
-band of the RWR and when an active engagement is detected the corresponding light starts flashing.
-The categories present are SAM (surface-to-air missile), AAA (anti-air artillery), AI (airborne
-interceptor), and (only in the RIO pit) CW (continuous wave).</p>
+<p>The two crewmembers have warning lights dedicated to specific threats on their
+front cockpit panels. The pilot warning lights are situated on the right side of
+the HUD and the RIO warning lights on the right side of the TID. The RIO warning
+light panel also contains lights for the AN/ALQ-126 and the IFF transponder,
+those are detailed under their respective section.</p>
+<p>The different lights illuminate to indicate the presence of a certain type of
+threat in the critical band of the RWR and when an active engagement is detected
+the corresponding light starts flashing. The categories present are <strong>SAM</strong>
+(surface-to-air missile), <strong>AAA</strong> (anti-air artillery), <strong>AI</strong> (airborne
+interceptor), and (only in the RIO pit) <strong>CW</strong> (continuous wave).</p>
 <h2 id="threat-indication-alert-tones"><a class="header" href="#threat-indication-alert-tones">Threat Indication Alert Tones</a></h2>
-<p>The AN/ALR-67 uses four distinct audio tones to indicate threats and status changes of those
-threats.</p>
-<p>A single short tone is used to indicate the presence of a new emitter or when a threat is moved to
-another threat band.</p>
-<p>A slow warbling, alternating tone is used to indicate the presence of a threat in the critical band.</p>
-<p>A fast warbling, alternating tone is used to indicate that a threat is actively engaging own
-aircraft.</p>
-<p>A special four tone audio signal, pitch decreasing with each tone, is used to indicate a special
-event as programmed by the threat library. In the Heatblur DCS F-14 this represents a new threat
-tied to a system capable of silently engaging own aircraft, i.e. it can engage own aircraft without
-causing it’s threat symbol to move to the critical band and thus no additional audio warning tones.
-This capability is either because of that the launching aircraft is capable of launching missiles in
-a TWS mode or that a launching SAM system can guide missiles by other means than radar and thus not
-giving further warning of an active engagement.</p>
+<p>The AN/ALR-67 uses four distinct audio tones to indicate threats and status
+changes of those threats.</p>
+<p>A single short tone is used to indicate the presence of a new emitter or when a
+threat is moved to another threat band.</p>
+<p>A slow warbling, alternating tone is used to indicate the presence of a threat
+in the critical band.</p>
+<p>A fast warbling, alternating tone is used to indicate that a threat is actively
+engaging own aircraft.</p>
+<p>A special four tone audio signal, pitch decreasing with each tone, is used to
+indicate a special event as programmed by the threat library. In the Heatblur
+DCS F-14 this represents a new threat tied to a system capable of silently
+engaging own aircraft, i.e. it can engage own aircraft without causing it’s
+threat symbol to move to the critical band and thus no additional audio warning
+tones. This capability is either because of that the launching aircraft is
+capable of launching missiles in a TWS mode or that a launching SAM system can
+guide missiles by other means than radar and thus not giving further warning of
+an active engagement.</p>
 <h2 id="bit"><a class="header" href="#bit">BIT</a></h2>
-<p><img src="../../img/bit.gif" alt="BIT" /></p>
-<p>The AN/ALR-67 BIT cycles between different test screens testing the screen, symbology and threat
-indication tones as well as displaying system revision and threat library information.</p>
-<p>The first page displayed shows system and threat library revision and the following screens test the
-symbol generation of the displays.</p>
-<p>The threat indication tones are also tested during the bit, first page tests the status change tone,
-second page the special tone, third page the threat in critical band tone and the fourth the fast
-warbling active threat tone.</p>
-<p>During the tests the threat warning lights also illuminate for both the pilot and the RIO.</p>
+<p>The AN/ALR-67 BIT cycles between different test screens testing the screen,
+symbology and threat indication tones as well as displaying system revision and
+threat library information.</p>
+<p>The first page displayed shows system and threat library revision and the
+following screens test the symbol generation of the displays.</p>
+<p>The threat indication tones are also tested during the bit, first page tests the
+status change tone, second page the special tone, third page the threat in
+critical band tone and the fourth the fast warbling active threat tone.</p>
+<p>During the tests the threat warning lights also illuminate for both the pilot
+and the RIO.</p>
 <div class="table-wrapper"><table><thead><tr><th>Threat Symbol</th><th>Platform/Sensor</th><th>Special Tone</th></tr></thead><tbody>
-<tr><td><strong>Ships (Symbology enhanced by being enclosed by an enlarged U symbol.)</strong></td><td></td><td></td></tr>
+<tr><td><strong>Ships</strong></td><td></td><td></td></tr>
 <tr><td>AB</td><td>Arleigh Burke class destroyer</td><td></td></tr>
 <tr><td>AK</td><td>Admiral Kuznetsov class aircraft carrier</td><td></td></tr>
 <tr><td>GR</td><td>Grisha 5 class corvette (Albatros)</td><td></td></tr>
@@ -388,20 +389,21 @@ warbling active threat tone.</p>
 </tbody></table>
 </div>
 <blockquote>
-<p>💡 Aircraft only flown by own faction in a mission are automatically set as friendly and
-shown only when setting the DISPLAY TYPE selector to FRIEND. N are shown only in UNK and T only in
-FRIEND.</p>
+<p>💡 Aircraft only flown by own faction in a mission are automatically set as
+friendly and shown only when setting the DISPLAY TYPE selector to FRIEND. N
+are shown only in UNK and T only in FRIEND.</p>
+<p>Ships symbology is enhanced by being enclosed by an enlarged U symbol.</p>
 </blockquote>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Navigation button at bottom -->
-                            <a rel="prev" href="../../systems/defensive_systems/radar_warning_receiver.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../../systems/defensive_systems/rwr/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
                             </a>
 
-                            <a rel="next prefetch" href="../../systems/defensive_systems/alr_45-50.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../../../systems/defensive_systems/rwr/alr_45-50.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
                             </a>
 
@@ -409,20 +411,20 @@ FRIEND.</p>
                     </nav>
                     <nav class="nav-wide-wrapper" aria-label="Page navigation">
                             <!-- Navigation button at bottom -->
-                            <a rel="prev" href="../../systems/defensive_systems/radar_warning_receiver.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../../systems/defensive_systems/rwr/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
                             </a>
                             <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
-                            <a rel="prev" href="../../systems/defensive_systems/radar_warning_receiver.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../../systems/defensive_systems/rwr/overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
                             </a>
 
                             <!-- Navigation button at bottom -->
-                            <a rel="next prefetch" href="../../systems/defensive_systems/alr_45-50.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../../../systems/defensive_systems/rwr/alr_45-50.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
                             </a>
                             <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
-                            <a rel="next prefetch" href="../../systems/defensive_systems/alr_45-50.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../../../systems/defensive_systems/rwr/alr_45-50.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
                             </a>
                     </nav>
@@ -439,17 +441,17 @@ FRIEND.</p>
         </script>
 
 
-        <script src="../../elasticlunr.min.js"></script>
-        <script src="../../mark.min.js"></script>
-        <script src="../../searcher.js"></script>
+        <script src="../../../elasticlunr.min.js"></script>
+        <script src="../../../mark.min.js"></script>
+        <script src="../../../searcher.js"></script>
 
-        <script src="../../clipboard.min.js"></script>
-        <script src="../../highlight.js"></script>
-        <script src="../../book.js"></script>
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
 
         <!-- Custom JS scripts -->
-        <script src="../../js/jquery-3.7.1.min.js"></script>
-        <script src="../../js/extra.js"></script>
+        <script src="../../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../../js/extra.js"></script>
 
 
     </div>

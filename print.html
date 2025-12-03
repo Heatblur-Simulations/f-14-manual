@@ -5335,63 +5335,71 @@ wheel sets the mode, and the last four set the code.</li>
 </li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="hydraulics"><a class="header" href="#hydraulics">Hydraulics</a></h1>
-<blockquote>
-<p>🚧 TODO: Rework to add more imagery. Also fix the notes to use the new F-4 system.</p>
-</blockquote>
-<p>The F-14 has two separate hydraulic systems, the flight hydraulic system and the combined hydraulic
-system.</p>
-<p>Both systems are driven by hydraulic pumps connected to each engine, the flight hydraulic system
-from the right engine and the combined hydraulic system from the left engine. Both systems are
-pressurised to around 3,000 psi when operating normally.</p>
-<p>Flight control surfaces are supplied by both systems while the combined system also supplies
-pressure to secondary systems such as the flaps, landing gear and the refueling probe. This is so
-that both systems can drive the control surfaces independently from each other in case of a failure
-in the other.</p>
-<p>Additionally, the hydraulic systems related to systems not necessary while airborne can be isolated
-by a switch next to the landing gear handle. This is so that damage to those systems won’t affect
-the combined system pressure and cause fluid loss. The systems that can be isolated are the landing
-gear, wheel brakes, anti-skid and nosewheel steering. This switch is mechanically locked to not
-isolating these systems by the landing gear handle when it’s in the down position.</p>
-<p>If only one of the hydraulic pumps fail it’s possible to pressurize that system from the other pump
-via the hydraulic transfer pump. This pump is an omni-directional hydraulically driven pump that can
-supply either system from the other and will maintain a pressure between 2,400 and 2,600 psi if the
-driving system is at around 3,000 psi. If one system pressure falls below 500 psi the pump will be
-secured to prevent pump damage and preserve pressure in the working system. The pump can also be
-manually disengaged by the pilot.</p>
-<p>In case of failure of both hydraulic pumps the flight hydraulic system can be driven by an
-electrical pump, called the emergency flight hydraulic pump. This pump is capable of independently
-driving the tail control surfaces, enabling the aircraft to return home and land even without
-pressure in either main hydraulic system. The electric pump is automatically enabled if both main
-systems drop below 2,100 psi and shut off if either reaches 2,400 psi again. The automatic pump
-activation activates the system in the low mode but it can also manually be selected to either low
-or high operation. The control surfaces will have a reduced deflection rate if driven by this pump,
-more so in low than high.</p>
-<p>There is also a hand driven hydraulic pump that can be used to pressurize the refueling probe and
-wheel brake accumulator if there’s otherwise no pressure in the combined system. This is mainly for
-unpowered ground operation but can be used as a backup in the air.</p>
+<p>The F-14 has two separate hydraulic systems, the flight hydraulic system and the
+combined hydraulic system.</p>
+<p>Both systems are driven by hydraulic pumps connected to each engine, the flight
+hydraulic system from the right engine and the combined hydraulic system from
+the left engine. Both systems are pressurized to around 3,000 psi when operating
+normally.</p>
+<p>Flight control surfaces are supplied by both systems while the combined system
+also supplies pressure to secondary systems such as the flaps, landing gear and
+the refueling probe. This is so that both systems can drive the control surfaces
+independently from each other in case of a failure in the other.</p>
+<p>Additionally, the hydraulic systems related to systems not necessary while
+airborne can be isolated by a switch next to the landing gear handle. This is so
+that damage to those systems won’t affect the combined system pressure and cause
+fluid loss. The systems that can be isolated are the landing gear, wheel brakes,
+anti-skid and nosewheel steering. This switch is mechanically locked to not
+isolating these systems by the landing gear handle when it’s in the down
+position.</p>
+<p>If only one of the hydraulic pumps fail it’s possible to pressurize that system
+from the other pump via the hydraulic transfer pump. This pump is an
+omni-directional hydraulically driven pump that can supply either system from
+the other and will maintain a pressure between 2,400 and 2,600 psi if the
+driving system is at around 3,000 psi. If one system pressure falls below 500
+psi the pump will be secured to prevent pump damage and preserve pressure in the
+working system. The pump can also be manually disengaged by the pilot.</p>
+<p>In case of failure of both hydraulic pumps the flight hydraulic system can be
+driven by an electrical pump, called the emergency flight hydraulic pump. This
+pump is capable of independently driving the tail control surfaces, enabling the
+aircraft to return home and land even without pressure in either main hydraulic
+system. The electric pump is automatically enabled if both main systems drop
+below 2,100 psi and shut off if either reaches 2,400 psi again. The automatic
+pump activation activates the system in the low mode but it can also manually be
+selected to either low or high operation. The control surfaces will have a
+reduced deflection rate if driven by this pump, more so in low than high.</p>
+<p>There is also a hand driven hydraulic pump that can be used to pressurize the
+refueling probe and wheel brake accumulator if there’s otherwise no pressure in
+the combined system. This is mainly for un-powered ground operation but can be
+used as a backup in the air.</p>
 <h2 id="controls-and-indicators-1"><a class="header" href="#controls-and-indicators-1">Controls and Indicators</a></h2>
-<p><img src="systems/../../img/hydraulic1.jpg" alt="hydraulic" /></p>
-<p>The HYD PRESS, hydraulic pressure indicator, contains two gauges indicating COMB, combined, and FLT,
-flight system hydraulic pressure in thousands of psi. The scales have markings for the nominal 3,000
-psi pressure when the pumps are operating normally.</p>
-<p>Below the gauges are flags indicating hydraulic pressure availability to the spoilers SPOIL and the
-operation of the EMER FLT, emergency flight hydraulic pump. The HI flag indicates on if the
-emergency flight hydraulic pump is operating in high and the LOW if it’s operating in low.</p>
-<p><img src="systems/../../img/brakepressure1.jpg" alt="brakepressure" /></p>
-<p>The BRAKE PRESSURE gauge shows available pressure in the brake accumulators. PARK indicating parking
-brake pressure and the AUX indicating wheel brake pressure. The green area represents a pressure
-from about 2,150 psi to 3,000 psi and the red a pressure below that.</p>
-<p><img src="systems/../../img/hydraulictransferpump1.jpg" alt="hydraulictransferpump" /></p>
-<p>The HYD TRANSFER PUMP, hydraulic transfer pump switch is located on its own panel on the pilot’s
-right side console. The switch allows for manual shut-off of the pump (SHUTOFF) but is normally in
-the NORMAL position allowing the pump to activate automatically if either hydraulic pump fails. The
-switch is guarded to the NORMAL position.</p>
-<p>The emergency flight hydraulic pump is controlled by a guarded switch on the Master Test Panel. The
-guarded position, (AUTO)LOW allows the pump to automatically activate as detailed above and the two
-other positions, HIGH and LOW can manually activate those modes when the guard is up.</p>
-<p>On the Caution - Advisory Indicator the only relevant caution light is the HYD PRESS light
-indicating that either main hydraulic system pressure is below 2,100 psi. It turns off when both
-systems are again above 2,400 psi.</p>
+<p><img src="systems/../img/general_hydraulic_hydraulic.jpg" alt="hydraulic" /></p>
+<p>The <strong>HYD PRESS</strong>, hydraulic pressure indicator, contains two gauges indicating
+<strong>COMB</strong>, combined, and <strong>FLT</strong>, flight system hydraulic pressure in thousands
+of psi. The scales have markings for the nominal 3,000 psi pressure when the
+pumps are operating normally.</p>
+<p>Below the gauges are flags indicating hydraulic pressure availability to the
+spoilers <strong>SPOIL</strong> and the operation of the <strong>EMER FLT</strong>, emergency flight
+hydraulic pump. The <strong>HI</strong> flag indicates on if the emergency flight hydraulic
+pump is operating in high and the <strong>LOW</strong> if it’s operating in low.</p>
+<p><img src="systems/../img/general_hydraulic_brakepressure.jpg" alt="brake pressure" /></p>
+<p>The <strong>BRAKE PRESSURE</strong> gauge shows available pressure in the brake accumulators.
+<strong>PARK</strong> indicating parking brake pressure and the <strong>AUX</strong> indicating wheel
+brake pressure. The green area represents a pressure from about 2,150 psi to
+3,000 psi and the red a pressure below that.</p>
+<p><img src="systems/../img/general_hydraulic_hydraulictransferpump.jpg" alt="hydraulic transfer pump" /></p>
+<p>The <strong>HYD TRANSFER PUMP</strong>, hydraulic transfer pump switch is located on its own
+panel on the pilot’s right side console. The switch allows for manual shut-off
+of the pump (<strong>SHUTOFF</strong>) but is normally in the <strong>NORMAL</strong> position allowing
+the pump to activate automatically if either hydraulic pump fails. The switch is
+guarded to the NORMAL position.</p>
+<p>The emergency flight hydraulic pump is controlled by a guarded switch on the
+Master Test Panel. The guarded position, <strong>(AUTO)LOW</strong> allows the pump to
+automatically activate as detailed above and the two other positions, <strong>HIGH</strong>
+and <strong>LOW</strong> can manually activate those modes when the guard is up.</p>
+<p>On the Caution - Advisory Indicator the only relevant caution light is the <strong>HYD
+PRESS</strong> light indicating that either main hydraulic system pressure is below
+2,100 psi. It turns off when both systems are again above 2,400 psi.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="environmental-control-system"><a class="header" href="#environmental-control-system">Environmental Control System</a></h1>
 <p>The ECS or environmental control system controls and supplies temperature- and
 pressure-regulated air to cockpit systems and cooling for electronic equipment
@@ -6826,192 +6834,223 @@ PD if in pulse doppler. If the SLAVE switch is set to INDEP from this mode the
 system reverts to true pulse STT or pulse doppler STT depending on current mode.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="weapon-systems"><a class="header" href="#weapon-systems">Weapon Systems</a></h1>
 <blockquote>
-<p>🚧 TODO: Write an intro for the weapon systems. Add section for AWG-(?) A/G Computer stuff in the
-back</p>
+<p>🚧 TODO: Write an intro</p>
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="lantirn"><a class="header" href="#lantirn">LANTIRN</a></h1>
-<blockquote>
-<p>🚧 TODO: Make sure everything is right here. Perhaps shorten this down.</p>
-</blockquote>
-<p><img src="systems/weapon_systems/lantirn/../../../img/lantirn.jpg" alt="LANTIRN" /> <em>U.S. Navy photo by Photographer’s Mate 2nd Class Felix Garza
-Jr. (030325-N-4142G-009)</em></p>
-<p>The LANTIRN or Low Altitude Navigation and Targeting Infrared for Night began life as combined
-targeting and navigation pods designed for the F-15E and F-16. When the US Navy became interested in
-using the F-14 Tomcat in the A/G role Martin Marietta (now Lockheed Martin) began its own program to
-show that the LANTIRN could quickly be adapted for F-14 use.</p>
-<p>As the pod was adapted for the F-14 the secondary navigational pod was deleted, keeping only the
-targeting pod. The pod was wired up to its own control panel as the F-14 didn’t have the required
-1553-bus for complete integration. The control panel was patched into the TCS to TID video feed
-allowing it to select either the TCS or the LANTIRN for display on the TID and VDI.</p>
-<p>While the pod can read waypoints and selected weapon from the WCS, the pod has its own GPS receiver
-and is otherwise self-contained and controlled only via its own control panel. Additionally, it also
-has its own weapons release guidance removing the need to boresight the pod to the aircraft, a
-time-consuming task.</p>
-<p>The FLIR sensor itself has three different zoom levels or fields of view (FoV). The Wide FoV limits
-are 5.9° and allows a maximum slew rate of 8.5°/s. The Narrow FoV limits are 1.7° and allows a
-maximum slew rate of 1.8°/s. The last mode, the Expanded FoV is a digital zoom of the Narrow FoV,
-meaning that the resolution will be worse in this mode. The FoV limits for the Expanded FoV are 0.8°
-with a max slew rate of 0.7°/s.</p>
+<p><img src="systems/weapon_systems/lantirn/../../../img/general_lantirn_lantirn.jpg" alt="LANTIRN" /> <em>U.S. Navy photo by
+Photographer’s Mate 2nd Class Felix Garza Jr. (030325-N-4142G-009)</em></p>
+<p>The LANTIRN or Low Altitude Navigation and Targeting Infrared for Night began
+life as combined targeting and navigation pods designed for the F-15E and F-16.
+When the US Navy became interested in using the F-14 Tomcat in the A/G role
+Martin Marietta (now Lockheed Martin) began its own program to show that the
+LANTIRN could quickly be adapted for F-14 use.</p>
+<p>As the pod was adapted for the F-14 the secondary navigational pod was deleted,
+keeping only the targeting pod. The pod was wired up to its own control panel as
+the F-14 didn’t have the required 1553-bus for complete integration. The control
+panel was patched into the TCS to TID video feed allowing it to select either
+the TCS or the LANTIRN for display on the TID and VDI.</p>
+<p>While the pod can read waypoints and selected weapon from the WCS, the pod has
+its own GPS receiver and is otherwise self-contained and controlled only via its
+own control panel. Additionally, it also has its own weapons release guidance
+removing the need to boresight the pod to the aircraft, a time-consuming task.</p>
+<p>The FLIR sensor itself has three different zoom levels or fields of view (FoV).
+The Wide FoV limits are 5.9° and allows a maximum slew rate of 8.5°/s. The
+Narrow FoV limits are 1.7° and allows a maximum slew rate of 1.8°/s. The last
+mode, the Expanded FoV is a digital zoom of the Narrow FoV, meaning that the
+resolution will be worse in this mode. The FoV limits for the Expanded FoV are
+0.8° with a max slew rate of 0.7°/s.</p>
 <h2 id="controls-and-displays"><a class="header" href="#controls-and-displays">Controls and Displays</a></h2>
-<p>All the controls for the LANTIRN are situated on its own control panel mounted on the RIO’s left
-side console when the pod is present, including the switch controlling what video feed the TID and
-VDI display in the TV mode.</p>
+<p>All the controls for the LANTIRN are situated on its own control panel mounted
+on the RIO’s left side console when the pod is present, including the switch
+controlling what video feed the TID and VDI display in the TV mode.</p>
 <h3 id="lantirn-video-elements"><a class="header" href="#lantirn-video-elements">LANTIRN Video Elements</a></h3>
-<p>The FLIR (Forward Looking InfraRed) video-feed from the LANTIRN has superimposed data readout for
-the crew’s use. This video-feed can be viewed both on the TID (in TV-mode) and on the VDI (also in
-TV-mode) when the FLIR feed is selected on the control panel.</p>
-<p>Amongst other things the displays show own aircraft position, target position as well as targeting
-cues to the crew. When using the LANTIRN for A/G attack these readouts are also used as targeting
-and release cues.</p>
-<p><img src="systems/weapon_systems/lantirn/../../../img/FLIR.jpg" alt="FLIR" /></p>
-<p>Own aircraft data is shown in the upper left corner (1), showing position, altitude, groundspeed and
-pitch angle (dive).</p>
-<p>On the left side (2) the pod displays whether it’s using white hot or black hot (WHOT and BHOT) as
-well as if the AGC (Automatic Gain Control) or MGC (Manual Gain Control) is in use.</p>
-<p>The lower left datablock (3) shows pod information, SR is slant range (line of sight range), AZ and
-EL is pod line of sight azimuth and elevation relative aircraft ADL (with AZ having L or R for left
-or right of aircraft heading). Below that is current UTC time and then IBIT codes below that.</p>
+<p>The FLIR (Forward Looking InfraRed) video-feed from the LANTIRN has superimposed
+data readout for the crew’s use. This video-feed can be viewed both on the TID
+(in TV-mode) and on the VDI (also in TV-mode) when the FLIR feed is selected on
+the control panel.</p>
+<p>Amongst other things the displays show own aircraft position, target position as
+well as targeting cues to the crew. When using the LANTIRN for A/G attack these
+readouts are also used as targeting and release cues.</p>
+<p><img src="systems/weapon_systems/lantirn/../../../img/general_lantirn_FLIR.jpg" alt="FLIR" /></p>
+<p>Own aircraft data is shown in the upper left corner (<num>1</num>), showing
+position, altitude, groundspeed and pitch angle (dive).</p>
+<p>On the left side (<num>2</num>) the pod displays whether it’s using white hot or
+black hot (WHOT and BHOT) as well as if the AGC (Automatic Gain Control) or MGC
+(Manual Gain Control) is in use.</p>
+<p>The lower left data-block (<num>3</num>) shows pod information, SR is slant
+range (line of sight range), AZ and EL is pod line of sight azimuth and
+elevation relative aircraft ADL (with AZ having L or R for left or right of
+aircraft heading). Below that is current UTC time and then IBIT codes below
+that.</p>
 <blockquote>
-<p>💡 IBIT codes are not implemented currently and the clock will show local time.</p>
+<p>💡 IBIT codes are not implemented currently and the clock will show local
+time.</p>
 </blockquote>
-<p>The lower middle (4) shows current pod mode (A/A or A/G) and track mode (AREA, POINT or Q
-designations) on the left side. The right side shows currently selected weapon and laser code while
-above and in the center an L is shown when the laser is armed and flashing when firing the laser.</p>
-<p>The lower right (5) shows data for currently selected Q (slewpoint) except for QSNO, QADL and QHUD,
-TTG being time to go until on top of currently selected Q, the rows below that, bearing and range to
-Q, ELEV indicating elevation in feet of Q and lastly, below that, Q location.</p>
-<p>6 is the crosshairs showing tracked position, in this case we have a bounding box, indicating
-currently tracked target in point mode. The two widest zoom modes will have boxes showing the field
-of view for the next, narrower, mode. Additionally there’s a small white square (FLIR pointing cue)
-moving around showing the current pod line of sight relative to aircraft from a top down
-perspective. In this case it’s right next to the upside down ^, top center, indicating that the pod
-is looking ahead of the aircraft. If the square is centered the pod is looking straight down and
-below center it indicates the pod looking aft.</p>
-<p>Finally, 7 is the steering guidance towards the selected Q, the top one being commanded heading and
-the vertical one on the right the bomb release cue.</p>
-<p>The commanded heading shows current aircraft heading above the inverted ^, with the commanded
-heading being displayed as a relative bearing either L (Left) or R (Right) of current aircraft
-heading below the line. The commanded heading is also indicated by a vertical line bisecting the
-horizontal one.</p>
-<p>The right, bomb release cue, is only shown if the selected Q is QDES and shows a vertical line along
-which a release cue travels downwards. This release cue is only visible with a valid weapon
-selection (bomb) and when it reaches the two tick marks, that’s the cue to release. Below the line
-is the indicated TREL (Time to Release) in seconds, changing to TIMP (Time to Impact) after release.</p>
-<p>Around this all is the masking curve, indicating at what angles the pod will be masked by own
-aircraft (looking into the aircraft hull). This is relative to the FLIR pointing cue, when the cue
-moves outside the masking curve the sensor will be blocked by the hull.</p>
+<p>The lower middle (<num>4</num>) shows current pod mode (A/A or A/G) and track
+mode (AREA, POINT or Q designations) on the left side. The right side shows
+currently selected weapon and laser code while above and in the center an L is
+shown when the laser is armed and flashing when firing the laser.</p>
+<p>The lower right (<num>5</num>) shows data for currently selected Q (slew-point)
+except for QSNO, QADL and QHUD, TTG being time to go until on top of currently
+selected Q, the rows below that, bearing and range to Q, ELEV indicating
+elevation in feet of Q and lastly, below that, Q location.</p>
+<p><num>6</num> is the crosshairs showing tracked position, in this case we have a
+bounding box, indicating currently tracked target in point mode. The two widest
+zoom modes will have boxes showing the field of view for the next, narrower,
+mode. Additionally there’s a small white square (FLIR pointing cue) moving
+around showing the current pod line of sight relative to aircraft from a top
+down perspective. In this case it’s right next to the upside down ^, top center,
+indicating that the pod is looking ahead of the aircraft. If the square is
+centered the pod is looking straight down and below center it indicates the pod
+looking aft.</p>
+<p>Finally, <num>7</num> is the steering guidance towards the selected Q, the top
+one being commanded heading and the vertical one on the right the bomb release
+cue.</p>
+<p>The commanded heading shows current aircraft heading above the inverted ^, with
+the commanded heading being displayed as a relative bearing either L (Left) or R
+(Right) of current aircraft heading below the line. The commanded heading is
+also indicated by a vertical line bisecting the horizontal one.</p>
+<p>The right, bomb release cue, is only shown if the selected Q is QDES and shows a
+vertical line along which a release cue travels downwards. This release cue is
+only visible with a valid weapon selection (bomb) and when it reaches the two
+tick marks, that’s the cue to release. Below the line is the indicated TREL
+(Time to Release) in seconds, changing to TIMP (Time to Impact) after release.</p>
+<p>Around this all is the masking curve, indicating at what angles the pod will be
+masked by own aircraft (looking into the aircraft hull). This is relative to the
+FLIR pointing cue, when the cue moves outside the masking curve the sensor will
+be blocked by the hull.</p>
 <h3 id="control-panel"><a class="header" href="#control-panel">Control Panel</a></h3>
-<p>The control panel contains all the controls for the pod, including the control stick.</p>
-<p><img src="systems/weapon_systems/lantirn/../../../img/panel.jpg" alt="Control Panel" /></p>
-<p>The power switch for the LANTIRN pod is located top left (1) with OFF disabling power to the system,
-IMU (blocked in above image) powering only the LANTIRN IMU and POD powering the whole system.</p>
+<p>The control panel contains all the controls for the pod, including the control
+stick.</p>
+<p><img src="systems/weapon_systems/lantirn/../../../img/general_lantirn_panel.jpg" alt="Control Panel" /></p>
+<p>The power switch for the LANTIRN pod is located top left (<num>1</num>) with
+<strong>OFF</strong> disabling power to the system, <strong>IMU</strong> (blocked in above image) powering
+only the LANTIRN IMU and <strong>POD</strong> powering the whole system.</p>
 <blockquote>
 <p>💡 IMU selection has no current DCS function.</p>
 </blockquote>
-<p>The MODE switch (2) switches the POD sensor between STBY (Standby) and OPER (Operational).</p>
-<p>The LASER ARMED (3) light illuminates when the laser is armed while the LASER switch (4) arms it.
-(ARM and SAFE positions available.)</p>
-<p>Down right is the VIDEO switch (5) which controls what video is fed to the TID and VDI, FLIR
-selecting LANTIRN FLIR video and TCS selecting TCS video.</p>
-<p>The four grouped indicator lights (6) indicate various error states in the LANTIRN system and the
-IBIT button (7) initiates the IBIT (Initialized Built-In-Test).</p>
+<p>The <strong>MODE</strong> switch (<num>2</num>) switches the POD sensor between <strong>STBY</strong>
+(Standby) and <strong>OPER</strong> (Operational).</p>
+<p>The <strong>LASER ARMED</strong> (<num>3</num>) light illuminates when the laser is armed
+while the <strong>LASER</strong> switch (<num>4</num>) arms it. (ARM and SAFE positions
+available.)</p>
+<p>Down right is the <strong>VIDEO</strong> switch (<num>5</num>) which controls what video is
+fed to the TID and VDI, FLIR selecting LANTIRN FLIR video and TCS selecting TCS
+video.</p>
+<p>The four grouped indicator lights (<num>6</num>) indicate various error states
+in the LANTIRN system and the <strong>IBIT</strong> button (<num>7</num>) initiates the IBIT
+(Initialized Built-In-Test).</p>
 <blockquote>
 <p>💡 The IBIT and fault indicators are not currently implemented in DCS.</p>
 </blockquote>
 <h3 id="control-stick-1"><a class="header" href="#control-stick-1">Control Stick</a></h3>
-<p>The control stick for the LANTIRN operates the LANTIRN’s sensor itself, note though that the stick
-itself does not move, the buttons and hats on the stick are used to control the pod.</p>
-<p><img src="systems/weapon_systems/lantirn/../../../img/stick1.jpg" alt="Control Stick" /></p>
-<p>The left four-way hat, S3, (1) allows selection of QWp- and QWp+ (left/right) in addition to Point
-Track (up) and Area Track (down) modes.</p>
-<p>The center slew hat (2) is used to slew the sensor line of sight itself and depression of this hat
-switches between white hot (WHOT) and black hot (BHOT) sensor modes.</p>
-<p>The right four-way hat, S4, (3) allows for selection of QADL/QHUD (up), QDES (right) and QSNO (down)
-in addition to declutter level which is cycled by momentary depression of the hat. The left slider
-additionally changes the right hat function as detailed further down.</p>
-<p>The red button on top (4) is used to cycle between the three fields of view (zoom levels) of the IR
-sensor.</p>
-<p>The two-way hat on the side (5) selects either the A/G or A/A modes of operation for the pod.</p>
-<p>Located on the left side of the stick head is a two way slider (6), spring-loaded to return to
-center. This switch changes the function of the right four-way hat.</p>
-<p>Sliding it forwards allows for selection of manual gain while releasing and sliding it forwards
-again reselects automatic gain. Change of the manual gain with manual gain already selected can be
-done by sliding the switch forwards and holding it for 2 seconds. With this mode active up/down on
-the right hat increases and decreases the gain while left/right decreases and increases level.</p>
-<p>Sliding the switch aft momentarily allows selection of used laser code, while sliding it aft and
-holding allows for focus control. When set to laser code change, the right four-way hat selects
-digit to change with left/right and increases and decreases the selected digit with up/down. In
-focus control up/down increases and decreases focus.</p>
-<p>Located on the front of the stick (7) is a two-stage trigger, first detent manually lasing while the
-second detent fires the laser and designates QDES at current sensor position.</p>
-<p>Lastly on the front side of the stick (8) is the latched laser fire button. Selecting it fires the
-laser for 60 seconds which can be overriden by the pressing and releasing the first trigger detent.
-A renewed press on the laser latch button resets the latched laser fire timer to 60 seconds,
-beginning a new 60 second countdown.</p>
+<p>The control stick for the LANTIRN operates the LANTIRN’s sensor itself, note
+though that the stick itself does not move, the buttons and hats on the stick
+are used to control the pod.</p>
+<p><img src="systems/weapon_systems/lantirn/../../../img/general_lantirn_stick.jpg" alt="Control Stick" /></p>
+<p>The left four-way hat, S3, (<num>1</num>) allows selection of QWp- and QWp+
+(left/right) in addition to Point Track (up) and Area Track (down) modes.</p>
+<p>The center slew hat (<num>2</num>) is used to slew the sensor line of sight
+itself and depression of this hat switches between white hot (WHOT) and black
+hot (BHOT) sensor modes.</p>
+<p>The right four-way hat, S4, (<num>3</num>) allows for selection of QADL/QHUD
+(up), QDES (right) and QSNO (down) in addition to declutter level which is
+cycled by momentary depression of the hat. The left slider additionally changes
+the right hat function as detailed further down.</p>
+<p>The red button on top (<num>4</num>) is used to cycle between the three fields
+of view (zoom levels) of the IR sensor.</p>
+<p>The two-way hat on the side (<num>5</num>) selects either the A/G or A/A modes
+of operation for the pod.</p>
+<p>Located on the left side of the stick head is a two way slider (<num>6</num>),
+spring-loaded to return to center. This switch changes the function of the right
+four-way hat.</p>
+<p>Sliding it forwards allows for selection of manual gain while releasing and
+sliding it forwards again re-selects automatic gain. Change of the manual gain
+with manual gain already selected can be done by sliding the switch forwards and
+holding it for 2 seconds. With this mode active up/down on the right hat
+increases and decreases the gain while left/right decreases and increases level.</p>
+<p>Sliding the switch aft momentarily allows selection of used laser code, while
+sliding it aft and holding allows for focus control. When set to laser code
+change, the right four-way hat selects digit to change with left/right and
+increases and decreases the selected digit with up/down. In focus control
+up/down increases and decreases focus.</p>
+<p>Located on the front of the stick (<num>7</num>) is a two-stage trigger, first
+detent manually lasing while the second detent fires the laser and designates
+QDES at current sensor position.</p>
+<p>Lastly on the front side of the stick (<num>8</num>) is the latched laser fire
+button. Selecting it fires the laser for 60 seconds which can be overridden by
+the pressing and releasing the first trigger detent. A renewed press on the
+laser latch button resets the latched laser fire timer to 60 seconds, beginning
+a new 60 second countdown.</p>
 <h2 id="startup"><a class="header" href="#startup">Startup</a></h2>
-<p>To start the LANTIRN from cold, set the power switch to POD. This will start the LANTIRN power-up
-sequence which takes 8 minutes. When ready, this will be indicated by the MODE switch showing STBY.</p>
-<p>When at STBY, depression of the MODE button switches the system to OPER (Operational), enabling the
-LANTIRN sensor after a 30-second initialization.</p>
+<p>To start the LANTIRN from cold, set the power switch to POD. This will start the
+LANTIRN power-up sequence which takes 8 minutes. When ready, this will be
+indicated by the MODE switch showing STBY.</p>
+<p>When at STBY, depression of the MODE button switches the system to OPER
+(Operational), enabling the LANTIRN sensor after a 30-second initialization.</p>
 <p>Lastly, to allow display of LANTIRN FLIR video, select FLIR on the VIDEO switch.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="modes"><a class="header" href="#modes">Modes</a></h1>
-<blockquote>
-<p>🚧 TODO: Add A/A section and images.</p>
-</blockquote>
 <h2 id="sensor-modes-and-operation"><a class="header" href="#sensor-modes-and-operation">Sensor Modes and Operation</a></h2>
-<p>The LANTIRN has two “master” modes, A/A and A/G. Both work similarly but are optimized for different
-types of targets. Additionally, the A/G mode allows for bomb release guidance.</p>
-<p>The pod has two main ways of controlling the sensor line of sight, either via contrast lock (image
-following) or via being slaved to a Q designation.</p>
-<p>The Area and Point Track modes are the two contrast lock modes in which the LANTIRN locks onto
-contrast differences in the LANTIRN FLIR video itself. This in itself only allows for angle tracking
-which gives imprecise ranging using own aircraft position and pod line of sight to calculate target
-position. It does however allow the system to track moving targets.</p>
-<p>The last tracking mode has the sensor slewed to a stored location/direction, called a Q. The
-directional Qs do not allow for guidance to a location while the location Qs do.</p>
-<p>QSNO and QADL/QHUD are directional. QSNO slaves the sensor to the ground 15 NM directly in front of
-the aircraft along own aircraft heading. QADL and QHUD slave the sensor to either ADL (in A/A) or
-the aircraft wings symbol on the HUD (in A/G).</p>
-<p>The location Qs have two sources, QWp- and QWp+ on the stick’s left hat can be used to cycle through
-the WCS waypoints, allowing the RIO to slew to the different waypoints for navigation and target
-localization.</p>
-<p>The other source is via pod designation. By selecting the second detent on the LANTIRN trigger the
-current sensor track or location is lased and a new location stored using that data. This is called
-the QDES and is used to designate targets for engagement as well as allowing the RIO to select a new
-location for navigational reference on the fly. The QDES can not however be automatically
-transferred to the WCS, but the RIO can enter it manually using the target location information in
-the pod video feed.</p>
-<p>The lower right datablock is enabled for the location Qs only but will remain even when the pod is
-slewed away in area or point track modes. As soon as another Q is selected however, it will update
-to that location instead or be removed if a directional Q is selected.</p>
+<p>The LANTIRN has two "master" modes, A/A and A/G. Both work similarly but are
+optimized for different types of targets. Additionally, the A/G mode allows for
+bomb release guidance.</p>
+<p>The pod has two main ways of controlling the sensor line of sight, either via
+contrast lock (image following) or via being slaved to a Q designation.</p>
+<p>The Area and Point Track modes are the two contrast lock modes in which the
+LANTIRN locks onto contrast differences in the LANTIRN FLIR video itself. This
+in itself only allows for angle tracking which gives imprecise ranging using own
+aircraft position and pod line of sight to calculate target position. It does
+however allow the system to track moving targets.</p>
+<p>The last tracking mode has the sensor slewed to a stored location/direction,
+called a Q. The directional Qs do not allow for guidance to a location while the
+location Qs do.</p>
+<p>QSNO and QADL/QHUD are directional. QSNO slaves the sensor to the ground 15 NM
+directly in front of the aircraft along own aircraft heading. QADL and QHUD
+slave the sensor to either ADL (in A/A) or the aircraft wings symbol on the HUD
+(in A/G).</p>
+<p>The location Qs have two sources, QWp- and QWp+ on the stick’s left hat can be
+used to cycle through the WCS waypoints, allowing the RIO to slew to the
+different waypoints for navigation and target localization.</p>
+<p>The other source is via pod designation. By selecting the second detent on the
+LANTIRN trigger the current sensor track or location is lased and a new location
+stored using that data. This is called the QDES and is used to designate targets
+for engagement as well as allowing the RIO to select a new location for
+navigational reference on the fly. The QDES can not however be automatically
+transferred to the WCS, but the RIO can enter it manually using the target
+location information in the pod video feed.</p>
+<p>The lower right data-block is enabled for the location Qs only but will remain
+even when the pod is slewed away in area or point track modes. As soon as
+another Q is selected however, it will update to that location instead or be
+removed if a directional Q is selected.</p>
 <h2 id="ag-target-engagement-and-designation"><a class="header" href="#ag-target-engagement-and-designation">A/G Target Engagement and Designation</a></h2>
-<p>The LANTIRN steering cues for ground target engagement are automatically enabled when the LANTIRN is
-slewed to QDES or a new QDES is designated. The QDES itself will remain even if a new Q is selected
-and as long as it exists, the steering cues will point towards QDES even if slewed to another point.
-This is important to keep in mind as it is easy to think that the steering commands are to the
+<p>The LANTIRN steering cues for ground target engagement are automatically enabled
+when the LANTIRN is slewed to QDES or a new QDES is designated. The QDES itself
+will remain even if a new Q is selected and as long as it exists, the steering
+cues will point towards QDES even if slewed to another point. This is important
+to keep in mind as it is easy to think that the steering commands are to the
 current sensor location instead of the QDES.</p>
-<p>The laser designation itself can however point to a different location than the QDES as the laser
-always points to the current track. This can be used to quickly change back to a target marked by
-the QDES if desired and when lasing a moving target a QDES should be set at an estimated target
-location at impact (estimated manually) and then the point track mode or manual slew can be used to
+<p>The laser designation itself can however point to a different location than the
+QDES as the laser always points to the current track. This can be used to
+quickly change back to a target marked by the QDES if desired and when lasing a
+moving target a QDES should be set at an estimated target location at impact
+(estimated manually) and then the point track mode or manual slew can be used to
 designate the actual target more precisely.</p>
-<p>To change laser code, move the stick left side slider aft and release, this will change right hat
-(S4) into laser code mode. The currently selected digit will blink and the S4 hat can then be used
-to set the digits. Left/right change what digit to set and up/down change the value of the digit.
-Renewed selection of aft on the left slider will then exit the laser code mode.</p>
-<p>If the right, S4, hat is depressed while in laser mode the automatic lase mode will be enabled,
-indicated by the M (for manual) left of the digits changing to an A (autolase). Repeat to switch
-back to manual mode. While activated, the autolase mode will begin firing the laser at 10 seconds
-TIMP until TIMP zero +4 seconds.</p>
-<p>The bomb release cue is only visible with a valid weapon (bomb) selected and the selected bomb is
-read from the weapon selector wheel on the RIO armament panel via the WCS. The actual bomb release
-can be accomplished using the computer pilot or computer target modes but the manual mode is
-recommended. In manual mode the pilot follows the cues in the LANTIRN video feed on the VDI and
+<p>To change laser code, move the stick left side slider aft and release, this will
+change right hat (S4) into laser code mode. The currently selected digit will
+blink and the S4 hat can then be used to set the digits. Left/right change what
+digit to set and up/down change the value of the digit. Renewed selection of aft
+on the left slider will then exit the laser code mode.</p>
+<p>If the right, S4, hat is depressed while in laser mode the automatic lase mode
+will be enabled, indicated by the M (for manual) left of the digits changing to
+an A (auto-lase). Repeat to switch back to manual mode. While activated, the
+auto-lase mode will begin firing the laser at 10 seconds TIMP until TIMP zero +4
+seconds.</p>
+<p>The bomb release cue is only visible with a valid weapon (bomb) selected and the
+selected bomb is read from the weapon selector wheel on the RIO armament panel
+via the WCS. The actual bomb release can be accomplished using the computer
+pilot or computer target modes but the manual mode is recommended. In manual
+mode the pilot follows the cues in the LANTIRN video feed on the VDI and
 releases the bomb when cued by the LANTIRN.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="other"><a class="header" href="#other">Other</a></h1>
-<blockquote>
-<p>🚧 TODO: Add any other bits and bobs here.</p>
-</blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="defensive-systems"><a class="header" href="#defensive-systems">Defensive Systems</a></h1>
 <blockquote>
 <p>🚧 TODO: Add intro to defensive systems of the F-14.</p>
@@ -7021,292 +7060,327 @@ releases the bomb when cued by the LANTIRN.</p>
 <p>🚧 TODO: Write an intro about the CMs on the F-14</p>
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="anale-39-countermeasures-dispensing-set"><a class="header" href="#anale-39-countermeasures-dispensing-set">AN/ALE-39 Countermeasures Dispensing Set</a></h1>
-<blockquote>
-<p>🚧 TODO: Rework to add more imagery. Also fix the notes to use the new F-4 system.</p>
-</blockquote>
-<p>The AN/ALE-39 is the countermeasures dispensing set installed in the F-14 in this simulation. It
-controls its own set of launchers located between the engine nozzles on the underside of the so
-called beaver-tail.</p>
-<p>The launchers each have two sections, one containing 10 cartridges and the other 20. They are
-referred to the left and right dispensers even though the left is really the front one and the right
-the back one with both being mounted in line on the left side of the tailhook. This is a remnant
-from the earliest model F-14s carrying the AN/ALE-29.</p>
-<p>This all sums up to a capacity of 60 cartridges in the system with each section necessarily holding
-one type of cartridge meaning that any combination of cartridges is possible as long as each type’s
-quantity is a multiple of 10. The system itself has no real knowledge of what is loaded where so
-incorrectly programming the system can lead to the wrong type of cartridge being ejected.</p>
-<p>The system itself can be operated manually from the control panel in the RIO pit or the DLC
-thumbwheel on the pilot stick when the flaps lever is in the up position. It is also capable of
-running programmed sequences of ejection which in turn can be initiated manually by the RIO from the
-control panel or the direction hats mounted on the hand hold over the DDD. In addition the AN/ALR-67
-can also initiate the chaff ejection program if set up correctly on the AN/ALE-39 control panel.</p>
+<p>The AN/ALE-39 is the countermeasures dispensing set installed in the F-14 in
+this simulation. It controls its own set of launchers located between the engine
+nozzles on the underside of the so called beaver-tail.</p>
+<p>The launchers each have two sections, one containing 10 cartridges and the
+other 20. They are referred to the left and right dispensers even though the
+left is really the front one and the right the back one with both being mounted
+in line on the left side of the tail-hook. This is a remnant from the earliest
+model F-14s carrying the AN/ALE-29.</p>
+<p>This all sums up to a capacity of 60 cartridges in the system with each section
+necessarily holding one type of cartridge meaning that any combination of
+cartridges is possible as long as each type’s quantity is a multiple of 10. The
+system itself has no real knowledge of what is loaded where so incorrectly
+programming the system can lead to the wrong type of cartridge being ejected.</p>
+<p>The system itself can be operated manually from the control panel in the RIO pit
+or the DLC thumbwheel on the pilot stick when the flaps lever is in the up
+position. It is also capable of running programmed sequences of ejection which
+in turn can be initiated manually by the RIO from the control panel or the
+direction hats mounted on the hand hold over the DDD. In addition the AN/ALR-67
+can also initiate the chaff ejection program if set up correctly on the
+AN/ALE-39 control panel.</p>
 <h2 id="controls-and-operation"><a class="header" href="#controls-and-operation">Controls and Operation</a></h2>
 <blockquote>
-<p>💡 In DCS the F-14 countermeasure loadout is set in the Mission Editor, see DCS Mission
-Editor Functions Specific to the HB DCS F-14 or controlled through the radio menu under ground
-crew. The default setting in the mission editor is bypassed. To see the real loadout check the
-kneeboard.</p>
+<p>💡 In DCS the F-14 countermeasure loadout is set in the Mission Editor, see
+DCS Mission Editor Functions Specific to the HB DCS F-14 or controlled through
+the radio menu under ground crew. The default setting in the mission editor is
+bypassed. To see the real loadout check the kneeboard.</p>
 </blockquote>
 <h3 id="programmer"><a class="header" href="#programmer">Programmer</a></h3>
-<p><img src="systems/defensive_systems/countermeasures/../../../../img/programmer.jpg" alt="Programmer" /></p>
+<p><img src="systems/defensive_systems/countermeasures/../../../img/general_cmds_programmer.jpg" alt="Programmer" /></p>
 <blockquote>
 <p>🚧 TODO: Rewrite this to look better!</p>
 </blockquote>
-<p>The programmer is used to set up what countermeasure cartridges are loaded where and to set up the
-different ejection programmes. The panel is located on the right horizontal console of the RIO
-cockpit.</p>
-<p>The left side of the programmer holds the controls (thumbwheels) for the different ejection
-programmes, one section for each type of cartridge.</p>
-<p>The CHAFF section controls how to eject chaff in program mode. The chaff sequences are programmed to
-launch a number of salvoes, each consisting of a burst of a set amount of cartridges.</p>
-<p>B QTY controls how many cartridges to eject in each burst, selection of 1-4 cartridges and C for
-continuous and R for random (4-6 cartridges) possible.</p>
-<p>B INTV sets the time in seconds between each individual cartridge ejection in each burst, possible
-settings being .1 (0.125), .2 (0.25), .5 (0.5), .7 (0.75), 1 and R for random.</p>
-<p>S QTY controls how many salvoes of bursts to eject in each program, settings available are 1, 2, 4,
-6, 8, 10 and 15.</p>
-<p>S INT sets the time in seconds between each salvo in the program, available settings are 2, 4, 6, 8
-and 10.</p>
+<p>The programmer is used to set up what countermeasure cartridges are loaded where
+and to set up the different ejection programmes. The panel is located on the
+right horizontal console of the RIO cockpit.</p>
+<p>The left side of the programmer holds the controls (thumbwheels) for the
+different ejection programmes, one section for each type of cartridge.</p>
+<p>The <strong>CHAFF</strong> section controls how to eject chaff in program mode. The chaff
+sequences are programmed to launch a number of salvoes, each consisting of a
+burst of a set amount of cartridges.</p>
+<ul>
+<li><strong>B QTY</strong> controls how many cartridges to eject in each burst, selection of
+1-4 cartridges and C for continuous and R for random (4-6 cartridges)
+possible.</li>
+<li><strong>B INTV</strong> sets the time in seconds between each individual cartridge ejection
+in each burst, possible settings being .1 (0.125), .2 (0.25), .5 (0.5), .7
+(0.75), 1 and R for random.</li>
+<li><strong>S QTY</strong> controls how many salvoes of bursts to eject in each program,
+settings available are 1, 2, 4, 6, 8, 10 and 15.</li>
+<li><strong>S INT</strong> sets the time in seconds between each salvo in the program,
+available settings are 2, 4, 6, 8 and 10.</li>
+</ul>
 <p>When using the random and continuous settings for B special conditions apply.</p>
-<p>B at C QTY and R INTV sets the first 3 cartridges to launch at 0.125 second intervals, the rest at
-random intervals from 0.25 to 4 seconds. Ejection disregards the S settings and continue until all
-cartridges are ejected.</p>
-<p>B at R QTY and R INTV sets each burst to have between 4-6 cartridges and to eject at random
-intervals between 0.25 to 4 seconds. The first burst in a salvo will always launch the first 3
-cartridges at 0.125 second intervals.</p>
-<p>B at R QTY and INTV at set number sets each burst to launch between 4-6 cartridges at set interval.
-First burst will always launch first 3 cartridges at 0.125 sec interval.</p>
-<p>B at fixed QTY and R INTV sets each burst to eject one cartridge disregarding B QTY.</p>
-<p>The JAMMER section controls the ejection of jammer cartridges in programmed mode.</p>
-<p>QTY sets how many jammer cartridges to eject, possible settings are 1-4.</p>
-<p>INTV uses all three indicated thumbwheels to set time in seconds between each ejection in the
-program. Settings from 1 to 299 possible in 1 second increments.</p>
+<ul>
+<li><strong>B at C QTY</strong> and <strong>R INTV</strong> sets the first 3 cartridges to launch at 0.125
+second intervals, the rest at random intervals from 0.25 to 4 seconds.
+Ejection disregards the S settings and continue until all cartridges are
+ejected.</li>
+<li><strong>B at R QTY</strong> and <strong>R INTV</strong> sets each burst to have between 4-6 cartridges
+and to eject at random intervals between 0.25 to 4 seconds. The first burst in
+a salvo will always launch the first 3 cartridges at 0.125 second intervals.</li>
+<li><strong>B at R QTY</strong> and <strong>INTV</strong> at set number sets each burst to launch between
+4-6 cartridges at set interval. First burst will always launch first 3
+cartridges at 0.125 sec interval.</li>
+<li><strong>B at fixed QTY</strong> and <strong>R INTV</strong> sets each burst to eject one cartridge
+disregarding B QTY.</li>
+</ul>
+<p>The <strong>JAMMER</strong> section controls the ejection of jammer cartridges in programmed
+mode.</p>
+<ul>
+<li><strong>QTY</strong> sets how many jammer cartridges to eject, possible settings are 1-4.</li>
+<li><strong>INTV</strong> uses all three indicated thumbwheels to set time in seconds between
+each ejection in the program. Settings from 1 to 299 possible in 1 second
+increments.</li>
+</ul>
 <blockquote>
 <p>💡 Jammer cartridges not currently implemented in DCS.</p>
 </blockquote>
-<p>The FLARE section controls ejection of flares when using programmed mode. QTY sets amount of flare
-cartridges to eject, possible settings being 2, 3, 4, 6, 8 and 10. INTV sets time interval between
-each ejection in seconds, possible settings being 2, 4, 6, 8 and 10.</p>
-<p>The right side of the programmer sets the type of cartridge loaded into each section and the reset
-switch used after loading new cartridges.</p>
-<p>The L10, L20, R10 and R20 thumbwheels can be set to C, J or F setting what cartridge is loaded into
-which section.</p>
+<p>The <strong>FLARE</strong> section controls ejection of flares when using programmed mode.</p>
+<ul>
+<li><strong>QTY</strong> sets amount of flare cartridges to eject, possible settings being 2,
+3, 4, 6, 8 and 10.</li>
+<li><strong>INTV</strong> sets time interval between each ejection in seconds, possible
+settings being 2, 4, 6, 8 and 10.</li>
+</ul>
+<p>The right side of the programmer sets the type of cartridge loaded into each
+section and the reset switch used after loading new cartridges.</p>
+<p>The <strong>L10</strong>, <strong>L20</strong>, <strong>R10</strong> and <strong>R20</strong> thumbwheels can be set to C, J or F
+setting what cartridge is loaded into which section.</p>
 <blockquote>
-<p>💡 Incorrectly setting type of cartridge loaded can result in the launch of the wrong type
-of cartridge.</p>
+<p>💡 Incorrectly setting type of cartridge loaded can result in the launch of
+the wrong type of cartridge.</p>
 </blockquote>
-<p>The RESET switch needs to be used to reset the system's internal counters after loading new
-cartridges into the launchers. Needs to be held to reset for at least 5 seconds to reset the system.</p>
+<p>The <strong>RESET</strong> switch needs to be used to reset the system's internal counters
+after loading new cartridges into the launchers. Needs to be held to reset for
+at least 5 seconds to reset the system.</p>
 <h3 id="control-panel-1"><a class="header" href="#control-panel-1">Control Panel</a></h3>
-<p><img src="systems/defensive_systems/countermeasures/../../../img/controller.jpg" alt="Controller" /></p>
-<p>The control panel is used to control system power, to set up automatic ejections and to manually
-eject cartridges and is also located on the RIO right horizontal console.</p>
-<p>The mechanical counters on the upper part of the panel are used to indicate remaining cartridges of
-each type. They need to be set up manually using the knob below each counter but decreases
-automatically as each cartridge ejection pulse is sent. As they’re set manually it’s possible to end
-up in a situation were the counter is at 0 but additional cartridges are still available. In this
+<p><img src="systems/defensive_systems/countermeasures/../../../img/general_cmds_controller.jpg" alt="Controller" /></p>
+<p>The control panel is used to control system power, to set up automatic ejections
+and to manually eject cartridges and is also located on the RIO right horizontal
+console.</p>
+<p>The mechanical counters on the upper part of the panel are used to indicate
+remaining cartridges of each type. They need to be set up manually using the
+knob below each counter but decreases automatically as each cartridge ejection
+pulse is sent. As they’re set manually it’s possible to end up in a situation
+were the counter is at 0 but additional cartridges are still available. In this
 cases ejection pulses will still be sent but the counter will remain at 0.</p>
-<p>Below each counter each cartridge type has a switch for manual ejection commands. The switches are
-momentary and spring-loaded to center, each having three positions. PRGM initiates respective set
-ejection program, SGL commands ejection of a single cartridge of respective type and STBY is the
+<p>Below each counter each cartridge type has a switch for manual ejection
+commands. The switches are momentary and spring-loaded to center, each having
+three positions. <strong>PRGM</strong> initiates respective set ejection program, <strong>SGL</strong>
+commands ejection of a single cartridge of respective type and <strong>STBY</strong> is the
 default center position not commanding manual ejection.</p>
-<p>The PWR/MODE switch enables power to the AN/ALE-39 and can enable automatic chaff launch via the
-AN/ALR-67 RWR. AUTO (CHAFF) / MAN enables power to the system and allows the AN/ALR-67 to initiate
-the set chaff ejection program but flares remain in manual. Chaff ejection is initiated when the RWR
-detects a threat actively engaging own aircraft, after each program initiation a 30 second cooldown
-is present before next program is initiated if such a detection is still present. Manual ejection is
-still available as normal. MAN enables power to the system and allows for manual initiation of all
-functions. OFF disables the system.</p>
-<p>The FLARE MODE switch controls how flares are ejected and also sets up how the pilot stick DLC
-button is used. The flaps lever needs to be in the up position to enable DLC button cartridge
-ejection. The switch has three positions. MULT, multiple, sets the system to eject one cartridge
-from each section set to flares on the programmer for each ejection pulse. Note that this means that
-if flares are loaded on all four sections this results in 4 flares being launched each time a flare
-ejection command is sent. NORM sets normal flare ejection pulse behavior. PILOT enables ejection of
-one flare cartridge with each depression of the DLC button. Normal flare ejection still possible. If
-the switch is set a position other than PILOT the DLC button will command ejection of a single chaff
-cartridge.</p>
-<p>Finally the SALVO FLARES switch initiates rapid ejection of all flares using a 0.125 second time
-interval. Normally spring-loaded to the OFF position. Can’t be stopped once initiated.</p>
+<p>The <strong>PWR/MODE</strong> switch enables power to the AN/ALE-39 and can enable automatic
+chaff launch via the AN/ALR-67 RWR. <strong>AUTO (CHAFF) / MAN</strong> enables power to the
+system and allows the AN/ALR-67 to initiate the set chaff ejection program but
+flares remain in manual. Chaff ejection is initiated when the RWR detects a
+threat actively engaging own aircraft, after each program initiation a 30 second
+cool-down is present before next program is initiated if such a detection is
+still present. Manual ejection is still available as normal. <strong>MAN</strong> enables
+power to the system and allows for manual initiation of all functions. <strong>OFF</strong>
+disables the system.</p>
+<p>The <strong>FLARE MODE</strong> switch controls how flares are ejected and also sets up how
+the pilot stick <strong>DLC button is used</strong>. The flaps lever needs to be in the up
+position to enable DLC button cartridge ejection. The switch has three
+positions. <strong>MULT</strong>, multiple, sets the system to eject one cartridge from each
+section set to flares on the programmer for each ejection pulse.</p>
+<blockquote>
+<p>💡 That this means that if flares are loaded on all four sections this results
+in 4 flares being launched each time a flare ejection command is sent.</p>
+</blockquote>
+<p><strong>NORM</strong> sets normal flare ejection pulse behavior. <strong>PILOT</strong> enables ejection
+of one flare cartridge with each depression of the DLC button. Normal flare
+ejection still possible. If the switch is set a position <strong>other than PILOT</strong>
+the DLC button will command ejection of a single chaff cartridge.</p>
+<p>Finally the <em>SALVO FLARES</em> switch initiates rapid ejection of all flares using a
+0.125 second time interval. Normally spring-loaded to the <em>OFF</em> position. Can’t
+be stopped once initiated.</p>
+<blockquote>
+<p>🔴 WARNING: All countermeasure cartridge ejection is inhibited while the
+weight on wheels sensor is active, preventing countermeasure ejection while on
+the ground.</p>
+</blockquote>
 <h3 id="rio-hand-hold-switches"><a class="header" href="#rio-hand-hold-switches">RIO Hand Hold Switches</a></h3>
-<p><img src="systems/defensive_systems/countermeasures/../../../img/cmhats1.jpg" alt="CM Hats" /></p>
-<p>Two four-way direction hats are mounted on the RIO hand hold above the DDD to enable quick access to
-countermeasure ejection. The two switches are mirrored and UP commands ejection of a single chaff
-cartridge. DOWN initiates the chaff ejection program, INBOARD (towards center) initiates the jammer
-ejection program and OUTBOARD (towards the sides) initiates the flare ejection program.</p>
-<h3 id="lau-138"><a class="header" href="#lau-138">LAU-138</a></h3>
-<blockquote>
-<p>🚧 TODO: Add link to LAU-138 section.</p>
-</blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="lau-138-1"><a class="header" href="#lau-138-1">LAU-138</a></h1>
-<blockquote>
-<p>🚧 TODO: Add images.</p>
-</blockquote>
-<p>The LAU-138 chaff dispenser was developed to meet the need for additional chaff cartridge payload
-capacity. The launcher itself was developed in Sweden by CelsiusTech as a chaff dispenser integrated
-into a rail designed to replace the LAU-7 Sidewinder rail. Each rail holds up to 160 chaff packages,
-each being smaller than a normal chaff cartridge while still enabling the mounting of a single AIM-9
-Sidewinder to itself.</p>
-<p>On the F-14 the LAU-138 was used mounted on the 1A and 8A stations. While technically able to be
-mounted on the respective B stations as well, it wasn’t possible to refill the launcher while
-mounted there so wasn’t used there operationally.</p>
-<p>While having the LAU-138s mounted, the R10 and R20 sections in the launcher are both connected to
-the R20 section and the R10 connected to the LAU-138s. This means that the R20 section type setting
-on the programmer controls both R10 and R20 and the R10 section type setting should always be set to
-C for chaff.</p>
-<p>Each launcher holds, as mentioned, 160 chaff packages and each ejection impulse ejects four packages
-from each launcher, each package being about 1/4 the size of a normal chaff cartridge. This results
-in that each ejection impulse ejects the equivalent of two chaff cartridges in total and that a
-total of 40 ejections are available from the launchers.</p>
-<p>As the launchers use the R10 section of the programmer, mounting two LAU-138s results means that the
-counter for chaff on the controller should be increased by 40. A chaff only loadout can result in
-the number of launches available to be in total 100, which is too much for the counter, and that the
-counter will effectively show one chaff ejection less than what’s really available. The last
+<p><img src="systems/defensive_systems/countermeasures/../../../img/general_cmds_cmhats.jpg" alt="CM Hats" /></p>
+<p>Two four-way direction hats are mounted on the RIO hand hold above the DDD to
+enable quick access to countermeasure ejection. The two switches are mirrored
+and <strong>UP</strong> commands ejection of a single chaff cartridge. <strong>DOWN</strong> initiates the
+chaff ejection program, <strong>INBOARD</strong> (towards center) initiates the jammer
+ejection program and <strong>OUTBOARD</strong> (towards the sides) initiates the flare
+ejection program.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lau-138"><a class="header" href="#lau-138">LAU-138</a></h1>
+<p>The LAU-138 chaff dispenser was developed to meet the need for additional chaff
+cartridge payload capacity. The launcher itself was developed in Sweden by
+CelsiusTech as a chaff dispenser integrated into a rail designed to replace the
+LAU-7 Sidewinder rail. Each rail holds up to 160 chaff packages, each being
+smaller than a normal chaff cartridge while still enabling the mounting of a
+single AIM-9 Sidewinder to itself.</p>
+<p>On the F-14 the LAU-138 was used mounted on the 1A and 8A stations. While
+technically able to be mounted on the respective B stations as well, it wasn’t
+possible to refill the launcher while mounted there so wasn’t used there
+operationally.</p>
+<p>While having the LAU-138s mounted, the R10 and R20 sections in the launcher are
+both connected to the R20 section and the R10 connected to the LAU-138s. This
+means that the R20 section type setting on the programmer controls both R10 and
+R20 and the R10 section type setting should always be set to C for chaff.</p>
+<p>Each launcher holds, as mentioned, 160 chaff packages and each ejection impulse
+ejects four packages from each launcher, each package being about 1/4 the size
+of a normal chaff cartridge. This results in that each ejection impulse ejects
+the equivalent of two chaff cartridges in total and that a total of 40 ejections
+are available from the launchers.</p>
+<p>As the launchers use the R10 section of the programmer, mounting two LAU-138s
+results means that the counter for chaff on the controller should be increased
+by 40. A chaff only loadout can result in the number of launches available to be
+in total 100, which is too much for the counter, and that the counter will
+effectively show one chaff ejection less than what’s really available. The last
 ejection will still work though.</p>
-<p>In summary, this means that when using the LAU-138 an additional 40 chaff ejections are available
-increasing the total number to anywhere from 100 chaff to 40 chaff and 60 flares when combined with
-the normal AN/ALE-39 loadout and that the R10 section should always be set to C for chaff when
-mounted.</p>
+<p>In summary, this means that when using the LAU-138 an additional 40 chaff
+ejections are available increasing the total number to anywhere from 100 chaff
+to 40 chaff and 60 flares when combined with the normal AN/ALE-39 loadout and
+that the R10 section should always be set to C for chaff when mounted.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="radar-warning-receiver"><a class="header" href="#radar-warning-receiver">Radar Warning Receiver</a></h1>
 <blockquote>
 <p>🚧 TODO: Create intro for the RWR systems on the F-14.</p>
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="analr-67-rwr"><a class="header" href="#analr-67-rwr">AN/ALR-67 RWR</a></h1>
-<blockquote>
-<p>🚧 TODO: Rework to add more imagery. Also fix the notes to use the new F-4 system.</p>
-</blockquote>
-<p>The AN/ALR-67 radar warning receiver (RWR) is designed to inform and alert the F-14 crew about radar
-emitters in their general area. It’s also designed to help the crew defend themselves from hostile
-threats by indicate radar TRKing and engagement by radar guided weapons.</p>
-<p>The AN/ALR-67 was integrated in the F-14 to replace the ageing AN/ALR-45 and AN/ALR-50, at first for
-the F-14B and later on for parts of the F-14A fleet. Until the advent of the PMDIG upgrade the
-AN/ALR-67 used its own stand-alone display system only. The RWR is however connected to the
-AN/ALQ-126 allowing it to send info on threat emitters to the jammer and also display jammed targets
-on its own display. It can also trigger preprogrammed countermeasure programs set up in the
-AN/ALE-39 system.</p>
-<p>On later F-14B aircraft incorporating the PTID upgrade the AN/ALR-67 was also integrated into the
-MDIG diplays system, allowing for a more detailed threat display on the ECMD.</p>
-<p>The AN/ALR-67 on the F-14B has four small spiral high-band antennas, four wideband high-band
-quadrant receivers and a low-band array. Connected to these antennas is a narrowband superheterodyne
-receiver analysing the received signals and indicating emitters and threats to both pilot and RIO
-using two displays, one at each seat and by audio signals played to the ICS of both</p>
+<p>The AN/ALR-67 radar warning receiver (RWR) is designed to inform and alert the
+F-14 crew about radar emitters in their general area. It’s also designed to help
+the crew defend themselves from hostile threats by indicate radar TRKing and
+engagement by radar guided weapons.</p>
+<p>The AN/ALR-67 was integrated in the F-14 to replace the ageing AN/ALR-45 and
+AN/ALR-50, at first for the F-14B and later on for parts of the F-14A fleet.
+Until the advent of the PMDIG upgrade the AN/ALR-67 used its own stand-alone
+display system only. The RWR is however connected to the AN/ALQ-126 allowing it
+to send info on threat emitters to the jammer and also display jammed targets on
+its own display. It can also trigger preprogrammed countermeasure programs set
+up in the AN/ALE-39 system.</p>
+<p>On later F-14B aircraft incorporating the PTID upgrade the AN/ALR-67 was also
+integrated into the MDIG displays system, allowing for a more detailed threat
+display on the ECMD.</p>
+<p>The AN/ALR-67 on the F-14B has four small spiral high-band antennas, four
+wide-band high-band quadrant receivers and a low-band array. Connected to these
+antennas is a narrow-band superheterodyne receiver analyzing the received
+signals and indicating emitters and threats to both pilot and RIO using two
+displays, one at each seat and by audio signals played to the ICS of both</p>
 <h2 id="controls-1"><a class="header" href="#controls-1">Controls</a></h2>
-<p><img src="systems/defensive_systems/../../img/control1.jpg" alt="Control Panel" /></p>
-<p>The AN/ALR-67 RWR is controlled by a control panel on the RIO right side horizontal panel.</p>
-<p>The PWR (power) switch control power to the RWR and should be set to ON to operate the system.</p>
-<p>The VOL (volume) control knob sets RIO audio level for the RWR sound indications. The pilot has a
-corresponding control on his Volume/TACAN command panel.</p>
-<p>The TEST switch has two selectable modes and is spring-loaded to center when not held. Momentary
-selection of the BIT position initiates the AN/ALR-67 built in test and if the switch is held in the
-SPL (special) position while on the first BIT page displays the special BIT status page as long as
-it’s held in that position.</p>
-<p>The MODE switch also has two selectable modes used while held in the respective position,
-spring-loaded to return to center when not held. When not activated enables normal operational mode,
-OFST enables the offset mode when held and LMT the limit mode when held. The offset mode is
-indicated by an O in the status ring on the display and separates overlapping threat symbols
-sacrificing azimuth accuracy to instead show all threats clearly. The limit mode is indicated by an
-L in the status ring on the display and limits the display to only show the threat symbols of the
-six highest prioritized threats.</p>
-<p>The DISPLAY TYPE selector sets what threat display priority to use on the RWR displays.</p>
-<p>NORM - Normal is indicated by a N in the status ring on the display and shows threat symbology
-according to the loaded threat library.</p>
-<p>AI - Airborne interceptor is indicated by an I in the status ring on the display and prioritizes all
-airborne interceptor threats above all other threats.</p>
-<p>AAA - Anti-aircraft artillery is indicated by an A in the status ring on the display and prioritizes
-all anti-aircraft artillery threats above all other threats.</p>
-<p>UNK - Unknown is indicated by a U in the status ring on the display and prioritizes all unknown
-threats above all other threats.</p>
-<p>FRIEND - Friendly is indicated by an F in the status ring on the display and allows for the same
-prioritization as in normal but also displays known friendly emitters.</p>
-<h2 id="displays-1"><a class="header" href="#displays-1">Displays</a></h2>
-<p><img src="systems/defensive_systems/../../img/display.jpg" alt="Display" /></p>
-<p>The RWR display is identical at both positions in the cockpit and uses three bands (circles) on the
-display to indicate the threat level of the displayed threat symbols.</p>
-<p>The outermost, critical band displays threat symbols belonging to emitters representing an imminent
-threat to own aircraft, either a locked on TRKing radar or a radar detected to be actively engaging
-own aircraft. A threat symbol belonging to a TRK detected as actively engaging own aircraft is
-enhanced by flashing of its symbol.</p>
-<p>The middle, lethal band displays threat symbols belonging to emitters representing threat systems
-deemed within lethal range of own aircraft but not actively TRKing or engaging it.</p>
-<p>The inner, non-lethal band displays threat symbols belonging to emitters not representing a system
-capable of engaging own aircraft or systems capable of but not deemed within range to engage it.</p>
-<p>The circle inside the threat bands is the system status circle, indicating various system modes in
-use or the presence of failures. The upper left quadrant displays what display type is set (N, I, A,
-U or F), the upper right quadrant showing an L if limited display mode is used and the lower half
-indicating either the use of the offset display mode by indicating an O, the presence of a BIT
-failure by showing B or that the system is thermally overloaded (too warm) by showing a T.</p>
-<p>On the lower right side is a knob controlling display intensity on display it’s attached to.</p>
-<blockquote>
-<p>🚧 Experimental way of showing the above info BEGIN</p>
-</blockquote>
-<p>The RWR display is identical at both positions in the cockpit and uses three bands (circles) on the
-display to indicate the threat level of the displayed threat symbols.</p>
+<p><img src="systems/defensive_systems/rwr/../../../img/general_alr-67_control.jpg" alt="Control Panel" /></p>
+<p>The AN/ALR-67 RWR is controlled by a control panel on the RIO right side
+horizontal panel.</p>
+<p>The PWR (power) switch control power to the RWR and should be set to ON to
+operate the system.</p>
+<p>The VOL (volume) control knob sets RIO audio level for the RWR sound
+indications. The pilot has a corresponding control on his Volume/TACAN command
+panel.</p>
+<p>The TEST switch has two selectable modes and is spring-loaded to center when not
+held. Momentary selection of the BIT position initiates the AN/ALR-67 built in
+test and if the switch is held in the SPL (special) position while on the first
+BIT page displays the special BIT status page as long as it’s held in that
+position.</p>
+<p>The MODE switch also has two selectable modes used while held in the respective
+position, spring-loaded to return to center when not held. When not activated
+enables normal operational mode, OFST enables the offset mode when held and LMT
+the limit mode when held. The offset mode is indicated by an O in the status
+ring on the display and separates overlapping threat symbols sacrificing azimuth
+accuracy to instead show all threats clearly. The limit mode is indicated by an
+L in the status ring on the display and limits the display to only show the
+threat symbols of the six highest prioritized threats.</p>
+<p>The DISPLAY TYPE selector sets what threat display priority to use on the RWR
+displays.</p>
 <ul>
-<li><strong>Outermost, critical band:</strong> Displays threat symbols belonging to emitters representing an
-imminent threat to own aircraft, either a locked-on TRKing radar or a radar detected to be
-actively engaging own aircraft. A threat symbol belonging to a TRK detected as actively engaging
-own aircraft is enhanced by flashing its symbol.</li>
-<li><strong>Middle, lethal band:</strong> Displays threat symbols belonging to emitters representing threat systems
-deemed within lethal range of own aircraft but not actively TRKing or engaging it.</li>
-<li><strong>Inner, non-lethal band:</strong> Displays threat symbols belonging to emitters not representing a
-system capable of engaging own aircraft or systems capable of but not deemed within range to
-engage it.</li>
-<li><strong>System status circle:</strong> Indicates various system modes in use or the presence of failures. The
-upper left quadrant displays what display type is set (N, I, A, U, or F), the upper right quadrant
-showing an L if limited display mode is used, and the lower half indicating either the use of the
-offset display mode by indicating an O, the presence of a BIT failure by showing B, or that the
-system is thermally overloaded (too warm) by showing a T.</li>
-<li><strong>Display intensity knob:</strong> On the lower right side, it controls display intensity on the display
-it’s attached to.</li>
+<li><strong>NORM</strong> - Normal is indicated by a N in the status ring on the display and
+shows threat symbology according to the loaded threat library.</li>
+<li><strong>AI</strong> - Airborne interceptor is indicated by an I in the status ring on the
+display and prioritizes all airborne interceptor threats above all other
+threats.</li>
+<li><strong>AAA</strong> - Anti-aircraft artillery is indicated by an A in the status ring on
+the display and prioritizes all anti-aircraft artillery threats above all
+other threats.</li>
+<li><strong>UNK</strong> - Unknown is indicated by a U in the status ring on the display and
+prioritizes all unknown threats above all other threats.</li>
+<li><strong>FRIEND</strong> - Friendly is indicated by an F in the status ring on the display
+and allows for the same prioritization as in normal but also displays known
+friendly emitters.</li>
+</ul>
+<h2 id="displays-1"><a class="header" href="#displays-1">Displays</a></h2>
+<p><img src="systems/defensive_systems/rwr/../../../img/general_alr-67_display.jpg" alt="Display" /></p>
+<p>The RWR display is identical at both positions in the cockpit and uses three
+bands (circles) on the display to indicate the threat level of the displayed
+threat symbols.</p>
+<ul>
+<li><strong>Outermost, critical band:</strong> Displays threat symbols belonging to emitters
+representing an imminent threat to own aircraft, either a locked-on TRKing
+radar or a radar detected to be actively engaging own aircraft. A threat
+symbol belonging to a TRK detected as actively engaging own aircraft is
+enhanced by flashing its symbol.</li>
+<li><strong>Middle, lethal band:</strong> Displays threat symbols belonging to emitters
+representing threat systems deemed within lethal range of own aircraft but not
+actively TRKing or engaging it.</li>
+<li><strong>Inner, non-lethal band:</strong> Displays threat symbols belonging to emitters not
+representing a system capable of engaging own aircraft or systems capable of
+but not deemed within range to engage it.</li>
+<li><strong>System status circle:</strong> Indicates various system modes in use or the
+presence of failures. The upper left quadrant displays what display type is
+set (N, I, A, U, or F), the upper right quadrant showing an L if limited
+display mode is used, and the lower half indicating either the use of the
+offset display mode by indicating an O, the presence of a BIT failure by
+showing B, or that the system is thermally overloaded (too warm) by showing a
+T.</li>
+<li><strong>Display intensity knob:</strong> On the lower right side, it controls display
+intensity on the display it’s attached to.</li>
 </ul>
 <blockquote>
-<p>🚧 Experimental way of showing the info END.</p>
-</blockquote>
-<blockquote>
-<p>💡 The ordering of the three threat bands has changed at least once since the introduction
-of the AN/ALR-67, and as the modeled AN/ALR-67 represents one of the earlier versions we’ve chosen
-the present order.</p>
+<p>💡 The ordering of the three threat bands has changed at least once since the
+introduction of the AN/ALR-67, and as the modeled AN/ALR-67 represents one of
+the earlier versions we’ve chosen the present order.</p>
 </blockquote>
 <h2 id="warning-lights"><a class="header" href="#warning-lights">Warning Lights</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Pilot</th><th>RIO</th></tr></thead><tbody>
-<tr><td><img src="systems/defensive_systems/../../img/pilotcaution.jpg" alt="Pilot Caution" /></td><td><img src="systems/defensive_systems/../../img/riocaution.jpg" alt="RIO Caution" /></td></tr>
+<tr><td><img src="systems/defensive_systems/rwr/../../../img/general_alr-67_pilotcaution.jpg" alt="Pilot Caution" /></td><td><img src="systems/defensive_systems/rwr/../../../img/general_alr-67_riocaution.jpg" alt="RIO Caution" /></td></tr>
 </tbody></table>
 </div>
-<p>The two crewmembers have warning lights dedicated to specific threats on their front cockpit panels.
-The pilot warning lights are situated on the right side of the HUD and the RIO warning lights on the
-right side of the TID. The RIO warning light panel also contains lights for the AN/ALQ-126 and the
-IFF transponder, those are detailed under their respective section.</p>
-<p>The different lights illuminate to indicate the presence of a certain type of threat in the critical
-band of the RWR and when an active engagement is detected the corresponding light starts flashing.
-The categories present are SAM (surface-to-air missile), AAA (anti-air artillery), AI (airborne
-interceptor), and (only in the RIO pit) CW (continuous wave).</p>
+<p>The two crewmembers have warning lights dedicated to specific threats on their
+front cockpit panels. The pilot warning lights are situated on the right side of
+the HUD and the RIO warning lights on the right side of the TID. The RIO warning
+light panel also contains lights for the AN/ALQ-126 and the IFF transponder,
+those are detailed under their respective section.</p>
+<p>The different lights illuminate to indicate the presence of a certain type of
+threat in the critical band of the RWR and when an active engagement is detected
+the corresponding light starts flashing. The categories present are <strong>SAM</strong>
+(surface-to-air missile), <strong>AAA</strong> (anti-air artillery), <strong>AI</strong> (airborne
+interceptor), and (only in the RIO pit) <strong>CW</strong> (continuous wave).</p>
 <h2 id="threat-indication-alert-tones"><a class="header" href="#threat-indication-alert-tones">Threat Indication Alert Tones</a></h2>
-<p>The AN/ALR-67 uses four distinct audio tones to indicate threats and status changes of those
-threats.</p>
-<p>A single short tone is used to indicate the presence of a new emitter or when a threat is moved to
-another threat band.</p>
-<p>A slow warbling, alternating tone is used to indicate the presence of a threat in the critical band.</p>
-<p>A fast warbling, alternating tone is used to indicate that a threat is actively engaging own
-aircraft.</p>
-<p>A special four tone audio signal, pitch decreasing with each tone, is used to indicate a special
-event as programmed by the threat library. In the Heatblur DCS F-14 this represents a new threat
-tied to a system capable of silently engaging own aircraft, i.e. it can engage own aircraft without
-causing it’s threat symbol to move to the critical band and thus no additional audio warning tones.
-This capability is either because of that the launching aircraft is capable of launching missiles in
-a TWS mode or that a launching SAM system can guide missiles by other means than radar and thus not
-giving further warning of an active engagement.</p>
+<p>The AN/ALR-67 uses four distinct audio tones to indicate threats and status
+changes of those threats.</p>
+<p>A single short tone is used to indicate the presence of a new emitter or when a
+threat is moved to another threat band.</p>
+<p>A slow warbling, alternating tone is used to indicate the presence of a threat
+in the critical band.</p>
+<p>A fast warbling, alternating tone is used to indicate that a threat is actively
+engaging own aircraft.</p>
+<p>A special four tone audio signal, pitch decreasing with each tone, is used to
+indicate a special event as programmed by the threat library. In the Heatblur
+DCS F-14 this represents a new threat tied to a system capable of silently
+engaging own aircraft, i.e. it can engage own aircraft without causing it’s
+threat symbol to move to the critical band and thus no additional audio warning
+tones. This capability is either because of that the launching aircraft is
+capable of launching missiles in a TWS mode or that a launching SAM system can
+guide missiles by other means than radar and thus not giving further warning of
+an active engagement.</p>
 <h2 id="bit"><a class="header" href="#bit">BIT</a></h2>
-<p><img src="systems/defensive_systems/../../img/bit.gif" alt="BIT" /></p>
-<p>The AN/ALR-67 BIT cycles between different test screens testing the screen, symbology and threat
-indication tones as well as displaying system revision and threat library information.</p>
-<p>The first page displayed shows system and threat library revision and the following screens test the
-symbol generation of the displays.</p>
-<p>The threat indication tones are also tested during the bit, first page tests the status change tone,
-second page the special tone, third page the threat in critical band tone and the fourth the fast
-warbling active threat tone.</p>
-<p>During the tests the threat warning lights also illuminate for both the pilot and the RIO.</p>
+<p>The AN/ALR-67 BIT cycles between different test screens testing the screen,
+symbology and threat indication tones as well as displaying system revision and
+threat library information.</p>
+<p>The first page displayed shows system and threat library revision and the
+following screens test the symbol generation of the displays.</p>
+<p>The threat indication tones are also tested during the bit, first page tests the
+status change tone, second page the special tone, third page the threat in
+critical band tone and the fourth the fast warbling active threat tone.</p>
+<p>During the tests the threat warning lights also illuminate for both the pilot
+and the RIO.</p>
 <div class="table-wrapper"><table><thead><tr><th>Threat Symbol</th><th>Platform/Sensor</th><th>Special Tone</th></tr></thead><tbody>
-<tr><td><strong>Ships (Symbology enhanced by being enclosed by an enlarged U symbol.)</strong></td><td></td><td></td></tr>
+<tr><td><strong>Ships</strong></td><td></td><td></td></tr>
 <tr><td>AB</td><td>Arleigh Burke class destroyer</td><td></td></tr>
 <tr><td>AK</td><td>Admiral Kuznetsov class aircraft carrier</td><td></td></tr>
 <tr><td>GR</td><td>Grisha 5 class corvette (Albatros)</td><td></td></tr>
@@ -7398,104 +7472,122 @@ warbling active threat tone.</p>
 </tbody></table>
 </div>
 <blockquote>
-<p>💡 Aircraft only flown by own faction in a mission are automatically set as friendly and
-shown only when setting the DISPLAY TYPE selector to FRIEND. N are shown only in UNK and T only in
-FRIEND.</p>
+<p>💡 Aircraft only flown by own faction in a mission are automatically set as
+friendly and shown only when setting the DISPLAY TYPE selector to FRIEND. N
+are shown only in UNK and T only in FRIEND.</p>
+<p>Ships symbology is enhanced by being enclosed by an enlarged U symbol.</p>
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="alr-4550-f-14a-early"><a class="header" href="#alr-4550-f-14a-early">ALR-45/50 (F-14A Early)</a></h1>
-<blockquote>
-<p>🚧 TODO: Perhaps elaborate on the system's specifics more.</p>
-</blockquote>
-<p>The AN/ALR-45 and AN/ALR-50 combination was introduced during the early 70s as a response to the
-increasingly lethal SAM and AAA systems introduced during that era. It's purpose is to inform the
-crew about threats and help them defend against them by indicating reception of threat emissions and
-when they pose a threat to the aircraft. Similarly to ALR-67 it's working in cooperaiton with DECM
-jammer (ALQ-100).</p>
-<p>The AN/ALR-45 has four quadrant receiver antennas located on the front sides of the engine intakes
-as well as the trailing outer edges of the stabilators to provide a 360 degree coverage of the
-aircraft. It provides a general ECM situational awareness as well as indicating emitters locking
-onto and attacking the aircraft.</p>
-<p>The AN/ALR-50 is a dedicated missile warning system and has one upper antenna located aft of the
-cockpit and another lower antenna located on one of the nose gear doors. The purpose of the
-AN/ALR-50 is to detect and warn about possible missile launches. It can identify <strong>MA (missile
-alert)</strong> and <strong>ML (missile launch)</strong> conditions for some of the radars which use missile
-command-link signals. (Currently in DCS the MA should be interpreted as lock and ML as launch)</p>
-<p>Both systems are used as a combined set and can be used to trigger countermeasure program release
-from the AN/ALE-39 as well as triggering the DECM into transmission.</p>
-<p>The system displays threats on the pilot HSD and the RIO ECMD when they are set to ECM. Via the
-display controls the ECM can be allowed to override the current display if a threat is detected.</p>
+<p>The AN/ALR-45 and AN/ALR-50 combination was introduced during the early 70s as a
+response to the increasingly lethal SAM and AAA systems introduced during that
+era. It's purpose is to inform the crew about threats and help them defend
+against them by indicating reception of threat emissions and when they pose a
+threat to the aircraft. Similarly to ALR-67 it's working in cooperation with
+DECM jammer (ALQ-100).</p>
+<p>The AN/ALR-45 has four quadrant receiver antennas located on the front sides of
+the engine intakes as well as the trailing outer edges of the stabilators to
+provide a 360 degree coverage of the aircraft. It provides a general ECM
+situational awareness as well as indicating emitters locking onto and attacking
+the aircraft.</p>
+<p>The AN/ALR-50 is a dedicated missile warning system and has one upper antenna
+located aft of the cockpit and another lower antenna located on one of the nose
+gear doors. The purpose of the AN/ALR-50 is to detect and warn about possible
+missile launches. It can identify <strong>MA (missile alert)</strong> and <strong>ML (missile
+launch)</strong> conditions for some of the radars which use missile command-link
+signals. (Currently in DCS the MA should be interpreted as lock and ML as
+launch)</p>
+<p>Both systems are used as a combined set and can be used to trigger
+countermeasure program release from the AN/ALE-39 as well as triggering the DECM
+into transmission.</p>
+<p>The system displays threats on the pilot HSD and the RIO ECMD when they are set
+to ECM. Via the display controls the ECM can be allowed to override the current
+display if a threat is detected.</p>
 <h2 id="controls-2"><a class="header" href="#controls-2">Controls</a></h2>
-<p><img src="systems/defensive_systems/../../../SphinxManual/Manual/source//images/general/alr-45/control.jpg" alt="Control Panel" /></p>
-<p>The main <strong>ECM</strong> control panel for the AN/ALR-45 and AN/ALR-50 is located on the RIO's right
-horizontal console. The power switch for both system is located on the right side of this control
-panel and is labeled <strong>PWR - ALR-45/50</strong> (<strong>5</strong>).</p>
-<p>The three three-position switches (<strong>1</strong>, <strong>2</strong> and <strong>3</strong>) on the top control the three operating
-bands of the AN/ALR-45 allowing exclusive display of that band or removal of that band from the
-displays. The upper position, <strong>BYPASS</strong>, is momentary and holding the switch to that position
-allows all signals in that band through regardless of their parameters, normally only those matching
-threats are passed through. Holding a band to <strong>BYPASS</strong> removes the other two band from the display
-completely though which is why the switch is automatically returned to <strong>NORM</strong> when released. The
-<strong>NORM</strong> position allows for normal operation of that band. The lower position, <strong>DEFEAT</strong>, is
-locked out and the switch need to be lifted to allow movement to this position. The <strong>DEFEAT</strong>
-position completely disables the selected band.</p>
-<p>The middle volume knob, <strong>4</strong>, controls the audio levels of the AN/ALR-45 and AN/ALR-50 in the RIO's
-headset. The outside part of the knob controls audio from the AN/ALR-45 and can be turned off if
-needed. The inside part controls audio from the AN/ALR-50 can't be completely turned off as it
-controls the MA/ML tones.</p>
-<p>The <strong>AAA</strong> switch (<strong>10</strong>) enables or disables display of strobes relating to AAA threats, the
-threat acronym and indicator lights still function. <strong>NORM</strong> allows normal operation and display of
-AAA threats and <strong>DEFEAT</strong> disables the strobes.</p>
-<p>The <strong>UNKNOWN</strong> switch (<strong>6</strong>) disables display of normal threats and display all unknown signals
-not identified as normal threast as solid strobes, the UNK acronym will be display whenever there
-are any present. The <strong>DISPLAY</strong> position allows this display and is momentary and needs to be held
-and the <strong>OFF</strong> position allows normal AN/ALR-45 operation.</p>
-<p>The three test switches (<strong>7</strong>, <strong>8</strong> and <strong>9</strong>) are all spring-loaded to center and allows for
-activation of BIT for the selected band or system. The <strong>TEST - LOW/OFF/MID</strong> switch enables BIT of
-the AN/ALR-45 <strong>LOW</strong> and <strong>MID</strong> band. The <strong>LOW</strong> position should result in a dotted strobe in
-each quadrant as well as audio and associated warning lights and acronyms for AAA and SAM LOW. The
-<strong>MID</strong> position should result in a dot-dash strobe in each quadrant as well as audio and associated
-warning lights and acronyms for AAA/AI and SAM MID. The <strong>TEST - ML/OFF</strong> switch enables BIT of the
-AN/ALR-50 in the <strong>ML</strong> position and should result in flashing SAM lights and range rings on the
-display as well as associated audio tones. The <strong>TEST - HIGH/OFF</strong> switch enables BIT of the
-AN/ALR-45 high band in the <strong>HIGH</strong> band and should result in a dashed strobe in each of the four
-quadrants on the display as well as audio and associated warning lights and acronyms for AI and SAM
-HIGH.</p>
-<p><img src="systems/defensive_systems/../../../SphinxManual/Manual/source//images/general/alr-45/display.jpg" alt="Display" /></p>
-<p>The <strong>ECM DISPLAY</strong> control panel is also located on the RIO's right horizontal console. It controls
-the RIO's <strong>ECMD</strong> display as well as generic display settings for both displays.</p>
-<p>The <strong>ECM - CORR</strong> switch (<strong>1</strong>) allows setting how the two systems correlate their threats. It is
-spring-loaded back to <strong>ML</strong>. The <strong>MA/ML</strong> position is a momentary position and allows the RIO to
-correlate AN/ALR-50 threats with a <strong>MA</strong> or <strong>ML</strong> condition to a AN/ALR-45 threats. The <strong>ML</strong>
-position, which is the normal switch position, sets the ECM to only correlate a AN/ALR-50 threats to
-an AN/ALR-45 threats if a <strong>ML</strong> condition occurs. The <strong>OFF</strong> position defeats (disables) the
-correlation momentarily allowing for normal uncorrelated threat display.</p>
-<p>The <strong>ECM - ORIDE</strong> switch (<strong>2</strong>) controls when the ECM can override the NAV display on the
-<strong>ECMD</strong>. The <strong>ML</strong> position allows override if a <strong>ML</strong> condition occurs. The <strong>ML/AI</strong> position
-allows override if a <strong>ML</strong> condition occurs or an <strong>AI</strong> (Airborne Intercept, i.e. fighter radar)
-is detected. The <strong>OFF</strong> position disables override.</p>
-<p>The <strong>MODE</strong> switch (<strong>3</strong>) selects which system to display on the <strong>ECMD</strong>. <strong>ECM</strong> displays the
-ECM and <strong>NAV</strong> displays NAV.</p>
-<p>The <strong>DATA/ADF</strong> switch (<strong>4</strong>) controls what additional text information to display in the NAV
-mode. <strong>BOTH</strong> displays ADF and general navigation information, <strong>DATA</strong> displays only the general
-navigation information and <strong>OFF</strong> disables all extra text.</p>
+<p><img src="systems/defensive_systems/rwr/../../../img/general_alr-45_control.jpg" alt="Control Panel" /></p>
+<p>The main <strong>ECM</strong> control panel for the AN/ALR-45 and AN/ALR-50 is located on the
+RIO's right horizontal console. The power switch for both system is located on
+the right side of this control panel and is labeled <strong>PWR - ALR-45/50</strong>
+(<num>5</num>).</p>
+<p>The three three-position switches (<num>1</num>, <num>2</num> and <num>3</num>)
+on the top control the three operating bands of the AN/ALR-45 allowing exclusive
+display of that band or removal of that band from the displays. The upper
+position, <strong>BYPASS</strong>, is momentary and holding the switch to that position
+allows all signals in that band through regardless of their parameters, normally
+only those matching threats are passed through. Holding a band to <strong>BYPASS</strong>
+removes the other two band from the display completely though which is why the
+switch is automatically returned to <strong>NORM</strong> when released. The <strong>NORM</strong>
+position allows for normal operation of that band. The lower position,
+<strong>DEFEAT</strong>, is locked out and the switch need to be lifted to allow movement to
+this position. The <strong>DEFEAT</strong> position completely disables the selected band.</p>
+<p>The middle volume knob, <num>4</num>, controls the audio levels of the AN/ALR-45
+and AN/ALR-50 in the RIO's headset. The outside part of the knob controls audio
+from the AN/ALR-45 and can be turned off if needed. The inside part controls
+audio from the AN/ALR-50 can't be completely turned off as it controls the MA/ML
+tones.</p>
+<p>The <strong>AAA</strong> switch (<num>10</num>) enables or disables display of strobes
+relating to AAA threats, the threat acronym and indicator lights still function.
+<strong>NORM</strong> allows normal operation and display of AAA threats and <strong>DEFEAT</strong>
+disables the strobes.</p>
+<p>The <strong>UNKNOWN</strong> switch (<num>6</num>) disables display of normal threats and
+display all unknown signals not identified as normal threats as solid strobes,
+the UNK acronym will be display whenever there are any present. The <strong>DISPLAY</strong>
+position allows this display and is momentary and needs to be held and the
+<strong>OFF</strong> position allows normal AN/ALR-45 operation.</p>
+<p>The three test switches (<num>7</num>, <num>8</num> and <num>9</num>) are all
+spring-loaded to center and allows for activation of BIT for the selected band
+or system. The <strong>TEST - LOW/OFF/MID</strong> switch enables BIT of the AN/ALR-45
+<strong>LOW</strong> and <strong>MID</strong> band. The <strong>LOW</strong> position should result in a dotted strobe
+in each quadrant as well as audio and associated warning lights and acronyms for
+AAA and SAM LOW. The <strong>MID</strong> position should result in a dot-dash strobe in each
+quadrant as well as audio and associated warning lights and acronyms for AAA/AI
+and SAM MID. The <strong>TEST - ML/OFF</strong> switch enables BIT of the AN/ALR-50 in the
+<strong>ML</strong> position and should result in flashing SAM lights and range rings on the
+display as well as associated audio tones. The <strong>TEST - HIGH/OFF</strong> switch
+enables BIT of the AN/ALR-45 high band in the <strong>HIGH</strong> band and should result in
+a dashed strobe in each of the four quadrants on the display as well as audio
+and associated warning lights and acronyms for AI and SAM HIGH.</p>
+<p><img src="systems/defensive_systems/rwr/../../../img/general_alr-45_display.jpg" alt="Display" /></p>
+<p>The <strong>ECM DISPLAY</strong> control panel is also located on the RIO's right horizontal
+console. It controls the RIO's <strong>ECMD</strong> display as well as generic display
+settings for both displays.</p>
+<p>The <strong>ECM - CORR</strong> switch (<num>1</num>) allows setting how the two systems
+correlate their threats. It is spring-loaded back to <strong>ML</strong>. The <strong>MA/ML</strong>
+position is a momentary position and allows the RIO to correlate AN/ALR-50
+threats with a <strong>MA</strong> or <strong>ML</strong> condition to a AN/ALR-45 threats. The <strong>ML</strong>
+position, which is the normal switch position, sets the ECM to only correlate a
+AN/ALR-50 threats to an AN/ALR-45 threats if a <strong>ML</strong> condition occurs. The
+<strong>OFF</strong> position defeats (disables) the correlation momentarily allowing for
+normal uncorrelated threat display.</p>
+<p>The <strong>ECM - ORIDE</strong> switch (<num>2</num>) controls when the ECM can override the
+NAV display on the <strong>ECMD</strong>. The <strong>ML</strong> position allows override if a <strong>ML</strong>
+condition occurs. The <strong>ML/AI</strong> position allows override if a <strong>ML</strong> condition
+occurs or an <strong>AI</strong> (Airborne Intercept, i.e. fighter radar) is detected. The
+<strong>OFF</strong> position disables override.</p>
+<p>The <strong>MODE</strong> switch (<num>3</num>) selects which system to display on the
+<strong>ECMD</strong>. <strong>ECM</strong> displays the ECM and <strong>NAV</strong> displays NAV.</p>
+<p>The <strong>DATA/ADF</strong> switch (<num>4</num>) controls what additional text information
+to display in the NAV mode. <strong>BOTH</strong> displays ADF and general navigation
+information, <strong>DATA</strong> displays only the general navigation information and
+<strong>OFF</strong> disables all extra text.</p>
 <p>The switch controlling display of ECM information to the pilot is located on the
-<img src="systems/defensive_systems/../../cockpit/pilot/right_vertical_console.html#displays-control-panel" alt="Displays Control Panel" /> and
-the volume controls are located on the
-<img src="systems/defensive_systems/../../cockpit/pilot/left_console.html#volumetacan-command-panel" alt="Volume/TACAN Command Panel" />.</p>
+<img src="systems/defensive_systems/rwr/../../../cockpit/pilot/right_vertical_console.html#displays-control-panel" alt="Displays Control Panel" />
+and the volume controls are located on the
+<img src="systems/defensive_systems/rwr/../../../cockpit/pilot/left_console.html#volumetacan-command-panel" alt="Volume/TACAN Command Panel" />.</p>
 <h2 id="displays-2"><a class="header" href="#displays-2">Displays</a></h2>
-<blockquote>
-<p>🚧 TODO (Mirrored from Sphinx Manual Version)</p>
-</blockquote>
+<p><img src="systems/defensive_systems/rwr/../../../img/general_alr-45_general.jpg" alt="General" />
+<img src="systems/defensive_systems/rwr/../../../img/general_alr-45_strobes.jpg" alt="Strobes" /></p>
 <h2 id="warning-lights-1"><a class="header" href="#warning-lights-1">Warning Lights</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Pilot</th><th>RIO</th></tr></thead><tbody>
-<tr><td><img src="systems/defensive_systems/../../../SphinxManual/Manual/source//images/general/alr-45/pilotcaution.jpg" alt="Pilot Caution" /></td><td><img src="systems/defensive_systems/../../../SphinxManual/Manual/source//images/general/alr-45/riocaution.jpg" alt="RIO Caution" /></td></tr>
+<tr><td><img src="systems/defensive_systems/rwr/../../../img/general_alr-45_pilotcaution.jpg" alt="Pilot Caution" /></td><td><img src="systems/defensive_systems/rwr/../../../img/general_alr-45_riocaution.jpg" alt="RIO Caution" /></td></tr>
 </tbody></table>
 </div>
-<p>The two crewmembers have warning lights dedicated to specific threats on their front cockpit panels.
-The pilot warning lights are situated on the right side of the HUD and the RIO warning lights on the
-right side of the TID. The RIO warning light panel also contains lights for the AN/ALQ-100 and the
-IFF transponder, those are detailed under their respective section.</p>
-<p>The different lights illuminate to indicate the presence of a certain type of threat.</p>
+<p>The two crewmembers have warning lights dedicated to specific threats on their
+front cockpit panels. The pilot warning lights are situated on the right side of
+the HUD and the RIO warning lights on the right side of the TID. The RIO warning
+light panel also contains lights for the AN/ALQ-100 and the IFF transponder,
+those are detailed under their respective section.</p>
+<p>The different lights illuminate to indicate the presence of a certain type of
+threat.</p>
 <h2 id="threat-indication-alert-tones-1"><a class="header" href="#threat-indication-alert-tones-1">Threat Indication Alert Tones</a></h2>
 <p>There are 3 types of sound produced by ALR-45/50:</p>
 <ul>
@@ -7504,137 +7596,156 @@ IFF transponder, those are detailed under their respective section.</p>
 <li>ALR-50 ML (missile launch) tone - high frequency warble</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="electronic-countermeasures---analq-100--126-decm-defensive-electronic-countermeasures"><a class="header" href="#electronic-countermeasures---analq-100--126-decm-defensive-electronic-countermeasures">Electronic Countermeasures - AN/ALQ-100 &amp; 126 DECM (Defensive Electronic CounterMeasures)</a></h1>
-<blockquote>
-<p>🚧 TODO: Rework to add imagery.</p>
-</blockquote>
-<p>The AN/ALQ-100 and 126 jammers are designed to detect radar threats, analyze them, select the
-optimum countermeasure technique available and apply it. Available techniques for jamming are
-amongst others, mainlobe blanking, inverse con-scan, range-gate pull-off and swept square modes.</p>
-<p>In real life these two systems differ greatly with the AN/ALR-126 being by far the most effective
-system. In DCS both are modelled as a simple noise jammers due to engine limitations but controlled
-by the DECM logic as to when it’s on or off and thus work the same.</p>
+<p>The AN/ALQ-100 and 126 jammers are designed to detect radar threats, analyze
+them, select the optimum countermeasure technique available and apply it.
+Available techniques for jamming are amongst others, mainlobe blanking, inverse
+con-scan, range-gate pull-off and swept square modes.</p>
+<p>In real life these two systems differ greatly with the AN/ALR-126 being by far
+the most effective system. In DCS both are modelled as a simple noise jammers
+due to engine limitations but controlled by the DECM logic as to when it’s on or
+off and thus work the same.</p>
 <h2 id="decm-controls-and-indicators"><a class="header" href="#decm-controls-and-indicators">DECM Controls and Indicators</a></h2>
-<p><img src="systems/defensive_systems/../../img/control2.jpg" alt="Control Panel" /></p>
-<p>The controls for the DECM are all located on the right horizontal panel in the RIO pit, panel as
-image above. In addition there are two indication lights co-located with the RWR threat indicators
-on the right side of the TID.</p>
-<p>The two indication lights on the threat advisory are RCV (recieve) and XMIT (transmit). RCV
-illuminates up when the system detects and analyzes a threat while the XMIT illuminates up when it’s
-actively jamming a threat.</p>
-<p>The control panel itself contains a STANDBY indicator light, a mode selector knob and an AUDIO
-volume knob.</p>
-<p>The STANDBY light indicates that system warmup is not yet completed and when completed turns off. At
-other times, illumination of this indicator indicates the presence of a fault in the system.</p>
-<p>The AUDIO (volume) knob controls the audio volume of the RIO sound from the system. The pilot has no
-access to this audio. The audio itself is generated from the PRF of recieved threats with PRF
-frequency being converted to audio frequency.</p>
-<p>The mode selector knob controls power and operational mode that the system is in.</p>
-<p>OFF turns off power to the system. STBY begins pre-warming of the system, taking in all around 5
-minutes.</p>
-<p>TEST - HOLD 3 SEC is used to prepare the system for BIT, after 3 seconds in this mode, turn the knob
-to TEST - ACT.</p>
-<p>TEST - ACT starts the BIT in the system. The BIT takes approximately 30 seconds and the RCV light
-will be illuminated the whole time while the XMIT light will flash twice. If the STANDBY light
-illuminates it indicates that a no-go condition exists in the system.</p>
-<p>REC enables the system in recieve only mode, enabling analysation of threats and also the threat
-audio.</p>
-<p>RPT enables full system functionality, in addition to REC it also now tries to jam threats according
-to selected method.</p>
+<p><img src="systems/defensive_systems/../../img/general_alq-126_control.jpg" alt="Control Panel" /></p>
+<p>The controls for the DECM are all located on the right horizontal panel in the
+RIO pit, panel as image above. In addition there are two indication lights
+co-located with the RWR threat indicators on the right side of the TID.</p>
+<p>The two indication lights on the threat advisory are RCV (recieve) and XMIT
+(transmit). RCV illuminates up when the system detects and analyzes a threat
+while the XMIT illuminates up when it's actively jamming a threat.</p>
+<p>The control panel itself contains a STANDBY indicator light, a mode selector
+knob and an AUDIO volume knob.</p>
+<p>The STANDBY light indicates that system warmup is not yet completed and when
+completed turns off. At other times, illumination of this indicator indicates
+the presence of a fault in the system.</p>
+<p>The AUDIO (volume) knob controls the audio volume of the RIO sound from the
+system. The pilot has no access to this audio unless he put his amplifier
+selector to <strong>EMER</strong> (to use RIO amplifier). The audio itself is generated based
+on radar signal characteristics (mainly PRF).</p>
+<p>The mode selector knob controls power and operational mode that the system is
+in.</p>
+<ul>
+<li><strong>OFF</strong> turns off power to the system. <strong>STBY</strong> begins pre-warming of the
+system, taking in all around 5 minutes.</li>
+<li><strong>TEST - HOLD 3 SEC</strong> is used to prepare the system for BIT, after 3 seconds
+in this mode, turn the knob to TEST - ACT.</li>
+<li><strong>TEST - ACT</strong> starts the BIT in the system. The BIT takes approximately 30
+seconds and the RCV light will be illuminated the whole time while the XMIT
+light will flash twice. If the STANDBY light illuminates it indicates that a
+no-go condition exists in the system.</li>
+<li><strong>REC</strong> enables the system in recieve only mode, enabling analysis of threats
+and also the threat audio.</li>
+<li><strong>RPT</strong> enables full system functionality, in addition to REC it also now
+tries to jam threats according to selected method.</li>
+</ul>
 <blockquote>
-<p>💡 In DCS, jamming is always done with noise jamming, turning on as a threat is detected.</p>
+<p>💡 In DCS jamming is always done with noise jamming, turning on as a threat is
+detected.</p>
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="emergency"><a class="header" href="#emergency">Emergency</a></h1>
-<blockquote>
-<p>🚧 TODO: Rework to add more imagery. Also fix the notes to use the new F-4 system. Add more
-emergency systems. (Refer to F-4 manual for what counts as something to be added here)</p>
-</blockquote>
 <h2 id="fire-detection-and-suppression-system"><a class="header" href="#fire-detection-and-suppression-system">Fire Detection and Suppression System</a></h2>
 <h3 id="fire-detection-system"><a class="header" href="#fire-detection-system">Fire Detection System</a></h3>
-<p>The fire detection system in the F-14 has two fire sensing loops, one in each engine.</p>
-<p>If these loops detects a temperature over 600 °F (about 316 °C) along its whole length or 1,000 °F
-(about 538 °C) in a single 6-inch section it triggers the fire detection circuits. The left
-detection loop illuminates the left fire warning light on the ACM panel and the right detection loop
-illuminates the right fire warning light, see Air Combat Maneuver Panel.</p>
-<p>In addition there are also sensors designed to detect hot air leaks in the engines and illuminate
-the BLEED DUCT caution light on the pilot caution - advisory indicator (see Caution - Advisory
-Indicator) if temperatures above 575 °F (about 302 °C) are detected.</p>
+<p>The fire detection system in the F-14 has two fire sensing loops, one in each
+engine.</p>
+<p>If these loops detects a temperature over 600 °F (about 316 °C) along its whole
+length or 1,000 °F (about 538 °C) in a single 6-inch section it triggers the
+fire detection circuits. The left detection loop illuminates the left fire
+warning light on the ACM panel and the right detection loop illuminates the
+right fire warning light, see Air Combat Maneuver Panel.</p>
+<p>In addition there are also sensors designed to detect hot air leaks in the
+engines and illuminate the BLEED DUCT caution light on the pilot caution -
+advisory indicator (see Caution - Advisory Indicator) if temperatures above 575
+°F (about 302 °C) are detected.</p>
 <div class="table-wrapper"><table><thead><tr><th>Left</th><th>Right</th></tr></thead><tbody>
-<tr><td><img src="systems/../img/left1.jpg" alt="left1" /></td><td><img src="systems/../img/right1.jpg" alt="right1" /></td></tr>
+<tr><td><img src="systems/../img/general_fire_left.jpg" alt="left1" /></td><td><img src="systems/../img/general_fire_right.jpg" alt="right1" /></td></tr>
 </tbody></table>
 </div>
-<p>The fire suppression system in the F-14 contains two bottles filled with a fire suppression agent
-capable of being discharged into one engine selected by the pilot. Though the system contains two
-bottles, both are discharged at the same time making the system a one-shot system, capable of
-extinguishing only one engine.</p>
-<p>As the effectiveness of the agent depends on it remaining in the engine until the fire is out the
-effectiveness is greater at lower airspeed as it takes longer for the agent to be blown clear of the
-engine. The agent itself is a low toxicity agent, designed to do as little damage to the engine as
-possible while still being an effective fire surpessant.</p>
-<p>To activate the system the pilot pulls the FUEL SHUT OFF handle (pictured above) corresponding to
-the alight engine and pushes the fire extinguisher button behind that handle. The pull-out of the
-handle shuts off the fuel to the connected engine and the button behind it releases the fire
-suppression agent into that engine.</p>
-<p>Two advisory lights are connected to this system, each one indicating low pressure in one of the
-fire suppression agent bottles. The ENG FIRE EXT indicates low pressure in the main bottle and the
-AUX FIRE EXT the same in the auxiliary bottle. Both are located on the pilot caution - advisory
+<p>The fire suppression system in the F-14 contains two bottles filled with a fire
+suppression agent capable of being discharged into one engine selected by the
+pilot. Though the system contains two bottles, both are discharged at the same
+time making the system a one-shot system, capable of extinguishing only one
+engine.</p>
+<p>As the effectiveness of the agent depends on it remaining in the engine until
+the fire is out the effectiveness is greater at lower airspeed as it takes
+longer for the agent to be blown clear of the engine. The agent itself is a low
+toxicity agent, designed to do as little damage to the engine as possible while
+still being an effective fire suppressant.</p>
+<p>To activate the system the pilot pulls the <strong>FUEL SHUT OFF</strong> handle (pictured
+above) corresponding to the alight engine and pushes the fire extinguisher
+button behind that handle. The pull-out of the handle shuts off the fuel to the
+connected engine and the button behind it releases the fire suppression agent
+into that engine.</p>
+<p>Two advisory lights are connected to this system, each one indicating low
+pressure in one of the fire suppression agent bottles. The <strong>ENG FIRE EXT</strong>
+indicates low pressure in the main bottle and the <strong>AUX FIRE EXT</strong> the same in
+the auxiliary bottle. Both are located on the pilot caution - advisory
 indicator, see Caution - Advisory Indicator.</p>
-<p>The advisory lights will both illuminate after a successfull application of the system and will also
-indicate if an error drains the pressure in the bottles.</p>
+<p>The advisory lights will both illuminate after a successful application of the
+system and will also indicate if an error drains the pressure in the bottles.</p>
 <h3 id="fire-detection-and-suppression-system-test"><a class="header" href="#fire-detection-and-suppression-system-test">Fire Detection and Suppression System Test</a></h3>
-<p>Both systems can be tested by selection of the FIRE DET/EXT position on the master test panel
-switch. (See Master Test Panel.) This will illuminate both fire warning lights on the ACM panel if
-their respective loop is functional and the GO light on the master test panel will illuminate if the
-suppression system is functional. If the NO GO or no lights illuminate there’s a problem in either
-the suppression system or the test circuitry.</p>
+<p>Both systems can be tested by selection of the <strong>FIRE DET/EXT</strong> position on the
+master test panel switch. (See Master Test Panel.) This will illuminate both
+fire warning lights on the ACM panel if their respective loop is functional and
+the <strong>GO</strong> light on the master test panel will illuminate if the suppression
+system is functional. If the <strong>NO GO</strong> or no lights illuminate there’s a problem
+in either the suppression system or the test circuitry.</p>
 <h2 id="ejection-system"><a class="header" href="#ejection-system">Ejection System</a></h2>
-<p>The F-14 Tomcat is equipped with dual Martin-Baker GRU-7A rocket-assisted ejection seats, one for
-the pilot, one for the RIO. The ejection system is a zero/zero system, capable of successfully
-ejecting the crewmembers at zero airspeed, stationary, on the ground.</p>
-<p>As the F-14 is a two seat aircraft it has additional controls apart from the ejection handles and
-arming systems, namely the ejection command lever. This lever, which is located in the RIO cockpit,
-selects if the RIO ejects the pilot as well when he ejects.</p>
-<p>The lever is situated beside the sensor control panel, see Eject Command Lever. When set to PILOT,
-the pilot ejects both crewmembers, while the RIO ejects only himself. When set to MCO both
-crewmembers eject both crewmembers.</p>
-<p>The system does not allow pilot-only ejection because it would be undesirable for the RIO to remain
-in the aircraft alone.</p>
-<p>The pilot has indication of what position the ejection command lever is at on the Landing Gear
-Control Panel, the EJECT CMD flip-flop indicator showing PILOT when the lever is in pilot and MCO
-when in MCO.</p>
-<p>If the canopy does not jettison when initiating the ejection sequence it’s possible to manually
-jettison it using the Canopy Jettison Handle in the pilot cockpit or the Canopy Jettison Handle in
-the RIO cockpit. If the canopy inhibited ejection after ejection initiation, jettisoning the canopy
-will most likely restart it. If ejection is needed during a flat spin, it’s also recommended to
-manually jettison the canopy and allow it to clear before initiating the ejection sequence as the
-canopy might need longer to clear during a flat spin.</p>
+<p>The F-14 Tomcat is equipped with dual Martin-Baker GRU-7A rocket-assisted
+ejection seats, one for the pilot, one for the RIO. The ejection system is a
+zero/zero system, capable of successfully ejecting the crewmembers at zero
+airspeed, stationary, on the ground.</p>
+<p>As the F-14 is a two seat aircraft it has additional controls apart from the
+ejection handles and arming systems, namely the ejection command lever. This
+lever, which is located in the RIO cockpit, selects if the RIO ejects the pilot
+as well when he ejects.</p>
+<p>The lever is situated beside the sensor control panel, see Eject Command Lever.
+When set to <strong>PILOT</strong>, the pilot ejects both crewmembers, while the RIO ejects
+only himself. When set to <strong>MCO</strong> both crewmembers eject both crewmembers.</p>
+<p>The system does not allow pilot-only ejection because it would be undesirable
+for the RIO to remain in the aircraft alone.</p>
+<p>The pilot has indication of what position the ejection command lever is at on
+the Landing Gear Control Panel, the <strong>EJECT CMD</strong> flip-flop indicator showing
+<strong>PILOT</strong> when the lever is in pilot and <strong>MCO</strong> when in MCO.</p>
+<p>If the canopy does not jettison when initiating the ejection sequence it’s
+possible to manually jettison it using the Canopy Jettison Handle in the pilot
+cockpit or the Canopy Jettison Handle in the RIO cockpit. If the canopy
+inhibited ejection after ejection initiation, jettisoning the canopy will most
+likely restart it. If ejection is needed during a flat spin, it’s also
+recommended to manually jettison the canopy and allow it to clear before
+initiating the ejection sequence as the canopy might need longer to clear during
+a flat spin.</p>
 <h2 id="jettison-system"><a class="header" href="#jettison-system">Jettison System</a></h2>
-<p>The Jettison system has four modes of operation: emergency, ACM, selective, and auxiliary.</p>
+<p>The Jettison system has four modes of operation: emergency, ACM, selective, and
+auxiliary.</p>
 <h3 id="emergency-jettison"><a class="header" href="#emergency-jettison">Emergency Jettison</a></h3>
-<p>The emergency jettison is selected via the EMERG STORES JETT on the Landing Gear Control Panel.
-Selection causes the EMERG JETT caution light to illuminate on the pilot Caution - Advisory
-Indicator.</p>
-<p>The emergency jettison requires only no weight on wheels indicated (no master arm) and ejects all
-stores except for Sidewinders.</p>
+<p>The emergency jettison is selected via the <strong>EMERG STORES JETT</strong> on the Landing
+Gear Control Panel. Selection causes the <strong>EMERG JETT</strong> caution light to
+illuminate on the pilot Caution - Advisory Indicator.</p>
+<p>The emergency jettison requires only no weight on wheels indicated (no master
+arm) and ejects all stores except for Sidewinders.</p>
 <h3 id="acm-jettison"><a class="header" href="#acm-jettison">ACM Jettison</a></h3>
-<p>The ACM jettison is selected via the ACM JETT button under the ACM cover/switch on the Air Combat
-Maneuver Panel.</p>
-<p>The ACM jettison, like the emergency jettison, requires no master arm but instead requires that the
-landing gear lever is up. Unlike the emergency jettison the ACM jettison only ejects those stations
-selected by the RIO on the Armament Panel (set to SEL or B for stations 1 and 8).</p>
+<p>The ACM jettison is selected via the <strong>ACM JETT</strong> button under the ACM
+cover/switch on the Air Combat Maneuver Panel.</p>
+<p>The ACM jettison, like the emergency jettison, requires no master arm but
+instead requires that the landing gear lever is up. Unlike the emergency
+jettison the ACM jettison only ejects those stations selected by the RIO on the
+Armament Panel (set to <strong>SEL</strong> or <strong>B</strong> for stations 1 and 8).</p>
 <h3 id="selective-jettison"><a class="header" href="#selective-jettison">Selective Jettison</a></h3>
-<p>The selective jettison is set and executed by the RIO on the Armament Panel. This mode of
-jettisoning requires the landing gear handle to be in the up position and the master arm to be on.</p>
-<p>The procedure for jettison in selective mode is to set the desired station switches to SEL and hold
-the SEL JETT switch to JETT.</p>
+<p>The selective jettison is set and executed by the RIO on the Armament Panel.
+This mode of jettisoning requires the landing gear handle to be in the up
+position and the master arm to be on.</p>
+<p>The procedure for jettison in selective mode is to set the desired station
+switches to <strong>SEL</strong> and hold the <strong>SEL JETT</strong> switch to <strong>JETT</strong>.</p>
 <h3 id="auxiliary-jettison"><a class="header" href="#auxiliary-jettison">Auxiliary Jettison</a></h3>
-<p>The auxiliary jettison mode is a backup mode to use when the other modes have failed. Like the
-selective jettison mode it requires the landing gear handle to be up and the master arm to be on.</p>
-<p>This mode can only eject air-to-ground stores and ejects them by actuating the normal release hooks.
-This means that the aircraft needs to fly straight and level as the stores are not ejected
-forcefully but instead just released and cleared using gravity.</p>
+<p>The auxiliary jettison mode is a backup mode to use when the other modes have
+failed. Like the selective jettison mode it requires the landing gear handle to
+be up and the master arm to be on.</p>
+<p>This mode can only eject air-to-ground stores and ejects them by actuating the
+normal release hooks. This means that the aircraft needs to fly straight and
+level as the stores are not ejected forcefully but instead just released and
+cleared using gravity.</p>
 <blockquote>
-<p>💡 No jettison mode can jettison ITERs or stores loaded on those, they need to be dropped
-like normal, with or without the fuzes armed.</p>
+<p>💡 No jettison mode can jettison ITERs or stores loaded on those, they need to
+be dropped like normal, with or without the fuzes armed.</p>
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="weapons--stores"><a class="header" href="#weapons--stores">Weapons &amp; Stores</a></h1>
 <blockquote>
