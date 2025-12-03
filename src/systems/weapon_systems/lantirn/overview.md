@@ -12,7 +12,7 @@ show that the LANTIRN could quickly be adapted for F-14 use.
 
 As the pod was adapted for the F-14 the secondary navigational pod was deleted, keeping only the
 targeting pod. The pod was wired up to its own control panel as the F-14 didn’t have the required
-1553-bus for complete integration. The control panel was patched into the TCS -> TID video feed
+1553-bus for complete integration. The control panel was patched into the TCS to TID video feed
 allowing it to select either the TCS or the LANTIRN for display on the TID and VDI.
 
 While the pod can read waypoints and selected weapon from the WCS, the pod has its own GPS receiver
