@@ -7,7 +7,7 @@
 The TACTS pod is an analysis pod used during training missions, carried on LAU-7 rails instead of
 AIM-9s, normally on station 1A and 8A. They are normally carried as a pair of two, one on each side.
 
-💡 In DCS, their functionality is purely cosmetic.
+> 💡 In DCS, their functionality is purely cosmetic.
 
 ## LANTIRN
 

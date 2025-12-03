@@ -21,5 +21,5 @@ the GBU-10 and 24, the 10 can be carried on the front rails (3 and 6) and the 24
 and one back rail as they need to be carried on opposite sides of the aircraft due to the larger
 wing assembly.
 
-💡 GBU laser codes are set as per DCS Mission Editor Functions Specific to the HB DCS F-14 or
-via the kneeboard.
+> 💡 GBU laser codes are set as per DCS Mission Editor Functions Specific to the HB DCS F-14 or
+> via the kneeboard.

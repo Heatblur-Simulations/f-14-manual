@@ -38,19 +38,19 @@ receive transmissions in the proper cipher mode.
    ground station and check for readability and signal strength.
 10. Set power mode and radio selector switches in accordance with the tactical situation.
 
-💡 The above procedures may be used to perform an in-flight check of the equipment.
+> 💡 The above procedures may be used to perform an in-flight check of the equipment.
 
 **Postlaunch:**
 
 - The speech security equipment shall be operated as briefed.
 
-💡 If ZEROIZE is pressed during flight, ciphered communication is not possible. The code can
-only be reset (or changed) through the ground crew communications menu after landing.
+> 💡 If ZEROIZE is pressed during flight, ciphered communication is not possible. The code can
+> only be reset (or changed) through the ground crew communications menu after landing.
 
 **After Landing:**
 
 - ZEROIZE switch - ZEROIZE (as briefed).
 - Power switch - OFF.
 
-💡 If ZEROIZE has been pressed and the POWER MODE switch is in C, both crewmembers will be
-warned by a continuing beeping sound.
+> 💡 If ZEROIZE has been pressed and the POWER MODE switch is in C, both crewmembers will be
+> warned by a continuing beeping sound.
