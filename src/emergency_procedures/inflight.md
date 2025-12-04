@@ -1,30 +1,27 @@
 # Emergency Procedures
 
-> 🚧 TODO: Verify for accuracy.
+## Engine Air-start
 
-## Engine Airstart
-
-The F110-GE-400 engines can be airstarted one-by-one or simultaneously.  
+The F110-GE-400 engines can be air-started one-by-one or simultaneously.  
 Three restart methods are available:
 
-- **Spooldown**
+- **Spool-down**
 - **Cross-Bleed**
 - **Windmill**
 
-All attempts should be made in the engine mode selected by the AFTC (normally PRI, or SEC if PRI
-fails).
+All attempts should be made in the engine mode selected by the AFTC (normally
+PRI, or SEC if PRI fails).
 
----
+### Spool-down Air-start
 
-## Spooldown Airstart
+Spool-down air-start should be attempted immediately after engine loss, before
+significant spool-down occurs.
 
-Spooldown airstart should be attempted immediately after engine loss, before significant spooldown
-occurs.
-
-- May take up to **10 seconds** for RPM increase and **90 seconds** to reach commanded RPM.
+- May take up to **10 seconds** for RPM increase and **90 seconds** to reach
+  commanded RPM.
 - If PRI fails, retry in SEC.
 
-### Spooldown Airstart Checklist
+#### Spool-down Air-start Checklist
 
 | Step | Item                    | Action                                       |
 | ---- | ----------------------- | -------------------------------------------- |
@@ -34,17 +31,15 @@ occurs.
 | 4    | Throttle                | If no start after mode switch: OFF then IDLE |
 | 5    | After successful start  | Set ENG MODE SELECT to PRI if possible       |
 
----
-
-## Cross-Bleed Airstart
+### Cross-Bleed Air-start
 
 Use if:
 
-- Spooldown failed
+- Spool-down failed
 - One engine is already running
 - Target engine is near windmill RPM
 
-### Cross-Bleed Airstart Checklist
+#### Cross-Bleed Air-start Checklist
 
 | Step | Item                    | Action                       |
 | ---- | ----------------------- | ---------------------------- |
@@ -60,16 +55,14 @@ Use if:
 | 10   | After successful start  | BACK UP IGNITION: OFF        |
 | 11   | ENG MODE SELECT switch  | PRI if possible              |
 
----
-
-## Windmill Airstart
+### Windmill Air-start
 
 Used when:
 
 - Airspeed ≥ 450 KIAS
 - Altitude permits sufficient airflow through engine
 
-### Windmill Airstart Checklist
+#### Windmill Air-start Checklist
 
 | Step | Item                    | Action                |
 | ---- | ----------------------- | --------------------- |
