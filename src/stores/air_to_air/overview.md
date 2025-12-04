@@ -1,6 +1,15 @@
 # Air to Air
 
-> 🚧 TODO: Add an intro
+The F-14 Tomcat can equip various air-to-air weapons.
+
+![Missile firing](../../img/air_to_air_overview.jpg)
+
+For medium to long range engagements the [AIM-54 Phoenix](aim_54.md) as well as
+the [AIM-7 Sparrow](aim_7.md) can be used.
+
+In close-quarters engagements, the Tomcat relies on the
+[AIM-9 Sidewinder](./aim_9.md), a short-range, infrared-guided missile
+celebrated for its agility and responsiveness.
 
 ## HUD Symbology for Air-to-Air Missiles
 
