@@ -3,10 +3,9 @@
 [F-14 Manual](./f14_manual.md)
 
 - [Introduction](./intro/introduction.md)
-  - [Definitions](./intro/definitions.md)
-  - [Historical Background](./intro/history.md)
   - [Technical Specifications](./intro/specification.md)
   - [Variants](./intro/variants.md)
+  - [Definitions](./intro/definitions.md)
 - [Cockpit Overview](./cockpit/overview.md)
   - [Pilot Cockpit](./cockpit/pilot/overview.md)
     - [Left Side Console](./cockpit/pilot/left_console.md)
