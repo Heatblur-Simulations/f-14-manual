@@ -35,8 +35,6 @@ AN/ALE-39 control panel.
 
 ![Programmer](../../../img/general_cmds_programmer.jpg)
 
-> 🚧 TODO: Rewrite this to look better!
-
 The programmer is used to set up what countermeasure cartridges are loaded where
 and to set up the different ejection programmes. The panel is located on the
 right horizontal console of the RIO cockpit.
