@@ -1,9 +1,6 @@
 # Special Options
 
-> 🚧 TODO: Rewrite this section similar to the F-4E manual. Add a lot more information (and update
-> information).
-
-Available under: `OPTIONS → SPECIAL → F-14`
+Available under: **OPTIONS → SPECIAL → F-14**
 
 | Control                            | Function                                                         |
 | ---------------------------------- | ---------------------------------------------------------------- |
