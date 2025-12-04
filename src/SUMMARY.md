@@ -102,7 +102,6 @@
   - [Startup](./procedures/startup.md)
   - [Post-start](./procedures/post_start.md)
 - [Emergency Procedures](./emergency_procedures/overview.md)
-  - [Inflight](./emergency_procedures/inflight.md)
 - [DCS](./dcs/overview.md)
   - [Special Options](./dcs/special_options.md)
   - [Mission Editor](./dcs/mission_editor.md)
