@@ -10,14 +10,13 @@
 2. [Cockpit Overview](cockpit/overview.md)
 3. [Systems Overview](systems/overview.md)
 4. [Weapons & Stores](stores/overview.md)
-5. [Jester](jester/overview.md)
-6. [Iceman](iceman/overview.md)
-7. [Normal Procedures](procedures/overview.md)
-8. [Emergency Procedures](emergency_procedures/overwiew.md)
-9. [DCS](dcs/overview.md)
-10. [Abbreviations](abbreviations.md)
-11. [Tutorials](tutorials.md)
-12. [Imprint](imprint.md)
+5. [Jester & Iceman](jester_iceman/overview.md)
+6. [Normal Procedures](procedures/overview.md)
+7. [Emergency Procedures](emergency_procedures/overwiew.md)
+8. [DCS](dcs/overview.md)
+9. [Abbreviations](abbreviations.md)
+10. [Tutorials](tutorials.md)
+11. [Imprint](imprint.md)
 
 <!-- markdown-link-check-disable -->
 
