@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Iceman - Heatblur F-14 Tomcat</title>
+        <title>Jester &amp; Iceman - Heatblur F-14 Tomcat</title>
 
 
         <!-- Custom HTML head -->
@@ -132,7 +132,7 @@
                         <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/iceman/overview.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/jester_iceman/overview.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -161,25 +161,89 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="iceman"><a class="header" href="#iceman">Iceman</a></h1>
-<blockquote>
-<p>🚧 TODO: Rewrite to be correct for the current game version. Add a lot more information.</p>
-</blockquote>
-<p><img src="./_images/pilot.jpg" alt="Pilot" /></p>
-<p><strong>Iceman</strong> is a basic autopilot AI and a subset of the Jester system. It is designed for
-singleplayer scenarios where a player may switch between the front and rear seats.</p>
+                        <h1 id="jester--iceman"><a class="header" href="#jester--iceman">Jester &amp; Iceman</a></h1>
+<h2 id="jester"><a class="header" href="#jester">Jester</a></h2>
+<p><img src="../img/jester_jester.jpg" alt="Jester" /></p>
+<p>The <strong>Jester AI</strong> aims to be a functional AI Radar Intercept Officer (RIO) for
+the Heatblur DCS F-14, enabling a multi-crew experience in a single-player (per
+aircraft) environment.</p>
+<p>He is fully integrated into the rear cockpit, controlling nearly all back seat
+systems, with a focus on systems not controllable from the pilot seat. He is
+also modeled to simulate human limitations—his head position, visual spotting
+range, and hand positions are all accounted for. When controlling systems at the
+RIO seat, he performs all actions a human RIO would.</p>
+<p>To control Jester, a <strong>command wheel</strong> is used for quick access. This wheel is
+dynamic based on the selected mode and the current situation. Feedback to the
+pilot is given via ICS using a library of recorded audio, simulating a RIO
+actually talking. In addition to acknowledging orders, Jester will provide
+pertinent information based on the situation.</p>
+<p>In multiplayer, if a human RIO disconnects mid-flight, Jester resumes control of
+the rear cockpit systems in the configuration left by the human player.</p>
+<h3 id="functionality"><a class="header" href="#functionality">Functionality</a></h3>
+<p><img src="../img/jester_menu.jpg" alt="Menu" /></p>
+<p>The <strong>Jester menu</strong> is opened by default with the <kbd>A</kbd> key. Selection of
+items (<num>1</num>–<num>8</num>) is done using <kbd>CTRL</kbd> + <kbd>1</kbd>
+through <kbd>CTRL</kbd> + <kbd>8</kbd>. These controls can be remapped under the
+<strong>Jester</strong> category in the <strong>F-14 Pilot</strong> DCS key-binds. The menu system is
+designed to support 8-way hat switch mapping. Optionally, you can use your
+viewing angle in the cockpit to select menu petals by holding the Jester menu
+key for over 0.5 seconds - this can be toggled in the F-14 options.</p>
+<ul>
+<li>The first press brings up a <strong>contextual menu</strong> based on current aircraft mode
+and situation.</li>
+<li>A second press opens the <strong>Main Menu</strong>.</li>
+<li>A third press closes the menu.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><strong>Air-to-Air mode (airborne)</strong>: opens <em>Beyond Visual Range – Radar</em> menu.</li>
+<li><strong>Air-to-Ground mode</strong>: opens <em>Air-to-Ground – Weapons</em> menu.</li>
+<li><strong>Take-off/Landing</strong>: context-specific menus available.</li>
+</ul>
+<p>From these menus, pilots can control RIO systems. Menu contents can change based
+on prior selections. In some cases, menu petals act as inputs/keypads for
+entering data like frequencies or waypoints.</p>
+<p>You can also:</p>
+<ul>
+<li>Set a <strong>waypoint</strong> from an F10 map marker (menu shows time and name).</li>
+<li>Lock targets on the <strong>TID</strong> using options like <em>closest target</em> or <em>specific
+azimuth/range</em>.</li>
+<li>Run a <strong>startup checklist</strong>.</li>
+</ul>
+<h3 id="assisted-startup"><a class="header" href="#assisted-startup">Assisted Startup</a></h3>
+<p><img src="../img/jester_startup.jpg" alt="Startup" /></p>
+<p>For aircraft cold start, Jester can either perform his checklist like a real RIO
+would, or he can also help the pilot with an assisted startup in which he reads
+the pilot's checklist to him while starting.</p>
+<p>To access the normal, unassisted startup, select startup, Jester will then go
+through his checklist. He will at times ask the pilot if he has completed
+certain checks or ask for specific tests, this is answered via the Jester menu
+using the options appearing there. As an example he will start by asking for a
+comms check which is answered via the Jester menu. Note that after engine
+startup and EMERG GEN Master test he will ask for what INS alignment to go for,
+select this via the Jester menu as well.</p>
+<p>To access the assisted startup select assisted start on the Jester menu. Jester
+will now read out the checklist to the pilot and highlight the relevant
+indicators and switches during startup. Use the Jester menu to tell Jester when
+a check/step is complete.</p>
+<p><img src="../img/jester_highlight.jpg" alt="Highlight" /></p>
+<h2 id="iceman"><a class="header" href="#iceman">Iceman</a></h2>
+<p><img src="../img/jester_pilot.jpg" alt="Pilot" /></p>
+<p><strong>Iceman</strong> is a basic autopilot AI and a subset of the Jester system. It is
+designed for singleplayer scenarios where a player may switch between the front
+and rear seats.</p>
 <p>When the player switches to the RIO seat:</p>
 <ul>
 <li>Iceman takes control of heading and altitude.</li>
-<li>The Iceman menu allows setting heading, altitude, and speed—either relative to a target or as
-absolute values.</li>
+<li>The Iceman menu allows setting heading, altitude, and speed—either relative to
+a target or as absolute values.</li>
 </ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Navigation button at bottom -->
-                            <a rel="prev" href="../jester/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../stores/tanks.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
                             </a>
 
@@ -191,11 +255,11 @@ absolute values.</li>
                     </nav>
                     <nav class="nav-wide-wrapper" aria-label="Page navigation">
                             <!-- Navigation button at bottom -->
-                            <a rel="prev" href="../jester/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../stores/tanks.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
                             </a>
                             <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
-                            <a rel="prev" href="../jester/overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../stores/tanks.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
                             </a>
 
