@@ -34,12 +34,3 @@
 | Wing Loading         | 94 lb/ft² (458.9 kg/m²) |
 | Ceiling              | 53,000+ ft (~16,200 m)  |
 | Range                | 2,050 NM (~3,800 km)    |
-
-<!-- ---
-
-## Modeled F-14 Variants in DCS
-
-- **F-14A-95-GR IRIAF** *(Not Yet Implemented)*: Early export version for Iran, no TCS/IRST, limited missiles, TF30 engines.
-- **F-14A-135-GR (Early)** *(Not Yet Implemented)*: Early U.S. Navy version with TF30 engines and AN/ALR-45/50 RWR.
-- **F-14A-135-GR (Late)**: Later U.S. Navy version with AN/ALR-67 RWR.
-- **F-14B**: Upgraded F-14A+ with GE F110 engines, AN/ALR-67 RWR, LANTIRN targeting pod compatibility. -->
