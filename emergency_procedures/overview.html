@@ -162,10 +162,73 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="emergency-procedures"><a class="header" href="#emergency-procedures">Emergency Procedures</a></h1>
-<blockquote>
-<p>🚧 TODO: Write intro</p>
-</blockquote>
-
+<h2 id="engine-air-start"><a class="header" href="#engine-air-start">Engine Air-start</a></h2>
+<p>The F110-GE-400 engines can be air-started one-by-one or simultaneously.<br />
+Three restart methods are available:</p>
+<ul>
+<li><strong>Spool-down</strong></li>
+<li><strong>Cross-Bleed</strong></li>
+<li><strong>Windmill</strong></li>
+</ul>
+<p>All attempts should be made in the engine mode selected by the AFTC (normally
+PRI, or SEC if PRI fails).</p>
+<h3 id="spool-down-air-start"><a class="header" href="#spool-down-air-start">Spool-down Air-start</a></h3>
+<p>Spool-down air-start should be attempted immediately after engine loss, before
+significant spool-down occurs.</p>
+<ul>
+<li>May take up to <strong>10 seconds</strong> for RPM increase and <strong>90 seconds</strong> to reach
+commanded RPM.</li>
+<li>If PRI fails, retry in SEC.</li>
+</ul>
+<h4 id="spool-down-air-start-checklist"><a class="header" href="#spool-down-air-start-checklist">Spool-down Air-start Checklist</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action</th></tr></thead><tbody>
+<tr><td>1</td><td>Throttle</td><td>IDLE or above</td></tr>
+<tr><td>2</td><td>If no relight: Throttle</td><td>OFF then IDLE</td></tr>
+<tr><td>3</td><td>ENG MODE SELECT switch</td><td>SEC</td></tr>
+<tr><td>4</td><td>Throttle</td><td>If no start after mode switch: OFF then IDLE</td></tr>
+<tr><td>5</td><td>After successful start</td><td>Set ENG MODE SELECT to PRI if possible</td></tr>
+</tbody></table>
+</div>
+<h3 id="cross-bleed-air-start"><a class="header" href="#cross-bleed-air-start">Cross-Bleed Air-start</a></h3>
+<p>Use if:</p>
+<ul>
+<li>Spool-down failed</li>
+<li>One engine is already running</li>
+<li>Target engine is near windmill RPM</li>
+</ul>
+<h4 id="cross-bleed-air-start-checklist"><a class="header" href="#cross-bleed-air-start-checklist">Cross-Bleed Air-start Checklist</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action</th></tr></thead><tbody>
+<tr><td>1</td><td>Non-running throttle</td><td>OFF</td></tr>
+<tr><td>2</td><td>FUEL SHUT OFF handle</td><td>Verify handle IN</td></tr>
+<tr><td>3</td><td>Running engine throttle</td><td>Minimum 80% RPM</td></tr>
+<tr><td>4</td><td>BACK UP IGNITION switch</td><td>ON</td></tr>
+<tr><td>5</td><td>ENG CRANK switch</td><td>Set to non-running engine</td></tr>
+<tr><td>6</td><td>Non-running throttle</td><td>IDLE immediately after CRANK</td></tr>
+<tr><td>7</td><td>If no start: Throttle</td><td>OFF then IDLE</td></tr>
+<tr><td>8</td><td>ENG MODE SELECT switch</td><td>SEC</td></tr>
+<tr><td>9</td><td>Throttle</td><td>OFF then IDLE</td></tr>
+<tr><td>10</td><td>After successful start</td><td>BACK UP IGNITION: OFF</td></tr>
+<tr><td>11</td><td>ENG MODE SELECT switch</td><td>PRI if possible</td></tr>
+</tbody></table>
+</div>
+<h3 id="windmill-air-start"><a class="header" href="#windmill-air-start">Windmill Air-start</a></h3>
+<p>Used when:</p>
+<ul>
+<li>Airspeed ≥ 450 KIAS</li>
+<li>Altitude permits sufficient airflow through engine</li>
+</ul>
+<h4 id="windmill-air-start-checklist"><a class="header" href="#windmill-air-start-checklist">Windmill Air-start Checklist</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action</th></tr></thead><tbody>
+<tr><td>1</td><td>Airspeed</td><td>At or above 450 KIAS</td></tr>
+<tr><td>2</td><td>Throttle</td><td>IDLE or above</td></tr>
+<tr><td>3</td><td>BACK UP IGNITION switch</td><td>ON</td></tr>
+<tr><td>4</td><td>If no relight: Throttle</td><td>OFF then IDLE</td></tr>
+<tr><td>5</td><td>ENG MODE SELECT switch</td><td>SEC</td></tr>
+<tr><td>6</td><td>Throttle</td><td>OFF then IDLE</td></tr>
+<tr><td>7</td><td>After successful start</td><td>BACK UP IGNITION: OFF</td></tr>
+<tr><td>8</td><td>ENG MODE SELECT switch</td><td>PRI if possible</td></tr>
+</tbody></table>
+</div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -174,7 +237,7 @@
                                 <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
                             </a>
 
-                            <a rel="next prefetch" href="../emergency_procedures/inflight.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../dcs/overview.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
                             </a>
 
@@ -191,11 +254,11 @@
                             </a>
 
                             <!-- Navigation button at bottom -->
-                            <a rel="next prefetch" href="../emergency_procedures/inflight.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../dcs/overview.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
                             </a>
                             <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
-                            <a rel="next prefetch" href="../emergency_procedures/inflight.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../dcs/overview.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
                             </a>
                     </nav>
