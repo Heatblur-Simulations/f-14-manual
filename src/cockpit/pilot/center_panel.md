@@ -14,7 +14,7 @@ condition in their respective engine.
 
 > 💡 For more information see relevant chapters under
 > [Navigation](../../systems/nav_com/overview.md) and
-> [Weapons and Weapons Employment Overview](../../systems/weapon_systems/overview.md).
+> [Weapons and Weapons Employment Overview](../../stores/overview.md).
 
 ## Cockpit Television Sensor (CTVS)
 
