@@ -5,22 +5,16 @@ airframe design but also to its formidable array of weapons and stores.
 
 The F-14 features four main types of [Air-to-Air](./air_to_air/overview.md)
 Weaponry including Heat-Seeking Missiles with the [AIM-9](./air_to_air/aim_9.md)
-in different [variants](./air_to_air/aim_9.md#variants), the semi-active radar
-homing missile [AIM-7](./air_to_air/aim_7.md) in different
-[variants](./air_to_air/aim_7.md#variants), the active radar homing missile
-[AIM-54](./air_to_air/aim_54.md) in different
-[variants](./air_to_air/aim_54.md#variants) and a
+in different variants, the semi-active radar homing missile
+[AIM-7](./air_to_air/aim_7.md) in different variants, the active radar homing
+missile [AIM-54](./air_to_air/aim_54.md) in different variants and a
 [M61A1 Vulcan cannon](./guns.md#internal-cannon-m61a1-vulcan) that can be used
 against both Air and Ground Targets.
 
 The aircraft can be armed with a variety of
-[bombs](./air_to_ground/bombs/overview.md),
-[rockets](./air_to_ground/rockets.md), and
-[guided munitions](./air_to_ground/missiles/overview.md) to engage and
-neutralize ground targets. Precision-guided munitions, such as
-[laser-guided bombs](./air_to_ground/bombs/laser_guided_bombs.md), enable the
-Tomcat to strike high-value targets with precision, minimizing collateral damage
-and maximizing mission success.
+[bombs](./air_to_ground/mk80_series.md), [rockets](./air_to_ground/rockeye.md),
+and [guided munitions](./air_to_ground/paveways.md) to engage and neutralize
+ground targets.
 
 In addition to its lethal armament, the F-14 can be configured with
 [external fuel tanks](./tanks.md) to extend its operational range. The aircraft

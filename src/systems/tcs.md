@@ -29,7 +29,7 @@ switch allowing display of TCS video on the VDI.
 
 ### Sensor Control Panel
 
-![Sensor Control Panel](../img/scp.jpg)
+![Sensor Control Panel](../img/general_tcs_scp.jpg)
 
 The controls on the sensor control panel for the TCS are; the TCS trim knobs,
 the SLAVE switch, the field of view, FOV, switch and the acquire, ACQ, switch.

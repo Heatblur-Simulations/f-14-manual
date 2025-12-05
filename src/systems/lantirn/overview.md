@@ -1,6 +1,6 @@
 # LANTIRN
 
-![LANTIRN](../../../img/general_lantirn_lantirn.jpg) _U.S. Navy photo by
+![LANTIRN](../../img/general_lantirn_lantirn.jpg) _U.S. Navy photo by
 Photographer’s Mate 2nd Class Felix Garza Jr. (030325-N-4142G-009)_
 
 The LANTIRN or Low Altitude Navigation and Targeting Infrared for Night began
@@ -44,7 +44,7 @@ Amongst other things the displays show own aircraft position, target position as
 well as targeting cues to the crew. When using the LANTIRN for A/G attack these
 readouts are also used as targeting and release cues.
 
-![FLIR](../../../img/general_lantirn_FLIR.jpg)
+![FLIR](../../img/general_lantirn_FLIR.jpg)
 
 Own aircraft data is shown in the upper left corner (<num>1</num>), showing
 position, altitude, groundspeed and pitch angle (dive).
@@ -107,7 +107,7 @@ be blocked by the hull.
 The control panel contains all the controls for the pod, including the control
 stick.
 
-![Control Panel](../../../img/general_lantirn_panel.jpg)
+![Control Panel](../../img/general_lantirn_panel.jpg)
 
 The power switch for the LANTIRN pod is located top left (<num>1</num>) with
 **OFF** disabling power to the system, **IMU** (blocked in above image) powering
@@ -138,7 +138,7 @@ The control stick for the LANTIRN operates the LANTIRN’s sensor itself, note
 though that the stick itself does not move, the buttons and hats on the stick
 are used to control the pod.
 
-![Control Stick](../../../img/general_lantirn_stick.jpg)
+![Control Stick](../../img/general_lantirn_stick.jpg)
 
 The left four-way hat, S3, (<num>1</num>) allows selection of QWp- and QWp+
 (left/right) in addition to Point Track (up) and Area Track (down) modes.
