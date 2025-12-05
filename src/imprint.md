@@ -13,7 +13,7 @@ Nicholas Dackard, Creative Director and Lead Artist\
 Daniel Malmquist, Lead Engineer (Flight Dynamics and JESTER-AI)\
 Bert van Leeuwen, Senior Programmer (Weapons, Radar, Systems and Multi-crew)\
 Krzysztof Sobczak, Senior Programmer (Systems, Avionics, RWR and Radios, Nav and LANTIRN)\
-Andrew O'Donnel, Senior Programmer (Flight Dynamics, Systems and Engines)\
+Andrew O'Donnell, Senior Programmer (Flight Dynamics, Systems and Engines)\
 Aleksander Studen-Kirchner, Producer (QA, Content and Director JESTER-AI)\
 Johan Malmquist - Lead Research and Lead Author Manual\
 Andreas Sandin - Lead Design, Web-Design and Liveries\
