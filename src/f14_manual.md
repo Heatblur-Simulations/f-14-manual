@@ -29,9 +29,9 @@ project at [GitHub](https://github.com/Heatblur-Simulations/f-14-manual).
 > hands-on approach it is recommended to check out
 > [Chuck's Guide](https://chucksguides.com/aircraft/dcs/f-14b/) as well.
 
-<!-- markdown-link-check-enable -->
-
 <pdf>
 💡 The PDF version has limited support and might be outdated. For the full experience,
 prefer using the <a href="https://f14.manuals.heatblur.se/">online version</a>.
 </pdf>
+
+<!-- markdown-link-check-enable -->
