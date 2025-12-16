@@ -28,11 +28,9 @@ You can also simply press `.` (dot) while on GitHub and it will open an instance
 of Visual Studio Code right in your browser, allowing you to contribute directly
 and conveniently.
 
-<!-- markdown-link-check-disable -->
 Please read
 [CONTRIBUTING.md](https://github.com/Heatblur-Simulations/f-14-manual/blob/master/CONTRIBUTING.md)
 before your first contribution.
-<!-- markdown-link-check-enable -->
 
 ### Building locally
 
@@ -51,12 +49,15 @@ the PDF will be created in `book/pdf`.
 
 ## GH Pages
 
+<!-- markdown-link-check-disable -->
 The project is automatically configured via a CI/CD to build and publish any
 change to `master` to a GH-Pages branch called `html`. GitHub will automatically
 publish the website on <https://heatblur-simulations.github.io/f-14-manual/>,
 linked to <https://f14.manuals.heatblur.se/> via CNAME.
+<!-- markdown-link-check-enable -->
 
 ## PDF Deploy
+
 <!-- markdown-link-check-disable -->
 PDF versions are automatically build and published
 at <https://github.com/Heatblur-Simulations/f-14-manual/releases> via CI/CD whenever a tag is
