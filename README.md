@@ -56,6 +56,8 @@ linked to <https://f14.manuals.heatblur.se/> via CNAME.
 
 ## PDF Deploy
 
+<!-- markdown-link-check-disable -->
 PDF versions are automatically build and published
 at <https://github.com/Heatblur-Simulations/f-14-manual/releases> via CI/CD whenever a tag is
 pushed to git.
+<!-- markdown-link-check-enable -->
