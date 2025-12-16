@@ -9,10 +9,12 @@ Manual of the F-14 Tomcat by Heatblur Simulations.
 This is a [mdBook](https://rust-lang.github.io/mdBook/) project, content is
 written in the language **Markdown** (`.md`).
 
+<!-- markdown-link-check-disable -->
 The manual is automatically exported as HTML version, hosted at
 <https://f14.manuals.heatblur.se/>.
 PDF versions are available from the
 [release section](https://github.com/Heatblur-Simulations/f-14-manual/releases).
+<!-- markdown-link-check-enable -->
 
 ## Setup
 <!-- markdown-link-check-disable -->
