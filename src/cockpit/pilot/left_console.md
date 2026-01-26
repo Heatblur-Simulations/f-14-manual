@@ -60,15 +60,15 @@ The ALR-45 knob (<num>1</num>) controls audio volume from the ALR-45 to the pilo
 
 The ALR-50 knob (<num>2</num>) controls audio volume from the ALR-50 to the pilot.
 
-#### Sidewinder Tone Volume Knob
+#### Sidewinder Tone Volume Knob (F-14A Early)
 
 The SW knob (<num>3</num>) controls Sidewinder audio tone volume to the pilot.
 
-#### V/UHF 2 Volume Knob
+#### V/UHF 2 Volume Knob (F-14A Early)
 
 The V/UHF 2 knob (<num>4</num>) controls AN/ARC-182 (V/UHF 2) audio volume to the pilot.
 
-#### TACAN Command Switch
+#### TACAN Command Switch (F-14A Early)
 
 The TACAN CMD switch (<num>5</num>) selects which crewmember controls TACAN.
 

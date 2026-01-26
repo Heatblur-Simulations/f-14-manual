@@ -44,8 +44,8 @@ Sidewinders are not jettisoned even if selected.
 
 ### SEAM Lock Light
 
-The SEAM LOCK light (<num>3</num>) indicates Sidewinder seeker acquisition while in slaved and
-boresight SEAM modes.
+The SEAM LOCK light (<num>3</num>) illuminates to indicate that Sidewinder acquisition is in
+progress while in slaved and boresight SEAM modes.
 
 The light illuminates during the 4.5-second SEAM acquisition attempt and remains illuminated if the
 seeker locks onto a target.
@@ -60,30 +60,30 @@ operation.
 The HOT TRIG light (<num>5</num>) illuminates when HOT TRIGGER conditions are satisfied. When
 illuminated, pulling the trigger will release a weapon.
 
-### Gun Rate Switch
+### Gun Rate Pushbutton
 
 Toggle pushbutton with light indication (<num>6</num>) selecting the M61 gun firing rate.
 
 - HIGH - Selects 6,000 rounds per minute. Normally used for air-to-air operation.
 - LOW - Selects 4,000 rounds per minute. Normally used for air-to-ground operation.
 
-Automatically set to HIGH when ACM mode is selected.
+The gun rate is automatically set to HIGH when ACM mode is selected.
 
-### Sidewinder Cooling Switch
+### Sidewinder Cooling Pushbutton
 
 Toggle pushbutton with light indication (<num>7</num>) providing manual control of Sidewinder seeker
 cooling.
 
-Automatically set to ON when ACM mode is selected.
+Sidewinder cooling is automatically set to ON when ACM mode is selected.
 
-### Missile Preparation Switch
+### Missile Preparation Pushbutton
 
 Toggle pushbutton with light indication (<num>8</num>) commanding the WCS to prepare AIM-54 and
 AIM-7 missiles.
 
-Automatically set to ON when ACM mode is commanded.
+Missile preparation is automatically set to ON when ACM mode is commanded.
 
-### Missile Mode Switch
+### Missile Mode Pushbutton
 
 Toggle pushbutton with light indication (<num>9</num>) selecting missile launch mode.
 
@@ -104,7 +104,7 @@ The MASTER ARM switch (<num>10</num>) enables weapons release and selective and 
 > 💡 The MASTER ARM bus is interlocked with the landing gear control lever, disabling all releases
 > except emergency jettison while the gear is down.
 
-> 💡 ACM and emergency jettison are not disabled by MASTER ARM.
+> 💡 ACM jettison and emergency jettison are not disabled by MASTER ARM.
 
 ### Station Status Flags
 
@@ -112,8 +112,8 @@ Station status flags (<num>11</num>) indicate weapon readiness for each station.
 
 - BLACK - Station not loaded or weapon not ready.
 - WHITE - Station and weapon ready.
-- CHECKERBOARD - Weapon selected and ready for launch. On the ground indicates fuselage rails are up
-  and locked and that loaded weapons are armed.
+- CHECKERBOARD - Weapon selected and ready for launch. While on the ground, this indicates fuselage
+  rails are up and locked and that loaded weapons are armed.
 
 ### Master Caution Light and Button
 
