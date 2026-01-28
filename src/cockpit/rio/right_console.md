@@ -156,7 +156,7 @@ The REPLY switch (<num>2</num>) controls data link reply transmission.
 - NORM - Reply transmission enabled.
 - CANC - Reply transmission disabled (cancelled).
 
-### Mode Switch
+### Datalink Mode Switch
 
 The MODE switch (<num>3</num>) is spring-loaded to TAC and held by solenoid.
 
