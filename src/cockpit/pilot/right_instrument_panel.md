@@ -4,24 +4,30 @@
 
 ![wing-weep](../../img/cockpit_detail_pilot_wingsweep.jpg)
 
-Indicator detailing the status of the wing-sweep system.
+Indicator detailing status of the wing-sweep system.
 
-| No. | Indicator                  | Function                                                                                                |
-| --- | -------------------------- | ------------------------------------------------------------------------------------------------------- |
-| 1   | Leftmost indicator pointer | Shows wing-sweep program position which is also the max forward angle at present airspeed and altitude. |
-| 2   | Middle tape                | Shows commanded wing-sweep position.                                                                    |
-| 3   | Rightmost tape             | Shows actual wing-sweep position.                                                                       |
-| 4   | Indicator windows          | The five indicator windows show the current operating mode.                                             |
+Leftmost indicator pointer shows wing-sweep program position which is also the max forward angle at
+present airspeed and altitude.
+
+Middle tape shows commanded wing-sweep position.
+
+Rightmost tape shows actual wing-sweep position.
+
+The five indicator windows shows current operating mode.
 
 ## Right Engine Fuel Shutoff Handle
 
 ![right engine shutoff](../../img/cockpit_detail_pilot_rightengineshutoff.jpg)
 
-Pull to shut off fuel to the right engine in case of emergency. Push in to
-re-enable fuel flow to the engine. Should not be used to secure the engine.
+Emergency fuel shutoff handle for the right engine.
 
-Right engine fire extinguishing button is located behind the handle, accessible
-when the handle is pulled out.
+Pulling the handle shuts off fuel flow to the right engine. Pushing the handle in restores fuel
+flow.
+
+This handle should not be used for normal engine shutdown.
+
+The right engine fire extinguishing button is located behind the handle and is accessible when the
+handle is pulled outward.
 
 ## Standby Attitude Indicator
 
@@ -29,82 +35,103 @@ when the handle is pulled out.
 
 Standalone standby attitude indicator.
 
-| No. | Indicator/Control | Function                                                                                                                                                                                        |
-| --- | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | OFF flag          | Visible on the left side when caged or when un-powered.                                                                                                                                         |
-| 2   | Knob              | Cages/un-cages the indicator and allows trim to correct pitch. In pulled-out position the indicator is caged. When pushed in, un-cages the indicator and allows pitch trim by turning the knob. |
+An OFF flag is visible on the left side when caged or when unpowered.
+
+The knob below and to the right of the indicator cages/uncages the indicator and allows trim to
+correct pitch. In pulled out position the indicator is caged. When pushed in uncages the indicator
+and allows pitch trim by turning the knob.
 
 ## UHF/VHF Remote Indicators
 
 ![front remote](../../img/cockpit_detail_pilot_frontremote.jpg)
 
-Remote indicators displaying set frequency or channel of UHF 1 (AN/ARC-159) and
-V/UHF 2 (AN/ARC-182).
+Remote indicators display frequency or channel information for UHF 1 and V/UHF 2 radios.
 
-| No. | Control/Indicator                                  | Function                                                                  |
-| --- | -------------------------------------------------- | ------------------------------------------------------------------------- |
-| 1   | UHF 1 remote channel/frequency indicator (pilot)   | Displays a readout of the frequency or channel set for the UHF 1 radio.   |
-| 2   | V/UHF 2 remote channel/frequency indicator (pilot) | Displays a readout of the frequency or channel set for the V/UHF 2 radio. |
+### UHF 1 Remote Indicator
 
-The knobs labelled DIM and BRT control display brightness.
+The UHF 1 remote indicator (<num>1</num>) displays the currently selected frequency or channel for
+the AN/ARC-159.
 
-The TEST button initiates a test for the respective indicator, no fault results
-in a readout of 888.888.
+### V/UHF 2 Remote Indicator
+
+The V/UHF 2 remote indicator (<num>2</num>) displays the currently selected frequency or channel for
+the AN/ARC-182.
+
+The operation of the DIM and BRT knob as well as TEST button are the same for both indicators.
+
+The DIM and BRT knobs control display brightness.
+
+The TEST button initiates a self-test. A correct test result displays 888.888.
 
 ## Bearing Distance Heading Indicator (BDHI)
 
 ![bdhi](../../img/cockpit_detail_pilot_bdhi.jpg)
 
-Display indicating azimuth and bearing information.
+Provides azimuth, bearing, and distance information.
 
-| No. | Indicator             | Function                                                                                     |
-| --- | --------------------- | -------------------------------------------------------------------------------------------- |
-| 1   | No. 2 bearing pointer | Indicates magnetic course to tuned TACAN station.                                            |
-| 2   | Compass rose          | Shows current aircraft magnetic heading.                                                     |
-| 3   | No. 1 bearing pointer | Indicates bearing to tuned UHF/ADF station.                                                  |
-| 4   | Distance counter      | Indicates slant range to tuned TACAN station in nautical miles. (Not visible in this image.) |
+### No. 2 Bearing Pointer
+
+The No. 2 bearing pointer (<num>1</num>) indicates magnetic course to the tuned TACAN station.
+
+### Compass Rose
+
+The compass rose (<num>2</num>) displays current aircraft magnetic heading.
+
+### No. 1 Bearing Pointer
+
+The No. 1 bearing pointer (<num>3</num>) indicates bearing to the tuned UHF/ADF station.
+
+### Distance Counter
+
+The distance counter (<num>4</num>) displays slant range to the tuned TACAN station in nautical
+miles (not visible in this image).
 
 ## ALR-67 Indicator
 
 ![alr-67](../../img/cockpit_detail_pilot_alr-67.jpg)
 
-Indicator showing emitters detected by the ALR-67 RWR (radar warning receiver)
-set.
+Displays radar emitters detected by the ALR-67 radar warning receiver.
 
-| No. | Control/Indicator              | Function                                                                                                                  |
-| --- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| 1   | System status circle, area I   | Upper left quadrant of <num>1</num>. Shows symbol indicating type of threats selected to be shown.                        |
-| 2   | System status circle, area II  | Upper right quadrant of <num>1</num>. Indicates if limited mode is selected.                                              |
-| 3   | System status circle, area III | Lower half of <num>1</num>. Displays failure codes and if offset display is selected.                                     |
-| 4   | Non-lethal band                | Displays emitters not a direct threat to own aircraft, either because deemed out of range or lacking weaponry.            |
-| 5   | Lethal band                    | Displays threats that are deemed within range and capable of engaging own aircraft but not currently doing so.            |
-| 6   | Critical band                  | Displays direct threats to own aircraft. Systems capable of engaging own aircraft and showing current intent of doing so. |
-| 7   | INT knob                       | Intensity/brightness knob. Controls the brightness of the display.                                                        |
+### Threat Display Bands
+
+- Non-lethal band (<num>2</num>) - Displays emitters not considered an immediate threat due to range
+  or lack of weapon capability.
+- Lethal band (<num>3</num>) - Displays emitters capable of engaging own aircraft but not currently
+  doing so.
+- Critical band (<num>4</num>) - Displays direct threats to own aircraft. Systems capable of
+  engaging own aircraft and showing current intent of doing so.
 
 ### System Status Circle
 
-The upper left quadrant (Area I) can show the following symbols:
+The system status circle (<num>1</num>) is divided into three areas.
 
-- N - Normal
-- I - AI, airborne interceptors prioritized.
-- A - AAA, anti-air artillery prioritized.
+**Area I (upper left quadrant)** displays threat prioritization symbols:
+
+- N - Normal.
+- I - AI, Airborne interceptors prioritized.
+- A - AAA, Anti-air artillery prioritized.
 - U - Unknown emitters prioritized.
-- F - Friendly emitters shown in addition to other threats.
+- F - Friendly emitters displayed in addition to threats.
 
-The upper right quadrant (Area II) can either be blank (limited mode not
-selected) or show L if selected. Limited mode will only show the 6 highest
-prioritized threats on the display.
+**Area II (upper right quadrant)** indicates limited mode status.
 
-The lower half shows system status codes:
+- (Blank) - Limited mode not selected.
+- L - Limited mode selected. Only the six highest-priority threats are shown.
 
-- _Blank_ - No failure detected and offset not selected.
+**Area III (lower half)** displays system status and offset information:
+
+- (Blank) - Normal operation.
 - B - BIT failure.
 - T - Thermal overload.
-- O - Offset display selected. Threats will be separated to allow readout of
-  overlapping symbols. Bearing accuracy degraded for displaced threats.
+- O - Offset display selected. Threats will be separated to allow readout of overlapping symbols.
+  Bearing accuracy degraded for displaced threats.
+
+### Intensity Control Knob
+
+The INT knob (<num>5</num>) adjusts display brightness.
 
 ## Canopy Jettison Handle
 
 ![canopy jettison](../../img/cockpit_detail_pilot_canopyjettison.jpg)
 
-Used to jettison canopy manually.
+The canopy jettison handle is used to manually jettison the canopy during emergency egress.

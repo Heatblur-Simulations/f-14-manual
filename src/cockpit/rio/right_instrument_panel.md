@@ -6,91 +6,101 @@
 
 Mechanical wind-up clock.
 
-The knob on the lower left corner is used to wind up the clock by turning it
-clockwise and pulling it out and turning it to set the hour and minute hands.
+The wind/set knob (<num>1</num>) is located on the lower left corner.
 
-The control on the upper right corner is used to start, stop, and reset a 1-hour
-elapsed time counter.
+- Rotate clockwise to wind the clock.
+- Pull out and rotate to set the hour and minute hands.
+
+The elapsed-time control (<num>2</num>) is located on the upper right corner and is used to start,
+stop, and reset the 1-hour elapsed time counter.
 
 ## ALR-67 Indicator
 
 ![alr-67](../../img/cockpit_detail_rio_alr-67.jpg)
 
-Indicator showing emitters detected by the ALR-67 RWR (radar warning receiver)
-set.
+Displays radar emitters detected by the ALR-67 radar warning receiver.
 
-| No. | Control/Indicator              | Function                                                                                                                  |
-| --- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| 1   | System status circle, area I   | Upper left quadrant of <num>1</num>. Shows symbol indicating type of threats selected to be shown.                        |
-| 2   | System status circle, area II  | Upper right quadrant of <num>1</num>. Indicates if limited mode is selected.                                              |
-| 3   | System status circle, area III | Lower half of <num>1</num>. Displays failure codes and if offset display is selected.                                     |
-| 4   | Non-lethal band                | Displays emitters not a direct threat to own aircraft, either because deemed out of range or lacking weaponry.            |
-| 5   | Lethal band                    | Displays threats that are deemed within range and capable of engaging own aircraft but not currently doing so.            |
-| 6   | Critical band                  | Displays direct threats to own aircraft. Systems capable of engaging own aircraft and showing current intent of doing so. |
-| 7   | INT knob                       | Intensity/brightness knob. Controls the brightness of the display.                                                        |
+### Threat Display Bands
+
+- Non-lethal band (<num>2</num>) - Displays emitters not considered an immediate threat due to range
+  or lack of weapon capability.
+- Lethal band (<num>3</num>) - Displays emitters capable of engaging own aircraft but not currently
+  doing so.
+- Critical band (<num>4</num>) - Displays direct threats to own aircraft. Systems capable of
+  engaging own aircraft and showing current intent of doing so.
 
 ### System Status Circle
 
-The upper left quadrant (Area I) can show the following symbols:
+The system status circle (<num>1</num>) is divided into three areas.
 
-- N - Normal
-- I - AI, airborne interceptors prioritized.
-- A - AAA, anti-air artillery prioritized.
+**Area I (upper left quadrant)** displays threat prioritization symbols:
+
+- N - Normal.
+- I - AI, Airborne interceptors prioritized.
+- A - AAA, Anti-air artillery prioritized.
 - U - Unknown emitters prioritized.
-- F - Friendly emitters shown in addition to other threats.
+- F - Friendly emitters displayed in addition to threats.
 
-The upper right quadrant (Area II) can either be blank (limited mode not
-selected) or show L if selected. Limited mode will only show the 6 highest
-prioritized threats on the display.
+**Area II (upper right quadrant)** indicates limited mode status.
 
-The lower half shows system status codes:
+- (Blank) - Limited mode not selected.
+- L - Limited mode selected. Only the six highest-priority threats are shown.
 
-- _Blank_ - No failure detected and offset not selected.
+**Area III (lower half)** displays system status and offset information:
+
+- (Blank) - Normal operation.
 - B - BIT failure.
 - T - Thermal overload.
-- O - Offset display selected. Threats will be separated to allow readout of
-  overlapping symbols. Bearing accuracy degraded for displaced threats.
+- O - Offset display selected. Threats will be separated to allow readout of overlapping symbols.
+  Bearing accuracy degraded for displaced threats.
+
+### Intensity Control Knob
+
+The INT knob (<num>5</num>) adjusts display brightness.
 
 ## Fuel Quantity Totalizer
 
 ![fuel](../../img/cockpit_detail_rio_fuel.jpg)
 
-Total fuel quantity readout, shows total fuel quantity in all aircraft tanks.
+The fuel quantity totalizer (<num>1</num>) displays total fuel quantity in all aircraft tanks.
 
 ## Threat Advisory and Master Caution Lights
 
 ![threat master](../../img/cockpit_detail_rio_threatmaster.jpg)
 
-Master caution light and various ECM and IFF related advisory and warning
-lights.
+Master caution light and ECM/IFF advisory and warning indications.
+
+The MASTER CAUTION light and reset button flashes to indicate a status change on the RIO
+caution/advisory panel.
+
+Press to acknowledge and extinguish the light until the next event.
 
 ### ALR-67 Caution Lights
 
-| No. | Indicator                       | Function                                                                                                                       |
-| --- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| 1   | MASTER CAUTION light and button | Flashes to indicate status change on the RIO caution/advisory panel. Press to reset and turn off light until the next event.   |
-| 2   | IFF                             | Advisory light indicating received mode 4 interrogation without own system generating a reply.                                 |
-| 3   | RCV                             | Advisory light indicating ALQ-126 is receiving a threat identification signal.                                                 |
-| 4   | XMIT                            | Advisory light indicating ALQ-126 is transmitting.                                                                             |
-| 5   | SAM                             | Warning light, steady illumination when detecting lockon from a SAM tracking radar. Flashes when a missile launch is detected. |
-| 6   | AAA                             | Warning light, steady illumination when detecting lockon from a AAA tracking radar. Flashes when AAA engagement is detected.   |
-| 7   | CW                              | Warning light indicating detection of a continuous wave emitter.                                                               |
-| 8   | AI                              | Warning light, steady illumination when detecting lockon from an airborne interceptor radar.                                   |
+| Indicator | Function                                                                                                                       |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| IFF       | Advisory light indicating received mode 4 interrogation without own system generating a reply.                                 |
+| RCV       | Advisory light indicating ALQ-126 is receiving a threat identification signal.                                                 |
+| XMIT      | Advisory light indicating ALQ-126 is transmitting.                                                                             |
+| SAM       | Warning light, steady illumination when detecting lockon from a SAM tracking radar. Flashes when a missile launch is detected. |
+| AAA       | Warning light, steady illumination when detecting lockon from a AAA tracking radar. Flashes when AAA engagement is detected.   |
+| CW        | Warning light indicating detection of a continuous wave emitter.                                                               |
+| AI        | Warning light, steady illumination when detecting lockon from an airborne interceptor radar.                                   |
 
 ### ALR-45 Caution Lights
 
-| No. | Indicator | Function                                                                                       |
-| --- | --------- | ---------------------------------------------------------------------------------------------- |
-| 1   | SA TRK    | Lights steady whenever a SAM tracking radar is received.                                       |
-| 2   | SA2       | SA-2 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
-| 3   | SA3/NI    | SA-3 / SA-N-1 warning - Lights steady for MA (missile alert), flashes for ML (missile launch). |
-| 4   | SA4       | SA-4 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
-| 5   | AI/AAA    | Lights steady whenever an airborne interceptor and/or an ambiguous AI/AAA radar is received.   |
-| 6   | REC       | Lights steady whenever ALQ-100 is receiving signal identified as threat.                       |
-| 7   | IFF       | Advisory light indicating received mode 4 interrogation without own system generating reply.   |
-| 8   | SA6       | SA-6 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
-| 9   | AI        | Lights steady whenever an airborne interceptor radar is received.                              |
-| 10  | REP       | Lights steady whenever ALQ-100 is transmitting.                                                |
+| Indicator | Function                                                                                       |
+| --------- | ---------------------------------------------------------------------------------------------- |
+| SA TRK    | Lights steady whenever a SAM tracking radar is received.                                       |
+| SA2       | SA-2 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
+| SA3/NI    | SA-3 / SA-N-1 warning - Lights steady for MA (missile alert), flashes for ML (missile launch). |
+| SA4       | SA-4 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
+| AI/AAA    | Lights steady whenever an airborne interceptor and/or an ambiguous AI/AAA radar is received.   |
+| REC       | Lights steady whenever ALQ-100 is receiving signal identified as threat.                       |
+| IFF       | Advisory light indicating received mode 4 interrogation without own system generating reply.   |
+| SA6       | SA-6 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
+| AI        | Lights steady whenever an airborne interceptor radar is received.                              |
+| REP       | Lights steady whenever ALQ-100 is transmitting.                                                |
 
 ## Bearing Distance Heading Indicator (BDHI)
 
@@ -98,15 +108,27 @@ lights.
 
 Display indicating azimuth and bearing information.
 
-| No. | Indicator             | Function                                                                                     |
-| --- | --------------------- | -------------------------------------------------------------------------------------------- |
-| 1   | No. 2 bearing pointer | Indicates magnetic course to tuned TACAN station.                                            |
-| 2   | Compass rose          | Shows current aircraft magnetic heading.                                                     |
-| 3   | No. 1 bearing pointer | Indicates bearing to tuned UHF/ADF station.                                                  |
-| 4   | Distance counter      | Indicates slant range to tuned TACAN station in nautical miles. (Not visible in this image.) |
+### No. 2 Bearing Pointer
+
+The No. 2 bearing pointer (<num>1</num>) indicates magnetic course to the tuned TACAN station.
+
+### Compass Rose
+
+The compass rose (<num>2</num>) indicates aircraft magnetic heading.
+
+### No. 1 Bearing Pointer
+
+The No. 1 bearing pointer (<num>3</num>) indicates bearing to the tuned UHF/ADF station.
+
+### Distance Counter
+
+The distance counter (<num>4</num>) indicates slant range to the tuned TACAN station in nautical
+miles.
+
+(Not visible in the referenced image.)
 
 ## Canopy Jettison Handle
 
 ![canopy jettison](../../img/cockpit_detail_rio_canopyjettison.jpg)
 
-Handle used to manually jettison canopy.
+The canopy jettison handle (<num>1</num>) is used to manually jettison the canopy.

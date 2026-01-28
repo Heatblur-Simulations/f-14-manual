@@ -4,57 +4,175 @@
 
 ![CM Hats](../../img/cockpit_detail_rio_cmhats.jpg)
 
-Two switch hats on the center RIO hand hold used to initiate release of
-countermeasures. The switches are mirrored in regards to functionality.
+Two countermeasure switch hats (<num>1</num> and <num>2</num>) are located on the RIO center
+handhold and are used to initiate release of defensive countermeasures.
 
-- **Up**: Initiates a single chaff release.
-- **Down**: Initiates set chaff release program.
-- **Inboard**: Initiates set jammer release program.
-- **Outboard**: Initiates set flare release program.
+The switches are functionally mirrored.
+
+- **Up** - Initiates a single chaff release.
+- **Down** - Initiates the selected chaff release program.
+- **Inboard** - Initiates the selected jammer release program.
+- **Outboard** - Initiates the selected flare release program.
 
 ## Detail Data Display Panel
 
 ![DDD](../../img/cockpit_detail_rio_DDD.jpg)
 
-Main radar control panel.
+The Detail Data Display (DDD) panel provides primary radar control and display functions for the
+AWG-9 weapon system.
 
-| No. | Control/Indicator            | Function                                                                                                                                                                                                                                     |
-| --- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | TGTS switch                  | Switch selecting target size for missile launch zones, WCS track calculations as well as missile ATC calculation.                                                                                                                            |
-| 2   | MLC switch                   | Switch selecting MLC mode of operation.                                                                                                                                                                                                      |
-| 3   | AGC switch                   | Switch controlling AGC speed. Currently non-functional in DCS.                                                                                                                                                                               |
-| 4   | PARAMP switch                | Switch controlling the parametric amplification. Currently non-functional in DCS.                                                                                                                                                            |
-| 5   | PULSE VIDEO knob             | Knob controlling video strength of pulse video on the DDD. No effect on pulse doppler video.                                                                                                                                                 |
-| 6   | Radar track indicator lights | Indicator lights indicating radar tracking in the STT modes.                                                                                                                                                                                 |
-| 7   | RANGE display                | Rotary drum indicator displaying currently selected radar range. Can also be blank if no range scale is used on the DDD.                                                                                                                     |
-| 8   | RANGE buttons                | Buttons used to select radar range.                                                                                                                                                                                                          |
-| 9   | BRIGHT knob                  | Knob used to control the brightness of the DDD by means of a polarized filter in front of the DDD.                                                                                                                                           |
-| 10  | IR AUDIO THRLD knob          | Knob used to control IR AUDIO threshold, non-functional with TCS.                                                                                                                                                                            |
-| 11  | IR AUDIO VOL knob            | Knob used to control IR AUDIO volume, non-functional with TCS.                                                                                                                                                                               |
-| 12  | IR GAIN knob                 | Knob used to control IR GAIN, non-functional with TCS.                                                                                                                                                                                       |
-| 13  | XMTR CHAN wheel              | 12-position wheel used to control AWG-9 operating frequency. Currently non-functional in DCS.                                                                                                                                                |
-| 14  | MSL CHAN wheel               | 6-position wheel used to control missile channel used by AIM-7 or AIM-54. Currently non-functional in DCS.                                                                                                                                   |
-| 15  | DISPLAY buttons              | Buttons used to control what to display on the DDD. IR button non-functional with TCS.                                                                                                                                                       |
-| 16  | WCS MODE buttons             | Buttons used to select the current AWG-9 operating mode.                                                                                                                                                                                     |
-| 17  | WCS MODE display             | Rotary drum indicator displaying current WCS mode.                                                                                                                                                                                           |
-| 18  | Vc switch                    | Switch used to select different closing velocity scales on the DDD in PD modes.                                                                                                                                                              |
-| 19  | ERASE knob                   | Knob used to control the intensity of the ERASE beam on the DDD, controlling how quick the image on the DDD fades.                                                                                                                           |
-| 20  | PULSE GAIN knob              | Knob used to control the gain of the AWG-9 in pulse mode, normally left in detent unless needed because of clutter or jamming.                                                                                                               |
-| 21  | ASPECT switch                | Switch used to control the rate region covered by the doppler filters in pulse doppler modes and if to use edge or centroid tracking in pulse mode. These settings correspond to expected target aspect.                                     |
-| 22  | EL indicator                 | Meter with indicator needles indicating sensor elevation. Left indicator shows current actual radar antenna elevation. The right indicates commanded radar elevation while RDR is selected on HCU and TCS elevation while IR/TV is selected. |
-| 23  | CCM MODES buttons            | Buttons used to set AWG-9 functionality countering jamming targets. Currently non-functional in DCS.                                                                                                                                         |
-| 24  | JAM/JET knob                 | Control knob used to set the threshold at which a radar return is considered a jamming target. Currently non-functional in DCS.                                                                                                              |
-| 25  | ACM THRLD knob               | Control knob used to control radar sensitivity level at close ranges. Usually set automatically with the knob in the detent position.                                                                                                        |
-| 26  | PD THRLD knobs               | Control knobs used to set pulse doppler video threshold in the CLEAR (upper half of DDD) region and in the CLUTTER (lower half of the DDD) region.                                                                                           |
-| 27  | DDD radar display            | Main AWG-9 radar display.                                                                                                                                                                                                                    |
+### Target Size Switch
+
+The TGTS switch (<num>1</num>) selects target size used for missile launch zone calculation, WCS
+tracking logic, and missile autopilot calculations.
+
+### Mainlobe Clutter Switch
+
+The MLC switch (<num>2</num>) selects mainlobe clutter processing mode.
+
+### Automatic Gain Control Switch
+
+The AGC switch (<num>3</num>) controls AGC response speed.
+
+This function is currently non-functional in DCS.
+
+### Parametric Amplification Switch
+
+The PARAMP switch (<num>4</num>) controls parametric amplification.
+
+Currently non-functional in DCS.
+
+### Pulse Video Control
+
+The PULSE VIDEO knob (<num>5</num>) adjusts the strength of pulse video displayed on the DDD.
+
+This control has no effect on pulse-doppler video.
 
 ### Radar Track Indicator Lights
 
-Indicator lights indicating radar tracking in the STT modes.
+The radar track indicator lights (<num>6</num>) indicate tracking status during STT operation.
 
-- ANT TRK - Indicates the radar is tracking the target's angle.
-- RDROT - Indicates the target is within the range or rate gate and being
-  tracked.
-- JAT - Indicates the radar is tracking a jamming source's angle.
-- IROT - Indication of TCS angle tracking, called IROT as this was originally
-  used for the IRST in the early-A Variant of the Tomcat.
+- **ANT TRK** - Radar is tracking target angle.
+- **RDROT** - Target is within range or rate gate and being tracked.
+- **JAT** - Radar is tracking a jamming source angle.
+- **IROT** - Indicates TCS angle tracking. Originally used for IRST in early F-14A variants.
+
+### Range Display Drum
+
+The RANGE display (<num>7</num>) is a rotary drum indicating the currently selected radar range
+scale.
+
+The display may be blank when no range scale is applicable.
+
+### Range Selection Buttons
+
+The RANGE buttons (<num>8</num>) select the desired radar range scale.
+
+### Brightness Control Knob
+
+The BRIGHT knob (<num>9</num>) controls DDD brightness through a polarized filter mounted in front
+of the display.
+
+### IR Audio Threshold Knob
+
+The IR AUDIO THRLD knob (<num>10</num>) sets infrared audio threshold.
+
+This function is non-functional when using the TCS.
+
+### IR Audio Volume Knob
+
+The IR AUDIO VOL knob (<num>11</num>) controls infrared audio volume.
+
+Non-functional with TCS.
+
+### IR Gain Knob
+
+The IR GAIN knob (<num>12</num>) adjusts infrared gain.
+
+Non-functional with TCS.
+
+### Transmitter Channel Wheel
+
+The XMTR CHAN wheel (<num>13</num>) selects the AWG-9 operating frequency.
+
+Currently non-functional in DCS.
+
+### Missile Channel Wheel
+
+The MSL CHAN wheel (<num>14</num>) selects the missile guidance channel used by AIM-7 or AIM-54.
+
+Currently non-functional in DCS.
+
+### Display Selection Buttons
+
+The DISPLAY buttons (<num>15</num>) control which radar elements are displayed on the DDD.
+
+The IR button is non-functional with TCS.
+
+### WCS Mode Buttons
+
+The WCS MODE buttons (<num>16</num>) select the current AWG-9 operating mode.
+
+### WCS Mode Display
+
+The WCS MODE display (<num>17</num>) is a rotary drum showing the active WCS mode.
+
+### Closing Velocity Scale Switch
+
+The Vc switch (<num>18</num>) selects closing velocity scale used on the DDD in pulse-doppler modes.
+
+### Erase Control Knob
+
+The ERASE knob (<num>19</num>) adjusts the intensity of the erase beam, thereby controlling how
+rapidly radar returns fade from the display.
+
+### Pulse Gain Control
+
+The PULSE GAIN knob (<num>20</num>) controls radar gain in pulse mode.
+
+Normally left in the detent position unless adjustment is required due to clutter or jamming.
+
+### Aspect Switch
+
+The ASPECT switch (<num>21</num>) selects doppler filter rate regions and pulse tracking method.
+
+- Controls expected target aspect.
+- Selects edge or centroid tracking in pulse mode.
+
+### Elevation Indicator
+
+The EL indicator (<num>22</num>) displays sensor elevation information.
+
+- Left needle - Actual radar antenna elevation.
+- Right needle - Commanded radar elevation when RDR is selected on the HCU, or TCS elevation when
+  IR/TV is selected.
+
+### Counter-Countermeasure Mode Buttons
+
+The CCM MODES buttons (<num>23</num>) configure AWG-9 counter-jamming behavior.
+
+Currently non-functional in DCS.
+
+### Jam/Jet Threshold Knob
+
+The JAM/JET knob (<num>24</num>) sets the signal threshold at which returns are classified as
+jamming targets.
+
+Currently non-functional in DCS.
+
+### ACM Threshold Knob
+
+The ACM THRLD knob (<num>25</num>) controls radar sensitivity at close range.
+
+Normally left in the detent position, as automatic logic manages this function.
+
+### Pulse-Doppler Threshold Knobs
+
+The PD THRLD knobs (<num>26</num>) set pulse-doppler video thresholds for the display regions:
+
+- CLEAR - Upper half of the DDD.
+- CLUTTER - Lower half of the DDD.
+
+### DDD Radar Display
+
+The DDD radar display (<num>27</num>) is the primary AWG-9 radar presentation surface.

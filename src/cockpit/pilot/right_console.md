@@ -4,84 +4,100 @@
 
 ![spoiler](../../img/cockpit_detail_pilot_spoiler.jpg)
 
-Contains controls to override failed spoiler sections, allowing the rest to
-continue to work after a MASTER RESET.
+Contains controls to override failed spoiler sections, allowing the remaining spoilers to continue
+operating after a MASTER RESET.
 
-| No. | Control/Indicator | Function                          |
-| --- | ----------------- | --------------------------------- |
-| 1   | INBD              | Inboard spoiler override switch.  |
-| 2   | OUTBD             | Outboard spoiler override switch. |
+### Inboard and Outboard Spoiler Override Switch
+
+Two-position switch (<num>1</num>) controlling the inboard spoiler override function with
+two-position switch (<num>2</num>) controlling the outboard spoiler override function.
 
 Both controls have two positions:
 
-- ORIDE - Overrides spoiler symmetry protection, allowing a functional spoiler
-  to continue to operate after a MASTER RESET if one fails.
-- NORM - Normal (guarded position), in this mode, if a spoiler fails up the rest
-  are commanded to drop and the SPOILERS light illuminates on the caution panel.
+- ORIDE - Overrides spoiler symmetry protection, allowing a functional spoiler to continue to
+  operate after a MASTER RESET if one fails.
+- NORM - Normal (guarded position), in this mode, if a spoiler fails up the rest are commanded to
+  drop and the SPOILERS light illuminates on the caution panel.
 
 ## Liquid Oxygen Quantity Indicator
 
 ![liquid oxygen](../../img/cockpit_detail_pilot_liquidoxygen.jpg)
 
-Contains an indicator showing the remaining quantity of liquid oxygen available.
-Graduated in 1-liter increments. Also has an OFF flag that is shown in case of
-power failure to the indicator. The indicator is tested through the INST mode on
-the MASTER TEST panel and should read 2 liters.
+Contains an indicator showing the remaining quantity of liquid oxygen available. Graduated in
+1-liter increments. Also has an OFF flag that is shown in case of power failure to the indicator.
+The indicator is tested through the INST mode on the MASTER TEST panel and should read 2 liters.
 
 ## Compass Control Panel
 
 ![compass control](../../img/cockpit_detail_pilot_compasscontrol.jpg)
 
-The compass control panel contains controls for selecting compass mode when
-using AHRS.
+The compass control panel contains controls used to configure AHRS heading reference modes.
 
-| No. | Control/Indicator | Function                                                                                                                   |
-| --- | ----------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| 1   | SYNC IND          | Indicator showing sync between AHRS gyro and magnetic azimuth detector. Used in SLAVED mode.                               |
-| 2   | N-S switch        | Switch used to select which hemisphere aircraft is in for DG and SLAVED modes. Critical for correct earth-rate correction. |
-| 3   | LAT knob          | Control knob used to select latitude from 0º to 90º to allow for correct earth-rate correction in DG and SLAVED modes.     |
-| 4   | Mode switch       | Selects source of AHRS heading information.                                                                                |
-| 5   | HDG knob/button   | Used in DG and SLAVED modes.                                                                                               |
+### Sync Indicator
+
+Indicator (<num>1</num>) displaying synchronization between the AHRS directional gyro and the
+magnetic azimuth detector. Used primarily in SLAVED mode.
+
+### Hemisphere Selector Switch
+
+The N-S switch (<num>2</num>) selects the hemisphere in which the aircraft is operating.
+
+Correct selection is critical to ensure proper earth-rate correction in both DG and SLAVED modes.
+
+### Latitude Selector Knob
+
+The LAT knob (<num>3</num>) selects aircraft latitude from 0° to 90°.
+
+This input allows the AHRS to apply correct earth-rate compensation in DG and SLAVED modes.
 
 ### Compass Mode Switch
 
-Selects source of AHRS heading information.
+The mode switch (<num>4</num>) selects the source of heading information for the AHRS.
 
-- COMP - Compass, uses magnetic azimuth detector directly without stabilization
-  from the directional gyro, used only for emergency operation and the displays
-  automatically uses the manual magnetic variation.
-- SLAVED - Normal mode, uses the magnetic azimuth detector stabilized by the
-  directional gyro.
-- DG - Directional gyro mode, uses only gyro and not the magnetic azimuth
-  detector.
+- COMP - Compass, uses magnetic azimuth detector directly without stabilization from the directional
+  gyro, used only for emergency operation and the displays automatically uses the manual magnetic
+  variation.
+- SLAVED - Normal mode, uses the magnetic azimuth detector stabilized by the directional gyro.
+- DG - Directional gyro mode, uses only gyro and not the magnetic azimuth detector.
 
-### Compass HDG Knob
+### Heading Knob/Button
 
-Used in DG and SLAVED modes.
+The HDG knob and pushbutton (<num>5</num>) is used in DG and SLAVED modes.
 
-In SLAVED mode it's used to sync the directional gyro with the magnetic azimuth
-detector and set magnetic heading on the BDHI. Button should be held until the
-synchronization indicator needle is over the null mark.
+In SLAVED mode it's used to sync the directional gyro with the magnetic azimuth detector and set
+magnetic heading on the BDHI. Button should be held until the synchronization indicator needle is
+over the null mark.
 
-In DG mode the button is depressed and rotated to select desired heading on the
-BDHI.
+In DG mode the button is depressed and rotated to select desired heading on the BDHI.
 
-The button can also be used to fast erect pitch and roll of the AHRS by
-depressing the button for up to 3 minutes. A new fast erect attempt can be done
-if a 1 minute wait is first observed.
+The button can also be used to fast erect pitch and roll of the AHRS by depressing the button for up
+to 3 minutes. A new fast erect attempt can be done if a 1 minute wait is first observed.
 
 ## ARA-63 Control Panel
 
 ![ara-63](../../img/cockpit_detail_pilot_ara-63.jpg)
 
-Panel used to control the AN/ARA-63 ILS (ICLS).
+Panel used to control the AN/ARA-63 Instrument Carrier Landing System (ICLS).
 
-| No. | Control/Indicator | Function                                                                                        |
-| --- | ----------------- | ----------------------------------------------------------------------------------------------- |
-| 1   | CHANNEL selector  | Selector selecting one of 20 available ICLS channels.                                           |
-| 2   | BIT button        | Button used to test AN/ARA-63, displays landing symbology on the HUD and VDI if set up for ILS. |
-| 3   | POWER switch      | ON/OFF switch to energize the AN/ARA-63, switch must be pulled out to allow OFF position.       |
-| 4   | Indicator light   | Lights to indicate AN/ARA-63 power on.                                                          |
+### Channel Selector
+
+Rotary selector (<num>1</num>) used to select one of 20 available ICLS channels.
+
+### BIT Button
+
+The BIT pushbutton (<num>2</num>) initiates a self-test of the AN/ARA-63 system.
+
+When activated, landing symbology is displayed on the HUD and VDI if configured for ILS operation.
+
+### Power Switch
+
+The POWER switch (<num>3</num>) controls electrical power to the AN/ARA-63.
+
+The switch must be pulled outward to move to the OFF position.
+
+### Power Indicator Light
+
+Indicator light (<num>4</num>) illuminates when the AN/ARA-63 is powered.
 
 ## Caution - Advisory Indicator
 
@@ -89,101 +105,144 @@ Panel used to control the AN/ARA-63 ILS (ICLS).
 
 Main pilot caution panel.
 
-| No. | Indicator        | Function                                                                                                                                                                                                                                                                       |
-| --- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1   | PITCH STAB 1 & 2 | Caution lights indicating inoperative pitch channels.                                                                                                                                                                                                                          |
-| 2   | ROLL STAB 1 & 2  | Caution lights indicating inoperative roll channels (roll SAS failure).                                                                                                                                                                                                        |
-| 3   | YAW STAB OP      | Caution light indicating one inoperative yaw channel.                                                                                                                                                                                                                          |
-| 4   | YAW STAB OUT     | Caution light indicating two inoperative yaw channels (yaw SAS failure).                                                                                                                                                                                                       |
-| 5   | EMERG JETT       | Caution light indicating activation of EMERG STORES JETT button.                                                                                                                                                                                                               |
-| 6   | LADDER           | Caution light indicating boarding ladder not correctly stowed.                                                                                                                                                                                                                 |
-| 7   | ECS TURBINE      | Non-functional                                                                                                                                                                                                                                                                 |
-| 8   | INLET ICE        | Caution light indicating accumulation of ice on the ice detector in the left engine inlet.                                                                                                                                                                                     |
-| 9   | FLAP             | Caution light indicating failure in the flap system or airspeed greater than 225 knots indicated airspeed with flaps down.                                                                                                                                                     |
-| 10  | HZ TAIL AUTH     | Caution light indicating failure of lateral tail authority actuator (or CADC failure).                                                                                                                                                                                         |
-| 11  | RUDDER AUTH      | Caution light indicating failure of rudder authority actuators (or CADC failure).                                                                                                                                                                                              |
-| 12  | SPOILERS         | Caution light indicating spoiler system failure causing several or all spoilers to be locked down.                                                                                                                                                                             |
-| 13  | AUTO PILOT       | Caution light indicating failure in the auto pilot system.                                                                                                                                                                                                                     |
-| 14  | L & R INLET      | Caution lights indicating AICS programmer and/or system failure.                                                                                                                                                                                                               |
-| 15  | OIL PRESS        | Caution light indicating left or right engine oil pressure below 11 psi.                                                                                                                                                                                                       |
-| 16  | BLEED DUCT       | Caution light indicating high-temperature air leak in the engine compartments.                                                                                                                                                                                                 |
-| 17  | L & R RAMPS      | Caution lights indicating ramps not locked in position during critical flight conditions.                                                                                                                                                                                      |
-| 18  | START VALVE      | Caution light indicating that the starter solenoid air valve is open after start. (F-14B only.)                                                                                                                                                                                |
-| 19  | OXY LOW          | Caution light indicating low oxygen pressure or less than 2 liters of oxygen remaining. (F-14A only.)                                                                                                                                                                          |
-| 20  | L & R ENG SEC    | Caution lights indicating that respective engine AFTC is in secondary mode. (F-14B only.)                                                                                                                                                                                      |
-| 21  | L & R OVSP/VALVE | Caution lights indicating engine starter system malfunction or N1 rotor over-speed in respective engine. (F-14A only.)                                                                                                                                                         |
-| 22  | L & R GEN        | Caution lights indicating respective engine generator is inoperative.                                                                                                                                                                                                          |
-| 23  | CANOPY           | Caution light indicating that the canopy is not down and locked.                                                                                                                                                                                                               |
-| 24  | BINGO            | Caution light indicating aircraft fuel quantity at or below set BINGO quantity.                                                                                                                                                                                                |
-| 25  | L & R OIL HOT    | Caution lights indicating that respective engine oil is too hot.                                                                                                                                                                                                               |
-| 26  | CADC             | Caution light indicating failure in the air data computer.                                                                                                                                                                                                                     |
-| 27  | HYD PRESS        | Caution light indicating pressure in either engine hydraulic pump below 2,100 psi.                                                                                                                                                                                             |
-| 28  | L & R FUEL PRESS | Caution lights indicating pressure below 9 psi in the respective engine fuel boost pump.                                                                                                                                                                                       |
-| 29  | L & R FUEL LOW   | Caution lights indicating fuel quantity below 1,000 pounds in aft and left or forward and right fuel feed group respectively.                                                                                                                                                  |
-| 30  | WING SWEEP       | Advisory light indicating failure of a single channel in the wing-sweep system.                                                                                                                                                                                                |
-| 31  | RATS             | Advisory light indicating RATS enabled. (F-14B only.)                                                                                                                                                                                                                          |
-| 32  | TRANS/RECT       | Advisory light indicating failure in one or both transformer-rectifiers.                                                                                                                                                                                                       |
-| 33  | MACH TRIM        | Advisory light indicating failure in Mach trim actuator.                                                                                                                                                                                                                       |
-| 34  | WSHLD HOT        | Advisory light indicating central windshield overheat.                                                                                                                                                                                                                         |
-| 35  | LAUNCH BAR       | Advisory light indicating either: Weight on wheels - Aircraft kneeled, either throttle below MIL and launch bar not up and locked. Weight off wheels - Launch bar not up and locked, launch bar not within 15º of center (cocked nose-gear), or nose strut not fully extended. |
-| 36  | INTEG TRIM       | Advisory light indicating failure in the trim system or computer failure.                                                                                                                                                                                                      |
-| 37  | AHRS             | Advisory light indicating unreliable attitude or heading information from AHRS.                                                                                                                                                                                                |
-| 38  | ENG FIRE EXT     | Advisory light indicating low pressure in the fire extinguishing container (90 psi below nominal 600 psi).                                                                                                                                                                     |
-| 39  | AUX FIRE EXT     | Advisory light indicating low pressure in the auxiliary fire extinguishing container (90 psi below nominal 600 psi).                                                                                                                                                           |
+| Indicator        | Function                                                                                                                                                                                                                                                                       |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| PITCH STAB 1 & 2 | Caution lights indicating inoperative pitch channels.                                                                                                                                                                                                                          |
+| ROLL STAB 1 & 2  | Caution lights indicating inoperative roll channels (roll SAS failure).                                                                                                                                                                                                        |
+| YAW STAB OP      | Caution light indicating one inoperative yaw channel.                                                                                                                                                                                                                          |
+| YAW STAB OUT     | Caution light indicating two inoperative yaw channels (yaw SAS failure).                                                                                                                                                                                                       |
+| EMERG JETT       | Caution light indicating activation of EMERG STORES JETT button.                                                                                                                                                                                                               |
+| LADDER           | Caution light indicating boarding ladder not correctly stowed.                                                                                                                                                                                                                 |
+| ECS TURBINE      | Non-functional                                                                                                                                                                                                                                                                 |
+| INLET ICE        | Caution light indicating accumulation of ice on the ice detector in the left engine inlet.                                                                                                                                                                                     |
+| FLAP             | Caution light indicating failure in the flap system or airspeed greater than 225 knots indicated airspeed with flaps down.                                                                                                                                                     |
+| HZ TAIL AUTH     | Caution light indicating failure of lateral tail authority actuator (or CADC failure).                                                                                                                                                                                         |
+| RUDDER AUTH      | Caution light indicating failure of rudder authority actuators (or CADC failure).                                                                                                                                                                                              |
+| SPOILERS         | Caution light indicating spoiler system failure causing several or all spoilers to be locked down.                                                                                                                                                                             |
+| AUTO PILOT       | Caution light indicating failure in the auto pilot system.                                                                                                                                                                                                                     |
+| L & R INLET      | Caution lights indicating AICS programmer and/or system failure.                                                                                                                                                                                                               |
+| OIL PRESS        | Caution light indicating left or right engine oil pressure below 11 psi.                                                                                                                                                                                                       |
+| BLEED DUCT       | Caution light indicating high-temperature air leak in the engine compartments.                                                                                                                                                                                                 |
+| L & R RAMPS      | Caution lights indicating ramps not locked in position during critical flight conditions.                                                                                                                                                                                      |
+| START VALVE      | Caution light indicating that the starter solenoid air valve is open after start. (F-14B only.)                                                                                                                                                                                |
+| OXY LOW          | Caution light indicating low oxygen pressure or less than 2 liters of oxygen remaining. (F-14A only.)                                                                                                                                                                          |
+| L & R ENG SEC    | Caution lights indicating that respective engine AFTC is in secondary mode. (F-14B only.)                                                                                                                                                                                      |
+| L & R OVSP/VALVE | Caution lights indicating engine starter system malfunction or N1 rotor over-speed in respective engine. (F-14A only.)                                                                                                                                                         |
+| L & R GEN        | Caution lights indicating respective engine generator is inoperative.                                                                                                                                                                                                          |
+| CANOPY           | Caution light indicating that the canopy is not down and locked.                                                                                                                                                                                                               |
+| BINGO            | Caution light indicating aircraft fuel quantity at or below set BINGO quantity.                                                                                                                                                                                                |
+| L & R OIL HOT    | Caution lights indicating that respective engine oil is too hot.                                                                                                                                                                                                               |
+| CADC             | Caution light indicating failure in the air data computer.                                                                                                                                                                                                                     |
+| HYD PRESS        | Caution light indicating pressure in either engine hydraulic pump below 2,100 psi.                                                                                                                                                                                             |
+| L & R FUEL PRESS | Caution lights indicating pressure below 9 psi in the respective engine fuel boost pump.                                                                                                                                                                                       |
+| L & R FUEL LOW   | Caution lights indicating fuel quantity below 1,000 pounds in aft and left or forward and right fuel feed group respectively.                                                                                                                                                  |
+| WING SWEEP       | Advisory light indicating failure of a single channel in the wing-sweep system.                                                                                                                                                                                                |
+| RATS             | Advisory light indicating RATS enabled. (F-14B only.)                                                                                                                                                                                                                          |
+| TRANS/RECT       | Advisory light indicating failure in one or both transformer-rectifiers.                                                                                                                                                                                                       |
+| MACH TRIM        | Advisory light indicating failure in Mach trim actuator.                                                                                                                                                                                                                       |
+| WSHLD HOT        | Advisory light indicating central windshield overheat.                                                                                                                                                                                                                         |
+| LAUNCH BAR       | Advisory light indicating either: Weight on wheels - Aircraft kneeled, either throttle below MIL and launch bar not up and locked. Weight off wheels - Launch bar not up and locked, launch bar not within 15º of center (cocked nose-gear), or nose strut not fully extended. |
+| INTEG TRIM       | Advisory light indicating failure in the trim system or computer failure.                                                                                                                                                                                                      |
+| AHRS             | Advisory light indicating unreliable attitude or heading information from AHRS.                                                                                                                                                                                                |
+| ENG FIRE EXT     | Advisory light indicating low pressure in the fire extinguishing container (90 psi below nominal 600 psi).                                                                                                                                                                     |
+| AUX FIRE EXT     | Advisory light indicating low pressure in the auxiliary fire extinguishing container (90 psi below nominal 600 psi).                                                                                                                                                           |
 
 ## Master Generator Control Panel
 
 ![generator](../../img/cockpit_detail_pilot_generator.jpg)
 
-Panel controlling left and right engine generator.
+Panel controlling electrical power generation and emergency generator logic.
 
-| No. | Control/Indicator       | Function                                                                                                            |
-| --- | ----------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| 1   | L & R MASTER GEN switch | Switches controlling connection and test of respective generator. Switch needs to be lifted to move from OFF/RESET. |
-| 2   | EMERG switch            | Guarded switch controlling connection of the emergency generator to the essential buses. (Guarded position is NORM) |
+### Master Generator Switches
 
-### Master Generator Switch
+The left and right MASTER GEN switches (<num>1</num>) control activation and connection of their
+respective engine-driven generators.
 
-Switches controlling connection and test of respective generator. Switch needs
-to be lifted to move from OFF/RESET.
+The switch must be lifted to move from OFF/RESET.
 
-- NORM - Normal, activating and connecting the generator to the main buses.
-- OFF/RESET - Disconnects and deactivates generator and resets tripped
-  protection circuits.
-- TEST - Activates generator but does not connect it to the main buses, for
-  testing purposes.
+- NORM - Activates and connects the generator to the main electrical buses.
+- OFF/RESET - Disconnects the generator and resets protective circuits.
+- TEST - Activates the generator without connecting it to the buses for testing purposes.
 
-### Generator Emergency Switch
+### Emergency Generator Switch
 
-Guarded switch controlling connection of emergency generator to the essential
-buses. (Guarded position is NORM)
+Guarded EMERG switch (<num>2</num>) controlling emergency generator connection to the essential
+buses.
 
-- NORM - Normal, generator is automatically connected to essential buses if both
-  main generators fail.
-- OFF/RESET - Disconnects the generator from the essential buses regardless of
-  main generator status. Resets protection circuits.
+- NORM - Emergency generator automatically connects if both main generators fail.
+- OFF/RESET - Disconnects the emergency generator and resets protection circuits.
 
 ## Master Light Control Panel
 
 ![master light](../../img/cockpit_detail_pilot_masterlight.jpg)
 
-Master light control panel, controlling most lights in/on the aircraft.
+The master light control panel manages most interior and exterior aircraft lighting systems.
 
-| No. | Control/Indicator     | Function                                                                                                                                                                                       |
-| --- | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | ANTI COLLISION switch | ON/OFF switch controlling anti-collision lights.                                                                                                                                               |
-| 2   | POSITION switch       | Switch controlling whether the wing or supplementary tail and position lights light up steadily or flash. With weight on wheels, the supplementary lights are always steady.                   |
-| 3   | TAIL POSITION switch  | Switch controlling tail position lights, DIM and BRT (bright) settings available.                                                                                                              |
-| 4   | WING POSITION switch  | Switch controlling wing position lights, DIM and BRT settings available.                                                                                                                       |
-| 5   | ACM thumbwheel        | Thumbwheel controlling ACM panel lights, 0 equals off, 1-14 sets the lights to an increasingly bright setting.                                                                                 |
-| 6   | INDEXER thumbwheel    | Thumbwheel controlling AoA-indexer light intensity from 0-14.                                                                                                                                  |
-| 7   | HOOK BYPASS           | Sets AOA lights to either FIELD or CARRIER mode, with the switch in CARRIER and wheels down, the AOA lights flash if the hook isn’t down.                                                      |
-| 8   | TAXI switch           | Switch controlling taxi lights.                                                                                                                                                                |
-| 9   | INSTRUMENT thumbwheel | Thumbwheel controlling instrument panel lights, 0 equals off, 1-14 sets the lights to an increasingly bright setting.                                                                          |
-| 10  | WHITE FLOOD switch    | Switch enabling white flood lights in the pilot cockpit. DIM and BRT settings available, switch locked to OFF unless pulled out.                                                               |
-| 11  | CONSOLE thumbwheel    | Thumbwheel controlling console lights and red floodlights. 0 turns off both console and red floodlights, 1-14 sets the console lights to an increasingly bright setting.                       |
-| 12  | RED FLOOD switch      | Switch controlling red instrument and console floodlights. BRT sets bright red instrument flood and console lights. MED sets red console floodlights and DIM sets dim red console floodlights. |
-| 13  | FORMATION thumbwheel  | Thumbwheel controlling external formation lights. 0 equals off, 1-14 sets the lights to an increasingly bright setting.                                                                        |
+### Anti-Collision Light Switch
+
+ON/OFF switch (<num>1</num>) controlling aircraft anti-collision lights.
+
+### Position Light Mode Switch
+
+Switch (<num>2</num>) selecting steady or flashing operation of wing and supplementary tail position
+lights.
+
+With weight on wheels, supplementary lights remain steady regardless of selection.
+
+### Tail Position Light Switch
+
+Switch (<num>3</num>) controlling tail position lights with DIM and BRT settings.
+
+### Wing Position Light Switch
+
+Switch (<num>4</num>) controlling wing position lights with DIM and BRT settings.
+
+### ACM Lighting Thumbwheel
+
+Thumbwheel (<num>5</num>) controlling ACM panel lighting intensity from 0 (off) to 14 (maximum).
+
+### AoA Indexer Thumbwheel
+
+Thumbwheel (<num>6</num>) adjusting angle-of-attack indexer light intensity from 0 to 14.
+
+### Hook Bypass Switch
+
+Switch (<num>7</num>) selecting FIELD or CARRIER AoA logic.
+
+When set to CARRIER with wheels down, AoA lights flash if the arresting hook is not down.
+
+### Taxi Light Switch
+
+ON/OFF switch (<num>8</num>) controlling taxi lights.
+
+### Instrument Lighting Thumbwheel
+
+Thumbwheel (<num>9</num>) controlling instrument panel lighting intensity from 0 to 14.
+
+### White Flood Light Switch
+
+Switch (<num>10</num>) enabling white cockpit flood lighting.
+
+DIM and BRT positions available. Switch is locked to OFF unless pulled outward.
+
+### Console Lighting Thumbwheel
+
+Thumbwheel (<num>11</num>) controlling console lighting and red flood lighting.
+
+- 0 - All off
+- 1–14 - Increasing console light intensity
+
+### Red Flood Light Switch
+
+Switch (<num>12</num>) controlling red instrument and console flood lighting.
+
+- DIM - Dim red console flood
+- MED - Medium red console flood
+- BRT - Bright red instrument and console flood
+
+### Formation Light Thumbwheel
+
+Thumbwheel (<num>13</num>) controlling external formation light brightness from 0 to 14.
 
 ## Air Conditioning Control Panel
 
@@ -191,159 +250,153 @@ Master light control panel, controlling most lights in/on the aircraft.
 
 Panel controlling the environmental control system (ECS).
 
-| No. | Control/Indicator    | Function                                                                                                                                                                                                                                                          |
-| --- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | TEMP switch          | Switch controlling the cabin and pressure suit temperature mode.                                                                                                                                                                                                  |
-| 2   | CABIN PRESS switch   | Switch controlling cabin pressurization. Locked to NORM until lifted.                                                                                                                                                                                             |
-| 3   | RAM AIR switch       | Selector switch used to modulate the amount of air from the ram air door after AIR SOURCE is set to RAM or OFF. Can be held to INCR (increase) or DECR (decrease), spring-loaded back to center.                                                                  |
-| 4   | AIR SOURCE selectors | Five mutually exclusive air source selectors. Rotates to indicate selection.                                                                                                                                                                                      |
-| 5   | TEMP thumbwheel      | Selects cockpit and pressure suit air temperature. 0-14 is selectable with COOL and WARM placarded at each end stop. In auto 7 approximately corresponds to 21º C or 70º F. In manual the thumbwheel needs to be set for each variation in airspeed and altitude. |
-
 ### Temperature Switch
 
-Switch controlling the cabin and pressure suit temperature mode.
+Two-position switch (<num>1</num>) controlling the cabin and pressure suit temperature mode.
 
-- AUTO - Temperature is automatically set from the TEMP thumbwheel regardless of
-  airspeed and altitude.
-- MAN - Temperature is manually set from the TEMP thumbwheel but varies with
-  airspeed and altitude and might need to be reset.
+- AUTO - Temperature is automatically regulated using the TEMP thumbwheel regardless of airspeed and
+  altitude.
+- MAN - Temperature is manually controlled using the TEMP thumbwheel and varies with airspeed and
+  altitude.
 
 ### Cabin Pressure Switch
 
-Switch controlling cabin pressurization. Locked to NORM until lifted.
+Two-position switch (<num>2</num>) controlling cabin pressurization. The switch is locked in NORM
+until lifted.
 
-- NORM - Normal mode, cabin is pressurized at a level of 8,000 feet up to an
-  aircraft level of 23,000 feet after which it maintains a 5 psi difference from
-  outside atmosphere.
-- DUMP - Opens the cockpit dump valve depressurizing the cockpit.
+- NORM - Normal pressurization mode. Cabin pressure is maintained at approximately 8,000 feet up to
+  an aircraft altitude of 23,000 feet, after which a constant 5 psi differential is maintained.
+- DUMP - Opens the cockpit dump valve, depressurizing the cockpit.
+
+### RAM AIR Switch
+
+The RAM AIR switch (<num>3</num>) modulates cockpit air temperature when the ram air door is in use.
+
+INCR opens the ram air door, decreasing temperature, while DECR closes the door, increasing
+temperature. The switch is spring-loaded to center.
 
 ### Air Source Selectors
 
-Five mutually exclusive air source selectors. Rotates to indicate selection.
+Five mutually exclusive air source selectors (<num>4</num>) used to select ECS air supply source.
 
-- RAM - Closes other air sources and opens ram air door which is combined with
-  hot bleed air to supply all users.
-- L & R ENG - Selects either engine as the source for bleed air.
-- BOTH ENG - Selects both engines as source for bleed air. Normal position.
-- OFF - Closes all air sources but the ram air door. In this mode the ram air
-  door can not supply pressurization or air conditioning. Inhibits gun firing.
+- RAM - Closes all other air sources and opens the ram air door. Gun firing is inhibited.
+- L & R ENG - Selects either engine as bleed air source.
+- BOTH ENG - Selects both engines as bleed air sources. Normal position.
+- OFF - Closes all air sources except the ram air door. Pressurization and air conditioning are
+  unavailable. Gun firing is inhibited.
+
+### Temperature Thumbwheel
+
+The TEMP thumbwheel (<num>5</num>) selects cockpit and pressure suit air temperature. 0-14 is
+selectable with COOL and WARM placarded at each end stop. With the TEMP switch (<num>1</num>) set to
+AUTO, a setting of 7 corresponds approximately to 21°C (70°F) while set to manual, the thumbwheel
+needs to be set for each variation in airspeed and altitude.
 
 ## Master Test Panel
 
 ![master test](../../img/cockpit_detail_pilot_mastertest.jpg)
 
-Panel controlling OBC and various onboard BITs in addition to the emergency
-flight hydraulic setting.
-
-| No. | Control/Indicator    | Function                                                                                                                                      |
-| --- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | MASTER TEST selector | Selector used to select and initiate OBC and BIT for various systems. Pull out to enable selection, push in at selected option to start test. |
-| 2   | GO/NO-GO lights      | Lights used in relevant tests to indicate GO or NO-GO conditions of those systems.                                                            |
-| 3   | EMERG FLT HYD        | Switch controlling the emergency mode of the flight hydraulic system. Guarded to the AUTO (LOW) position.                                     |
-
-> 💡 Specific tests are detailed in a later BIT chapter.
+Panel used to control onboard checkout (OBC), on board built-in tests (BIT), and emergency flight
+hydraulic operation.
 
 ### Master Test Selector
 
-Selector used to select and initiate OBC and BIT for various systems. Pull out
-to enable selection, push in at selected option to start test.
+The MASTER TEST selector (<num>1</num>) is used to select and initiate OBC and BIT functions. Pull
+out to enable selection, push in at selected option to start test.
 
-- OFF - Disables test functions.
-- LTS - Lights, tests cockpit indication lights.
-- FIRE DET/EXT - Fire detection system test.
-- INST - Instruments, tests various cockpit instrumentation.
-- OBC - On board checkout, starts OBC.
+- OFF - Disables all test functions.
+- LTS - Tests cockpit lights.
+- FIRE DET/EXT - Tests fire detection and extinguishing systems.
+- INST - Tests cockpit instruments.
+- OBC - Initiates onboard checkout.
 - EMERG GEN - Tests emergency generator.
-- MACH LEV - Initiates dynamic MACH lever check. F-14A only.
-- WG SWP - Tests wing-sweep system.
-- FLT GR DN - Initiates ground check of auto throttle interlocks.
-- FLT GR UP - Tests external fuel tank pressurization.
-- D/L RAD - Tests the data link converter.
-- STICK SW - Checks left and right spoiler symmetry switches and 1-inch stick
-  switches for yaw SAS.
+- MACH LEV - Dynamic Mach lever test. (F-14A only.)
+- WG SWP - Wing sweep test.
+- FLT GR DN - Ground check of autothrottle interlocks.
+- FLT GR UP - External tank pressurization test.
+- D/L RAD - Data link converter test.
+- STICK SW - Stick and spoiler symmetry switch test.
+
+### GO / NO-GO Indicator Lights
+
+The GO and NO-GO lights (<num>2</num>) used to indicate GO or NO-GO conditions of systems during
+relevant tests.
 
 ### Emergency Flight Hydraulic Switch
 
-Switch controlling the emergency mode of the flight hydraulic system. Guarded to
-the AUTO (LOW) position.
+The EMERG FLT HYD switch (<num>3</num>) controls emergency flight hydraulic operation. The switch is
+guarded to the AUTO (LOW) position.
 
-- HIGH - Activates the power module (high speed mode), bypassing flight and
-  combined 2,100 psi switches.
-- LOW - Activates the backup power module bypassing flight and combined 2,100
-  psi switches.
-- AUTO (LOW) - Automatically activates LOW mode when both flight and combined
-  system pressures are below 2,100 psi.
+- HIGH - Activates the power module (high speed mode), bypassing flight and combined 2,100 psi
+  switches.
+- LOW - Activates the backup power module bypassing flight and combined 2,100 psi switches.
+- AUTO (LOW) - Automatically activates LOW mode when both flight and combined system pressures are
+  below 2,100 psi.
 
 ## External Environmental Control Panel
 
 ![external environment](../../img/cockpit_detail_pilot_externalenvironment.jpg)
 
-Panel controlling windshield air and external anti-ice settings.
+Panel controlling windshield heating and external anti-ice systems.
 
-| No. | Control/Indicator | Function                                                                                                                               |
-| --- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | WSHLD switch      | Switch controlling external heating of the windshield by blasting the exterior with warm air. AIR enables the system. OFF disables it. |
-| 2   | ANTI-ICE switch   | Controls engine, probe, and AICS anti-ice settings.                                                                                    |
+### Windshield Heat Switch
 
-### Anti-Ice Switch
+The WIND SHIELD switch (<num>1</num>) controls external windshield heating by blasting the exterior
+with warm air.
 
-Controls engine, probe and AICS anti-ice settings.
+- AIR - Enables windshield heating using warm air.
+- OFF - Disables windshield heating.
 
-- ORIDE/ON - Engages engine and probe anti-ice regardless of external conditions
-  and enables the anti-ice setting in AICS.
-- AUTO/OFF - Automatically engages engine and probe anti-ice as needed, turns
-  off AICS anti-ice.
+### ENG/PROBE ANTI-ICE Switch
+
+The ENG/PROBE ANTI-ICE switch (<num>2</num>) controls engine, probe, and AICS anti-ice systems.
+
+- ORIDE/ON - Engages engine and probe anti-ice regardless of external conditions and enables the
+  anti-ice setting in AICS.
+- AUTO/OFF - Automatically engages engine and probe anti-ice as needed, turns off AICS anti-ice.
 - OFF/OFF - Turns off both engine and probe anti-ice and AICS anti-ice.
 
 ## Hydraulic Transfer Pump Switch
 
 ![hydraulic transfer pump](../../img/cockpit_detail_pilot_hydraulictransferpump.jpg)
 
-Panel containing the control for the hydraulic transfer pump which equalizes
-pressure between the combined and flight hydraulic systems in case of a failure
-in one of them.
+Panel containing the control for the hydraulic transfer pump which equalizes pressure between the
+combined and flight hydraulic systems in case of a failure in one of them.
 
-The HYD TRANSFER PUMP switch has two positions, SHUTOFF and NORMAL (guarded
-position).
+The HYD TRANSFER PUMP switch has two positions, SHUTOFF and NORMAL (guarded position).
 
-The NORMAL position (also the standard setting) will have the hydraulic transfer
-pump pressurize a failed hydraulic system from the other, functioning system,
-when it drops below 2,100 psi.
+The NORMAL position (also the standard setting) will have the hydraulic transfer pump pressurize a
+failed hydraulic system from the other, functioning system, when it drops below 2,100 psi.
 
-The SHUTOFF position (which can be accessed by lifting the guard) is used to
-turn off the transfer pump in case it can’t supply enough pressure to the failed
-system as that would risk disabling the still operational system.
+The SHUTOFF position (which can be accessed by lifting the guard) is used to turn off the transfer
+pump in case it can’t supply enough pressure to the failed system as that would risk disabling the
+still operational system.
 
-## HUD-Video Control Panel
+## HUD - Video Control Panel
 
 ![hud video control](../../img/cockpit_detail_pilot_hudvideocontrol.jpg)
 
-Control panel for the CTVS system which records the HUD when activated.
+Control panel for the CTVS system used to record HUD video.
 
 > 💡 Not implemented in DCS.
 
-| No. | Control/Indicator   | Function                           |
-| --- | ------------------- | ---------------------------------- |
-| 1   | HUD CAM(E)RA switch | Selects when recording is enabled. |
-| 2   | Switch 2 & 3.       | VTR - Video tape recorder.         |
-
 ### HUD Camera Switch
 
-Selects when recording is enabled.
+The HUD CAM(E)RA switch (<num>1</num>) selects when recording occurs.
 
-- TRG - Trigger, records while the second (firing) detent on the stick trigger
-  is depressed.
-- NORMAL - Records while the first detent on the stick trigger is depressed.
+- TRG - Trigger, records while the second (firing) detent on the stick trigger is depressed.
+- NORMAL - Records while the first detend on the stick trigger is depressed.
 - OFF - Disables power to the CTVS.
-- RUN - Records continuously
+- RUN - Records continuously.
 
-## Canopy Defog/Cabin Air Lever
+Switches (<num>2</num>) and (<num>3</num>) are for the Video Tape Recorder (VTR).
+
+## Canopy Defog / Cabin Air Lever
 
 ![canopy defog](../../img/cockpit_detail_pilot_canopydefog.jpg)
 
-The canopy air diffuser lever controls the flow of cabin air. The normal
-position, CABIN AIR, directs 70% of the conditioned air through the cockpit air
-diffusers and 30% through the canopy air diffusers.
+The canopy air diffuser lever controls the flow of cabin air. The normal position, CABIN AIR,
+directs 70% of the conditioned air through the cockpit air diffusers and 30% through the canopy air
+diffusers.
 
-The CANOPY DEFOG position directs all airflow through the canopy air diffusers
-for canopy defog.
+The CANOPY DEFOG position directs all airflow through the canopy air diffusers for canopy defog.
