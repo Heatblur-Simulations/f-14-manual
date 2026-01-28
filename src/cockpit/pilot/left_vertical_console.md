@@ -121,8 +121,6 @@ The DOWN LOCK ORIDE indicator (<num>2</num>) moves down by solenoid to indicate 
 
 The indicator may be lifted to override the signal.
 
-> 💡 Non-functional in DCS.
-
 ### Hydraulic Isolation Switch
 
 The HYD ISOL switch (<num>3</num>) isolates landing gear, nosewheel steering, and wheel brakes from
@@ -167,7 +165,7 @@ the maneuver flap range.
 | Indication                                                         | State                                         |
 | ------------------------------------------------------------------ | --------------------------------------------- |
 | ![Brake off](../../img/cockpit_detail_pilot_off.jpg)               | Speed brake system power off.                 |
-| ![Brake partial](../../img/cockpit_detail_pilot_brake-partial.jpg) | Speed brake partially extended and stationary |
+| ![Brake partial](../../img/cockpit_detail_pilot_brake-partial.jpg) | Speed brake partial extension, not in motion. |
 | ![Brake out](../../img/cockpit_detail_pilot_brake-out.jpg)         | Speed brake fully extended.                   |
 | ![Brake in](../../img/cockpit_detail_pilot_brake-in.jpg)           | Speed brake retracted.                        |
 
@@ -175,14 +173,14 @@ the maneuver flap range.
 
 The EMERG STORES button (<num>6</num>) commands emergency jettison of all expendable stores.
 
-The button illuminates to indicate activation.
+The button illuminates to indicate activation upon press.
 
 ### Nose Strut Switch
 
 The NOSE STRUT switch (<num>7</num>) controls nosewheel strut position.
 
 - EXTD — Extends the nose strut and raises and locks the launch bar.
-- OFF — Removes electrical power from the system. Spring-loaded to this position.
+- OFF — Turns off nosewheel strut movement. Spring-loaded to this position.
 - KNEEL — Releases strut pressure to retract the nose strut, kneeling the aircraft and unlocking the
   launch bar.
 
