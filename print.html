@@ -7595,50 +7595,43 @@ threat.</p>
 <li>ALR-50 ML (missile launch) tone - high frequency warble</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="electronic-countermeasures---analq-100--126-decm-defensive-electronic-countermeasures"><a class="header" href="#electronic-countermeasures---analq-100--126-decm-defensive-electronic-countermeasures">Electronic Countermeasures - AN/ALQ-100 &amp; 126 DECM (Defensive Electronic CounterMeasures)</a></h1>
-<p>The AN/ALQ-100 and 126 jammers are designed to detect radar threats, analyze
-them, select the optimum countermeasure technique available and apply it.
-Available techniques for jamming are amongst others, mainlobe blanking, inverse
-con-scan, range-gate pull-off and swept square modes.</p>
-<p>In real life these two systems differ greatly with the AN/ALR-126 being by far
-the most effective system. In DCS both are modelled as a simple noise jammers
-due to engine limitations but controlled by the DECM logic as to when it’s on or
-off and thus work the same.</p>
+<p>The AN/ALQ-100 and 126 jammers are designed to detect radar threats, analyze them, select the
+optimum countermeasure technique available and apply it. Available techniques for jamming are
+amongst others, mainlobe blanking, inverse con-scan, range-gate pull-off and swept square modes.</p>
+<p>In real life these two systems differ greatly with the AN/ALQ-126 being by far the most effective
+system. In DCS both are modelled as a simple noise jammers due to engine limitations but controlled
+by the DECM logic as to when it’s on or off and thus work the same.</p>
 <h2 id="decm-controls-and-indicators"><a class="header" href="#decm-controls-and-indicators">DECM Controls and Indicators</a></h2>
 <p><img src="systems/defensive_systems/../../img/general_alq-126_control.jpg" alt="Control Panel" /></p>
-<p>The controls for the DECM are all located on the right horizontal panel in the
-RIO pit, panel as image above. In addition there are two indication lights
-co-located with the RWR threat indicators on the right side of the TID.</p>
-<p>The two indication lights on the threat advisory are RCV (recieve) and XMIT
-(transmit). RCV illuminates up when the system detects and analyzes a threat
-while the XMIT illuminates up when it's actively jamming a threat.</p>
-<p>The control panel itself contains a STANDBY indicator light, a mode selector
-knob and an AUDIO volume knob.</p>
-<p>The STANDBY light indicates that system warmup is not yet completed and when
-completed turns off. At other times, illumination of this indicator indicates
-the presence of a fault in the system.</p>
-<p>The AUDIO (volume) knob controls the audio volume of the RIO sound from the
-system. The pilot has no access to this audio unless he put his amplifier
-selector to <strong>EMER</strong> (to use RIO amplifier). The audio itself is generated based
-on radar signal characteristics (mainly PRF).</p>
-<p>The mode selector knob controls power and operational mode that the system is
-in.</p>
+<p>The controls for the DECM are all located on the right horizontal panel in the RIO pit, panel as
+image above. In addition there are two indication lights co-located with the RWR threat indicators
+on the right side of the TID.</p>
+<p>The two indication lights on the threat advisory are RCV (recieve) and XMIT (transmit). RCV
+illuminates up when the system detects and analyzes a threat while the XMIT illuminates up when it's
+actively jamming a threat.</p>
+<p>The control panel itself contains a STANDBY indicator light, a mode selector knob and an AUDIO
+volume knob.</p>
+<p>The STANDBY light indicates that system warmup is not yet completed and when completed turns off. At
+other times, illumination of this indicator indicates the presence of a fault in the system.</p>
+<p>The AUDIO (volume) knob controls the audio volume of the RIO sound from the system. The pilot has no
+access to this audio unless he put his amplifier selector to <strong>EMER</strong> (to use RIO amplifier). The
+audio itself is generated based on radar signal characteristics (mainly PRF).</p>
+<p>The mode selector knob controls power and operational mode that the system is in.</p>
 <ul>
-<li><strong>OFF</strong> turns off power to the system. <strong>STBY</strong> begins pre-warming of the
-system, taking in all around 5 minutes.</li>
-<li><strong>TEST - HOLD 3 SEC</strong> is used to prepare the system for BIT, after 3 seconds
-in this mode, turn the knob to TEST - ACT.</li>
-<li><strong>TEST - ACT</strong> starts the BIT in the system. The BIT takes approximately 30
-seconds and the RCV light will be illuminated the whole time while the XMIT
-light will flash twice. If the STANDBY light illuminates it indicates that a
-no-go condition exists in the system.</li>
-<li><strong>REC</strong> enables the system in recieve only mode, enabling analysis of threats
-and also the threat audio.</li>
-<li><strong>RPT</strong> enables full system functionality, in addition to REC it also now
-tries to jam threats according to selected method.</li>
+<li><strong>OFF</strong> turns off power to the system. <strong>STBY</strong> begins pre-warming of the system, taking in all
+around 5 minutes.</li>
+<li><strong>TEST - HOLD 3 SEC</strong> is used to prepare the system for BIT, after 3 seconds in this mode, turn
+the knob to TEST - ACT.</li>
+<li><strong>TEST - ACT</strong> starts the BIT in the system. The BIT takes approximately 30 seconds and the RCV
+light will be illuminated the whole time while the XMIT light will flash twice. If the STANDBY
+light illuminates it indicates that a no-go condition exists in the system.</li>
+<li><strong>REC</strong> enables the system in recieve only mode, enabling analysis of threats and also the threat
+audio.</li>
+<li><strong>RPT</strong> enables full system functionality, in addition to REC it also now tries to jam threats
+according to selected method.</li>
 </ul>
 <blockquote>
-<p>💡 In DCS jamming is always done with noise jamming, turning on as a threat is
-detected.</p>
+<p>💡 In DCS jamming is always done with noise jamming, turning on as a threat is detected.</p>
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="emergency"><a class="header" href="#emergency">Emergency</a></h1>
 <h2 id="fire-detection-and-suppression-system"><a class="header" href="#fire-detection-and-suppression-system">Fire Detection and Suppression System</a></h2>
@@ -8164,67 +8157,55 @@ mode when a target is lost, either before launch or after launch, enabling the
 pilot to try and save the shot by keeping the target within the flood area.</p>
 <p><img src="stores/air_to_air/../../img/weapons_cwflood.jpg" alt="CW Flood" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="aim-9-sidewinder"><a class="header" href="#aim-9-sidewinder">AIM-9 Sidewinder</a></h1>
-<p><img src="stores/air_to_air/../../img/weapons_aim-9.jpg" alt="AIM-9" /> <em>U.S. Navy photo by Photographer’s Mate
-Airman Kristopher Wilson. (050112-N-5345W-066)</em></p>
-<p>The AIM-9 Sidewinder is a short-range air-to-air missile. It uses an infrared
-seeker locking on to a target's IR signature, making it capable of tracking a
-target both during daytime and at night.</p>
-<p>The F-14 Tomcat is capable of carrying all Navy versions of the AIM-9 Sidewinder
-from the AIM-9D up to the AIM-9M. The Heatblur F-14 Tomcat is currently modeled
-as carrying the AIM-9L and AIM-9M.</p>
-<p>The F-14 is capable of carrying the AIM-9 on stations 1A &amp; B and 8A &amp; B.
-Stations 1 &amp; 8 are the glove pylons, which can each carry two AIM-9s for a total
-of 4. Station 1A &amp; 8A are dedicated to carry only the AIM-9 and are normally
-used when only carrying two to allow station 1B &amp; 8B to carry other munitions.</p>
+<p><img src="stores/air_to_air/../../img/weapons_aim-9.jpg" alt="AIM-9" /> <em>U.S. Navy photo by Photographer’s Mate Airman Kristopher
+Wilson. (050112-N-5345W-066)</em></p>
+<p>The AIM-9 Sidewinder is a short-range air-to-air missile. It uses an infrared seeker locking on to a
+target's IR signature, making it capable of tracking a target both during daytime and at night.</p>
+<p>The F-14 Tomcat is capable of carrying all Navy versions of the AIM-9 Sidewinder from the AIM-9D up
+to the AIM-9M. The Heatblur F-14 Tomcat is currently modeled as carrying the AIM-9L and AIM-9M.</p>
+<p>The F-14 is capable of carrying the AIM-9 on stations 1A &amp; B and 8A &amp; B. Stations 1 &amp; 8 are the
+glove pylons, which can each carry two AIM-9s for a total of 4. Station 1A &amp; 8A are dedicated to
+carry only the AIM-9 and are normally used when only carrying two to allow station 1B &amp; 8B to carry
+other munitions.</p>
 <h2 id="missile-preparation-2"><a class="header" href="#missile-preparation-2">Missile Preparation</a></h2>
 <p><img src="stores/air_to_air/../../img/weapons_swcool.jpg" alt="Missile Preparation" /></p>
-<p>The cooling of the AIM-9 seeker head needs to be enabled before launch. This is
-done by pressing the SW COOL switch on the pilot ACM panel or by selecting the
-ACM mode on the same panel. This commands cooling of the missile's seeker head.
-The missile will immediately show ready, but full seeker head performance will
-take at least 60 seconds.</p>
+<p>The cooling of the AIM-9 seeker head needs to be enabled before launch. This is done by pressing the
+SW COOL switch on the pilot ACM panel or by selecting the ACM mode on the same panel. This commands
+cooling of the missile's seeker head. The missile will immediately show ready, but full seeker head
+performance will take at least 60 seconds.</p>
 <h2 id="seeker-head-modes"><a class="header" href="#seeker-head-modes">Seeker Head Modes</a></h2>
-<p>The AIM-9G introduced a seeker head capable of the Sidewinder expanded
-acquisition mode (SEAM), and all later Sidewinders carried by the F-14 are also
-capable of that mode. SEAM allows the missile seeker head to be uncaged to track
-a target within the seeker limits (40° from ADL), allowing the pilot to lead the
-target, improving missile performance. It also allows for the WCS on the F-14 to
-slave the seeker to a tracked target within 20° from ADL, allowing for
-off-boresight acquisition.</p>
-<p>The AIM-9 on the F-14 can still use the old boresight mode where the seeker head
-remains slaved to ADL (2.5° field of view), but normally SEAM is used to scan
-the seeker about either ADL or a tracked target. This scan is not visible to the
-pilot and is done to increase effective seeker head field of view. As with all
-Sidewinders, target detection is indicated by an aural tone. That growling tone
-is present while scanning but increases in intensity while the seeker is looking
-at an IR source.</p>
+<p>The AIM-9G introduced a seeker head capable of the Sidewinder expanded acquisition mode (SEAM), and
+all later Sidewinders carried by the F-14 are also capable of that mode. SEAM allows the missile
+seeker head to be uncaged to track a target within the seeker limits (40° from ADL), allowing the
+pilot to lead the target, improving missile performance. It also allows for the WCS on the F-14 to
+slave the seeker to a tracked target within 20° from ADL, allowing for off-boresight acquisition.</p>
+<p>The AIM-9 on the F-14 can still use the old boresight mode where the seeker head remains slaved to
+ADL (2.5° field of view), but normally SEAM is used to scan the seeker about either ADL or a tracked
+target. This scan is not visible to the pilot and is done to increase effective seeker head field of
+view. As with all Sidewinders, target detection is indicated by an aural tone. That growling tone is
+present while scanning but increases in intensity while the seeker is looking at an IR source.</p>
 <h2 id="missile-operation-1"><a class="header" href="#missile-operation-1">Missile Operation</a></h2>
-<p>The AIM-9 Sidewinder is selected for launch with the weapon selector on the
-pilot stick. The weapon selector can be used to cycle which AIM-9 is selected
-for launch by depressing it, indicating on the ACM panel which missile is
-selected by a checkerboard indication in the corresponding status window. When
-using the AIM-9, the HUD uses the diamond to indicate a tracked target and the
-pipper (crosshair) to indicate current seeker head position. If a WCS track with
-range is available, the HUD also displays range to target and Rmin and Rmax. The
-VDI, DDD, and TID display the attack guidance symbology if a WCS track is
-present.</p>
-<p>The basic missile boresight mode without SEAM (no scan) is commanded by
-depressing the BRSIT (boresight) switch on the pilot ACM panel while not having
-the ACM mode active. In this mode, the pilot puts the target at ADL and fires
-when the aural tone is present.</p>
-<p>If the BRSIT switch is not used or the ACM mode is active, the AIM-9 will use
-the SEAM and set the missile to use the double-D scan pattern. If a WCS target
-is present, the seeker head will scan around the radar or TCS line of sight;
-otherwise, the missile will scan around the ADL.</p>
+<p>The AIM-9 Sidewinder is selected for launch with the weapon selector on the pilot stick. The weapon
+selector can be used to cycle which AIM-9 is selected for launch by depressing it, indicating on the
+ACM panel which missile is selected by a checkerboard indication in the corresponding status window.
+When using the AIM-9, the HUD uses the diamond to indicate a tracked target and the pipper
+(crosshair) to indicate current seeker head position. If a WCS track with range is available, the
+HUD also displays range to target and Rmin and Rmax. The VDI, DDD, and TID display the attack
+guidance symbology if a WCS track is present.</p>
+<p>The basic missile boresight mode without SEAM (no scan) is commanded by depressing the BRSIT
+(boresight) switch on the pilot ACM panel while not having the ACM mode active. In this mode, the
+pilot puts the target at ADL and fires when the aural tone is present.</p>
+<p>If the BRSIT switch is not used or the ACM mode is active, the AIM-9 will use the SEAM and set the
+missile to use a scan pattern around the ADL. If a WCS target is present, the seeker head will scan
+around the radar or TCS line of sight; otherwise, the missile will scan around the ADL.</p>
 <p><img src="stores/air_to_air/../../img/weapons_seamlock.jpg" alt="SEAM Lock" /></p>
-<p>To enable lock-on to a target in SEAM, the pilot depresses the CAGE/SEAM
-pushbutton on the left throttle. This illuminates the SEAM LOCK light on the ACM
-panel and un-cages the seeker for 4.5 seconds, allowing it to track a target
-present in the seeker's field of view. If no IR source is found, the missile is
-again caged and the SEAM LOCK light is deactivated.</p>
-<p>If lock-on is successful, the aural tone will remain and the SEAM LOCK light
-stays illuminated, allowing the pilot to launch the missile by pressing the
-stick trigger. After launch, the next AIM-9 will automatically be selected.</p>
+<p>To enable lock-on to a target in SEAM, the pilot depresses the CAGE/SEAM pushbutton on the left
+throttle. This illuminates the SEAM LOCK light on the ACM panel and un-cages the seeker for 4.5
+seconds, allowing it to track a target present in the seeker's field of view. If no IR source is
+found, the missile is again caged and the SEAM LOCK light is deactivated.</p>
+<p>If lock-on is successful, the aural tone will remain and the SEAM LOCK light stays illuminated,
+allowing the pilot to launch the missile by pressing the stick trigger. After launch, the next AIM-9
+will automatically be selected.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4m-Q02gxFEA?si=uKW6h6gTzLfwNDxw"
 title="DCS World - F-14 Tomcat - Front Seat - Weapons - AIM-9 Sidewinder" frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
