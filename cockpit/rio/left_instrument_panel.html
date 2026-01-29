@@ -164,44 +164,72 @@
                         <h1 id="left-instrument-panel"><a class="header" href="#left-instrument-panel">Left Instrument Panel</a></h1>
 <h2 id="servopneumatic-altimeter"><a class="header" href="#servopneumatic-altimeter">Servopneumatic Altimeter</a></h2>
 <p><img src="../../img/cockpit_detail_rio_altimeter.jpg" alt="altimeter" /></p>
-<p>Control and indicator for the servopneumatic altimeter.</p>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>Altimeter readout</td><td>Displays altitude digitally on three drums showing 10,000, 1,000, and 100 of feet respectively. It also displays altitude on a pointer on a circular scale indicating 100’s of feet.</td></tr>
-<tr><td>2</td><td>Baroset knob</td><td>Sets local pressure in inches of mercury (in.Hg). Only used locally on the altimeter readout, all other digital indicators (via CADC) use a set 29.92 in.Hg value.</td></tr>
-<tr><td>3</td><td>Local Barometric Pressure</td><td>Indicates barometric pressure setting, also called the Kollsman Window.</td></tr>
-<tr><td>4</td><td>Mode switch</td><td>Three-position switch, spring-loaded to return from RESET. If power and altitude data from CADC are present, the switch can be held in RESET for 3 seconds to allow normal (servoed) mode of operation. If set to STBY or power or CADC data is absent for more than 3 seconds the system switches to backup (pressure) mode.</td></tr>
-<tr><td>5</td><td>STBY flag</td><td>Red flag reading STBY that appears if the system is in backup (stand-by) mode.</td></tr>
-</tbody></table>
-</div>
+<p>The servopneumatic altimeter provides altitude indication using both electrical and pressure-based
+systems.</p>
+<h3 id="altimeter-readout"><a class="header" href="#altimeter-readout">Altimeter Readout</a></h3>
+<p>The altimeter readout (<num>1</num>) displays altitude digitally on three drums indicating 10,000,
+1,000, and 100 feet.</p>
+<p>A pointer on the circular scale provides continuous indication in hundreds of feet.</p>
+<h3 id="baroset-knob"><a class="header" href="#baroset-knob">Baroset Knob</a></h3>
+<p>The baroset knob (<num>2</num>) sets local barometric pressure in inches of mercury (inHg).</p>
+<p>This setting affects only the local altimeter display. All CADC-driven displays use a fixed
+reference of 29.92 inHg.</p>
+<h3 id="local-barometric-pressure-window"><a class="header" href="#local-barometric-pressure-window">Local Barometric Pressure Window</a></h3>
+<p>The local barometric pressure window (<num>3</num>), also known as the Kollsman window, displays the
+selected pressure setting.</p>
+<h3 id="mode-switch"><a class="header" href="#mode-switch">Mode Switch</a></h3>
+<p>The mode switch (<num>4</num>) is a three-position, spring-loaded switch.</p>
+<ul>
+<li>RESET - When CADC power and altitude data are available, holding RESET for approximately three
+seconds enables normal servoed operation.</li>
+<li>STBY - Selects backup pressure mode.</li>
+</ul>
+<p>If CADC data or electrical power is absent for more than three seconds, the system automatically
+reverts to standby mode.</p>
+<h3 id="standby-flag"><a class="header" href="#standby-flag">Standby Flag</a></h3>
+<p>The STBY flag (<num>5</num>) appears when the altimeter is operating in backup (standby) mode.</p>
 <h2 id="airspeed-mach-indicator"><a class="header" href="#airspeed-mach-indicator">Airspeed Mach Indicator</a></h2>
 <p><img src="../../img/cockpit_detail_rio_mach.jpg" alt="mach" /></p>
-<p>Indicated airspeed and Mach number display.</p>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>Airspeed dial</td><td>Shows indicated airspeed on three scales, two for indicated airspeed and one moving for Mach number.</td></tr>
-<tr><td>2</td><td>Indicated airspeed scale (outer)</td><td>Used to indicate indicated airspeed up to 200 knots.</td></tr>
-<tr><td>3</td><td>Indicated airspeed scale (inner)</td><td>Used to indicate indicated airspeed from 200 knots to 850 knots. Covered by the airspeed dial until relevant.</td></tr>
-<tr><td>4</td><td>Mach number scale</td><td>Moving scale used to indicate Mach number. Moved to show the correct Mach number relative to indicated airspeed.</td></tr>
-<tr><td>5</td><td>Indicated airspeed index pointer</td><td>Can be set to the desired indicated airspeed.</td></tr>
-<tr><td>6</td><td>Mach number index pointer</td><td>Can be set to the desired Mach number. Not visible in image.</td></tr>
-<tr><td>7</td><td>Safe Mach number index pointer</td><td>Shows safe Mach number calculated by the CADC. Not visible in the image.</td></tr>
-<tr><td>8</td><td>Index knob</td><td>Knob with a pull-out and push-in position. One sets the indexer for indicated airspeed and the other for Mach number.</td></tr>
-</tbody></table>
-</div>
+<p>The airspeed Mach indicator displays indicated airspeed and Mach number.</p>
+<h3 id="airspeed-dial"><a class="header" href="#airspeed-dial">Airspeed Dial</a></h3>
+<p>The airspeed dial (<num>1</num>) integrates multiple scales to display both indicated airspeed and
+Mach number.</p>
+<h3 id="outer-airspeed-scale"><a class="header" href="#outer-airspeed-scale">Outer Airspeed Scale</a></h3>
+<p>The outer indicated airspeed scale (<num>2</num>) displays airspeed values up to 200 knots.</p>
+<h3 id="inner-airspeed-scale"><a class="header" href="#inner-airspeed-scale">Inner Airspeed Scale</a></h3>
+<p>The inner airspeed scale (<num>3</num>) displays airspeed from 200 to 850 knots.</p>
+<p>This scale remains covered by the dial until applicable.</p>
+<h3 id="mach-number-scale"><a class="header" href="#mach-number-scale">Mach Number Scale</a></h3>
+<p>The Mach number scale (<num>4</num>) moves relative to airspeed to indicate current Mach number.</p>
+<h3 id="indicated-airspeed-index-pointer"><a class="header" href="#indicated-airspeed-index-pointer">Indicated Airspeed Index Pointer</a></h3>
+<p>The indicated airspeed index pointer (<num>5</num>) can be set to mark a desired airspeed.</p>
+<h3 id="mach-number-index-pointer"><a class="header" href="#mach-number-index-pointer">Mach Number Index Pointer</a></h3>
+<p>The Mach number index pointer (<num>6</num>) marks a selected Mach number.</p>
+<p>(Not visible in the referenced image.)</p>
+<h3 id="safe-mach-number-index-pointer"><a class="header" href="#safe-mach-number-index-pointer">Safe Mach Number Index Pointer</a></h3>
+<p>The safe Mach number index pointer (<num>7</num>) displays the maximum safe Mach number calculated
+by the CADC.</p>
+<p>(Not visible in the referenced image.)</p>
+<h3 id="index-selector-knob"><a class="header" href="#index-selector-knob">Index Selector Knob</a></h3>
+<p>The index knob (<num>8</num>) is a push-pull control.</p>
+<p>One position adjusts the airspeed index pointer, and the other adjusts the Mach index pointer.</p>
 <h2 id="standby-attitude-indicator"><a class="header" href="#standby-attitude-indicator">Standby Attitude Indicator</a></h2>
 <p><img src="../../img/cockpit_detail_rio_standbyattitude.jpg" alt="standby attitude" /></p>
-<p>Standalone standby attitude indicator.</p>
-<p>An OFF flag is visible on the left side when caged or when un-powered.</p>
-<p>The knob below and to the right of the indicator cages/un-cages the indicator
-and allows trim to correct pitch. In the pulled-out position, the indicator is
-caged. When pushed in, un-cages the indicator and allows pitch trim by turning
-the knob.</p>
+<p>The standby attitude indicator provides independent attitude reference.</p>
+<h3 id="off-flag"><a class="header" href="#off-flag">OFF Flag</a></h3>
+<p>The OFF flag (<num>1</num>) appears when the instrument is unpowered or caged.</p>
+<h3 id="cage-and-trim-knob"><a class="header" href="#cage-and-trim-knob">Cage and Trim Knob</a></h3>
+<p>The cage and trim knob (<num>2</num>) controls indicator caging and pitch trim.</p>
+<ul>
+<li>Pulled out - Indicator is caged.</li>
+<li>Pushed in - Indicator is uncaged and pitch trim may be adjusted by rotating the knob.</li>
+</ul>
 <h2 id="uhf-remote-indicator"><a class="header" href="#uhf-remote-indicator">UHF Remote Indicator</a></h2>
 <p><img src="../../img/cockpit_detail_rio_backremote.jpg" alt="back remote" /></p>
-<p>Remote indicator displaying set frequency or channel on UHF 1 (AN/ARC-159).
-Displays a readout of the frequency or channel set for the UHF 1 radio.</p>
-<p>The TEST button initiates a test for the indicator, no fault results in a
-readout of 888.888.</p>
-<p>The DIM knob controls display brightness.</p>
+<p>The UHF remote indicator provides a cockpit readout of ARC-159 radio tuning.</p>
+<p>The remote display shows the selected frequency or preset channel for UHF 1.</p>
+<p>The TEST button initiates an indicator self-test. A successful test results in a display of 888.888.</p>
+<p>The DIM knob controls indicator display brightness.</p>
 
                     </main>
 

@@ -164,12 +164,11 @@
                         <h1 id="center-panel"><a class="header" href="#center-panel">Center Panel</a></h1>
 <h2 id="heads-up-display"><a class="header" href="#heads-up-display">Heads-Up Display</a></h2>
 <p><img src="../../img/cockpit_detail_pilot_hud.jpg" alt="hud" /></p>
-<p>Projects flight and weapons data onto the forward section of the
-canopy/windscreen. Night mode can be selected using the control on the right
-side of the VDI.</p>
-<p>Has two engine stall warning lights (L STALL &amp; R STALL) mounted on the left and
-right sides, respectively. They indicate the presence of an engine stall
-condition in their respective engine.</p>
+<p>The heads-up display (HUD) projects flight and weapon delivery information onto the forward portion
+of the canopy/windscreen.</p>
+<p>Night mode is selected using the control on the right side of the VDI.</p>
+<p>Two engine stall warning lights, L STALL and R STALL, are mounted on the left and right sides of the
+HUD, respectively. Each light indicates an engine stall condition in the corresponding engine.</p>
 <blockquote>
 <p>💡 For more information see relevant chapters under
 <a href="../../systems/nav_com/overview.html">Navigation</a> and
@@ -177,154 +176,215 @@ condition in their respective engine.</p>
 </blockquote>
 <h2 id="cockpit-television-sensor-ctvs"><a class="header" href="#cockpit-television-sensor-ctvs">Cockpit Television Sensor (CTVS)</a></h2>
 <p><img src="../../img/cockpit_detail_pilot_ctvs.jpg" alt="ctvs" /></p>
-<p>The cockpit television sensor (CTVS) records the HUD for registration of weapons
-delivery.</p>
+<p>The cockpit television sensor (CTVS) records the HUD for registration of weapons delivery.</p>
 <blockquote>
-<p>💡 Not implemented in DCS.</p>
+<p>💡 Currently not implemented in DCS.</p>
 </blockquote>
 <h2 id="air-combat-maneuver-panel"><a class="header" href="#air-combat-maneuver-panel">Air Combat Maneuver Panel</a></h2>
 <p><img src="../../img/cockpit_detail_pilot_acm.jpg" alt="acm" /></p>
 <p>Main pilot armament control panel.</p>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>ACM switch/cover</td><td>Lifting the ACM (Air combat maneuver) cover activates the ACM mode and allows access to the ACM jettison button.</td></tr>
-<tr><td>2</td><td>ACM JETT button</td><td>Button under the ACM cover that enables jettison of stores selected on the RIO’s ARMAMENT panel. Will not jettison Sidewinders regardless if selected.</td></tr>
-<tr><td>3</td><td>SEAM LOCK light</td><td>Light that illuminates to show that Sidewinder acquisition is in progress while in slaved and boresight SEAM modes. Lights up during the 4.5 second SEAM acquisition attempt and remains lit thereafter if the seeker has locked onto a target.</td></tr>
-<tr><td>4</td><td>COLLISION light</td><td>Light that illuminates to show that collision steering has been selected during AWG-9 STT operation.</td></tr>
-<tr><td>5</td><td>HOT TRIG light</td><td>Red light that indicates that the HOT TRIGGER conditions are met. When this is lit, the trigger will release a weapon.</td></tr>
-<tr><td>6</td><td>GUN RATE switch</td><td>Toggle switch with light indication of selected option.</td></tr>
-<tr><td>7</td><td>SW COOL switch</td><td>Toggle switch with light indication of selected option. Manual control of Sidewinder seeker cooling. Automatically set to ON when ACM mode is selected.</td></tr>
-<tr><td>8</td><td>MSL PREP switch</td><td>Toggle switch with light indication of selected option. Commands WCS to prepare AIM-54 and AIM-7 missiles. Automatically set to ON when ACM mode is commanded.</td></tr>
-<tr><td>9</td><td>MSL MODE switch</td><td>Toggle switch with light indication of selected option. Selects NORM (normal) or BRSIT (boresight) operation for missile launch. Controlled by WCS when in ACM mode.</td></tr>
-<tr><td>10</td><td>MASTER ARM switch</td><td>Enables weapons release and selective and auxiliary jettison.</td></tr>
-<tr><td>11</td><td>Station status flags</td><td>Shows indication of weapon status for the different stations.</td></tr>
-<tr><td>12</td><td>MASTER CAUTION light and button</td><td>Flashes to indicate status change on the pilot caution/advisory panel. Press to reset and turn off light until the next event.</td></tr>
-<tr><td>13</td><td>L FIRE and R FIRE lights</td><td>Engine fire warning lights. Illuminates when a fire has been detected in the respective engine.</td></tr>
-<tr><td>14</td><td>Turn-and-Slip indicator</td><td>Indicator showing rate of turn around the aircraft vertical axis. The upper part contains an electrically driven pointer, one needle deflection equaling a 360° turn in 4 minutes. The lower part contains an inclinometer with a ball suspended in a dampening fluid.</td></tr>
-</tbody></table>
-</div>
-<h3 id="gun-rate-switch"><a class="header" href="#gun-rate-switch">GUN RATE switch</a></h3>
-<p>Toggle switch with light indication of selected option.</p>
+<h3 id="acm-switchcover"><a class="header" href="#acm-switchcover">ACM Switch/Cover</a></h3>
+<p>The ACM (Air Combat Maneuver) switch/cover (<num>1</num>) enables ACM mode when lifted and provides
+access to the ACM JETT button.</p>
+<h3 id="acm-jettison-button"><a class="header" href="#acm-jettison-button">ACM Jettison Button</a></h3>
+<p>The ACM JETT button (<num>2</num>) is located under the ACM cover and commands jettison of stores
+selected on the RIO’s ARMAMENT panel.</p>
+<p>Sidewinders are not jettisoned even if selected.</p>
+<h3 id="seam-lock-light"><a class="header" href="#seam-lock-light">SEAM Lock Light</a></h3>
+<p>The SEAM LOCK light (<num>3</num>) illuminates to indicate that Sidewinder acquisition is in
+progress while in slaved and boresight SEAM modes.</p>
+<p>The light illuminates during the 4.5-second SEAM acquisition attempt and remains illuminated if the
+seeker locks onto a target.</p>
+<h3 id="collision-light"><a class="header" href="#collision-light">Collision Light</a></h3>
+<p>The COLLISION light (<num>4</num>) indicates collision steering has been selected during AWG-9 STT
+operation.</p>
+<h3 id="hot-trigger-light"><a class="header" href="#hot-trigger-light">Hot Trigger Light</a></h3>
+<p>The HOT TRIG light (<num>5</num>) illuminates when HOT TRIGGER conditions are satisfied. When
+illuminated, pulling the trigger will release a weapon.</p>
+<h3 id="gun-rate-pushbutton"><a class="header" href="#gun-rate-pushbutton">Gun Rate Pushbutton</a></h3>
+<p>Toggle pushbutton with light indication (<num>6</num>) selecting the M61 gun firing rate.</p>
 <ul>
-<li>HIGH - Selects gun rate of 6 000 rounds per minute. Normally for A/A
-operation.</li>
-<li>LOW - Selects gun rate of 4 000 rounds per minute. Normally for A/G operation.</li>
+<li>HIGH - Selects 6,000 rounds per minute. Normally used for air-to-air operation.</li>
+<li>LOW - Selects 4,000 rounds per minute. Normally used for air-to-ground operation.</li>
 </ul>
-<p>Automatically set to HIGH when ACM mode is selected.</p>
-<h3 id="master-arm-switch"><a class="header" href="#master-arm-switch">MASTER ARM switch</a></h3>
-<p>Enables weapons release and selective and auxiliary jettison.</p>
+<p>The gun rate is automatically set to HIGH when ACM mode is selected.</p>
+<h3 id="sidewinder-cooling-pushbutton"><a class="header" href="#sidewinder-cooling-pushbutton">Sidewinder Cooling Pushbutton</a></h3>
+<p>Toggle pushbutton with light indication (<num>7</num>) providing manual control of Sidewinder seeker
+cooling.</p>
+<p>Sidewinder cooling is automatically set to ON when ACM mode is selected.</p>
+<h3 id="missile-preparation-pushbutton"><a class="header" href="#missile-preparation-pushbutton">Missile Preparation Pushbutton</a></h3>
+<p>Toggle pushbutton with light indication (<num>8</num>) commanding the WCS to prepare AIM-54 and
+AIM-7 missiles.</p>
+<p>Missile preparation is automatically set to ON when ACM mode is commanded.</p>
+<h3 id="missile-mode-pushbutton"><a class="header" href="#missile-mode-pushbutton">Missile Mode Pushbutton</a></h3>
+<p>Toggle pushbutton with light indication (<num>9</num>) selecting missile launch mode.</p>
+<ul>
+<li>NORM - Normal missile launch mode.</li>
+<li>BRSIT - Boresight missile launch mode.</li>
+</ul>
+<p>Controlled by the WCS when in ACM mode.</p>
+<h3 id="master-arm-switch"><a class="header" href="#master-arm-switch">Master Arm Switch</a></h3>
+<p>The MASTER ARM switch (<num>10</num>) enables weapons release and selective and auxiliary jettison.</p>
 <ul>
 <li>OFF - Disables electrical power to release circuitry.</li>
-<li>ON - Enables electrical power to release circuitry. Position locked until the
-master arm cover is lifted.</li>
-<li>TNG (training) - Enables the in-flight training mode.</li>
+<li>ON - Enables electrical power to release circuitry. Position is locked until the master arm cover
+is lifted.</li>
+<li>TNG - Enables in-flight training mode.</li>
 </ul>
 <blockquote>
-<p>💡 The MASTER ARM bus is also interlocked with the landing gear control lever,
-disabling all releases except emergency jettison while the gear is down.</p>
+<p>💡 The MASTER ARM bus is interlocked with the landing gear control lever, disabling all releases
+except emergency jettison while the gear is down.</p>
 </blockquote>
 <blockquote>
-<p>💡 The ACM and Emergency jettison are not disabled by the MASTER ARM.</p>
+<p>💡 ACM jettison and emergency jettison are not disabled by MASTER ARM.</p>
 </blockquote>
-<h3 id="station-status-flags"><a class="header" href="#station-status-flags">Station status flags</a></h3>
-<p>Shows indication of weapon status for the different stations.</p>
+<h3 id="station-status-flags"><a class="header" href="#station-status-flags">Station Status Flags</a></h3>
+<p>Station status flags (<num>11</num>) indicate weapon readiness for each station.</p>
 <ul>
 <li>BLACK - Station not loaded or weapon not ready.</li>
 <li>WHITE - Station and weapon ready.</li>
-<li>CHECKERBOARD - Weapon is selected and ready for launch. On the ground
-indicates that fuselage rails are up and locked and that loaded weapons are
-armed.</li>
+<li>CHECKERBOARD - Weapon selected and ready for launch. While on the ground, this indicates fuselage
+rails are up and locked and that loaded weapons are armed.</li>
 </ul>
+<h3 id="master-caution-light-and-button"><a class="header" href="#master-caution-light-and-button">Master Caution Light and Button</a></h3>
+<p>The MASTER CAUTION light and reset button (<num>12</num>) flashes to indicate a status change on the
+pilot caution/advisory panel.</p>
+<p>Press to acknowledge and extinguish the light until the next event.</p>
+<h3 id="engine-fire-warning-lights"><a class="header" href="#engine-fire-warning-lights">Engine Fire Warning Lights</a></h3>
+<p>The L FIRE and R FIRE lights (<num>13</num>) illuminate when fire is detected in the respective
+engine.</p>
+<h3 id="turn-and-slip-indicator"><a class="header" href="#turn-and-slip-indicator">Turn-and-Slip Indicator</a></h3>
+<p>The turn-and-slip indicator (<num>14</num>) displays rate of turn about the aircraft vertical axis
+and slip/skid.</p>
+<p>The upper section contains an electrically driven pointer, where one needle deflection corresponds
+to a 360° turn in four minutes. The lower section contains an inclinometer with a ball suspended in
+damping fluid.</p>
 <h2 id="vertical-display-indicator-vdi"><a class="header" href="#vertical-display-indicator-vdi">Vertical Display Indicator (VDI)</a></h2>
 <p><img src="../../img/cockpit_detail_pilot_vdi.jpg" alt="vdi" /></p>
-<p>Display that complements the HUD in displaying flight and weapons data.</p>
+<p>The vertical display indicator (VDI) complements the HUD by displaying flight and weapon
+information.</p>
 <blockquote>
-<p>💡 The VDI has a red night filter that can be installed by clicking in the
-middle of the VDI screen.</p>
+<p>💡 The VDI has a red night filter that can be installed by clicking in the middle of the VDI
+screen.</p>
 </blockquote>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>HUD BRT control</td><td>Controls HUD brightness.</td></tr>
-<tr><td>2</td><td>VDI BRT control</td><td>Controls VDI brightness.</td></tr>
-<tr><td>3</td><td>VDI CONT control</td><td>Controls VDI contrast.</td></tr>
-<tr><td>4</td><td>FILTER handle</td><td>When pulled inserts filter for HUD night operation.</td></tr>
-<tr><td>5</td><td>HUD TRIM control</td><td>Allows adjustment/trim of pitch lines on HUD.</td></tr>
-<tr><td>6</td><td>VDI TRIM control</td><td>Allows adjustment/trim of pitch lines on VDI.</td></tr>
-<tr><td>7</td><td>VDI caution lights</td><td>VDI-mounted caution lights. See images and tables below.</td></tr>
-</tbody></table>
-</div>
+<h3 id="hud-brightness-control"><a class="header" href="#hud-brightness-control">HUD Brightness Control</a></h3>
+<p>The HUD BRT control (<num>1</num>) adjusts HUD brightness.</p>
+<h3 id="vdi-brightness-control"><a class="header" href="#vdi-brightness-control">VDI Brightness Control</a></h3>
+<p>The VDI BRT control (<num>2</num>) adjusts VDI brightness.</p>
+<h3 id="vdi-contrast-control"><a class="header" href="#vdi-contrast-control">VDI Contrast Control</a></h3>
+<p>The VDI CONT control (<num>3</num>) adjusts VDI contrast.</p>
+<h3 id="filter-handle"><a class="header" href="#filter-handle">Filter Handle</a></h3>
+<p>The FILTER handle (<num>4</num>) inserts the night filter for HUD night operation when pulled.</p>
+<h3 id="hud-trim-control"><a class="header" href="#hud-trim-control">HUD Trim Control</a></h3>
+<p>The HUD TRIM control (<num>5</num>) adjusts/aligns pitch lines on the HUD.</p>
+<h3 id="vdi-trim-control"><a class="header" href="#vdi-trim-control">VDI Trim Control</a></h3>
+<p>The VDI TRIM control (<num>6</num>) adjusts/aligns pitch lines on the VDI.</p>
+<h3 id="vdi-caution-lights"><a class="header" href="#vdi-caution-lights">VDI Caution Lights</a></h3>
+<p>VDI-mounted caution lights (<num>7</num>) provide data link warning and caution indications. See VDI
+Caution Indication below.</p>
 <h3 id="vdi-caution-indication"><a class="header" href="#vdi-caution-indication">VDI Caution Indication</a></h3>
 <p><img src="../../img/cockpit_detail_pilot_vdicaution.jpg" alt="VDI Caution" /></p>
 <p>Data link warning and caution lights situated at the VDI panel.</p>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Indicator</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>ADJ A/C</td><td>Advisory light indicating other aircraft close to own traffic pattern.</td></tr>
-<tr><td>2</td><td>LANDING CHK</td><td>Advisory light indicating carrier has a channel ready for ACL and that the crew should prepare for carrier landing.</td></tr>
-<tr><td>3</td><td>ACL READY</td><td>Warning light indicating CATCC has acquired the aircraft and is transmitting glidepath information to the aircraft.</td></tr>
-<tr><td>4</td><td>A/P CPLR</td><td>Warning light indicating CATCC is ready to control the aircraft.</td></tr>
-<tr><td>5</td><td>CMD CONTROL</td><td>Warning light indicating the aircraft is under data link control for landing.</td></tr>
-<tr><td>6</td><td>10 SECONDS</td><td>Warning light indicating that carrier motion is added to data link info and commands during landing. Indicates 10 seconds to arrival at the next point in approach pattern in other modes.</td></tr>
-<tr><td>7</td><td>TILT</td><td>Warning light indicating no data link command received for the last 2 seconds during ACL. When not in ACL, it indicates no data link messages during the last 10 seconds.</td></tr>
-<tr><td>8</td><td>VOICE</td><td>Warning light indicating CATCC not ready for ACL, switch to standard voice procedures.</td></tr>
-<tr><td>9</td><td>A/P REF</td><td>Warning light indicating autopilot selected but not engaged. Exception: altitude and heading hold.</td></tr>
-<tr><td>10</td><td>WAVEOFF</td><td>Warning light indicating waveoff commanded.</td></tr>
-<tr><td>11</td><td>WING SWEEP</td><td>Warning light indicating failure in both wing-sweep channels or disengagement of spider detent.</td></tr>
-<tr><td>12</td><td>REDUCE SPEED</td><td>Warning light indicating flap retraction failure with greater than 225 knots indicated airspeed. Also indicates safe Mach number exceeded.</td></tr>
-<tr><td>13</td><td>ALT LOW</td><td>Non-functional, light on radar altimeter is used instead.</td></tr>
+<div class="table-wrapper"><table><thead><tr><th>Indicator</th><th>Function</th></tr></thead><tbody>
+<tr><td>ADJ A/C</td><td>Advisory light indicating other aircraft close to own traffic pattern.</td></tr>
+<tr><td>LANDING CHK</td><td>Advisory light indicating carrier has a channel ready for ACL and that the crew should prepare for carrier landing.</td></tr>
+<tr><td>ACL READY</td><td>Warning light indicating CATCC has acquired the aircraft and is transmitting glidepath information to the aircraft.</td></tr>
+<tr><td>A/P CPLR</td><td>Warning light indicating CATCC is ready to control the aircraft.</td></tr>
+<tr><td>CMD CONTROL</td><td>Warning light indicating the aircraft is under data link control for landing.</td></tr>
+<tr><td>10 SECONDS</td><td>Warning light indicating that carrier motion is added to data link info and commands during landing. Indicates 10 seconds to arrival at the next point in approach pattern in other modes.</td></tr>
+<tr><td>TILT</td><td>Warning light indicating no data link command received for the last 2 seconds during ACL. When not in ACL, it indicates no data link messages during the last 10 seconds.</td></tr>
+<tr><td>VOICE</td><td>Warning light indicating CATCC not ready for ACL, switch to standard voice procedures.</td></tr>
+<tr><td>A/P REF</td><td>Warning light indicating autopilot selected but not engaged. Exception: altitude and heading hold.</td></tr>
+<tr><td>WAVEOFF</td><td>Warning light indicating waveoff commanded.</td></tr>
+<tr><td>WING SWEEP</td><td>Warning light indicating failure in both wing-sweep channels or disengagement of spider detent.</td></tr>
+<tr><td>REDUCE SPEED</td><td>Warning light indicating flap retraction failure with greater than 225 knots indicated airspeed. Also indicates safe Mach number exceeded.</td></tr>
+<tr><td>ALT LOW</td><td>Non-functional, light on radar altimeter is used instead.</td></tr>
 </tbody></table>
 </div>
 <h2 id="horizontal-situation-display-indicator-hsd"><a class="header" href="#horizontal-situation-display-indicator-hsd">Horizontal Situation Display Indicator (HSD)</a></h2>
 <p><img src="../../img/cockpit_detail_pilot_HSD.jpg" alt="HSD" /></p>
-<p>The horizontal situation display is used to display navigational information to
-the pilot. It can also be used to repeat the RIO’s TID to the pilot.</p>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>BRT control</td><td>Controls HSD brightness.</td></tr>
-<tr><td>2</td><td>HDG control</td><td>Controls heading reference bug in TACAN mode.</td></tr>
-<tr><td>3</td><td>CRS control</td><td>Controls desired course in MAN (manual) and TACAN mode.</td></tr>
-<tr><td>4</td><td>TEST button</td><td>Allows reset of the HSD to re-enable display if the overload protection is tripped. Also displays the HSD IR field test display on the HSD.</td></tr>
-<tr><td>5</td><td>BIT indicator</td><td>Indicates failure in HSD by showing white flags. Reset by rotating it clockwise.</td></tr>
-</tbody></table>
-</div>
+<p>The horizontal situation display (HSD) displays navigational information to the pilot and can repeat
+the RIO’s TID.</p>
+<h3 id="hsd-brightness-control"><a class="header" href="#hsd-brightness-control">HSD Brightness Control</a></h3>
+<p>The BRT control (<num>1</num>) adjusts HSD brightness.</p>
+<h3 id="heading-bug-control"><a class="header" href="#heading-bug-control">Heading Bug Control</a></h3>
+<p>The HDG control (<num>2</num>) adjusts the heading reference bug in TACAN mode.</p>
+<h3 id="course-control"><a class="header" href="#course-control">Course Control</a></h3>
+<p>The CRS control (<num>3</num>) sets desired course in MAN (manual) and TACAN modes.</p>
+<h3 id="test-button"><a class="header" href="#test-button">Test Button</a></h3>
+<p>The TEST button (<num>4</num>) resets the HSD if overload protection has tripped and displays the
+HSD IR field test display.</p>
+<h3 id="bit-indicator"><a class="header" href="#bit-indicator">BIT Indicator</a></h3>
+<p>The BIT indicator (<num>5</num>) indicates HSD failure by displaying white flags. Reset by rotating
+clockwise.</p>
 <blockquote>
 <p>💡 For more information see relevant chapters under
-<a href="../../systems/nav_com/overview.html">Navigation</a> and for the TID repeat
-Tactical Information Display (TID) and Associated Controls.</p>
+<a href="../../systems/nav_com/overview.html">Navigation</a> and for the TID repeat Tactical Information
+Display (TID) and Associated Controls.</p>
 </blockquote>
 <h2 id="cabin-pressure-altimeter"><a class="header" href="#cabin-pressure-altimeter">Cabin Pressure Altimeter</a></h2>
 <p><img src="../../img/cockpit_detail_pilot_cabinpressure.jpg" alt="cabin pressure" /></p>
 <p>Displays cabin pressure in 1,000-foot increments from 0 to 50,000 feet.</p>
 <h2 id="emergency-brake-pressure-indicator"><a class="header" href="#emergency-brake-pressure-indicator">Emergency Brake Pressure Indicator</a></h2>
 <p><img src="../../img/cockpit_detail_pilot_brakepressure.jpg" alt="brake pressure" /></p>
-<p>Displays hydraulic pressure available from the emergency brake accumulators to
-the auxiliary and parking wheel brake systems.</p>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Indicator</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>PARK</td><td>Shows brake pressure available for parking brakes. Green segment indicates 2,150 to 3,000 psi, red indicates 1,900 to 2,150 psi. When green there is pressure enough for approximately 3 applications.</td></tr>
-<tr><td>2</td><td>AUX</td><td>Shows brake pressure in the auxiliary brake pressure which can be used via the toe brakes on the pedals. Green segment indicates 2,150 to 3,000 psi (approximately 13 to 14 applications) while red indicates 1,900 to 2,150 psi (approximately 5 applications).</td></tr>
-</tbody></table>
-</div>
+<p>Displays hydraulic pressure available from the emergency brake accumulators to the auxiliary and
+parking wheel brake systems.</p>
+<h3 id="parking-brake-pressure"><a class="header" href="#parking-brake-pressure">Parking Brake Pressure</a></h3>
+<p>The PARK indication shows brake pressure available for parking brakes.</p>
+<p>The green segment indicates 2,150 to 3,000 psi and the red segment indicates 1,900 to 2,150 psi.
+When in the green, sufficient pressure is available for approximately three brake applications.</p>
+<h3 id="auxiliary-brake-pressure"><a class="header" href="#auxiliary-brake-pressure">Auxiliary Brake Pressure</a></h3>
+<p>The AUX indication shows brake pressure available for the auxiliary brake system, usable via toe
+brakes.</p>
+<p>The green segment indicates 2,150 to 3,000 psi (approximately 13 to 14 applications) and the red
+segment indicates 1,900 to 2,150 psi (approximately five applications).</p>
 <h2 id="control-stick"><a class="header" href="#control-stick">Control Stick</a></h2>
 <p><img src="../../img/cockpit_detail_pilot_stick.jpg" alt="stick" /></p>
-<p>Used to control aircraft roll and pitch. Also various other functions according
-to table below.</p>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>Bomb release button</td><td>Stores release button, used for air-to-ground ordnance (except rockets) and loaded external countermeasures.</td></tr>
-<tr><td>2</td><td>Pitch and roll trim hat</td><td>Hat used to control trim, up/down trims pitch and left/right trims roll.</td></tr>
-<tr><td>3</td><td>Weapon select hat</td><td>Selector hat moveable up and down and depressible.</td></tr>
-<tr><td>4</td><td>DLC &amp; maneuver flap command wheel</td><td>Thumbwheel used to control DLC or maneuver flaps. With DLC engaged forward rotation extends spoilers and aft rotation retracts spoilers. With flaps up and DLC disengaged forward rotation retracts maneuvering flaps/slats and aft rotation extends them. The logic behind the function being that pulling the wheel towards you increases lift and pushing it away decreases lift.</td></tr>
-<tr><td>5</td><td>DLC engage/disengage &amp; countermeasure dispense button</td><td>Momentary depression with flaps down, throttles less than MIL and no spoiler system failure engages DLC. With flaps up button sends command to ALE-39 to dispense chaff or flares according to RIO setting. DLC is disengaged by further momentary depression of the button, raising flaps, or advancing either throttle to MIL.</td></tr>
-<tr><td>6</td><td>Autopilot reference &amp; nosewheel steering button</td><td>Button toggling nosewheel steering with weight on wheels. Without weight on wheels is used to engage enabled autopilot modes.</td></tr>
-<tr><td>7</td><td>Autopilot emergency disengage paddle</td><td>Disengages all autopilot modes and DLC and releases all autopilot switches and roll and pitch SAS switches to OFF position. With weight on wheels additionally reverts throttle mode to MAN (manual) while depressed.</td></tr>
-<tr><td>8</td><td>Weapon firing trigger</td><td>Two-stage trigger. First detent enables CTVS and gun camera. Second detent releases selected forwards firing weapon.</td></tr>
-</tbody></table>
-</div>
-<blockquote>
-<p>💡 CTVS not implemented in DCS.</p>
-</blockquote>
+<p>The control stick provides aircraft roll and pitch control and contains additional weapon and
+aircraft control functions.</p>
+<h3 id="bomb-release-button"><a class="header" href="#bomb-release-button">Bomb Release Button</a></h3>
+<p>The bomb release button (<num>1</num>) is the stores release control used for air-to-ground ordnance
+(except rockets) and loaded external countermeasures.</p>
+<h3 id="pitch-and-roll-trim-hat"><a class="header" href="#pitch-and-roll-trim-hat">Pitch and Roll Trim Hat</a></h3>
+<p>The pitch and roll trim hat (<num>2</num>) controls aircraft trim.</p>
+<p>Up/down commands pitch trim and left/right commands roll trim.</p>
 <h3 id="weapon-select-hat"><a class="header" href="#weapon-select-hat">Weapon Select Hat</a></h3>
-<p>Selector hat moveable up and down and depressible.</p>
+<p>Selector hat (<num>3</num>) moveable up and down and depressible. Used to select weapon type and
+variants.</p>
 <ul>
-<li>SP or PH - Selects AIM-7 or AIM-54, depression toggles between type.</li>
-<li>SW - Selects AIM-9, depression toggles between stations.</li>
-<li>GUN - Selects M-61A1 Vulcan gun.</li>
+<li>SP or PH - Selects AIM-7 or AIM-54. Depression toggles between types.</li>
+<li>SW - Selects AIM-9. Depression toggles between stations.</li>
+<li>GUN - Selects M61A1 Vulcan gun.</li>
 <li>OFF - Inhibits weapon release.</li>
 </ul>
+<h3 id="dlc-and-maneuver-flap-command-wheel"><a class="header" href="#dlc-and-maneuver-flap-command-wheel">DLC and Maneuver Flap Command Wheel</a></h3>
+<p>The DLC and maneuver flap command wheel (<num>4</num>) controls DLC or maneuver flaps depending on
+configuration.</p>
+<p>With DLC engaged, forward rotation extends spoilers and aft rotation retracts spoilers.</p>
+<p>With flaps up and DLC disengaged, forward rotation retracts maneuvering flaps/slats and aft rotation
+extends them.</p>
+<p>The control logic is that pulling the wheel toward the pilot increases lift and pushing it away
+decreases lift.</p>
+<h3 id="dlc-engagedisengage-and-countermeasure-dispense-button"><a class="header" href="#dlc-engagedisengage-and-countermeasure-dispense-button">DLC Engage/Disengage and Countermeasure Dispense Button</a></h3>
+<p>The DLC engage/disengage and countermeasure dispense button (<num>5</num>) engages DLC when flaps
+are down, throttles are below MIL, and no spoiler system failure is present.</p>
+<p>With flaps up, this button commands the ALE-39 to dispense chaff or flares per RIO settings.</p>
+<p>DLC disengages with another momentary press, raising flaps, or advancing either throttle to MIL.</p>
+<h3 id="autopilot-reference-and-nosewheel-steering-button"><a class="header" href="#autopilot-reference-and-nosewheel-steering-button">Autopilot Reference and Nosewheel Steering Button</a></h3>
+<p>The autopilot reference and nosewheel steering button (<num>6</num>) toggles nosewheel steering with
+weight on wheels.</p>
+<p>With weight off wheels, it engages enabled autopilot modes.</p>
+<h3 id="autopilot-emergency-disengage-paddle"><a class="header" href="#autopilot-emergency-disengage-paddle">Autopilot Emergency Disengage Paddle</a></h3>
+<p>The autopilot emergency disengage paddle (<num>7</num>) disengages all autopilot modes and DLC and
+releases autopilot switches and roll and pitch SAS switches to OFF.</p>
+<p>With weight on wheels, it additionally reverts throttle mode to MAN (manual) while depressed.</p>
+<h3 id="weapon-firing-trigger"><a class="header" href="#weapon-firing-trigger">Weapon Firing Trigger</a></h3>
+<p>The weapon firing trigger (<num>8</num>) is a two-stage trigger.</p>
+<p>The first detent enables CTVS and gun camera. The second detent releases the selected forward-firing
+weapon.</p>
+<blockquote>
+<p>💡 CTVS and gun camera are not implemented in DCS.</p>
+</blockquote>
 
                     </main>
 

@@ -164,32 +164,98 @@
                         <h1 id="left-vertical-console"><a class="header" href="#left-vertical-console">Left Vertical Console</a></h1>
 <h2 id="armament-panel"><a class="header" href="#armament-panel">Armament Panel</a></h2>
 <p><img src="../../img/cockpit_detail_rio_armamentpanel.jpg" alt="armament panel" /></p>
-<p>Main armament control panel in the RIO cockpit.</p>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>WPN TYPE selector</td><td>Selector wheel selecting type of weapon used for WCS A/G calculation.</td></tr>
-<tr><td>2</td><td>ATTK MODE knob</td><td>Knob selecting which A/G attack mode to use.</td></tr>
-<tr><td>3</td><td>ELEC FUSE knob</td><td>Knob selecting electric fuse setting for A/G ordnance.</td></tr>
-<tr><td>4</td><td>A/G GUN switch</td><td>Selector switch controlling gun mode in A/G master mode. MIXED enables the gun in addition to selected A/G ordnance.</td></tr>
-<tr><td>5</td><td>QTY selectors</td><td>Selector wheels controlling quantity of A/G ordnance (including rockets) to be released.</td></tr>
-<tr><td>6</td><td>INTERVAL selectors</td><td>Selector wheels controlling interval between weapons release in ripple delivery mode in milliseconds.</td></tr>
-<tr><td>7</td><td>Station 6 select switch</td><td>Switch used to select station 6 for jettison or weapons A/G delivery.</td></tr>
-<tr><td>8</td><td>A/A LAUNCH button</td><td>Button used for RIO launch of AIM-7 or AIM-54, hot trigger is indicated by button illumination.</td></tr>
-<tr><td>9</td><td>MSL SPD GATE knob</td><td>Knob controlling the position of missile speed gate.</td></tr>
-<tr><td>10</td><td>Station 8 select switch</td><td>Switch used to select station 8 for jettison or weapons A/G delivery. B selects the lower pylon for release or jettison, the SW option is non-functional.</td></tr>
-<tr><td>11</td><td>MSL OPTIONS switch</td><td>Selector switch used to activate AIM-7 pulse doppler mode or AIM-54 active launch mode.</td></tr>
-<tr><td>12</td><td>Station 5 select switch</td><td>Switch used to select station 5 for jettison or weapons A/G delivery.</td></tr>
-<tr><td>13</td><td>NEXT LAUNCH button</td><td>Button used by RIO to select a hooked target as the next target to launch at in TWS.</td></tr>
-<tr><td>14</td><td>Station 4 select switch</td><td>Switch used to select station 4 for jettison or weapons A/G delivery.</td></tr>
-<tr><td>15</td><td>Station 1 select switch</td><td>Switch used to select station 1 for jettison or weapons A/G delivery. B selects the lower pylon for release or jettison, the SW option is non-functional.</td></tr>
-<tr><td>16</td><td>TANK JETT station 7 switch</td><td>Switch selecting station 7 for tank jettison.</td></tr>
-<tr><td>17</td><td>TANK JETT station 2 switch</td><td>Switch selecting station 2 for tank jettison.</td></tr>
-<tr><td>18</td><td>Station 3 select switch</td><td>Switch used to select station 3 for jettison or weapons A/G delivery.</td></tr>
-<tr><td>19</td><td>JETT OPTIONS switch</td><td>Switch selecting whether to jettison only WPNS (weapons) or MER/TER (weapon racks) in addition to weapons. Non-functional in modeled F-14.</td></tr>
-<tr><td>20</td><td>SEL JETT switch</td><td>Selector switch used to jettison selected stations in normal (JETT) mode or AUX (backup) mode. The AUX position is guarded.</td></tr>
-<tr><td>21</td><td>MECH FUSE switch</td><td>Selector switch used to enable and set which mechanical fuse to use for A/G ordnance.</td></tr>
-<tr><td>22</td><td>DLVY MODE switches</td><td>Two selector switches used to select A/G delivery mode. One switch controls whether to release in singles or pairs and the other sets whether to release once or multiple times according to settings.</td></tr>
-</tbody></table>
-</div>
+<p>The armament panel provides primary control of air-to-air and air-to-ground weapon employment from
+the RIO cockpit.</p>
+<h3 id="weapon-type-selector"><a class="header" href="#weapon-type-selector">Weapon Type Selector</a></h3>
+<p>The WPN TYPE selector (<num>1</num>) selects the weapon type used by the WCS for air-to-ground
+ballistic calculations.</p>
+<h3 id="attack-mode-selector"><a class="header" href="#attack-mode-selector">Attack Mode Selector</a></h3>
+<p>The ATTK MODE knob (<num>2</num>) selects the air-to-ground attack mode used for weapon delivery.</p>
+<h3 id="electrical-fuse-selector"><a class="header" href="#electrical-fuse-selector">Electrical Fuse Selector</a></h3>
+<p>The ELEC FUSE knob (<num>3</num>) selects the electrical fuze setting for air-to-ground ordnance.</p>
+<h3 id="air-to-ground-gun-switch"><a class="header" href="#air-to-ground-gun-switch">Air-to-Ground Gun Switch</a></h3>
+<p>The A/G GUN switch (<num>4</num>) selects gun availability in A/G master mode.</p>
+<ul>
+<li>OFF - Gun disabled.</li>
+<li>MIXED - Enables gun in addition to selected A/G ordnance.</li>
+</ul>
+<h3 id="quantity-selectors"><a class="header" href="#quantity-selectors">Quantity Selectors</a></h3>
+<p>The QTY selector wheels (<num>5</num>) set the quantity of air-to-ground ordnance released per
+delivery, including rockets.</p>
+<h3 id="interval-selectors"><a class="header" href="#interval-selectors">Interval Selectors</a></h3>
+<p>The INTERVAL selector wheels (<num>6</num>) set the time interval between successive weapon releases
+in ripple delivery mode.</p>
+<p>Interval is set in milliseconds.</p>
+<h3 id="station-6-select-switch"><a class="header" href="#station-6-select-switch">Station 6 Select Switch</a></h3>
+<p>The station 6 select switch (<num>7</num>) selects station 6 for jettison or air-to-ground weapons
+delivery.</p>
+<h3 id="air-to-air-launch-button"><a class="header" href="#air-to-air-launch-button">Air-to-Air Launch Button</a></h3>
+<p>The A/A LAUNCH button (<num>8</num>) allows the RIO to command launch of AIM-7 or AIM-54 missiles.</p>
+<p>Button illumination indicates hot-trigger conditions are met.</p>
+<h3 id="missile-speed-gate-knob"><a class="header" href="#missile-speed-gate-knob">Missile Speed Gate Knob</a></h3>
+<p>The MSL SPD GATE knob (<num>9</num>) controls the position of the missile speed gate used by the
+WCS.</p>
+<h3 id="station-8-select-switch"><a class="header" href="#station-8-select-switch">Station 8 Select Switch</a></h3>
+<p>The station 8 select switch (<num>10</num>) selects station 8 for jettison or air-to-ground weapons
+delivery.</p>
+<ul>
+<li>B - Selects lower pylon.</li>
+<li>SW - Non-functional.</li>
+</ul>
+<h3 id="missile-options-switch"><a class="header" href="#missile-options-switch">Missile Options Switch</a></h3>
+<p>The MSL OPTIONS switch (<num>11</num>) configures missile launch behavior.</p>
+<ul>
+<li>Enables AIM-7 pulse-doppler mode.</li>
+<li>Enables AIM-54 active launch mode.</li>
+</ul>
+<h3 id="station-5-select-switch"><a class="header" href="#station-5-select-switch">Station 5 Select Switch</a></h3>
+<p>The station 5 select switch (<num>12</num>) selects station 5 for jettison or air-to-ground weapons
+delivery.</p>
+<h3 id="next-launch-button"><a class="header" href="#next-launch-button">Next Launch Button</a></h3>
+<p>The NEXT LAUNCH button (<num>13</num>) designates the currently hooked target as the next launch
+target during TWS operation.</p>
+<h3 id="station-4-select-switch"><a class="header" href="#station-4-select-switch">Station 4 Select Switch</a></h3>
+<p>The station 4 select switch (<num>14</num>) selects station 4 for jettison or air-to-ground weapons
+delivery.</p>
+<h3 id="station-1-select-switch"><a class="header" href="#station-1-select-switch">Station 1 Select Switch</a></h3>
+<p>The station 1 select switch (<num>15</num>) selects station 1 for jettison or air-to-ground weapons
+delivery.</p>
+<ul>
+<li>B - Selects lower pylon.</li>
+<li>SW - Non-functional.</li>
+</ul>
+<h3 id="tank-jettison-station-7-switch"><a class="header" href="#tank-jettison-station-7-switch">Tank Jettison Station 7 Switch</a></h3>
+<p>The TANK JETT station 7 switch (<num>16</num>) selects station 7 external fuel tank for jettison.</p>
+<h3 id="tank-jettison-station-2-switch"><a class="header" href="#tank-jettison-station-2-switch">Tank Jettison Station 2 Switch</a></h3>
+<p>The TANK JETT station 2 switch (<num>17</num>) selects station 2 external fuel tank for jettison.</p>
+<h3 id="station-3-select-switch"><a class="header" href="#station-3-select-switch">Station 3 Select Switch</a></h3>
+<p>The station 3 select switch (<num>18</num>) selects station 3 for jettison or air-to-ground weapons
+delivery.</p>
+<h3 id="jettison-options-switch"><a class="header" href="#jettison-options-switch">Jettison Options Switch</a></h3>
+<p>The JETT OPTIONS switch (<num>19</num>) selects jettison configuration.</p>
+<ul>
+<li>WPNS - Jettison weapons only.</li>
+<li>MER/TER - Jettison racks in addition to weapons.</li>
+</ul>
+<p>This function is non-functional in the modeled F-14.</p>
+<h3 id="selective-jettison-switch"><a class="header" href="#selective-jettison-switch">Selective Jettison Switch</a></h3>
+<p>The SEL JETT switch (<num>20</num>) selects selective jettison mode.</p>
+<ul>
+<li>JETT - Normal jettison mode.</li>
+<li>AUX - Backup jettison mode (guarded).</li>
+</ul>
+<h3 id="mechanical-fuse-selector"><a class="header" href="#mechanical-fuse-selector">Mechanical Fuse Selector</a></h3>
+<p>The MECH FUSE switch (<num>21</num>) enables and selects the mechanical fuze setting for
+air-to-ground ordnance.</p>
+<h3 id="delivery-mode-selectors"><a class="header" href="#delivery-mode-selectors">Delivery Mode Selectors</a></h3>
+<p>The DLVY MODE switches (<num>22</num>) consist of two selector switches that control air-to-ground
+release logic.</p>
+<ul>
+<li>One switch selects single or paired weapon release.</li>
+<li>The other selects single-pass or multiple-pass delivery according to quantity and interval
+settings.</li>
+</ul>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

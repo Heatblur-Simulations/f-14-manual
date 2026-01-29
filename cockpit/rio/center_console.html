@@ -164,70 +164,121 @@
                         <h1 id="center-console"><a class="header" href="#center-console">Center Console</a></h1>
 <h2 id="tactical-information-display-tid"><a class="header" href="#tactical-information-display-tid">Tactical Information Display (TID)</a></h2>
 <p><img src="../../img/cockpit_detail_rio_tid.jpg" alt="tid" /></p>
-<p>Tactical information display and corresponding and navigational controls.</p>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>INS status indicator</td><td>Indicator light showing the status of the INS during alignment. STBY indicates power applied but not aligned. READY indicates minimum launch criteria for AIM-54. Both lights turn off when INS mode is selected. Can otherwise indicate faults.</td></tr>
-<tr><td>2</td><td>CONTRAST knob</td><td>Control knob that controls the contrast of TCS video.</td></tr>
-<tr><td>3</td><td>DATA READOUT drum</td><td>Readout drum indicating the source of the data displayed on the TID readouts. Might be blank for sources not having their own text on the drum.</td></tr>
-<tr><td>4</td><td>BRIGHT knob</td><td>Control knob controlling TID brightness.</td></tr>
-<tr><td>5</td><td>STEERING indicator drum</td><td>Readout drum indicating current steering information being displayed to the pilot.</td></tr>
-<tr><td>6</td><td>DEST selector</td><td>Selector knob controlling what destination to use for the navigation destination mode.</td></tr>
-<tr><td>7</td><td>CLSN button</td><td>Button with indication used to select collision steering towards a tracked target or TWS centroid.</td></tr>
-<tr><td>8</td><td>DISPLAY buttons</td><td>Buttons controlling what elements are shown on the TID. Contains indicator lights showing selection.</td></tr>
-<tr><td>9</td><td>RANGE selector</td><td>Selector switch selecting the current scale of the TID. Corresponds to the distance the diameter represents.</td></tr>
-<tr><td>10</td><td>TID MODE selector</td><td>Selector switch controlling current TID presentation.</td></tr>
-<tr><td>11</td><td>TRACK HOLD button</td><td>Button extending the amount of time before a track is dropped after the last radar observation to two minutes. Normal time is 14 seconds.</td></tr>
-<tr><td>12</td><td>NAV MODE selector</td><td>Selector switch controlling navigation reference systems. Controls which system is in use and also alignment of the INS.</td></tr>
-</tbody></table>
-</div>
-<h3 id="display-buttons"><a class="header" href="#display-buttons">DISPLAY buttons</a></h3>
-<p>Buttons controlling what elements are shown on the TID. Contains indicator
-lights showing selection.</p>
+<p>The Tactical Information Display (TID) presents tactical, navigation, and data link information to
+the RIO and provides associated navigation and display controls.</p>
+<h3 id="ins-status-indicator"><a class="header" href="#ins-status-indicator">INS Status Indicator</a></h3>
+<p>The INS status indicator (<num>1</num>) displays inertial navigation system alignment status.</p>
 <ul>
-<li>RID DISABLE - Not implemented.</li>
-<li>ALT NUM - Toggles display of altitude numeric on the left side of the track
-symbols.</li>
-<li>SYM ELEM - Toggles display of all supplementary elements of target tracks.
-Deselection causes only the target track dot to be shown.</li>
-<li>DATA LINK - Toggles display of all data link tracks.</li>
-<li>JAM STROBE - Toggles display of jamming strobes.</li>
-<li>NON-ATTK - Toggles display of non-attackable tracks.</li>
-<li>VEL VECTOR - Toggles display of velocity vectors on tracks.</li>
-<li>LAUNCH ZONE - Toggles display of missile launch zones on tracks. Replaces
-velocity vectors if applicable. Automatically activated by WCS 60 seconds
-prior to maximum missile launch range.</li>
+<li>STBY — Power applied but alignment not complete.</li>
+<li>READY — Minimum alignment sufficient for AIM-54 launch criteria.</li>
 </ul>
+<p>Both lights extinguish when an INS mode is selected. The indicator may also display fault
+conditions.</p>
+<h3 id="contrast-knob"><a class="header" href="#contrast-knob">Contrast Knob</a></h3>
+<p>The CONTRAST knob (<num>2</num>) adjusts contrast of TCS video displayed on the TID.</p>
+<h3 id="data-readout-drum"><a class="header" href="#data-readout-drum">Data Readout Drum</a></h3>
+<p>The DATA READOUT drum (<num>3</num>) indicates the data source currently shown on the TID
+alphanumeric readouts.</p>
+<p>The drum may be blank for sources that do not generate textual data.</p>
+<h3 id="brightness-knob"><a class="header" href="#brightness-knob">Brightness Knob</a></h3>
+<p>The BRIGHT knob (<num>4</num>) controls overall TID display brightness.</p>
+<h3 id="steering-indicator-drum"><a class="header" href="#steering-indicator-drum">Steering Indicator Drum</a></h3>
+<p>The STEERING indicator drum (<num>5</num>) displays the steering information currently being
+provided to the pilot.</p>
+<h3 id="destination-selector"><a class="header" href="#destination-selector">Destination Selector</a></h3>
+<p>The DEST selector (<num>6</num>) selects the destination used for navigation in destination mode.</p>
+<h3 id="collision-steering-button"><a class="header" href="#collision-steering-button">Collision Steering Button</a></h3>
+<p>The CLSN button (<num>7</num>) selects collision steering toward a tracked target or the TWS
+centroid.</p>
+<h3 id="display-selection-buttons"><a class="header" href="#display-selection-buttons">Display Selection Buttons</a></h3>
+<p>The DISPLAY buttons (<num>8</num>) control which elements are shown on the TID.</p>
+<p>Each button includes an indicator light showing current selection state.</p>
+<p>Available display selections include:</p>
+<ul>
+<li>RID DISABLE — Not implemented.</li>
+<li>ALT NUM — Toggles altitude numerics next to track symbols.</li>
+<li>SYM ELEM — Toggles supplementary track symbology. When deselected, only the track symbol dot is
+displayed.</li>
+<li>DATA LINK — Toggles display of all data link tracks.</li>
+<li>JAM STROBE — Toggles display of jamming strobes.</li>
+<li>NON-ATTK — Toggles display of non-attackable tracks.</li>
+<li>VEL VECTOR — Toggles display of velocity vectors.</li>
+<li>LAUNCH ZONE — Toggles missile launch zone display. Replaces velocity vectors when applicable.
+Automatically enabled by the WCS 60 seconds prior to maximum missile launch range.</li>
+</ul>
+<h3 id="range-selector"><a class="header" href="#range-selector">Range Selector</a></h3>
+<p>The RANGE selector (<num>9</num>) selects the TID display scale.</p>
+<p>The selected range corresponds to the diameter distance represented on the display.</p>
+<h3 id="tid-mode-selector"><a class="header" href="#tid-mode-selector">TID Mode Selector</a></h3>
+<p>The TID MODE selector (<num>10</num>) selects the current TID presentation mode.</p>
+<h3 id="track-hold-button"><a class="header" href="#track-hold-button">Track Hold Button</a></h3>
+<p>The TRACK HOLD button (<num>11</num>) extends the time before a radar track is dropped after the
+last observation.</p>
+<p>When selected, track retention time is increased to two minutes. Normal retention time is
+approximately 14 seconds.</p>
+<h3 id="navigation-mode-selector"><a class="header" href="#navigation-mode-selector">Navigation Mode Selector</a></h3>
+<p>The NAV MODE selector (<num>12</num>) selects navigation reference systems and controls INS
+alignment and operating mode.</p>
 <h2 id="hand-control-unit-hcu"><a class="header" href="#hand-control-unit-hcu">Hand Control Unit (HCU)</a></h2>
 <p><img src="../../img/cockpit_detail_rio_hcu.jpg" alt="hcu" /></p>
-<p>Main radar and TCS control stick.</p>
-<div class="table-wrapper"><table><thead><tr><th>No.</th><th>Control/Indicator</th><th>Function</th></tr></thead><tbody>
-<tr><td>1</td><td>IR/TV switch</td><td>Switch controlling TCS power. Enables selection of OFF/STBY and ON.</td></tr>
-<tr><td>2</td><td>IR/TV overtemp indicator</td><td>Light indicating the presence of an overtemperature condition in the TCS.</td></tr>
-<tr><td>3</td><td>LIGHT TEST button</td><td>Button allowing a test of all AWG-9 lights.</td></tr>
-<tr><td>4</td><td>PWR RESET indicator</td><td>Light indicating one or more inoperative secondary power supplies.</td></tr>
-<tr><td>5</td><td>PWR RESET button</td><td>Button allowing a reset of inoperative secondary power supplies. If the condition triggering the in-operational state remains the affected supplies will remain in-operational.</td></tr>
-<tr><td>6</td><td>WCS indicator</td><td>Light indicating selection of STBY or XMT with the radar not yet timed out or selection of XMT with radar transmission remaining off.</td></tr>
-<tr><td>7</td><td>WCS switch</td><td>Switch controlling WCS power (computer and radar). STBY turns on power to the WCS and begins radar warmup without transmission. XMT enables radar transmission if the radar is ready. Display warmup time is 30 seconds, radar warmup is 3 minutes.</td></tr>
-<tr><td>8</td><td>MRL button</td><td>Button selecting manual rapid lockon mode. Overrides all operational modes except PLM and VSL.</td></tr>
-<tr><td>9</td><td>OFFSET button</td><td>Button used to offset TID to hooked location on the display.</td></tr>
-<tr><td>10</td><td>ELEV thumbwheel</td><td>Thumbwheel used to fine-tune elevation of the radar antenna for STT lockon acquisition.</td></tr>
-<tr><td>11</td><td>HCU trigger</td><td>Used to select and trigger different functions in the WCS depending on current mode and HCU function. First detent is HALF ACTION, second detent is FULL ACTION. Examples of use are target acquisition and symbol hook.</td></tr>
-<tr><td>12</td><td>Hand control function buttons</td><td>Buttons with an indication used to control the function of the HCU stick. Mutually exclusive.</td></tr>
-</tbody></table>
-</div>
-<h3 id="hand-control-function-buttons"><a class="header" href="#hand-control-function-buttons">Hand Control Function Buttons</a></h3>
-<p>Buttons with indication used to control function of HCU stick. Mutually
-exclusive.</p>
+<p>The hand control unit is the primary control stick for radar and TCS operation.</p>
+<h3 id="irtv-switch"><a class="header" href="#irtv-switch">IR/TV Switch</a></h3>
+<p>The IR/TV switch (<num>1</num>) controls TCS power.</p>
 <ul>
-<li>IR/TV - Selects control of TCS azimuth, elevation and tracking. Enables
-display of TCS elevation on right elevation indicator on DDD.</li>
-<li>RDR - Selects control of radar antenna for STT lock-on and return to search if
-already in STT. Enables display of currently commanded radar antenna elevation
-on right elevation indicator on DDD.</li>
-<li>DDD CURSOR - Selects control of DDD cursor used to mark a geographical
-position while in pulse radar mode.</li>
-<li>TID CURSOR - Selects control of TID cursor used to hook (select) symbols on
-the TID.</li>
+<li>OFF/STBY — Applies power without full operation.</li>
+<li>ON — Enables full TCS operation.</li>
+</ul>
+<h3 id="irtv-overtemperature-indicator"><a class="header" href="#irtv-overtemperature-indicator">IR/TV Overtemperature Indicator</a></h3>
+<p>The IR/TV overtemp indicator (<num>2</num>) illuminates when an overtemperature condition exists
+within the TCS.</p>
+<h3 id="light-test-button"><a class="header" href="#light-test-button">Light Test Button</a></h3>
+<p>The LIGHT TEST button (<num>3</num>) initiates a test of all AWG-9 indicator lights.</p>
+<h3 id="power-reset-indicator"><a class="header" href="#power-reset-indicator">Power Reset Indicator</a></h3>
+<p>The PWR RESET indicator (<num>4</num>) illuminates when one or more secondary power supplies are
+inoperative.</p>
+<h3 id="power-reset-button"><a class="header" href="#power-reset-button">Power Reset Button</a></h3>
+<p>The PWR RESET button (<num>5</num>) attempts to restore inoperative secondary power supplies.</p>
+<p>If the fault condition persists, affected supplies will remain inoperative.</p>
+<h3 id="wcs-status-indicator"><a class="header" href="#wcs-status-indicator">WCS Status Indicator</a></h3>
+<p>The WCS indicator (<num>6</num>) illuminates under the following conditions:</p>
+<ul>
+<li>STBY or XMT selected while radar warmup is incomplete.</li>
+<li>XMT selected while radar transmission remains inhibited.</li>
+</ul>
+<h3 id="wcs-power-switch"><a class="header" href="#wcs-power-switch">WCS Power Switch</a></h3>
+<p>The WCS switch (<num>7</num>) controls weapon control system power.</p>
+<ul>
+<li>STBY — Applies power to WCS and begins radar warmup without transmission.</li>
+<li>XMT — Enables radar transmission when warmup is complete.</li>
+</ul>
+<p>Display warmup time is approximately 30 seconds. Radar warmup time is approximately three minutes.</p>
+<h3 id="manual-rapid-lockon-button"><a class="header" href="#manual-rapid-lockon-button">Manual Rapid Lockon Button</a></h3>
+<p>The MRL button (<num>8</num>) selects manual rapid lock-on mode.</p>
+<p>This mode overrides all other radar operating modes except PLM and VSL.</p>
+<h3 id="offset-button"><a class="header" href="#offset-button">Offset Button</a></h3>
+<p>The OFFSET button (<num>9</num>) offsets the TID display to the currently hooked location.</p>
+<h3 id="antenna-elevation-thumbwheel"><a class="header" href="#antenna-elevation-thumbwheel">Antenna Elevation Thumbwheel</a></h3>
+<p>The ELEV thumbwheel (<num>10</num>) fine-tunes radar antenna elevation during STT lock-on
+acquisition.</p>
+<h3 id="hcu-trigger"><a class="header" href="#hcu-trigger">HCU Trigger</a></h3>
+<p>The HCU trigger (<num>11</num>) is a two-stage trigger used to command various WCS functions
+depending on selected mode.</p>
+<ul>
+<li>First detent — HALF ACTION.</li>
+<li>Second detent — FULL ACTION.</li>
+</ul>
+<p>Functions include target acquisition and symbol hook.</p>
+<h3 id="hand-control-function-buttons"><a class="header" href="#hand-control-function-buttons">Hand Control Function Buttons</a></h3>
+<p>The hand control function buttons (<num>12</num>) select the active control mode of the HCU stick.</p>
+<p>The buttons are mutually exclusive and light up when selected.</p>
+<p>Available functions are:</p>
+<ul>
+<li>IR/TV — Controls TCS azimuth, elevation, and tracking. Enables display of TCS elevation on the
+right elevation indicator on the DDD.</li>
+<li>RDR — Controls radar antenna elevation and STT acquisition or return to search. Displays commanded
+radar antenna elevation on the DDD.</li>
+<li>DDD CURSOR — Controls DDD cursor for marking geographic positions in pulse radar mode.</li>
+<li>TID CURSOR — Controls the TID cursor used to hook symbols on the TID.</li>
 </ul>
 
                     </main>
