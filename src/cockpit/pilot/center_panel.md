@@ -172,14 +172,9 @@ The VDI TRIM control (<num>6</num>) adjusts/aligns pitch lines on the VDI.
 
 ### VDI Caution Lights
 
-VDI-mounted caution lights (<num>7</num>) provide data link warning and caution indications. See VDI
-Caution Indication below.
-
-### VDI Caution Indication
-
 ![VDI Caution](../../img/cockpit_detail_pilot_vdicaution.jpg)
 
-Data link warning and caution lights situated at the VDI panel.
+VDI-mounted caution lights (<num>7</num>) provide data link warning and caution indications.
 
 | Indicator    | Function                                                                                                                                                                                   |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
