@@ -6,15 +6,36 @@
 
 Control and indicator for the radar altimeter.
 
-| No. | Control/Indicator            | Function                                                                                                                                                                         |
-| --- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Radar altimeter control knob | Fully counterclockwise position turns the altimeter off. Rotation clockwise sets the altitude warning level, increasing clockwise. Depressing the knob starts the altimeter BIT. |
-| 2   | OFF flag                     | Shown if the system is off, power is off or the system loses ground lock.                                                                                                        |
-| 3   | Low altitude warning light   | Red light illuminated when below set altitude warning level.                                                                                                                     |
-| 4   | Self-test light              | Green light that should illuminate when the altimeter BIT is run. The readout should also display 100 feet ±10.                                                                  |
-| 5   | Low-altitude limit index     | Small triangular bug moving along outer edge, displays set altitude warning level.                                                                                               |
+### Radar Altimeter Control Knob
 
-> 💡 Radio override does not disable low-altitude warning tone.
+The radar altimeter control knob (<num>1</num>) controls radar altimeter power, sets the low
+altitude warning threshold, and initiates BIT.
+
+Fully counterclockwise turns the radar altimeter off. Rotating clockwise sets the altitude warning
+level. Depressing the knob initiates radar altimeter BIT.
+
+### OFF Flag
+
+The OFF flag (<num>2</num>) is displayed when the radar altimeter is off, power is unavailable, or
+the system loses ground lock.
+
+### Low Altitude Warning Light
+
+The low altitude warning light (<num>3</num>) illuminates red when the aircraft is below the set
+altitude warning level.
+
+### Self-Test Light
+
+The self-test light (<num>4</num>) illuminates green when radar altimeter BIT is run.
+
+During BIT, the readout should display 100 feet ±10.
+
+### Low-Altitude Limit Index
+
+The low-altitude limit index (<num>5</num>) is a triangular bug on the outer edge indicating the
+selected altitude warning threshold.
+
+> 💡 Radio override does not disable the low-altitude warning tone.
 
 ## Servopneumatic Altimeter
 
@@ -22,16 +43,35 @@ Control and indicator for the radar altimeter.
 
 Control and indicator for the servopneumatic altimeter.
 
-| No. | Control/Indicator | Function                                                                                                                                                                                                                                                                                                             |
-| --- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Altimeter readout | Displays altitude digitally on three drums showing 10,000, 1,000 and 100 of feet respectively. It also displays altitude on a pointer on a circular scale indicating 100’s of feet.                                                                                                                                  |
-| 2   | Baroset knob      | Sets local pressure in inches of mercury (in.Hg). Only used locally on the altimeter readout, all other digital indicators (via CADC) uses a set 29.92 in.Hg value.                                                                                                                                                  |
-| 3   | Mode switch       | Three-position switch, spring-loaded to return from RESET. If power and altitude data from CADC is present, switch can be held in RESET for 3 seconds to allow normal (servoed) mode of operation. If set to STBY or power or CADC data is absent for more than 3 seconds system switches to backup (pressure) mode. |
-| 4   | STBY flag         | Red flag reading STBY that appears if system is in backup (stand-by) mode.                                                                                                                                                                                                                                           |
+### Altimeter Readout
 
-> 💡 At high speeds and below 10,000 feet, due to pressure changes, errors in
-> readout up to as much as 1,200 feet when transonic and up to as much as 4,000
-> feet when supersonic can occur.
+The altimeter readout (<num>1</num>) displays altitude using three digital drums for 10,000, 1,000,
+and 100 feet, and a pointer on a circular scale indicating hundreds of feet.
+
+### Baroset Knob
+
+The baroset knob (<num>2</num>) sets local pressure in inches of mercury (in.Hg).
+
+This setting only affects the local altimeter display. Other CADC-driven digital indicators use a
+fixed 29.92 in.Hg reference.
+
+### Mode Switch
+
+The mode switch (<num>3</num>) selects altimeter operating mode and is spring-loaded from RESET.
+
+If power and CADC altitude data are present, the switch may be held in RESET for three seconds to
+enable normal (servoed) mode.
+
+If set to STBY, or if power or CADC data is absent for more than three seconds, the altimeter
+switches to backup (pressure) mode.
+
+### STBY Flag
+
+The STBY flag (<num>4</num>) is a red STBY indication that appears when the altimeter is operating
+in backup (standby) mode.
+
+> 💡 At high speeds and below 10,000 feet, pressure effects can produce significant readout errors:
+> up to 1,200 feet when transonic and up to 4,000 feet when supersonic.
 
 ## Airspeed Mach Indicator
 
@@ -39,41 +79,75 @@ Control and indicator for the servopneumatic altimeter.
 
 Indicated airspeed and Mach number display.
 
-| No. | Control/Indicator                | Function                                                                                                          |
-| --- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| 1   | Airspeed dial                    | Shows indicated airspeed on three scales, two for indicated airspeed and one moving for Mach number.              |
-| 2   | Indicated airspeed scale (outer) | Readout for indicated airspeed up to 200 knots.                                                                   |
-| 3   | Indicated airspeed scale (inner) | Readout for indicated airspeed from 200 knots to 850 knots. Covered by airspeed dial until relevant.              |
-| 4   | Mach number scale                | Readout for Mach number. Moved to show correct Mach number relative indicated airspeed.                           |
-| 5   | Indicated airspeed index pointer | Can be set to desired indicated airspeed.                                                                         |
-| 6   | Mach number index pointer        | Can be set to desired Mach number. Not visible in image.                                                          |
-| 7   | Safe Mach number index pointer   | Shows safe Mach number calculated by the CADC. Not visible in image.                                              |
-| 8   | Index knob                       | Knob with a pull-out and push-in position. One sets indexer for indicated airspeed and the other for Mach number. |
+### Airspeed Dial
+
+The airspeed dial (<num>1</num>) drives the airspeed and Mach indication across three scales.
+
+### Indicated Airspeed Scale (Outer)
+
+The outer indicated airspeed scale (<num>2</num>) provides readout up to 200 knots.
+
+### Indicated Airspeed Scale (Inner)
+
+The inner indicated airspeed scale (<num>3</num>) provides readout from 200 to 850 knots and is
+covered by the dial until applicable.
+
+### Mach Number Scale
+
+The Mach number scale (<num>4</num>) provides Mach readout and shifts relative to indicated airspeed
+to indicate the correct Mach number.
+
+### Indicated Airspeed Index Pointer
+
+The indicated airspeed index pointer (<num>5</num>) can be set to a desired indicated airspeed.
+
+### Mach Number Index Pointer
+
+The Mach number index pointer (<num>6</num>) can be set to a desired Mach number.
+
+Not visible in the image.
+
+### Safe Mach Number Index Pointer
+
+The safe Mach number index pointer (<num>7</num>) indicates the CADC-computed safe Mach number.
+
+Not visible in the image.
+
+### Index Knob
+
+The index knob (<num>8</num>) is a push-pull knob used to select which index pointer is adjusted.
+
+One position adjusts the indicated airspeed index and the other adjusts the Mach number index.
 
 ## Vertical Velocity Indicator
 
 ![Vertical Velocity Indicator](../../img/cockpit_detail_pilot_vvi.jpg)
 
-Shows vertical velocity in thousands of feet. Can show erroneous readings if
-sudden or abrupt changes of attitude occur because of the changing airflow over
-the static probe.
+Displays vertical velocity in thousands of feet per minute.
+
+Sudden or abrupt attitude changes can produce erroneous indications due to airflow changes over the
+static probe.
 
 ## Left Engine Fuel Shutoff Handle
 
 ![Left Engine Fuel Shutoff Handle](../../img/cockpit_detail_pilot_leftengineshutoff.jpg)
 
-Pull to shut off fuel to the left engine in case of emergency. Push in to
-re-enable fuel-flow to the engine. Should not be used to secure the engine.
+Emergency fuel shutoff handle for the left engine.
 
-Left engine fire extinguishing button is located behind the handle, accessible
-when the handle is pulled out.
+Pulling the handle shuts off fuel flow to the left engine. Pushing the handle in restores fuel flow.
+
+This handle should not be used to normally secure the engine.
+
+A left engine fire extinguishing button is located behind the handle and is accessible when the
+handle is pulled out.
 
 ## Angle-of-Attack Indicator
 
 ![Angle-of-Attack Indicator](../../img/cockpit_detail_pilot_aoa.jpg)
 
-Tape indicating angle of attack (AOA) on a scale of 0 to 30 units. (Equivalent
-to -10° to +40° rotation of the AoA probe.)
+Displays angle of attack (AOA) on a tape scale from 0 to 30 units.
 
-The indicator has markers on the right for climb (5), cruise (8.5), and stall
-(29), and a reference bar for on-speed approach (15).
+This corresponds approximately to -10° to +40° rotation of the AOA probe.
+
+Reference markers are provided on the right side for climb (5), cruise (8.5), and stall (29). A
+reference bar indicates on-speed approach (15).
