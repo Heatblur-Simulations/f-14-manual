@@ -880,23 +880,31 @@ selected altitude warning threshold.</p>
 </blockquote>
 <h2 id="servopneumatic-altimeter"><a class="header" href="#servopneumatic-altimeter">Servopneumatic Altimeter</a></h2>
 <p><img src="cockpit/pilot/../../img/cockpit_detail_pilot_altimeter.jpg" alt="Servopneumatic Altimeter" /></p>
-<p>Control and indicator for the servopneumatic altimeter.</p>
+<p>The servopneumatic altimeter provides altitude indication using both electrical and pressure-based
+systems.</p>
 <h3 id="altimeter-readout"><a class="header" href="#altimeter-readout">Altimeter Readout</a></h3>
 <p>The altimeter readout (<num>1</num>) displays altitude using three digital drums for 10,000, 1,000,
 and 100 feet, and a pointer on a circular scale indicating hundreds of feet.</p>
+<p>A pointer on the circular scale provides continuous indication in hundreds of feet.</p>
 <h3 id="baroset-knob"><a class="header" href="#baroset-knob">Baroset Knob</a></h3>
-<p>The baroset knob (<num>2</num>) sets local pressure in inches of mercury (in.Hg).</p>
+<p>The baroset knob (<num>2</num>) sets local barometric pressure in inches of mercury (in.Hg).</p>
 <p>This setting only affects the local altimeter display. Other CADC-driven digital indicators use a
 fixed 29.92 in.Hg reference.</p>
+<h3 id="local-barometric-pressure-window"><a class="header" href="#local-barometric-pressure-window">Local Barometric Pressure Window</a></h3>
+<p>The local barometric pressure window (<num>3</num>), also known as the Kollsman window, displays the
+selected pressure setting.</p>
 <h3 id="mode-switch"><a class="header" href="#mode-switch">Mode Switch</a></h3>
-<p>The mode switch (<num>3</num>) selects altimeter operating mode and is spring-loaded from RESET.</p>
-<p>If power and CADC altitude data are present, the switch may be held in RESET for three seconds to
-enable normal (servoed) mode.</p>
-<p>If set to STBY, or if power or CADC data is absent for more than three seconds, the altimeter
-switches to backup (pressure) mode.</p>
+<p>The mode switch (<num>4</num>) selects altimeter operating mode and is spring-loaded from RESET.</p>
+<ul>
+<li>RESET - When CADC power and altitude data are available, holding RESET for approximately three
+seconds enables normal servoed operation.</li>
+<li>STBY - Selects backup pressure mode.</li>
+</ul>
+<p>If CADC data or electrical power is absent for more than three seconds, the system automatically
+reverts to standby mode.</p>
 <h3 id="stby-flag"><a class="header" href="#stby-flag">STBY Flag</a></h3>
-<p>The STBY flag (<num>4</num>) is a red STBY indication that appears when the altimeter is operating
-in backup (standby) mode.</p>
+<p>The STBY flag is a red standby indication that appears when the altimeter is operating in backup
+(standby) mode (not visible in this image).</p>
 <blockquote>
 <p>💡 At high speeds and below 10,000 feet, pressure effects can produce significant readout errors:
 up to 1,200 feet when transonic and up to 4,000 feet when supersonic.</p>
@@ -2089,18 +2097,18 @@ settings.</li>
 <p>The servopneumatic altimeter provides altitude indication using both electrical and pressure-based
 systems.</p>
 <h3 id="altimeter-readout-1"><a class="header" href="#altimeter-readout-1">Altimeter Readout</a></h3>
-<p>The altimeter readout (<num>1</num>) displays altitude digitally on three drums indicating 10,000,
-1,000, and 100 feet.</p>
+<p>The altimeter readout (<num>1</num>) displays altitude using three digital drums for 10,000, 1,000,
+and 100 feet, and a pointer on a circular scale indicating hundreds of feet.</p>
 <p>A pointer on the circular scale provides continuous indication in hundreds of feet.</p>
 <h3 id="baroset-knob-1"><a class="header" href="#baroset-knob-1">Baroset Knob</a></h3>
-<p>The baroset knob (<num>2</num>) sets local barometric pressure in inches of mercury (inHg).</p>
-<p>This setting affects only the local altimeter display. All CADC-driven displays use a fixed
-reference of 29.92 inHg.</p>
-<h3 id="local-barometric-pressure-window"><a class="header" href="#local-barometric-pressure-window">Local Barometric Pressure Window</a></h3>
+<p>The baroset knob (<num>2</num>) sets local barometric pressure in inches of mercury (in.Hg).</p>
+<p>This setting only affects the local altimeter display. Other CADC-driven digital indicators use a
+fixed 29.92 in.Hg reference.</p>
+<h3 id="local-barometric-pressure-window-1"><a class="header" href="#local-barometric-pressure-window-1">Local Barometric Pressure Window</a></h3>
 <p>The local barometric pressure window (<num>3</num>), also known as the Kollsman window, displays the
 selected pressure setting.</p>
 <h3 id="mode-switch-1"><a class="header" href="#mode-switch-1">Mode Switch</a></h3>
-<p>The mode switch (<num>4</num>) is a three-position, spring-loaded switch.</p>
+<p>The mode switch (<num>4</num>) selects altimeter operating mode and is spring-loaded from RESET.</p>
 <ul>
 <li>RESET - When CADC power and altitude data are available, holding RESET for approximately three
 seconds enables normal servoed operation.</li>
@@ -2108,8 +2116,13 @@ seconds enables normal servoed operation.</li>
 </ul>
 <p>If CADC data or electrical power is absent for more than three seconds, the system automatically
 reverts to standby mode.</p>
-<h3 id="standby-flag"><a class="header" href="#standby-flag">Standby Flag</a></h3>
-<p>The STBY flag (<num>5</num>) appears when the altimeter is operating in backup (standby) mode.</p>
+<h3 id="stby-flag-1"><a class="header" href="#stby-flag-1">STBY Flag</a></h3>
+<p>The STBY flag is a red standby indication that appears when the altimeter is operating in backup
+(standby) mode (not visible in this image).</p>
+<blockquote>
+<p>💡 At high speeds and below 10,000 feet, pressure effects can produce significant readout errors:
+up to 1,200 feet when transonic and up to 4,000 feet when supersonic.</p>
+</blockquote>
 <h2 id="airspeed-mach-indicator-1"><a class="header" href="#airspeed-mach-indicator-1">Airspeed Mach Indicator</a></h2>
 <p><img src="cockpit/rio/../../img/cockpit_detail_rio_mach.jpg" alt="mach" /></p>
 <p>The airspeed Mach indicator displays indicated airspeed and Mach number.</p>
