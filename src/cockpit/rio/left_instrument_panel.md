@@ -9,17 +9,17 @@ systems.
 
 ### Altimeter Readout
 
-The altimeter readout (<num>1</num>) displays altitude digitally on three drums indicating 10,000,
-1,000, and 100 feet.
+The altimeter readout (<num>1</num>) displays altitude using three digital drums for 10,000, 1,000,
+and 100 feet, and a pointer on a circular scale indicating hundreds of feet.
 
 A pointer on the circular scale provides continuous indication in hundreds of feet.
 
 ### Baroset Knob
 
-The baroset knob (<num>2</num>) sets local barometric pressure in inches of mercury (inHg).
+The baroset knob (<num>2</num>) sets local barometric pressure in inches of mercury (in.Hg).
 
-This setting affects only the local altimeter display. All CADC-driven displays use a fixed
-reference of 29.92 inHg.
+This setting only affects the local altimeter display. Other CADC-driven digital indicators use a
+fixed 29.92 in.Hg reference.
 
 ### Local Barometric Pressure Window
 
@@ -28,7 +28,7 @@ selected pressure setting.
 
 ### Mode Switch
 
-The mode switch (<num>4</num>) is a three-position, spring-loaded switch.
+The mode switch (<num>4</num>) selects altimeter operating mode and is spring-loaded from RESET.
 
 - RESET - When CADC power and altitude data are available, holding RESET for approximately three
   seconds enables normal servoed operation.
@@ -37,9 +37,13 @@ The mode switch (<num>4</num>) is a three-position, spring-loaded switch.
 If CADC data or electrical power is absent for more than three seconds, the system automatically
 reverts to standby mode.
 
-### Standby Flag
+### STBY Flag
 
-The STBY flag (<num>5</num>) appears when the altimeter is operating in backup (standby) mode.
+The STBY flag is a red standby indication that appears when the altimeter is operating in backup
+(standby) mode (not visible in this image).
+
+> 💡 At high speeds and below 10,000 feet, pressure effects can produce significant readout errors:
+> up to 1,200 feet when transonic and up to 4,000 feet when supersonic.
 
 ## Airspeed Mach Indicator
 
