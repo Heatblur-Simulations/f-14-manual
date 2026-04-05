@@ -4,118 +4,125 @@
 
 ![Hook Panel](../../img/cockpit_detail_pilot_hook.jpg)
 
-Panel controlling arrestor hook.
+Panel controlling arresting hook operation.
 
-### HOOK handle
+### Hook Handle
 
-Arresting hook handle, selects arresting hook position.
+The HOOK handle (<num>1</num>) selects arresting hook position.
 
-- **UP** - Electrically actuates hydraulic retraction of the hook and locks it
-  in the up-lock.
-- **DOWN** - Electrically releases hydraulic pressure allowing hook to extend
-  via dashpot pressure and gravity.
-- **EMERG DOWN** - When handle is pulled and twisted counter-clockwise the hook
-  is mechanically released for extension.
+- UP - Electrically commands hydraulic retraction of the hook and locks it in the up-lock.
+- DOWN - Electrically releases hydraulic pressure, allowing the hook to extend by dashpot pressure
+  and gravity.
+- EMERG DOWN - When the handle is pulled and rotated counter-clockwise, the hook is mechanically
+  released for emergency extension.
 
 ### Hook Transition Light
 
-Lights when hook position does not correspond to handle position. Will not turn
-off until fully extended and may remain illuminated when lowered at high speeds
-due to hook blowback.
+The hook transition light (<num>2</num>) illuminates when hook position does not correspond to
+handle position.
+
+The light will not extinguish until the hook is fully extended and may remain illuminated during
+high-speed extension due to hook blowback.
 
 ### Rounds Remaining Counter
 
-Rounds remaining indicator for M-61A1 gun. Counts down from 676 but can be reset
-to desired readout with the knob on the right side.
+The rounds remaining counter (<num>3</num>) displays remaining M61A1 gun ammunition.
+
+The counter normally counts down from 676 rounds and may be manually reset to a desired value using
+the adjustment knob on the right side.
 
 ## Displays Control Panel
 
 ![Displays Panel](../../img/cockpit_detail_pilot_displays.jpg)
 
-> 💡 Image shows an F-14A with AN/ALR-45 having a third option on the HSD MODE
-> and an ECM ORIDE which are not present in aircraft with the AN/ALR-67.
+> 💡 Image shows an F-14A with AN/ALR-45 having a third option on the HSD MODE and an ECM ORIDE
+> which are not functional but are present in some aircraft with the AN/ALR-67.
 
-Control panel for front cockpit displays.
+Control panel for front cockpit display configuration.
 
-### STEERING CMD selectors
+### Steering Command Selectors
 
-Selects current source for steering commands. Selectors are mutually exclusive
-and turn to indicate the selected option.
+The STEERING CMD selectors (<num>1</num>) select the source of steering command information.
 
-- **TACAN** - Selects TACAN as steering command source.
-- **DEST** - Selects RIO set waypoint as steering command source.
-- **AWL/PCD** - All-weather landing/precision course direction, selects
-  glideslope guidance (ILS/ACLS) for landing or PCD for air-to-ground engagement
-  directions as steering command source.
-- **VEC** - Vector, selects data link deviation steering as steering command
-  source.
-- **MAN** - Manual, selects manually selected course and heading as steering
-  command source.
+The selectors are mutually exclusive and rotate to indicate the active selection.
 
-### MODE selectors
+- TACAN - TACAN provides steering information.
+- DEST - Steering commands based on the RIO-selected waypoint.
+- AWL/PCD - Selects glideslope guidance (ILS or ACLS) for landing or PCD steering for air-to-ground
+  delivery.
+- VEC - Data link vector steering commands.
+- MAN - Manual course and heading steering.
 
-Selects display mode. Selectors are mutually exclusive and turn to indicate
-selected mode.
+### Mode Selectors
 
-- **T.O.** - Selects takeoff mode.
-- **CRUISE** - Selects cruise mode.
-- **A/A** - Selects air-to-air mode.
-- **A/G** - Selects air-to-ground mode.
-- **LDG** - Selects landing mode.
+The MODE selectors (<num>2</num>) determine overall display mode.
 
-### HUD DECLUTTER switch
+Selectors are mutually exclusive and rotate to indicate the selected mode.
 
-Selects declutter mode for HUD.
+- T.O. - Takeoff mode.
+- CRUISE - Cruise mode.
+- A/A - Air-to-air mode.
+- A/G - Air-to-ground mode.
+- LDG - Landing mode.
 
-### HUD AWL switch
+### HUD Declutter Switch
 
-Selects which AWL information to display on HUD.
+The HUD DECLUTTER switch (<num>3</num>) selects declutter level for HUD symbology.
 
-- **ILS** - Selects ILS as source for AWL information.
-- **ACL** - Selects ACL as source for AWL information.
+### HUD AWL Switch
 
-### VDI MODE switch
+The HUD AWL switch (<num>4</num>) selects the source of all-weather landing information displayed on
+the HUD.
 
-Selects what to display on VDI.
+- ILS - ILS is used as the AWL source.
+- ACL - ACLS is used as the AWL source.
 
-- **TV** - Displays video from TCS or LANTIRN on VDI.
-- **NORM** - Displays normal VDI display.
+### VDI Mode Switch
 
-### VDI AWL switch
+The VDI MODE switch (<num>5</num>) selects the display content shown on the VDI.
 
-Selects which AWL information to display on VDI.
+- TV - Displays video from TCS or LANTIRN.
+- NORM - Displays the standard VDI presentation.
 
-- **ILS** - Selects ILS as source for AWL information.
-- **ACL** - Selects ACL as source for AWL information.
+### VDI AWL Switch
 
-### HSD MODE switch
+The VDI AWL switch (<num>6</num>) selects the AWL source displayed on the VDI.
 
-Selects what to display on HSD.
+- ILS - ILS-based AWL information.
+- ACL - ACLS-based AWL information.
 
-- **NAV** - Navigational display, shows steering information depending on
-  selected steering command source.
-- **TID** - Display repeating the RIO TID information. If RIO has TID set to TV
-  the screen will be blank.
-- **ECM** - Display ECM information from AN/ALR-45 and AN/ALR-50. (F-14A with
-  AN/ALR-45 only.)
+### HSD Mode Switch
 
-### POWER switches
+The HSD MODE switch (<num>7</num>) selects the display content shown on the HSD.
 
-Power switches for VDI, HUD, and HSD/ECMD.
+- NAV - Navigation display showing steering information based on selected steering command source.
+- TID - Repeats the RIO Tactical Information Display. If the RIO TID is set to TV, the display will
+  be blank.
+- ECM - Displays ECM information from AN/ALR-45 and AN/ALR-50 (F-14A with AN/ALR-45/50 only).
 
-### PITCH LAD BRT knob
+### Display Power Switches
 
-Controls brightness of pitch ladder on HUD.
+The POWER switches (<num>8</num>) control electrical power to the VDI, HUD, and HSD/ECMD.
 
-### HSD ECM ORIDE switch
+### Pitch Ladder Brightness Knob
 
-Sets if the ECM is allowed to override the current display on the HSD if a
-threat is detected. ORIDE allows override and OFF disables it. Only present in
-aircraft with AN/ALR-45.
+The PITCH LAD BRT knob (<num>9</num>) controls brightness of the HUD pitch ladder.
+
+### HSD ECM Override Switch
+
+The HSD ECM ORIDE switch (<num>10</num>) determines whether ECM information is allowed to override
+the current HSD display when a threat is detected.
+
+- ORIDE - Allows ECM override.
+- OFF - Prevents ECM override.
+
+Only functional in aircraft equipped with the AN/ALR-45/50.
 
 ## Elevation Lead Panel
 
 ![Gun Elevation](../../img/cockpit_detail_pilot_gunelevation.jpg)
 
-Used to set gun elevation lead in mils for the manual A/A and A/G gun modes.
-Limits are -263 and +87 mils.
+The elevation lead panel (<num>11</num>) sets gun elevation lead in mils for manual air-to-air and
+air-to-ground gun modes.
+
+Adjustment range is from −263 to +87 mils.
