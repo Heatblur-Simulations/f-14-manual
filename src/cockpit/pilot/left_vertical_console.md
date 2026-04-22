@@ -4,94 +4,101 @@
 
 ![Fuel Management](../../img/cockpit_detail_pilot_fuel.jpg)
 
-Control panel for various fuel-related systems, CADC master reset, and the
-anti-skid system.
+Control panel for fuel system management, CADC master reset, and anti-skid and spoiler brake
+control.
 
-### QTY SEL switch
+### Quantity Selector Switch
 
-Switch (<num>1</num>) selecting what the fuel quantity tapes on the fuel
-quantity display shows. Spring-loaded to FEED.
+The QTY SEL switch (<num>1</num>) selects which fuel quantities are displayed on the fuel quantity
+indicator tapes.
 
-- **FEED** - Shows respective feed and fuselage tank fuel quantity.
-- **WING** - Shows respective wing tank fuel quantity.
-- **EXT** - Shows respective external fuel tank quantity.
+The switch is spring-loaded to FEED.
 
-### FEED switch
+- FEED — Displays respective feed and fuselage tank quantities.
+- WING — Displays respective wing tank quantities.
+- EXT — Displays respective external tank quantities.
 
-Switch (<num>2</num>) selecting fuel feed to the engines. Guard locks the switch
-to NORM until lifted.
+### Fuel Feed Switch
 
-### WING/EXT TRANS switch
+The FEED switch (<num>2</num>) selects fuel feed routing to the engines.
 
-Switch (<num>3</num>) selecting operation of the wing and external tanks.
+The guard locks the switch in NORM until lifted.
 
-- **ORIDE** - Override.
-- **AUTO** - Normal position.
-- **OFF** - Turns off fuel feed from the wing and external tanks.
+### Wing/External Transfer Switch
 
-### Refueling probe indicator light
+The WING/EXT TRANS switch (<num>3</num>) controls operation of wing and external fuel tank transfer.
 
-Transition light (<num>4</num>) illuminated when refueling probe is not in
-extended or retracted position.
+- ORIDE — Overrides automatic transfer logic.
+- AUTO — Normal automatic operation.
+- OFF — Disables fuel feed from wing and external tanks.
 
-### DUMP switch
+### Refueling Probe Indicator Light
 
-OFF/DUMP switch (<num>5</num>). Allows fuel dump when speed brakes are
-retracted, afterburner off and weight off wheels.
+The refueling probe transition light (<num>4</num>) illuminates when the probe is neither fully
+extended nor fully retracted.
 
-### REFUEL PROBE switch
+### Fuel Dump Switch
 
-Selection switch (<num>6</num>) toggling operation of refueling probe.
+The DUMP switch (<num>5</num>) enables fuel dumping when placed in DUMP.
 
-- **ALL EXTD** - All extended, extends refueling probe and allows refueling of
-  all tanks. Also resets WING/EXT TRANS switch to AUTO.
-- **FUS EXTD** - Fuselage extended, extends refueling probe and allows refueling
-  of only fuselage tanks.
-- **RET** - Retracted, retracts refueling probe.
+Fuel dumping is permitted only when speed brakes are retracted, afterburner is off, and weight is
+off wheels.
 
-### ANTI SKID SPOILER BK switch
+### Refueling Probe Switch
 
-Selection switch (<num>7</num>) determining operation anti-skid and spoiler
-brake systems.
+The REFUEL PROBE switch (<num>6</num>) controls refueling probe operation.
 
-- **BOTH** - Enables both anti-skid and spoiler brake function with weight on
-  wheels.
-- **OFF** - Turns off both systems.
-- **SPOILER BK** - Spoiler brake, enables spoiler brake function with weight on
-  wheels.
+- ALL EXTD — Extends the refueling probe and allows refueling of all tanks. Also resets the WING/EXT
+  TRANS switch to AUTO.
+- FUS EXTD — Extends the refueling probe and allows refueling of fuselage tanks only.
+- RET — Retracts the refueling probe.
 
-### MASTER RESET button
+### Anti-Skid / Spoiler Brake Switch
 
-Button (<num>8</num>) that resets CADC failure detection system and associated
-fault displays.
+The ANTI SKID SPOILER BK switch (<num>7</num>) selects braking system operation with weight on
+wheels.
+
+- BOTH — Enables both anti-skid and spoiler brake functions.
+- OFF — Disables both systems.
+- SPOILER BK — Enables spoiler braking only.
+
+### Master Reset Button
+
+The MASTER RESET button (<num>8</num>) resets the CADC failure detection system and clears
+associated fault indications.
 
 ## Control Surface Position Indicator
 
 ![Control Surface](../../img/cockpit_detail_pilot_control.jpg)
 
-Indicator for indication of control surface positions.
+Provides indication of aircraft control surface positions.
 
-|     | Indicator  | Function                                                              |
-| --- | ---------- | --------------------------------------------------------------------- |
-| 1   | SPOILER    | Spoiler position indicators.                                          |
-| 2   | RUDDER     | Rudder position indicators, shows position of left and right rudders. |
-| 3   | HORIZ TAIL | Horizontal stabilizer position indicators.                            |
+### Spoiler Position Indicators
 
-Left and right Rudder and Horizontal Tail Stabilizers are represented by symbols
-L and R respectively.
+The spoiler indicators (<num>1</num>) show spoiler position.
 
-The Spoiler position indications are as follows:
+- DN — Spoilers down and flush with the wing.
+- Up-arrow — Spoilers extended above the wing.
+- Down-arrow — Spoilers drooped below the wing surface.
 
-- DN - Down, flush with wings
-- Up-arrow - Extended above wing
-- Down-arrow - Drooped below wing surface
+### Rudder Position Indicators
+
+The rudder indicators (<num>2</num>) display left and right rudder positions, identified by L and R
+symbols.
+
+### Horizontal Tail Position Indicators
+
+The horizontal stabilizer indicators (<num>3</num>) display left and right tail positions,
+identified by L and R symbols.
 
 ## Launch Bar Abort Panel
 
 ![Launch Abort](../../img/cockpit_detail_pilot_launch-abort.jpg)
 
-Selection switch that when held in ABORT lifts the launch bar for launch
-abortion. Spring-loaded to NORM (Normal) which is the standard position.
+The launch bar abort switch is used to abort catapult launches.
+
+When held in ABORT, the launch bar is raised. The switch is spring-loaded back to NORM, which is the
+standard position.
 
 > 💡 Not currently used in DCS.
 
@@ -99,50 +106,42 @@ abortion. Spring-loaded to NORM (Normal) which is the standard position.
 
 ![Gear Control](../../img/cockpit_detail_pilot_gear.jpg)
 
-Control panel for the main landing gear and emergency stores jettison.
-
-|     | Control/Indicator      | Function                                                                        |
-| --- | ---------------------- | ------------------------------------------------------------------------------- |
-| 1   | LDG GEAR               | Landing gear handle                                                             |
-| 2   | DOWN LOCK ORIDE        | Indicates weight on wheels when moved down by solenoid.                         |
-| 3   | HYD ISOL               | Switch isolating gear, nosewheel steering and brakes from the hydraulic system. |
-| 4   | Transition light       | Illuminates to indicate gear position not according to handle position.         |
-| 5   | Wheels-flaps indicator | Indicates various positions, see below for details.                             |
-| 6   | EMERG STORES button    | Emergency stores jettison. Illuminates to indicate activation when pressed.     |
-| 7   | NOSE STRUT switch      | Switch selecting nosewheel strut retraction.                                    |
-| 8   | BRAKE-PULL handle      | Parking brake, pull out to apply parking brake, push in to release.             |
-| 9   | EJECT CMD indicator    | Indicates ejection system mode for the back seat.                               |
+Control panel for landing gear operation and emergency stores jettison.
 
 ### Landing Gear Handle
 
-Selects gear UP or DOWN.
+The LDG GEAR handle (<num>1</num>) selects landing gear UP or DOWN.
 
-For emergency extension in DOWN position, push handle in, turn clockwise and
-pull out. This releases a compressed nitrogen charge for emergency extension.
+For emergency extension with the handle in DOWN, push the handle in, rotate it clockwise, and pull
+outward. This releases a compressed nitrogen charge to extend the gear.
 
 ### Down Lock Override
 
-Indicates weight on wheels when moved down by solenoid. Can be lifted up to
-override.
+The DOWN LOCK ORIDE indicator (<num>2</num>) moves down by solenoid to indicate weight on wheels.
 
-> 💡 Non-functional in DCS.
+The indicator may be lifted to override the signal.
 
-### Hydraulic Isolation
+### Hydraulic Isolation Switch
 
-Switch isolating landing gear, nosewheel steering and wheel brakes from the
-combined hydraulic system. Is automatically moved to T.O./LDG by LDG GEAR in
-DOWN position.
+The HYD ISOL switch (<num>3</num>) isolates landing gear, nosewheel steering, and wheel brakes from
+the combined hydraulic system.
 
-- FLT - In flight operation, isolates systems listed above.
-- T.O./LDG - Take-off/landing, connects systems listed above, allowing them to
-  operate.
+The switch is automatically moved to T.O./LDG when the landing gear handle is in the DOWN position.
+
+- FLT — In-flight operation. Isolates listed systems.
+- T.O./LDG — Takeoff and landing operation. Connects listed systems.
+
+### Landing Gear Transition Light
+
+The transition light (<num>4</num>) illuminates when landing gear position does not match handle
+position.
 
 ### Wheels and Flaps Position Indicator
 
-![Gear Control](../../img/cockpit_detail_pilot_wheels-flaps.jpg)
+The wheels-flaps indicator (<num>5</num>) displays positions of flaps, slats, speed brakes, and
+landing gear.
 
-Indicates position of flaps and slats, speed brakes, and the landing gear. The
-slats are indicated as follows:
+#### Slat Indications
 
 | Indication                                                       | State                                 |
 | ---------------------------------------------------------------- | ------------------------------------- |
@@ -150,9 +149,10 @@ slats are indicated as follows:
 | ![Slats extended](../../img/cockpit_detail_pilot_slats-ext.jpg)  | Slats extended.                       |
 | ![Slats retracted](../../img/cockpit_detail_pilot_slats-ret.jpg) | Slats retracted.                      |
 
-Flap Position is displayed by an indicator moving between UP and DOWN. The first
-marked section of the indicator indicates maneuver flap-range. The landing gear
-is indicated as follows:
+Flap position is shown by a pointer moving between UP and DOWN. The first marked segment represents
+the maneuver flap range.
+
+#### Landing Gear Indications
 
 | Indication                                                                     | State                            |
 | ------------------------------------------------------------------------------ | -------------------------------- |
@@ -160,7 +160,7 @@ is indicated as follows:
 | ![Gear down](../../img/cockpit_detail_pilot_gear-down.jpg)                     | Gear down.                       |
 | ![Gear retracted and doors closed](../../img/cockpit_detail_pilot_gear-up.jpg) | Gear retracted and doors closed. |
 
-Speed brakes are indicated as follows:
+#### Speed Brake Indications
 
 | Indication                                                         | State                                         |
 | ------------------------------------------------------------------ | --------------------------------------------- |
@@ -169,18 +169,33 @@ Speed brakes are indicated as follows:
 | ![Brake out](../../img/cockpit_detail_pilot_brake-out.jpg)         | Speed brake fully extended.                   |
 | ![Brake in](../../img/cockpit_detail_pilot_brake-in.jpg)           | Speed brake retracted.                        |
 
+### Emergency Stores Jettison Button
+
+The EMERG STORES button (<num>6</num>) commands emergency jettison of all expendable stores.
+
+The button illuminates to indicate activation upon press.
+
 ### Nose Strut Switch
 
-Switch selecting nosewheel strut retraction.
+The NOSE STRUT switch (<num>7</num>) controls nosewheel strut position.
 
-- EXTD - Extend, extends nosewheel strut and raises and locks launch bar.
-- OFF - Turns off nosewheel strut movement, spring-loaded to this position.
-- KNEEL - Releases pressure from nosewheel strut to retract it, kneeling
-  aircraft. Also unlocks launch bar.
+- EXTD — Extends the nose strut and raises and locks the launch bar.
+- OFF — Turns off nosewheel strut movement. Spring-loaded to this position.
+- KNEEL — Releases strut pressure to retract the nose strut, kneeling the aircraft and unlocking the
+  launch bar.
 
-### EJECT CMD Indicator
+### Brake Pull Handle
 
-Indicates ejection system mode for the back seat.
+The BRAKE-PULL handle (<num>8</num>) applies or releases the parking brake.
 
-- PILOT - Pilot ejects both crewmembers, RIO only himself.
-- MCO - Each position ejects both crewmen.
+Pull out to apply the parking brake. Push in to release.
+
+### Eject Command Indicator
+
+The EJECT CMD indicator (<num>9</num>) displays the current ejection command logic for the rear
+cockpit.
+
+- PILOT — Pilot ejects both crewmembers; RIO ejects only himself.
+- MCO — Either crewmember ejects both crew.
+
+> 💡 Currently non-functional in DCS.
