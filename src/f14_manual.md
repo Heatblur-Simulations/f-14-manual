@@ -7,8 +7,8 @@
 ## 内容
 
 1. [简介](intro/introduction.md)
-2. [驾驶舱简介](cockpit/overview.md)
-3. [系统概述](systems/overview.md)
+2. [驾驶舱总览](cockpit/overview.md)
+3. [系统总览](systems/overview.md)
 4. [武器 & 挂载](stores/overview.md)
 5. [Jester & Iceman](jester_iceman/overview.md)
 6. [正常程序](procedures/overview.md)
