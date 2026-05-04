@@ -3,11 +3,11 @@
 Heatblur Simulations™\
 Ulica Wrzosowa 11, 72-602, Świnoujście, Poland
 
-Contact: <support@heatblur.se>
+联系: <support@heatblur.se>, [中文手册反馈](https://space.bilibili.com/12508032)
 
 <https://store.heatblur.com/>
 
-## The Heatblur F-14 Team
+## Heatblur F-14 团队
 
 Nicholas Dackard, Creative Director and Lead Artist\
 Daniel Malmquist, Lead Engineer (Flight Dynamics and JESTER-AI)\
@@ -20,7 +20,7 @@ Andreas Sandin - Lead Design, Web-Design and Liveries\
 Adrian Caparzo, Video Editing and Trailers\
 Grayson Frohberg, Voice of the JESTER-AI
 
-### Post Release
+### 发布后
 
 Daniel Tischner, Senior Programmer (UI, Systems and AI)\
 Dominik Głowacki, Senior Programmer (Systems, Avionics, AI)\
