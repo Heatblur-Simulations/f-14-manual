@@ -17,6 +17,7 @@
 9. [缩写](abbreviations.md)
 10. [教学视频](tutorials.md)
 11. [版权说明](imprint.md)
+12. [中文本地化](cn.md)
 
 <!-- markdown-link-check-disable -->
 
