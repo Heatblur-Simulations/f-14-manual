@@ -1,137 +1,125 @@
-# Right Instrument Panel
+# 右仪表板
 
-## Wing-Sweep Indicator
+## 机翼后掠指示器
 
 ![wing-weep](../../img/cockpit_detail_pilot_wingsweep.jpg)
 
-Indicator detailing status of the wing-sweep system.
+用于显示后掠翼系统的详细状态。
 
-Leftmost indicator pointer shows wing-sweep program position which is also the max forward angle at
-present airspeed and altitude.
+最左侧的指针指示了机翼后掠控制程序选定的后掠位置，同样为当前的空速和高度下的最小后掠角度。
 
-Middle tape shows commanded wing-sweep position.
+中间的带状指示器显示了指令的后掠位置。
 
-Rightmost tape shows actual wing-sweep position.
+最右侧指示带显示了实际的机翼后掠位置。
 
-The five indicator windows shows current operating mode.
+右侧五个垂直排列的显示窗口显示了当前的机翼后掠工作模式。
 
-## Right Engine Fuel Shutoff Handle
+## 右发断油手柄
 
 ![right engine shutoff](../../img/cockpit_detail_pilot_rightengineshutoff.jpg)
 
-Emergency fuel shutoff handle for the right engine.
+紧急情况下，抽出手柄来切断右发动机供油。
 
-Pulling the handle shuts off fuel flow to the right engine. Pushing the handle in restores fuel
-flow.
+将手柄推入正常位置来重新向发动机注入燃油。
 
-This handle should not be used for normal engine shutdown.
+但这个手柄不应用于正常关闭发动机。
 
-The right engine fire extinguishing button is located behind the handle and is accessible when the
-handle is pulled outward.
+右发灭火按钮在手柄后方，抽出手柄后方可使用灭火按钮。
 
-## Standby Attitude Indicator
+## 备用姿态仪
 
 ![standby attitude](../../img/cockpit_detail_pilot_standbyattitude.jpg)
 
-Standalone standby attitude indicator.
+独立工作的备用姿态仪。
 
-An OFF flag is visible on the left side when caged or when unpowered.
+表盘左侧显示的 OFF 标识旗表示备用姿态仪锁定或未通电。
 
-The knob below and to the right of the indicator cages/uncages the indicator and allows trim to
-correct pitch. In pulled out position the indicator is caged. When pushed in uncages the indicator
-and allows pitch trim by turning the knob.
+位于表盘右下方的旋钮用于锁定/解锁姿态仪和调节俯仰梯度显示。旋钮抽出时，姿态仪锁定。旋钮按下解锁姿态仪时，转动旋钮可以调节俯仰梯度指示线。
 
-## UHF/VHF Remote Indicators
+## UHF/VHF 远程显示器
 
 ![front remote](../../img/cockpit_detail_pilot_frontremote.jpg)
 
-Remote indicators display frequency or channel information for UHF 1 and V/UHF 2 radios.
+这个远程显示器用于显示 UHF 1（AN/ARC-159）和 V/UHF 2（AN/ARC-182）中调定的频率或波道。
 
-### UHF 1 Remote Indicator
+### UHF 1 远程波道/频率显示器（飞行员）
 
-The UHF 1 remote indicator (<num>1</num>) displays the currently selected frequency or channel for
-the AN/ARC-159.
+(<num>1</num>) 显示 UHF 1 无线电台调定的频率或波道。
 
-### V/UHF 2 Remote Indicator
+### V/UHF 2 远程波道/频率显示器（飞行员）
 
-The V/UHF 2 remote indicator (<num>2</num>) displays the currently selected frequency or channel for
-the AN/ARC-182.
+(<num>2</num>) 显示 V/UHF 2 无线电台调定的频率或波道。
 
-The operation of the DIM and BRT knob as well as TEST button are the same for both indicators.
+DIM 和 BRT 旋钮以及 TEST 按钮的操作方式在这两个显示器上是一样的。
 
-The DIM and BRT knobs control display brightness.
+DIM 和 BRT 旋钮用于控制显示器亮度。
 
-The TEST button initiates a self-test. A correct test result displays 888.888.
+TEST 按钮开始显示器自检，如果通过自检，显示器中会显示 888.888。
 
-## Bearing Distance Heading Indicator (BDHI)
+## 方位距离航向指示器（BDHI）
 
 ![bdhi](../../img/cockpit_detail_pilot_bdhi.jpg)
 
-Provides azimuth, bearing, and distance information.
+用于显示方位和航向信息。
 
-### No. 2 Bearing Pointer
+### 二号方位指针
 
-The No. 2 bearing pointer (<num>1</num>) indicates magnetic course to the tuned TACAN station.
+(<num>1</num>) 用来指示选定 TACAN 台的磁方位。
 
-### Compass Rose
+### 罗盘指针
 
-The compass rose (<num>2</num>) displays current aircraft magnetic heading.
+(<num>2</num>) 显示当前飞机的磁航向。
 
-### No. 1 Bearing Pointer
+### 一号方位指针
 
-The No. 1 bearing pointer (<num>3</num>) indicates bearing to the tuned UHF/ADF station.
+(<num>3</num>) 指向选定 UHF/ADF 电台的方位。
 
-### Distance Counter
+### 距离计数器
 
-The distance counter (<num>4</num>) displays slant range to the tuned TACAN station in nautical
-miles (not visible in this image).
+(<num>4</num>) 以海里为单位显示选定 TACAN 台的斜距。（图中不可见）
 
-## ALR-67 Indicator
+## ALR-67 显示器
 
 ![alr-67](../../img/cockpit_detail_pilot_alr-67.jpg)
 
-Displays radar emitters detected by the ALR-67 radar warning receiver.
+用于显示 ALR-67 RWR（雷达告警接收机）套件探测到的辐射源。
 
-### Threat Display Bands
+### 威胁区
 
-- Non-lethal band (<num>2</num>) - Displays emitters not considered an immediate threat due to range
-  or lack of weapon capability.
-- Lethal band (<num>3</num>) - Displays emitters capable of engaging own aircraft but not currently
-  doing so.
-- Critical band (<num>4</num>) - Displays direct threats to own aircraft. Systems capable of
-  engaging own aircraft and showing current intent of doing so.
+- 非致命威胁区 (<num>2</num>) - 显示辐射源没有直接威胁到本机，显示在这个区域内表示系统认为本机在辐射源的射程外或辐射源未装备武器。
+- 致命威胁区 (<num>3</num>) - 显示 RWR 认为本机进入威胁的攻击射程内并且装备武器，但还未攻击本机。
+- 严重威胁区 (<num>4</num>) - 显示对本机构成直接威胁的辐射源。辐射源有能力攻击本机，且攻击意图明显。
 
-### System Status Circle
+### 系统状态圈
 
-The system status circle (<num>1</num>) is divided into three areas.
+系统状态圈 (<num>1</num>) 分为三个区域。
 
-**Area I (upper left quadrant)** displays threat prioritization symbols:
+**区域 I (左上象限)** 示的符号代表威胁目标的显示类型：
 
-- N - Normal.
-- I - AI, Airborne interceptors prioritized.
-- A - AAA, Anti-air artillery prioritized.
-- U - Unknown emitters prioritized.
-- F - Friendly emitters displayed in addition to threats.
+- N - 正常优先级。
+- I - AI，优先显示机载截击雷达威胁。
+- A - AAA，优先显示高射炮威胁。
+- U - 优先显示不明辐射源。
+- F - 显示其他雷达威胁的同时也显示友方辐射源。
 
-**Area II (upper right quadrant)** indicates limited mode status.
+**区域 II (右上象限)** 指示 ARL-67 是否处于限制模式。
 
-- (Blank) - Limited mode not selected.
-- L - Limited mode selected. Only the six highest-priority threats are shown.
+- (空白) - 未选择限制模式。
+- L - 选用限制模式，只显示威胁最高的6个雷达威胁。
 
-**Area III (lower half)** displays system status and offset information:
+**区域 III (下半部分)** 显示系统状态和偏置信息：
 
-- (Blank) - Normal operation.
-- B - BIT failure.
-- T - Thermal overload.
-- O - Offset display selected. Threats will be separated to allow readout of overlapping symbols.
-  Bearing accuracy degraded for displaced threats.
+- (空白) - 正常工作。
+- B - BIT（自检）未通过。
+- T - 热过载。
+- O - 选择了偏置显示模式。重叠的威胁目标符号会偏置显示，以增强可读性。选择偏置显示模式时，显示器指示目标方位信息的精度会下降。
 
-### Intensity Control Knob
+### INT（亮度）控制旋钮
 
-The INT knob (<num>5</num>) adjusts display brightness.
+亮度控制旋钮 (<num>5</num>)。用于控制显示器的亮度。
 
-## Canopy Jettison Handle
+## 座舱盖抛离手柄
 
 ![canopy jettison](../../img/cockpit_detail_pilot_canopyjettison.jpg)
 
-The canopy jettison handle is used to manually jettison the canopy during emergency egress.
+用于手动抛离座舱盖。

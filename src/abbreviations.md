@@ -1,339 +1,363 @@
-# Acronyms and Abbreviations
+# 首字母缩写和简称
 
 ## A
 
-| Abbreviation | Definition                        |
-| ------------ | --------------------------------- |
-| ACL          | Automatic Carrier Landing         |
-| ACLS         | Automatic Carrier Landing System  |
-| ACM          | Air Combat Maneuver               |
-| ACQ          | Acquisition                       |
-| ADF          | Automatic Direction Finder        |
-| ADI          | Attitude Director Indicator       |
-| ADL          | Armament Datum Line               |
-| AFCS         | Automatic Flight Control System   |
-| AFTC         | Augmenter Fan Temperature Control |
-| AHRS         | Attitude Heading Reference System |
-| AICS         | Air Inlet Control System          |
-| AOA          | Angle of Attack                   |
-| APC          | Approach Power Compensator        |
-| ASH          | Automatic Stored Heading          |
-| ATC          | Active Transfer Command           |
-| ATLS         | Automatic Thrust Limiting System  |
-| ATTK         | Attack                            |
-| AVTR         | Airborne Video Tape Recorder      |
-| AWL          | All-Weather Landing               |
+
+| 缩写 | 定义             |
+| ---- | ---------------- |
+| ACL  | 自动助降         |
+| ACLS | 自动助降系统     |
+| ACM  | 空战格斗         |
+| ACQ  | 截获             |
+| ADF  | 自动测向仪       |
+| ADI  | 姿态指引指示器   |
+| ADL  | 武器基准线       |
+| AFCS | 自动飞行控制系统 |
+| AFTC | 增推扇叶温度控制 |
+| AHRS | 姿态航向基准系统 |
+| AICS | 进气控制系统     |
+| AOA  | 迎角             |
+| APC  | 进近推力补偿器   |
+| ASH  | 自动预存航向     |
+| ATC  | 主动制导转交指令 |
+| ATLS | 自动推力限制系统 |
+| ATTK | 攻击             |
+| AVTR | 机载录像机       |
+| AWL  | 全天候助降       |
 
 ## B
 
-| Abbreviation | Definition                         |
-| ------------ | ---------------------------------- |
-| BATR         | Bullet at Target Range             |
-| BDHI         | Bearing-Distance-Heading Indicator |
-| BIT          | Built-in Test                      |
-| BRC          | Base Recovery Course               |
-| BRST         | Boresight                          |
-| BRU          | Bomb Rack Unit                     |
+
+| 缩写 | 定义                         |
+| ---- | ---------------------------- |
+| BATR | 目标距离上航炮炮弹通过的位置 |
+| BDHI | 方位-距离-航向指示器         |
+| BIT  | 自检                         |
+| BRC  | 母舰回收航线                 |
+| BRST | 瞄准轴                       |
+| BRU  | 炸弹挂架装置                 |
 
 ## C
 
-| Abbreviation | Definition                                  |
-| ------------ | ------------------------------------------- |
-| CADC         | Central Air Data Computer                   |
-| CAINS        | Carrier Aircraft Inertial Navigation System |
-| CANTCO       | Can't Comply                                |
-| CAP          | Computer Address Panel                      |
-| CCIP         | Continuously Computed Impact Point          |
-| CICU         | Computer Integrated Converter Unit          |
-| CLSN         | Collision                                   |
-| CM           | Continuous Monitor                          |
-| CRS          | Course                                      |
-| CRT          | Cathode Ray Tube                            |
-| CSA          | Continuous Semi-Active                      |
-| CSDC         | Computer Signal Data Converter              |
-| CTVS         | Cockpit Television Sensor                   |
-| CV           | Aircraft Carrier                            |
-| CW           | Continuous-Wave                             |
+
+| 缩写   | 定义                 |
+| ------ | -------------------- |
+| CADC   | 中央大气数据计算机   |
+| CAINS  | 舰载机惯性导航系统   |
+| CANTCO | 无法执行             |
+| CAP    | 计算机位址面板       |
+| CCIP   | 连续计算命中点       |
+| CICU   | 计算机综合转换器装置 |
+| CLSN   | 恒定角度拦截转向     |
+| CM     | 连续监视             |
+| CRS    | 航线                 |
+| CRT    | 阴极射线管           |
+| CSA    | 连续半主动           |
+| CSDC   | 计算机信号数据转换器 |
+| CTVS   | 驾驶舱电视传感器     |
+| CV     | 航空母舰             |
+| CW     | 连续波               |
 
 ## D
 
-| Abbreviation | Definition                           |
-| ------------ | ------------------------------------ |
-| DDD          | Detail Data Display                  |
-| DDI          | Digital Data Indicator               |
-| DECM         | Defensive Electronic Countermeasures |
-| DEF PT       | Defended Point                       |
-| DES          | Designate                            |
-| DEST         | Destination                          |
-| DF           | Direction Finder                     |
-| D/L          | Data Link                            |
-| DLC          | Direct Lift Control                  |
-| DME          | Distance Measuring Equipment         |
-| DPLR         | Doppler                              |
+
+| 缩写   | 定义             |
+| ------ | ---------------- |
+| DDD    | 详细数据显示器   |
+| DDI    | 数字数据显示面板 |
+| DECM   | 防御性电子对抗   |
+| DEF PT | 防御点           |
+| DES    | 指定             |
+| DEST   | 目标(点)         |
+| DF     | 测向仪           |
+| D/L    | 数据链路         |
+| DLC    | 直接升力控制     |
+| DME    | 测距装置         |
+| DPLR   | 多普勒           |
 
 ## E
 
-| Abbreviation | Definition                         |
-| ------------ | ---------------------------------- |
-| ECA          | Expanded Chaff Adapter             |
-| ECM          | Electronic Countermeasures         |
-| ECCM         | Electronic Counter-Countermeasures |
-| ECMD         | Electronic Countermeasures Display |
-| ECS          | Environmental Control System       |
-| EGT          | Exhaust Gas Temperature            |
-| EIG          | Engine Instrument Group            |
-| ETA          | Estimated Time of Arrival          |
-| EXP          | Expand                             |
-| FAR          | False Alarm Rate                   |
+
+| 缩写 | 定义                    |
+| ---- | ----------------------- |
+| ECA  | 箔条扩容适配器          |
+| ECM  | 电子对抗                |
+| ECCM | 电子反对抗              |
+| ECMD | 电子对抗显示器          |
+| ECS  | 环境控制系统            |
+| EGT  | 排气温度                |
+| EIG  | Engine Instrument Group |
+| ETA  | 预计到达时间            |
+| EXP  | 扩充                    |
+| FAR  | 虚警率                  |
 
 ## F
 
-| Abbreviation | Definition                          |
-| ------------ | ----------------------------------- |
-| FCLP         | Field Carrier Landing Practice      |
-| FEMS         | Fatigue Engine Monitoring System    |
-| FF           | Fuel Flow                           |
-| FLOLS        | Fresnel Lens Optical Landing System |
-| FMR          | Frequency Ranging                   |
-| FOV          | Field of View                       |
-| FRL          | Fuselage Reference Line             |
-| FSK          | Frequency-Shift-Keyed               |
-| FWD          | Forward                             |
+
+| 缩写  | 定义                   |
+| ----- | ---------------------- |
+| FCLP  | 岸基着舰练习           |
+| FEMS  | 发动机疲劳监视系统     |
+| FF    | 燃油流量               |
+| FLOLS | 菲涅耳透镜光学助降系统 |
+| FMR   | 调频测距               |
+| FOV   | 视场                   |
+| FRL   | 机身基准线             |
+| FSK   | 频率偏移调制           |
+| FWD   | 向前                   |
 
 ## G
 
-| Abbreviation | Definition                  |
-| ------------ | --------------------------- |
-| GACH         | Gimbal Angle Crosshair      |
-| GCI          | Ground Controlled Intercept |
-| GCS          | Gun Control System          |
-| GM           | Ground Map                  |
-| GPS          | Global Positioning System   |
-| GSS          | Gun Scoring System          |
-| GT           | Ground Track                |
+
+| 缩写 | 定义             |
+| ---- | ---------------- |
+| GACH | 环架角度十字准星 |
+| GCI  | 地面指挥截击     |
+| GCS  | 航炮控制系统     |
+| GM   | 地形测绘         |
+| GPS  | 全球定位系统     |
+| GSS  | 航炮命中指示系统 |
+| GT   | 地面航迹         |
 
 ## H
 
-| Abbreviation | Definition                      |
-| ------------ | ------------------------------- |
-| HB           | Homebase                        |
-| HCU          | Hand Control Unit               |
-| HDG          | Heading                         |
-| HOJ          | Home-on-Jam                     |
-| HOST         | Hostile                         |
-| HPRF         | High Pulse Repetition Frequency |
-| HSD          | Horizontal Situation Display    |
-| HSI          | Horizontal Situation Indicator  |
-| HUD          | Heads-up Display                |
+
+| 缩写 | 定义           |
+| ---- | -------------- |
+| HB   | 基地           |
+| HCU  | 手控装置       |
+| HDG  | 航向           |
+| HOJ  | 干扰源寻的     |
+| HOST | 敌机           |
+| HPRF | 高脉冲重复频率 |
+| HSD  | 水平状态显示器 |
+| HSI  | 水平状态指示器 |
+| HUD  | 平视显示器     |
 
 ## I
 
-| Abbreviation | Definition                        |
-| ------------ | --------------------------------- |
-| IAS          | Indicated Airspeed                |
-| ICLS         | Instrument Carrier Landing System |
-| ICS          | Intercommunications               |
-| IFF          | Identification Friend or Foe      |
-| IFR          | Instrument Flight Rules           |
-| IFT          | In-Flight Training                |
-| ILS          | Instrument Landing System (ICLS)  |
-| IMN          | Indicated Mach Number             |
-| IMU          | Inertial Measurement Unit         |
-| INS          | Inertial Navigation System        |
-| IP           | Initial Point                     |
-| IR           | Infrared                          |
-| IRAT         | IR Angle Tracking                 |
-| ITER         | Improved Triple Ejector Rack      |
-| ITS          | Integrated Trim System            |
+
+| 缩写 | 定义                       |
+| ---- | -------------------------- |
+| IAS  | 指示空速                   |
+| ICLS | 仪表助降系统               |
+| ICS  | 机内对讲（内话）系统       |
+| IFF  | 敌我识别                   |
+| IFR  | 仪表飞行规则               |
+| IFT  | 飞行训练                   |
+| ILS  | 仪表着陆系统               |
+| IMN  | 指示马赫数                 |
+| IMU  | Inertial Measurement Unit  |
+| INS  | Inertial Navigation System |
+| IP   | 起始点                     |
+| IR   | 红外                       |
+| IRAT | 红外角跟踪                 |
+| ITER | 改进型三联式挂弹架         |
+| ITS  | 综合配平系统               |
 
 ## J
 
-| Abbreviation | Definition      |
-| ------------ | --------------- |
-| JAM          | Jamming         |
-| JAT          | Jam Angle Track |
+
+| 缩写 | 定义         |
+| ---- | ------------ |
+| JAM  | 干扰         |
+| JAT  | 干扰源角跟踪 |
 
 ## K
 
-| Abbreviation | Definition                |
-| ------------ | ------------------------- |
-| KCAS         | Knots Calibrated Airspeed |
-| KTS          | Knots                     |
+
+| 缩写 | 定义                 |
+| ---- | -------------------- |
+| KCAS | 以节为单位的校正空速 |
+| KTS  | 节                   |
 
 ## L
 
-| Abbreviation | Definition                          |
-| ------------ | ----------------------------------- |
-| LAR          | Launch Acceptable Region            |
-| LCD          | Liquid Crystal Display              |
-| LCOS         | Lead Computing Optical Sight        |
-| LOS          | Line of Sight                       |
-| LPRF         | Low Pulse Repetition Frequency      |
-| LSO          | Landing Signal Officer or "Paddles" |
-| LTE          | Launch-to-Eject                     |
+
+| 缩写 | 定义                    |
+| ---- | ----------------------- |
+| LAR  | 发射允许区间            |
+| LCD  | 液晶显示器              |
+| LCOS | 前置计算光学瞄准        |
+| LOS  | 视线                    |
+| LPRF | 低脉冲重复频率          |
+| LSO  | 着舰信号官或“Paddles” |
+| LTE  | 发射至离轨              |
 
 ## M
 
-| Abbreviation | Definition                           |
-| ------------ | ------------------------------------ |
-| M            | Mach                                 |
-| MA           | Missile Alert                        |
-| MAD          | Magnetic Azimuth Detector            |
-| MAG VAR      | Magnetic Variation                   |
-| MAN          | Manual                               |
-| MAND         | Mandatory                            |
-| MDIG         | Multipurpose Display Indicator Group |
-| MEC          | Main Engine Control                  |
-| MIL          | Military                             |
-| ML           | Missile Launch                       |
-| MLC          | Mainlobe Clutter                     |
-| MLG          | Main Landing Gear                    |
-| MOAT         | Missile on Aircraft Test             |
-| MMGS         | Multiple Mode Gun Sight              |
-| MRL          | Manual Rapid Lockon                  |
-| MSL          | Mean Sea Level                       |
+
+| 缩写    | 定义                             |
+| ------- | -------------------------------- |
+| M       | 马赫                             |
+| MA      | 导弹警告                         |
+| MAD     | 磁方位探测器                     |
+| MAG VAR | 磁差                             |
+| MAN     | 手动                             |
+| MAND    | 强制                             |
+| MDIG    | 多功能显示指示器组（HSD & ECMD） |
+| MEC     | 主发动机控制                     |
+| MIL     | 军用                             |
+| ML      | 导弹发射                         |
+| MLC     | 主瓣杂波                         |
+| MLG     | 主起落架                         |
+| MOAT    | 机载导弹测试                     |
+| MMGS    | 多模瞄准具                       |
+| MRL     | 手动快速锁定                     |
+| MSL     | 平均海拔高度                     |
 
 ## N
 
-| Abbreviation | Definition                          |
-| ------------ | ----------------------------------- |
-| NAV GRID     | Navigation Command and Control Grid |
-| NBR          | Number                              |
-| NFO          | Naval Flight Officer                |
-| NFOV         | Narrow Field of View                |
-| NM           | Nautical Miles                      |
-| NOZ          | Nozzle                              |
-| NTDS         | Naval Tactical Data System          |
+
+| 缩写     | 定义               |
+| -------- | ------------------ |
+| NAV GRID | 导航指令和控制网格 |
+| NBR      | 数字               |
+| NFO      | 海军飞行官         |
+| NFOV     | 窄视场             |
+| NM       | 海里               |
+| NOZ      | 喷口               |
+| NTDS     | 海军战术数据系统   |
 
 ## O
 
-| Abbreviation | Definition     |
-| ------------ | -------------- |
-| OBC          | On-Board Check |
+
+| 缩写 | 定义     |
+| ---- | -------- |
+| OBC  | 机上检查 |
 
 ## P
 
-| Abbreviation | Definition                        |
-| ------------ | --------------------------------- |
-| Paddles      | See LSO                           |
-| PAL          | Pilot Automatic Lockon            |
-| PCD          | Precision Course Direction        |
-| PD           | Pulse Doppler                     |
-| PDCP         | Pilot Display Control Panel       |
-| PDRSL        | Pulse Doppler Radar Slaved        |
-| PDS          | Pulse Doppler Search              |
-| PDSTT        | Pulse Doppler Single Target Track |
-| PH           | AIM-54 Phoenix Missile            |
-| PLM          | Pilot Lockon Mode                 |
-| PRF          | Pulse Repetition Frequency        |
-| PRI          | Primary                           |
-| PRSL         | Pulse Radar Slaved                |
-| PS           | Pulse Search                      |
-| PSTT         | Pulse Single Target Track         |
-| PT           | Point                             |
+
+| 缩写    | 定义                  |
+| ------- | --------------------- |
+| Paddles | 同 LSO                |
+| PAL     | 飞行员自动锁定        |
+| PCD     | 精确航线方向          |
+| PD      | 脉冲多普勒            |
+| PDCP    | 飞行员显示控制面板    |
+| PDRSL   | 脉冲多普勒雷达隶属    |
+| PDS     | 脉冲多普勒搜索        |
+| PDSTT   | 脉冲多普勒单目标跟踪  |
+| PH      | AIM-54 “不死鸟”导弹 |
+| PLM     | 飞行员锁定模式        |
+| PRF     | 脉冲重复频率          |
+| PRI     | 主要                  |
+| PRSL    | 脉冲雷达隶属          |
+| PS      | 脉冲搜索              |
+| PSTT    | 脉冲单目标跟踪        |
+| PT      | 点                    |
 
 ## Q
 
-| Abbreviation | Definition       |
-| ------------ | ---------------- |
-| QADL         | Cue-to-ADL       |
-| QDES         | Cue-to-Designate |
-| QHUD         | Cue-to-HUD       |
-| QSNO         | Cue-to-snowplow  |
-| QWP          | Cue-to-waypoint  |
+
+| 缩写 | 定义       |
+| ---- | ---------- |
+| QADL | 隶属 ADL   |
+| QDES | 隶属指定点 |
+| QHUD | 隶属 HUD   |
+| QSNO | 隶属雪犁   |
+| QWP  | 隶属航路点 |
 
 ## R
 
-| Abbreviation | Definition              |
-| ------------ | ----------------------- |
-| RACH         | Radar Angle Crosshair   |
-| RDR          | Radar                   |
-| RDROT        | Radar on Target         |
-| RECON        | Reconnaissance          |
-| RIO          | Radar Intercept Officer |
-| RNG          | Range                   |
-| RNGRT        | Range Rate              |
-| ROT          | Range on Target         |
-| RTGS         | Real-Time Gun Sight     |
-| RWS          | Range While Search      |
+
+| Abbreviation | Definition       |
+| ------------ | ---------------- |
+| RACH         | 雷达角度十字准星 |
+| RDR          | 雷达             |
+| RDROT        | 雷达跟踪目标     |
+| RECON        | 侦察             |
+| RIO          | 雷达拦截官       |
+| RNG          | 距离             |
+| RNGRT        | 速度             |
+| ROT          | 到目标距离       |
+| RTGS         | 实时瞄准具       |
+| RWS          | 边搜索边测距     |
 
 ## S
 
-| Abbreviation | Definition                           |
-| ------------ | ------------------------------------ |
-| SAM          | Surface to Air Missile               |
-| SAS          | Stability Augmentation System        |
-| SAT          | Simultaneous Alignment and Test      |
-| SCP          | Sensor Control Panel                 |
-| SD/A         | Sample Data/Active                   |
-| SEAM         | Sidewinder Expanded Acquisition Mode |
-| SINS         | Ship Inertial Navigation System      |
-| SP           | AIM-7 Sparrow Missile                |
-| ST           | Surface Target                       |
-| STAB         | Stabilization                        |
-| STAB AUG     | Stability Augmentation               |
-| STBY         | Standby                              |
-| STC          | Sensitivity Time Control             |
-| STT          | Single Target Track                  |
-| SW           | AIM-9 Sidewinder Missile             |
+
+| 缩写     | 定义                   |
+| -------- | ---------------------- |
+| SAM      | 地空导弹               |
+| SAS      | 增稳系统               |
+| SAT      | 同时对准和测试         |
+| SCP      | 传感器控制面板         |
+| SD/A     | 样本数据/主动          |
+| SEAM     | “响尾蛇”扩展搜索模式 |
+| SINS     | 舰载惯性导航系统       |
+| SP       | AIM-7“麻雀”导弹      |
+| ST       | 地面/水面目标          |
+| STAB     | 稳定                   |
+| STAB AUG | 增稳                   |
+| STBY     | 待机                   |
+| STC      | 灵敏度时间控制         |
+| STT      | 单目标跟踪             |
+| SW       | AIM-9 “响尾蛇”导弹   |
 
 ## T
 
-| Abbreviation | Definition                             |
-| ------------ | -------------------------------------- |
-| TACAN        | Tactical Air Navigation                |
-| TARPS        | Tactical Air Reconnaissance Pod System |
-| TAS          | True Airspeed                          |
-| TCS          | Television Camera Set                  |
-| TDS          | Tactical Data System                   |
-| TER          | Triple Ejector Rack                    |
-| TGT          | Target                                 |
-| THRLD        | Threshold                              |
-| TID          | Tactical Information Display           |
-| TIT          | Turbine Inlet Temperature              |
-| TTG          | Time-to-Go                             |
-| TUIR         | Time Until in Range                    |
-| TUMR         | Time Until Maximum Range               |
-| TUOR         | Time Until Optimum Range               |
-| TWS          | Track While Scan                       |
-| TWSA         | Track While Scan Automatic             |
-| TWSM         | Track While Scan Manual                |
+
+| 缩写  | 定义                 |
+| ----- | -------------------- |
+| TACAN | 战术空中导航         |
+| TARPS | 战术空中侦察吊舱系统 |
+| TAS   | 真空速               |
+| TCS   | 电视摄像套件         |
+| TDS   | 战术数据系统         |
+| TER   | 三联式挂弹架         |
+| TGT   | 目标                 |
+| THRLD | 阈值                 |
+| TID   | 战术信息显示器       |
+| TIT   | 涡轮进口温度         |
+| TTG   | 剩余时间             |
+| TUIR  | 到发射距离内时间     |
+| TUMR  | 最大发射距离的时间   |
+| TUOR  | 到最佳发射距离的时间 |
+| TWS   | 边扫描边跟踪         |
+| TWSA  | 边扫描边跟踪 自动    |
+| TWSM  | 边扫描边跟踪 手动    |
 
 ## U
 
-| Abbreviation | Definition                 |
-| ------------ | -------------------------- |
-| UHF          | Ultra High Frequency       |
-| UTC          | Coordinated Universal Time |
+
+| 缩写 | 定义       |
+| ---- | ---------- |
+| UHF  | 特高频     |
+| UTC  | 协调世界时 |
 
 ## V
 
-| Abbreviation | Definition                                   |
-| ------------ | -------------------------------------------- |
-| Vc           | Closing Velocity Rate                        |
-| vC           | Computed MAG VAR                             |
-| VDI          | Vertical Display Indicator                   |
-| VDIG         | Vertical Display Indicator Group (HUD & VDI) |
-| VEC          | Vector                                       |
-| VFR          | Visual Flight Rules                          |
-| VID          | Visual Identification                        |
-| vM           | Manual MAG VAR                               |
-| VMCU         | Voltage Monitor Control Unit                 |
-| VSL          | Vertical Scan Lockon                         |
-| VTR          | Video Tape Recorder                          |
+
+| 缩写 | 定义                           |
+| ---- | ------------------------------ |
+| Vc   | 接近速率                       |
+| vC   | 计算出的磁差                   |
+| VDI  | 垂直显示指示器                 |
+| VDIG | 垂直显示指示器组（HUD 和 VDI） |
+| VEC  | 引导航向                       |
+| VFR  | 目视飞行规则                   |
+| VID  | 目视识别                       |
+| vM   | 手动输入的磁差                 |
+| VMCU | 电压监控控制装置               |
+| VSL  | 垂直扫描锁定                   |
+| VTR  | 录像机                         |
 
 ## W
 
-| Abbreviation | Definition            |
-| ------------ | --------------------- |
-| WCS          | Weapon Control System |
-| WFOV         | Wide Field of View    |
-| WILCO        | Will Comply           |
-| WOD          | Wind over the Deck    |
-| WOW          | Weight on/off Wheels  |
+
+| 缩写  | 定义            |
+| ----- | --------------- |
+| WCS   | 武器控制系统    |
+| WFOV  | 宽视场          |
+| WILCO | 可以执行        |
+| WOD   | 甲板风          |
+| WOW   | 机轮负重/不负重 |
 
 ## Y
 
-| Abbreviation | Definition                              |
-| ------------ | --------------------------------------- |
-| YY           | Geographic Reference Point for NAV GRID |
+
+| 缩写 | 定义                             |
+| ---- | -------------------------------- |
+| YY   | 导航指令和控制格栅中的地理参考点 |

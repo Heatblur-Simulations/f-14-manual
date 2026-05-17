@@ -1,128 +1,118 @@
-# Right Vertical Console
+# 右垂直控制台
 
-## Arresting Hook Panel
+## 拦阻钩控制面板
 
 ![Hook Panel](../../img/cockpit_detail_pilot_hook.jpg)
 
-Panel controlling arresting hook operation.
+用于控制拦阻钩。
 
-### Hook Handle
+### HOOK 手柄
 
-The HOOK handle (<num>1</num>) selects arresting hook position.
+拦阻钩控制手柄 (<num>1</num>)，用于选择拦阻钩的位置。
 
-- UP - Electrically commands hydraulic retraction of the hook and locks it in the up-lock.
-- DOWN - Electrically releases hydraulic pressure, allowing the hook to extend by dashpot pressure
-  and gravity.
-- EMERG DOWN - When the handle is pulled and rotated counter-clockwise, the hook is mechanically
-  released for emergency extension.
+- UP - 电动向液压收上作动器增压，收上拦阻钩并锁定。
+- DOWN - 电动使上锁作动器泄压并允许拦阻钩在阻尼压力和重力的作用下放下。
+- EMERG DOWN - 应急放钩，抽出并逆时针转动手柄会让拦阻钩机械脱扣，从而使拦阻钩放下。
 
-### Hook Transition Light
+### 拦阻钩过渡指示灯
 
-The hook transition light (<num>2</num>) illuminates when hook position does not correspond to
-handle position.
+灯光 (<num>2</num>) 亮起表示拦阻钩实际位置与拦阻钩手柄对应位置不符。
 
-The light will not extinguish until the hook is fully extended and may remain illuminated during
-high-speed extension due to hook blowback.
+高速飞行中放下拦阻钩时，由于空气向后吹动拦阻钩，使其无法放下，因此指示灯直到拦阻钩完全放下才会熄灭。
 
-### Rounds Remaining Counter
+### 航炮弹药计数器
 
-The rounds remaining counter (<num>3</num>) displays remaining M61A1 gun ammunition.
+(<num>3</num>) 显示 M-61A1 航炮的剩余弹药数量。
 
-The counter normally counts down from 676 rounds and may be manually reset to a desired value using
-the adjustment knob on the right side.
+从 676 开始倒数，但可按需使用右侧的旋钮调整至所需数值。
 
-## Displays Control Panel
+## 显示控制面板
 
 ![Displays Panel](../../img/cockpit_detail_pilot_displays.jpg)
 
-> 💡 Image shows an F-14A with AN/ALR-45 having a third option on the HSD MODE and an ECM ORIDE
-> which are not functional but are present in some aircraft with the AN/ALR-67.
+> 💡 图中展示的为装备了 AN/ALR-45 的 F-14A， HSD MODE 拥有第三个选项，以及 ECM ORIDE，ECM
+> ORIDE 在装备了 AN/ALR-67 的飞机中是不存在的。
 
-Control panel for front cockpit display configuration.
+飞行员驾驶舱中，显示器的控制面板。
 
-### Steering Command Selectors
+### STEER CMD 选择开关
 
-The STEERING CMD selectors (<num>1</num>) select the source of steering command information.
+转向指令选择开关(<num>1</num>)，用于选择当前的转向指令源。
 
-The selectors are mutually exclusive and rotate to indicate the active selection.
+所有选择开关互斥（只能选中一个），开关将会旋转表示被选中。
 
-- TACAN - TACAN provides steering information.
-- DEST - Steering commands based on the RIO-selected waypoint.
-- AWL/PCD - Selects glideslope guidance (ILS or ACLS) for landing or PCD steering for air-to-ground
-  delivery.
-- VEC - Data link vector steering commands.
-- MAN - Manual course and heading steering.
+- TACAN - 使用 TACAN 作为转向指令源。
+- DEST - 选择 RIO 设置的航路点作为转向指令源。
+- AWL/PCD - 全天候助降/精确航线方向，按下开关选择使用下滑道引导（ILS/ACLS）进行着舰，或选择 PCD 作为空对地攻击方向用于转向指令源。
+- VEC - 数据链路引导，选择数据链路偏差转向作为转向指令源。
+- MAN - 手动，使用手动选择的航线和航向作为转向指令源。
 
-### Mode Selectors
+### 模式选择开关
 
-The MODE selectors (<num>2</num>) determine overall display mode.
+模式选择开关(<num>2</num>)用于选择显示模式。
 
-Selectors are mutually exclusive and rotate to indicate the selected mode.
+所有选择开关互斥（只能选中一个），开关将会旋转表示被选中。
 
-- T.O. - Takeoff mode.
-- CRUISE - Cruise mode.
-- A/A - Air-to-air mode.
-- A/G - Air-to-ground mode.
-- LDG - Landing mode.
+- T.O. - 选择起飞模式。
+- CRUISE - 选择巡航模式。
+- A/A - 选择空对空模式。
+- A/G - 选择空对地模式。
+- LDG - 选择降落模式。
 
-### HUD Declutter Switch
+### HUD DECLUTTER 开关
 
-The HUD DECLUTTER switch (<num>3</num>) selects declutter level for HUD symbology.
+HUD 防拥开关(<num>3</num>)，选择 HUD 标识防拥模式。
 
-### HUD AWL Switch
+### HUD AWL 开关
 
-The HUD AWL switch (<num>4</num>) selects the source of all-weather landing information displayed on
-the HUD.
+(<num>4</num>)选择在 HUD 上显示何种 AWL（全天候降落）信息。
 
-- ILS - ILS is used as the AWL source.
-- ACL - ACLS is used as the AWL source.
+- ILS - 选择 ILS 作为 AWL 信息源。
+- ACL - 选择 ACLS 作为 AWL 信息源。
 
-### VDI Mode Switch
+### VDI MODE 开关
 
-The VDI MODE switch (<num>5</num>) selects the display content shown on the VDI.
+(<num>5</num>)用于选择 VDI 中显示的内容。
 
-- TV - Displays video from TCS or LANTIRN.
-- NORM - Displays the standard VDI presentation.
+- TV - 在 VDI 上显示 TCS 或 LANTIRN 吊舱的视频。
+- NORM - 使用正常 VDI 显示。
 
-### VDI AWL Switch
+### VDI AWL 开关
 
-The VDI AWL switch (<num>6</num>) selects the AWL source displayed on the VDI.
+(<num>6</num>)选择 VDI 上显示何种 AWL 信息。
 
-- ILS - ILS-based AWL information.
-- ACL - ACLS-based AWL information.
+- ILS - 选择 ILS 作为 AWL 信息源。
+- ACL - 选择 ACL 作为 AWL 信息源。
 
-### HSD Mode Switch
+### HSD MODE 开关
 
-The HSD MODE switch (<num>7</num>) selects the display content shown on the HSD.
+(<num>7</num>) 用来选择 HSD 中显示的内容。
 
-- NAV - Navigation display showing steering information based on selected steering command source.
-- TID - Repeats the RIO Tactical Information Display. If the RIO TID is set to TV, the display will
-  be blank.
-- ECM - Displays ECM information from AN/ALR-45 and AN/ALR-50 (F-14A with AN/ALR-45/50 only).
+- NAV - 导航显示，HSD 将根据选定的转向指令源显示转向信息。
+- TID - 重复显示 RIO 的 TID 中的信息。如果 RIO 将 TID 设置显示 TV，那么 HSD 将会为空白画面。
+- ECM - 显示 AN/ALR-45 和 AN/ALR-50 的 ECM 信息。（仅限装备了 AN/ALR-45 的 F-14A）
 
-### Display Power Switches
+### POWER 开关
 
-The POWER switches (<num>8</num>) control electrical power to the VDI, HUD, and HSD/ECMD.
+电源控制开关(<num>8</num>)，用于控制 VDI、HUD 和 HSD / ECMD 的电源。
 
-### Pitch Ladder Brightness Knob
+### PITCH LAD BRT 旋钮
 
-The PITCH LAD BRT knob (<num>9</num>) controls brightness of the HUD pitch ladder.
+俯仰梯度亮度旋钮 (<num>9</num>)，用于控制 HUD 中俯仰梯度线的亮度。
 
-### HSD ECM Override Switch
+### HSD ECM 超控开关
 
-The HSD ECM ORIDE switch (<num>10</num>) determines whether ECM information is allowed to override
-the current HSD display when a threat is detected.
+这个开关用来设置在探测到威胁时，是否允许 ECM 超控 HSD 当前的显示。
 
-- ORIDE - Allows ECM override.
-- OFF - Prevents ECM override.
+- ORIDE - 允许 ECM 超控。
+- OFF - 将禁用 ECM 超控。
 
-Only functional in aircraft equipped with the AN/ALR-45/50.
+仅在装备了 AN/ALR-45 的 F-14A 中有效。
 
-## Elevation Lead Panel
+## 准星偏移量设置面板
 
 ![Gun Elevation](../../img/cockpit_detail_pilot_gunelevation.jpg)
 
-The elevation lead panel (<num>11</num>) sets gun elevation lead in mils for manual air-to-air and
-air-to-ground gun modes.
+面板 (<num>11</num>)用于设置手动 A/A 和 A/G 航炮模式下，准星的抬高/下压量。
 
-Adjustment range is from −263 to +87 mils.
+最小和最大值分别是 -263 和 +87 毫弧度。
