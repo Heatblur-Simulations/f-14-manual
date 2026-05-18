@@ -19,4 +19,9 @@
 |  11  | [右侧控制台](right_console.md)             |
 | 12.  | [座舱盖控制手柄](canopy_control_handle.md) |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OO3IdQjAdDA?si=_mawunE5OBnmxVqE" title="Heatblur DCS: F-14 Tomcat - Episode 2: Pilot's Cockpit Walkaround" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" 
+src="https://www.bilibili.com/video/BV1Mb411m7mp/" 
+title="Heatblur DCS: F-14 "雄猫" - 2. 驾驶舱总览" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; 
+encrypted-media; gyroscope; picture-in-picture; 
+web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
