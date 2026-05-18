@@ -18,7 +18,7 @@
 | 10. | [右侧控制台](../rio/right_console.md)             |
 | 11. | [座舱盖控制手柄](../rio/canopy_control_handle.md) |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kgpGO7fj4oU?si=aijx0zXpMBAjdH7X"
-title="DCS: F-14 Tomcat - Episode 4: The RIO's Office" frameborder="0"
+<iframe width="560" height="315" src="https://www.bilibili.com/video/BV1kb411b7ns"
+title="Heatblur DCS: F-14 "雄猫" - 4. RIO" frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
