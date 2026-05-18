@@ -97,7 +97,7 @@ RIO）。指示灯显示当前的设定。
 
 INVERSE 模式无功能。
 
-### VOL 旋钮
+### TACAN VOL 旋钮
 
 音量控制旋钮 (<num>5</num>)，用于调整通过 ICS 的 TACAN 台识别信号音频音量。
 

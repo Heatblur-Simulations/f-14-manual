@@ -4,7 +4,6 @@
 
 ![RIO Cockpit Layout](../../img/cockpit_overview_riocockpit.jpg)
 
-
 | 部分 | 名称                                              |
 | :--: | ------------------------------------------------- |
 |  1.  | [左侧控制台](../rio/left_console.md)              |

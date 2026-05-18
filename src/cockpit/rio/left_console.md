@@ -56,7 +56,7 @@
 
 INVERSE 模式无功能。
 
-### VOL 旋钮
+### TACAN VOL 旋钮
 
 音量控制旋钮 (<num>5</num>)，用于控制 RIO 头戴中的 TACAN 音频音量。
 
