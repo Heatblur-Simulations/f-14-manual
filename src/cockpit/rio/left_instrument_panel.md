@@ -1,123 +1,112 @@
-# Left Instrument Panel
+# 左仪表板
 
-## Servopneumatic Altimeter
+## 气动伺服高度表
 
 ![altimeter](../../img/cockpit_detail_rio_altimeter.jpg)
 
-The servopneumatic altimeter provides altitude indication using both electrical and pressure-based
-systems.
+伺服气动高度表通过电系统和压力系统双重方式显示高度。
 
-### Altimeter Readout
+### 高度表读数
 
-The altimeter readout (<num>1</num>) displays altitude using three digital drums for 10,000, 1,000,
-and 100 feet, and a pointer on a circular scale indicating hundreds of feet.
+在三个滚筒上显示高度数字 (<num>1</num>)，三个数字分别对应10 000、1 000 和 100 英尺。
 
-A pointer on the circular scale provides continuous indication in hundreds of feet.
+同时，表盘指针指向的环形排列的刻度表示百英尺高度。
 
-### Baroset Knob
+### 气压调节旋钮
 
-The baroset knob (<num>2</num>) sets local barometric pressure in inches of mercury (in.Hg).
+(<num>2</num>) 设置以英寸汞柱（in.Hg）为单位的本地气压。
 
-This setting only affects the local altimeter display. Other CADC-driven digital indicators use a
-fixed 29.92 in.Hg reference.
+只用于气压计本身的读数，所有其他（由 CADC 控制的）数字指示器都使用 29.92 英寸汞柱作为气压数值。
 
-### Local Barometric Pressure Window
+### 当地气压
 
-The local barometric pressure window (<num>3</num>), also known as the Kollsman window, displays the
-selected pressure setting.
+(<num>3</num>)指示调定的局部气压值，这个显示框也被称为“Kollsman Window”。
 
-### Mode Switch
+### 模式选择开关
 
-The mode switch (<num>4</num>) selects altimeter operating mode and is spring-loaded from RESET.
+模式选择开关(<num>4</num>)为三档位开关，当松开开关时，开关从 RESET 位置弹回正常位置。
 
-- RESET - When CADC power and altitude data are available, holding RESET for approximately three
-  seconds enables normal servoed operation.
-- STBY - Selects backup pressure mode.
+- RESET - 如果接通电源，且 CADC 可提供高度数据，那么将开关在 RESET 档位保持3秒后，高度表会进入正常（伺服）工作模式。
+- STBY - 选择备用气压模式。
 
-If CADC data or electrical power is absent for more than three seconds, the system automatically
-reverts to standby mode.
+开关拨至 STBY 位置，或电源断开，或缺少 CADC 高度数据，那么3秒后，系统会切换至备用（气压）模式。
 
-### STBY Flag
+### STBY 警示旗
 
-The STBY flag is a red standby indication that appears when the altimeter is operating in backup
-(standby) mode (not visible in this image).
+如果系统在备用模式下工作，那么表盘中会显示红色的标有 STBY 字样的警示旗。
 
-> 💡 At high speeds and below 10,000 feet, pressure effects can produce significant readout errors:
-> up to 1,200 feet when transonic and up to 4,000 feet when supersonic.
+> 💡 在 10000 英尺以下高速飞行时，由于气压变化较大，飞机跨声速飞行时，气压计读数误差最多可达到 1200 英尺，而超声速飞行时，误差可能高达 4000 英尺 。
 
-## Airspeed Mach Indicator
+## 空速马赫表
 
 ![mach](../../img/cockpit_detail_rio_mach.jpg)
 
-The airspeed Mach indicator displays indicated airspeed and Mach number.
+用来显示指示空速和马赫数。
 
-### Airspeed Dial
+### 空速表拨盘
 
-The airspeed dial (<num>1</num>) integrates multiple scales to display both indicated airspeed and
-Mach number.
+(<num>1</num>) 用三种刻度显示指示空速，其中两种刻度对应指示空速，一个随马赫数变化移动。
 
-### Outer Airspeed Scale
+### 指示空速刻度（外圈）
 
-The outer indicated airspeed scale (<num>2</num>) displays airspeed values up to 200 knots.
+(<num>2</num>) 用于显示指示空速，最高200节。
 
-### Inner Airspeed Scale
+### 指示空速刻度（内圈）
 
-The inner airspeed scale (<num>3</num>) displays airspeed from 200 to 850 knots.
+(<num>3</num>) 用于显示指示空速，刻度对应从200节到850节空速。
 
-This scale remains covered by the dial until applicable.
+内圈的指示空速刻度被空速表拨盘未镂空的部分盖住，直到需要显示对应的空速时。
 
-### Mach Number Scale
+### 马赫数刻度
 
-The Mach number scale (<num>4</num>) moves relative to airspeed to indicate current Mach number.
+马赫数的读数 (<num>4</num>)。显示正确的以马赫数为单位的指示空速。
 
-### Indicated Airspeed Index Pointer
+### 指示空速数值游标
 
-The indicated airspeed index pointer (<num>5</num>) can be set to mark a desired airspeed.
+可以将游标(<num>5</num>)调定到所需的指示空速上。
 
-### Mach Number Index Pointer
+### 马赫数数值游标
 
-The Mach number index pointer (<num>6</num>) marks a selected Mach number.
+可以将游标(<num>6</num>)调定到所需的马赫数上。
 
-(Not visible in the referenced image.)
+在上图中不可见。
 
-### Safe Mach Number Index Pointer
+### 最大安全马赫数游标
 
-The safe Mach number index pointer (<num>7</num>) displays the maximum safe Mach number calculated
-by the CADC.
+游标(<num>7</num>)显示 CADC 计算出的安全马赫数。
 
-(Not visible in the referenced image.)
+在上图中不可见。
 
-### Index Selector Knob
+### 游标设置旋钮
 
-The index knob (<num>8</num>) is a push-pull control.
+这个旋钮 (<num>8</num>) 有抽出和按下两个档位。
 
-One position adjusts the airspeed index pointer, and the other adjusts the Mach index pointer.
+两个档位分别用于设置指示空速游标和马赫数游标。
 
-## Standby Attitude Indicator
+## 备用姿态仪
 
 ![standby attitude](../../img/cockpit_detail_rio_standbyattitude.jpg)
 
-The standby attitude indicator provides independent attitude reference.
+独立工作的备用姿态仪。
 
-### OFF Flag
+### OFF 警示旗
 
-The OFF flag (<num>1</num>) appears when the instrument is unpowered or caged.
+表盘左侧显示的 OFF 标识旗 (<num>1</num>) 表示备用姿态仪锁定或未通电。
 
-### Cage and Trim Knob
+### 锁定/调节旋钮
 
-The cage and trim knob (<num>2</num>) controls indicator caging and pitch trim.
+位于表盘右下方的旋钮(<num>2</num>)用于锁定/解锁姿态仪和调节俯仰梯度显示。
 
-- Pulled out - Indicator is caged.
-- Pushed in - Indicator is uncaged and pitch trim may be adjusted by rotating the knob.
+- 抽出 - 姿态仪锁定。 - 旋钮按下 - 解锁姿态仪，转动旋钮可以调节俯仰梯度指示线。
 
-## UHF Remote Indicator
+## UHF 远程显示器
 
 ![back remote](../../img/cockpit_detail_rio_backremote.jpg)
 
-The UHF remote indicator provides a cockpit readout of ARC-159 radio tuning.
+ARC-159 电台调谐使用 UHF 远程显示器来作为驾驶舱读数设备。
 
-The remote display shows the selected frequency or preset channel for UHF 1.
+这个远程显示器用于显示 UHF 1（AN/ARC-159）中调定的频率或波道。
 
-The TEST button initiates an indicator self-test. A successful test results in a display of 888.888.
+TEST 按钮来开始显示器自检，如果通过自检，显示器中会显示 888.888。
 
-The DIM knob controls indicator display brightness.
+使用 DIM 旋钮来控制显示器亮度。

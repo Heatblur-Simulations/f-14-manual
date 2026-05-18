@@ -1,134 +1,128 @@
 # Right Instrument Panel
 
-## Clock
+## 时钟
 
 ![clock](../../img/cockpit_detail_rio_clock.jpg)
 
-Mechanical wind-up clock.
+机械发条时钟。
 
-The wind/set knob (<num>1</num>) is located on the lower left corner.
+左下角的旋钮(<num>1</num>)用于上紧时钟发条。
 
-- Rotate clockwise to wind the clock.
-- Pull out and rotate to set the hour and minute hands.
+- 顺时针转动旋钮。 - 抽出旋钮来设置时针和分针。
 
-The elapsed-time control (<num>2</num>) is located on the upper right corner and is used to start,
-stop, and reset the 1-hour elapsed time counter.
+右上角的按钮 (<num>2</num>) 用于开始、停止和复位时长为1小时的计时器。
 
-## ALR-67 Indicator
+## ALR-67 显示器
 
 ![alr-67](../../img/cockpit_detail_rio_alr-67.jpg)
 
-Displays radar emitters detected by the ALR-67 radar warning receiver.
+用于显示 ALR-67 RWR（雷达告警接收机）套件探测到的辐射源。
 
-### Threat Display Bands
+### 威胁区
 
-- Non-lethal band (<num>2</num>) - Displays emitters not considered an immediate threat due to range
-  or lack of weapon capability.
-- Lethal band (<num>3</num>) - Displays emitters capable of engaging own aircraft but not currently
-  doing so.
-- Critical band (<num>4</num>) - Displays direct threats to own aircraft. Systems capable of
-  engaging own aircraft and showing current intent of doing so.
+- 非致命威胁区 (<num>2</num>) - 显示辐射源没有直接威胁到本机，显示在这个区域内表示系统认为本机在辐射源的射程外或辐射源未装备武器。
+- 致命威胁区 (<num>3</num>) - 显示 RWR 认为本机进入威胁的攻击射程内并且装备武器，但还未攻击本机。
+- 严重威胁区 (<num>4</num>) - 显示对本机构成直接威胁的辐射源。辐射源有能力攻击本机，且攻击意图明显。
 
-### System Status Circle
+### 系统状态圈
 
-The system status circle (<num>1</num>) is divided into three areas.
+系统状态圈 (<num>1</num>) 分为三个区域。
 
-**Area I (upper left quadrant)** displays threat prioritization symbols:
+**区域 I (左上象限)** 示的符号代表威胁目标的显示类型：
 
-- N - Normal.
-- I - AI, Airborne interceptors prioritized.
-- A - AAA, Anti-air artillery prioritized.
-- U - Unknown emitters prioritized.
-- F - Friendly emitters displayed in addition to threats.
+- N - 正常优先级。
+- I - AI，优先显示机载截击雷达威胁。
+- A - AAA，优先显示高射炮威胁。
+- U - 优先显示不明辐射源。
+- F - 显示其他雷达威胁的同时也显示友方辐射源。
 
-**Area II (upper right quadrant)** indicates limited mode status.
+**区域 II (右上象限)** 指示 ARL-67 是否处于限制模式。
 
-- (Blank) - Limited mode not selected.
-- L - Limited mode selected. Only the six highest-priority threats are shown.
+- (空白) - 未选择限制模式。
+- L - 选用限制模式，只显示威胁最高的6个雷达威胁。
 
-**Area III (lower half)** displays system status and offset information:
+**区域 III (下半部分)** 显示系统状态和偏置信息：
 
-- (Blank) - Normal operation.
-- B - BIT failure.
-- T - Thermal overload.
-- O - Offset display selected. Threats will be separated to allow readout of overlapping symbols.
-  Bearing accuracy degraded for displaced threats.
+- (空白) - 正常工作。
+- B - BIT（自检）未通过。
+- T - 热过载。
+- O - 选择了偏置显示模式。重叠的威胁目标符号会偏置显示，以增强可读性。选择偏置显示模式时，显示器指示目标方位信息的精度会下降。
 
-### Intensity Control Knob
+### INT（亮度）控制旋钮
 
-The INT knob (<num>5</num>) adjusts display brightness.
+亮度控制旋钮 (<num>5</num>)。用于控制显示器的亮度。
 
-## Fuel Quantity Totalizer
+## 燃油总量表
 
 ![fuel](../../img/cockpit_detail_rio_fuel.jpg)
 
-The fuel quantity totalizer (<num>1</num>) displays total fuel quantity in all aircraft tanks.
+燃油总量读数 (<num>1</num>) 显示飞机所有油箱中的剩余燃油总量。
 
-## Threat Advisory and Master Caution Lights
+## 威胁提示灯和主注意灯
 
 ![threat master](../../img/cockpit_detail_rio_threatmaster.jpg)
 
-Master caution light and ECM/IFF advisory and warning indications.
+主注意灯以及各种 ECM 和 IFF 相关提示 / 告警灯。
 
-The MASTER CAUTION light and reset button flashes to indicate a status change on the RIO
-caution/advisory panel.
+MASTER CAUTION 指示灯以及按钮表示 RIO 注意/提示灯面板上灯光状态发生变化。
 
-Press to acknowledge and extinguish the light until the next event.
+按下来复位并熄灭主注意灯，直到下一个注意事件被触发。
 
-### ALR-67 Caution Lights
+### ALR-67 注意灯
 
-| Indicator | Function                                                                                                                       |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| IFF       | Advisory light indicating received mode 4 interrogation without own system generating a reply.                                 |
-| RCV       | Advisory light indicating ALQ-126 is receiving a threat identification signal.                                                 |
-| XMIT      | Advisory light indicating ALQ-126 is transmitting.                                                                             |
-| SAM       | Warning light, steady illumination when detecting lockon from a SAM tracking radar. Flashes when a missile launch is detected. |
-| AAA       | Warning light, steady illumination when detecting lockon from a AAA tracking radar. Flashes when AAA engagement is detected.   |
-| CW        | Warning light indicating detection of a continuous wave emitter.                                                               |
-| AI        | Warning light, steady illumination when detecting lockon from an airborne interceptor radar.                                   |
 
-### ALR-45 Caution Lights
+| 指示器 | 功能                                                                                       |
+| ------ | ------------------------------------------------------------------------------------------ |
+| IFF    | 敌我识别提示灯，灯光亮起表示接收到 MODE 4 询问，但 IFF 系统未应答。                        |
+| RCV    | 接收提示灯，灯光亮起表示 ALQ-126 接收到一个威胁识别信号。                                  |
+| XMIT   | 干扰发射提示灯，灯光亮起表示 ALQ-126 正在发射干扰信号。                                    |
+| SAM    | 面空导弹告警灯，灯光稳定亮起表示探测到 SAM 跟踪雷达锁定，闪烁时表示侦测到导弹发射。        |
+| AAA    | 高射炮告警灯，灯光稳定亮起表示侦测到 AAA 跟踪雷达锁定。闪烁时表示探测到 AAA 正在进行攻击。 |
+| CW     | 连续波告警灯，灯光亮起表示探测到被连续波辐射源照射。                                       |
+| AI     | 机载截击雷达告警灯，灯光稳定亮起表示侦测到机载截击雷达锁定。                               |
 
-| Indicator | Function                                                                                       |
-| --------- | ---------------------------------------------------------------------------------------------- |
-| SA TRK    | Lights steady whenever a SAM tracking radar is received.                                       |
-| SA2       | SA-2 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
-| SA3/NI    | SA-3 / SA-N-1 warning - Lights steady for MA (missile alert), flashes for ML (missile launch). |
-| SA4       | SA-4 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
-| AI/AAA    | Lights steady whenever an airborne interceptor and/or an ambiguous AI/AAA radar is received.   |
-| REC       | Lights steady whenever ALQ-100 is receiving signal identified as threat.                       |
-| IFF       | Advisory light indicating received mode 4 interrogation without own system generating reply.   |
-| SA6       | SA-6 warning - Lights steady for MA (missile alert), flashes for ML (missile launch).          |
-| AI        | Lights steady whenever an airborne interceptor radar is received.                              |
-| REP       | Lights steady whenever ALQ-100 is transmitting.                                                |
+### ALR-45 注意灯
 
-## Bearing Distance Heading Indicator (BDHI)
+
+| 指示器 | 功能                                                                        |
+| ------ | --------------------------------------------------------------------------- |
+| SA TRK | 灯光稳定亮起表示探测到 SAM 跟踪雷达。                                       |
+| SA2    | SA-2 告警 - 稳定亮起表示 MA（导弹告警），闪烁表示 ML（导弹发射）。          |
+| SA3/NI | SA-3 / SA-N-1 告警 - 稳定亮起表示 MA（导弹告警），闪烁表示 ML（导弹发射）。 |
+| SA4    | SA-4 告警 - 稳定亮起表示 MA（导弹告警），闪烁表示 ML（导弹发射）。          |
+| AI/AAA | 灯光稳定亮起表示探测到机载截击雷达和/或无法明确识别的 AI/AAA 雷达照射。     |
+| REC    | ALQ-100 将接收到的信号识别为威胁时，指示灯稳定亮起。                        |
+| IFF    | 敌我识别提示灯，灯光亮起表示接收到 MODE 4 询问，但 IFF 系统未应答。         |
+| SA6    | SA-6 告警灯 - 稳定亮起表示 MA（导弹告警），闪烁表示 ML（导弹发射）。        |
+| AI     | 灯光稳定亮起表示探测到机载截击雷达锁定。                                    |
+| REP    | 灯光亮起表示 ALQ-100 正在发射干扰信号。                                     |
+
+## 方位距离航向指示器（BDHI）
 
 ![bdhi](../../img/cockpit_detail_rio_bdhi.jpg)
 
-Display indicating azimuth and bearing information.
+用于显示方位和航向信息。
 
-### No. 2 Bearing Pointer
+### 二号方位指针
 
-The No. 2 bearing pointer (<num>1</num>) indicates magnetic course to the tuned TACAN station.
+(<num>1</num>) 用来指示选定 TACAN 台的磁方位。
 
-### Compass Rose
+### 罗盘指针
 
-The compass rose (<num>2</num>) indicates aircraft magnetic heading.
+(<num>2</num>) 显示当前飞机的磁航向。
 
-### No. 1 Bearing Pointer
+### 一号方位指针
 
-The No. 1 bearing pointer (<num>3</num>) indicates bearing to the tuned UHF/ADF station.
+(<num>3</num>) 指向选定 UHF/ADF 电台的方位。
 
-### Distance Counter
+### 距离计数器
 
-The distance counter (<num>4</num>) indicates slant range to the tuned TACAN station in nautical
-miles.
+(<num>4</num>) 以海里为单位显示选定 TACAN 台的斜距。
 
-(Not visible in the referenced image.)
+（图中不可见）
 
-## Canopy Jettison Handle
+## 座舱盖抛离手柄
 
 ![canopy jettison](../../img/cockpit_detail_rio_canopyjettison.jpg)
 
-The canopy jettison handle (<num>1</num>) is used to manually jettison the canopy.
+手柄 (<num>1</num>) 用于手动抛离座舱盖。

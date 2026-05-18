@@ -1,484 +1,467 @@
-# Right Side Console
+# 右侧控制台
 
-## Radar Warning Receiver Panel
+## 雷达告警接收机面板
 
 ![rwr](../../img/cockpit_detail_rio_rwr.jpg)
 
-Control panel for the ALR-67 radar warning receiver.
+ALR-67 雷达告警接收机的控制面板。
 
-### Power Switch
+### PWR 开关
 
-The PWR switch (<num>1</num>) controls electrical power to the ALR-67.
+(<num>1</num>) 用于控制 ALR-67 的电源。
 
-### Display Type Selector
+### 显示类型选择开关
 
-The DISPLAY TYPE selector (<num>2</num>) selects which threat types are prioritized and displayed.
+(<num>2</num>) 用于控制何种类型的威胁优先进行显示。
 
-### Mode Switch
+### MODE 选择开关
 
-The MODE switch (<num>3</num>) is spring-loaded to the center (OFF) position.
+三档位弹簧开关 (<num>3</num>)，释放开关后，开关弹回中立（OFF）位置。
 
-It can be held to the following momentary positions:
+可保持在以下自复位档位：
 
-- OFST - Enables offset display while held.
-- LMT - Enables limited display while held.
+- OFST - 保持在档位是启用偏置。 - LMT - 保持在档位时启用限制模式。
 
-### Test Switch
+### TEST 开关
 
-The TEST switch (<num>4</num>) is spring-loaded to center.
+三档位弹簧开关(<num>4</num>)，释放开关后，开关弹回中间位置。
 
-- BIT - Momentary selection initiates ALR-67 BIT.
-- SPL - While BIT page 1 is displayed, holding SPL displays the special BIT status page while held
-  and for three seconds after release.
+- BIT - 短暂地将开关拨至 BIT 档位会开始 ALR-67 BIT。
+- SPL - 显示特殊 BIT 状态页，松开开关后，特殊 BIT 状态页会显示三秒然后消失。
 
-### Volume Knob
+### VOL 旋钮
 
-The VOL knob (<num>5</num>) controls ALR-67 audio volume to the RIO headset.
+(<num>5</num>) 用于调节 RIO 头戴中 ALR-67 的音频音量。
 
-## Digital Data Indicator (DDI)
+## 数字数据显示面板（DDI）
 
 ![ddi](../../img/cockpit_detail_rio_ddi.jpg)
 
-Digital data indicator used to display commands received via the data link.
+数字数据显示面板用于显示通过数据链路接收到的指令。
 
-| Indicator  | Function                                                                                                                                           |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| AFT VEC    | Aircraft is being vectored to approach target from the rear hemisphere.                                                                            |
-| COL VEC    | Aircraft is being vectored on a collision course to target.                                                                                        |
-| NO MSG     | No message at this time, indicates presence of data link communication while not receiving a command.                                              |
-| TO WAY PT  | Proceed to the point being indicated by target information.                                                                                        |
-| HANDOVER   | TDS is handing own aircraft over to another control center.                                                                                        |
-| ORBIT      | Assume orbit at present position maintaining maximum endurance.                                                                                    |
-| CHALNGE    | Intercept and visually identify the target.                                                                                                        |
-| ARM 1      | Intercept and destroy the indicated hostile target using AIM-54.                                                                                   |
-| ARM 2      | Intercept and destroy the indicated hostile target using AIM-7.                                                                                    |
-| ARM 3      | Intercept and destroy the indicated hostile target using AIM-9.                                                                                    |
-| NOT CMD    | Ignore currently received heading, speed, and altitude. Also means valid command BIT not yet available.                                            |
-| FRE LAN    | Free to attack the most suitable target.                                                                                                           |
-| DIS’GAGE   | Cease fire.                                                                                                                                        |
-| ABORT      | Abort action.                                                                                                                                      |
-| BEAC ON    | Enable APN-154 tracking beacon.                                                                                                                    |
-| BEAC DUB   | Set APN-154 to double-pulse mode.                                                                                                                  |
-| DROP       | Command to release a weapon in data link A/G attack, manually or automatically if in data link attack mode.                                        |
-| BEAC OFF   | Turn off APN-154 tracking beacon.                                                                                                                  |
-| RET BASE   | Return to the indicated home base.                                                                                                                 |
-| WAVE OFF   | Wave off, automatic AFCS disengagement.                                                                                                            |
-| LAND CHECK | CATCC has a data link channel available for AFCS, complete landing checklist.                                                                      |
-| ACL BEAC   | Directed by carrier to enable APN-154 beacon.                                                                                                      |
-| ACL RDY    | ACL has locked onto aircraft APN-154 beacon and is transmitting zero pitch and bank signals. Glideslope information is now available to the pilot. |
-| A/P CPLR   | ACL is ready to take control of the aircraft for the ACL approach, autopilot should be engaged.                                                    |
-| 10 SEC     | Indicates 10 seconds to the next action or waypoint. In ACL indicates that the ship's motion is taken into account for ACL.                        |
-| ADJ A/C    | Indication from the control station of another aircraft near own aircraft.                                                                         |
-| VOICE      | Indicates ACL not available, switch to voice procedures.                                                                                           |
-| TILT       | Indicates no data link message received in the last 10 seconds. In ACL indicates no messages in the last 2 seconds, will disengage AFCS.           |
-| CMD CHG    | Indicates imminent or recently changed command instructions.                                                                                       |
-| ALT CHG    | Indicates imminent or recently changed altitude command.                                                                                           |
-| MON ALT    | Message indicating altitude command not being followed with enough precision.                                                                      |
-| MANUAL     | Indicates autopilot should not be engaged.                                                                                                         |
-| SPD CHG    | Indicates imminent or recently changed speed command.                                                                                              |
-| MON SPD    | Message indicating speed command not being followed with enough precision.                                                                         |
-| CMD CTRL   | Indicates aircraft under data link control for landing.                                                                                            |
-| CHG CHN    | Command to change data link channel.                                                                                                               |
-| HDG CHN    | Indicates imminent or recently changed heading command.                                                                                            |
-| CANC RPY   | TDS has canceled reply messages.                                                                                                                   |
-| FWD VEC    | Aircraft is being vectored to approach the target from the front hemisphere.                                                                       |
+| 指示器                                                           | 功能                                                                                              |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| AFT VEC                                                          | 飞机正接受数据链路引导，从目标后方（后半球）接近目标。                                            |
+| COL VEC                                                          | 飞机正接受数据链路引导，以恒定角度拦截转向飞向目标。                                              |
+| NO MSG                                                           | 此刻无消息，表示数据链路通信正常                                                                  |
+| 但未接收到指令。                                                 |                                                                                                   |
+| TO WAY PT                                                        | 行进至由目标信息所指示的点。                                                                      |
+| HANDOVER                                                         | TDS（战术数据系统）正将飞机转交给另一控制中心。                                                   |
+| ORBIT                                                            | 在当前位置盘旋，保持最长续航时间。                                                                |
+| CHALNGE                                                          | 拦截并目视识别目标。                                                                              |
+| ARM 1                                                            | 拦截目标并使用 AIM-54 摧毁指定敌方目标。                                                          |
+| ARM 2                                                            | 拦截目标并使用 AIM-7 摧毁指定敌方目标。                                                           |
+| ARM 3                                                            | 拦截目标并使用 AIM-9 摧毁指定敌方目标。                                                           |
+| NOT CMD                                                          | 无视当前接收到的航向、速度和高度信息。                                                            |
+| 这也表示有效指令 BIT 暂不可用。                                  |                                                                                                   |
+| FRE LAN                                                          | 自由攻击最合适的目标。                                                                            |
+| DIS'GAGE                                                         | 停火。                                                                                            |
+| ABORT                                                            | 终止行动。                                                                                        |
+| BEAC ON                                                          | 启用 APN-154 跟踪信标。                                                                           |
+| BEAC DUB                                                         | 将 APN-154 信标设置为双脉冲模式。                                                                 |
+| DROP                                                             | 指令在数据链路 A/G 攻击中投放武器，                                                               |
+| 如果选用数据链攻击模式，则使用自动投放，否则采用手动投放。       |                                                                                                   |
+| BEAC OFF                                                         | 关闭 APN-154 跟踪信标。                                                                           |
+| RET BASE                                                         | 返回指定的基地。                                                                                  |
+| WAVE OFF                                                         | 复飞，同时 AFCS（自动飞行控制系统，也就是自动驾驶）将自动断开。                                   |
+| LAND CHECK                                                       | CATCC（母舰空中交通管制中心）有可用的 AFCS 数据链路通道，机组应完成着舰检查单。                   |
+| ACL BEAC                                                         | CATCC 请求本机开启 AN/APN-154 信标。                                                              |
+| ACL RDY                                                          | ACL 已锁定本机的 APN-154 信标，且正在传输零俯仰和坡度信号。                                       |
+| 飞行员现在可以看见下滑道信息。                                   |                                                                                                   |
+| A/P CPLR                                                         | ACL 已就绪，准备好控制飞机进行 ACL 进近，机组应接通自动驾驶。                                     |
+| 10 SEC                                                           | 表示还有10秒抵达着舰航线的下一特殊点。                                                            |
+| ACL 着舰过程中，母舰的运动也被添加至下滑道信息和数据链路指令中。 |                                                                                                   |
+| ADJ A/C                                                          | 表示本机起降航线中或起降航线附近有其他飞机。                                                      |
+| VOICE                                                            | 指示 ACL 不可用，切换至标准的基于音频通讯的进近流程。                                             |
+| TILT                                                             | 表示在过去的10秒内未收到任何数据链路信息。在 ACL 中，如果超过2秒未收到数据链路信息，AFCS 会断开。 |
+| CMD CHG                                                          | 表示即将收到或最近更变的数据链路指令。                                                            |
+| ALT CHG                                                          | 表示即将收到或最近更变的数据链路高度指令。                                                        |
+| MON ALT                                                          | 表示本机未能以足够精度遵循高度指令。                                                              |
+| MANUAL                                                           | 表示本机应解除自动驾驶。                                                                          |
+| SPD CHG                                                          | 表示即将收到或最近更变的数据链路速度指令。                                                        |
+| MON SPD                                                          | 表示本机未能以足够精度遵循速度指令。                                                              |
+| CMD CTRL                                                         | 表示飞机正由数据链路控制进行助降。                                                                |
+| CHG CHN                                                          | 切换数据链路波道指令。                                                                            |
+| HDG CHN                                                          | 表示即将收到或最近更变的数据链路航向指令。                                                        |
+| CANC RPY                                                         | TDS（战术数据系统）取消发送应答信息。                                                             |
+| FWD VEC                                                          | 飞机正接受数据链路引导，从目标前方（前半球）接近目标。                                            |
 
-> 💡 The majority of the DDI lights depend on data link reply messages not currently modelled in
-> DCS.
+> 💡 目前在 DCS 中未模拟绝大多数依赖于数据链路应答消息的 DDI 灯光。
 
-## DECM Control Panel
+## 防御性电子对抗（DECM）控制面板
 
 ![decm](../../img/cockpit_detail_rio_decm.jpg)
 
-Control panel for the AN/ALQ-126 DECM jammer.
+这个面板用于控制 DECM（防御性电子对抗）干扰机（AN/ALQ-126）。
 
-### Standby Light
+### STANDBY 指示灯
 
-The STANDBY light (<num>1</num>) is an orange warm-up indication when the system is placed in STBY.
+橙色指示灯 (<num>1</num>)，当模式选择旋钮拨动至 STBY 档位时，用来指示系统正在预热。
 
-The light extinguishes after warm-up. Illumination during test or operation indicates a fault.
+预热完成后指示灯将会熄灭。如果在测试或工作中亮起表示系统发生故障。
 
-### DECM Selector
+### DECM 模式选择旋钮
 
-The DECM selector (<num>2</num>) controls AN/ALQ-126 power and operating mode.
+DECM 电源/模式选择开关 (<num>2</num>)。用于控制 DECM 系统的电源和 DECM 的功能。
 
-Selectable modes are:
+可选模式有：
 
-- OFF - Removes power from the AN/ALQ-126.
-- STBY - Standby warm-up mode.
-- TEST/HOLD 3 SEC - Hold for three seconds to arm the system test.
-- TEST/ACT - Initiates AN/ALQ-126 BIT after the TEST/HOLD 3 SEC step.
-- REC - Receive and analyze threat signals. Missile launch detection may force the system into
-  repeat.
-- RPT - Repeat mode, transmits programmed responses to detected threats.
+- OFF - 关闭 AN/ALQ-126 的电源。
+- STBY - 待机状态，向系统通电以进行预热。
+- TEST/HOLD 3 SEC - 将选择开关拨该位置并保持3秒以准备系统测试。
+- TEST/ACT - 将开关保持在 TEST/HOLD 3 SEC 档位3秒后，选择 TEST/ACT 档位来开始 AN/ALQ-126 自检。
+- REC - 接收模式，使 AN/ALQ-126 接收并分析威胁信号。探测到的导弹发射威胁可能强制命令系统进入重复模式。
+- RPT - 重复模式，使 AN/ALQ-126 向接收到的雷达威胁发送干扰信号。
 
-### Audio Knob
+### AUDIO 旋钮
 
-The AUDIO knob (<num>3</num>) sets jammer audio volume to the RIO headset.
+音量控制旋钮 (<num>3</num>)，用于调节 RIO 头戴中来自 AN/ALQ-126 的音频音量。
 
-## Data Link Control Panel
+## 数据链路控制面板
 
 ![datalink](../../img/cockpit_detail_rio_datalink.jpg)
 
-Control panel for data link operation.
+面板用于控制数据链路。
 
-### Transmission Mode Switch
+### 传输模式开关
 
-The transmission mode switch (<num>1</num>) selects data link transmission mode.
+(<num>1</num>) 用于设置数据链路的传输模式。
 
-- TEST - Initiates system test.
-- NORM - Normal operational mode.
-- A/J - Anti-jam transmission mode.
+- TEST - 开始系统测试。
+- NORM - 正常工作模式。
+- A/J - 反干扰工作模式。
 
-### Frequency Select Wheels
+### 频率选择拨轮
 
-The frequency select thumbwheels (<num>2</num>) set the data link frequency.
+(<num>2</num>) 拨轮用于设置数据链路频率。
 
-### Data Link Power Switch
+### 数据链路电源开关
 
-The data link power switch (<num>3</num>) applies power to the data link and is also used to select
-AUX (auxiliary) mode.
+控制数据链路电源 (<num>3</num>)，也用于设置数据链路辅助（AUX）模式。
 
-## Data Link Reply and Antenna Control Panel
+## 数据链路应答和天线控制面板
 
 ![datalink antenna](../../img/cockpit_detail_rio_datalinkantenna.jpg)
 
-Panel controlling data link alignment, reply, and antenna selection.
+用于控制数据链路对准、应答和天线的面板。
 
-### Antenna Switch
+### ANTENNA 开关
 
-The ANTENNA switch (<num>1</num>) selects the antenna used for UHF 1 and the data link.
+(<num>1</num>) 用于选择 UHF 1 和数据链路使用的天线。
 
-### Reply Switch
+### REPLY 开关
 
-The REPLY switch (<num>2</num>) controls data link reply transmission.
+(<num>2</num>) 用于控制数据链路应答。
 
-- NORM - Reply transmission enabled.
-- CANC - Reply transmission disabled (cancelled).
+- NORM - 启用传输数据链路应答。
+- CANC - CANC（取消）禁用数据链路应答。
 
-### Datalink Mode Switch
+### MODE 选择开关
 
-The MODE switch (<num>3</num>) is spring-loaded to TAC and held by solenoid.
+(<num>3</num>) 螺线管保持在 CAINS/WAYPT 档位，失电时弹回 TAC 档位。
 
-- CAINS/WAYPT - Enables data link alignment and waypoint update.
-- TAC - Enables manual frequency selection and stops alignment/waypoint update.
+- CAINS/WAYPT - 启用数据链路对准和航路点更新。
+- TAC - 启用手动选择数据链路频率，停止数据链路对准。
 
-### Address Thumbwheel
+### ADDRESS 拨轮
 
-The ADDRESS thumbwheel (<num>4</num>) sets the aircraft data link address.
+(<num>4</num>) 设置本机使用的数据链路位址。
 
-This sets the two least-significant digits; remaining digits are set by ground crew.
+拨轮设置最低的两位数字，其它的数字将由地勤进行设置。
 
-## AN/ALE-39 Control Panel
+## AN/ALE-39 控制面板
 
 ![ale39](../../img/cockpit_detail_rio_ale39.jpg)
 
-Controls countermeasure dispensing and operating modes for the AN/ALE-39.
+控制 AN/ALE-39 对抗措施布撒和操作模式。
 
-### Inventory Counters
+### 剩余数量计数器
 
-The inventory counters (<num>1</num>) indicate remaining countermeasure quantities.
+机械计数器(<num>1</num>)——用于显示飞机装载的对抗措施的剩余数量。
 
-Counters are manually set by pushing in and rotating the knob beneath each counter.
+按下并旋转计数器下方对应的旋钮来手动设置计数器。
 
-### Power and Mode Switch
+### PWR/MODE 开关
 
-The PWR/MODE switch (<num>2</num>) applies power and selects AN/ALE-39 operating mode.
+电源/模式开关(<num>2</num>)，接通 AN/ALE-39 电源以及选择 AN/ALE-39 的工作模式。
 
-- AUTO(CHAFF)/MAN - Enables manual dispensing and automatic chaff dispensing via ECM threat
-  detection.
-- MAN - Manual dispensing only.
-- OFF - System off.
+- AUTO(CHAFF)/MAN - 允许手动弹射对抗措施，同时允许 ECM 系统根据探测到的威胁自动弹射箔条。
+- MAN - 允许手动弹射对抗措施。 - OFF - 关闭 AN/ALE-39。
 
-### Salvo Flares Switch
+### SALVO FLARES 开关
 
-The SALVO FLARES switch (<num>3</num>) enables rapid firing of all flares.
+红外干扰弹齐射开关(<num>3</num>)，启用 L/R 两个部分平行快速弹射所有红外干扰弹。
 
-The switch must be lifted to move to ON.
+开关必须提起来拨动至 ON 档位。
 
-### Flare Mode Switch
+### FLARE MODE 开关
 
-The FLARE MODE switch (<num>4</num>) selects flare dispensing logic and also controls what the
-pilot’s DLC button dispenses while airborne.
+红外干扰弹发射模式开关(<num>4</num>)——用于选择弹射红外干扰弹的工作模式。也用于当襟翼收上时，控制当飞行员驾驶杆的 DLC 按钮弹射哪种对抗措施。
 
-- MULT - Each flare command dispenses one flare from each launcher subsection loaded with flares.
-- NORM - Each flare command dispenses one flare total.
-- PILOT - Pilot DLC button dispenses flares. Other positions cause the pilot DLC button to dispense
-  chaff.
+- MULT - 齐射模式，每个弹射脉冲将从编程面板中设置为 F 的部分弹射一发红外干扰弹。这个选项对手动弹射模式和程序弹射模式都有效。
+- NORM - 正常模式，每个红外干扰弹弹射指令都会使 AN/ALE-39 弹射总计一枚红外干扰弹。这个选项对手动发射模式和程序发射模式都有效。
+- PILOT - 飞行员控制模式，允许飞行员通过驾驶杆上的 DLC 按钮手动弹射红外干扰弹，如果选择除 PILOT 以外的档位，按下 DLC 按钮会弹射箔条。
 
-### Countermeasure Release Switches
+### 对抗措施弹射开关
 
-The countermeasure release switches (<num>5</num>) are spring-loaded to center and command
-countermeasure release.
+对抗措施弹射开关(<num>5</num>)为弹簧归中，开关用于控制对应对抗措施的弹射动作。
 
-- PRGM - Program release. Switch must be lifted to enter PRGM; momentary actuation initiates
-  programmed release.
-- STBY - No release.
-- SGL - Single release.
+- PRGM - 程序，将开关向上提起才能将其拨至该档位，短暂拨动至 PRGM 档位会按照预先设定的程序弹射对抗措施。
+- STBY - 待机，不弹射对抗措施。
+- SGL - 单发，短暂拨动至 SGL 将指令弹射单发对抗措施。
 
-## AA1 Control Panel
+## AAI 控制面板
 
 ![aa1](../../img/cockpit_detail_rio_aa1.jpg)
 
-AN/APX-76 interrogator control panel.
+AN/APX-76 问询器控制面板。
 
-> 💡 Due to DCS limitations in regards to IFF the AA1 control panel is currently non-functional.
+> 💡 由于 DCS 对于 IFF 模拟的限制，目前 AAI 控制面板无功能。
 
-### M4 Alarm Override Switch
+### M4 ALARM OVERRIDE 开关
 
-The M4 ALARM OVERRIDE switch (<num>1</num>) disables the Mode 4 tone alarm in the RIO headset.
+MODE 4 报警超控开关(<num>1</num>)，用于禁用 RIO 头戴中的 MODE 4 报警音。
 
-### Test / Challenge CC Switch
+### TEST-CHAL CC 开关
 
-The TEST-CHAL CC switch (<num>2</num>) is spring-loaded to center and controls IFF test and
-challenge functions.
+测试-询问控制开关 (<num>2</num>)，这个弹簧开关用于控制 IFF 询问和测试，松开开关时，开关弹回中间位置。
 
-- TEST - Momentary actuation interrogates own transponder. With matching codes, two solid lines
-  appear on the DDD at 3 and 4 miles.
-- CHAL CC - Momentary actuation starts a 10-second interrogation cycle. Only returns with correct
-  mode and code are displayed on the DDD.
+- TEST - 将开关短暂拨动至该档位会使 AN/APX-76 问询本机的 IFF 应答机，以此来对 AN/APX-76 进行测试。如果编码设置相同，DDD 显示器中对应3海里和4海里的位置会出现两条实线。
+- CHAL
+  CC - 将开关短暂拨动至该档位会使 AN/APX-76 进行一个长10秒的询问周期，仅正确的模式和编码应答会显示在 DDD 中。
 
-### Code Selector Thumbwheels
+### CODE 选择拨轮
 
-The CODE selector thumbwheels (<num>3</num>) set interrogation mode and code.
+编码设置拨轮(<num>3</num>)，用于设置询问模式和询问编码。
 
-The first wheel sets mode, and the last four wheels set code.
+第一个拨轮用于设置模式，后四个拨轮用于设置编码。
 
-### Challenge Light
+### CHAL 指示灯
 
-The CHAL light (<num>4</num>) illuminates during active interrogation.
+询问状态灯 (<num>4</num>) ，灯光亮起表示 AN/APX-76 正在进行询问。
 
-### Fault Light
+### FAULT 指示灯
 
-The FAULT light (<num>5</num>) indicates an AN/APX-76 fault.
+故障指示灯 (<num>5</num>)，灯光亮起表示 AN/APX-76 中出现故障。
 
-## AN/ALE-39 Programmer
+## AN/ALE-39 编程面板
 
 ![ale39programmer](../../img/cockpit_detail_rio_ale39programmer.jpg)
 
-Programming panel used to enter countermeasure programs and inventory into the AN/ALE-39.
+用于编辑和设置 AN/ALE-39 的对抗措施弹射程序。
 
-### Jammer Program Thumbwheels
+### JAMR 拨轮（灰色）
 
-The JAMR thumbwheels (<num>1</num>) set jammer program parameters.
+(<num>1</num>)用于设置有源干扰弹弹射程序。
 
-- QTY - Quantity of jammers released per program.
-- INTV - Interval in seconds between jammer releases.
+- QTY - 数量拨轮，用于设置有源干扰弹弹射程序中，弹射的数量。
+- INTV - 间隔拨轮，用于设置有源干扰弹弹射程序中，弹射的间隔，单位是秒。
 
-### Chaff Program Thumbwheels
+### CHAFF 拨轮（蓝色）
 
-The CHAFF thumbwheels (<num>2</num>) set chaff program parameters.
+(<num>2</num>)用于设置箔条发射程序。
 
-- B-QTY - Burst quantity per salvo; may be set to C (continuous) or R (random).
-- B-INTV - Burst interval; may be set to R (random).
-- S-QTY - Number of salvos in the program.
-- S-INTV - Interval between salvos.
+- B-QTY - 数量拨轮，用于设置每次弹射程序中，连投箔条的数量，也可以设置为 C（连续）和 R（随机）。
+- B-INTV - 间隔拨轮，用于设置干扰弹弹射程序中，连投的时间间隔，也可以设置为 R（随机）。
+- S-QTY - 数量拨轮，用来控制一次弹射程序中，连投的齐射轮数。
+- S-INTV - 间隔拨轮，用于设置一次弹射程序中，齐射轮数之间的时间间隔。
 
-### Flare Program Thumbwheels
+### FLARE 拨轮（黄色）
 
-The FLARE thumbwheels (<num>3</num>) set flare program parameters.
+(<num>3</num>)用于设置红外干扰弹弹射程序。
 
-- QTY - Quantity of flares released per program.
-- INTV - Interval between flare releases.
+- QTY - 数量拨轮，用于设置弹射程序中，弹射红外干扰弹的数量。
+- INTV - 间隔拨轮，用于设置弹射程序中，弹射红外干扰弹的时间间隔。
 
-### Load Control Thumbwheels
+### LOAD 控制拨轮
 
-The LOAD control thumbwheels (<num>4</num>) input what is loaded in each launcher subsection.
+(<num>4</num>) 用于向 AN/ALE-39 中输入每个发射器子部分中装填的对抗措施类型（C - 箔条，F - 红外干扰弹，J - 有源干扰弹）。
 
-- L10 - Left 10 subsection load.
-- L20 - Left 20 subsection load.
-- R10 - Right 10 subsection load.
-- R20 - Right 20 subsection load.
+- L10 - 设置左发射器 10 部分中填充的对抗措施类型。
+- L20 - 设置左发射器 20 部分中填充的对抗措施类型。
+- R10 - 设置右发射器 10 部分中填充的对抗措施类型。
+- R20 - 设置右发射器 20 部分中填充的对抗措施类型。
 
-### Reset Switch
+### 复位开关
 
-The RESET switch (<num>5</num>) loads programmed settings into the AN/ALE-39 and resets sequencer
-switches to their start positions.
+复位开关(<num>5</num>)，用于向 AN/ALE-39 中载入预设定的程序，并复位所有电子序列器开关至初始位置。
 
-## Interior Light Control Panel
+## 机内照明控制面板
 
 ![light](../../img/cockpit_detail_rio_light.jpg)
 
-Panel controlling RIO cockpit lighting.
+用于控制 RIO 驾驶舱内的灯光。
 
-### Instrument Lighting Thumbwheel
+### INSTRUMENT 拨轮
 
-The INSTRUMENT thumbwheel (<num>1</num>) controls instrument panel lighting intensity.
+仪表板灯光拨轮，用于控制仪表板灯光亮度。
 
-- 0 - Off
-- 1–14 - Increasing brightness
+- 0 - 关闭
+- 1–14 - 增加亮度。
 
-### White Flood Switch
+### WHITE FLOOD 开关
 
-The WHITE FLOOD switch (<num>2</num>) enables white flood lighting.
+(<num>2</num>) 用于控制 RIO 驾驶舱中的白色泛光灯。
 
-DIM and BRT settings are available. The switch is locked to OFF unless pulled out.
+开关锁定在 MED 档位，向上提起开关才可将其拨至 BRT（亮）或 DIM（暗）。
 
-### Console Lighting Thumbwheel
+### CONSOLE 拨轮
 
-The CONSOLE thumbwheel (<num>3</num>) controls console lighting and red flood lighting.
+控制台灯光拨轮(<num>3</num>)，用于调整控制台灯光和红色泛光灯的拨轮。
 
-- 0 - Console and red flood off
-- 1–14 - Increasing console brightness
+- 0 - 关闭控制台灯光和红泛光灯
+- 1–14 - 逐渐增加控制台灯光的亮度
 
-### Red Flood Switch
+### RED FLOOD 开关
 
-The RED FLOOD switch (<num>4</num>) controls red instrument and console flood lighting.
+红色泛光灯开关 (<num>4</num>)，用于控制仪表板和控制台的红色泛光灯。
 
-- DIM - Dim red console flood
-- MED - Medium red console flood
-- BRT - Bright red instrument flood and console lights
+- DIM - 开启高亮度仪表板和控制台红色泛光灯
+- MED - 仅开启红色控制台泛光灯。
+- BRT - 仅开启低亮度控制台红色泛光灯
 
-## Data / ADF Switch
+## 数据/ADF 开关
 
 ![data](../../img/cockpit_detail_rio_data.jpg)
 
-The DATA/ADF switch (<num>1</num>) controls display of navigation data and ADF symbology on the HSD
-and ECMD.
+(<num>1</num>) 用于控制 HSD 和 ECMD 中的显示的数据和 ADF 信息。
 
-- BOTH - Displays ADF bug and navigation data block.
-- DATA - Displays navigation data block only.
-- OFF - Disables both.
+- BOTH - HSD 和 ECMD 中将显示 ADF 游标和导航数据块。
+- DATA - 只显示导航数据块。
+- OFF - 全部禁用。
 
-## IFF Transponder Control Panel
+## 敌我识别（IFF）应答机控制面板
 
 ![transponder](../../img/cockpit_detail_rio_transponder.jpg)
 
-Control panel for the AN/APX-72 IFF transponder.
+用于控制 AN/APX-72 应答机。
 
-### Mode 4 Switch
+### MODE 4 开关
 
-The MODE 4 switch (<num>1</num>) enables Mode 4 operation.
+(<num>1</num>) 用于启用 MODE 4 工作模式。
 
-### Mode 4 Audio/Light Switch
+### MODE 4 AUDIO/LIGHT 开关
 
-The MODE 4 AUDIO/LIGHT switch (<num>2</num>) enables Mode 4 audio monitoring and/or reply light
-monitoring.
+MODE 4 音频/灯开关(<num>2</num>)，用于启用 MODE 4 音频和灯光监视。
 
-- AUDIO - Enables Mode 4 audio monitoring and reply light monitoring.
-- OUT - Disables audio and light monitoring.
-- LIGHT - Enables reply light monitoring only.
+- AUDIO - 音频，启用 MODE 4 询问的音频监视和 MODE 4 应答的 REPLY（应答）灯光监视。
+- OUT - 关闭，禁用 MODE 4 的音频和灯光监控。
+- LIGHT - 灯光，启用 MODE 4 应答的灯光监控。
 
-### Mode 4 Code Selector
+### MODE 4 CODE 选择开关
 
-The MODE 4 CODE selector (<num>3</num>) selects which cipher code is used.
+MODE 4 编码选择旋钮 (<num>3</num>)，用于选择 MODE 4 使用的，密钥编码类型。
 
-- ZERO - Erases both ciphers.
-- B - Selects B cipher.
-- A - Selects A cipher.
-- HOLD - Non-functional.
+- ZERO - 擦除系统中的 A 和 B 密钥。
+- B - 选择并使用 B 密钥。
+- A - 选择并使用 A 密钥。
+- HOLD - 无功能。
 
-### Mode 4 Reply Light
+### MODE 4 REPLY 灯
 
-The MODE 4 REPLY light (<num>4</num>) illuminates when a Mode 4 reply is generated and transmitted.
+MODE 4 应答指示灯 (<num>4</num>)，灯光亮起表示系统正生成并传输 MODE 4 应答。
 
-The light can be pressed to test.
+按下指示灯可以测试灯光。
 
-### Test Light
+### TEST 指示灯
 
-The TEST light (<num>5</num>) illuminates to indicate a successful test when a mode test is
-performed.
+测试灯 (<num>5</num>)，选择控制面板上的对应的测试开关进行测试并且测试结果为正常工作时，测试灯会亮起。
 
-The light can be pressed to test illumination.
+按下指示灯可以测试正常亮起。
 
-### Master Selector
+### MASTER 选择旋钮
 
-The MASTER selector (<num>6</num>) selects AN/APX-72 operating state.
+主模式选择旋钮(<num>6</num>)，用于控制 AN/APX-72 的工作模式。
 
-- OFF - No power.
-- STBY - Standby for immediate operation when another mode is selected.
-- LOW - Low sensitivity replies; responds only to strong nearby interrogators.
-- NORM - Normal reply operation.
-- EMER - Emergency replies to Mode 1, 2, and 3/A and normal reply to Mode C, regardless of mode
-  switch settings.
+- OFF - 关闭，切断 AN/APX-72 的电源。
+- STBY - 待机模式，使系统进入待机状态，选择开关的其他档位时，系统可立即开始工作。
+- LOW - 低灵敏度应答模式，只应答位于附近的强询问信号。
+- NORM - 正常模式，应答所有接收到的询问。
+- EMER - 激活紧急应答模式，无视模式开关当前位置，应答 MODE 1、MODE 2 和 MODE
+  3/A 问询，同时正常应答 MODE C 询问。
 
-### Mode Switches
+### MODE 开关
 
-The MODE switches (<num>7</num>) control individual IFF mode operation.
+(<num>7</num>)用于选择不同的 IFF 模式。
 
-- TEST - Tests the respective mode; correct operation indicated by TEST light.
-- ON - Enables the mode.
-- OUT - Disables the mode.
+- TEST - 测试对应的模式，TEST 指示灯亮起表示正常工作。
+- ON - 启用选定的 IFF 模式。
+- OUT - 关闭选定的 IFF 模式。
 
-### Rad Test / Out / Mon Switch
+### RAD TEST-OUT-MON 开关
 
-The RAD TEST-OUT-MON switch (<num>8</num>) controls ground test and monitoring of non-Mode 4
-replies.
+开关(<num>8</num>)用于控制地面测试和监控非 MODE 4 应答。
 
-- RAD TEST - Not used by aircrew.
-- OUT - Disables test and monitoring.
-- MON - Monitors Mode 1, 2, 3, and C by illuminating the TEST light when replies are generated and
-  transmitted.
+- RAD TEST - 机组人员不使用该档位。
+- OUT - 禁用地面测试和监控。
+- MON - 监控 MODE 1、MODE 2、MODE 3 和 MODE C 应答，系统生成并发送应答时，测试灯会亮起。
 
-### Ident / Out / Mic Switch
+### IDENT-OUT-MIC 开关
 
-The IDENT-OUT-MIC switch (<num>9</num>) controls Mode 1–3 IDENT functionality.
+(<num>9</num>) 用于控制 MODE 1、MODE 2 和 MODE 3 的 IDENT（识别）功能。
 
-- IDENT - Momentary; enables IDENT replies for 15–30 seconds after release.
-- OUT - IDENT disabled.
-- MIC - Transfers IDENT control to crewmember UHF PTT; IDENT replies occur when PTT is keyed.
+- IDENT - 将开关拨至该档位并松开开关来启用系统 IDENT 应答，应答持续15至30秒。
+- OUT - 关闭 IDENT 功能。 - MIC - 将 IDENT 控制转交给机组 UHF
+  PTT（按键通话）开关，PTT 开关与 IDENT 档位作用相同，每次按下 PTT 都会启用 IDENT 应答。
 
-### Code Thumbwheels
+### CODE 拨轮
 
-The code thumbwheels (<num>10</num>) set Mode 1 and Mode 3 codes.
+(<num>10</num>) 用于选择 MODE 1 和 MODE 3 使用的编码。
 
-Six thumbwheels are provided.
+共有六个拨轮可用。
 
-## IFF Antenna Control / Test Panel
+## 敌我识别（IFF）天线控制 / 测试面板
 
 ![rio test](../../img/cockpit_detail_rio_riotest.jpg)
 
-Panel containing IFF antenna selection, BIT controls, and ground cooling control.
+用于控制 IFF 天线、BIT 和地面冷却。
 
-### IFF Antenna Switch
+### IFF ANT 开关
 
-The IFF ANT switch (<num>1</num>) selects which antenna the IFF transponder uses.
+敌我识别天线控制开关 (<num>1</num>)，用于选择应答机使用哪一根 IFF 天线。
 
-- AUTO - Automatic selection.
-- LWR - Forces lower antenna selection.
+- AUTO - 自动选择。
+- LWR - 强制选择下部天线。
 
-### Indicator Light / DDI BIT Switch
+### IND LT/DDI BIT 开关
 
-The IND LT/DDI BIT switch (<num>2</num>) initiates DDI BIT and tests RIO indicator lights.
+指示灯/DDI自检开关 (<num>2</num>)，用于手动测试 DDI 自检和测试 RIO 驾驶舱内的指示灯。
 
-### Ground Cooling Switch
+### GND CLG 开关
 
-The GND CLG switch (<num>3</num>) enables external air cooling while on the ground.
+地面冷却控制开关 (<num>3</num>)，允许地面通过外部气源为飞机系统提供冷却。
 
-- OBC/CABIN - External air into cabin and electronics cooling with reduced OBC performance.
-- OFF - External air not used.
-- AWG-9/AIM-54 - External air used to cool AWG-9/AIM-54 more effectively; disables external cabin
-  air.
+- OBC/CABIN - 允许在地面使用外部气源为座舱通风并冷却电子设备以及 AWG-9/AIM-54，但 OBC 性能下降。
+- OFF - 禁用外部引气通风和冷却。
+- AWG-9/AIM-54 - 使用外部引气为 AWG-9 和 AIM-54 的冷却液降温，性能更好但会切断座舱通风。
 
-## Mid Compression Bypass Test Panel (F-14A only)
+## 中间级放气检测面板（仅限 F-14A）
 
 ![mcb](../../img/cockpit_detail_rio_mcb.jpg)
 
-Panel used to verify Mid Compression Bypass (MCB) circuit functionality.
+面板中包含了用于核实中间级放气（MCB）电路正常工作的控制开关/按钮和指示器。
 
-### Left and Right Test Lights
+### 左右检测指示灯
 
-The left and right test lights (<num>1</num>) illuminate during an MCB test to indicate successful
-test results for the respective engine circuits.
+启动 MCB 检测后 (<num>1</num>)，指示灯光亮起表示对应发动机的 MCB 电路通过检测。
 
-### MCB Test Switch
+### MCB 检测开关
 
-The MCB test switch (<num>2</num>) initiates the MCB circuit test.
+拨动开关 (<num>2</num>) 来启动 MCB 电路检测，用于核实 MCB 电路正常工作的测试开关。
 
-## Electrical Power System Test Panel
+## 电力系统测试面板
 
 ![power system test](../../img/cockpit_detail_rio_powersystest.jpg)
 
-Ground crew test panel for aircraft electrical systems.
+地勤人员使用此面板测试飞机电力系统。
 
-> 💡 Non-functional in DCS.
+> 💡 DCS 中无功能。
 
-## Canopy Defog / Cabin Air Lever
+## 座舱盖除雾 / 座舱通风气流调节拉杆
 
 ![canopy defog](../../img/cockpit_detail_rio_canopydefog.jpg)
 
-The canopy air diffuser lever (<num>1</num>) controls distribution of conditioned cabin air.
+舱盖空气散流器控制手柄(<num>1</num>)控制驾驶舱中的通风气流。
 
-- CABIN AIR - Normal position. Directs approximately 70% of airflow through cockpit air diffusers
-  and 30% through canopy diffusers.
-- CANOPY DEFOG - Directs all airflow through canopy diffusers for canopy defog.
+- CABIN AIR - 空调系统引导70%的气流空过驾驶舱空气散流器，30%通过舱盖空气散流器。
+- CANOPY DEFOG - 空调系统将引导所有气流通过舱盖空气散流器来给舱盖除雾。

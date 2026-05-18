@@ -1,178 +1,161 @@
-# Center Console
+# 中央控制台
 
-## Tactical Information Display (TID)
+## 战术信息显示器（TID）
 
 ![tid](../../img/cockpit_detail_rio_tid.jpg)
 
-The Tactical Information Display (TID) presents tactical, navigation, and data link information to
-the RIO and provides associated navigation and display controls.
+战术信息显示器及导航系统相关控制开关/按钮。
 
-### INS Status Indicator
+### INS 状态指示器
 
-The INS status indicator (<num>1</num>) displays inertial navigation system alignment status.
+指示灯 (<num>1</num>) 用来指示 INS 对准的状态。
 
-- STBY — Power applied but alignment not complete.
-- READY — Minimum alignment sufficient for AIM-54 launch criteria.
+- STBY — 指示 INS 电源已接通但未完成对准。
+- READY — 指示 INS 对准精度已符合 AIM-54 最低发射标准。
 
-Both lights extinguish when an INS mode is selected. The indicator may also display fault
-conditions.
+选择 INS 模式时，STBY 和 READY 灯应熄灭。如果指示灯未熄灭，那么表示 INS 系统故障。
 
-### Contrast Knob
+### CONTRAST 旋钮
 
-The CONTRAST knob (<num>2</num>) adjusts contrast of TCS video displayed on the TID.
+对比度控制旋钮 (<num>2</num>)，用于调节 TCS 视频的对比度。
 
-### Data Readout Drum
+### DATA READOUT 指示器
 
-The DATA READOUT drum (<num>3</num>) indicates the data source currently shown on the TID
-alphanumeric readouts.
+数据读数滚筒指示器 (<num>3</num>)，用来指示显示在 TID 读数中的数据的来源。
 
-The drum may be blank for sources that do not generate textual data.
+如果显示器内的滚筒上没有数据源对应的名称，那么滚筒将显示空白。
 
-### Brightness Knob
+### BRIGHT 旋钮
 
-The BRIGHT knob (<num>4</num>) controls overall TID display brightness.
+亮度控制旋钮 (<num>4</num>)，用于调节 TID 亮度。
 
-### Steering Indicator Drum
+### STEERING 指示滚筒
 
-The STEERING indicator drum (<num>5</num>) displays the steering information currently being
-provided to the pilot.
+转向指示滚筒 (<num>5</num>)，显示当前导航系统向飞行员显示的转向信息。
 
-### Destination Selector
+### DEST 选择旋钮
 
-The DEST selector (<num>6</num>) selects the destination used for navigation in destination mode.
+目标选择旋钮 (<num>6</num>)，用来选择在 STEER CMD 为 DEST 模式时所使用的目标点。
 
-### Collision Steering Button
+### CLSN 按钮
 
-The CLSN button (<num>7</num>) selects collision steering toward a tracked target or the TWS
-centroid.
+带有指示灯的按钮 (<num>7</num>)，用于选择恒量角度拦截转向至跟踪的目标或 TWS 质心。
 
-### Display Selection Buttons
+### DISPLAY 按钮
 
-The DISPLAY buttons (<num>8</num>) control which elements are shown on the TID.
+用于控制 TID 中显示何种类型的标识。
 
-Each button includes an indicator light showing current selection state.
+选择对应的按钮时，按钮指示灯亮起。
 
-Available display selections include:
+可用显示选项包括：
 
-- RID DISABLE — Not implemented.
-- ALT NUM — Toggles altitude numerics next to track symbols.
-- SYM ELEM — Toggles supplementary track symbology. When deselected, only the track symbol dot is
-  displayed.
-- DATA LINK — Toggles display of all data link tracks.
-- JAM STROBE — Toggles display of jamming strobes.
-- NON-ATTK — Toggles display of non-attackable tracks.
-- VEL VECTOR — Toggles display of velocity vectors.
-- LAUNCH ZONE — Toggles missile launch zone display. Replaces velocity vectors when applicable.
-  Automatically enabled by the WCS 60 seconds prior to maximum missile launch range.
+- RID DISABLE — 未实装。
+- ALT NUM — 显示或隐藏跟踪符号左侧的高度数值。 
+- SYM ELEM — 显示或隐藏跟踪目标的所有补充标识。未选中时，TID 将只显示一个表示跟踪目标的圆点。
+- DATA LINK — 显示或隐藏所有数据链路跟踪目标。
+- JAM STROBE — 显示或隐藏干扰源射线。
+- NON-ATTK — 显示或隐藏不可攻击的跟踪目标。
+- VEL VECTOR — 显示或隐藏跟踪的速度矢量。
+- LAUNCH ZONE — 显示或隐藏跟踪的导弹发射区间。如果启用，那么将替换速度矢量显示。在到达目标的发射最大距离 60 秒前，WCS 会自动激活导弹发射区间显示。
 
-### Range Selector
+### RANGE 选择旋钮
 
-The RANGE selector (<num>9</num>) selects the TID display scale.
+距离选择旋钮 (<num>9</num>)，用于选择当前 TID 的标度。
 
-The selected range corresponds to the diameter distance represented on the display.
+选择的标度对应显示的直径距离。
 
-### TID Mode Selector
+### TID MODE 选择旋钮
 
-The TID MODE selector (<num>10</num>) selects the current TID presentation mode.
+TID 模式选择旋钮 (<num>10</num>)，用于控制 TID 的显示模式。
 
-### Track Hold Button
+### TRACK HOLD 按钮
 
-The TRACK HOLD button (<num>11</num>) extends the time before a radar track is dropped after the
-last observation.
+跟踪保持按钮 (<num>11</num>)，用于使雷达最后一次观察到目标后，将跟踪被丢弃前的时间延长至两分钟。
 
-When selected, track retention time is increased to two minutes. Normal retention time is
-approximately 14 seconds.
+选择后，跟踪保留时间增加至两分钟。正常时间是 14 秒。
 
-### Navigation Mode Selector
+### NAV MODE 选择开关
 
-The NAV MODE selector (<num>12</num>) selects navigation reference systems and controls INS
-alignment and operating mode.
+导航模式选择旋钮 (<num>12</num>)，用于控制导航参考系统，也用于 INS 对准。
 
-## Hand Control Unit (HCU)
+## 手控装置（HCU）
 
 ![hcu](../../img/cockpit_detail_rio_hcu.jpg)
 
-The hand control unit is the primary control stick for radar and TCS operation.
+雷达和 TCS 主控制杆。
 
-### IR/TV Switch
+### IR/TV 开关
 
-The IR/TV switch (<num>1</num>) controls TCS power.
+(<num>1</num>) 用于控制 TCS 电源。
 
-- OFF/STBY — Applies power without full operation.
-- ON — Enables full TCS operation.
+- OFF/STBY — 通电但，不完整工作。
+- ON — 启用完整 TCS 功能。
 
-### IR/TV Overtemperature Indicator
+### IR/TV 超温指示灯
 
-The IR/TV overtemp indicator (<num>2</num>) illuminates when an overtemperature condition exists
-within the TCS.
+指示灯 (<num>2</num>) 亮起表示 TCS 超温状态。
 
-### Light Test Button
+### LIGHT TEST 按钮
 
-The LIGHT TEST button (<num>3</num>) initiates a test of all AWG-9 indicator lights.
+灯光测试按钮 (<num>3</num>)，用于测试所有 AWG-9 指示灯。
 
-### Power Reset Indicator
+### PWR RESET 指示灯
 
-The PWR RESET indicator (<num>4</num>) illuminates when one or more secondary power supplies are
-inoperative.
+电源复位指示灯 (<num>4</num>)，灯光亮起表示一个或多个不工作的二次电源。
 
-### Power Reset Button
+### PWR RESET 按钮
 
-The PWR RESET button (<num>5</num>) attempts to restore inoperative secondary power supplies.
+电源复位按钮 (<num>5</num>)，用于复位不工作的二次电源。
 
-If the fault condition persists, affected supplies will remain inoperative.
+但如果导致电源不工作的状况仍未解决，受影响的二级电源依旧无法正常工作。
 
-### WCS Status Indicator
+### WCS 指示灯
 
-The WCS indicator (<num>6</num>) illuminates under the following conditions:
+WCS 指示灯 (<num>6</num>) 亮起表示：
 
-- STBY or XMT selected while radar warmup is incomplete.
-- XMT selected while radar transmission remains inhibited.
+- 选择了 STBY/XMT 档位，但雷达未准备就绪。 - 选择了 XMT 档位，但雷达未进行发射。
 
-### WCS Power Switch
+### WCS 控制开关
 
-The WCS switch (<num>7</num>) controls weapon control system power.
+(<num>7</num>) 用于控制 WCS 电源（计算机和雷达）。
 
-- STBY — Applies power to WCS and begins radar warmup without transmission.
-- XMT — Enables radar transmission when warmup is complete.
+- STBY — WCS 通电，并在静默状态下进行雷达预热。
+- XMT — 如果雷达已经准备就绪，启用雷达发射。
 
-Display warmup time is approximately 30 seconds. Radar warmup time is approximately three minutes.
+AWG-9 显示器预热需要 30 秒，而雷达预热需要 3 分钟。
 
-### Manual Rapid Lockon Button
+### MRL 按钮
 
-The MRL button (<num>8</num>) selects manual rapid lock-on mode.
+MRL 按钮 (<num>8</num>) 用来选择手动快速锁定模式。
 
-This mode overrides all other radar operating modes except PLM and VSL.
+超控所有除 PLM（飞行员锁定模式）和 VSL（垂直扫描锁定）外的雷达工作模式。
 
-### Offset Button
+### OFFSET 按钮
 
-The OFFSET button (<num>9</num>) offsets the TID display to the currently hooked location.
+偏置按钮 (<num>9</num>) ，用来偏置 TID 至显示器中选中的位置。
 
-### Antenna Elevation Thumbwheel
+### ELEV 拨轮
 
-The ELEV thumbwheel (<num>10</num>) fine-tunes radar antenna elevation during STT lock-on
-acquisition.
+(<num>10</num>) 用于微调 STT 锁定模式下的雷达天线仰角。
 
-### HCU Trigger
+### HCU 扳机
 
-The HCU trigger (<num>11</num>) is a two-stage trigger used to command various WCS functions
-depending on selected mode.
+(<num>11</num>) 为二段式扳机，用来根据选定模式指令不同 WCS 功能。
 
-- First detent — HALF ACTION.
-- Second detent — FULL ACTION.
+- 第一段 — HALF ACTION（按下一半）。
+- 第二段 — FULL ACTION（完全按下）。
 
-Functions include target acquisition and symbol hook.
+例如，扳机用来进行目标截获和符号选中。
 
-### Hand Control Function Buttons
+### HCU 功能按钮
 
-The hand control function buttons (<num>12</num>) select the active control mode of the HCU stick.
+带有指示灯的按钮 (<num>12</num>)，用于选择 HCU 控制杆的功能。
 
-The buttons are mutually exclusive and light up when selected.
+开关之间互斥（只能选中一个开关）。
 
-Available functions are:
+可用功能为：
 
-- IR/TV — Controls TCS azimuth, elevation, and tracking. Enables display of TCS elevation on the
-  right elevation indicator on the DDD.
-- RDR — Controls radar antenna elevation and STT acquisition or return to search. Displays commanded
-  radar antenna elevation on the DDD.
-- DDD CURSOR — Controls DDD cursor for marking geographic positions in pulse radar mode.
-- TID CURSOR — Controls the TID cursor used to hook symbols on the TID.
+- IR/TV — 选择控制 TCS 的方位、仰角和跟踪。选择后，DDD 面板中，仰角指示器右侧的指针将显示 TCS 仰角。
+- RDR — 选择 RDR 来控制雷达天线进行 STT 锁定，如果雷达已经处在 STT 模式下，那么用来返回搜索状态。选择后，DDD 面板中，仰角指示器右侧的指针将显示当前指令的雷达天线仰角。
+- DDD CURSOR — 选择控制 DDD 光标，用于在脉冲雷达模式下标记地理位置。
+- TID CURSOR — 选择控制 TID 光标，用来选中（选中）TID 中的符号。
