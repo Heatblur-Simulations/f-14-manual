@@ -1,76 +1,71 @@
-# Emergency Procedures
+# 应急处置程序
 
-## Engine Air-start
+## 发动机空中起动
 
-The F110-GE-400 engines can be air-started one-by-one or simultaneously.  
-Three restart methods are available:
+两台 F110-GE-400 发动机可以依次或同时进行空中启动。三种可能的重启类型包括：
 
-- **Spool-down**
-- **Cross-Bleed**
-- **Windmill**
+- **脱机自转重启**
+- **交叉引气重启**
+- **风车重启**
 
-All attempts should be made in the engine mode selected by the AFTC (normally
-PRI, or SEC if PRI fails).
+这三种重启应在 AFTC 选定的发动机模式下进行。一般情况下应该选定为主要（PRI）模式，但是如果 AFTC 已经选定次要模式，那么次要（SEC）模式应当用于首次重启尝试。
 
-### Spool-down Air-start
+### 脱机自转空中启动
 
-Spool-down air-start should be attempted immediately after engine loss, before
-significant spool-down occurs.
+发动机停车之后，应在发动机转速显著降低之前尝试脱机自转重启。这是重启发动机最快的方法。
 
-- May take up to **10 seconds** for RPM increase and **90 seconds** to reach
-  commanded RPM.
-- If PRI fails, retry in SEC.
+- 根据发动机当时的转速，可能需要多达 **10秒**
+  的时间才能观察到转速的增加，而发动机达到指定转速可能需要多达 **90秒** 。
+- 如果 AFTC 选定发动机模式为 PRI ，可以选定 SEC 后再进行一次尝试。
 
-#### Spool-down Air-start Checklist
+#### 脱机自转空中起动检查单
 
-| Step | Item                    | Action                                       |
-| ---- | ----------------------- | -------------------------------------------- |
-| 1    | Throttle                | IDLE or above                                |
-| 2    | If no relight: Throttle | OFF then IDLE                                |
-| 3    | ENG MODE SELECT switch  | SEC                                          |
-| 4    | Throttle                | If no start after mode switch: OFF then IDLE |
-| 5    | After successful start  | Set ENG MODE SELECT to PRI if possible       |
+| 步骤 | 项目                       | 动作                                  |
+| ---- | -------------------------- | ------------------------------------- |
+| 1    | 油门握把                   | 慢车或以上                            |
+| 2    | 如果没有重新点火：油门握把 | 关断接着慢车                          |
+| 3    | ENG MODE SELECT 开关       | SEC                                   |
+| 4    | 油门握把                   | 如果模式切换后没有启动：OFF 然后 IDLE |
+| 5    | 成功起动后                 | 可能的话将模式调定为 PRI              |
 
-### Cross-Bleed Air-start
+### 交叉引气空中起动
 
-Use if:
+如果：
 
-- Spool-down failed
-- One engine is already running
-- Target engine is near windmill RPM
+当仍有一台发动机正常工作，脱机自转重启失败或者发动机已经/即将进入风车状态时，可以尝试使用交叉引气进行重启
 
-#### Cross-Bleed Air-start Checklist
+### 交叉引气空中起动检查单
 
-| Step | Item                    | Action                       |
-| ---- | ----------------------- | ---------------------------- |
-| 1    | Non-running throttle    | OFF                          |
-| 2    | FUEL SHUT OFF handle    | Verify handle IN             |
-| 3    | Running engine throttle | Minimum 80% RPM              |
-| 4    | BACK UP IGNITION switch | ON                           |
-| 5    | ENG CRANK switch        | Set to non-running engine    |
-| 6    | Non-running throttle    | IDLE immediately after CRANK |
-| 7    | If no start: Throttle   | OFF then IDLE                |
-| 8    | ENG MODE SELECT switch  | SEC                          |
-| 9    | Throttle                | OFF then IDLE                |
-| 10   | After successful start  | BACK UP IGNITION: OFF        |
-| 11   | ENG MODE SELECT switch  | PRI if possible              |
+| 步骤 | 项目                         | 动作                     |
+| ---- | ---------------------------- | ------------------------ |
+| 1    | 停转侧的油门握把             | 关断                     |
+| 2    | FUEL SHUT OFF 手柄           | 核实手柄推入             |
+| 3    | 正常运转中的发动机的油门握把 | 最低 80% RPM             |
+| 4    | BACK UP IGNITION 开关        | ON                       |
+| 5    | ENG CRANK 开关               | 调定到未运转发动机       |
+| 6    | 停转侧的油门握把             | CRANK 后立刻挪到慢车     |
+| 7    | 如果没有起动：油门握把       | 关断接着慢车             |
+| 8    | ENG MODE SELECT 开关         | SEC                      |
+| 9    | 油门握把                     | 关断接着慢车             |
+| 10   | 空中起动成功之后             | BACK UP IGNITION: OFF    |
+| 11   | ENG MODE SELECT 开关         | 可能的话将模式调定为 PRI |
 
-### Windmill Air-start
+### 风车空中起动
 
-Used when:
+在以下情况使用：
 
-- Airspeed ≥ 450 KIAS
-- Altitude permits sufficient airflow through engine
+- 空速 ≥ 450 KIAS
+- 高度允许发动机有足够气流进入
 
-#### Windmill Air-start Checklist
+#### 风车空中起动检查单
 
-| Step | Item                    | Action                |
-| ---- | ----------------------- | --------------------- |
-| 1    | Airspeed                | At or above 450 KIAS  |
-| 2    | Throttle                | IDLE or above         |
-| 3    | BACK UP IGNITION switch | ON                    |
-| 4    | If no relight: Throttle | OFF then IDLE         |
-| 5    | ENG MODE SELECT switch  | SEC                   |
-| 6    | Throttle                | OFF then IDLE         |
-| 7    | After successful start  | BACK UP IGNITION: OFF |
-| 8    | ENG MODE SELECT switch  | PRI if possible       |
+| 步骤 | 项目                       | 动作                      |
+| ---- | -------------------------- | ------------------------- |
+| 1    | 空速                       | 至少在450节指示空速及以上 |
+| 2    | 油门握把                   | 慢车或以上                |
+| 3    | BACK UP IGNITION 开关      | ON                        |
+| 4    | 如果没有重新点火：油门握把 | 关断接着慢车              |
+| 5    | ENG MODE SELECT 开关       | SEC                       |
+| 6    | 油门握把                   | 关断接着慢车              |
+| 7    | 成功起动之后               | BACK UP IGNITION: OFF     |
+| 8    | ENG MODE SELECT 开关       | 可能的话将模式调定为 PRI  |

@@ -1,35 +1,27 @@
-# Variants
+# 型号
 
 ## F-14A-95-GR IRIAF
 
-Early F-14A version as sold to the IIAF (Imperial Iranian Air Force) which later
-became the IRIAF (Islamic Republic of Iran Air Force).
+出售给 IIAF（伊朗帝国空军）的早期型 F-14A，后来成为 IRIAF（伊朗伊斯兰共和国空军）。
 
-This version has the early Pratt & Whitney TF30-P-414A engines, AN/ALR-45 radar
-warning receiver and lacks the Television Camera Set (TCS) and Link-4 data link
-system as well as being limited to the earlier air to air missiles available to
-Iran.
+这个型号的 F-14 装备了早期 普惠 TF30-P-414A 发动机、AN/ALR-45 雷达告警接收机、无电视摄像套件（TCS）和 Link-4 数据链路系统，以及出售伊朗有限的早期空空导弹。
 
-> 🚧 This variant will be added later during Early Access.
+> 🚧 将在抢先体验后期加入。
 
-## F-14A-135-GR (Early)
+## F-14A-135-GR (早期型)
 
-Early US Navy F-14A version.
+美国海军早期型 F-14A。
 
-This version has the early Pratt & Whitney TF30-P-414A engines and AN/ALR-45 and
-AN/ALR-50 radar warning receivers.
+这个型号的 F-14 装备了早期 普惠 TF30-P-414A 发动机、AN/ALR-45 和 AN/ALR-50 雷达告警接收机。
 
-## F-14A-135-GR (Late)
+## F-14A-135-GR (后期型)
 
-Later US Navy F-14A version.
+美国海军后期型 F-14A。
 
-This version has the early Pratt & Whitney TF30-P-414A engines and the AN/ALR-67
-radar warning receiver.
+这个型号的 F-14 装备了早期 普惠 TF30-P-414A 发动机、AN/ALR-67 雷达告警接收机。
 
 ## F-14B
 
-US Navy F-14B (renamed from F-14A+).
+美国海军 F-14B（F-14A+ 重命名）。
 
-This version has the newer General Electrics F110-GE-400 engines, the AN/ALR-67
-radar warning receiver as well as having the ability to mount and use the
-LANTIRN targeting pod.
+这个型号的 F-14 装备了更新的通用电气 F110-GE-400 发动机、AN/ALR-67 雷达告警接收机以及安装和使用 LANTIRN 瞄准吊舱的能力。
