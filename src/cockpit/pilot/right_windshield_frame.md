@@ -1,30 +1,30 @@
-# Right Windshield Frame
+# 风挡右边框
 
-## ECM Warning Lights
+## ECM（电子对抗）告警灯光
 
 ![rwr caution](../../img/cockpit_detail_pilot_rwrcaution.jpg)
 
-Warning lights connected to the ALR-67 indicating different types of threats.
+这些告警灯与 ALR-67 相连，用于指示不同类型的威胁。
 
 ### ALR-67
 
-| Indicator | Function                                                                                                       |
-| --------- | -------------------------------------------------------------------------------------------------------------- |
-| SAM       | Steady illumination when detecting lock-on from a SAM tracking radar. Flashes when missile launch is detected. |
-| AAA       | Steady illumination when detecting lock-on from a AAA tracking radar. Flashes when AAA firing is detected.     |
-| AI        | Steady illumination when detecting lock-on from an airborne interceptor radar.                                 |
+| 指示器 | 功能                                                                                   |
+| ------ | -------------------------------------------------------------------------------------- |
+| SAM    | 面空导弹，灯光稳定亮起表示探测到面空导弹跟踪雷达锁定，灯光闪烁表示探测到面空导弹发射。 |
+| AAA    | 高射炮，灯光稳定亮起表示探测到高射炮跟踪雷达锁定，灯光闪烁表示探测到防空炮开火。       |
+| AI     | 机载截击雷达，灯光稳定亮起表示探测到机载雷达锁定。                                     |
 
 ### ALR-45
 
-| Indicator | Function                                                                                             |
-| --------- | ---------------------------------------------------------------------------------------------------- |
-| SA TRK    | Lights steady whenever a SAM tracking radar is received.                                             |
-| SAM       | Master SAM warning indication, lights steady for MA (missile alert), flashes for ML (missile launch) |
-| AI/AAA    | Lights steady whenever an ambiguous AI/AAA radar is received.                                        |
-| AI        | Lights steady whenever an airborne interceptor radar is received.                                    |
+| 指示器 | 功能                                                                        |
+| ------ | --------------------------------------------------------------------------- |
+| SA TRK | 灯光稳定亮起表示探测到面空导弹跟踪雷达锁定。                                |
+| SAM    | 主 SAM 系统警告指示：MA（导弹告警）时指示灯常亮，ML（导弹发射）时指示灯闪烁 |
+| AI/AAA | 灯光稳定亮起表示探测到无法明确识别的 AI/AAA 雷达照射。                      |
+| AI     | 灯光稳定亮起表示探测到机载雷达照射。                                        |
 
-## Standby Compass
+## 备用罗盘
 
 ![compass](../../img/cockpit_detail_pilot_compass.jpg)
 
-Conventional standby compass.
+常规备用罗盘。

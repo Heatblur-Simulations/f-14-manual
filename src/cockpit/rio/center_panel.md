@@ -1,178 +1,170 @@
-# Center Panel
+# 中央仪表板
 
-## Chaff/Flare Dispense Switches
+## 箔条/红外干扰弹弹射开关
 
 ![CM Hats](../../img/cockpit_detail_rio_cmhats.jpg)
 
-Two countermeasure switch hats (<num>1</num> and <num>2</num>) are located on the RIO center
-handhold and are used to initiate release of defensive countermeasures.
+RIO 握把上的两个苦力帽开关(<num>1</num> 和 <num>2</num>)用于启动对抗措施投放。
 
-The switches are functionally mirrored.
+两个苦力帽开关的功能相同。
 
-- **Up** - Initiates a single chaff release.
-- **Down** - Initiates the selected chaff release program.
-- **Inboard** - Initiates the selected jammer release program.
-- **Outboard** - Initiates the selected flare release program.
+- **向上** - 启动单发箔条弹射。
+- **向下** - 启动设定的箔条弹射程序。
+- **向内** - 启动设定的有源干扰弹弹射程序。
+- **向外** - 启动设定的红外干扰弹弹射程序。
 
-## Detail Data Display Panel
+## 详细数据显示器面板
 
 ![DDD](../../img/cockpit_detail_rio_DDD.jpg)
 
-The Detail Data Display (DDD) panel provides primary radar control and display functions for the
-AWG-9 weapon system.
+详细数据显示器面板（DDD）提供雷达主控面板以及 AWG-9 武器系统的显示功能选择。
 
-### Target Size Switch
+### TGTS 开关
 
-The TGTS switch (<num>1</num>) selects target size used for missile launch zone calculation, WCS
-tracking logic, and missile autopilot calculations.
+目标大小选择开关 (<num>1</num>)，选择用于导弹发射区、WCS 跟踪计算以及导弹 ATC（主动制导转交指令）计算的目标大小。
 
-### Mainlobe Clutter Switch
+### MLC 开关
 
-The MLC switch (<num>2</num>) selects mainlobe clutter processing mode.
+主瓣杂波抑制开关 (<num>2</num>)，用于选择雷达的 MLC（主瓣杂波）抑制工作模式。
 
-### Automatic Gain Control Switch
+### AGC 开关
 
-The AGC switch (<num>3</num>) controls AGC response speed.
+自动增益控制开关 (<num>3</num>)，用于控制雷达自动增益控制的时间常数。
 
-This function is currently non-functional in DCS.
+目前在 DCS 中无功能。
 
-### Parametric Amplification Switch
+### PARAMP 开关
 
-The PARAMP switch (<num>4</num>) controls parametric amplification.
+参数放大器开关 (<num>4</num>)，用于控制参数放大器。
 
-Currently non-functional in DCS.
+目前在 DCS 中无功能。
 
-### Pulse Video Control
+### PULSE VIDEO 旋钮
 
-The PULSE VIDEO knob (<num>5</num>) adjusts the strength of pulse video displayed on the DDD.
+脉冲多普勒图像控制旋钮 (<num>5</num>) ，用于控制 DDD 脉冲多普勒图像的强度。
 
-This control has no effect on pulse-doppler video.
+旋钮并不会影响脉冲多普勒图像。
 
-### Radar Track Indicator Lights
+### 雷达跟踪指示灯
 
-The radar track indicator lights (<num>6</num>) indicate tracking status during STT operation.
+(<num>6</num>) 用于指示雷达正在 STT 模式下进行跟踪。
 
-- **ANT TRK** - Radar is tracking target angle.
-- **RDROT** - Target is within range or rate gate and being tracked.
-- **JAT** - Radar is tracking a jamming source angle.
-- **IROT** - Indicates TCS angle tracking. Originally used for IRST in early F-14A variants.
+- **ANT TRK** - 指示灯亮起表示雷达正在跟踪目标来获得目标的方位和仰角的角度（方向）。
+- **RDROT** - 指示灯亮起表示目标在距离内或接近率门内，并且目标正在距离门或接近率门内被雷达跟踪中。
+- **JAT** - 这个指示灯亮起表示天线正在跟踪干扰源的方位和仰角的角度。
+- **IROT** - 指示灯亮起表示系统正在通过 TCS 跟踪目标来获得目标方位和仰角的角度，IROT 名称是早期 F-14A 中的 IRST 系统继承而来。
 
-### Range Display Drum
+### RANGE 显示窗
 
-The RANGE display (<num>7</num>) is a rotary drum indicating the currently selected radar range
-scale.
+距离显示窗 (<num>7</num>) ，用于显示当前选定的雷达显示距离的滚筒指示器。
 
-The display may be blank when no range scale is applicable.
+如果 DDD 中未选用任何距离标度，则无显示。
 
-### Range Selection Buttons
+### RANGE 按钮
 
-The RANGE buttons (<num>8</num>) select the desired radar range scale.
+距离按钮(<num>8</num>)，用于选择雷达显示距离。
 
-### Brightness Control Knob
+### BRIGHT 旋钮
 
-The BRIGHT knob (<num>9</num>) controls DDD brightness through a polarized filter mounted in front
-of the display.
+亮度旋钮(<num>9</num>)，用于控制 DDD 前方的偏振滤光片以调节显示器亮度。
 
-### IR Audio Threshold Knob
+### IR AUDIO THRLD 旋钮
 
-The IR AUDIO THRLD knob (<num>10</num>) sets infrared audio threshold.
+IR 音频阈值旋钮 (<num>10</num>)，用于控制红外音频阈值。
 
-This function is non-functional when using the TCS.
+安装了 TCS 的 F-14 无功能。
 
-### IR Audio Volume Knob
+### IR AUDIO VOL 旋钮
 
-The IR AUDIO VOL knob (<num>11</num>) controls infrared audio volume.
+红外音频音量旋钮 (<num>11</num>)，用于控制红外音频音量。
 
-Non-functional with TCS.
+安装了 TCS 的 F-14 无功能。
 
-### IR Gain Knob
+### IR GAIN 旋钮
 
-The IR GAIN knob (<num>12</num>) adjusts infrared gain.
+红外增益旋钮 (<num>12</num>) ，用于控制红外增益，安装了 TCS 的 F-14 无功能。
 
-Non-functional with TCS.
+安装了 TCS 的 F-14 无功能。
 
-### Transmitter Channel Wheel
+### XMTR CHAN 拨轮
 
-The XMTR CHAN wheel (<num>13</num>) selects the AWG-9 operating frequency.
+发射波道拨轮 (<num>13</num>)，用于控制 AWG-9 的工作频率。目前在 DCS 中无功能。
 
-Currently non-functional in DCS.
+目前在 DCS 中无功能。
 
-### Missile Channel Wheel
+### MSL CHAN 拨轮
 
-The MSL CHAN wheel (<num>14</num>) selects the missile guidance channel used by AIM-7 or AIM-54.
+导弹波道拨轮 (<num>14</num>)，用于控制 AIM-7 或 AIM-54 使用的波道。目前在 DCS 中无功能。
 
-Currently non-functional in DCS.
+目前在 DCS 中无功能。
 
-### Display Selection Buttons
+### DISPLAY 按钮
 
-The DISPLAY buttons (<num>15</num>) control which radar elements are displayed on the DDD.
+显示按钮 (<num>15</num>)，用于控制 DDD 中显示的内容。
 
-The IR button is non-functional with TCS.
+安装了 TCS 的 F-14，IR 按钮无功能。
 
-### WCS Mode Buttons
+### WCS MODE 按钮
 
-The WCS MODE buttons (<num>16</num>) select the current AWG-9 operating mode.
+武器控制系统模式按钮 (<num>16</num>)，用于选择当前的 AWG-9 工作模式。
 
-### WCS Mode Display
+### WCS MODE 显示窗
 
-The WCS MODE display (<num>17</num>) is a rotary drum showing the active WCS mode.
+武器控制系统模式显示窗 (<num>17</num>)，显示窗内的滚筒用来指示 WCS 当前的模式。
 
-### Closing Velocity Scale Switch
+### Vc 开关
 
-The Vc switch (<num>18</num>) selects closing velocity scale used on the DDD in pulse-doppler modes.
+接近率标度选择开关 (<num>18</num>)，用于在 PD（脉冲多普勒）模式下选择 DDD 显示的接近率标度。
 
-### Erase Control Knob
+### ERASE 旋钮
 
-The ERASE knob (<num>19</num>) adjusts the intensity of the erase beam, thereby controlling how
-rapidly radar returns fade from the display.
+擦除旋钮 (<num>19</num>)，旋钮用来控制 DDD 显示中，ERASE（擦除）波束的强度，以控制 DDD 上成像消失的快慢。
 
-### Pulse Gain Control
+### PULSE GAIN 旋钮
 
-The PULSE GAIN knob (<num>20</num>) controls radar gain in pulse mode.
+脉冲增益旋钮 (<num>20</num>) ，用于在脉冲模式下控制 AWG-9 的增益。
 
-Normally left in the detent position unless adjustment is required due to clutter or jamming.
+除非出现杂波或干扰，否则通常将旋钮置于限位机构中。
 
-### Aspect Switch
+### ASPECT 开关
 
-The ASPECT switch (<num>21</num>) selects doppler filter rate regions and pulse tracking method.
+态势开关，目标态势开关，用于在脉冲多普勒模式下控制多普勒滤波器覆盖的接近率区间，也用于在脉冲模式下选择跟踪目标回波边缘或回波质心。这些设置对应了预计目标姿态。
 
-- Controls expected target aspect.
-- Selects edge or centroid tracking in pulse mode.
+- 控制预计目标姿态。
+- 在脉冲模式下选择回波质心或边缘。
 
-### Elevation Indicator
+### EL 指示器
 
-The EL indicator (<num>22</num>) displays sensor elevation information.
+(<num>22</num>) 指示器中的指针用来指示传感器的仰角。
 
-- Left needle - Actual radar antenna elevation.
-- Right needle - Commanded radar elevation when RDR is selected on the HCU, or TCS elevation when
-  IR/TV is selected.
+- 左侧指针 - 显示当前实际的雷达天线仰角。
+- 右侧指针 - 指向指令雷达天线仰角，而当 HCU 上选择 IR/TV 时，右侧指针显示 TCS 的仰角。
 
-### Counter-Countermeasure Mode Buttons
+### CCM MODES 按钮
 
-The CCM MODES buttons (<num>23</num>) configure AWG-9 counter-jamming behavior.
+反对抗模式选择按钮 (<num>23</num>)，用于选择 AWG-9 反目标干扰功能。目前在 DCS 中无功能。
 
-Currently non-functional in DCS.
+目前在 DCS 中无功能。
 
-### Jam/Jet Threshold Knob
+### JAM/JET 旋钮
 
-The JAM/JET knob (<num>24</num>) sets the signal threshold at which returns are classified as
-jamming targets.
+(<num>24</num>) 用于设置将雷达回波判断为干扰源目标的阈值。 目前在 DCS 中无功能。
 
-Currently non-functional in DCS.
+目前在 DCS 中无功能。
 
-### ACM Threshold Knob
+### ACM THRLD 旋钮
 
-The ACM THRLD knob (<num>25</num>) controls radar sensitivity at close range.
+(<num>25</num>) 旋钮用于控制近距离下雷达的灵敏度。
 
-Normally left in the detent position, as automatic logic manages this function.
+通常将旋钮转动至限位机构中。
 
-### Pulse-Doppler Threshold Knobs
+### PD THRLD 旋钮
 
-The PD THRLD knobs (<num>26</num>) set pulse-doppler video thresholds for the display regions:
+脉冲多普勒图像阈值控制旋钮 (<num>26</num>) ，用于调节 DDD 的显示区域多普勒图像阈值：
 
-- CLEAR - Upper half of the DDD.
-- CLUTTER - Lower half of the DDD.
+- CLEAR - DDD 显示器上半部分。
+- CLUTTER - DDD 显示器下半部分。
 
-### DDD Radar Display
+### DDD 雷达显示器
 
-The DDD radar display (<num>27</num>) is the primary AWG-9 radar presentation surface.
+(<num>27</num>) AWG-9 雷达主显示器。

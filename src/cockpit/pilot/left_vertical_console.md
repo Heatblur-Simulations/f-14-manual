@@ -1,201 +1,186 @@
-# Left Vertical Console
+# 左侧垂直控制台
 
-## Fuel Management Panel
+## 燃油管理面板
 
 ![Fuel Management](../../img/cockpit_detail_pilot_fuel.jpg)
 
-Control panel for fuel system management, CADC master reset, and anti-skid and spoiler brake
-control.
+这个面板用于控制诸多燃油相关系统、CADC 主复位和防滑系统。
 
-### Quantity Selector Switch
+### QTY SEL 选择开关
 
-The QTY SEL switch (<num>1</num>) selects which fuel quantities are displayed on the fuel quantity
-indicator tapes.
+燃油量选择开关 (<num>1</num>)，开关用来选中燃油量指示带中显示哪个油箱的燃油油量。
 
-The switch is spring-loaded to FEED.
+松开开关后，开关会弹回 FEED 档位。
 
-- FEED — Displays respective feed and fuselage tank quantities.
-- WING — Displays respective wing tank quantities.
-- EXT — Displays respective external tank quantities.
+- FEED — 显示左右供油油箱组的燃油油量。
+- WING — 显示对应机翼油箱中的燃油油量。
+- EXT — 显示对应副油箱中的燃油油量。
 
-### Fuel Feed Switch
+### FEED 开关
 
-The FEED switch (<num>2</num>) selects fuel feed routing to the engines.
+供油油箱选择开关 (<num>2</num>)，用于选择为发动机供油的油箱。
 
-The guard locks the switch in NORM until lifted.
+保护盖关闭时，开关被锁定在 NORM 档位。
 
-### Wing/External Transfer Switch
+### WING/EXT TRANS 开关
 
-The WING/EXT TRANS switch (<num>3</num>) controls operation of wing and external fuel tank transfer.
+机翼/副油箱转输开关 (<num>3</num>)，用于控制机翼油箱和副油箱的燃油转输。
 
-- ORIDE — Overrides automatic transfer logic.
-- AUTO — Normal automatic operation.
-- OFF — Disables fuel feed from wing and external tanks.
+- ORIDE — 超控自动转输逻辑。
+- AUTO — 正常使用的档位。
+- OFF — 停止机翼和副油箱的燃油转输。
 
-### Refueling Probe Indicator Light
+### 受油管指示灯
 
-The refueling probe transition light (<num>4</num>) illuminates when the probe is neither fully
-extended nor fully retracted.
+当受油管未完全伸出，或未完全收起时，过渡指示灯(<num>4</num>)便会亮起。
 
-### Fuel Dump Switch
+### DUMP 开关
 
-The DUMP switch (<num>5</num>) enables fuel dumping when placed in DUMP.
+放油开关(<num>5</num>)，用于开启或停止放油。
 
-Fuel dumping is permitted only when speed brakes are retracted, afterburner is off, and weight is
-off wheels.
+减速板收起、机轮不负重以及关闭加力时飞机可以进行放油操作。
 
-### Refueling Probe Switch
+### REFUEL PROBE 开关
 
-The REFUEL PROBE switch (<num>6</num>) controls refueling probe operation.
+受油管开关 (<num>6</num>) ，用于伸出或收起受油管。
 
-- ALL EXTD — Extends the refueling probe and allows refueling of all tanks. Also resets the WING/EXT
-  TRANS switch to AUTO.
-- FUS EXTD — Extends the refueling probe and allows refueling of fuselage tanks only.
-- RET — Retracts the refueling probe.
+- ALL EXTD
+  — 全伸出，受油管移动至伸出档位，允许对所有油箱加油。同时也会将机翼/副油箱转移开关（WING/EXT
+  TRANS）复位回 AUTO 档位。
+- FUS EXTD — 机身伸出，受油管移动至伸出档位，但仅允许对机身（FUS）油箱加油。
+- RET — 收起受油管。
 
-### Anti-Skid / Spoiler Brake Switch
+### ANTI SKID SPOILER BK 开关
 
-The ANTI SKID SPOILER BK switch (<num>7</num>) selects braking system operation with weight on
-wheels.
+防滑和扰流板制动开关 (<num>7</num>) ，用于决定防滑系统和扰流板制动系统操作。
 
-- BOTH — Enables both anti-skid and spoiler brake functions.
-- OFF — Disables both systems.
-- SPOILER BK — Enables spoiler braking only.
+- BOTH — 机轮负重时，启用防滑系统和扰流板制动系统。
+- OFF — 关闭防滑系统和扰流板制动系统。
+- SPOILER BK — 扰流板制动，机轮负重时，启用扰流板制动功能。
 
-### Master Reset Button
+### MASTER RESET 按钮
 
-The MASTER RESET button (<num>8</num>) resets the CADC failure detection system and clears
-associated fault indications.
+主复位按钮 (<num>8</num>)，用于复位 CADC 故障检测系统及相关的故障显示。
 
-## Control Surface Position Indicator
+## 操纵面位置指示器
 
 ![Control Surface](../../img/cockpit_detail_pilot_control.jpg)
 
-Provides indication of aircraft control surface positions.
+显示操纵面的位置。
 
-### Spoiler Position Indicators
+### 扰流板位置指示器
 
-The spoiler indicators (<num>1</num>) show spoiler position.
+扰流板位置指示器 (<num>1</num>) 是用于指示各个飞行操纵面位置的仪表。
 
-- DN — Spoilers down and flush with the wing.
-- Up-arrow — Spoilers extended above the wing.
-- Down-arrow — Spoilers drooped below the wing surface.
+- DN — 扰流板收起，收起到机翼表面。
+- 向上箭头 - 扰流板伸出。
+- 向下箭头 - 扰流板放下至机翼表面下方。
 
-### Rudder Position Indicators
+### RUDDER 指示器
 
-The rudder indicators (<num>2</num>) display left and right rudder positions, identified by L and R
-symbols.
+方向舵位置指示器 (<num>2</num>) ，标注的“L”和“R”分别指示了左方向舵和右方向舵的位置。
 
-### Horizontal Tail Position Indicators
+### HORIZ TAIL 指示器
 
-The horizontal stabilizer indicators (<num>3</num>) display left and right tail positions,
-identified by L and R symbols.
+水平安定面位置指示器 (<num>3</num>) ，标注的“L”和“R”分别显示了左水平安定面和右水平安定面的位置。
 
-## Launch Bar Abort Panel
+## 弹射杆中止面板
 
 ![Launch Abort](../../img/cockpit_detail_pilot_launch-abort.jpg)
 
-The launch bar abort switch is used to abort catapult launches.
+LAUNCH BAR（弹射杆）开关，用来中止弹射程序。
 
-When held in ABORT, the launch bar is raised. The switch is spring-loaded back to NORM, which is the
-standard position.
+将开关拨动并保持在 ABORT 档位时，弹射杆升起，终止弹射起飞。松开开关后，开关弹回 NORM （正常）档位，这也是弹射杆开关的正常档位。
 
-> 💡 Not currently used in DCS.
+> 💡 目前，这个开关在 DCS 中没有实际作用。
 
-## Landing Gear Control Panel
+## 起落架控制面板
 
 ![Gear Control](../../img/cockpit_detail_pilot_gear.jpg)
 
-Control panel for landing gear operation and emergency stores jettison.
+这个面板用于控制主起落架和应急挂载抛弃。
 
-### Landing Gear Handle
+### LDG GEAR 手柄
 
-The LDG GEAR handle (<num>1</num>) selects landing gear UP or DOWN.
+起落架控制手柄 (<num>1</num>) ，用于选择起落架的 UP（收上）或 DOWN（放下）位置。
 
-For emergency extension with the handle in DOWN, push the handle in, rotate it clockwise, and pull
-outward. This releases a compressed nitrogen charge to extend the gear.
+在 DOWN（放下）位置时应急放下起落架，首先将手柄推入，顺时针旋转手柄顶端然后抽出。这将会释放储存的压缩氮气，使起落架紧急放下。
 
-### Down Lock Override
+### DOWN LOCK ORIDE 杆
 
-The DOWN LOCK ORIDE indicator (<num>2</num>) moves down by solenoid to indicate weight on wheels.
+起落架放下锁定超控杆(<num>2</num>)，被螺线管移动至向下位置时指示机轮负重。
 
-The indicator may be lifted to override the signal.
+可以升起至向上位置来超控（起落架手柄锁定在 DOWN 位置）。
 
-### Hydraulic Isolation Switch
+### HYD ISOL 开关
 
-The HYD ISOL switch (<num>3</num>) isolates landing gear, nosewheel steering, and wheel brakes from
-the combined hydraulic system.
+起落架液压隔离开关 (<num>3</num>) ，用于将起落架、机轮刹车、防滑和前轮转向系统与联合液压系统隔离开来。
 
-The switch is automatically moved to T.O./LDG when the landing gear handle is in the DOWN position.
+起落架手柄处于放下位置时，隔离开关将被起落架手柄自动移动至 T.O./LDG 档位。
 
-- FLT — In-flight operation. Isolates listed systems.
-- T.O./LDG — Takeoff and landing operation. Connects listed systems.
+- FLT — 空中飞行时，隔离上述系统中的液压。 - T.O./LDG
+  — 起飞/降落，接通上述系统的液压，允许它们正常工作。
 
-### Landing Gear Transition Light
+### 过渡指示灯
 
-The transition light (<num>4</num>) illuminates when landing gear position does not match handle
-position.
+起落架实际位置与 LDG GEAR（起落架控制手柄）位置不符时，指示灯 (<num>4</num>) 会亮起。
 
-### Wheels and Flaps Position Indicator
+### 机轮-襟翼位置指示器
 
-The wheels-flaps indicator (<num>5</num>) displays positions of flaps, slats, speed brakes, and
-landing gear.
+(<num>5</num>)指示襟翼和前缘缝翼、减速板和起落架的位置。
 
-#### Slat Indications
+#### 襟翼位置指示器
 
-| Indication                                                       | State                                 |
-| ---------------------------------------------------------------- | ------------------------------------- |
-| ![Power off](../../img/cockpit_detail_pilot_off.jpg)             | Power off or maneuver slats extended. |
-| ![Slats extended](../../img/cockpit_detail_pilot_slats-ext.jpg)  | Slats extended.                       |
-| ![Slats retracted](../../img/cockpit_detail_pilot_slats-ret.jpg) | Slats retracted.                      |
+| 指示                                                             | 状态                     |
+| ---------------------------------------------------------------- | ------------------------ |
+| ![Power off](../../img/cockpit_detail_pilot_off.jpg)             | 电源断开或前缘缝翼伸出。 |
+| ![Slats extended](../../img/cockpit_detail_pilot_slats-ext.jpg)  | 前缘缝翼伸出。           |
+| ![Slats retracted](../../img/cockpit_detail_pilot_slats-ret.jpg) | 前缘缝翼收起。           |
 
-Flap position is shown by a pointer moving between UP and DOWN. The first marked segment represents
-the maneuver flap range.
+在 UP 和 DN 之间移动的指示器用来指示襟翼的位置。带白色标记的区域指示了机动襟翼的移动行程。
 
-#### Landing Gear Indications
+#### 起落架位置指示
 
-| Indication                                                                     | State                            |
-| ------------------------------------------------------------------------------ | -------------------------------- |
-| ![Power off or unsafe gear](../../img/cockpit_detail_pilot_off.jpg)            | Power off or unsafe gear.        |
-| ![Gear down](../../img/cockpit_detail_pilot_gear-down.jpg)                     | Gear down.                       |
-| ![Gear retracted and doors closed](../../img/cockpit_detail_pilot_gear-up.jpg) | Gear retracted and doors closed. |
+| 指示                                                                           | 状态                     |
+| ------------------------------------------------------------------------------ | ------------------------ |
+| ![Power off or unsafe gear](../../img/cockpit_detail_pilot_off.jpg)            | 电源断开或起落架不安全。 |
+| ![Gear down](../../img/cockpit_detail_pilot_gear-down.jpg)                     | 起落架放下。             |
+| ![Gear retracted and doors closed](../../img/cockpit_detail_pilot_gear-up.jpg) | 起落架收上，轮舱盖关闭。 |
 
-#### Speed Brake Indications
+#### 减速板位置指示
 
-| Indication                                                         | State                                         |
-| ------------------------------------------------------------------ | --------------------------------------------- |
-| ![Brake off](../../img/cockpit_detail_pilot_off.jpg)               | Speed brake system power off.                 |
-| ![Brake partial](../../img/cockpit_detail_pilot_brake-partial.jpg) | Speed brake partial extension, not in motion. |
-| ![Brake out](../../img/cockpit_detail_pilot_brake-out.jpg)         | Speed brake fully extended.                   |
-| ![Brake in](../../img/cockpit_detail_pilot_brake-in.jpg)           | Speed brake retracted.                        |
+| 指示                                                               | 状态                           |
+| ------------------------------------------------------------------ | ------------------------------ |
+| ![Brake off](../../img/cockpit_detail_pilot_off.jpg)               | 减速板系统电源断开。           |
+| ![Brake partial](../../img/cockpit_detail_pilot_brake-partial.jpg) | 减速板部分展开，保持当前位置。 |
+| ![Brake out](../../img/cockpit_detail_pilot_brake-out.jpg)         | 减速板完全展开。               |
+| ![Brake in](../../img/cockpit_detail_pilot_brake-in.jpg)           | 减速板收起。                   |
 
-### Emergency Stores Jettison Button
+### EMERG STORES JETT 按钮
 
-The EMERG STORES button (<num>6</num>) commands emergency jettison of all expendable stores.
+应急挂载抛弃按钮 (<num>6</num>) 指令应急抛弃所有一次性挂载。
 
-The button illuminates to indicate activation upon press.
+按下时，按钮将会亮起以表示激活应急挂载抛弃。
 
-### Nose Strut Switch
+### NOSE STRUT 开关
 
-The NOSE STRUT switch (<num>7</num>) controls nosewheel strut position.
+前轮支柱开关 (<num>7</num>)，这个弹簧开关用于控制前起落架支柱伸缩。
 
-- EXTD — Extends the nose strut and raises and locks the launch bar.
-- OFF — Turns off nosewheel strut movement. Spring-loaded to this position.
-- KNEEL — Releases strut pressure to retract the nose strut, kneeling the aircraft and unlocking the
-  launch bar.
+- EXTD — 伸展前起落架支柱，升起并锁定弹射杆。
+- OFF — 关闭前起落架支柱运动，松开开关时，开关弹回该位置。
+- KNEEL — 释放前轮支柱中的液压压力，使支柱收缩，从而降低机头的高度。同时解锁弹射杆。
 
-### Brake Pull Handle
+### BRAKE-PULL 手柄
 
-The BRAKE-PULL handle (<num>8</num>) applies or releases the parking brake.
+用于控制停放刹车 (<num>8</num>)，使用或松开停放刹车。
 
-Pull out to apply the parking brake. Push in to release.
+抽出手柄来设置停放刹车，推入手柄释放停放刹车
 
-### Eject Command Indicator
+### EJECT CMD 指示器
 
-The EJECT CMD indicator (<num>9</num>) displays the current ejection command logic for the rear
-cockpit.
+弹射指令指示器 (<num>9</num>)，指示后座驾驶舱的弹射系统的模式。
 
-- PILOT — Pilot ejects both crewmembers; RIO ejects only himself.
-- MCO — Either crewmember ejects both crew.
+- PILOT — 飞行员弹射时弹射所有机组乘员，RIO 弹射时只弹射自己。
+- MCO — 飞行员或 RIO 弹射时，另一名机组乘员也会被弹射。
 
-> 💡 Currently non-functional in DCS.
+> 💡 目前 DCS 中无功能。

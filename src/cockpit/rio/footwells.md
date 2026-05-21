@@ -1,14 +1,13 @@
-# Footwells
+# 左右脚部空间
 
-## ICS Foot Button
+## ICS 脚踏按钮
 
 ![left](../../img/cockpit_detail_rio_left.jpg)
 
-RIO left footrest containing ICS PTT for COLD MIC intercommunication.
+RIO 左脚踏板用来在 COLD MIC 通信模式下进行 ICS PTT（按键通话）。
 
-## Mic Foot Button
+## 传声器脚踏按钮
 
 ![right](../../img/cockpit_detail_rio_right.jpg)
 
-RIO right footrest containing PTT for transmission on UHF 1, V/UHF 2, or both
-depending on ICS setting.
+根据 XMTR SEL 开关设置的不同，RIO 右脚踏板按钮用来允许在 UHF 1、UHF 2 或两者同时进行无线电传输。

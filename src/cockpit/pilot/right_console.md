@@ -1,402 +1,375 @@
-# Right Side Console
+# 右侧控制台
 
-## Spoiler Failure Override
+## 扰流板故障超控
 
 ![spoiler](../../img/cockpit_detail_pilot_spoiler.jpg)
 
-Contains controls to override failed spoiler sections, allowing the remaining spoilers to continue
-operating after a MASTER RESET.
+用于超控故障的扰流板部分，使其余扰流板在执行 MASTER
+RESET（大气数据计算机复位）后继续正常工作。
 
-### Inboard and Outboard Spoiler Override Switch
+### 内侧和外侧扰流板超控开关
 
-Two-position switch (<num>1</num>) controlling the inboard spoiler override function with
-two-position switch (<num>2</num>) controlling the outboard spoiler override function.
+两档开关 (<num>1</num>) 用于控制内侧扰流板的超控功能以及两档开关 (<num>2</num>) 用于控制外侧扰流板的超控功能。
 
-Both controls have two positions:
+这两个控制开关各有两个档位：
 
-- ORIDE - Overrides spoiler symmetry protection, allowing a functional spoiler to continue to
-  operate after a MASTER RESET if one fails.
-- NORM - Normal (guarded position), in this mode, if a spoiler fails up the rest are commanded to
-  drop and the SPOILERS light illuminates on the caution panel.
+- ORIDE - 超控内侧扰流板对称保护，如果一侧扰流板故障，CADC 复位后，允许另一侧正常工作的内侧扰流板继续作动。
+- NORM - 正常模式（保护开关锁定），该模式下，如果任意一侧机翼上的内扰流板故障无法升起，另一侧的内侧扰流板会收起，且注意灯面板中的 SPOILERS 指示灯亮起起。
 
-## Liquid Oxygen Quantity Indicator
+## 液氧储量表
 
 ![liquid oxygen](../../img/cockpit_detail_pilot_liquidoxygen.jpg)
 
-Contains an indicator showing the remaining quantity of liquid oxygen available. Graduated in
-1-liter increments. Also has an OFF flag that is shown in case of power failure to the indicator.
-The indicator is tested through the INST mode on the MASTER TEST panel and should read 2 liters.
+显示了剩余的液氧储备量。每个刻度代表 1 公升。电源故障时，表盘上显示 OFF 标识旗。飞行员可以通过主测试面板的 INST 档位来测试仪表，在测试时，仪表读数应显示为 2 公升。
 
-## Compass Control Panel
+## 罗盘控制面板
 
 ![compass control](../../img/cockpit_detail_pilot_compasscontrol.jpg)
 
-The compass control panel contains controls used to configure AHRS heading reference modes.
+用于在使用 AHRS（姿态航向基准系统）时选择罗盘工作模式。
 
-### Sync Indicator
+### SYNC IND
 
-Indicator (<num>1</num>) displaying synchronization between the AHRS directional gyro and the
-magnetic azimuth detector. Used primarily in SLAVED mode.
+这个指示器 (<num>1</num>) 用于显示 AHRS 航向陀螺与磁方位探测器之间是否同步。用于 SLAVED（隶属）模式。
 
-### Hemisphere Selector Switch
+### N-S 选择开关
 
-The N-S switch (<num>2</num>) selects the hemisphere in which the aircraft is operating.
+用于选择 DG（航向陀螺仪）和 SLAVED 模式下飞机所处的半球。
 
-Correct selection is critical to ensure proper earth-rate correction in both DG and SLAVED modes.
+这个开关对于在 DG 和 SLVAED 模式下提供正确的地球自转修正来说至关重要。
 
-### Latitude Selector Knob
+### LAT 旋钮
 
-The LAT knob (<num>3</num>) selects aircraft latitude from 0° to 90°.
+纬度选择旋钮 (<num>3</num>)，用于选择从0°到90°的维度。
 
-This input allows the AHRS to apply correct earth-rate compensation in DG and SLAVED modes.
+输入后以便在 DG 和 SLAVED 模式下对地球自转进行修正。
 
-### Compass Mode Switch
+### 模式选择开关
 
-The mode switch (<num>4</num>) selects the source of heading information for the AHRS.
+(<num>4</num>) 用于选择 AHRS 航向信息来源。
 
-- COMP - Compass, uses magnetic azimuth detector directly without stabilization from the directional
-  gyro, used only for emergency operation and the displays automatically uses the manual magnetic
-  variation.
-- SLAVED - Normal mode, uses the magnetic azimuth detector stabilized by the directional gyro.
-- DG - Directional gyro mode, uses only gyro and not the magnetic azimuth detector.
+- COMP - 罗盘，直接使用磁方位探测器，不通过航向陀螺稳定，仅用于紧急操作，且显示将自动使用手动输入的磁差。
+- SLAVED - 正常模式，使用经过航向陀螺稳定的磁方位探测器。
+- DG - 向陀螺仪模式，仅使用航向陀螺不使用磁方位探测器。
 
-### Heading Knob/Button
+### HDG 旋钮/按钮
 
-The HDG knob and pushbutton (<num>5</num>) is used in DG and SLAVED modes.
+(<num>5</num>) 用于 DG 和 SLAVED 模式。
 
-In SLAVED mode it's used to sync the directional gyro with the magnetic azimuth detector and set
-magnetic heading on the BDHI. Button should be held until the synchronization indicator needle is
-over the null mark.
+在 SLAVED 模式下，HDG 旋钮/按钮用于使航向陀螺与磁方位探测器同步，以及设置 BDHI 上的磁航向。按住按钮直到同步指示器指针归中至零位标记为止。
 
-In DG mode the button is depressed and rotated to select desired heading on the BDHI.
+在 DG 模式下，按下并旋转旋钮来调定 BDHI 中的所需航向。
 
-The button can also be used to fast erect pitch and roll of the AHRS by depressing the button for up
-to 3 minutes. A new fast erect attempt can be done if a 1 minute wait is first observed.
+HDG 旋钮/按钮还可以通过至少按住3分钟来快速调平 AHRS 的俯仰和横滚。在等待1分钟后，可再次执行新的快速调平。
 
-## ARA-63 Control Panel
+## ARA-63 控制面板
 
 ![ara-63](../../img/cockpit_detail_pilot_ara-63.jpg)
 
-Panel used to control the AN/ARA-63 Instrument Carrier Landing System (ICLS).
+此面板用于控制 AN/ARA-63 ILS（ICLS）系统。
 
-### Channel Selector
+### CHANNEL 选择开关
 
-Rotary selector (<num>1</num>) used to select one of 20 available ICLS channels.
+波道选择开关 (<num>1</num>)，用来选择 20 个可用波道中的任意一个进行使用。
 
-### BIT Button
+### BIT 按钮
 
-The BIT pushbutton (<num>2</num>) initiates a self-test of the AN/ARA-63 system.
+(<num>2</num>) 按钮用于激活 BIT 测试回路。
 
-When activated, landing symbology is displayed on the HUD and VDI if configured for ILS operation.
+如果在 PDCP 中选择了 LDG MODE 以及 AWL/PCD 转向，并且在 HUD AWL 或 VDI
+AWL 开关中选择了 ILS 档位的话，那么着舰标识符将显示在 VDIG 中。
 
-### Power Switch
+### POWER 开关
 
-The POWER switch (<num>3</num>) controls electrical power to the AN/ARA-63.
+电源开关 (<num>3</num>)，ON/OFF 档位分别用于接通或断开 ARA-63 的电源。
 
-The switch must be pulled outward to move to the OFF position.
+提起开关才可将其拨至 OFF 档位。
 
-### Power Indicator Light
+### 状态指示灯
 
-Indicator light (<num>4</num>) illuminates when the AN/ARA-63 is powered.
+灯光 (<num>4</num>) 亮起表示 AN/ARA-63 通电。
 
-## Caution - Advisory Indicator
+## 注意 - 提示灯面板
 
 ![caution](../../img/cockpit_detail_pilot_caution.jpg)
 
-Main pilot caution panel.
+飞行员驾驶舱的主要注意灯光面板。
 
-| Indicator        | Function                                                                                                                                                                                                                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| PITCH STAB 1 & 2 | Caution lights indicating inoperative pitch channels.                                                                                                                                                                                                                          |
-| ROLL STAB 1 & 2  | Caution lights indicating inoperative roll channels (roll SAS failure).                                                                                                                                                                                                        |
-| YAW STAB OP      | Caution light indicating one inoperative yaw channel.                                                                                                                                                                                                                          |
-| YAW STAB OUT     | Caution light indicating two inoperative yaw channels (yaw SAS failure).                                                                                                                                                                                                       |
-| EMERG JETT       | Caution light indicating activation of EMERG STORES JETT button.                                                                                                                                                                                                               |
-| LADDER           | Caution light indicating boarding ladder not correctly stowed.                                                                                                                                                                                                                 |
-| ECS TURBINE      | Non-functional                                                                                                                                                                                                                                                                 |
-| INLET ICE        | Caution light indicating accumulation of ice on the ice detector in the left engine inlet.                                                                                                                                                                                     |
-| FLAP             | Caution light indicating failure in the flap system or airspeed greater than 225 knots indicated airspeed with flaps down.                                                                                                                                                     |
-| HZ TAIL AUTH     | Caution light indicating failure of lateral tail authority actuator (or CADC failure).                                                                                                                                                                                         |
-| RUDDER AUTH      | Caution light indicating failure of rudder authority actuators (or CADC failure).                                                                                                                                                                                              |
-| SPOILERS         | Caution light indicating spoiler system failure causing several or all spoilers to be locked down.                                                                                                                                                                             |
-| AUTO PILOT       | Caution light indicating failure in the auto pilot system.                                                                                                                                                                                                                     |
-| L & R INLET      | Caution lights indicating AICS programmer and/or system failure.                                                                                                                                                                                                               |
-| OIL PRESS        | Caution light indicating left or right engine oil pressure below 11 psi.                                                                                                                                                                                                       |
-| BLEED DUCT       | Caution light indicating high-temperature air leak in the engine compartments.                                                                                                                                                                                                 |
-| L & R RAMPS      | Caution lights indicating ramps not locked in position during critical flight conditions.                                                                                                                                                                                      |
-| START VALVE      | Caution light indicating that the starter solenoid air valve is open after start. (F-14B only.)                                                                                                                                                                                |
-| OXY LOW          | Caution light indicating low oxygen pressure or less than 2 liters of oxygen remaining. (F-14A only.)                                                                                                                                                                          |
-| L & R ENG SEC    | Caution lights indicating that respective engine AFTC is in secondary mode. (F-14B only.)                                                                                                                                                                                      |
-| L & R OVSP/VALVE | Caution lights indicating engine starter system malfunction or N1 rotor over-speed in respective engine. (F-14A only.)                                                                                                                                                         |
-| L & R GEN        | Caution lights indicating respective engine generator is inoperative.                                                                                                                                                                                                          |
-| CANOPY           | Caution light indicating that the canopy is not down and locked.                                                                                                                                                                                                               |
-| BINGO            | Caution light indicating aircraft fuel quantity at or below set BINGO quantity.                                                                                                                                                                                                |
-| L & R OIL HOT    | Caution lights indicating that respective engine oil is too hot.                                                                                                                                                                                                               |
-| CADC             | Caution light indicating failure in the air data computer.                                                                                                                                                                                                                     |
-| HYD PRESS        | Caution light indicating pressure in either engine hydraulic pump below 2,100 psi.                                                                                                                                                                                             |
-| L & R FUEL PRESS | Caution lights indicating pressure below 9 psi in the respective engine fuel boost pump.                                                                                                                                                                                       |
-| L & R FUEL LOW   | Caution lights indicating fuel quantity below 1,000 pounds in aft and left or forward and right fuel feed group respectively.                                                                                                                                                  |
-| WING SWEEP       | Advisory light indicating failure of a single channel in the wing-sweep system.                                                                                                                                                                                                |
-| RATS             | Advisory light indicating RATS enabled. (F-14B only.)                                                                                                                                                                                                                          |
-| TRANS/RECT       | Advisory light indicating failure in one or both transformer-rectifiers.                                                                                                                                                                                                       |
-| MACH TRIM        | Advisory light indicating failure in Mach trim actuator.                                                                                                                                                                                                                       |
-| WSHLD HOT        | Advisory light indicating central windshield overheat.                                                                                                                                                                                                                         |
-| LAUNCH BAR       | Advisory light indicating either: Weight on wheels - Aircraft kneeled, either throttle below MIL and launch bar not up and locked. Weight off wheels - Launch bar not up and locked, launch bar not within 15º of center (cocked nose-gear), or nose strut not fully extended. |
-| INTEG TRIM       | Advisory light indicating failure in the trim system or computer failure.                                                                                                                                                                                                      |
-| AHRS             | Advisory light indicating unreliable attitude or heading information from AHRS.                                                                                                                                                                                                |
-| ENG FIRE EXT     | Advisory light indicating low pressure in the fire extinguishing container (90 psi below nominal 600 psi).                                                                                                                                                                     |
-| AUX FIRE EXT     | Advisory light indicating low pressure in the auxiliary fire extinguishing container (90 psi below nominal 600 psi).                                                                                                                                                           |
+| 指示器           | 功能                                                                                                                                                                                                         |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| PITCH STAB 1 & 2 | “俯仰增稳 1” 和 “俯仰增稳 2” 注意灯，指示灯亮起表示俯仰通道不可用。                                                                                                                                          |
+| ROLL STAB 1 & 2  | “横滚增稳 1” 和 “横滚增稳 2” 注意灯，指示灯亮起表示横滚通道不可用（横滚 SAS 故障）。                                                                                                                         |
+| YAW STAB OP      | “偏航增稳工作” 注意灯，亮起表示单个通道不可用。                                                                                                                                                              |
+| YAW STAB OUT     | “偏航增稳失效” 注意灯，指示灯亮起表示两个偏航通道不可用（横向增稳故障）。                                                                                                                                    |
+| EMERG JETT       | “应急抛弃” 注意灯，指示灯亮起表示 EMERG STORES JETT（应急挂载抛弃）按钮按下。                                                                                                                                |
+| LADDER           | “登机梯” 注意灯，指示灯亮起表示登机梯未正确折叠收起。                                                                                                                                                        |
+| ECS TURBINE      | 无功能                                                                                                                                                                                                       |
+| INLET ICE        | “进气道结冰” 注意灯，注意灯亮起表示左发进气道结冰信号器探测到结冰。                                                                                                                                          |
+| FLAP             | “襟翼” 注意灯，指示灯亮起表示襟翼系统故障，或空速超过225节但襟翼仍未收上。                                                                                                                                   |
+| HZ TAIL AUTH     | “水平安定面控制” 注意灯，指示灯亮起表示水平安定面控制作动器故障（或 CADC 故障）。                                                                                                                            |
+| RUDDER AUTH      | “方向舵控制” 注意灯，指示灯亮起表示方向舵控制作动器故障（或 CADC 故障）。                                                                                                                                    |
+| SPOILERS         | “扰流板” 注意灯，指示灯亮起表示扰流板失效导致一组扰流板被锁死。                                                                                                                                              |
+| AUTO PILOT       | “自动驾驶” 注意灯，指示灯亮起表示自动驾驶系统中存在故障。                                                                                                                                                    |
+| L & R INLET      | “左进气” 和 “右进气” 注意灯，指示灯亮起表示 AICS（进气控制系统）控制程序和/或系统故障。                                                                                                                      |
+| OIL PRESS        | “滑油压力” 注意灯，指示指示灯亮起起表示左发或右发机滑油压力小于 11 psi。                                                                                                                                     |
+| BLEED DUCT       | “引气导管” 注意灯，指示灯亮起表示发动机舱内高温空气泄露。                                                                                                                                                    |
+| L & R RAMPS      | “左斜板” 和 “右斜板” 注意灯，指示灯亮起表示关键飞行阶段中，进气道斜板未处在收上或限位器锁定位置。                                                                                                            |
+| START VALVE      | “起动机阀门” 注意灯，指示灯亮起表示发动机起动后，起动机电磁空气阀仍开启。（仅限 F-14B）                                                                                                                      |
+| OXY LOW          | “氧气压力低”注意灯，灯光亮起表示剩余液氧储量少于 2 公升，或氧气压力过低。（仅限 F-14A）                                                                                                                      |
+| L & R ENG SEC    | “左发次要模式” 和 “右发次要模式” 注意灯，指示灯亮起表示对应一侧的发动机 AFTC（增推扇叶温度控制装置）处于次要工作模式。（仅限 F-14B）                                                                         |
+| L & R OVSP/VALVE | “左发超速/阀门” 和 “右发超速/阀门” 注意灯，指示灯亮起表示对应的发动机起动机系统故障或对应发动机的 N1 转子超速。（仅限 F-14A）                                                                                |
+| L & R GEN        | “左发电机” 和 “右发电机” 注意灯，指示灯亮起表示对应一侧发动机的发电机不工作。                                                                                                                                |
+| CANOPY           | “座舱盖” 注意灯，指示灯亮起表示座舱盖未关闭并锁定。                                                                                                                                                          |
+| BINGO            | “返航油量” 注意灯，指示灯亮起表示飞机燃油量处于或低于设定的返航油量（BINGO）。                                                                                                                               |
+| L & R OIL HOT    | “左发滑油过热” 和 “右发滑油过热” 注意灯，指示灯亮起表示对应一侧的发动机滑油温度过高。                                                                                                                        |
+| CADC             | “中央大气数据计算机” 注意灯，指示灯亮起表示大气数据计算机硬件故障或某些计算不可靠。                                                                                                                          |
+| HYD PRESS        | “液压压力” 注意灯，指示灯亮起表示至少一侧发动机液压泵的出口压力低于 2100 psi。                                                                                                                               |
+| L & R FUEL PRESS | “左发油压” 和 “右发油压” 注意灯，指示灯亮起表示发动机中，燃油泵的出口油压低于 9 psi。                                                                                                                        |
+| L & R FUEL LOW   | “左发燃油量低” 和 “右发燃油量低” 注意灯，指示灯亮起表示对应的供油油箱组的剩余油量低于 1000 磅。                                                                                                              |
+| WING SWEEP       | “机翼后掠” 提示灯，指示灯亮起表示机翼后掠系统中单个通道故障。                                                                                                                                                |
+| RATS             | “航降减推” 提示灯，指示灯亮起表示 RATS（航降减推系统）启用。（仅限 F-14B）                                                                                                                                   |
+| TRANS/RECT       | “变压/整流” 提示灯，指示灯亮起表示一台变压-整流器正为整个需要交流电的负荷供电或两台变压-整流器故障。                                                                                                         |
+| MACH TRIM        | “马赫数配平” 提示灯，指示灯亮起表示马赫数配平作动器故障。                                                                                                                                                    |
+| WSHLD HOT        | “风挡超温” 提示灯，指示灯亮起表示中央风挡玻璃过热。                                                                                                                                                          |
+| LAUNCH BAR       | “弹射杆” 提示灯，指示灯亮起时将表示：机轮负重时 - 前轮支柱收缩，油门位置未超过 MIL 或正常操作时弹射杆未收上并锁定时亮起。机轮不负重时 - 弹射杆未收上并锁定、前轮偏转超过15度或前起落架支柱未完全伸展时亮起。 |
+| INTEG TRIM       | “综合配平” 提示灯，指示灯亮起输入指令信号和作动器位置之间不一致，计算机内部出现电力流失。                                                                                                                    |
+| AHRS             | “姿态航向基准” 提示灯，指示灯亮起表示 AHRS 显示的姿态或航向信息不可靠。                                                                                                                                      |
+| ENG FIRE EXT     | “发动机灭火” 提示灯，指示灯亮起表示灭火瓶内的压力低（大约比正常值 600 psi 低 90 psi）。                                                                                                                      |
+| AUX FIRE EXT     | “备用灭火” 提示灯，指示灯亮起表示备用灭火瓶中的压力低（大约比正常值 600 psi 低 90 psi）。                                                                                                                    |
 
-## Master Generator Control Panel
+## 主发电机控制面板
 
 ![generator](../../img/cockpit_detail_pilot_generator.jpg)
 
-Panel controlling electrical power generation and emergency generator logic.
+控制发电和应急发电机逻辑的控制面板。
 
-### Master Generator Switches
+### MASTER GEN 开关
 
-The left and right MASTER GEN switches (<num>1</num>) control activation and connection of their
-respective engine-driven generators.
+主发电机开关 (<num>1</num>)，分别用于接通和测试对应一侧发动机的发电机。
 
-The switch must be lifted to move from OFF/RESET.
+提起开关才能将其拨至 OFF/RESET 档位。
 
-- NORM - Activates and connects the generator to the main electrical buses.
-- OFF/RESET - Disconnects the generator and resets protective circuits.
-- TEST - Activates the generator without connecting it to the buses for testing purposes.
+- NORM - 正常位置，启用发电机并将发电机连接至主母线。
+- OFF/RESET - 断开发电机与主母线连接，复位触发的保护电路。
+- TEST - 发电机被激励，但不与主母线连接，只用于测试。
 
-### Emergency Generator Switch
+### EMERG 开关
 
-Guarded EMERG switch (<num>2</num>) controlling emergency generator connection to the essential
-buses.
+带有保护盖的应急发电机开关 (<num>2</num>)，开关用于控制应急发电机与应急电源母线间的连接（保护盖关闭时开关固定在 NORM 档位）。
 
-- NORM - Emergency generator automatically connects if both main generators fail.
-- OFF/RESET - Disconnects the emergency generator and resets protection circuits.
+- NORM - 正常模式，如果主发电机故障，应急发电机将自动与应急电源母线连接。
+- OFF/RESET - 无论主发电机状态如何，切断将应急发电机与应急电源母线间的连接。复位保护电路。
 
-## Master Light Control Panel
+## 主灯光控制板
 
 ![master light](../../img/cockpit_detail_pilot_masterlight.jpg)
 
-The master light control panel manages most interior and exterior aircraft lighting systems.
+用于控制机外和机内的大部分灯光。
 
-### Anti-Collision Light Switch
+### ANTI COLLISION 开关
 
-ON/OFF switch (<num>1</num>) controlling aircraft anti-collision lights.
+防撞灯开关 (<num>1</num>)，用于开启或关闭防撞灯。
 
-### Position Light Mode Switch
+### POSITION 闪光器开关
 
-Switch (<num>2</num>) selecting steady or flashing operation of wing and supplementary tail position
-lights.
+航行灯闪光器开关(<num>2</num>) ，用于设置机翼或附加航行灯是稳定亮起还是闪烁。
 
-With weight on wheels, supplementary lights remain steady regardless of selection.
+前轮放下时，附加灯光将保持稳定亮起。
 
-### Tail Position Light Switch
+### TAIL POSITION 开关
 
-Switch (<num>3</num>) controlling tail position lights with DIM and BRT settings.
+尾部航行灯开关 (<num>3</num>)，用于控制机尾航行灯，可选择 BRT（亮）或 DIM（暗）。
 
-### Wing Position Light Switch
+### WING POSITION 开关
 
-Switch (<num>4</num>) controlling wing position lights with DIM and BRT settings.
+机翼航行灯开关(<num>4</num>)，用于控制机翼航行灯，可选择 BRT（亮）或 DIM（暗）。
 
-### ACM Lighting Thumbwheel
+### ACM 拨轮
 
-Thumbwheel (<num>5</num>) controlling ACM panel lighting intensity from 0 (off) to 14 (maximum).
+(<num>5</num>) 用于控制 ACM 面板灯光亮度，0 等于关闭，1-14逐渐增加灯光亮度。
 
-### AoA Indexer Thumbwheel
+### INDEXER 拨轮
 
-Thumbwheel (<num>6</num>) adjusting angle-of-attack indexer light intensity from 0 to 14.
+分度器亮度拨轮 (<num>6</num>) ，用于控制迎角分度器的亮度，亮度调整范围从0到14。
 
-### Hook Bypass Switch
+### HOOK BYPASS 开关
 
-Switch (<num>7</num>) selecting FIELD or CARRIER AoA logic.
+拦阻钩旁路开关，用于设置 AOA 指示灯（译注：包括分度器和进近灯）为 FIELD（机场）或 CARRIER（航母）模式.
 
-When set to CARRIER with wheels down, AoA lights flash if the arresting hook is not down.
+如果选择了 CARRIER 模式且起落架放下，但拦阻钩未放下时，指示灯会闪烁。
 
-### Taxi Light Switch
+### TAXI 开关
 
-ON/OFF switch (<num>8</num>) controlling taxi lights.
+滑行灯开关(<num>8</num>)，控制滑行灯开关。
 
-### Instrument Lighting Thumbwheel
+### INSTRUMENT 拨轮
 
-Thumbwheel (<num>9</num>) controlling instrument panel lighting intensity from 0 to 14.
+仪表板灯光拨轮(<num>9</num>)，用于控制仪表板灯光亮度，0 等于关闭灯光，1-14 逐渐增加灯光亮度。
 
-### White Flood Light Switch
+### WHITE FLOOD 开关
 
-Switch (<num>10</num>) enabling white cockpit flood lighting.
+白色泛光灯开关(<num>10</num>)，用于控制飞行员驾驶舱中的白色泛光灯。
 
-DIM and BRT positions available. Switch is locked to OFF unless pulled outward.
+向上提起开关才可将其拨至 BRT（亮）或 DIM（暗）档位。
 
-### Console Lighting Thumbwheel
+### CONSOLE 拨轮
 
-Thumbwheel (<num>11</num>) controlling console lighting and red flood lighting.
+控制台灯光拨轮，用于调整控制台灯光和红色泛光灯的拨轮。
 
-- 0 - All off
-- 1–14 - Increasing console light intensity
+- 0 - 关闭灯光
+- 1–14 - 逐渐增加灯光亮度
 
-### Red Flood Light Switch
+### RED FLOOD 开关
 
-Switch (<num>12</num>) controlling red instrument and console flood lighting.
+红色泛光灯开关 (<num>12</num>)，用于控制仪表板和控制台的红色泛光灯。
 
-- DIM - Dim red console flood
-- MED - Medium red console flood
-- BRT - Bright red instrument and console flood
+- DIM - 仅开启低亮度控制台红色泛光灯
+- MED - 仅开启红色控制台泛光灯
+- BRT - 开启高亮度仪表板和控制台红色泛光灯
 
-### Formation Light Thumbwheel
+### FORMATION 拨轮
 
-Thumbwheel (<num>13</num>) controlling external formation light brightness from 0 to 14.
+编队灯拨轮 (<num>13</num>)，用于控制机外编队灯亮起度。0 等于关闭编队灯，1-14 逐渐增加编队灯的亮度。
 
-## Air Conditioning Control Panel
+## 空调控制面板
 
 ![air condition](../../img/cockpit_detail_pilot_aircondition.jpg)
 
-Panel controlling the environmental control system (ECS).
+用于操作环境控制系统（ECS）的面板。
 
-### Temperature Switch
+### TEMP 开关
 
-Two-position switch (<num>1</num>) controlling the cabin and pressure suit temperature mode.
+温控模式开关 (<num>1</num>)，用于选择驾驶舱和抗荷服加温模式。
 
-- AUTO - Temperature is automatically regulated using the TEMP thumbwheel regardless of airspeed and
-  altitude.
-- MAN - Temperature is manually controlled using the TEMP thumbwheel and varies with airspeed and
-  altitude.
+- AUTO - 驾驶舱和抗荷服温度将被自动保持在 TEMP 拨轮选定的等级。
+- MAN - 在 MAN 模式下使用 TEMP 拨轮手动调节驾驶舱热空气调节阀门来保持驾驶舱和抗荷服的温度。
 
-### Cabin Pressure Switch
+### CABIN PRESS 开关
 
-Two-position switch (<num>2</num>) controlling cabin pressurization. The switch is locked in NORM
-until lifted.
+座舱增压开关 (<num>2</num>)，用于控制座舱增压。向上提起开关才能将其拨至其他档位。
 
-- NORM - Normal pressurization mode. Cabin pressure is maintained at approximately 8,000 feet up to
-  an aircraft altitude of 23,000 feet, after which a constant 5 psi differential is maintained.
-- DUMP - Opens the cockpit dump valve, depressurizing the cockpit.
+- NORM - 正常模式，在 8000 英尺至 23000 英尺的高度范围内自动保持座舱压力，超过 23000 英尺后则始终保持座舱气压比外部气压高 5
+  psi。
+- DUMP - 开启座舱泄压阀来给座舱减压。
 
-### RAM AIR Switch
+### RAM AIR 开关
 
-The RAM AIR switch (<num>3</num>) modulates cockpit air temperature when the ram air door is in use.
+冲压空气开关 (<num>3</num>)，在 AIR
+SOURCE 按钮选择了 RAM 或 OFF 后，则可使用这个弹簧开关用于调整冲压空气进气门的进气量。
 
-INCR opens the ram air door, decreasing temperature, while DECR closes the door, increasing
-temperature. The switch is spring-loaded to center.
+开关可以保持在 INCR（增加进气量）或 DECR（减小进气量）位置上，开关由弹簧归中。
 
-### Air Source Selectors
+### AIR SOURCE 开关
 
-Five mutually exclusive air source selectors (<num>4</num>) used to select ECS air supply source.
+气源选择开关 (<num>4</num>)，五个互斥的气源选择开关。被选中的开关会旋转。
 
-- RAM - Closes all other air sources and opens the ram air door. Gun firing is inhibited.
-- L & R ENG - Selects either engine as bleed air source.
-- BOTH ENG - Selects both engines as bleed air sources. Normal position.
-- OFF - Closes all air sources except the ram air door. Pressurization and air conditioning are
-  unavailable. Gun firing is inhibited.
+- RAM - 关闭其它气源，并开启冲压空气进气门，冲压空气与热引气混合后提供给所有系统。
+- L & R ENG - 选择对应一侧的发动机作为引气源。
+- BOTH ENG - 使用两台发动机作为引气的气源。这个档位是 AIR
+  SOURCE 开关的正常位置。
+- OFF - 关闭除了冲压进气门以外的所有其他气源。该模式下，冲压空气无法为驾驶舱增压或提供空气调节。OFF 模式下航炮无法击发。
 
-### Temperature Thumbwheel
+### TEMP 拨轮
 
-The TEMP thumbwheel (<num>5</num>) selects cockpit and pressure suit air temperature. 0-14 is
-selectable with COOL and WARM placarded at each end stop. With the TEMP switch (<num>1</num>) set to
-AUTO, a setting of 7 corresponds approximately to 21°C (70°F) while set to manual, the thumbwheel
-needs to be set for each variation in airspeed and altitude.
+温控拨轮 (<num>5</num>)，用于调节驾驶舱和抗荷服温度。拨轮的调节范围是0-14，两侧有 COOL（冷）和 WARM（热）标识。自动模式下 (<num>1</num>)，
+7的位置大约对应 21°C 或 70°F。手动模式下，每当空速和高度变化，都需要调节拨轮以保持当前温度。
 
-## Master Test Panel
+## 主测试面板
 
 ![master test](../../img/cockpit_detail_pilot_mastertest.jpg)
 
-Panel used to control onboard checkout (OBC), on board built-in tests (BIT), and emergency flight
-hydraulic operation.
+用于控制 OBC（机内检查）和各种机载系统 BIT（自检）以及应急飞行液压系统。
 
-### Master Test Selector
+### MASTER TEST 选择开关
 
-The MASTER TEST selector (<num>1</num>) is used to select and initiate OBC and BIT functions. Pull
-out to enable selection, push in at selected option to start test.
+主测试选择开关(<num>1</num>)，用于选择和启动 OBC 和多个系统的 BIT。向上提起旋钮来选择测试项目，按下旋钮选择对应项目并开始测试。
 
-- OFF - Disables all test functions.
-- LTS - Tests cockpit lights.
-- FIRE DET/EXT - Tests fire detection and extinguishing systems.
-- INST - Tests cockpit instruments.
-- OBC - Initiates onboard checkout.
-- EMERG GEN - Tests emergency generator.
-- MACH LEV - Dynamic Mach lever test. (F-14A only.)
-- WG SWP - Wing sweep test.
-- FLT GR DN - Ground check of autothrottle interlocks.
-- FLT GR UP - External tank pressurization test.
-- D/L RAD - Data link converter test.
-- STICK SW - Stick and spoiler symmetry switch test.
+- OFF - 禁用测试功能。 - LTS - 灯光测试，测试驾驶舱内指示灯。
+- FIRE DET/EXT - 测试失火探测系统。
+- INST - 仪表测试，测试各种驾驶舱仪表。
+- OBC - 机内检查，选则该项目来启动 OBC 程序。
+- EMERG GEN - 测试应急发电机。
+- MACH LEV - 开始动态马赫杆检查。只适用于 F-14A。
+- WG SWP - 测试机翼后掠系统。
+- FLT GR DN - 开始自动油门互锁地面检查。
+- FLT GR UP - 测试副油箱增压。
+- D/L RAD - 测试数据链路转换器。
+- STICK SW - 检查左、右扰流板对称性，将操纵杆左右横向移动 1 英尺来检查。
 
-### GO / NO-GO Indicator Lights
+### GO/NO-GO 指示灯
 
-The GO and NO-GO lights (<num>2</num>) used to indicate GO or NO-GO conditions of systems during
-relevant tests.
+指示灯 (<num>2</num>) 用于指示通过（GO）或未通过（NO-GO）相关系统的测试。
 
-### Emergency Flight Hydraulic Switch
+### EMERG FLT HYD 开关
 
-The EMERG FLT HYD switch (<num>3</num>) controls emergency flight hydraulic operation. The switch is
-guarded to the AUTO (LOW) position.
+应急飞行液压 (<num>3</num>) ，用于控制飞行液压系统的紧急模式。保护盖关闭时，开关固定在 AUTO（LOW）位置。
 
-- HIGH - Activates the power module (high speed mode), bypassing flight and combined 2,100 psi
-  switches.
-- LOW - Activates the backup power module bypassing flight and combined 2,100 psi switches.
-- AUTO (LOW) - Automatically activates LOW mode when both flight and combined system pressures are
-  below 2,100 psi.
+- HIGH - 启用动力模块（高速模式），绕过飞行液压和联合液压系统 2100
+  psi 交换条件。
+- LOW - 启用备用动力模块，绕过飞行液压和联合液压系统 2100 psi 交换条件。
+- AUTO (LOW) - 飞行液压和联合液压系统中的压力低于 2100
+  psi 时，LOW（低速）模式将被自动启用。
 
-## External Environmental Control Panel
+## 外部环境控制面板
 
 ![external environment](../../img/cockpit_detail_pilot_externalenvironment.jpg)
 
-Panel controlling windshield heating and external anti-ice systems.
+面板用于设置风挡吹风和机外除冰。
 
-### Windshield Heat Switch
+### WSHLD 开关
 
-The WIND SHIELD switch (<num>1</num>) controls external windshield heating by blasting the exterior
-with warm air.
+风挡加温开关 (<num>1</num>) ，用于控制风挡加温，用高温空气向风挡外部送风进行加温。
 
-- AIR - Enables windshield heating using warm air.
-- OFF - Disables windshield heating.
+- AIR - 启用系统。
+- OFF - 关闭系统。
 
-### ENG/PROBE ANTI-ICE Switch
+### ANTI-ICE 开关
 
-The ENG/PROBE ANTI-ICE switch (<num>2</num>) controls engine, probe, and AICS anti-ice systems.
+除冰开关 (<num>2</num>)，控制发动机、皮托管和 AICS 除冰设置。
 
-- ORIDE/ON - Engages engine and probe anti-ice regardless of external conditions and enables the
-  anti-ice setting in AICS.
-- AUTO/OFF - Automatically engages engine and probe anti-ice as needed, turns off AICS anti-ice.
-- OFF/OFF - Turns off both engine and probe anti-ice and AICS anti-ice.
+- ORIDE/ON - 无论机外气象条件如何，启用发动机除冰和皮托管除冰，并启用 AICS 除冰设定。
+- AUTO/OFF - 系统自动接通发动机除冰、皮托管除冰，关闭 AICS 除冰。
+- OFF/OFF - 关闭发动机除冰和皮托管除冰两者并关闭 AICS 除冰。
 
-## Hydraulic Transfer Pump Switch
+## 液压输送泵开关
 
 ![hydraulic transfer pump](../../img/cockpit_detail_pilot_hydraulictransferpump.jpg)
 
-Panel containing the control for the hydraulic transfer pump which equalizes pressure between the
-combined and flight hydraulic systems in case of a failure in one of them.
+面板用于控制液压输送泵，液压输送泵用来在一台发动机或发动机驱动泵不工作的情况下，保证主系统液压压力的持续性，液压输送泵为系统提供第二压力源。
 
-The HYD TRANSFER PUMP switch has two positions, SHUTOFF and NORMAL (guarded position).
+HYD TRANSFER
+PUMP 开关有两个档位，分别是 SHUTOFF（关闭）和 NORMAL（保护盖关闭，正常档位）。
 
-The NORMAL position (also the standard setting) will have the hydraulic transfer pump pressurize a
-failed hydraulic system from the other, functioning system, when it drops below 2,100 psi.
+如果开关置于 NORMAL 位置（同时是标准的设定），当一侧液压系统的液压压力低于 2100
+psi 时，那么将通过液压输送泵从另一系统对低于 2100 psi 一侧的系统进行增压。
 
-The SHUTOFF position (which can be accessed by lifting the guard) is used to turn off the transfer
-pump in case it can’t supply enough pressure to the failed system as that would risk disabling the
-still operational system.
+SHUTOFF 档位（通过抬起保护盖来波动到这个档位）用来在无法为另一侧系统提供足够压力，可能会导致正常工作的系统失效时，手动关闭液压输送泵。
 
-## HUD - Video Control Panel
+## HUD-视频控制面板
 
 ![hud video control](../../img/cockpit_detail_pilot_hudvideocontrol.jpg)
 
-Control panel for the CTVS system used to record HUD video.
+面板用于控制 CTVS 系统。CTVS 的作用是录制 HUD 中的标识和图像。
 
-> 💡 Not implemented in DCS.
+> 💡 DCS 中未实装相关功能。
 
-### HUD Camera Switch
+### HUD 摄像机开关
 
-The HUD CAM(E)RA switch (<num>1</num>) selects when recording occurs.
+HUD CAM(E)RA 开关(<num>1</num>)在开始录制时进行选择。
 
-- TRG - Trigger, records while the second (firing) detent on the stick trigger is depressed.
-- NORMAL - Records while the first detend on the stick trigger is depressed.
-- OFF - Disables power to the CTVS.
-- RUN - Records continuously.
+- TRG - 扳机触发，当扳机第二段被按下（开火）时录制 HUD 画面。
+- NORMAL - 按下扳机第一段时开始录制。
+- OFF - 关闭 CTVS 电源。
+- RUN - 持续录制 HUD 画面。
 
-Switches (<num>2</num>) and (<num>3</num>) are for the Video Tape Recorder (VTR).
+开关 (<num>2</num>) 和 (<num>3</num>) 用于录像机 (VTR)。
 
-## Canopy Defog / Cabin Air Lever
+## 座舱盖除雾 / 座舱通风气流调节拉杆
 
 ![canopy defog](../../img/cockpit_detail_pilot_canopydefog.jpg)
 
-The canopy air diffuser lever controls the flow of cabin air. The normal position, CABIN AIR,
-directs 70% of the conditioned air through the cockpit air diffusers and 30% through the canopy air
-diffusers.
+舱盖空气散流器控制手柄控制驾驶舱中的通风气流。手柄置于正常位置——CABIN
+AIR——空调系统引导70%的气流空过驾驶舱空气散流器，30%通过舱盖空气散流器。
 
-The CANOPY DEFOG position directs all airflow through the canopy air diffusers for canopy defog.
+手柄置于 CANOPY
+DEFOG（舱盖除雾）位置时，空调系统将引导所有气流通过舱盖空气散流器来给舱盖除雾。

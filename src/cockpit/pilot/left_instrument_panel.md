@@ -1,162 +1,144 @@
-# Left Instrument Panel
+# 左仪表板
 
-## Radar Altimeter
+## 雷达高度表
 
 ![Radar Altimeter](../../img/cockpit_detail_pilot_radaraltimeter.jpg)
 
-Control and indicator for the radar altimeter.
+雷达高度表用来雷达高度计进行控制并用来指示雷达高度。
 
-### Radar Altimeter Control Knob
+### 雷达高度表控制旋钮
 
-The radar altimeter control knob (<num>1</num>) controls radar altimeter power, sets the low
-altitude warning threshold, and initiates BIT.
+雷达高度表控制旋钮 (<num>1</num>) 用来控制电源模式、设置低高度告警阈值和启动 BIT。
 
-Fully counterclockwise turns the radar altimeter off. Rotating clockwise sets the altitude warning
-level. Depressing the knob initiates radar altimeter BIT.
+逆时针旋转旋钮至最大档位将关闭雷达高度计。顺时针旋转旋钮来设置告警高度，顺时针转动控制旋钮来增加告警高度。按下旋钮开始高度计系统 BIT。
 
-### OFF Flag
+### OFF 警示旗
 
-The OFF flag (<num>2</num>) is displayed when the radar altimeter is off, power is unavailable, or
-the system loses ground lock.
+在系统关闭、电源关闭或丢失雷达信号时，雷达高度表会显示 OFF 警示旗 (<num>2</num>)。
 
-### Low Altitude Warning Light
+### 低高度告警灯
 
-The low altitude warning light (<num>3</num>) illuminates red when the aircraft is below the set
-altitude warning level.
+当飞机低于雷达高度计上设置的告警高度时，红灯 (<num>3</num>) 会亮起。
 
-### Self-Test Light
+### 自检状态灯
 
-The self-test light (<num>4</num>) illuminates green when radar altimeter BIT is run.
+进行高度表自检时，绿灯 (<num>4</num>) 会亮起。
 
-During BIT, the readout should display 100 feet ±10.
+BIT 时高度表读数应显示100 ± 10 英尺。
 
-### Low-Altitude Limit Index
+### 低高度限制指示
 
-The low-altitude limit index (<num>5</num>) is a triangular bug on the outer edge indicating the
-selected altitude warning threshold.
+沿着表盘外沿移动的小三角形游标(<num>5</num>)，游标显示了设定的告警高度。
 
-> 💡 Radio override does not disable the low-altitude warning tone.
+> 💡 RADIO OVERRIDE（无线电台超控）并不会禁用低高度告警的音频。
 
-## Servopneumatic Altimeter
+## 气动伺服高度表
 
 ![Servopneumatic Altimeter](../../img/cockpit_detail_pilot_altimeter.jpg)
 
-The servopneumatic altimeter provides altitude indication using both electrical and pressure-based
-systems.
+伺服气动高度表通过电系统和压力系统双重方式显示高度。
 
-### Altimeter Readout
+### 高度表读数
 
-The altimeter readout (<num>1</num>) displays altitude using three digital drums for 10,000, 1,000,
-and 100 feet, and a pointer on a circular scale indicating hundreds of feet.
+在三个滚筒上显示高度数字 (<num>1</num>)，三个数字分别对应10 000、1 000 和 100 英尺。
 
-A pointer on the circular scale provides continuous indication in hundreds of feet.
+同时，表盘指针指向的环形排列的刻度表示百英尺高度。
 
-### Baroset Knob
+### 气压调节旋钮
 
-The baroset knob (<num>2</num>) sets local barometric pressure in inches of mercury (in.Hg).
+设置以英寸汞柱（in.Hg）为单位的本地气压。
 
-This setting only affects the local altimeter display. Other CADC-driven digital indicators use a
-fixed 29.92 in.Hg reference.
+只用于气压计本身的读数，所有其他（由 CADC 控制的）数字指示器都使用 29.92 英寸汞柱作为气压数值。
 
-### Local Barometric Pressure Window
+### 当地气压
 
-The local barometric pressure window (<num>3</num>), also known as the Kollsman window, displays the
-selected pressure setting.
+(<num>3</num>)指示调定的局部气压值，这个显示框也被称为“Kollsman Window”。
 
-### Mode Switch
+### 模式选择开关
 
-The mode switch (<num>4</num>) selects altimeter operating mode and is spring-loaded from RESET.
+模式选择开关(<num>4</num>)为三档位开关，当松开开关时，开关从 RESET 位置弹回正常位置。
 
-- RESET - When CADC power and altitude data are available, holding RESET for approximately three
-  seconds enables normal servoed operation.
-- STBY - Selects backup pressure mode.
+- RESET - 如果接通电源，且 CADC 可提供高度数据，那么将开关在 RESET 档位保持3秒后，高度表会进入正常（伺服）工作模式。
+- STBY - 选择备用气压模式。
 
-If CADC data or electrical power is absent for more than three seconds, the system automatically
-reverts to standby mode.
+开关拨至 STBY 位置，或电源断开，或缺少 CADC 高度数据，那么3秒后，系统会切换至备用（气压）模式。
 
-### STBY Flag
+### STBY 警示旗
 
-The STBY flag is a red standby indication that appears when the altimeter is operating in backup
-(standby) mode (not visible in this image).
+如果系统在备用模式下工作，那么表盘中会显示红色的标有 STBY 字样的警示旗。
 
-> 💡 At high speeds and below 10,000 feet, pressure effects can produce significant readout errors:
-> up to 1,200 feet when transonic and up to 4,000 feet when supersonic.
+> 💡 在 10000 英尺以下高速飞行时，由于气压变化较大，飞机跨声速飞行时，气压计读数误差最多可达到 1200 英尺，而超声速飞行时，误差可能高达 4000 英尺 。
 
-## Airspeed Mach Indicator
+## 空速马赫表
 
 ![Airspeed Mach Indicator](../../img/cockpit_detail_pilot_mach.jpg)
 
-Indicated airspeed and Mach number display.
+用来显示指示空速和马赫数。
 
-### Airspeed Dial
+### 空速表拨盘
 
-The airspeed dial (<num>1</num>) drives the airspeed and Mach indication across three scales.
+(<num>1</num>)用三种刻度显示指示空速，其中两种刻度对应指示空速，一个随马赫数变化移动。
 
-### Indicated Airspeed Scale (Outer)
+### 指示空速刻度（外圈）
 
-The outer indicated airspeed scale (<num>2</num>) provides readout up to 200 knots.
+指示空速的读数(<num>2</num>)，最高指示速度为200节。
 
-### Indicated Airspeed Scale (Inner)
+### 指示空速刻度（内圈）
 
-The inner indicated airspeed scale (<num>3</num>) provides readout from 200 to 850 knots and is
-covered by the dial until applicable.
+指示空速的读数(<num>3</num>)，刻度对应的空速从200节到850节。内圈的指示空速刻度被空速表拨盘未镂空的部分盖住，直到需要显示对应的空速时才显示出来。
 
-### Mach Number Scale
+### 马赫数刻度
 
-The Mach number scale (<num>4</num>) provides Mach readout and shifts relative to indicated airspeed
-to indicate the correct Mach number.
+马赫数的读数(<num>4</num>)。刻度将会转动来显示对应当前指示空速的正确的马赫数。
 
-### Indicated Airspeed Index Pointer
+### 指示空速数值游标
 
-The indicated airspeed index pointer (<num>5</num>) can be set to a desired indicated airspeed.
+可以将游标(<num>5</num>)调定到所需的指示空速上。
 
-### Mach Number Index Pointer
+### 马赫数数值游标
 
-The Mach number index pointer (<num>6</num>) can be set to a desired Mach number.
+可以将游标(<num>6</num>)调定到所需的马赫数上。
 
-Not visible in the image.
+在上图中不可见。
 
-### Safe Mach Number Index Pointer
+### 最大安全马赫数游标
 
-The safe Mach number index pointer (<num>7</num>) indicates the CADC-computed safe Mach number.
+游标(<num>7</num>)显示 CADC 计算出的安全马赫数。
 
-Not visible in the image.
+在上图中不可见。
 
-### Index Knob
+### 游标设置旋钮
 
-The index knob (<num>8</num>) is a push-pull knob used to select which index pointer is adjusted.
+游标设置旋钮(<num>8</num>)这个旋钮有抽出和按下两个档位。
 
-One position adjusts the indicated airspeed index and the other adjusts the Mach number index.
+两个档位分别用于设置指示空速游标和马赫数游标。
 
-## Vertical Velocity Indicator
+## 垂直速率表
 
 ![Vertical Velocity Indicator](../../img/cockpit_detail_pilot_vvi.jpg)
 
-Displays vertical velocity in thousands of feet per minute.
+显示以千英尺为单位的垂直速率。
 
-Sudden or abrupt attitude changes can produce erroneous indications due to airflow changes over the
-static probe.
+高度急剧或突然改变时，由于飞机皮托管表面的气流快速变化，垂直速率表读数可能出现巨大误差。
 
-## Left Engine Fuel Shutoff Handle
+## 左发断油手柄
 
 ![Left Engine Fuel Shutoff Handle](../../img/cockpit_detail_pilot_leftengineshutoff.jpg)
 
-Emergency fuel shutoff handle for the left engine.
+紧急情况下，抽出手柄来切断左发动机供油。
 
-Pulling the handle shuts off fuel flow to the left engine. Pushing the handle in restores fuel flow.
+将手柄推入正常位置来重新向发动机注入燃油。
 
-This handle should not be used to normally secure the engine.
+但这个手柄不应用于（降落后）关闭发动机。
 
-A left engine fire extinguishing button is located behind the handle and is accessible when the
-handle is pulled out.
+左发灭火按钮在手柄后方，抽出手柄后方可使用灭火按钮。
 
-## Angle-of-Attack Indicator
+## 迎角指示器
 
 ![Angle-of-Attack Indicator](../../img/cockpit_detail_pilot_aoa.jpg)
 
-Displays angle of attack (AOA) on a tape scale from 0 to 30 units.
+带状迎角指示器指示了飞机的迎角（AoA），指示器的显示范围在 0 至 30 个单位之间。
 
-This corresponds approximately to -10° to +40° rotation of the AOA probe.
+对应迎角探头在 -10° 至 +40° 范围内转动。
 
-Reference markers are provided on the right side for climb (5), cruise (8.5), and stall (29). A
-reference bar indicates on-speed approach (15).
+指示器右侧的标识分别指示各个飞行阶段对应的最佳迎角单位：爬升（5）、巡航（8.5）和失速（29），而 15 个单位处的参考横线表示最佳进近迎角（15）。

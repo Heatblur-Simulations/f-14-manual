@@ -1,137 +1,118 @@
-# Left Vertical Console
+# 左侧垂直控制台
 
-## Armament Panel
+## 武器控制面板
 
 ![armament panel](../../img/cockpit_detail_rio_armamentpanel.jpg)
 
-The armament panel provides primary control of air-to-air and air-to-ground weapon employment from
-the RIO cockpit.
+RIO 驾驶舱中的武器控制面板提供空对空和空对地武器的投放主要控制。
 
-### Weapon Type Selector
+### WPN TYPE 拨轮
 
-The WPN TYPE selector (<num>1</num>) selects the weapon type used by the WCS for air-to-ground
-ballistic calculations.
+武器类型拨轮 (<num>1</num>)，用于选择 WCS 在 A/G（空对地）模式中进行挂载投放数据计算时使用的武器类型。
 
-### Attack Mode Selector
+### ATTK MODE 旋钮
 
-The ATTK MODE knob (<num>2</num>) selects the air-to-ground attack mode used for weapon delivery.
+攻击模式选择旋钮 (<num>2</num>)，用于选择使用哪种 A/G 攻击模式。
 
-### Electrical Fuse Selector
+### ELEC FUSE 开关
 
-The ELEC FUSE knob (<num>3</num>) selects the electrical fuze setting for air-to-ground ordnance.
+电子引信选择开关 (<num>3</num>)，用于对空对地挂载的电子引信进行设定。
 
-### Air-to-Ground Gun Switch
+### A/G GUN 开关
 
-The A/G GUN switch (<num>4</num>) selects gun availability in A/G master mode.
+空对地航炮开关 (<num>4</num>)，用于控制 A/G 模式下飞机航炮的工作模式。
 
-- OFF - Gun disabled.
-- MIXED - Enables gun in addition to selected A/G ordnance.
+- OFF - 禁用航炮。 - MIXED - 允许在投放空对地挂载的同时射击航炮。
 
-### Quantity Selectors
+### QTY 拨轮
 
-The QTY selector wheels (<num>5</num>) set the quantity of air-to-ground ordnance released per
-delivery, including rockets.
+武器投放数量拨轮 (<num>5</num>)，用于控制 A/G 武器（包括航箭）投放的数量。
 
-### Interval Selectors
+### INTERVAL 拨轮
 
-The INTERVAL selector wheels (<num>6</num>) set the time interval between successive weapon releases
-in ripple delivery mode.
+武器投放间隔拨轮 (<num>6</num>)，用于控制连发投放模式下，武器投放的间隔。
 
-Interval is set in milliseconds.
+设置的投放间隔单位为毫秒。
 
-### Station 6 Select Switch
+### 6 号挂点选择开关
 
-The station 6 select switch (<num>7</num>) selects station 6 for jettison or air-to-ground weapons
-delivery.
+6 号挂点选择开关 (<num>7</num>)，选择 6 号挂点中挂载的武器用于抛弃或空对地模式武器投放。
 
-### Air-to-Air Launch Button
+### A/A LAUNCH 按钮
 
-The A/A LAUNCH button (<num>8</num>) allows the RIO to command launch of AIM-7 or AIM-54 missiles.
+空对空发射按钮 (<num>8</num>)，这是 RIO 用于发射 AIM-7 或 AIM-54 的按钮。
 
-Button illumination indicates hot-trigger conditions are met.
+按钮亮起表示发射电路就绪。
 
-### Missile Speed Gate Knob
+### MSL SPD GATE 旋钮
 
-The MSL SPD GATE knob (<num>9</num>) controls the position of the missile speed gate used by the
-WCS.
+导弹速度门选择旋钮 (<num>9</num>)，用于设置导弹速度门的位置。
 
-### Station 8 Select Switch
+### 8 号挂点选择开关
 
-The station 8 select switch (<num>10</num>) selects station 8 for jettison or air-to-ground weapons
-delivery.
+8 号挂点选择开关 (<num>10</num>)，选择位于 8 号挂点的武器用于抛弃或空对地模式武器投放。
 
-- B - Selects lower pylon.
-- SW - Non-functional.
+- B - 选择翼套下挂点。 - SW - 无功能。
 
-### Missile Options Switch
+### MSL OPTIONS 开关
 
-The MSL OPTIONS switch (<num>11</num>) configures missile launch behavior.
+导弹发射选项设置开关 (<num>11</num>) ，配置导弹发射行为。
 
-- Enables AIM-7 pulse-doppler mode.
-- Enables AIM-54 active launch mode.
+- 启用 AIM-7 脉冲多普勒模式。 - 启用 AIM-54 主动发射模式。
 
-### Station 5 Select Switch
+### 挂点 5 选择开关
 
-The station 5 select switch (<num>12</num>) selects station 5 for jettison or air-to-ground weapons
-delivery.
+5 号挂点选择开关 (<num>12</num>)，选择 5 号挂点中挂载的武器用于抛弃或空对地模式武器投放。
 
-### Next Launch Button
+### NEXT LAUNCH 按钮
 
-The NEXT LAUNCH button (<num>13</num>) designates the currently hooked target as the next launch
-target during TWS operation.
+下一发射目标选择按钮 (<num>13</num>) ，RIO 可以使用这个按钮将选中的目标作为 TWS 模式下，下一个对其发射的目标。
 
-### Station 4 Select Switch
+### 挂点 4 选择开关
 
-The station 4 select switch (<num>14</num>) selects station 4 for jettison or air-to-ground weapons
-delivery.
+4 号挂点选择开关 (<num>14</num>)，选择 4 号挂点中挂载的武器用于抛弃或空对地模式武器投放。
 
-### Station 1 Select Switch
+### 挂点 1 选择开关
 
-The station 1 select switch (<num>15</num>) selects station 1 for jettison or air-to-ground weapons
-delivery.
+1 号挂点选择开关 (<num>15</num>)，选择位于 1 号挂点的武器用于抛弃或空对地模式武器投放。开关的 B 档位选择翼套下挂点来进行投放或抛弃，而 SW 档位无功能。
 
-- B - Selects lower pylon.
-- SW - Non-functional.
+- B - 选择翼套下挂点。 - SW - 无功能。
 
-### Tank Jettison Station 7 Switch
+### TANK JETT 7 号挂点开关
 
-The TANK JETT station 7 switch (<num>16</num>) selects station 7 external fuel tank for jettison.
+(<num>16</num>) 选择 7 号挂点的副油箱来抛弃。
 
-### Tank Jettison Station 2 Switch
+### TANK JETT 2 号挂点开关
 
-The TANK JETT station 2 switch (<num>17</num>) selects station 2 external fuel tank for jettison.
+(<num>17</num>) 选择 2 号挂点的副油箱来抛弃。
 
-### Station 3 Select Switch
+### 挂点 3 选择开关
 
-The station 3 select switch (<num>18</num>) selects station 3 for jettison or air-to-ground weapons
-delivery.
+3 号挂点选择开关 (<num>18</num>)，选择 3 号挂点中挂载的武器用于抛弃或空对地模式武器投放。
 
-### Jettison Options Switch
+### JETT OPTIONS 开关
 
-The JETT OPTIONS switch (<num>19</num>) selects jettison configuration.
+抛弃选项开关 (<num>19</num>)，选择抛弃配置。
 
-- WPNS - Jettison weapons only.
-- MER/TER - Jettison racks in addition to weapons.
+- WPNS - 仅抛弃武器
+- MER/TER - 连同挂架加武器一起抛弃。
 
-This function is non-functional in the modeled F-14.
+游戏中模拟的 F-14 此开关无功能。
 
-### Selective Jettison Switch
+### SEL JETT 开关
 
-The SEL JETT switch (<num>20</num>) selects selective jettison mode.
+选择抛弃开关 (<num>20</num>)，用来选择选中的挂点以 JETT（正常）模式或 AUX（备用）模式。
 
-- JETT - Normal jettison mode.
-- AUX - Backup jettison mode (guarded).
+- JETT - 正常抛弃模式。
+- AUX - 备用抛弃模式（带保护盖）。
 
-### Mechanical Fuse Selector
+### MECH FUSE 开关
 
-The MECH FUSE switch (<num>21</num>) enables and selects the mechanical fuze setting for
-air-to-ground ordnance.
+机械引信开关 (<num>21</num>)，用于启用机械引信和设定空对地挂载锁使用的机械引信类型。
 
-### Delivery Mode Selectors
+### DLVY MODE 开关
 
-The DLVY MODE switches (<num>22</num>) consist of two selector switches that control air-to-ground
-release logic.
+投放模式开关 (<num>22</num>)，这两个开关用于选择空对地投放模式。
 
-- One switch selects single or paired weapon release.
-- The other selects single-pass or multiple-pass delivery according to quantity and interval
-  settings.
+- 其中一个开关用于单发或成对投放。
+- 另一个开关则用来控制根据面板中的设定来进行一次或多次投放。

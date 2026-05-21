@@ -1,57 +1,50 @@
-# Right Knee Panel
+# 右膝仪表板
 
-## Fuel Quantity Indicator
+## 燃油量指示器
 
 ![fuel quantity](../../img/cockpit_detail_pilot_fuelquantity.jpg)
 
-The fuel quantity indicator displays fuel quantity information for all aircraft tanks.
+用于显示飞机不同油箱中的燃油量。
 
-### BINGO Readout
+### BINGO 油量显示
 
-The BINGO readout (<num>1</num>) displays the currently set BINGO fuel quantity.
+(<num>1</num>) 显示当前调定的 BINGO 油量（返航油量）。
 
-### Total Fuel Counter
+### TOTAL 油量显示
 
-The TOTAL counter (<num>2</num>) displays total fuel quantity contained in all aircraft tanks.
+燃油总量读数(<num>2</num>)对应了飞机所有油箱中的燃油总量。
 
-### Left and Right Tank Counters
+### L & R 油量显示
 
-The L and R counters (<num>3</num>) display fuel quantity for the currently selected left or right
-tanks.
+L & R 油量显示 (<num>3</num>) 显示当前选定左/右油箱的燃油量。
 
-The displayed tank group (feed, wing, or external) is selected using the QTY SEL switch on the fuel
-management panel.
+QTY SEL 开关选定的当前对应（L 或 R）油箱（供油油箱组、机翼油箱或副油箱）的燃油油量。
 
-### Fuselage and Feed Fuel Tapes
+### FUS & FEED（机身油箱与供油油箱组）指示带
 
-The FUS and FEED fuel tapes (<num>4</num>) display fuselage fuel quantities.
+(<num>4</num>)显示对应油箱中的燃油量。
 
-- Left tape — Indicates left feed and aft fuselage tanks.
-- Right tape — Indicates right feed and forward fuselage tanks.
+- 左侧指示带 — 显示左供油油箱组和后机身油箱中的燃油量。
+- 右侧指示带 — 显示右供油油箱组和前机身油箱中的燃油量。
 
-### BINGO Set Knob
+### SET 旋钮
 
-The SET knob (<num>5</num>) is used to set the desired BINGO fuel quantity.
+(<num>5</num>)用于设置返航油量（BINGO）。
 
-Rotate the knob to select the required value.
+转动旋钮来调定所需油量。
 
-## Accelerometer
+## 加速度表
 
 ![accelerometer](../../img/cockpit_detail_pilot_accelerometer.jpg)
 
-Instrument showing current aircraft g-load (acceleration along the aircraft vertical axis). It’s
-graded in g from -5g to +10g. One pointer will show current g-load while the other two will indicate
-max reached negative and positive g-load. These can be reset by pushing the PUSH TO SET button on
-the lower left corner of the instrument.
+仪表显示当前飞机过载值（沿飞机垂直轴的加速度）的仪表。仪表的显示范围为 -5G 至 +10G。其中一个指针将显示当前过载值，而另外两个指针指示飞行中受到的最大正/负过载值。按下仪表左下角的复位按钮可以复位指针位置。
 
-## Clock
+## 时钟
 
 ![clock](../../img/cockpit_detail_pilot_clock.jpg)
 
-Mechanical wind-up clock.
+机械发条时钟。
 
-The knob on the lower left corner is used to wind up the clock by turning it clockwise and pulled
-out and turned to set the hour and minute hands.
+左下角的旋钮用于上紧时钟发条，顺时针转动旋钮，然后抽出旋钮来设置时针和分针。
 
-The control on the upper right corner is used to start, stop, and reset a 1-hour elapsed time
-counter.
+右上角的按钮用于开始、停止和复位时长为1小时的计时器。

@@ -1,424 +1,407 @@
-# Left Side Console
+# 左侧控制台
 
-## G-valve Button
+## 抗荷服充气检测按钮
 
 ![g-valve](../../img/cockpit_detail_pilot_g-valve.jpg)
 
-The G-valve button is pressed to test inflation of the g-suit.
+按下按钮来测试抗荷服充气。
 
-## Oxygen-Vent Airflow Control Panel
+## 供氧-通风控制面板
 
 ![oxygen-vent](../../img/cockpit_detail_pilot_oxygen-vent.jpg)
 
-Controls ventilation airflow to the pressure suit or seat cushions and controls oxygen flow to the
-pilot mask.
+控制抗荷服或坐垫中的通风气流以及通向飞行员面罩的氧气。
 
-### Vent Airflow Dial
+### Vent Airflow 拨轮
 
-The VENT AIRFLOW dial (<num>1</num>) controls ventilation airflow through the pressure suit or, if a
-pressure suit is not worn, through the seat cushions.
+通风气流调节拨轮 (<num>1</num>)，用于控制抗荷服气流进出，未连接抗荷服时则控制坐垫气流。
 
-### Oxygen Switch
+### Oxygen 开关
 
-The OXYGEN switch (<num>2</num>) controls oxygen flow to the pilot mask.
+供氧开关 (<num>2</num>)，开关有 ON / OFF 两个档位。用于控制流向面罩的氧气。
 
-- ON — Enables oxygen flow.
-- OFF — Disables oxygen flow.
+- ON — 启用氧气流量。
+- OFF — 禁用氧气流量。
 
-## Volume/TACAN Command Panel
+## 音量 / TACAN 指令面板
 
 ![volume](../../img/cockpit_detail_pilot_volume.jpg)
 
-Controls pilot headset audio volumes and selects which crewmember is in command of TACAN operation.
+用于调整飞行员头戴中的音量和指定控制 TACAN 的机组成员。
 
-### F-14B and F-14A (Late)
+### F-14B 和 F-14A (后期)
 
-#### ALR-67 Volume Knob
+#### ALR-67 旋钮
 
-The ALR-67 knob (<num>1</num>) controls audio volume from the ALR-67 to the pilot.
+(<num>1</num>) 用于控制飞行员头戴中，ALR-67 的音量。
 
-#### Sidewinder Tone Volume Knob
+#### SW 旋钮
 
-The SW knob (<num>2</num>) controls Sidewinder audio tone volume to the pilot.
+“响尾蛇”音量旋钮 (<num>2</num>)，用于调节飞行员头戴中“响尾蛇”导弹的音调音量。
 
-#### V/UHF 2 Volume Knob
+#### V/UHF 2 旋钮
 
-The V/UHF 2 knob (<num>3</num>) controls AN/ARC-182 (V/UHF 2) audio volume to the pilot.
+(<num>3</num>) 控制飞行员头戴中 AN/ARC-182 无线电台的音频音量。
 
-#### TACAN Command Switch
+#### TACAN CMD 按钮开关
 
-The TACAN CMD switch (<num>4</num>) selects which crewmember controls TACAN and indicates the
-current setting.
+带有指示灯的按钮开关 (<num>4</num>) ，用于指定控制 TACAN 的机组成员（飞行员 /
+RIO）。指示灯显示当前的设定。
 
-### F-14A (Early)
+### F-14A (早期)
 
-#### ALR-45 Volume Knob
+#### ALR-45 音量旋钮
 
-The ALR-45 knob (<num>1</num>) controls audio volume from the ALR-45 to the pilot.
+ALR-45 旋钮 (<num>1</num>) 用于控制飞行员头戴中，ALR-45 的音量。
 
-#### ALR-50 Volume Knob
+#### ALR-50 音量旋钮
 
-The ALR-50 knob (<num>2</num>) controls audio volume from the ALR-50 to the pilot.
+ALR-50 旋钮 (<num>2</num>) 用于控制飞行员头戴中，ALR-50 的音量。
 
-#### Sidewinder Tone Volume Knob (F-14A Early)
+#### SW 旋钮 (F-14A 早期)
 
-The SW knob (<num>3</num>) controls Sidewinder audio tone volume to the pilot.
+“响尾蛇”音量旋钮 (<num>3</num>)，用于调节飞行员头戴中“响尾蛇”导弹的音调音量。
 
-#### V/UHF 2 Volume Knob (F-14A Early)
+#### V/UHF 2 旋钮 (F-14A 早期)
 
-The V/UHF 2 knob (<num>4</num>) controls AN/ARC-182 (V/UHF 2) audio volume to the pilot.
+(<num>4</num>) 控制飞行员头戴中 AN/ARC-182 无线电台的音频音量。
 
-#### TACAN Command Switch (F-14A Early)
+#### TACAN CMD 按钮开关 (F-14A 早期)
 
-The TACAN CMD switch (<num>5</num>) selects which crewmember controls TACAN.
+带有指示灯的按钮开关 (<num>5</num>) ，用于指定控制 TACAN 的机组成员（飞行员 /
+RIO）。指示灯显示当前的设定。
 
-## TACAN Control Panel
+## TACAN 控制面板
 
 ![tacan](../../img/cockpit_detail_pilot_tacan.jpg)
 
-TACAN control panel used by the pilot when in command of TACAN.
+如果飞行员有 TACAN 控制权，则可以通过该控制面板操作 TACAN。
 
-### Channel Selector (Dual Rotary Switch)
+### 波道选择旋钮 (双层旋转开关)
 
-The dual rotary switch (<num>1</num>) selects the TACAN channel.
+旋转开关 (<num>1</num>) 来选择 TACAN 波道。
 
-The outer dial selects the first two digits and the inner dial selects the final digit.
+使用外侧拨盘选择 TACAN 波道的前两位数字，使用内侧拨盘选择最后一位数字。
 
-### GO and NO-GO Lights
+### GO 和 NO-GO 指示灯
 
-The GO and NO-GO lights (<num>2</num>) indicate the result of the TACAN BIT.
+通过/未通过指示灯 (<num>2</num>)，指示 TACAN 是否通过自检。
 
-### BIT Button
+### BIT 按钮
 
-The BIT button (<num>3</num>) initiates TACAN BIT.
+自检按钮 (<num>3</num>)，按下按钮开始 TACAN 自检。
 
-### Mode Switches (X/Y and Operating Mode)
+### MODE 开关 (X/Y 和工作模式)
 
-The MODE switches (<num>4</num>) select TACAN operating mode and X or Y channel operation.
+模式开关 (<num>4</num>) ，用于切换 TACAN 的工作模式，可以选择 X 或 Y 波段。
 
-INVERSE mode is not functional.
+INVERSE 模式无功能。
 
-### TACAN Audio Volume Knob
+### TACAN VOL 旋钮
 
-The VOL knob (<num>5</num>) controls TACAN audio volume to the pilot.
+音量控制旋钮 (<num>5</num>)，用于调整通过 ICS 的 TACAN 台识别信号音频音量。
 
-### TACAN Mode Selector Knob
+### TACAN 模式选择旋钮
 
-The mode knob (<num>6</num>) selects TACAN function.
+(<num>6</num>) 用于选择 TACAN 功能模式。
 
-The following modes are available:
+以下模式可用：
 
-- OFF — TACAN off.
-- REC — Receive only.
-- T/R — Transmit and receive. Enables range readout.
-- A/A — Air-to-air TACAN mode.
-- BCN — Beacon mode. Not functional.
+- OFF — 关闭 TACAN。
+- REC — 仅接收信号。
+- T/R — 传输并接收信号，该模式下可进行距离读数。
+- A/A — 空对空 TACAN 模式。
+- BCN — 信标 TACAN 模式（无功能）。
 
-## ICS Control Panel
+## 机内通话系统控制面板
 
 ![ics](../../img/cockpit_detail_pilot_ics.jpg)
 
-Control panel for the intercommunications system (ICS).
+机内通话系统（ICS）的控制面板。
 
-### ICS Volume Knob
+### ICS 音量旋钮
 
-The VOL knob (<num>1</num>) controls intercommunication audio volume from the RIO to the pilot.
+音量旋钮 (<num>1</num>) ，用于调节飞行员接收 RIO 对讲音频的音量。
 
-### Amplifier Selection Knob
+### 放大器选择旋钮
 
-The amplifier selection knob (<num>2</num>) selects which amplifier drives pilot headset audio.
+(<num>2</num>) 用于选择将音频信号输出到飞行员头戴的放大器。
 
-The following amplifiers are available:
+以下放大器可用：
 
-- B/U — Backup amplifier.
-- NORM — Normal amplifier.
-- EMER — Emergency amplifier. Uses the RIO’s amplifier and his volume settings and prevents
-  monitoring of pilot-only audio such as Sidewinder tone and engine stall/overtemperature warnings.
+- B/U — 备用放大器。 - NORM — 正常放大器。 - EMER
+  — 应急放大器。这个档位会使用 RIO 的放大器和其的音量设定。启用应急放大器时，飞行员将无法监听只有正常放大器中飞行员才能听见的 “响尾蛇” 导弹音调和发动机失速 / 超温警告音。
 
-### ICS Function Switch
+### ICS 功能开关
 
-The ICS switch (<num>3</num>) selects ICS operating function.
+(<num>3</num>) 用于选择 ICS 的功能。
 
-Available ICS functions are:
+可用 ICS 功能如下：
 
-- RADIO OVERRIDE — ICS audio overrides radio audio.
-- HOT MIC — Enables intercom without pressing PTT. Also allows ground crew communication through the
-  external interphone.
-- COLD MIC — Intercom only while PTT is pressed.
+- RADIO OVERRIDE — 无线电台超控，使 ICS 音频超控无线电台音频。 - HOT MIC
+  — 无需按下 PTT（Push-To-Talk，按键通话）开关即可进行对讲。同时允许地勤人员通过外部机内通话器与机组成员通话。 -
+  COLD MIC — 需按下 PTT 开关才能对讲。
 
-## AFCS Control Panel
+## AFCS 控制面板
 
 ![afcs](../../img/cockpit_detail_pilot_afcs.jpg)
 
-Control panel for AFCS and autopilot control.
+用于控制自动飞控系统（AFCS）和自动驾驶。
 
-> 💡 All switches are spring-loaded to OFF but held in position by a solenoid, allowing automatic
-> disengagement when applicable.
+> 💡 所有开关均采用弹簧复位至 OFF 档位，但由电磁铁保持在该档位，满足解除条件时，开关会自动弹回 OFF 位置。
 
-### Pitch Stability Augmentation Switch
+### 俯仰增稳开关
 
-The PITCH switch (<num>1</num>) enables pitch stability augmentation.
+PITCH 开关 (<num>1</num>) 启用俯仰增稳。
 
-### Roll Stability Augmentation Switch
+### 横滚增稳开关
 
-The ROLL switch (<num>2</num>) enables roll stability augmentation.
+ROLL 开关 (<num>2</num>) 启用横滚增稳。
 
-### Yaw Stability Augmentation Switch
+### 偏航增稳开关
 
-The YAW switch (<num>3</num>) enables yaw stability augmentation.
+YAW 开关 (<num>3</num>) 启用偏航增稳。
 
-### VEC/PCD/ACL Switch
+### VEC/PCD/ACL 开关
 
-The VEC/PCD/ACL switch (<num>4</num>) selects remote-control autopilot modes.
+(<num>4</num>) 用于切换自动驾驶远程控制模式。
 
-- VEC/PCD — Vector/PCD mode. Data link controls roll and pitch. Engaged using the NWS button on the
-  pilot stick.
-- OFF — Remote-control function off.
-- ACL — Automatic carrier landing mode. Engaged using the NWS button on the pilot stick.
+- VEC/PCD
+  — 引导航向/精确航线方向模式。通过数据链路控制飞机横滚和俯仰轴。这个模式通过飞行员驾驶杆上的 NWS（前轮转向）按钮启用。
+- OFF — 功能关闭。
+- ACL — 自动助降模式，通过飞行员驾驶杆上的 NWS 按钮启用 ACL。
 
-### Altitude Hold Switch
+### ALT 开关
 
-The ALT switch (<num>5</num>) enables altitude hold. The mode is engaged using the NWS button on the
-pilot stick.
+高度保持开关 (<num>5</num>)，开关有 ALT /
+OFF 两个档位，开关用来启用高度保持。这个功能通过飞行员驾驶杆上的 NWS 按钮启用。
 
-### Heading Mode Switch
+### HDG 开关
 
-The HDG switch (<num>6</num>) selects heading-related autopilot modes.
+航向保持开关 (<num>6</num>) ，用于选择航向保持模式。
 
-- HDG — Heading hold.
-- OFF — Heading hold off.
-- GT — Ground track mode. Engaged using the NWS button on the pilot stick.
+- HDG — 启动航向保持模式。 - OFF — 关闭航向保持模式。 - GT
+  — 启用地面航迹模式，通过飞行员驾驶杆上的 NWS 按钮启用。
 
-### Autopilot Engage Switch
+### ENGAGE 开关
 
-The ENGAGE switch (<num>7</num>) engages the autopilot.
+自动驾驶启用开关 (<num>7</num>) ，开关有 ENGAGE / OFF 两个档位。
 
-- ENGAGE — Autopilot on.
-- OFF — Autopilot off.
+- ENGAGE — 接通自动驾驶。
+- OFF — 关断自动驾驶。
 
-## UHF 1 (AN/ARC-159) Radio
+## UHF 1 (AN/ARC-159) 电台
 
 ![arc-159](../../img/cockpit_detail_pilot_arc-159.jpg)
 
-Pilot UHF radio (UHF 1) and controls.
+UHF 1 无线电台及其控制开关/按钮。
 
-> 💡 ADF is nonfunctional with the AN/ARC-159. Use V/UHF 2 instead.
+> 💡 AN/ARC-159 中的 ADF 无功能，改为使用 V/UHF 2中的 ADF。
 
-### Volume Knob
+### VOL 旋钮
 
-The VOL knob (<num>1</num>) controls UHF 1 audio volume to the pilot headset.
+音量旋钮 (<num>1</num>)。用于调整飞行员头戴中 UHF 1 音频的音量。
 
-### Squelch Switch
+### SQL 开关
 
-The SQL switch (<num>2</num>) enables or disables squelch.
+静噪控制开关 (<num>2</num>) ，分别用于启用或关闭静噪。
 
-- ON — Squelch enabled.
-- OFF — Squelch disabled.
+- ON — 启用静噪。
+- OFF — 禁用静噪。
 
-### Frequency Select Switches
+### 频率选择开关
 
-The frequency select switches (<num>3</num>) set the active frequency.
+频率选择开关 (<num>3</num>) ，拨动开关来调制频率。
 
-### Frequency/Channel Display
+### FREQ./(CHAN) 显示窗
 
-The FREQ/(CHAN) display (<num>4</num>) shows the selected frequency or channel.
+频率 /（波道）显示窗 (<num>4</num>)，用于显示当前选中的频率或波道。
 
-### Read Button
+### READ 开关
 
-The READ button (<num>5</num>) displays the selected channel while held.
+(<num>5</num>) 拨动并保持住开关来查看所选预设波道的频率。
 
-### Brightness Knob
+### BRT 旋钮
 
-The BRT knob (<num>6</num>) controls display brightness.
+亮度旋钮 (<num>6</num>)，用于调节显示屏的亮度。
 
-### Load Button
+### LOAD 按钮
 
-The LOAD button (<num>7</num>) loads the set frequency into the selected preset channel.
+加载按钮 (<num>7</num>)，按下按钮来加载显示窗中显示的频率至预设波道。
 
-### Function Selector Knob
+### 功能选择旋钮
 
-The function selector knob (<num>8</num>) selects radio function.
+(<num>8</num>) 用于选择无线电功能。
 
-### Channel Select Knob
+### CHAN SEL 旋钮
 
-The CHAN SEL knob (<num>9</num>) selects the preset channel.
+波道选择旋钮 (<num>9</num>)，用于选择预设波道。
 
-### Preset Channels Chart
+### 预设波道表
 
-The preset channels chart (<num>10</num>) is used to record preset channel frequencies.
+(<num>10</num>) 用于记录预设波道频率。
 
-### Mode Selector Knob
+### 模式选择旋钮
 
-The mode selector knob (<num>11</num>) selects frequency selection mode.
+旋钮 (<num>11</num>) 用于选择无线电频率模式（GUARD - 救生频率，MANUAL - 手动频率，PRESET - 预设波道）。
 
-### Tone Button
+### TONE 按钮
 
-The TONE button (<num>12</num>) transmits a tone on the current frequency.
+音调按钮 (<num>12</num>) ，按住按钮会在当前无线电频率上发送一个单音（频率为1020赫兹）。
 
-## ASYM Limiter/Engine Mode Select (F-14B only)
+## 不对称推力限制器 / 发动机模式选择（仅 F-14B 拥有）
 
 ![asym](../../img/cockpit_detail_pilot_asym.jpg)
 
-Control panel for the asymmetric thrust limiter system and engine control mode selection.
+这个面板用于控制不对称推力限制系统和发动机控制模式。
 
-### Asymmetry Limiter Switch
+### ASYM LIMITER 开关
 
-The ASYM LIMITER switch (<num>1</num>) enables or disables the afterburner thrust asymmetry limiter.
+不对称推力限制器开关 (<num>1</num>)，带有保护盖，开关 ON /
+OFF 两个档位分别启用和禁用不对称加力推力限制器。
 
-- ON — Limiter enabled.
-- OFF — Limiter disabled.
+- ON — 启用限制器。
+- OFF — 禁用限制器。
 
-### Engine Mode Select Switches
+### ENG MODE SELECT 开关
 
-The ENG MODE SELECT switches (<num>2</num>) select control mode for each engine.
+发动机模式选择开关(<num>2</num>)，用于选择左右发动机各自的控制模式。
 
-Selectable engine modes are:
+可选发动机模式：
 
-- PRI — Primary engine control mode.
-- SEC — Secondary engine control mode.
+- PRI — 主要控制模式。 - SEC — 次要控制模式。
 
-## Target Designate Switch
+## 目标指定开关
 
 ![target](../../img/cockpit_detail_pilot_target.jpg)
 
-The target designate switch is used to designate ground targets on the HUD and to command pilot ACM
-radar modes (except PLM).
+用于在 HUD 中指定地面目标，也用于控制飞行员 ACM 雷达模式，但 PLM（飞行员锁定模式）模式除外。
 
-The switch can be moved up, down, and forward (designate).
+开关可以上下拨动，也可以向前拨动至目标指定档位。
 
-In air-to-ground mode, up and down move the designator and forward designates.
+空对地模式中，上/下拨动开关来移动目标指示符，向前拨动开关来指定目标。
 
-In other modes, up and down select VSL HI and VSL LO, respectively, and forward selects PAL.
+在其他模式中，上/下拨动开关分别选择 VSL HI（垂直扫描锁定 - 高目标）和VSL
+LO（垂直扫描锁定 - 低目标）ACM模式，而向前拨动开关选择 PAL 模式。
 
-## Inlet Ramps/Throttle Control Panel
+## 进气道斜板 / 油门控制面板
 
 ![inlet](../../img/cockpit_detail_pilot_inlet.jpg)
 
-Control panel for engine systems, throttle settings, and rudder trim.
+这个面板用于控制多个发动机系统、油门设置以及方向舵配平。
 
-### Throttle Mode Switch
+### THROTTLE MODE 开关
 
-The THROTTLE MODE switch (<num>1</num>) selects throttle operation mode.
+油门模式开关 (<num>1</num>) ，用于选择油门工作模式。
 
-- AUTO — Automatic.
-- BOOST — Boosted.
-- MAN — Manual.
+- AUTO — 自动模式。
+- BOOST — 助力模式。
+- MAN — 手动模式。
 
-### Throttle Temp Switch
+### THROTTLE TEMP 开关
 
-The THROTTLE TEMP switch (<num>2</num>) selects throttle computer gain.
+油门温控开关(<num>2</num>)，用于选择油门计算机增益。
 
-- HOT — Hot.
-- NORM — Normal.
-- COLD — Cold.
+- HOT — 增大标准油门计算机增益。
+- NORM — 使用标准油门计算机增益。
+- COLD — 减小标准油门计算机增益。
 
-### Inlet Ramps Switches
+### INLET RAMPS 开关
 
-The INLET RAMPS switches (<num>3</num>) select operational mode for the respective engine inlet
-ramps.
+进气道斜板开关 (<num>3</num>) ，用于选择左右发动机各自的进气道斜板工作模式。
 
-- STOW — Stowed.
-- AUTO — Automatic.
+- STOW — 收上。
+- AUTO — 自动模式。
 
-### Engine Crank Selector
+### ENG CRANK 开关
 
-The ENG CRANK selector (<num>4</num>) selects engine crank for left or right engine.
+发动机起动开关 (<num>4</num>)，用于起动左发动机或右发动机。
 
-### Airstart/Backup Ignition Switch
+### BACK UP IGNITION 开关
 
-The Airstart/BACK UP IGNITION switch (<num>5</num>) toggles engine backup ignition.
+备用点火开关 (<num>5</num>)，用于开启或关闭备用点火。
 
-- ON — Airstart/Backup ignition enabled.
-- OFF — Airstart/Backup ignition disabled.
+- ON — 启用备用点火。
+- OFF — 禁用备用点火。
 
-### Rudder Trim Switch
+### RUDDER TRIM 开关
 
-The RUDDER TRIM switch (<num>6</num>) adjusts rudder trim.
+方向舵配平开关 (<num>6</num>)，用于调整方向舵配平。
 
-## Throttle
+## 油门握把
 
 ![throttle](../../img/cockpit_detail_pilot_throttle.jpg)
 
-The throttle grips contain HOTAS flight controls.
+油门握把上包括了各种飞行控制开关/按钮和 HOTAS（握杆控制）功能。
 
-### Speed Brake Switch
+### 减速板开关
 
-The speed brake switch (<num>1</num>) controls speed brake extension and retraction.
+(<num>1</num>) 用于控制减速板展开和收起。
 
-- EXT — Momentary. Extends the speed brake incrementally while held and holds the achieved position
-  when released.
-- RET — Retracts the speed brake.
+- EXT
+  — 自复位档位，释放开关后回到中立位置。将开关保持在 EXT 档位会逐渐展开减速板。开关回中后，减速板仍会保持在当前位置。
+- RET — 将开关拨至该位置来收起减速板。
 
-### Wing-Sweep Switch
+### 机翼后掠控制开关
 
-The wing-sweep switch (<num>2</num>) controls wing sweep. Manual mode only allows positions aft of
-the CADC commanded position.
+开关 (<num>2</num>) 用于控制机翼后掠功能。手动模式下选择的后掠位置只能比 CADC 设定的位置靠后。
 
-- AUTO — Wing sweep controlled automatically by CADC.
-- FWD — Sweeps wings forward manually.
-- AFT — Sweeps wings aft manually.
-- BOMB — Commands 55° wing sweep if currently forward of 55°. If CADC commanded position is aft of
-  55°, wing sweep follows CADC instead.
+- AUTO — 机翼后掠位置由 CADC（中央大气数据计算机） 自动设置。
+- FWD — 手动向前调节机翼后掠位置。
+- AFT — 手动向后调节机翼后掠位置。
+- BOMB
+  — 如果机翼后掠角度小于55°，则将机翼后掠至55°位置。如果 CADC 设置的后掠位置超过55°，那么后掠位置将被调整至 CADC 设定的角度。
 
-### PLM Button
+### PLM 按钮
 
-The PLM button (<num>3</num>) commands pilot lockon mode of the AWG-9 and disengages autopilot while
-in ACL.
+飞行员锁定模式按钮 (<num>3</num>) ，用于选择 AWG-9 的 ACM 飞行员锁定模式。也用于在 ACL（自动助降）过程中解除自动驾驶。
 
-### CAGE/SEAM Button
+### CAGE/SEAM 按钮
 
-The CAGE/SEAM button (<num>4</num>) commands AIM-9 CAGE/SEAM for lock-on and disengages APC when in
-use.
+CAGE/SEAM 按钮 (<num>4</num>) 用来指令 AIM-9 进行锁定。如果启用了 APC（进近推力补偿器），那么按下按钮用于解除 APC。
 
-### Exterior Light Switch
+### 机外照明开关
 
-The exterior light switch (<num>5</num>) controls exterior lights.
+(<num>5</num>) 用于控制机外照明。
 
-- OFF — Disables exterior lights and increases approach light intensity.
-- ON — Enables exterior lights and dims approach lights.
+- OFF — 关闭所有机外照明并增加进近指示灯亮起度。
+- ON — 开启所有机外照明，并减小进近指示灯亮起度。
 
-### ICS PTT Switch
+### ICS 按键通话开关
 
-The ICS PTT switch (<num>6</num>) keys radios and/or intercom for transmission.
+通过这个开关 (<num>6</num>)，飞行员可以选择在单个电台或两电台同时进行话音，或与 RIO 对讲。
 
-- ICS — Keys intercommunication to the RIO.
-- BOTH — Keys UHF 1 and V/UHF 2.
-- UHF1 — Keys UHF 1.
-- UHF2 — Keys V/UHF 2.
+- ICS — 与 RIO 通话。
+- BOTH — 同时使用 UHF 1 和 V/UHF 2 电台进行话音。
+- UHF1 — 在 UHF 1 电台进行话音。
+- UHF2 — 在 V/UHF 2 电台进行话音。
 
-## Throttle Quadrant
+## 油门弧座
 
-| Quadrant                                                   | Schema                                                            |
+| 油门弧座                                                   | 工作模式                                                          |
 | ---------------------------------------------------------- | ----------------------------------------------------------------- |
 | ![throttles](../../img/cockpit_detail_pilot_throttles.jpg) | ![throttles-schema](../../img/general_engine_throttles-schem.jpg) |
 
-The throttle quadrant contains the two main engine throttle controls, the flap lever, and the manual
-wing-sweep handle, in addition to HOTAS controls on the throttles.
+油门弧座主要组成部分包括：两个发动机油门控制握把、襟翼控制杆和应急机翼后掠手柄，另外也包括油门握把上用于控制 HOTAS 系统的按钮和开关。
 
-The throttles have detents in the OFF, IDLE, and MIL positions.
+油门行程中的 OFF（关闭）、IDLE（慢车）和 MIL（军用推力）位置都有限位装置。
 
-Moving the throttles from OFF to IDLE arms ignition and disengages fuel cutoff.
+将油门握把从 OFF 位置推到 IDLE 档位将会使点火器解除保险并退出燃油关断装置。
 
-The sideways throttle movements are not spring-loaded, allowing the pilot to rest the throttles at
-MIL during catapult launches and preventing accidental spool-down.
+除了 OFF 和 IDLE 限位机构外，油门握把并不会被弹簧拉回原位，因此飞行员在弹射起飞时，可以将油门握把置于 MIL（军用推力）档位，而不用担心油门握把的位置意外变动，导致发动机转速降低。
 
-A friction lever for throttle movement friction is located on the left side of the throttle quadrant
-beneath the flap lever.
+油门弧座左侧，襟翼控制杆的下方装有一个油门阻尼调节杆，用于选择所需的油门移动阻尼。
 
-The flap lever has a stepless range of motion between up and down and includes two emergency
-positions, emergency up and emergency down. Both have detents and require moving the lever outboard
-to continue into the emergency range.
+襟翼控制杆的可以在上下两个档位行程间进行无极调整，并且控制杆还拥有两个应急档位，一个是应急收上，一个是应急放下。两个应急档位拥有限位装置，襟翼控制杆移动至限动卡位置时，需向外推动才能继续移动至应急档位。
 
-Emergency up forces the flaps up, overriding normal flap logic. Emergency down is non-functional.
+应急收上档位会强行收起襟翼，超控正常襟翼控制逻辑。应急放下档位无功能。
 
-The manual/emergency wing-sweep handle is guarded and normally stowed. The handle top is extended
-for manual operation.
+手动/应急机翼后掠手柄上方有一个保护盖，且手柄通常处于按下并收起的状态。握住手柄顶部，抽出手柄来手动对机翼后掠进行控制。
 
-For more information see [Wing-Sweep System](../../systems/flight_controls_gear/wing_sweep.md).
+请查阅[机翼后掠系统](../../systems/flight_controls_gear/wing_sweep.md)来获得更多相关信息。
 
-## Hydraulic Hand Pump
+## 手动液压泵
 
-The hydraulic hand pump is located inboard of the throttle quadrant near the pilot’s left leg.
+手动液压泵位于油门弧座的内侧，靠近飞行员左腿的位置。
 
-It is used to manually build hydraulic pressure for brake operation (with the gear handle down) or
-for refueling probe operation in the event of hydraulic system failure.
+液压系统故障时，飞行员通过手动向机轮刹车蓄压器充压来进行制动操作（当起落架手柄处于放下档位时）或伸出受油管。

@@ -1,11 +1,8 @@
-# Cockpit Overview
+# 驾驶舱总览
 
 ![Cockpit](../img/cockpit_overview.jpg)
 
-The following chapter gives a detailed overview of the pilot's cockpit, as well
-as that of the Radar Interceptor Officer (RIO). Each single switch will be
-outlined and explained briefly, while giving context to the functions.
+下一章将详细介绍飞行员驾驶舱以及雷达拦截官（RIO）的驾驶舱。我们将逐一列出并简要说明每个开关的功能，同时结合具体情境进行说明。
 
-More in-depth details on the various systems and consequences of using a switch
-beyond their brief explanation are available in the
-[Systems Overview Chapter](../systems/overview.md).
+关于各系统的更深入细节，以及开关操作可能产生的后果（超出简要说明范围的内容），请参阅
+[系统总览章节](../systems/overview.md)。

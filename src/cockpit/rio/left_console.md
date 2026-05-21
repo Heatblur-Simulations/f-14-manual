@@ -1,369 +1,363 @@
-# Left Side Console
+# 左侧控制台
 
-## G-Valve Button
+## 飞行服抗荷充气检测按钮
 
 ![g-valve](../../img/cockpit_detail_rio_g-valve.jpg)
 
-The G-valve button is pressed to test inflation of the g-suit.
+按下按钮来测试抗荷服充气。
 
-## Oxygen-Vent Airflow Control Panel
+## 供氧-通风控制面板
 
 ![oxygen-vent](../../img/cockpit_detail_rio_oxygen-vent.jpg)
 
-Panel controlling ventilation airflow and oxygen supply to the RIO.
+用于控制抗荷服或坐垫的通风气流以及通向 RIO 面罩的氧气。
 
-### Vent Airflow Dial
+### VENT AIRFLOW 拨轮
 
-The VENT AIRFLOW dial controls airflow through the pressure suit or seat cushions when no pressure
-suit is worn.
+通风气流调节拨轮，用于控制抗荷服气流进出，未连接抗荷服时则控制坐垫气流。
 
-### Oxygen Switch
+### OXYGEN 开关
 
-The OXYGEN switch controls oxygen flow to the RIO oxygen mask.
+供氧开关，用于控制流向面罩的氧气。
 
-- ON - Oxygen supplied to mask.
-- OFF - Oxygen flow shut off.
+- ON - 面罩供氧。
+- OFF - 供氧关断。
 
-## Data Stowage Compartment
+## 数据储存室
 
 ![data stowage](../../img/cockpit_detail_rio_datastowage.jpg)
 
-The data stowage compartment provides storage space for equipment, documents, and mission briefing
-materials.
+数据储存室是一个小隔间，用来存放设备或任务简报材料等等。
 
-## TACAN Control Panel
+## TACAN 控制面板
 
 ![tacan](../../img/cockpit_detail_rio_tacan.jpg)
 
-TACAN control panel allowing the RIO to operate TACAN when assigned command.
+如果 RIO 拥有 TACAN 设备控制权，则可以通过该控制面板对 TACAN 进行控制。
 
-### Channel Selector
+### 双层旋转开关
 
-The dual rotary selector (<num>1</num>) selects the TACAN channel.
+双层旋转开关 (<num>1</num>) 选择塔康波道。
 
-- Outer dial - selects the first two digits.
-- Inner dial - selects the final digit.
+- 外侧拨盘 - 选择前两位数字。
+- 内侧拨盘 - 选择最后一位数字。
 
-### GO / NO-GO Indicator Lights
+### GO 和 NO-GO 指示灯
 
-The GO and NO-GO lights (<num>2</num>) display TACAN BIT results.
+通过/未通过指示灯，指示 TACAN 是否通过自检。
 
-### BIT Button
+### BIT 按钮
 
-The BIT button (<num>3</num>) initiates TACAN built-in test.
+自检按钮 (<num>3</num>)，按下按钮开始 TACAN 自检。
 
-### Mode Switches
+### MODE 开关
 
-The MODE switches (<num>4</num>) select TACAN operating mode and X or Y channel.
+模式开关 (<num>4</num>)，用于切换 TACAN 的工作模式，可以选择 X 或 Y 波段。
 
-INVERSE mode is not functional.
+INVERSE 模式无功能。
 
-### TACAN Volume Knob
+### TACAN VOL 旋钮
 
-The VOL knob (<num>5</num>) controls TACAN audio volume to the RIO headset.
+音量控制旋钮 (<num>5</num>)，用于控制 RIO 头戴中的 TACAN 音频音量。
 
-### TACAN Mode Selector
+### 模式选择旋钮
 
-The MODE knob (<num>6</num>) selects TACAN operating mode.
+(<num>6</num>) 用于选择 TACAN 功能模式。
 
-Available modes are:
+以下模式可用：
 
-- OFF - TACAN off.
-- REC - Receive only.
-- T/R - Transmit and receive with range readout.
-- A/A - Air-to-air TACAN.
-- BCN - Beacon mode (not functional).
+- OFF — 关闭 TACAN。
+- REC — 仅接收信号。
+- T/R — 传输并接收信号，该模式下可进行距离读数。
+- A/A — 空对空 TACAN 模式。
+- BCN — 信标 TACAN 模式（无功能）。
 
-## Communication / TACAN Command Panel
+## 通信/TACAN 指令面板
 
 ![Panel](../../img/cockpit_detail_rio_comtac.jpg)
 
-Panel controlling radio selection, antenna routing, and TACAN command authority.
+面板用来对 ICS 电台的设定和拥有 TACAN 控制权的机组成员进行控制。
 
-### Transmitter Select Switch
+### XMTR SEL 开关
 
-The XMTR SEL switch (<num>1</num>) selects which radio is keyed by the RIO PTT.
+选择踩下传声器脚踏开关时进行通信的无线电台。
 
-- UHF 1 - ARC-159.
-- BOTH - Both radios.
-- V/UHF 2 - ARC-182.
+- UHF 1 - ARC-159。
+- BOTH - 选择两个电台同时进行通信。
+- V/UHF 2 - ARC-182。
 
-### V/UHF 2 Antenna Switch
+### V/UHF 2 ANT（天线）控制开关
 
-The V/UHF 2 ANT switch (<num>2</num>) selects antenna used by the ARC-182.
+(<num>2</num>) 选择 V/UHF 2 使用的天线。
 
-- UPR - Upper antenna.
-- LWR - Lower antenna.
+- UPR - 选择上部天线。
+- LWR - 选择下部天线。
 
-### TACAN Command Switch
+### TACAN CMD 按钮开关
 
-The TACAN CMD switch (<num>3</num>) selects which crewmember controls TACAN and indicates current
-authority.
+带有指示灯的按钮开关 (<num>3</num>)，用于指定控制 TACAN 的机组成员（飞行员 / RIO）。指示灯显示当前的设定。
 
-### UHF 1 Volume Knob
+### UHF 1 VOL（音量）控制旋钮
 
-The UHF 1 VOL knob (<num>4</num>) controls UHF-1 audio volume to the RIO headset.
+(<num>4</num>) 用于控制 RIO 头戴中 UHF 1 音频音量。
 
-### KY Mode Switch
+### KY MODE 开关
 
-The KY MODE switch (<num>5</num>) is only functional with KY-58 encryption.
+KY 模式选择开关 (<num>5</num>) ，只在安装了 KY-58 时有效。
 
-The simulated aircraft uses KY-28; this switch is non-functional.
+由于 DCS F-14 安装的是 KY-28，因此 KY MODE 开关在 DCS 中无功能。
 
-## V/UHF 2 (AN/ARC-182) Radio
+## V/UHF 2（AN/ARC-182）无线电台
 
 ![arc-182](../../img/cockpit_detail_rio_arc-182.jpg)
 
-Secondary VHF/UHF radio providing voice communications.
+V/UHF 2 无线电台。电台及其控制开关/按钮。
 
-### V/UHF 2 Volume Knob
+### VOL 旋钮
 
-The VOL knob (<num>1</num>) controls V/UHF-2 audio volume.
+(<num>1</num>) 控制 RIO 头戴中 V/UHF 2 音频音量。
 
-### Squelch Switch
+### SQL 开关
 
-The SQL switch (<num>2</num>) enables or disables squelch.
+静噪控制开关 (<num>2</num>)，有 ON / OFF 两个档位，分别用于启用或关闭静噪。
 
-### Frequency Select Switches
+### 频率选择开关
 
-The frequency select switches (<num>3</num>) set the desired operating frequency.
+频率选择开关 (<num>3</num>)，拨动开关来调制频率。
 
-### Frequency / Channel Display
+### FREQ./(CHAN) 显示窗
 
-The FREQ/(CHAN) display (<num>4</num>) shows selected frequency or preset channel.
+频率 /（波道）显示窗 (<num>4</num>)，用于显示当前选中的频率或波道。
 
-### UHF Selector Switch
+### UHF 开关
 
-The UHF switch (<num>5</num>) selects modulation mode within the 225.000–399.000 MHz band.
+UHF 调制选择开关 (<num>5</num>)，用于选择使用的调制模式，工作波段从 225.000 至 399.00 MHz。
 
-### Brightness Knob
+### BRT 旋钮
 
-The BRT knob (<num>6</num>) controls display brightness.
+亮度旋钮 (<num>6</num>)，用于调节显示屏的亮度。
 
-### Mode Selector Knob
+### MODE 旋钮
 
-The MODE knob (<num>7</num>) selects ARC-182 operating mode.
+模式选择旋钮 (<num>7</num>)，用于选择 V/UHF 2 电台的工作模式。
 
-### Frequency Mode Knob
+### 频率模式选择旋钮
 
-The outer frequency mode dial (<num>8</num>) selects frequency tuning mode.
+双层旋钮开关 (<num>8</num>) 的外侧旋钮拨轮，用于选择频率模式。
 
-### Channel Select Knob
+### CHAN SEL 旋钮
 
-The inner CHAN SEL knob (<num>9</num>) selects preset channel.
+双层旋钮开关 (<num>9</num>) 的内侧旋钮拨轮，用于选择预设波道。
 
-> 💡 HAVE QUICK anti-jam functionality is not implemented in DCS.
+> 💡 “Have Quick”抗干扰功能在 DCS 中未实装。
 
-## KY-28 Control Panel
+## KY-28 控制面板
 
 ![ky-28](../../img/cockpit_detail_rio_ky-28.jpg)
 
-Encryption control panel for secure voice communications.
+用于保密话音通信的加密控制面板。
 
-### Zeroize Switch
+### ZEROIZE 开关
 
-The ZEROIZE switch (<num>1</num>) clears all encryption keys when actuated.
+开关/保护盖(<num>1</num>)用于擦除（zeroize） KY-28 编码。
 
-### Power-Mode Switch
+### 电源模式开关
 
-The power-mode switch (<num>2</num>) selects KY-28 operating mode.
+(<num>2</num>) 用于选择 KY-28 工作模式。
 
-### Radio Select Switch
+### 无线电台选择开关
 
-The radio select switch (<num>3</num>) selects which radio is encrypted.
+(<num>3</num>) 用于选择与 KY-28 一起使用的无线电台。
 
-## Radar Beacon Control Panel
+## 雷达信标控制面板
 
 ![beacon](../../img/cockpit_detail_rio_beacon.jpg)
 
-Panel controlling the AN/APN-154 radar beacon.
+面板用于对 AN/APN-154 雷达信标进行控制。
 
-### Beacon Mode Selector
+### MODE 选择开关
 
-The MODE selector (<num>1</num>) selects beacon operating mode.
+模式选择开关(<num>1</num>)，用于控制雷达信标工作模式。
 
-- SINGLE - Responds to single-pulse interrogation.
-- DOUBLE - Responds to double-pulse code.
-- ACLS - Enables ACLS augmentation for carrier landings.
+- SINGLE - 将限制信标对任何接收到的单脉冲群码进行响应。
+- DOUBLE - 将信标响应设置为五个中的其中一个双脉冲问询。
+- ACLS - 启用增益器操作。
 
-### ACLS Test Button
+### ACLS TEST 按钮
 
-The ACLS TEST button (<num>2</num>) includes a green indicator light.
+ACLS 测试按钮 (<num>2</num>)，按钮中的绿色指示灯用于指示信标工作状态或用于测试。
 
-- Illuminates during successful test.
-- Flashes when SPN-42 radar sweep is detected.
-- Steady illumination indicates radar lock-on for ACLS.
+- MODE 选择开关拨动至 ACLS 模式时，按下按钮，如果指示灯亮起则表示通过测试。
+- 指示灯闪烁表示探测到 AN/SPN-42 雷达扫过本机。
+- 当 AN/SPN-42 雷达锁定本机进行 ALCS 引导时指示灯将常亮。
 
-### Power Switch
+### PWR 开关
 
-The PWR switch (<num>3</num>) controls beacon electrical power.
+电源开关 (<num>3</num>)，用于控制信标电源。
 
-- PWR - Beacon fully active.
-- STBY - Warm-up mode; ACLS replies enabled if MODE is ACLS.
-- OFF - Beacon off.
+- PWR - 启用信标，并根据 MODE 选择开关启用所有响应。
+- STBY - 用于预热系统，如果模式选择开关置于 ACLS 档位，同时也会启用信标 ACLS 响应。
+- OFF - 雷达信标关闭。
 
-## Liquid Cooling Control Panel
+## 液冷控制面板
 
 ![liquid cooling](../../img/cockpit_detail_rio_liquidcooling.jpg)
 
-LIQ COOLING switch controlling the liquid cooling system for the AWG-9 and AIM-54. The AWG-9 circuit
-can be enabled independently of the AIM-54. This switch needs to be enabled for the respective
-system before AWG-9 operation or AIM-54 missile preparation.
+LIQ COOLING 开关用于控制 AWG-9 和 AIM-54 的液冷系统。AWG-9 冷却控制电路可以独立于 AIM-54 电路启用。使用 AWG-9 前，或进行 AIM-54 导弹发射准备前，需开启拨动这个开关至对应需要进行冷却的系统档位。
 
-## ICS Control Panel
+## 机内通话系统控制面板
 
 ![ics](../../img/cockpit_detail_rio_ics.jpg)
 
-Intercommunication system control panel.
+机内通话系统（ICS）的控制面板。
 
-### ICS Volume Knob
+### ICS 音量旋钮
 
-The VOL knob (<num>1</num>) controls ICS audio volume from the pilot.
+(<num>1</num>) 音量控制旋钮用来控制 RIO 头戴中 ICS 的音频音量。
 
-### Amplifier Selection Knob
+### 放大器选择旋钮
 
-The amplifier selection knob (<num>2</num>) selects which audio amplifier is used.
+(<num>2</num>) 用于选择将音频信号输出到头戴的放大器。
 
-- B/U - Backup amplifier.
-- NORM - Normal amplifier.
-- EMER - Emergency amplifier using pilot’s amplifier and volume settings. Disables RIO-only audio
-  sources.
+- B/U — 备用放大器。
+- NORM — 正常放大器。
+- EMER — 应急放大器，这个档位会使用飞行员的放大器和其的音量设定。禁用仅限 RIO 的音源。
 
-### ICS Function Switch
+### ICS 功能开关
 
-The ICS switch (<num>3</num>) selects ICS operating mode.
+(<num>3</num>) 用于选择 ICS 的功能。
 
-- RADIO OVERRIDE - ICS audio overrides radio audio.
-- HOT MIC - Enables continuous intercom without PTT.
-- COLD MIC - Intercom only when PTT is pressed.
+- RADIO OVERRIDE — 无线电台超控，使 ICS 音频超控无线电台音频。
+- HOT MIC — 无需按下 PTT（Push-To-Talk，按键通话）开关即可进行对讲。
+- COLD MIC — 需按下 PTT 开关才能对讲。
 
-## Eject Command Lever
+## 弹射指令控制杆
 
 ![eject command](../../img/cockpit_detail_rio_ejectcommand.jpg)
 
-The EJECT CMD lever determines ejection logic when the RIO ejects.
+弹射指令（EJECT CMD）控制杆用于设置弹射系统在 RIO 进行弹射时的行为。
 
-- PILOT (lever forward) - Only the RIO ejects.
-- MCO (lever aft) - Both crewmembers eject.
+- PILOT 模式（手柄向前） - 只有 RIO 自己会弹射。
+- MCO （手柄向后） - RIO 和飞行员都会弹射。
 
-Pilot-initiated ejection always ejects both crew members.
+由飞行员发起的弹射始终会同时弹射两名机组成员。
 
-## Sensor Control Panel
+## 传感器控制面板
 
 ![radar ir control](../../img/cockpit_detail_rio_radarircontrol.jpg)
 
-Control panel for radar scan geometry, TCS operation, and AVTR recording.
+面板用于控制 AWG-9 雷达的扫描设置、TCS（电视摄像套件）和机载录像机。
 
-### Stabilization Switch
+### STAB 开关
 
-The STAB switch (<num>1</num>) controls ground stabilization of the radar.
+选择开关 (<num>1</num>) 用于控制雷达相对地面稳定。
 
-### Azimuth Center Knob
+### AZ CTR 旋钮
 
-The AZ CTR knob (<num>2</num>) sets the center of the radar azimuth scan.
+方位控制旋钮 (<num>2</num>)，用来控制雷达扫描方位角的中心点。
 
-### Elevation Center Knob
+### EL CTR 旋钮
 
-The EL CTR knob (<num>3</num>) sets the center of the radar elevation scan.
+仰角控制旋钮 (<num>3</num>)，用来控制雷达扫描仰角的中心点。
 
-### VSL Switch
+### VSL 控制开关
 
-The VSL switch (<num>4</num>) is spring-loaded to the OFF position and selects vertical scan mode.
+开关 (<num>4</num>) 用于选择 VSL（垂直扫描锁定）模式的 HI（高）或 LO（低），松开开关后，开关弹回中立位置。
 
 - VSL HI
 - VSL LO
 
-### Azimuth Scan Knob
+### AZ SCAN 旋钮
 
-The AZ SCAN knob (<num>5</num>) selects azimuth scan width.
+方位扫描旋钮 (<num>5</num>)，用来控制方位角扫描的范围。
 
-### Elevation Bars Knob
+### EL BARS 旋钮
 
-The EL BARS knob (<num>6</num>) selects number of elevation scan bars.
+仰角扫描线旋钮 (<num>6</num>)，控制雷达仰角扫描线的数量。
 
-### TCS Trim Knobs
+### TCS TRIM 旋钮
 
-The TCS TRIM knobs (<num>7</num>) adjust azimuth and elevation alignment of TCS video.
+TCS 微调旋钮 (<num>7</num>)，用于校正 TCS 视频的方位和仰角。
 
-### Slave Switch
+### SLAVE 开关
 
-The SLAVE switch (<num>8</num>) selects which sensor is slaved to the other.
+传感器隶属控制开关 (<num>8</num>)，用于选择隶属于另一个传感器的传感器。
 
-### Acquisition Switch
+### ACQ 开关
 
-The ACQ switch (<num>9</num>) selects TCS acquisition mode.
+目标捕获选择开关 (<num>9</num>) ，开关用来选择 TCS 的捕获模式。
 
 - AUTO SRCH
 - MAN
 - AUTO
 
-### Field of View Switch
+### FOV 开关
 
-The FOV switch (<num>10</num>) selects TCS field of view.
+视场控制开关 (<num>10</num>)，用于选择 TCS 的视场。
 
-- WIDE
-- NAR
+- WIDE（宽）
+- NAR（窄）
 
-### AVTR Mode Knob
+### AVTR MODE 旋钮
 
-The MODE knob (<num>11</num>) selects what the airborne video tape recorder records.
+(<num>11</num>) 用于选择 AVTR（机载录像机）录制哪些视频。
 
-### Minutes Remaining Display
+### MIN REMAIN 显示窗
 
-The MIN REMAIN display (<num>12</num>) shows remaining recording time.
+录像剩余时间显示窗 (<num>12</num>)，计数器显示了 AVTR 录像的剩余录制时间。
 
-### Record Switch
+### RECORD 开关
 
-The RECORD switch (<num>13</num>) controls AVTR operation.
+录像控制开关 (<num>13</num>)，用于控制 AVTR。
 
 - OFF
 - STBY
 - ON
 
-### AVTR Indicator Lights
+### 录像指示灯
 
-The indicator lights (<num>14</num>) show AVTR status.
+(<num>14</num>) 用于指示 AVTR 的工作状态。
 
 - STBY
-- EOT (end of tape)
+- EOT（录像带结束）
 - REC
 
-## Computer Address Panel (CAP)
+## 计算机位址面板（CAP）
 
 ![cap](../../img/cockpit_detail_rio_cap.jpg)
 
-The Computer Address Panel is used to enter data into the Weapon Control System.
+CAP（计算机位址面板）用于输入数据至 WCS（武器控制系统）中。MESSAGE（消息）滚筒指示器和对应的按钮开关与新式飞机装备的 MFD（多功能显示器）类似。
 
-### Clear Button
+### CLEAR 按钮
 
-The CLEAR button (<num>1</num>) clears the current TID buffer without entering data.
+清除按钮 (<num>1</num>)，用于清除当前 TID 缓冲寄存器中的数据，不向 WCS 输入数据。
 
-### Enter Button
+### ENTER 按钮
 
-The ENTER button (<num>2</num>) inserts buffered data into the WCS.
+输入按钮 (<num>2</num>)，向 WCS 输入当前 TID 缓冲寄存器中的数据。
 
-### Prefix and Numerical Buttons
+### 前缀和数字按钮
 
-The numerical and prefix buttons (<num>3</num>) are used for data entry.
+(<num>3</num>) 带有前缀选择功能的数字按钮。
 
-### Message Selection Buttons
+### MESSAGE 按钮开关
 
-The MESSAGE buttons (<num>4</num>) select functions indicated on the MESSAGE drum.
+(<num>4</num>) 用于选择 MESSAGE 滚筒指示器上的功能。
 
-### Message Indicator Drum
+### MESSAGE 滚筒指示器
 
-The MESSAGE drum (<num>5</num>) displays available WCS message functions.
+(<num>5</num>) 指示器内部的滚筒用于指示当前可用的 MESSAGE 功能。
 
-### Program Restart Button
+### PRGM RESTRT 按钮
 
-The PRGM RESTRT button (<num>6</num>) restarts the active WCS program.
+程序重启按钮 (<num>6</num>)，用于重启 WCS 中运行的程序。
 
-### Category Selector Knob
+### CATEGORY 选择旋钮
 
-The CATEGORY knob (<num>7</num>) selects the active MESSAGE category.
+(<num>7</num>) 用于选择 MESSAGE 滚筒指示器中，当前使用的类别。
 
 ### Tune Disable
 
-The TUNE DSBL function (<num>8</num>) is non-functional.
+(<num>8</num>) 无功能。
 
-> 💡 All CAP buttons include indicator lights that illuminate based on selected function.
+> 💡 所有按钮都带有指示灯，这些灯光指示用来根据模式指示进行的操作。

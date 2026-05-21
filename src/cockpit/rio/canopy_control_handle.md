@@ -1,16 +1,13 @@
-# Canopy Control Handle
+# 座舱盖控制手柄
 
 ![canopy handle](../../img/cockpit_detail_rio_canopyhandle.jpg)
 
-The canopy control handle controls canopy operation and is located on the right
-cockpit wall. The handle is mounted downwards beneath the box containing the
-handle mechanism and the handle position texts. The canopy control handle is
-duplicated in the pilot cockpit.
+驾驶舱右侧舱壁上的舱盖控制手柄用于操作座舱盖。这个手柄安装在标有手柄位置标识、内置舱盖控制机构的控制盒下方。飞行员驾驶舱内也有一个相同的舱盖控制手柄。
 
-| Control  | Function                                                                           |
-| -------- | ---------------------------------------------------------------------------------- |
-| BOOST    | Closes the canopy using boost, used during cold weather or with a strong headwind. |
-| CLOSE    | Closes the canopy, the default position during flight.                             |
-| HOLD     | Holds the canopy at the current position for any position other than closed.       |
-| OPEN     | Opens the canopy.                                                                  |
-| AUX OPEN | Allows manual opening of the canopy if system pressure is too low.                 |
+| 控制     | 功能                                             |
+| -------- | ------------------------------------------------ |
+| BOOST    | 使用助力模式关闭座舱盖，用于低温或强顶风条件下。 |
+| CLOSE    | 关闭座舱盖，这是飞行中舱盖控制手柄的默认位置。   |
+| HOLD     | 将座舱盖保持在非关闭位置外的当前位置。           |
+| OPEN     | 开启座舱盖。                                     |
+| AUX OPEN | 允许系统液压过低时手动开启座舱盖。               |

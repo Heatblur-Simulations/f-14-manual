@@ -1,327 +1,294 @@
-# Center Panel
+# 中央仪表板
 
-## Heads-Up Display
+## 平视显示器
 
 ![hud](../../img/cockpit_detail_pilot_hud.jpg)
 
-The heads-up display (HUD) projects flight and weapon delivery information onto the forward portion
-of the canopy/windscreen.
+平视显示器用于在驾驶舱前部/风挡玻璃上投影飞行和武器投放数据。
 
-Night mode is selected using the control on the right side of the VDI.
+使用位于 VDI 右侧的 FILTER 手柄可以选择夜间模式。
 
-Two engine stall warning lights, L STALL and R STALL, are mounted on the left and right sides of the
-HUD, respectively. Each light indicates an engine stall condition in the corresponding engine.
+HUD 的左侧和右侧分别装有失速告警灯（L STALL 和 R STALL 告警灯）。它们分别指示对应一侧发动机失速。
 
-> 💡 For more information see relevant chapters under
-> [Navigation](../../systems/nav_com/overview.md) and
-> [Weapons and Weapons Employment Overview](../../stores/overview.md).
+> 💡 请查阅 [导航](../../systems/nav_com/overview.md) 和
+> [武器和武器使用概述](../../stores/overview.md) 来获得更多相关信息。
 
-## Cockpit Television Sensor (CTVS)
+## 驾驶舱电视传感器（CTVS）
 
 ![ctvs](../../img/cockpit_detail_pilot_ctvs.jpg)
 
-The cockpit television sensor (CTVS) records the HUD for registration of weapons delivery.
+驾驶舱电视传感器（CTVS）录制 HUD 视频，用于记录武器投放信息。
 
-> 💡 Currently not implemented in DCS.
+> 💡 目前在 DCS 中尚未模拟。
 
-## Air Combat Maneuver Panel
+## 空战格斗面板
 
 ![acm](../../img/cockpit_detail_pilot_acm.jpg)
 
-Main pilot armament control panel.
+飞行员主要的武器控制面板。
 
-### ACM Switch/Cover
+### ACM 开关 / 保护盖
 
-The ACM (Air Combat Maneuver) switch/cover (<num>1</num>) enables ACM mode when lifted and provides
-access to the ACM JETT button.
+升起 ACM（空战格斗）保护盖 (<num>1</num>) 会激活 ACM 模式并允许使用 ACM 抛弃按钮。
 
-### ACM Jettison Button
+### ACM JETT（抛弃）按钮
 
-The ACM JETT button (<num>2</num>) is located under the ACM cover and commands jettison of stores
-selected on the RIO’s ARMAMENT panel.
+ACM 保护盖开关下的抛弃按钮 (<num>2</num>) 用于抛弃 RIO 武器控制面板上选择的挂载。
 
-Sidewinders are not jettisoned even if selected.
+即使 RIO 选择了“响尾蛇”导弹，按下抛弃按钮也不会抛弃“响尾蛇”导弹。
 
-### SEAM Lock Light
+### SEAM LOCK 提示灯
 
-The SEAM LOCK light (<num>3</num>) illuminates to indicate that Sidewinder acquisition is in
-progress while in slaved and boresight SEAM modes.
+当“响尾蛇”导弹在隶属或瞄准轴下进入 SEAM 模式，且导引头正进行尝试捕获目标时，SEAM
+LOCK 提示灯将会亮起。
 
-The light illuminates during the 4.5-second SEAM acquisition attempt and remains illuminated if the
-seeker locks onto a target.
+SEAM LOCK 提示灯会在 SEAM 尝试进行锁定的4.5秒期间内亮起，如果导引头成功锁定目标则继续保持亮起。
 
-### Collision Light
+### COLLISION 注意灯
 
-The COLLISION light (<num>4</num>) indicates collision steering has been selected during AWG-9 STT
-operation.
+COLLISION 注意灯 (<num>4</num>) 亮起表示 AWG-9 STT（单目标跟踪）操作时选择了恒量角度拦截转向模式。
 
-### Hot Trigger Light
+### HOT TRIG 告警灯
 
-The HOT TRIG light (<num>5</num>) illuminates when HOT TRIGGER conditions are satisfied. When
-illuminated, pulling the trigger will release a weapon.
+红指示灯 (<num>5</num>) 亮起起表示满足武器发射逻辑的条件（HOT
+TRIGGER）。指示灯亮起时，按下扳机会发射武器。
 
-### Gun Rate Pushbutton
+### GUN RATE 按钮开关
 
-Toggle pushbutton with light indication (<num>6</num>) selecting the M61 gun firing rate.
+航炮射速选择开关 (<num>6</num>) ，用于切换航炮射速模式，开关中的指示灯显示了当前选择的模式。
 
-- HIGH - Selects 6,000 rounds per minute. Normally used for air-to-air operation.
-- LOW - Selects 4,000 rounds per minute. Normally used for air-to-ground operation.
+- HIGH - 高射速，选择6000发每分钟的航炮射速。通常用于空对空攻击。
+- LOW - 低射速，选择4000发每分钟的航炮射速。通常用于空对地攻击。
 
-The gun rate is automatically set to HIGH when ACM mode is selected.
+进入 ACM 模式后系统会自动选择 HIGH 模式。
 
-### Sidewinder Cooling Pushbutton
+### SW COOL 按钮开关
 
-Toggle pushbutton with light indication (<num>7</num>) providing manual control of Sidewinder seeker
-cooling.
+“响尾蛇”冷却开关 (<num>7</num>) ，这是一个带有指示灯的按钮开关。按下按钮来手动开启或关闭“响尾蛇”导引头冷却。
 
-Sidewinder cooling is automatically set to ON when ACM mode is selected.
+选择 ACM 模式后将自动切换至 ON（开启）。
 
-### Missile Preparation Pushbutton
+### MSL PREP 按钮开关
 
-Toggle pushbutton with light indication (<num>8</num>) commanding the WCS to prepare AIM-54 and
-AIM-7 missiles.
+导弹发射准备开关 (<num>8</num>) ，这是一个带有指示灯的按钮开关。按下开关来指令 WCS（武器控制系统）开始 AIM-54 和 AIM-7 导弹的准备工作。
 
-Missile preparation is automatically set to ON when ACM mode is commanded.
+进入 ACM 模式时，开关将被自动设置为 ON。
 
-### Missile Mode Pushbutton
+### MSL MODE 按钮开关
 
-Toggle pushbutton with light indication (<num>9</num>) selecting missile launch mode.
+导弹模式选择开关 (<num>9</num>)，这是一个带有指示灯的按钮开关。
 
-- NORM - Normal missile launch mode.
-- BRSIT - Boresight missile launch mode.
+- NORM - 正常导弹发射模式。
+- BRSIT - 瞄准轴导弹发射模式。
 
-Controlled by the WCS when in ACM mode.
+在 ACM 模式下，导弹发射模式由 WCS 控制。
 
-### Master Arm Switch
+### 主军械开关
 
-The MASTER ARM switch (<num>10</num>) enables weapons release and selective and auxiliary jettison.
+主军械开关 (<num>10</num>) ，开启主军械开关将允许武器发射、挂载选择抛弃和辅助抛弃。
 
-- OFF - Disables electrical power to release circuitry.
-- ON - Enables electrical power to release circuitry. Position is locked until the master arm cover
-  is lifted.
-- TNG - Enables in-flight training mode.
+- OFF - D断开武器发射电路的电源。
+- ON - 接通武器发射电路的电源。主军械保护盖升起后才可选择该档位。
+- TNG - 启用飞行训练模式。
 
-> 💡 The MASTER ARM bus is interlocked with the landing gear control lever, disabling all releases
-> except emergency jettison while the gear is down.
+> 💡 MASTER
+> ARM（主军械）总线控制与起落架控制手柄互锁，起落架放下时，将禁用除应急抛弃以外的所有发射电路。
 
-> 💡 ACM jettison and emergency jettison are not disabled by MASTER ARM.
+> 💡 主军械开关并不会禁用 ACM JETT 和应急抛弃功能。
 
-### Station Status Flags
+### 挂点状态标识旗
 
-Station status flags (<num>11</num>) indicate weapon readiness for each station.
+挂点状态标识旗 (<num>11</num>) 显示每个挂点的武器状态。
 
-- BLACK - Station not loaded or weapon not ready.
-- WHITE - Station and weapon ready.
-- CHECKERBOARD - Weapon selected and ready for launch. While on the ground, this indicates fuselage
-  rails are up and locked and that loaded weapons are armed.
+- 黑色 - 挂点未挂载武器，或武器未就绪。
+- 白色 - 挂点和武器准备就绪。
+- 方格 - 已选择挂点中的武器并准备好发射。在地面时，方格图案表示机身导轨已安装并锁定，且挂载的武器已解除保险。
 
-### Master Caution Light and Button
+### MASTER CAUTION 指示灯以及按钮
 
-The MASTER CAUTION light and reset button (<num>12</num>) flashes to indicate a status change on the
-pilot caution/advisory panel.
+主注意灯和复位按钮 (<num>12</num>)，灯光闪烁表示飞行员注意/提示灯面板上灯光状态发生变化。
 
-Press to acknowledge and extinguish the light until the next event.
+按下来复位主注意灯并熄灭灯光，直到下一个事件被触发。
 
-### Engine Fire Warning Lights
+### L FIRE 和 R FIRE 告警灯
 
-The L FIRE and R FIRE lights (<num>13</num>) illuminate when fire is detected in the respective
-engine.
+发动机失火告警灯 (<num>13</num>) 。当感测到对应一侧发动机内失火时指示灯将会亮起。
 
-### Turn-and-Slip Indicator
+### 转弯侧滑仪
 
-The turn-and-slip indicator (<num>14</num>) displays rate of turn about the aircraft vertical axis
-and slip/skid.
+转弯侧滑仪(<num>14</num>) 显示飞机绕纵轴旋转的速率以及侧滑。
 
-The upper section contains an electrically driven pointer, where one needle deflection corresponds
-to a 360° turn in four minutes. The lower section contains an inclinometer with a ball suspended in
-damping fluid.
+转弯侧滑仪上半部分是一个电动指针，一个指针的宽度表示4分钟内完成一个360°转弯。转弯侧滑仪下半部分由一个测斜仪——一个用于指示侧滑的悬浮在阻尼液中的小球组成。
 
-## Vertical Display Indicator (VDI)
+## 垂直显示指示器（VDI）
 
 ![vdi](../../img/cockpit_detail_pilot_vdi.jpg)
 
-The vertical display indicator (VDI) complements the HUD by displaying flight and weapon
-information.
+为 HUD 补充显示飞行和武器数据。
 
-> 💡 The VDI has a red night filter that can be installed by clicking in the middle of the VDI
-> screen.
+> 💡 点击 VDI 屏幕中央可以加装一个夜间滤光片。
 
-### HUD Brightness Control
+### HUD 亮度控制旋钮
 
-The HUD BRT control (<num>1</num>) adjusts HUD brightness.
+(<num>1</num>)用于控制 HUD 的亮度。
 
-### VDI Brightness Control
+### VDI BRT（亮度）控制旋钮
 
-The VDI BRT control (<num>2</num>) adjusts VDI brightness.
+(<num>2</num>) 用于控制 VDI 的亮度。
 
-### VDI Contrast Control
+### VDI CONT（对比度）控制旋钮
 
-The VDI CONT control (<num>3</num>) adjusts VDI contrast.
+(<num>3</num>)用于控制 VDI 的对比度。
 
-### Filter Handle
+### FILTER 手柄
 
-The FILTER handle (<num>4</num>) inserts the night filter for HUD night operation when pulled.
+(<num>4</num>)抽出手柄来插入滤光片以便在夜间使用 HUD。
 
-### HUD Trim Control
+### HUD TRIM 旋钮
 
-The HUD TRIM control (<num>5</num>) adjusts/aligns pitch lines on the HUD.
+HUD 调节旋钮 (<num>5</num>)，使用这个旋钮来调整 HUD 上的俯仰梯度。
 
-### VDI Trim Control
+### VDI TRIM 旋钮
 
-The VDI TRIM control (<num>6</num>) adjusts/aligns pitch lines on the VDI.
+VDI 调节旋钮 (<num>6</num>)，使用这个旋钮来调整 VDI 上的俯仰梯度。
 
 ### VDI Caution Lights
 
 ![VDI Caution](../../img/cockpit_detail_pilot_vdicaution.jpg)
 
-VDI-mounted caution lights (<num>7</num>) provide data link warning and caution indications.
+安装在 VDI 面板上的注意灯 (<num>7</num>)，提供数据链路警告和注意知识。
 
-| Indicator    | Function                                                                                                                                                                                   |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ADJ A/C      | Advisory light indicating other aircraft close to own traffic pattern.                                                                                                                     |
-| LANDING CHK  | Advisory light indicating carrier has a channel ready for ACL and that the crew should prepare for carrier landing.                                                                        |
-| ACL READY    | Warning light indicating CATCC has acquired the aircraft and is transmitting glidepath information to the aircraft.                                                                        |
-| A/P CPLR     | Warning light indicating CATCC is ready to control the aircraft.                                                                                                                           |
-| CMD CONTROL  | Warning light indicating the aircraft is under data link control for landing.                                                                                                              |
-| 10 SECONDS   | Warning light indicating that carrier motion is added to data link info and commands during landing. Indicates 10 seconds to arrival at the next point in approach pattern in other modes. |
-| TILT         | Warning light indicating no data link command received for the last 2 seconds during ACL. When not in ACL, it indicates no data link messages during the last 10 seconds.                  |
-| VOICE        | Warning light indicating CATCC not ready for ACL, switch to standard voice procedures.                                                                                                     |
-| A/P REF      | Warning light indicating autopilot selected but not engaged. Exception: altitude and heading hold.                                                                                         |
-| WAVEOFF      | Warning light indicating waveoff commanded.                                                                                                                                                |
-| WING SWEEP   | Warning light indicating failure in both wing-sweep channels or disengagement of spider detent.                                                                                            |
-| REDUCE SPEED | Warning light indicating flap retraction failure with greater than 225 knots indicated airspeed. Also indicates safe Mach number exceeded.                                                 |
-| ALT LOW      | Non-functional, light on radar altimeter is used instead.                                                                                                                                  |
+| 指示器       | 功能                                                                                                                                |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| ADJ A/C      | 提示灯，指示有其他飞机接近本机当前的起降航线。                                                                                      |
+| LANDING CHK  | 提示灯，亮起表示母舰存在可用于 ACL 作业的波道，且机组成员应做好着舰准备。                                                           |
+| ACL READY    | 告警灯，指示 CATCC（母舰空中交通管制中心）已经获取本机信息，且正在向本机传输下滑道信息。                                            |
+| A/P CPLR     | 告警灯，指示 CATCC 已准备控制飞机。                                                                                                 |
+| CMD CONTROL  | 告警灯，指示飞机正由数据链路控制进行助降。                                                                                          |
+| 10 SECONDS   | 告警灯，指示在 ACL 着舰过程中，母舰的运动也被添加至下滑道信息和数据链路指令中。在其它模式下则表示还有10秒抵达着舰航线的下一特殊点。 |
+| TILT         | 告警灯，指示 ACL 过程中，超过2秒未接收到数据链路指令。非 ACL 模式下，报警指示灯亮起起表示过去的10秒内未接收任到何数据链路信息。     |
+| VOICE        | 告警灯，指示 CATCC 未准备好进行 ACL，切换至标准的话音进近流程。                                                                     |
+| A/P REF      | 告警灯，指示已选择自动驾驶，但未接通自动驾驶。                                                                                      |
+| WAVEOFF      | 告警灯，指示执行复飞指令。                                                                                                          |
+| WING SWEEP   | 告警灯，亮起表示两侧的机翼后掠控制通道中出现故障，或表示应急机翼后掠手柄的随动限位器解除。                                          |
+| REDUCE SPEED | 告警灯，亮起表示指示空速超过225节以及襟翼故障无法收上。也用于指示飞机空速超过最大安全马赫数。                                       |
+| ALT LOW      | 无功能，改用无线电高度表上的灯光。                                                                                                  |
 
-## Horizontal Situation Display Indicator (HSD)
+## 水平状态显示器（HSD）
 
 ![HSD](../../img/cockpit_detail_pilot_HSD.jpg)
 
-The horizontal situation display (HSD) displays navigational information to the pilot and can repeat
-the RIO’s TID.
+水平状态显示器用于向飞行员显示导航信息。HSD 也用于复显 RIO TID 中显示的内容。
 
-### HSD Brightness Control
+### BRT 旋钮
 
-The BRT control (<num>1</num>) adjusts HSD brightness.
+亮度旋钮 (<num>1</num>)，用于控制 HSD 的亮度。
 
-### Heading Bug Control
+### HDG 旋钮
 
-The HDG control (<num>2</num>) adjusts the heading reference bug in TACAN mode.
+航向选择旋钮 (<num>2</num>)，用于 TACAN 模式下设定参考航向游标。
 
-### Course Control
+### CRS 旋钮
 
-The CRS control (<num>3</num>) sets desired course in MAN (manual) and TACAN modes.
+航线旋钮 (<num>3</num>)，用于在 TACAN 和 MAN（手动）模式下设定所需航线。
 
-### Test Button
+### TEST 按钮
 
-The TEST button (<num>4</num>) resets the HSD if overload protection has tripped and displays the
-HSD IR field test display.
+测试按钮 (<num>4</num>)，如果触发了过载保护，HSD 显示消失，则可以通过这个按钮来复位 HSD 显示。同时也用于在 HSD 上显示 HSD
+IR 视场测试。
 
-### BIT Indicator
+### BIT 指示灯
 
-The BIT indicator (<num>5</num>) indicates HSD failure by displaying white flags. Reset by rotating
-clockwise.
+(<num>5</num>) 显示白色标识旗时，表示 HSD 故障。逆时针转动旋钮来复位指示灯。
 
-> 💡 For more information see relevant chapters under
-> [Navigation](../../systems/nav_com/overview.md) and for the TID repeat Tactical Information
-> Display (TID) and Associated Controls.
+> 💡 请查阅 [导航](../../systems/nav_com/overview.md)
+> 和 战术信息显示器（TID）与相关控制开关/按钮 中的相关章节来获取更多相关信息。
 
-## Cabin Pressure Altimeter
+## 座舱压力高度表
 
 ![cabin pressure](../../img/cockpit_detail_pilot_cabinpressure.jpg)
 
-Displays cabin pressure in 1,000-foot increments from 0 to 50,000 feet.
+以千英尺为单位显示从0至50000英尺的座舱气压高度。
 
-## Emergency Brake Pressure Indicator
+## 应急刹车压力表
 
 ![brake pressure](../../img/cockpit_detail_pilot_brakepressure.jpg)
 
-Displays hydraulic pressure available from the emergency brake accumulators to the auxiliary and
-parking wheel brake systems.
+显示应急刹车蓄压器中的可用于备用刹车和停放刹车系统的油液压力。
 
-### Parking Brake Pressure
+### 停放刹车压力
 
-The PARK indication shows brake pressure available for parking brakes.
+PARK 显示停放刹车可用的刹车压强。
 
-The green segment indicates 2,150 to 3,000 psi and the red segment indicates 1,900 to 2,150 psi.
-When in the green, sufficient pressure is available for approximately three brake applications.
+绿色区域对应的范围是2150至3000 psi（磅力每平方英寸），红色区域对应的范围是1900至2150
+psi。指针指向绿色时，蓄压器中的液压压强可供刹车进行约三次制动操作。
 
-### Auxiliary Brake Pressure
+### 辅助刹车压力
 
-The AUX indication shows brake pressure available for the auxiliary brake system, usable via toe
-brakes.
+显示辅助刹车蓄压器中的压力，飞行员可以通过脚蹬刹车来使用蓄压器中的压力来进行制动。
 
-The green segment indicates 2,150 to 3,000 psi (approximately 13 to 14 applications) and the red
-segment indicates 1,900 to 2,150 psi (approximately five applications).
+绿色区域对应的范围是2150至3000 psi（约可提供13至14次刹车制动），而红色区域对应的范围则是1900至2150
+psi（约可提供5次刹车制动）。
 
-## Control Stick
+## 驾驶杆
 
 ![stick](../../img/cockpit_detail_pilot_stick.jpg)
 
-The control stick provides aircraft roll and pitch control and contains additional weapon and
-aircraft control functions.
+用于控制飞机横滚和俯仰以及包含额外武器和飞机控制功能。
 
-### Bomb Release Button
+### 航弹投放按钮
 
-The bomb release button (<num>1</num>) is the stores release control used for air-to-ground ordnance
-(except rockets) and loaded external countermeasures.
+挂载投放按钮 (<num>1</num>)，用于投放空对地挂载（航空火箭弹例外）或挂载的额外对抗措施。
 
-### Pitch and Roll Trim Hat
+### 俯仰和横滚配平开关
 
-The pitch and roll trim hat (<num>2</num>) controls aircraft trim.
+苦力帽开关 (<num>2</num>) 用于控制配平。
 
-Up/down commands pitch trim and left/right commands roll trim.
+上下来进行俯仰配平，左右来进行横滚配平。
 
-### Weapon Select Hat
+### 武器选择开关
 
-Selector hat (<num>3</num>) moveable up and down and depressible. Used to select weapon type and
-variants.
+选择开关 (<num>3</num>) 可上下移动，也可按下。用来选择武器类型。
 
-- SP or PH - Selects AIM-7 or AIM-54. Depression toggles between types.
-- SW - Selects AIM-9. Depression toggles between stations.
-- GUN - Selects M61A1 Vulcan gun.
-- OFF - Inhibits weapon release.
+- SP 或 PH - 选择 AIM-7 或 AIM-54，按下开关来切换选中的导弹类型。
+- SW - 选择 AIM-9，按下开关来切换选中的 AIM-9 挂点。
+- GUN - 选择M-61A1“火神”航炮。
+- OFF - 禁止武器发射。
 
-### DLC and Maneuver Flap Command Wheel
+### DLC 和机动襟翼控制拨轮
 
-The DLC and maneuver flap command wheel (<num>4</num>) controls DLC or maneuver flaps depending on
-configuration.
+拨轮 (<num>4</num>) 用于根据构型控制 DLC（直接升力控制）或机动襟翼。
 
-With DLC engaged, forward rotation extends spoilers and aft rotation retracts spoilers.
+启用 DLC 时，向前转动拨轮伸出扰流板，向后转动拨轮收起扰流板。
 
-With flaps up and DLC disengaged, forward rotation retracts maneuvering flaps/slats and aft rotation
-extends them.
+起落架和襟翼收上且 DLC 解除时，向前转动拨轮收起机动襟翼/缝翼，向后转动拨轮放下机动襟翼/缝翼。
 
-The control logic is that pulling the wheel toward the pilot increases lift and pushing it away
-decreases lift.
+这个功能背后的逻辑是，向后拨动拨轮来增加升力，向前拨动拨轮来减小升力。
 
-### DLC Engage/Disengage and Countermeasure Dispense Button
+### DLC 启用/解除和对抗措施弹射按钮
 
-The DLC engage/disengage and countermeasure dispense button (<num>5</num>) engages DLC when flaps
-are down, throttles are below MIL, and no spoiler system failure is present.
+(<num>5</num>) 在襟翼放下、油门不超过 MIL（军用推力）、且扰流板系统无故障时，短按按钮来启用 DLC。
 
-With flaps up, this button commands the ALE-39 to dispense chaff or flares per RIO settings.
+襟翼收上时，按下按钮会发送指令给 ALE-39 根据 RIO 的设置弹射箔条和红外干扰弹。
 
-DLC disengages with another momentary press, raising flaps, or advancing either throttle to MIL.
+再次按下按钮、收起襟翼或将油门推至超过 MIL 位置，DLC 便会解除。
 
-### Autopilot Reference and Nosewheel Steering Button
+### 自动驾驶接通和前轮转向按钮
 
-The autopilot reference and nosewheel steering button (<num>6</num>) toggles nosewheel steering with
-weight on wheels.
+(<num>6</num>) 机轮负重时，按下按钮来启用或关闭前轮转向系统。
 
-With weight off wheels, it engages enabled autopilot modes.
+机轮不负重时，按下按钮来启用当前选定的自动驾驶模式。
 
-### Autopilot Emergency Disengage Paddle
+### 自动驾驶应急断开宽柄开关
 
-The autopilot emergency disengage paddle (<num>7</num>) disengages all autopilot modes and DLC and
-releases autopilot switches and roll and pitch SAS switches to OFF.
+(<num>7</num>) 断开所有自动驾驶模式和 DLC，同时将所有自动驾驶模式开关弹回中立位置，并将横滚和俯仰 SAS（增稳系统）开关退回 OFF 位置。
 
-With weight on wheels, it additionally reverts throttle mode to MAN (manual) while depressed.
+机轮负重时，按下紧急断开开关也会将油门模式退回 MAN（手动）模式。
 
-### Weapon Firing Trigger
+### 武器发射扳机
 
-The weapon firing trigger (<num>8</num>) is a two-stage trigger.
+(<num>8</num>) 两段式扳机。
 
-The first detent enables CTVS and gun camera. The second detent releases the selected forward-firing
-weapon.
+第一段激活 CTVS（驾驶舱电视传感器）和照相枪。第二段发射选中的前射武器。
 
-> 💡 CTVS and gun camera are not implemented in DCS.
+> 💡 DCS 中未实装 CTVS 功能。
