@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Startup - Heatblur F-14 Tomcat</title>
+        <title>RIO - Heatblur F-14 Tomcat</title>
 
 
         <!-- Custom HTML head -->
@@ -12,34 +12,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="../favicon.svg">
-        <link rel="stylesheet" href="../css/variables.css">
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="stylesheet" href="../css/chrome.css">
-        <link rel="stylesheet" href="../css/print.css" media="print">
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../fonts/fonts.css">
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="../theme/visual.css">
-        <link rel="stylesheet" href="../theme/hb_light.css">
-        <link rel="stylesheet" href="../theme/hb_dark.css">
-        <link rel="stylesheet" href="../theme/pdf.css">
+        <link rel="stylesheet" href="../../theme/visual.css">
+        <link rel="stylesheet" href="../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../theme/pdf.css">
 
         <!-- Provide site root to javascript -->
         <script>
-            var path_to_root = "../";
+            var path_to_root = "../../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc.js"></script>
+        <script src="../../toc.js"></script>
     </head>
     <body>
     <div id="body-container">
@@ -91,7 +91,7 @@
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
-                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
             </noscript>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -123,7 +123,7 @@
                     <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
 
                     <div class="right-buttons">
-                        <a href="../print.html" title="Print this manual" aria-label="Print this manual">
+                        <a href="../../print.html" title="Print this manual" aria-label="Print this manual">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
@@ -132,7 +132,7 @@
                         <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/procedures/startup.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/procedures/post_start/rio.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -161,41 +161,102 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="engine-startup"><a class="header" href="#engine-startup">Engine Startup</a></h1>
-<h2 id="pilot"><a class="header" href="#pilot">Pilot</a></h2>
+                        <h1 id="poststart-rio"><a class="header" href="#poststart-rio">Poststart (RIO)</a></h1>
+<blockquote>
+<p>💡 Note: The RIO must ensure that the EMERG GEN check is completed before commencing post-start
+checklist. The ECS (Environmental Control System) should run for at least 3 minutes before
+avionics and AWG-9 power-up.</p>
+</blockquote>
 <div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action/Details</th></tr></thead><tbody>
-<tr><td>1</td><td>AIR SOURCE switch</td><td>Set to OFF</td></tr>
-<tr><td>2</td><td>HYD TRANSFER PUMP switch</td><td>Set to OFF (Guard up)</td></tr>
-<tr><td>3</td><td>EMERG FLT HYD switch</td><td>Set to LOW → Check ON flag</br>Set to HIGH → Check ON flag</br>Set to AUTO (LOW) → Verify both flags OFF</td></tr>
-<tr><td>4</td><td>ENG CRANK switch</td><td>Set to R (Right engine)</br>At ~20% RPM: check oil/hydraulic pressure, START/VALVE caution light</td></tr>
-<tr><td>5</td><td>Right throttle</td><td>Advance to IDLE at 20% RPM</td></tr>
-<tr><td>6</td><td>ENG CRANK switch</td><td>Verify it returns to OFF at ~50% RPM</br>START/VALVE caution light turns off</td></tr>
-<tr><td>7</td><td>R GEN caution light</td><td>Turns off at ~59% RPM</td></tr>
-<tr><td>8</td><td>R FUEL PRESS caution light</td><td>Turns off before idle RPM</td></tr>
-<tr><td>9</td><td>Engine instrument readings</td><td>RPM: 62–78%</br>EGT: ~500 °C</br>FF: 950–1400 Pph</br>NOZ: 100%</br>OIL: 25–35 psi</br>FLT HYD: ~3000 psi</td></tr>
-<tr><td>10</td><td>External electrical power</td><td>Disconnect (order plane captain)</td></tr>
-<tr><td>11</td><td>ENG CRANK switch</td><td>Set to L (Left engine)</br>Switch OFF after combined hydraulic pressure reaches 3000 psi</td></tr>
-<tr><td>12</td><td>HYD TRANSFER PUMP</td><td>Set to NORMAL</br>If no pressure in 10 sec → set to SHUTOFF</td></tr>
-<tr><td>13</td><td>Repeat</td><td>Perform steps 4–9 for Left Engine</td></tr>
-<tr><td>14</td><td>Starter air</td><td>Disconnect (order plane captain)</td></tr>
-<tr><td>15</td><td>AIR SOURCE switch</td><td>Cycle: L ENG → R ENG → BOTH ENG</br>Verify cockpit airflow</td></tr>
-<tr><td>16</td><td>HYD TRANSFER PUMP</td><td>Set to NORMAL</td></tr>
-</tbody></table>
-</div>
-<h2 id="rio"><a class="header" href="#rio">RIO</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action/Details</th></tr></thead><tbody>
-<tr><td>1</td><td>Monitor startup</td><td>Observe pilot procedures and plane captain signals for safety</td></tr>
+<tr><td>1</td><td>WCS switch</td><td>STBY</td></tr>
+<tr><td></td><td></td><td>Verify that AWG-9 COND light illuminates.</td></tr>
+<tr><td>2</td><td>LIQ COOLING switch</td><td>AWG-9 or AWG-9/AIM-54</td></tr>
+<tr><td></td><td></td><td>Select AWG-9/AIM-54 if AIM-54 is loaded.</td></tr>
+<tr><td></td><td></td><td>Verify that AWG-9 COND light goes off and that AUTO BIT 2 is running (on TID).</td></tr>
+<tr><td>3</td><td>IR/TV power switch</td><td>STBY/IR/TV</td></tr>
+<tr><td>4</td><td>CATEGORY knob</td><td>NAV</td></tr>
+<tr><td>5</td><td>NAV MODE switch</td><td>Align</td></tr>
+<tr><td>6</td><td>Communications</td><td>ON and Set</td></tr>
+<tr><td></td><td></td><td>- U/VHF MODE selector - T/R G.</td></tr>
+<tr><td></td><td></td><td>- DATA LINK switch - ON.</td></tr>
+<tr><td>9</td><td>TACAN function selector</td><td>T/R</td></tr>
+<tr><td>10</td><td>RADAR WARNING RCVR panel</td><td>Set</td></tr>
+<tr><td></td><td></td><td>- Display type switch - NORM.</td></tr>
+<tr><td></td><td></td><td>- PWR switch - ON.</td></tr>
+<tr><td></td><td></td><td>- TEST switch - SPL.</td></tr>
+<tr><td></td><td></td><td>- MODE button - LMT.</td></tr>
+<tr><td>11</td><td>DECM knob</td><td>STBY</td></tr>
+<tr><td></td><td></td><td>- When STBY light goes off, select hold 3 SEC, then ACT for OBC.</td></tr>
+<tr><td>12</td><td>IFF MASTER knob</td><td>STBY</td></tr>
+<tr><td></td><td></td><td>- Set CODE knob - As required.</td></tr>
+<tr><td></td><td></td><td>- IFF panel - Test.</td></tr>
+<tr><td></td><td></td><td>- MC switch - OUT.</td></tr>
+<tr><td></td><td></td><td>- M1, M2 and M3 - Test.</td></tr>
+<tr><td></td><td></td><td>- MC - Test.</td></tr>
+<tr><td></td><td></td><td>- IFF ANT switch - AUTO.</td></tr>
+<tr><td></td><td></td><td>Select NORM and observe that TEST light</td></tr>
+<tr><td></td><td></td><td>illuminates.</td></tr>
+<tr><td>13</td><td>AUTO BIT 2</td><td>Verify Complete</td></tr>
+<tr><td></td><td></td><td>On TID.</td></tr>
+<tr><td>14</td><td>CAP</td><td>Enter own aircraft latitude, longitude and field or ship elevation</td></tr>
+<tr><td>15</td><td>Altimeter</td><td>Reset</td></tr>
+<tr><td>16</td><td>Computer address panel</td><td>Enter desired data</td></tr>
+<tr><td></td><td></td><td>WP, FP, etc, according to mission.</td></tr>
+<tr><td>17</td><td>DDD</td><td>Set</td></tr>
+<tr><td>18</td><td>TID controls</td><td>Set</td></tr>
+<tr><td></td><td></td><td>- CONTRAST - Set.</td></tr>
+<tr><td></td><td></td><td>- BRIGHT control - Set.</td></tr>
+<tr><td></td><td></td><td>- CLSN - OFF.</td></tr>
+<tr><td></td><td></td><td>- ALT NUM - ON.</td></tr>
+<tr><td></td><td></td><td>- SYM ELEM - ON.</td></tr>
+<tr><td></td><td></td><td>- DATA LINK - As required.</td></tr>
+<tr><td></td><td></td><td>- JAM strobe - As required.</td></tr>
+<tr><td></td><td></td><td>- NON ATTK - As required.</td></tr>
+<tr><td></td><td></td><td>- LAUNCH ZONE - As required.</td></tr>
+<tr><td></td><td></td><td>- VEL VECTOR - As required.</td></tr>
+<tr><td></td><td></td><td>- RANGE scale - As required.</td></tr>
+<tr><td>19</td><td>Multiple display indicator</td><td>Set</td></tr>
+<tr><td></td><td></td><td>- TEST button - Depress and Check.</td></tr>
+<tr><td></td><td></td><td>- BRIGHTNESS - Set.</td></tr>
+<tr><td>20</td><td>DATA/ADF switch</td><td>BOTH</td></tr>
+<tr><td>21</td><td>Hand control panel</td><td>Set</td></tr>
+<tr><td></td><td></td><td>- Light test - Depress and Check.</td></tr>
+<tr><td></td><td></td><td>- El Vernier - Set 0° elevation on radar.</td></tr>
+<tr><td></td><td></td><td>All AWG-9 lights should illuminate.</td></tr>
+<tr><td>22</td><td>AN/ALE-39</td><td>Set</td></tr>
+<tr><td></td><td></td><td>- BURST switch - 3.</td></tr>
+<tr><td></td><td></td><td>- BURST INTERVAL - 0.1.</td></tr>
+<tr><td></td><td></td><td>- SALVO - 2.</td></tr>
+<tr><td></td><td></td><td>- SALVO INTERVAL - 0.4.</td></tr>
+<tr><td>23</td><td>CANOPY DEFOG-CABIN AIR lever</td><td>CABIN AIR</td></tr>
+<tr><td>24</td><td>D/L reply</td><td>As required</td></tr>
+<tr><td>25</td><td>AAI control panel</td><td>Set</td></tr>
+<tr><td></td><td></td><td>- TEST/CHAL CC switch - Test.</td></tr>
+<tr><td></td><td></td><td>Check DDD display.</td></tr>
+<tr><td>26</td><td>Indicator lights</td><td>Test</td></tr>
+<tr><td>27</td><td>DDI BIT</td><td>Test</td></tr>
+<tr><td>28</td><td>After alignment complete:</td><td>- NAV mode - INS.</td></tr>
+<tr><td></td><td></td><td>- Program restart - Depress.</td></tr>
+<tr><td></td><td></td><td>- STBY/READY lights - OFF.</td></tr>
+<tr><td></td><td></td><td>- TID NAV mode - INS.</td></tr>
+<tr><td>29</td><td>DEST data</td><td>Verify</td></tr>
+<tr><td>30</td><td>BRG/DIST to destination</td><td>Check</td></tr>
+<tr><td>31</td><td>OWN A/C groundspeed</td><td>Check</td></tr>
+<tr><td>32</td><td>MAG VAR</td><td>Check</td></tr>
+<tr><td>33</td><td>KY-28/KY-58</td><td>As required</td></tr>
+<tr><td>34</td><td>Standby attitude gyro</td><td>Erect</td></tr>
+<tr><td>35</td><td>Notify pilot</td><td>Ready to taxi</td></tr>
 </tbody></table>
 </div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Navigation button at bottom -->
-                            <a rel="prev" href="../procedures/pre_start.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../procedures/post_start/pilot.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
                             </a>
 
-                            <a rel="next prefetch" href="../procedures/post_start.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../../emergency_procedures/overview.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
                             </a>
 
@@ -203,20 +264,20 @@
                     </nav>
                     <nav class="nav-wide-wrapper" aria-label="Page navigation">
                             <!-- Navigation button at bottom -->
-                            <a rel="prev" href="../procedures/pre_start.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../procedures/post_start/pilot.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
                             </a>
                             <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
-                            <a rel="prev" href="../procedures/pre_start.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../procedures/post_start/pilot.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
                             </a>
 
                             <!-- Navigation button at bottom -->
-                            <a rel="next prefetch" href="../procedures/post_start.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../../emergency_procedures/overview.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
                             </a>
                             <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
-                            <a rel="next prefetch" href="../procedures/post_start.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../../emergency_procedures/overview.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
                             </a>
                     </nav>
@@ -233,17 +294,17 @@
         </script>
 
 
-        <script src="../elasticlunr.min.js"></script>
-        <script src="../mark.min.js"></script>
-        <script src="../searcher.js"></script>
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
 
-        <script src="../clipboard.min.js"></script>
-        <script src="../highlight.js"></script>
-        <script src="../book.js"></script>
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
 
         <!-- Custom JS scripts -->
-        <script src="../js/jquery-3.7.1.min.js"></script>
-        <script src="../js/extra.js"></script>
+        <script src="../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../js/extra.js"></script>
 
 
     </div>
