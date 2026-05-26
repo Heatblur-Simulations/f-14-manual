@@ -1,45 +1,40 @@
-# Mission Editor
+# 任务编辑器
 
-Aircraft-specific settings and waypoints are configured in the **Mission
-Editor**.
+飞机任务编辑器专用选项和航路点都在 **任务编辑器** 中进行配置。
 
-Aircraft specific options are set up under the Additional Properties for
-Aircraft page available when setting up an aircraft group containing F-14s.
+当设置含有 F-14 的飞机群组时，可在飞机页面下的附加属性页面下设置飞机的专用选项。
 
-The waypoints, apart from waypoint 1-3 and Home Base are set up using the
-Navigation Target Points page also available when configuring an aircraft group
-containing F-14s.
+除去航路点 1 到 3 和基地，其余的航路点可以通过导航目标点页面进行设置。该页面在设置包含 F-14 的群组时可用。
 
-## Options
+## 选项
 
-| Option                          | Sets                                           |
-| ------------------------------- | ---------------------------------------------- |
-| M-61 Burst Mode                 | Max burst length; "Manual" fires until empty   |
-| AN/ALE-39 Loadout               | Countermeasure loadout                         |
-| Fill LAU-138 With Chaff         | Load LAU-138s with chaff at spawn              |
-| INS Reference Alignment Stored  | Whether INS reference is pre-aligned at spawn  |
-| TACAN Channel Preset (0 = Auto) | Preselected TACAN channel; 0 = nearest station |
-| TACAN Band                      | Preselected band (X or Y)                      |
-| ILS Channel Preset              | Preselected ICLS channel                       |
-| KY-28 Encryption Key            | Encryption key loaded into KY-28               |
-| Laser Code 1st–4th Digit        | Preset code for laser-guided munitions         |
+| 选项                     | 设置                                                                |
+| ------------------------ | ------------------------------------------------------------------- |
+| M-61 机炮连发模式        | 设定 M-61 最大连射长度；为手动将使机炮持续开火至弹药耗尽            |
+| AN/ALE-39 装填           | 设置 AN/ALE-39 对抗措施布撒器的装填                                 |
+| 以箔条填充 LAU-138       | 设定在飞机重生时是否用箔条填装 LAU-138 挂架布撒器                   |
+| 预存 INS 参考对准        | 设定在飞机重生时 INS 系统中是否预存参考对准                         |
+| 塔康频道预选（0 = 自动） | 设定飞机重生时预先选择好的 TACAN 波道；0 将设置为重生时最近的塔康台 |
+| 塔康波段                 | 设定飞机重生时预先选择好的 TACAN 波段；X 或 Y                       |
+| ILS 波道预选             | 设定飞机重生时预设的 ICLS 波道                                      |
+| KY-28 加密密钥           | 设定飞机重生时 KY-28 所加载的加密密钥                               |
+| 激光编码 第一位至第四位  | 设定飞机重生时已经挂载好的激光制导武器的预设激光编码                |
 
-## Waypoints Types
+## 航路点类型
 
-As the F-14's navigational system only has three numbered waypoints, most other
-waypoints are set using Navigation Target Points.
+由于 F-14 的导航系统只有三个拥有编号的航路点，因此其他大多数航路点都是通过导航目标点来设置。
 
-- **Waypoints 1–3**: Set directly in the mission editor.
-- **Home Base**: Set to the landing waypoint.
-- **All others**: Set by naming _Navigation Target Points_ as below:
+- **航路点 1–3**：直接在任务编辑器设置。
+- **基地**：设置着陆航路点。
+- **所有其它**：通过下方 _导航目标点_ 命名：
 
-| Waypoint                | Name                      |
-| ----------------------- | ------------------------- |
-| Fix Point               | `FP`                      |
-| Initial Point           | `IP`                      |
-| Surface Target          | `ST`                      |
-| Defended Point          | `DP`                      |
-| Hostile Area            | `HA`                      |
-| Datalink Waypoint 1–3   | `DLWP1`, `DLWP2`, `DLWP3` |
-| Datalink Surface Target | `DLST`                    |
-| Datalink Fixed Point    | `DLFP`                    |
+| 航路点                | 名称                      |
+| --------------------- | ------------------------- |
+| 固定点                | `FP`                      |
+| 起始点                | `IP`                      |
+| 地面/水面目标         | `ST`                      |
+| 防御目标点            | `DP`                      |
+| 敌对区域              | `HA`                      |
+| 数据链路航路点 1 到 3 | `DLWP1`, `DLWP2`, `DLWP3` |
+| 数据链路地面/水面目标 | `DLST`                    |
+| 数据链路固定点        | `DLFP`                    |

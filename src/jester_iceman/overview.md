@@ -4,79 +4,62 @@
 
 ![Jester](../img/jester_jester.jpg)
 
-The **Jester AI** aims to be a functional AI Radar Intercept Officer (RIO) for
-the Heatblur DCS F-14, enabling a multi-crew experience in a single-player (per
-aircraft) environment.
+**Jester AI** 的目标是为 Heatblur DCS
+F-14B 打造一个 AI 雷达拦截官（即 RIO），便于玩家能够在单人（单人单架飞机）的环境下享受双人协作驾驶的快感。
 
-He is fully integrated into the rear cockpit, controlling nearly all back seat
-systems, with a focus on systems not controllable from the pilot seat. He is
-also modeled to simulate human limitations—his head position, visual spotting
-range, and hand positions are all accounted for. When controlling systems at the
-RIO seat, he performs all actions a human RIO would.
+Jester 被完全集成进了后座驾驶舱，他需要控制后座驾驶舱内几乎所有的航电，特别是那些前座飞行员无法操作的系统。
+我们为 Jester 构建模型时，还考虑了到一名真正人类 RIO 的局限性，也就是说，除了各种各样的限制因素外，RIO 当前头部位置，目视搜索范围以及他的手在操作什么——Jester
+AI 的人类行为模型充分考虑到了这些因素。Jester
+AI 能够像人类一样坐在 RIO 座位上控制所有系统，执行各种各样的操作。
 
-To control Jester, a **command wheel** is used for quick access. This wheel is
-dynamic based on the selected mode and the current situation. Feedback to the
-pilot is given via ICS using a library of recorded audio, simulating a RIO
-actually talking. In addition to acknowledging orders, Jester will provide
-pertinent information based on the situation.
+玩家可以通过一个 **指令转盘**
+快速访问并选择 Jester 的命令/控制。该选单中的内容会根据当前所处的模式和目前的状况进行动态的调整。
+Jester 的反馈会调用语音库中的语句并通过内话系统（ICS）传递给玩家，以此模拟与 RIO 交流的真实体验，而且，除了确认指令外，Jester 还会根据当前的情况向飞行员传达相关信息。
 
-In multiplayer, if a human RIO disconnects mid-flight, Jester resumes control of
-the rear cockpit systems in the configuration left by the human player.
+最后，在多人游戏中，作为 RIO 加入的玩家会发现，加入时所有的控制（例如：开关的位置等）都处在 Jester 离开前操作的位置上，
+同理，若玩家 RIO 离开，Jester 也会按照玩家所留下的设置来接手 RIO 的工作。
 
-### Functionality
+### 功能
 
 ![Menu](../img/jester_menu.jpg)
 
-The **Jester menu** is opened by default with the <kbd>A</kbd> key. Selection of
-items (<num>1</num>–<num>8</num>) is done using <kbd>CTRL</kbd> + <kbd>1</kbd>
-through <kbd>CTRL</kbd> + <kbd>8</kbd>. These controls can be remapped under the
-**Jester** category in the **F-14 Pilot** DCS key-binds. The menu system is
-designed to support 8-way hat switch mapping. Optionally, you can use your
-viewing angle in the cockpit to select menu petals by holding the Jester menu
-key for over 0.5 seconds - this can be toggled in the F-14 options.
+在默认设置下，按下 <kbd>A</kbd> 来调出 Jester 菜单，通过 CTRL + <num>1</num>–<num>8</num>
+选择其中的项目（<kbd>CTRL</kbd> + <kbd>1</kbd> 到 <kbd>CTRL</kbd> +
+<kbd>8</kbd>）。这些按键命令可以被更改或是设置到控制器上玩家可以在 DCS 按键设置中选择
+**F-14 飞行员** 分类并在 **Jester**
+子类别下找到上述按键设定。按花瓣状的菜单子选项使得它们可以被轻松设定对应游戏控制器的八向苦力帽位置。
+此外，玩家可以通过按住 Jester 菜单按键超过 0.5 秒，然后通过转动驾驶舱视角的方式来选择环形选单中的某个选项。这个功能可以在 F-14B 的专用设置中启用或禁用。
 
-- The first press brings up a **contextual menu** based on current aircraft mode
-  and situation.
-- A second press opens the **Main Menu**.
-- A third press closes the menu.
+- 首次按下将根据当前的飞机模式和状况弹出一个 **联想菜单**。
+- 再次按下将打开 **主菜单**。 - 第三次按下将关闭菜单。
 
-Examples:
+例如：
 
-- **Air-to-Air mode (airborne)**: opens _Beyond Visual Range – Radar_ menu.
-- **Air-to-Ground mode**: opens _Air-to-Ground – Weapons_ menu.
-- **Take-off/Landing**: context-specific menus available.
+- **空对空模式 (升空)**: 打开 *超视距 – 雷达* 菜单。
+- **空对地模式**: 打开 *空对地 – 武器* 菜单。
+- **起/降**: 联想-特定菜单可用。
 
-From these menus, pilots can control RIO systems. Menu contents can change based
-on prior selections. In some cases, menu petals act as inputs/keypads for
-entering data like frequencies or waypoints.
+通过这些菜单便使得玩家能够控制 RIO 驾驶舱中的诸多系统成为了可能。不同子菜单的内容可能会根据之前的指令而发生变化，并且某些系统使用环形选单中的选项作为输入/数字键盘在对应系统中设置频率或是其他数值。
 
-You can also:
+玩家还可以：
 
-- Set a **waypoint** from an F10 map marker (menu shows time and name).
-- Lock targets on the **TID** using options like _closest target_ or _specific
-  azimuth/range_.
-- Run a **startup checklist**.
+- 从 F10 地图标记（菜单显示时间和名称）设置一个 **航路点** 。
+- 使用如 *最近的目标* 或 *特定方位/距离* 在 **TID** 锁定一个目标。
+- 执行一次 **起动检查单** 。
 
-### Assisted Startup
+### 协助起动
 
 ![Startup](../img/jester_startup.jpg)
 
-For aircraft cold start, Jester can either perform his checklist like a real RIO
-would, or he can also help the pilot with an assisted startup in which he reads
-the pilot's checklist to him while starting.
+冷启动飞机时， Jester 可以像一名真正的 RIO 一样执行他的检查单，也可以帮助飞行员进行协助启动。在协助启动中， Jester 会向玩家朗读飞行员的检查单。
 
-To access the normal, unassisted startup, select startup, Jester will then go
-through his checklist. He will at times ask the pilot if he has completed
-certain checks or ask for specific tests, this is answered via the Jester menu
-using the options appearing there. As an example he will start by asking for a
-comms check which is answered via the Jester menu. Note that after engine
-startup and EMERG GEN Master test he will ask for what INS alignment to go for,
-select this via the Jester menu as well.
+如需执行常规的，无协助的启动，选择启动， Jester 将执行他的检查单。
+他有时候会询问飞行员是否完成了某些检查或是要求进行具体的测试，这可以通过 Jester 菜单中的选项来回复。
+举例，他会首先要求进行通讯检查，这便需要用到 Jester 菜单了。注意，在完成发动机启动和 EMERG
+GEN 测试之后他将会询问使用何种方式进行 INS 对准，这同样也是通过 Jester 菜单来选择的。
 
-To access the assisted startup select assisted start on the Jester menu. Jester
-will now read out the checklist to the pilot and highlight the relevant
-indicators and switches during startup. Use the Jester menu to tell Jester when
-a check/step is complete.
+若需执行协助启动，在 Jester 菜单上选择协助启动。在启动过程中 Jester 将会像飞行员读出检查单并提醒飞行员有哪些相关的指示和开关。
+当检查/步骤完成后使用 Jester 菜单来通知 Jester 操作已完成。
 
 ![Highlight](../img/jester_highlight.jpg)
 
@@ -84,12 +67,10 @@ a check/step is complete.
 
 ![Pilot](../img/jester_pilot.jpg)
 
-**Iceman** is a basic autopilot AI and a subset of the Jester system. It is
-designed for singleplayer scenarios where a player may switch between the front
-and rear seats.
+除了 Jester ，或者说，作为 Jester AI 的一部分， Heatblur DCS F-14B 同样实现了 **Iceman**
+，一个基础的自动驾驶/AI ，设计用来让玩家可在前后座切换游玩。
 
-When the player switches to the RIO seat:
+在玩家切换到 RIO 时：
 
-- Iceman takes control of heading and altitude.
-- The Iceman menu allows setting heading, altitude, and speed—either relative to
-  a target or as absolute values.
+- Iceman 将获取控制权，保持飞机当前的航向和高度。
+- 通过菜单——现在是 Iceman 菜单了——玩家可以设置航向、高度和速度。航向和高度可以相对某个目标进行设定，也可以设定为不参考任何外部目标的绝对值。

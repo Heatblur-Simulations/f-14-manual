@@ -1,15 +1,15 @@
-# Definitions
+# 定义
 
-Should an acronym, such as IRST be unclear at any point, look it up in the
-exhaustive list provided at the [Abbreviations chapter](../abbreviations.md).
+如果遇到诸如 IRST 之类的缩写词在任何情况下都不清楚，请查阅
+[缩写章节](../abbreviations.md) 中提供的详尽列表。
 
-The following symbology is used throughout this manual.
+在本手册中使用了以下符号。
 
-## General
+## 概述
 
-| Symbol | Meaning            | Description                                                  |
-| ------ | ------------------ | ------------------------------------------------------------ |
-| 💡     | Note               | Item that is given special emphasize                         |
-| 🟡     | Caution            | Should be followed to prevent **damage to equipment**        |
-| 🔴     | Warning            | Ignoring might lead to **personal injury or loss of life**   |
-| 🚧     | Under Construction | A section is **work in progress** and will be improved still |
+| 符号 | 解释   | 描述                                   |
+| ---- | ------ | -------------------------------------- |
+| 💡   | 注     | 特别强调的项目                         |
+| 🟡   | 注意   | 应遵循以下注意事项，以防止**设备损坏** |
+| 🔴   | 警告   | 忽视此警告可能导致**人身伤害或死亡**   |
+| 🚧   | 施工中 | 该章节尚在**编写中**，后续还将进行完善 |

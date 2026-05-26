@@ -1,9 +1,7 @@
 # DCS
 
-This chapter contains systems, settings and interfaces specific to the
-simulation of the Tomcat inside DCS.
+本章包括 DCS 中 “雄猫” 模拟专用的系统、设置和界面。
 
-Of special note are the explanation available to
-[mission designers](mission_editor.md).
+玩家可以在 [任务作者](mission_editor.md) 部分查看说明。
 
 ![DCS](../img/dcs_overview.jpg)

@@ -1,11 +1,11 @@
-# Special Options
+# 专用选项
 
-Available under: **OPTIONS → SPECIAL → F-14**
+菜单位于：**选项 → 专用选项 → F-14**
 
-| Control                            | Function                                                         |
-| ---------------------------------- | ---------------------------------------------------------------- |
-| Radio Menu and PTT Behavior        | Configures radio PTT integration, useful for SRS                 |
-| Use Head Movement in Jester Menu   | Enables VR/TrackIR head control to select petals                 |
-| Boring Jester                      | Disables Jester’s jokes and embellishments (not yet implemented) |
-| Switch PD-STT to P-STT Lock in WVR | Jester switches to P-STT automatically within ACM range          |
-| Jester Menu Camera                 | Enables live Jester camera feed in the radial menu               |
+| 控制                                 | 功能                                                                                          |
+| ------------------------------------ | --------------------------------------------------------------------------------------------- |
+| 无线电菜单和按键通话行为             | 设定无线电按下传声按钮影响 DCS 无线电菜单的方式，若使用 PTT 按钮进行 SRS 通讯该设置将非常有用 |
+| 使用头部移动进行 Jester 菜单选择     | 允许使用 VR 或 Track-IR 通过头部移动来选择 Jester 菜单中的条目                                |
+| 无聊的 Jester                        | 禁用 Jester 的润色和笑话（未实装）                                                            |
+| 视距内空战以 P-STT 锁定而不是 PD-STT | 进入格斗距离后 Jester 会自动将雷达切换至 P-STT 模式                                           |
+| Jester 菜单摄像头                    | 在 Jester 菜单上启用或禁用 Jester 镜头                                                        |

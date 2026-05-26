@@ -1,153 +1,89 @@
-# Introduction
+# 简介
 
-## Origins
+## 起源
 
 ![U.S. Navy photo by LT J.G. Thomas Prochilo. (DN-SC-83-06680)](../img/intro_F-14TU95.jpg)
-_U.S. Navy photo by LT J.G. Thomas Prochilo. (DN-SC-83-06680)_
+_照片由美国海军中尉Thomas Prochilo拍摄 (DN-SC-83-06680)_
 
-The F-14 Tomcat can trace its origin back to the 1950's and the US Navy's need
-for a carrier based long range interceptor to fill the Fleet Air Defence role.
-It was decided that it needed an aircraft with a more advanced and longer ranged
-radar as well as longer ranged air-to-air missile than the F-4 Phantom.
+F-14“雄猫”可以一直追溯到上世纪50年代，美国海军急需一架长航程舰载截击机来填补舰队防空职能的空缺。结论认为海军需要一架比 F-4“鬼怪”更先进、雷达探测距离更远、空空导弹射程更长的战斗机。
 
-The Navy was directed, by then defense secretary Robert McNamara, to join the
-Tactical Fighter Experimental or TFX program to procure this aircraft in a joint
-venture with the US Air Force. The Navy was opposed to this from the beginning
-and the proposed General Dynamics F-111B did not meet the Navy's expectations.
+当时，海军受国防部长罗伯特·麦克纳马拉的指示与美国空军合作推进实验战术战斗机（TFX）项目。海军从最初便反对共同开发此项目，而且通用动力F-111B飞机方案也并未满足海军的期望。
 
-Grumman, which had been brought on board by General Dynamics for the Navy
-F-111B, was eventually awarded a contract to begin development of an aircraft
-more suited to the Navy's requirements. This led to the design that would
-eventually become the F-14, carrying over the radar (AN/AWG-9) and missiles
-(AIM-54 Phoenix) from the failed F-111B project.
+和通用动力共同开发海军 F-111B 而加入 TFX 项目的格鲁曼公司最终获得了海军制定的更符合自身情况的舰载机研发合同。
+装备着沿用失败的 F-111B 项目的雷达（AN/AWG-9）和导弹（AIM-54“不死鸟”）的 F-14 战斗机便从这份研发合同中诞生了。
 
-The F-14 Tomcat first flew on the 21st of December 1970 and entered service on
-the 22nd of September 1974. The name "Tomcat" follows Grumman's tradition of
-naming their aircraft after cats and also partially from the nickname "Tom's
-Cat" for Vice Admiral Thomas F. Connolly who was instrumental for the
-development of the F-14.
+F-14“雄猫”于1970年12月21日首飞，并于1974年9月22日开始服役。“雄猫”（Tomcat）这个名字一方面遵循格鲁曼用猫科动物命名飞机的传统，另一方面也源于海军中将Thomas
+F. Connolly的昵称“Tom’s Cat”（“汤姆的猫”），以纪念他对F-14研发所做的关键贡献。
 
-## Service Life Upgrades
+## 服役升级
 
-The first version of the F-14, the F-14A was equipped with the Pratt & Whitney
-TF30 and carried an IRST system in the chinpod under the nose.
+F-14A是F-14战斗机的第一个型号，配备普惠TF30发动机并在机鼻下方的吊舱中装备了IRST系统。
 
-The TF30 engines were generally regarded as temperamental and underpowered for
-the F-14A and were eventually replaced by the General Electric F110-400 engines
-in the F-14A+ (later F-14B).
+对 F-14A 而言，TF30 发动机的稳定性和动力常常不尽人意。于是在 F-14A+（后来的 F-14B ）上，TF30发动机被通用电气 F110-400 发动机所取代。
 
-The IRST system was rather quickly determined to be underperforming and replaced
-with the TCS (Television Camera Set) in the chinpod allowing for greater than
-visual range identification of radar tracked targets.
+F-14A 的 IRST 系统也表现不佳并很快被 TCS（电视摄像套件）吊舱所取代。TCS 吊舱允许飞行员对雷达追踪目标进行超视距目视识别。
 
-Both the F-14A and F-14B received continuous upgrades during their life,
-including new programmable cockpit displays (PTID and PMDIG) as well as a new
-INS system, a digital flight control system (DFCS) and an RWR system amongst
-others.
+F-14A 和 F-14B 在服役期间都得到了持续升级，包括新的可编程座舱显示器（PTID 和 PMDIG），以及新的 INS 惯导系统、数字飞控系统（DFCS）和 RWR 系统等。
 
-Eventually the Tactical Reconnaissance mission was also added to the F-14's
-portfolio, enabled by the TARPS system, allowing the Tomcat to gather
-photographic reconnaissance material.
+最终，TARPS（战术空中侦察吊舱）系统的装备使 F-14 获得了收集影像资料进行战术侦查任务的能力。
 
-## Ground Attack Role
+## 对地攻击
 
-![Photo by LCDR Dave Parsons. (DN-SC-93-01299)](../img/intro_bombcat.jpg) _Photo
-by LCDR Dave Parsons. (DN-SC-93-01299)_
+![Photo by LCDR Dave Parsons. (DN-SC-93-01299)](../img/intro_bombcat.jpg)
+_照片由美国海军少校 Dave Parsons 拍摄 (DN-SC-93-01299)_
 
-During the 1990's when the aerial threat to the fleets of the US Navy lessened
-and with the advent of operations like Desert Storm, the ground attack role was
-resurrected.
+20世纪90年代，美国海军舰队面临的空中威胁逐渐减少，同时由于沙漠风暴等行动的实施，对地攻击的重要性重新凸显出来。
 
-The ability to carry and deliver air-to-ground munitions had been implemented in
-the F-14 from the beginning but ruled out by the Navy as cost and risk
-ineffective given the F-14's role as a Fleet Air Defence fighter.
+F-14 最初就具备携带和投放空对地弹药的能力，但是由于海军基于成本和风险的考量，F-14 的主要职责仅为舰队防空。
 
-With the renewed interest for this role, some of the F-14As and F-14Bs were
-equipped to carry the LANTIRN targeting pod allowing the RIO to find and
-designate laser guided bombs for his own aircraft and others. Later on the
-ability to carry and deliver gps-guided JDAMs was also added.
+随着任务角色的转变，一些 F-14A 和 F-14B 开始挂载 LANTIRN 目标吊舱以便 RIO 为自己和其他飞机搜索目标、引导激光制导炸弹。
+随后，F-14 还增加了携带和投放 GPS 制导的 JDAM 弹药的能力。
 
-Most of the LANTIRN equipped aircraft were the ones upgraded with the
-programmable TID or (PTID) allowing for greater integration of the LANTIRN.
+大部分装备了 LANTIRN 吊舱的 F-14 都升级了可编程 TID（PTID）以更好地集成 LANTIRN 吊舱的功能。
 
 ## F-14D
 
-In the 1990's the ultimate F-14 version was beginning to see service, the F-14D.
+20世纪90年代，F-14 的终极型号 F-14D 开始服役。
 
-The F-14D used the same engines as the F-14B, the GE F110-400s in addition to
-using the digital flight control system, which was eventually retrofitted into
-operational F-14As and F-14Bs as well.
+F-14D 使用和 F-14B 同样的 GE
+F110-400 发动机，同时也装备了数字飞控系统（DFCS）。DFCS 系统随后也开始装备在较老的在役 F-14A 和 B 型上。
 
-In addition the F-14D also had a newer, more advanced version of the AN/AWG-9,
-the AN/APG-71, as well as a whole suite of upgraded avionics along with a new
-chinpod combining the TCS with a new, improved IRST system.
+此外，F-14D 还安装了 AN/AWG-9 雷达的改进型，AN/APG-71 雷达以及一整套升级的航电系统。原本的 TCS 吊舱也升级成了一个融合了改进版 IRST 系统与 TCS 功能的新吊舱。
 
-## End of Service
+## 退役
 
-The F-14 Tomcat did eventually show its age, forcing the Navy to retire it due
-to increased maintenance costs and the general status of the now dated
-airframes. Additionally the Tomcat's primary role, the Fleet Air Defence role,
-seemingly disappeared with the end of the Cold War.
+F-14“雄猫”最终还是老态龙钟了。随着维护成本的增加和机体的老化，海军不得不开始退役“雄猫”。冷战的结束也使得“雄猫”的本职——舰队防空显得不那么重要了。
 
-The Tomcat was finally retired in a ceremony on the 22nd of September 2006 at
-NAS Oceana.
+2006年9月22日，最后一架雄猫的退役仪式在欧希安纳海军航空站举行。
 
-## Iran
+## 伊朗
 
-![IRIAF photo circa 1986](../img/intro_iranicats.jpg) _IRIAF photo circa 1986_
+![IRIAF photo circa 1986](../img/intro_iranicats.jpg) _照片由伊朗空军在1986年间拍摄。_
 
-The only other operator of the F-14 Tomcat was the Imperial Iranian Air Force,
-later the Islamic Republic of Iran Air Force, for which the Shah of Iran,
-Mohammad Reza Pahlavi acquired 80 Tomcats.
+F-14“雄猫”的唯一海外使用客户是伊朗皇家空军（IIAF）和后来的伊朗伊斯兰共和国空军（IRIAF）。当时的伊朗国王默罕默德·礼萨·巴列维曾采购了80架“雄猫”。
 
-The eventual fall of the Shah and the rise of the Islamic Republic of Iran meant
-that a country now opposed to the United States had access to one of its most
-advanced fighter aircraft. This meant that the Iranian F-14s now lost access to
-new spare parts and missiles, apart from black market sources, greatly
-increasing the difficulty of maintaining the aircraft.
+而巴列维王朝的倒台和伊朗伊斯兰共和国的崛起意味着一个反美国家获得了美国最先进的战斗机之一。“波斯猫”随即失去了所有零部件和导弹的供应，只得从黑市上购买配件，这大大增加了飞机维护的难度。
 
-The F-14 Tomcat was used during the Iran-Iraq war, claiming a great number of
-air-to-air victories over the Iraqi Air Force, with some sources going so far as
-to claim that Iraqi pilots at times left the contested air space to avoid facing
-the AN/AWG-9 - AIM-54 combo.
+伊朗在两伊战争期间使用了 F-14“雄猫”并声称取得了大量对伊拉克空军的空中胜利。小道消息称当时伊拉克飞行员甚至会为了避开 AN/AWG-9 和 AIM-54 的威胁而逃离交战空域。
 
-To this date the IRIAF continues to fly the F-14 Tomcat as the sole operator.
-It's not entirely known how the Iranians source their spare parts but it's
-assumed that they've had to cannibalize inoperable aircraft to keep a portion of
-their fleet flying. In addition rumours exist mentioning black market sources as
-well as indigenous production of some parts.
+目前为止，只有伊朗共和国空军还在使用 F-14“雄猫”。目前伊朗人获得飞机配件的途径还不明确，有推测认为他们通过拆除无法飞行的飞机上的零件来维持机队其他飞机的状态。还有传言说他们通过黑市和土法自产一些零件以供使用。
 
-The Iranian operated Tomcats are of the earlier F-14A revisions, using the TF30
-engines and lacking a TCS or IRST system.
+伊朗使用的“雄猫”是早期 F-14A 的改进版，使用 TF30 发动机，没有装备 TCS 或者 IRST 系统。
 
-## AIM-54 Phoenix
+## AIM-54“不死鸟”
 
 ![U.S. Navy photo by Capt. Dana Potts. (020924-N-1955P-001)](../img/intro_phoenix.jpg)
-_U.S. Navy photo by Capt. Dana Potts. (020924-N-1955P-001)_
+_照片由美国海军上尉 Dana Potts 拍摄 (020924-N-1955P-001)_
 
-The AIM-54 long-range air-to-air missile was born from the same TFX program as
-that which eventually led to the F-14 Tomcat.
+AIM-54 远程空空导弹和F-14“雄猫”一起诞生于当年的TFX项目。
 
-It was designed for the F-111B and then adopted for the F-14 as a long-range
-missile capable of long range engagement of enemy bombers in addition to hostile
-cruise missiles. That's not to say that the AIM-54 Phoenix was a slouch at
-engaging other smaller targets as well.
+最初为 F-111B 设计的 AIM-54 被 F-14 用作可以同时攻击敌方轰炸机和巡航导弹的长射程导弹。当然，AIM-54 打击其他小目标也并非力不从心。
 
-Outstanding features of the AIM-54 missiles were their long range as well as
-their ability to be launched at up to six simultaneous targets, guided first by
-the AN/AWG-9 radar in the launching aircraft and then its own active radar
-seeker independently.
+AIM-54 导弹最突出的特点便是超远的射程。AIM-54 还具有同时发射和跟踪最多6个目标的能力，先由载机上的 AN/AWG-9 雷达制导，然后用自己的主动雷达引导头独立制导。
 
-The original AIM-54 Phoenix was the AIM-54A with a mk47 rocket motor. The motor
-was later on upgraded, creating the mk60 motor, increasing the missile's range.
-Eventually the AIM-54 itself was also upgraded, resulting in the AIM-54C with,
-amongst other things, an upgraded seeker head and a newer version of the mk47
-producing less smoke, making the missile hard to spot visually.
+AIM-54 最初的型号是安装 Mk47火箭发动机的 AIM-54A。Mk47 发动机后来升级为 Mk60 火箭发动机以增加导弹的射程。
+而 AIM-54 本身也经过升级成为 AIM-54C，改进的引导头引导能力更强，新的 Mk47 发动机发烟量也更少，更难被目视发现。
 
-The US Navy fired only three AIM-54 missiles in combat, all three over Iraq. The
-missiles never hit their intended targets though as two of the missiles' rocket
-motors failed with the third also missing its target as it turned tail and ran.
+美国海军在实战中仅发射了3枚 AIM-54 导弹，均于伊拉克上空发射。3枚导弹都没有击中目标，其中2枚由于火箭发动机失效，第三枚则是目标自己掉头逃跑而未能命中。
 
-While little is known for certain in the western hemisphere, the IRIAF claims at
-least 78 air-to-air victories using the AIM-54 against Iraqi MiG-21s, MiG-23s,
-MiG-25s, Mirage F-1s, Super Etendards and even some anti-ship cruise missiles.
+不为西方所知的是，IRIFA则宣称使用 AIM-54 对伊拉克的米格-21、米格-23、米格-25、幻影F-1和超军旗等飞机获得了至少78次空中胜利，战果甚至还包括了数枚反舰巡航导弹。
