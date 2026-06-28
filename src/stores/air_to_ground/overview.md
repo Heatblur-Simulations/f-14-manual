@@ -1,11 +1,6 @@
-# Air to Ground
+# 空对地
 
-Despite being primarily designed as an air superiority fighter and an
-interceptor the F-14 was from the very start cleared and tested to carry all of
-the modern American general purpose bombs (GP) of the Mk-80 series. In addition
-it was also cleared to carry the Mk-20 Rockeye cluster bomb and the 5” Zuni
-folding-fin aircraft rocket (FFAR).
+尽管 F-14 是主要是按照空优战斗机和截击机来设计的，但它从一开始就通过了评估测试，可以挂载所有美国现代 Mk-80 系列通用航空炸弹（GP）。此外，她还可以挂载 Mk-20
+“石眼”集束炸弹以及五英寸折翼式航空火箭弹（FFAR）。
 
-As the F-14’s combat role changed to include the precision ground attack mission
-it was also cleared to carry several of the guided bomb unit (GBU) versions of
-the Mk-80 series bombs, more specifically, some of the laser guided versions.
+随着 F-14 的作战职能逐渐转变为对地精确打击任务，它也可以挂载几种安装了炸弹制导装置（GBU）的 Mk-80 系列航弹，准确的说，是这些航弹的激光制导型号。

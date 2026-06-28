@@ -1,27 +1,12 @@
-# Zuni Rockets
+# “祖尼”航箭
 
-The Zuni 5-inch folding-fin aircraft rocket (FFAR) was developed to replace the
-high-velocity aircraft rocket (HVAR) of World War 2 vintage. As part of its
-design, it’s modular and capable of using different warheads as well as
-different fuzes.
+“祖尼”5英寸折叠翼航空火箭弹 （FFAR）是为了取代二战时期的高速航空火箭弹（HVAR）而开发的。模块化设计使它能安装不同的战斗部和引信。
 
-The Zuni rockets are carried in LAU-10 pods, each carrying 4 rockets. The pods
-can fire in either salvo mode or ripple mode, salvo launching one rocket and
-ripple all.
+每个 LAU-10 吊舱可以装载4枚“祖尼”航空火箭弹，这个吊舱可以使用齐射或连发模式开火，每个吊舱中发射一枚，或发射单个吊舱中所有火箭弹。
 
-The F-14 Tomcat can carry LAU-10 rocket pods on stations 1B, 3, 6, and 8B using
-TERs, each TER holding up to two pods except one of either 3 or 6 which must
-only carry one as not to clash with a pod on the adjacent station. The TERs are
-used to gain separation from the station for safe rocket firing, and the reason
-for not being able to use three pods on the TERs is that on the glove pylons,
-the inner TER station would conflict with the main landing gear and on stations
-3 and 6 with the fuselage.
+通过使用 TER，F-14“雄猫”可以在 1B、3、6 和 8B 挂点上携带 LAU-10 火箭弹吊舱，每个 TER 最多可携带两个吊舱，但 3 号和 6 号除外，否则会与相邻挂弹架上的吊舱冲突。使用 TER 是为了增加吊舱与挂点之间的间距，以保证安全的发射航箭。然而，之所以不在 TER 上装载三个吊舱的原因是，如果在翼套挂架上连接 TER，其内侧挂点会与主起落架冲突，而 3 号和 6 号挂点上的 TER，如果内侧挂点连接吊舱则会与另一侧挂点冲突。
 
-The Zuni rockets are set up for launch by the RIO on the armament panel as with
-bombs, the delivery mode (**DLVY MODE**) switches being used to configure how
-many pods to activate at a time.
+“祖尼”航空火箭弹由 RIO 使用武器控制面板设置，投放参数和选项与普通航弹一致，投放模式（**DLVY
+MODE**）开关用于配置航箭吊舱是否齐射以及连射。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wftck0C3fJ8?si=tN1LKox8rjGu4uzh"
-title="DCS World - F-14 Tomcat - Front Seat - Weapons - Zuni Rockets with Jester" frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wftck0C3fJ8?si=tN1LKox8rjGu4uzh" title="DCS World - F-14 Tomcat - Front Seat - Weapons - Zuni Rockets with Jester" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

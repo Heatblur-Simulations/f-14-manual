@@ -1,25 +1,12 @@
-# GBU-10, 12, 16, and 24
+# GBU-10、GBU-12、GBU-16 和 GBU-24
 
-![GBU](../../img/weapons_gbu.jpg) _U.S. Navy photo by Photographer’s Mate Airman
-Milosz Reterski. (040105-N-9742R-001)_
+![GBU](../../img/weapons_gbu.jpg) _由美国海军摄影师 Milosz
+Reterski 拍摄（040105-N-9742R-001）_
 
-The GBU (guided bomb unit) are bombs from the Mk-80s series with an attached
-seeker unit and fin (control) unit converting them into guided precision bombs,
-and in the case of the GBU-10, 12, 16, and 24 carried by the F-14, laser-guided
-bombs to be more precise.
+GBU 是加装了导引头装置和前翼（用于控制）装置将 Mk-80 系列航弹转换为精确制导炸弹。F-14 挂载的 GBU （更准确地说是精确制导炸弹），分别是 GBU-10、GBU-12、GBU-16 和 GBU-24。
 
-When the F-14B gained the ability to mount and use the LANTIRN pod, it was also
-cleared to carry some of the GBU variants of the Mk-80 series bombs. It can
-either deliver them onto designation from a self-carried LANTIRN pod or onto a
-laser designation from another aircraft or ground source.
+获得搭载和使用 LANTIRN 吊舱的能力后，F-14B 也通过了挂载 Mk-80 系列 GBU 衍生型号航弹的测试。GBU 可以通过 F-14 携带的 LANTIRN 吊舱来照射，也可由其他飞机或地面单位提供激光照射来摧毁目标。
 
-The GBUs carried are mounted on the Phoenix rails themselves on stations 3-6 as
-the additional size of a GBU compared to a normal Mk-80 series bomb makes it
-impossible to use the substations on the rails for those. Each station is
-capable of carrying one GBU up to the size of the GBU-16. As for the GBU-10 and
-24, the 10 can be carried on the front rails (3 and 6) and the 24 on one front
-rail and one back rail as they need to be carried on opposite sides of the
-aircraft due to the larger wing assembly.
+F-14 挂载的 GBU 直接安装在武器导轨3号挂点到6号挂点的导轨上，这是因为 GBU 系列航弹相较常规 Mk-80 航弹来说，其大小有所增加，所以 GBU 系列航弹无法适配扩展挂架并安装在导轨上。如果挂载 GBU-16 或 GBU-16 大小以下的激光制导炸弹的话，那么每个武器导轨上都可以携带一枚航弹。如果需要挂载两枚 GBU-10 或 GBU-24，GBU-10 可以挂在两个前部导轨（3 号和 6 号挂点），而两枚 GBU-24 必须分别挂在前部导轨的一侧和后部导轨的另一侧上，因为 GBU-24 的折叠翼面部件更大。
 
-> 💡 GBU laser codes are set as per DCS Mission Editor Functions Specific to the
-> HB DCS F-14 or via the kneeboard.
+> 💡 GBU 激光编码可以通过 Heatblur DCS F-14 任务编辑器相关功能或飞行员膝板来设置。

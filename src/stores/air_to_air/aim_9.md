@@ -1,84 +1,46 @@
-# AIM-9 Sidewinder
+# AIM-9 “响尾蛇”
 
-![AIM-9](../../img/weapons_aim-9.jpg) _U.S. Navy photo by Photographer’s Mate
-Airman Kristopher Wilson. (050112-N-5345W-066)_
+![AIM-9](../../img/weapons_aim-9.jpg) _由美国海军摄影师 Kristopher
+Wilson 拍摄（050112-N-5345W-066）_
 
-The AIM-9 Sidewinder is a short-range air-to-air missile. It uses an infrared
-seeker locking on to a target's IR signature, making it capable of tracking a
-target both during daytime and at night.
+AIM-9“响尾蛇”导弹是一种近程空空导弹。它使用红外导引头来锁定目标的红外特征，使其无论昼间还是夜间都能跟踪目标。
 
-The F-14 Tomcat is capable of carrying all Navy versions of the AIM-9 Sidewinder
-from the AIM-9D up to the AIM-9M. The Heatblur F-14 Tomcat is currently modeled
-as carrying the AIM-9L and AIM-9M.
+F-14“雄猫”可以携带从 AIM-9D 到 AIM-9M 的所有海军版的 AIM-9“响尾蛇”导弹。Heatblur
+F-14“雄猫”目前可以携带 AIM-9L 和 AIM-9M 导弹。
 
-The F-14 is capable of carrying the AIM-9 on stations 1A & B and 8A & B.
-Stations 1 & 8 are the glove pylons, which can each carry two AIM-9s for a total
-of 4. Station 1A & 8A are dedicated to carry only the AIM-9 and are normally
-used when only carrying two to allow station 1B & 8B to carry other munitions.
+F-14 可以在 挂点 1A 和 1B 以及 挂点 8A 和 8B 上携带 AIM-9 导弹。1号挂点和8号挂点是翼套挂架，每个翼套挂架可携带两枚 AIM-9 导弹，总计四枚。挂点 1A 和 8A 是专门用于仅携带 AIM-9 的挂点，并且通常仅携带两枚，让挂点 1B 和 8B 挂载其他武器。
 
-## Missile Preparation
+## 导弹发射准备
 
 ![Missile Preparation](../../img/weapons_swcool.jpg)
 
-The cooling of the AIM-9 seeker head needs to be enabled before launch. This is
-done by pressing the SW COOL switch on the pilot ACM panel or by selecting the
-ACM mode on the same panel. This commands cooling of the missile's seeker head.
-The missile will immediately show ready, but full seeker head performance will
-take at least 60 seconds.
+发射 AIM-9 前需要启用导引头冷却。按下飞行员 ACM 面板的 SW
+COOL 按钮开关，或在相同面板选择 ACM 模式来启用导引头冷却。按下后会指令冷却导弹导引头，挂点状态标识旗立刻显示就绪，但使导引头发挥全部性能需要进行至少60秒冷却。
 
-## Seeker Head Modes
+## 导引头模式
 
-The AIM-9G introduced a seeker head capable of the Sidewinder expanded
-acquisition mode (SEAM), and all later Sidewinders carried by the F-14 are also
-capable of that mode. SEAM allows the missile seeker head to be uncaged to track
-a target within the seeker limits (40° from ADL), allowing the pilot to lead the
-target, improving missile performance. It also allows for the WCS on the F-14 to
-slave the seeker to a tracked target within 20° from ADL, allowing for
-off-boresight acquisition.
+AIM-9G 换装了能够进行响尾蛇扩展搜索模式（SEAM）的导引头，F-14 携带的后续所有响尾蛇导弹都能使用此模式。SEAM 允许导引头解锁并在导引头限制（离 ADL
+40°）内跟踪目标，使得飞行员能提前瞄准目标，从而提升导弹的性能。SEAM 同时还允许 F-14 中的 WCS 将导引头隶属到 ADL
+20° 内已锁定的目标上，来实现偏离瞄准轴锁定。
 
-The AIM-9 on the F-14 can still use the old boresight mode where the seeker head
-remains slaved to ADL (2.5° field of view), but normally SEAM is used to scan
-the seeker about either ADL or a tracked target. This scan is not visible to the
-pilot and is done to increase effective seeker head field of view. As with all
-Sidewinders, target detection is indicated by an aural tone. That growling tone
-is present while scanning but increases in intensity while the seeker is looking
-at an IR source.
+F-14 上的 AIM-9 依然可以使用早期的瞄准轴模式，该模式下导引头保持隶属于 ADL（2.5°视场），但通常会选用 SEAM 来扫描 ADL 周围或对目标进行跟踪。SEAM 没有可视化的标识提供给飞行员并且 SEAM 用于扩展导引头的有效视场。就像所有响尾蛇导一样，目标探测是根据音调来提示的。在探测时会出现低吼音调，当导引头指向红外源时，音调会升高。
 
-## Missile Operation
+## 导弹操作
 
-The AIM-9 Sidewinder is selected for launch with the weapon selector on the
-pilot stick. The weapon selector can be used to cycle which AIM-9 is selected
-for launch by depressing it, indicating on the ACM panel which missile is
-selected by a checkerboard indication in the corresponding status window. When
-using the AIM-9, the HUD uses the diamond to indicate a tracked target and the
-pipper (crosshair) to indicate current seeker head position. If a WCS track with
-range is available, the HUD also displays range to target and Rmin and Rmax. The
-VDI, DDD, and TID display the attack guidance symbology if a WCS track is
-present.
+通过飞行员驾驶杆上的武器选择开关来选择 AIM-9
+“响尾蛇”导弹。按下武器选择开关可以切换用于发射的 AIM-9 导弹，ACM 面板上相应的状态窗口中，标识旗指示了当前选中的导弹。使用 AIM-9 时，HUD 使用菱形标识指示跟踪的目标，使用准星（十字准星）指示当前导引头指向的位置。如果 WCS 跟踪目标包含距离信息，那么 HUD 还将显示目标距离、Rmin（最小发射距离）和 Rmax（最大发射距离）。如果 WCS 有跟踪目标，那么 VDI，DDD 和 TID 将显示攻击引导符。
 
-The basic missile boresight mode without SEAM (no scan) is commanded by
-depressing the BRSIT (boresight) switch on the pilot ACM panel while not having
-the ACM mode active. In this mode, the pilot puts the target at ADL and fires
-when the aural tone is present.
+不激活 ACM 模式的情况下，按下飞行员 ACM 面板的 BRSIT 开关来选择无 SEAM（无扫描）的基础瞄准轴模式。在此模式中飞行员将 ADL 对准目标，当高频音调响起时开火。
 
-If the BRSIT switch is not used or the ACM mode is active, the AIM-9 will use
-the SEAM and set the missile to use the double-D scan pattern. If a WCS target
-is present, the seeker head will scan around the radar or TCS line of sight;
-otherwise, the missile will scan around the ADL.
+如果未使用 BRSIT 按钮开关或 ACM 模式处于激活状态，AIM-9 将使用 SEAM ，并且使用双 D 扫描模式。如果 WCS 目标存在的话，那么导引头会扫描雷达或 TCS 视线周围，否则导弹导引头会在 ADL 周围进行扫描。
 
 ![SEAM Lock](../../img/weapons_seamlock.jpg)
 
-To enable lock-on to a target in SEAM, the pilot depresses the CAGE/SEAM
-pushbutton on the left throttle. This illuminates the SEAM LOCK light on the ACM
-panel and un-cages the seeker for 4.5 seconds, allowing it to track a target
-present in the seeker's field of view. If no IR source is found, the missile is
-again caged and the SEAM LOCK light is deactivated.
+飞行员可以按下左油门握把上的 CAGE/SEAM 按钮来使用 SEAM 模式锁定目标。ACM 面板的 SEAM
+LOCK 指示灯将会亮起并将导引头解锁4.5秒，并允许导引头跟踪处在视场内的目标。如果未探测到红外源，则导弹导引头会重新锁定，且 SEAM
+LOCK 指示灯熄灭。
 
-If lock-on is successful, the aural tone will remain and the SEAM LOCK light
-stays illuminated, allowing the pilot to launch the missile by pressing the
-stick trigger. After launch, the next AIM-9 will automatically be selected.
+如果成功锁定，音调将持续响起，SEAM
+LOCK 灯保持亮起，飞行员按下驾驶杆扳机来发射导弹。发射后，下一枚 AIM-9 将会被自动选中。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4m-Q02gxFEA?si=uKW6h6gTzLfwNDxw"
-title="DCS World - F-14 Tomcat - Front Seat - Weapons - AIM-9 Sidewinder" frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4m-Q02gxFEA?si=uKW6h6gTzLfwNDxw" title="DCS World - F-14 Tomcat - Front Seat - Weapons - AIM-9 Sidewinder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

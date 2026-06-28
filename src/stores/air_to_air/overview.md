@@ -1,41 +1,30 @@
-# Air to Air
+# 空对空
 
-The F-14 Tomcat can equip various air-to-air weapons.
+F-14 雄猫可挂载各种不同的空对空武器。
 
 ![Missile firing](../../img/air_to_air_overview.jpg)
 
-For medium to long range engagements the [AIM-54 Phoenix](aim_54.md) as well as
-the [AIM-7 Sparrow](aim_7.md) can be used.
+包括远距离攻击时用的 [AIM-54 “不死鸟”](aim_54.md) 以及 [AIM-7 “麻雀”](aim_7.md)。
 
-In close-quarters engagements, the Tomcat relies on the
-[AIM-9 Sidewinder](./aim_9.md), a short-range, infrared-guided missile
-celebrated for its agility and responsiveness.
+在在近距离格斗中，“雄猫” 依靠 [AIM-9 “响尾蛇”](./aim_9.md)
+进行攻击，这种短距红外制导导弹以其敏捷性和响应速度而闻名。
 
-## HUD Symbology for Air-to-Air Missiles
+## 空对空导弹的 HUD 标识
 
 ![A2A HUD](../../img/weapons_a2ahud.jpg)
 
-The above image shows the HUD with Phoenixes selected while in air-to-air
-display mode.
+上图展示了在空对空显示模式下选择了“不死鸟”导弹时的 HUD 标识。
 
-As standard the HUD shows the Closure Rate on the left side in hundredths of
-knots, from -200 to +1,000 knots. Current closure rate as displayed by a `<`.
+作为标准，HUD 左侧显示了以百节为单位的 接近率 ，范围从-200节到+1000节。 `<`
+符号指示当前的接近率。
 
-Additionally it displays the Target Range Scale on the right side, showing
-target range at the displayed scale, 10 NM in this case as display at the upper
-end. The target range scale shows the current target range with a `>` and
-selected weapon max and minimum ranges as indicated by the dashes (-).
+另外，HUD 右侧显示的为目标距离标度——在显示的标度内指示目标的距离，如上图所示，当前距离标度为10海里。标度上的
+`>` 符号指示当前目标的距离，短横（ - ）符号分别指示当前选中武器的最大和最小发射距离。
 
-The Movable Reticle (called pipper for air to ground and gun employment) and the
-Target Designator can show different things depending on current situation.
+随动准星（空对地模式和使用航炮时被称为十字准星）和目标指示符标识根据不同情况有不同含义。
 
-The Movable Reticle shows current TCS line of sight if it exists at the same
-time as a radar STT lock except for when AIM-9s are selected. In the AIM-9 case
-it instead shows current AIM-9 seeker head line of sight.
+如果雷达正以 STT 模式跟踪目标， 随动准星会显示 TCS 视线，选中 AIM-9 时例外。选中 AIM-9 时随动准星则会指示 AIM-9 导引头的视线。
 
-The Target Designator diamond shows current radar STT line of sight if present
-and if not it instead shows the current TCS line of sight.
+如果雷达以 STT 模式跟踪目标，目标指定符指示雷达当前视线，如果雷达无跟踪目标，则指示 TCS 视线。
 
-So effectually the TCS line of sight can be shown either by the movable reticle
-or the target designator depending on if a radar STT is also present and if a
-radar STT is present with AIM-9 selected it’s not shown at all.
+因此，TCS 的视线可以由随动准星或目标指示符指示，这取决于雷达是否有 STT 目标，而在选中 AIM-9 的情况下则完全不显示（TCS 视线）。

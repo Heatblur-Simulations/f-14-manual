@@ -1,19 +1,13 @@
 # ADM-141 TALD
 
-![TALD](../../img/weapons_tald.jpg) _U.S. Navy photo by Photographer’s Mate 3rd
-Class Mark J. Rebilas. (041018-N-6213R-021)_
+![TALD](../../img/weapons_tald.jpg) _由美国海军摄影师 Mark J.
+Rebilas 拍摄（041018-N-6213R-021）_
 
-The ADM-141 tactical air-launched decoy (TALD) is a gliding decoy simulating
-real aircraft using active and passive means. There are several versions of the
-TALD, examples being a version equipped to launch chaff and another version
-using a Luneberg lens to increase its cross-section to simulate a larger
-aircraft.
+ADM-141 战术空射诱饵（TALD）是一种利用主动和被动方式模拟真实飞机信号的滑翔诱饵。TALD 有许多个版本，例如有一个版本发射箔条，另一个版本使用龙伯透镜来增大雷达截面积，用来伪装成一架更大的飞机。
 
-All versions are pre-programmed before takeoff and are un-powered, gliding
-through the air on fold-out wings.
+TALD 所有的版本都需要在起飞前预编程，且 TALD 自身无动力推进，仅能使用折叠翼滑翔。
 
-The F-14 can carry up to four ADM-141 TALDs, one each on stations 3 through 6,
-using a TER each to gain separation from the aircraft fuselage.
+F-14 最多可携带4枚 ADM-141
+TALD，3号至6号挂点可分别挂载一枚，每个挂架都需要连接 TER 来增加 TALD 和飞机机身的间距。
 
-> 💡 In DCS these currently glide straight ahead until they run out of speed and
-> altitude.
+> 💡 目前在 DCS 中，TALD 只能向正前方滑翔，直到坠地。

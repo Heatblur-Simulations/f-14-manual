@@ -1,7 +1,5 @@
-# BDU-33 Practice Bombs
+# BDU-33 训练弹
 
-The BDU-33 practice bomb is a training round used to simulate a Mk-82
-general-purpose bomb for training purposes. They can be carried three to a TER
-on each of station 3, 4, 5, and 6 on the F-14 Tomcat.
+BDU-33 训练弹是一种用于模拟 Mk-82 通用航空炸弹的训练弹。F-14 中 BDU-33 可以挂在挂点3-6的 TER 上。
 
-They are set up for release as with the real general-purpose bombs.
+BDU-33 训练弹的投放流程与投放通用航空炸弹实弹没有区别。
