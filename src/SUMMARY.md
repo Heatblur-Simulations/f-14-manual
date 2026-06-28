@@ -96,7 +96,7 @@
   - [副油箱](./stores/tanks.md)
 - [Jester & Iceman](./jester_iceman/overview.md)
 - [正常程序](./procedures/overview.md)
-- [舱内检查](./procedures/interior_inspection/pilot.md)
+  - [舱内检查](./procedures/interior_inspection/pilot.md)
     - [飞行员](./procedures/interior_inspection/pilot.md)
     - [RIO](./procedures/interior_inspection/rio.md)
   - [起动前](./procedures/pre_start/pilot.md)
