@@ -1,15 +1,10 @@
-# Normal Procedures
+# 正常程序
 
-This chapter contains standard procedures for operating the F-14 Tomcat.
+本章节包括F-14“雄猫”操作的标准程序。
 
-The aircrew procedures are separated into individual procedures for the
-**pilot** and **radar intercept officer**. These separate procedures allow the
-individual crew-member to perform the checks without requiring them to read the
-checks performed by the other crew-member. The remaining procedures are combined
-and are coded for applicable crew-member action.
+机组操作程序单独分为 **飞行员** 和
+**雷达拦截官**。单独程序可让机组人员各自执行检查，而无需阅读另一名机组人员所执行的检查内容。其余程序则合并在一起，并编码标注了相应的机组人员操作。
 
-> 💡 Real procedures and checklists evolved over time. The procedures provided
-> in this manual are tailored to our simulation of the Tomcat specifically.
-> Procedures provided in other resources may differ slightly.
+> 💡 实际操作程序和检查清单会随着时间的推移而不断演变。本手册中提供的操作程序是专门针对我们模拟的 “雄猫” 而设计的。其它资源中提供的操作程序可能会略有不同。
 
 ![Carrier Takeoff](../img/procedures_overview.jpg)

@@ -1,95 +1,96 @@
-# Interior Inspection (Pilot)
+# 舱内检查 (飞行员)
 
-| Step | Item                                 | Action/Details                                                                                      |
-| ---- | ------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| 1    | OXYGEN                               | Check                                                                                               |
-|      |                                      | Turn OXYGEN switch ON, check for airflow in mask.                                                   |
-|      |                                      | Turn OXYGEN switch OFF, check for no airflow.                                                       |
-| 2    | VENT AIRFLOW thumbwheel              | Set                                                                                                 |
-|      |                                      | Set thumbwheel to desired cockpit ventilation airflow.                                              |
-| 3    | Tone VOLUME controls                 | Set                                                                                                 |
-| 4    | TACAN function selector              | OFF                                                                                                 |
-|      |                                      | - Channel - Set.                                                                                    |
-|      |                                      | - Mode switch - Set.                                                                                |
-|      |                                      | - VOL knob - Counterclockwise.                                                                      |
-| 5    | ICS panel                            | Set                                                                                                 |
-|      |                                      | - VOL knob - As desired.                                                                            |
-|      |                                      | - Amplifier - NORM.                                                                                 |
-|      |                                      | - Function selector - COLD MIC.                                                                     |
-| 6    | STAB AUG switches                    | OFF                                                                                                 |
-| 7    | UHF function selector                | OFF                                                                                                 |
-| 8    | Wing-sweep switch                    | MAN                                                                                                 |
-|      |                                      | **CAUTION: Wings may move if wing control system fails with electrical and/or hydraulic power on.** |
-| 9    | Left and right throttles             | OFF                                                                                                 |
-| 10   | Speed brake switch                   | RET                                                                                                 |
-| 11   | Exterior lights master switch        | Set                                                                                                 |
-|      |                                      | Set in accordance to standard procedures for current situation.                                     |
-| 12   | FLAP handle                          | Corresponding                                                                                       |
-|      |                                      | Set to current flap position.                                                                       |
-| 13   | ASYM LIMITER switch                  | ON (guard down)                                                                                     |
-| 14   | L and R ENG MODE SELECT switches     | PRI                                                                                                 |
-| 15   | BACKUP IGNITION switch               | OFF                                                                                                 |
-| 16   | THROTTLE TEMP switch                 | NORM                                                                                                |
-| 17   | THROTTLE MODE switch                 | BOOST                                                                                               |
-| 18   | L and R INLET RAMPS switches         | AUTO                                                                                                |
-| 19   | ANTI SKID SPOILER BK switch          | OFF                                                                                                 |
-| 20   | FUEL panel                           | Set                                                                                                 |
-|      |                                      | - WING/EXT TRANS switch - AUTO.                                                                     |
-|      |                                      | - REFUEL PROBE switch - RET.                                                                        |
-|      |                                      | - DUMP switch - OFF.                                                                                |
-|      |                                      | - FEED switch - NORM (guard down).                                                                  |
-| 21   | LDG GEAR handle                      | DN                                                                                                  |
-| 22   | NOSE STRUT switch                    | OFF                                                                                                 |
-| 23   | Parking brake                        | Pull                                                                                                |
-| 24   | Radar altimeter                      | OFF                                                                                                 |
-| 25   | Altimeter                            | Set                                                                                                 |
-|      |                                      | Set current elevation.                                                                              |
-| 26   | Left and right FUEL SHUT OFF handles | In                                                                                                  |
-| 27   | ACM panel                            | Set                                                                                                 |
-|      |                                      | - ACM switch - OFF (guard down).                                                                    |
-|      |                                      | - MASTER ARM switch - OFF (guard down).                                                             |
-| 28   | Weapon select                        | OFF                                                                                                 |
-| 29   | HUD and VDI filters                  | As required                                                                                         |
-| 30   | Standby attitude gyro                | Caged                                                                                               |
-| 31   | G-meter                              | Reset                                                                                               |
-| 32   | Clock                                | Wind and Set                                                                                        |
-| 33   | Fuel Bingo                           | Set                                                                                                 |
-| 34   | Circuit breakers                     | Checked                                                                                             |
-| 35   | Brake accumulator pressure           | Check in Green                                                                                      |
-| 36   | HYD HAND PUMP                        | Check                                                                                               |
-|      |                                      | Check that pumping builds pressure on brake pressure gauge.                                         |
-| 37   | HOOK handle                          | Corresponding                                                                                       |
-|      |                                      | Set to current hook position.                                                                       |
-| 38   | DISPLAYS panel                       | Set                                                                                                 |
-|      |                                      | - MODE pushbutton - T.O.                                                                            |
-|      |                                      | - HUD DECLUTTER switch - OFF.                                                                       |
-|      |                                      | - HUD AWL switch - ACL.                                                                             |
-|      |                                      | - VDI MODE switch - NORM.                                                                           |
-|      |                                      | - VDI AWL switch - ACL.                                                                             |
-|      |                                      | - HSD MODE switch - NAV.                                                                            |
-|      |                                      | - STEER CMD pushbutton - DEST.                                                                      |
-|      |                                      | - DISPLAYS POWER switches - OFF.                                                                    |
-| 39   | ELEV LEAD knob                       | Set                                                                                                 |
-| 40   | INBD and OUTBD spoiler switches      | NORM (guard down)                                                                                   |
-| 41   | L and R generator switches           | NORM                                                                                                |
-| 42   | EMERG generator switch               | NORM (guard down)                                                                                   |
-| 43   | Air-condition controls               | Set                                                                                                 |
-|      |                                      | - TEMP mode selector switch - AUTO.                                                                 |
-|      |                                      | - TEMP thumbwheel control - As desired (5-7 equals medium setting).                                 |
-|      |                                      | - CABIN PRESS switch - NORM.                                                                        |
-|      |                                      | - AIR SOURCE pushbutton - OFF.                                                                      |
-| 44   | WSHLD AIR switch                     | OFF                                                                                                 |
-| 45   | ANTI-ICE switch                      | AUTO/OFF                                                                                            |
-| 46   | COMPASS panel                        | Set                                                                                                 |
-|      |                                      | - Mode selector knob - SLAVED.                                                                      |
-|      |                                      | - Hemisphere N-S switch - Set.                                                                      |
-|      |                                      | - LAT knob - Set.                                                                                   |
-| 47   | ARA-63 panel                         | OFF                                                                                                 |
-|      |                                      | - CHANNEL selector - Set.                                                                           |
-|      |                                      | - POWER switch - OFF.                                                                               |
-| 48   | MASTER LIGHT panel controls          | As required                                                                                         |
-| 49   | MASTER TEST switch                   | OFF                                                                                                 |
-| 50   | EMERG FLT HYD switch                 | AUTO (guard down)                                                                                   |
-| 51   | HYD TRANSFER PUMP switch             | SHUT OFF (guard up)                                                                                 |
-| 52   | CANOPY air diffuser lever            | CABIN AIR                                                                                           |
-| 53   | VIDEO CONTROL switch                 | OFF                                                                                                 |
+
+| 步骤 | 项目                         | 动作/细节                                                                       |
+| ---- | ---------------------------- | ------------------------------------------------------------------------------- |
+| 1    | OXYGEN（供氧）               | 检查                                                                            |
+|      |                              | OXYGEN 开关拨至 ON，检查面罩中的气流。                                          |
+|      |                              | OXYGEN 开关拨至 OFF，确认没有气流。                                             |
+| 2    | VENT AIRFLOW 拨轮            | 调定                                                                            |
+|      |                              | 设置拨轮至所需的驾驶舱通风气流。                                                |
+| 3    | 音调 VOLUME 控制旋钮         | 调定                                                                            |
+| 4    | TACAN 功能选择旋钮           | OFF                                                                             |
+|      |                              | - 波道 - 调定。                                                                 |
+|      |                              | - 模式旋钮 - 调定。                                                             |
+|      |                              | - VOL 旋钮 - 逆时针旋转。                                                       |
+| 5    | ICS 面板                     | 调定                                                                            |
+|      |                              | - VOL 旋钮 - 按需。                                                             |
+|      |                              | - 放大器 - NORM。                                                               |
+|      |                              | - ICS 控制开关 - COLD MIC。                                                     |
+| 6    | STAB AUG 开关                | OFF                                                                             |
+| 7    | UHF 功能选择旋钮             | OFF                                                                             |
+| 8    | 机翼后掠开关                 | MAN                                                                             |
+|      |                              | **注意：如果机翼控制系统在接通电源和/或液压的情况下发生故障，机翼可能会移动。** |
+| 9    | 左右油门握把                 | OFF                                                                             |
+| 10   | 减速板开关                   | RET                                                                             |
+| 11   | 机外照明开关                 | 调定                                                                            |
+|      |                              | 根据当前情况的标准流程进行设置。                                                |
+| 12   | FLAP 手柄                    | 相应位置                                                                        |
+|      |                              | 设置为当前襟翼位置。                                                            |
+| 13   | ASYM LIMITER 开关            | ON（保护盖关闭）                                                                |
+| 14   | L 和 R ENG MODE SELECT 开关  | PRI                                                                             |
+| 15   | BACKUP IGNITION 开关         | OFF                                                                             |
+| 16   | THROTTLE TEMP 开关           | NORM                                                                            |
+| 17   | THROTTLE MODE 开关           | BOOST                                                                           |
+| 18   | L 和 R INLET RAMPS 开关      | AUTO                                                                            |
+| 19   | ANTI SKID SPOILER BK 开关    | OFF                                                                             |
+| 20   | 燃油管理面板                 | 调定                                                                            |
+|      |                              | - WING/EXT TRANS 开关 - AUTO。                                                  |
+|      |                              | - REFUEL PROBE 开关 - RET。                                                     |
+|      |                              | - DUMP 开关 - OFF。                                                             |
+|      |                              | - FEED 开关 - NORM（保护盖关闭）。                                              |
+| 21   | 起落架手柄                   | DN                                                                              |
+| 22   | NOSE STRUT 开关              | OFF                                                                             |
+| 23   | 停放刹车                     | 抽出                                                                            |
+| 24   | 雷达高度表                   | OFF                                                                             |
+| 25   | 高度表                       | 调定                                                                            |
+|      |                              | 设置当前海拔高度。                                                              |
+| 26   | 左右 FUEL SHUT OFF 手柄      | 处于推入位置                                                                    |
+| 27   | ACM 面板                     | 调定                                                                            |
+|      |                              | - ACM 开关 - OFF（保护盖关闭）。                                                |
+|      |                              | - MASTER ARM 开关 - OFF（保护盖关闭）。                                         |
+| 28   | 武器选择开关                 | OFF                                                                             |
+| 29   | HUD 和 VDI 滤光片            | 按需                                                                            |
+| 30   | 备用姿态仪                   | 锁定                                                                            |
+| 31   | 加速度表                     | 复位                                                                            |
+| 32   | 时钟                         | 上紧发条并调定时间                                                              |
+| 33   | BINGO 油量                   | 调定                                                                            |
+| 34   | 断路器                       | 确认                                                                            |
+| 35   | 机轮刹车蓄压器压强值         | 确认在绿色区间                                                                  |
+| 36   | 手动液压泵                   | 确认                                                                            |
+|      |                              | 操纵手动液压泵的同时，检查辅助刹车蓄压器中读数是否增加。                        |
+| 37   | HOOK 手柄                    | 对应位置                                                                        |
+|      |                              | 调定至当前拦阻钩位置。                                                          |
+| 38   | 显示控制面板                 | 调定                                                                            |
+|      |                              | - MODE 按钮 - T.O.                                                              |
+|      |                              | - HUD DECLUTTER 开关 - OFF。                                                    |
+|      |                              | - HUD AWL 开关 - ACL。                                                          |
+|      |                              | - VDI MODE 开关 - NORM。                                                        |
+|      |                              | - VDI AWL 开关 - ACL。                                                          |
+|      |                              | - HSD MODE 开关 - NAV。                                                         |
+|      |                              | - STEER CMD 按钮 - DEST。                                                       |
+|      |                              | - 显示器电源开关 - OFF。                                                        |
+| 39   | ELEV LEAD 旋钮               | 调定                                                                            |
+| 40   | 扰流板超控 INBD / OUTBD 开关 | NORM（保护盖关闭）                                                              |
+| 41   | MASTER GEN 面板 L 和 R 开关  | NORM                                                                            |
+| 42   | EMERG 开关                   | NORM（保护盖关闭）                                                              |
+| 43   | 空调控制                     | 调定                                                                            |
+|      |                              | - TEMP 模式选择开关 - AUTO。                                                    |
+|      |                              | - 温度拨轮控制 - 按需（5-7 为中间档）。                                         |
+|      |                              | - CABIN PRESS 开关 - NORM。                                                     |
+|      |                              | - AIR SOURCE 按钮 - OFF。                                                       |
+| 44   | WSHLD AIR 开关               | OFF                                                                             |
+| 45   | ANTI-ICE 开关                | AUTO/OFF                                                                        |
+| 46   | 罗盘控制面板                 | 调定                                                                            |
+|      |                              | - 罗盘模式旋钮 - SLAVED。                                                       |
+|      |                              | - 南北半球 N-S 开关 - 调定。                                                    |
+|      |                              | - LAT 旋钮 - 调定。                                                             |
+| 47   | ARA-63 面板                  | OFF                                                                             |
+|      |                              | - CHANNEL 选择开关 - 调定。                                                     |
+|      |                              | - POWER 开关 - OFF。                                                            |
+| 48   | MASTER LIGHT 控制面板        | 按需                                                                            |
+| 49   | MASTER TEST 开关             | OFF                                                                             |
+| 50   | EMERG FLT HYD 开关           | AUTO（保护盖关闭）                                                              |
+| 51   | HYD TRANSFER PUMP 开关       | SHUT OFF（保护盖开启）                                                          |
+| 52   | 舱盖通风手柄                 | CABIN AIR                                                                       |
+| 53   | VIDEO CONTROL 开关           | OFF                                                                             |

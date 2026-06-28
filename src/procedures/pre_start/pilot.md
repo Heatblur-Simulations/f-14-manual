@@ -1,42 +1,43 @@
-# Prestart (Pilot)
+# 起动前 (飞行员)
 
-| Step | Item                                                                          | Action/Details                                                                                                                    |
-| ---- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | Order plane captain to connect and apply starter air and apply external power | Wait for confirmation.                                                                                                            |
-| 2    | If wings are not in OV SWP:                                                   |                                                                                                                                   |
-|      |                                                                               | WING SWEEP DRIVE NO. 1 and WG SWP DRIVE NO 2/MANUV FLAP cb's (LE1, LE2) - Pull.                                                   |
-|      |                                                                               | Emergency WINGSWEEP handle - Extend and match captain bars with wing position tape.                                               |
-|      |                                                                               | **CAUTION: Wings will move to emergency handle position regardless of wing-sweep circuit-breaker (cb) position.**                 |
-| 3    | ICS                                                                           | Check                                                                                                                             |
-| 4    | Landing gear indicator and transition light                                   | Check                                                                                                                             |
-|      |                                                                               | Check gear position indication down and transition light off.                                                                     |
-| 5    | MASTER TEST switch                                                            | Check                                                                                                                             |
-|      |                                                                               | - RPM - 96%.                                                                                                                      |
-|      |                                                                               | - EGT - 960 °C.                                                                                                                   |
-|      |                                                                               | - FF - 10500 Pph.                                                                                                                 |
-|      |                                                                               | - AOA - 18±5.                                                                                                                     |
-|      |                                                                               | - Wing sweep - 45°±2.5°.                                                                                                          |
-|      |                                                                               | - FUEL QTY - 2000±200 Pounds.                                                                                                     |
-|      |                                                                               | - Oxygen quantity - 2 Liters.                                                                                                     |
-|      |                                                                               | - L and R FUEL LOW lights - Illuminated.                                                                                          |
-|      |                                                                               | - MASTER TEST switch - OFF.                                                                                                       |
-|      |                                                                               | LTS - Check that all warning, caution and advisory lights illuminate. Coordinate with RIO.                                        |
-|      |                                                                               | Set brightness of the ACM panel and indexer lights during test.                                                                   |
-|      |                                                                               | The DATA LINK switch must be on to check DDI lights.                                                                              |
-|      |                                                                               | FIRE DET/EXT - Check that L and R FIRE and GO light illuminate. INST - Check for following responses on instruments after 5 secs: |
-|      |                                                                               | Makes L STALL and R STALL warning lights flash.                                                                                   |
-|      |                                                                               | Verify RIO FUEL QTY.                                                                                                              |
-| 6    | Ejection seats                                                                | Armed                                                                                                                             |
-|      |                                                                               | Verify RIO seats armed.                                                                                                           |
-| 7    | CANOPY handle                                                                 | Close                                                                                                                             |
-| 8    | ACM panel                                                                     | Set                                                                                                                               |
-|      |                                                                               | - Gun rate - Set and check rounds remaining.                                                                                      |
-|      |                                                                               | - SW COOL - OFF.                                                                                                                  |
-|      |                                                                               | - MSL PREP - OFF.                                                                                                                 |
-|      |                                                                               | - MSL MODE - NORM.                                                                                                                |
-|      |                                                                               | - Station loading status windows - Check.                                                                                         |
-|      |                                                                               | Verify consistency with loaded armaments.                                                                                         |
-| 9    | EMERG STORES JETT pushbutton light                                            | Out                                                                                                                               |
-| 10   | LADDER light                                                                  | Out                                                                                                                               |
-|      |                                                                               | Order plane captain to stow boarding ladder and steps.                                                                            |
-| 11   | Inform RIO                                                                    | Ready to start                                                                                                                    |
+
+| 步骤 | 项目                                               | 动作/细节                                                                         |
+| ---- | -------------------------------------------------- | --------------------------------------------------------------------------------- |
+| 1    | 命令飞行联队舰载机长连接并接上起动机气源和外部电源 | 等待确认。                                                                        |
+| 2    | 如果机翼不在 OV SWP（停放后掠）状态：              |                                                                                   |
+|      |                                                    | WING SWEEP DRIVE NO.1 和 WG SWP DRIVE NO.2/MANUV FLAP 断路器（LE1, LE2） - 抽出。 |
+|      |                                                    | 应急机翼后掠手柄 - 展开并匹配上机翼后掠指示带中的指令位置。                       |
+|      |                                                    | **注意：机翼会无视后掠断路器的状态，移动到应急机翼后掠手柄指令的位置。**          |
+| 3    | ICS                                                | 检查                                                                              |
+| 4    | 机轮-襟翼位置指示器和过渡灯                        | 检查                                                                              |
+|      |                                                    | 检查机轮-襟翼位置指示器在放下位并且位置转移指示灯熄灭。                           |
+| 5    | MASTER TEST 开关                                   | 检查                                                                              |
+|      |                                                    | - 发动机转速（RPM） - 96%。                                                       |
+|      |                                                    | - 排气温度（EGT） - 960 °C。                                                     |
+|      |                                                    | - 发动机燃油流量（FF） - 10500 磅/时。                                            |
+|      |                                                    | - 迎角（AOA） - 18°±5°。                                                       |
+|      |                                                    | - 机翼后掠角 - 45°±2.5°。                                                      |
+|      |                                                    | - 燃油量 - 2000±200 磅。                                                         |
+|      |                                                    | - 氧气总量 - 2升。                                                                |
+|      |                                                    | - 左/右 FUEL LOW 灯 - 亮起。                                                      |
+|      |                                                    | - MASTER TEST 开关 - OFF。                                                        |
+|      |                                                    | LTS - 确认所有告警、注意和提示灯亮起。与 RIO 协同。                               |
+|      |                                                    | 测试期间设置 ACM 面板和 AoA 指示灯的亮度。                                        |
+|      |                                                    | DATA LINK 开关必须打开以检查 DDI 灯。                                             |
+|      |                                                    | FIRE DET/EXT - 检查左/右 FIRE 和 GO 灯亮起。INST - 5秒后检查以下在仪表上的反应：  |
+|      |                                                    | 使 L STALL 和 R STALL 告警灯闪烁。                                                |
+|      |                                                    | 核实 RIO 燃油量。                                                                 |
+| 6    | 弹射座椅                                           | 解除保险                                                                          |
+|      |                                                    | 确认 RIO 座椅解除保险。                                                           |
+| 7    | 舱盖控制手柄                                       | 关闭                                                                              |
+| 8    | ACM 面板                                           | 调定                                                                              |
+|      |                                                    | - 航炮射速 - 调定并检查剩余弹药量。                                               |
+|      |                                                    | - SW COOL - OFF。                                                                 |
+|      |                                                    | - MSL PREP - OFF。                                                                |
+|      |                                                    | - MSL MODE - NORM。                                                               |
+|      |                                                    | - 挂点状态窗 - 检查。                                                             |
+|      |                                                    | 确认与挂载武器一致。                                                              |
+| 9    | EMERG STORES JETT 按钮灯                           | 熄灭                                                                              |
+| 10   | LADDER 指示灯                                      | 熄灭                                                                              |
+|      |                                                    | 命令飞行联队舰载机长收起登机梯和脚踏。                                            |
+| 11   | 通知 RIO                                           | 准备起动                                                                          |

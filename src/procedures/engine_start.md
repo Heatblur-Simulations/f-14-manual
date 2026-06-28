@@ -1,43 +1,42 @@
-# Engine Start
+# 发动机起动
 
-## Pilot
+## 飞行员
 
-| Step | Item                                                                                                         | Action/Details                                                                                 |
-| ---- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
-| 1    | Check AIR SOURCE switch is set to OFF                                                                        |                                                                                                |
-| 2    | Set HYD TRANSFER PUMP switch                                                                                 | OFF (Guard up).                                                                                |
-| 3    | EMERG FLT HYD switch to LOW                                                                                  | Check for ON flag in EMER FLT LOW hydraulic pressure window.                                   |
-|      |                                                                                                              | Verify control over horizontal and rudder control surfaces on surface position indicator.      |
-| 4    | EMERG FLT HYD switch to HIGH                                                                                 | Check for ON flag in EMER FLT HI hydraulic pressure window.                                    |
-|      | Verify control over horizontal and rudder control surfaces on surface position indicator.                    | Should have a higher deflection rate than LOW.                                                 |
-| 5    | EMERG FLT HYD switch to HIGH                                                                                 | Check for ON flag in EMER FLT HI hydraulic pressure window.                                    |
-| 6    | ENG CRANK switch to R (Right engine).                                                                        | Check for oil and hydraulic pressure at roughly 20% RPM.                                       |
-|      |                                                                                                              | Check START/VALVE caution light indication.                                                    |
-|      |                                                                                                              | Switch is held in position automatically by solenoid until engine is at roughly 50% RPM.       |
-| 7    | Right throttle to IDLE at 20% RPM                                                                            | Will automatically actuate ignition system and fuel flow.                                      |
-|      |                                                                                                              | Light off (EGT temperature rise) should occur within 5-15 secs.                                |
-|      |                                                                                                              | EGT temperature should peak around 40-50% and not exceed 890 °C which constitutes a hot start. |
-| 8    | Check ENG CRANK switch returns to OFF around 50% rpm and START/VALVE caution light turns off                 | If ENG CRANK stays at R manually set it to off before 60% rpm.                                 |
-|      |                                                                                                              | If START/VALVE caution light is still on, disconnect starter air.                              |
-| 9    | Check R GEN caution light turns off                                                                          | At around 59% rpm.                                                                             |
-| 10   | Check R FUEL PRESS caution light turns off                                                                   | Before idle rpm.                                                                               |
-| 11   | Check engine idle instrument readings                                                                        | - RPM - 62 to 78%.                                                                             |
-|      |                                                                                                              | - EGT - 500 °C (nominal).                                                                      |
-|      |                                                                                                              | - FF - 950 to 1400 Pph (nominal).                                                              |
-|      |                                                                                                              | - NOZ position - 100%.                                                                         |
-|      |                                                                                                              | - OIL - 25 to 35 psi (nominal, 15 minimum).                                                    |
-|      |                                                                                                              | - FLT HYD PRESS - 3000 psi.                                                                    |
-| 12   | Order plane captain to disconnect external electrical power                                                  |                                                                                                |
-| 13   | ENG CRANK switch to L (Left engine).                                                                         | When combined hydraulic pressure reaches 3000 psi switch ENG CRANK back to OFF.                |
-| 14   | HYD TRANSFER PUMP switch to NORMAL.                                                                          | Will operate from flight side to maintain combined side at between 2400-2600 psi.              |
-|      | If it does not pressurize combined side within 10 secs, immediately set HYD TRANSFER PUMP switch to SHUTOFF. |                                                                                                |
-| 15   | HYD TRANSFER PUMP switch to SHUTOFF                                                                          |                                                                                                |
-| 16   | Repeat steps 6 to 11 for left engine                                                                         |                                                                                                |
-| 17   | Order plane captain to disconnect starter air                                                                |                                                                                                |
-| 18   | Cycle AIR SOURCE switch to L ENG, R ENG, then set it to BOTH ENG                                             | Verify cockpit airflow at all positions.                                                       |
-| 19   | HYD TRANSFER PUMP switch to NORMAL                                                                           |                                                                                                |
+| 步骤 | 项目                                                                            | 动作/细节                                                                |
+| ---- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| 1    | 确认 AIR SOURCE 开关位于 OFF 档。                                               |                                                                          |
+| 2    | HYD TRANSFER PUMP 开关                                                          | OFF（升起保护盖）                                                        |
+| 3    | EMERG FLT HYD 开关拨到 LOW                                                      | 检查 EMER FLT LOW 窗口中的 ON 旗帜。                                     |
+|      |                                                                                 | 在操纵面位置指示器中确认水平安定面以及方向舵的控制。                     |
+| 4    | EMERG FLT HYD 开关拨到 HIGH                                                     | 检查 EMER FLT HI 窗口中的 ON 旗帜。                                      |
+|      | 在操纵面位置指示器中确认水平安定面以及方向舵的控制。                            | 控制面偏转率应该比 LOW 时更高。                                          |
+| 5    | EMERG FLT HYD 开关拨到 AUTO (LOW)                                               | 确认 EMER FLT LOW 和 HI 窗口中的 OFF 旗帜。                              |
+| 6    | ENG CRANK 开关拨至 R（右发动机）。                                              | 转速约20%时，检查燃油和液压压力读数。                                    |
+|      |                                                                                 | 检查 START/VALVE 注意灯。                                                |
+|      |                                                                                 | 开关通过螺线管自动保持直到发动机转速达到约50%。                          |
+| 7    | 当转速达到20%后，将右侧油门握把推至慢车位。                                     | 自动起动点火系统并向发动机注油。                                         |
+|      |                                                                                 | 5-15秒内指示灯将熄灭（EGT 温度上升）。                                   |
+|      |                                                                                 | EGT 温度应在转速40%-50%时达到峰值且不超过890°C 否则为热启动。            |
+| 8    | 发动机转速约50%时，确认 ENG CRANK 开关返回 OFF 档位 且 START/VALVE 注意灯熄灭。 | 如果 ENG CRANK 开关仍处于 R 档位，那么在转速达到60%前将其拨回 OFF 档位。 |
+|      |                                                                                 | 如果 START/VALVE 注意灯仍亮起，断开外部气源。                            |
+| 9    | 确认 R GEN 注意灯熄灭。                                                         | 发动机转速约59%时。                                                      |
+| 10   | 确认 R FUEL PRESS 注意灯熄灭。                                                  | 发动机转速进入慢车前。                                                   |
+| 11   | 确认发动机怠速状态下仪表读数。                                                  | - RPM - 62% 至 78%。                                                     |
+|      |                                                                                 | - EGT - 500°C（标称值）                                                  |
+|      |                                                                                 | - FF - 950 至 1400 磅/时（标称值）                                       |
+|      |                                                                                 | - NOZ 位置 - 100%。                                                      |
+|      |                                                                                 | - OIL - 25 至 35 psi（标称值，最小15 psi）                               |
+|      |                                                                                 | - FLT HYD PRESS - 3000 psi.                                              |
+| 12   | 命令飞行联队舰载机长断开外部电源。                                              |                                                                          |
+| 13   | ENG CRANK 开关拨至 L（左发动机）                                                | 当联合液压压力达到3000 psi 后，将 ENG CRANK 拨至 OFF 档位。              |
+| 14   | HYD TRANSFER PUMP 拨至 NORMAL。                                                 | 通过液压输送泵 从飞行液压系统侧向联合系统液压侧加压至 2400-2600 psi。    |
+|      | 若10秒内联合液压系统侧没有加压， 立刻将 HYD TRANSFER PUMP 开关拨至 SHUTOFF。    |                                                                          |
+| 15   | HYD TRANSFER PUMP 开关拨至 SHUTOFF。                                            |                                                                          |
+| 16   | 左发动机启动流程重复上述步骤中的6至11。                                         |                                                                          |
+| 17   | 命令飞行联队舰载机长断开外部气源。                                              |                                                                          |
+| 18   | 依次切换 AIR SOURCE 开关至 L ENG 和 R ENG，然后将其拨至 BOTH ENG。              | 检查开关处于不同位置时驾驶舱内的气流。                                   |
+| 19   | HYD TRANSFER PUMP 拨至 NORMAL。                                                 |                                                                          |
 
 ## RIO
 
-The RIO monitors pilot procedures and plane captain signals to ensure maximum safety during engine
-start sequence.
+RIO 会监控飞行员的操作程序和舰载机长的手势信号，以确保发动机起动过程中实现最高安全水平。

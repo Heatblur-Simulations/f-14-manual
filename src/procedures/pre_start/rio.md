@@ -1,21 +1,22 @@
-# Prestart (RIO)
+# 起动前 (RIO)
 
-| Step | Item                                            | Action/Details                                                                                                                                                          |
-| ---- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | Verify that external power and air is connected | **CAUTION: Starting WCS and or displays without external air can cause damage to those systems as external air is used for cooling when no on-board air is available.** |
-| 2    | ICS                                             | Check                                                                                                                                                                   |
-|      |                                                 | Verify two-way communication between crewmembers and adjust volume.                                                                                                     |
-| 3    | DL, TACAN and U/VHF                             | Set in accordance with mission parameters.                                                                                                                              |
-| 4    | Fuel quantity                                   | Check                                                                                                                                                                   |
-| 5    | Lights                                          | Check                                                                                                                                                                   |
-|      |                                                 | Adjust console and instrument lighting if required.                                                                                                                     |
-| 6    | LTS test                                        | Check                                                                                                                                                                   |
-|      |                                                 | Check that all caution and advisory lights, ECM lights and DDI lights illuminate.                                                                                       |
-|      |                                                 | This is done when pilot selects LTS test on MASTER TEST switch.                                                                                                         |
-|      |                                                 | _Note:_ When pilot selects INST test, RIO fuel counter should decrease to 2000 pounds and MASTER CAUTION, FUEL LOW and OXY LOW lights should illuminate.                |
-| 7    | Ejection seats                                  | Armed                                                                                                                                                                   |
-|      |                                                 | Visually check that pilot locking tab is depressed.                                                                                                                     |
-| 8    | CANOPY handle                                   | Close                                                                                                                                                                   |
-|      |                                                 | Verify that pilot is ready to close canopy.                                                                                                                             |
-| 9    | Acknowledge                                     | Ready to start                                                                                                                                                          |
-|      |                                                 | Inform pilot, ready to start.                                                                                                                                           |
+
+| 步骤 | 项目                       | 动作/细节                                                                                                             |
+| ---- | -------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| 1    | 确认已连接外部电源和气源。 | **注意：当机内气源不可用时，在没有外部气源提供冷却的情况下启动 WCS 和/或 显示器可能会导致上述设备损坏。**             |
+| 2    | ICS                        | 检查                                                                                                                  |
+|      |                            | 核实机组成员之间建立双向通信并调整音量。                                                                              |
+| 3    | 数据链、TACAN 和 U/VHF     | 根据任务需求调定。                                                                                                    |
+| 4    | 燃油总量                   | 检查                                                                                                                  |
+| 5    | 灯光                       | 检查                                                                                                                  |
+|      |                            | 按需调整控制台和仪表照明。                                                                                            |
+| 6    | LTS 测试                   | 检查                                                                                                                  |
+|      |                            | 检查所有警告和注意灯、ECM 指示灯和 DDI 指示灯是否亮起。                                                               |
+|      |                            | 由飞行员选择 MASTER TEST 开关的 LTS 档位进行测试。                                                                    |
+|      |                            | _注意:_ 当飞行员选择 INST 测试时，RIO 油量表读数应减少至2000磅，且 MASTER CAUTION、FUEL LOW 和 OXY LOW 指示灯应亮起。 |
+| 7    | 弹射座椅                   | 解除保险                                                                                                              |
+|      |                            | 目视检查飞行员弹射座椅锁定片已经按下。                                                                                |
+| 8    | 舱盖控制手柄               | 关闭                                                                                                                  |
+|      |                            | 确认飞行员已经准备好关闭座舱盖。                                                                                      |
+| 9    | 确认                       | 准备起动                                                                                                              |
+|      |                            | 通知飞行员，准备起动。                                                                                                |
