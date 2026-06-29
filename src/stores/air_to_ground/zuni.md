@@ -10,5 +10,3 @@
 
 “祖尼”航空火箭弹由 RIO 使用武器控制面板设置，投放参数和选项与普通航弹一致，投放模式（**DLVY
 MODE**）开关用于配置航箭吊舱是否齐射以及连射。
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wftck0C3fJ8?si=tN1LKox8rjGu4uzh" title="DCS World - F-14 Tomcat - Front Seat - Weapons - Zuni Rockets with Jester" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

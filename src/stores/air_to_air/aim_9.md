@@ -27,7 +27,8 @@ SEAM 允许导引头解锁并在导引头限制（离 ADL
 40°）内跟踪目标，使得飞行员能提前瞄准目标，从而提升导弹的性能。SEAM 同时还允许 F-14 中的 WCS 将导引头隶属到 ADL
 20° 内已锁定的目标上，来实现偏离瞄准轴锁定。
 
-F-14 上的 AIM-9 依然可以使用早期的瞄准轴模式，该模式下导引头保持隶属于 ADL（2.5°视场），但通常会选用 SEAM 来扫描 ADL 周围或对目标进行跟踪。SEAM 没有可视化的标识提供给飞行员并且 SEAM 用于扩展导引头的有效视场。
+F-14 上的 AIM-9 依然可以使用早期的瞄准轴模式，该模式下导引头保持隶属于 ADL（2.5°视场），但通常会选用 SEAM 来扫描 ADL 周围或对目标进行跟踪。
+SEAM 没有可视化的标识提供给飞行员并且 SEAM 用于扩展导引头的有效视场。
 就像所有响尾蛇导一样，目标探测是根据音调来提示的。在探测时会出现低吼音调，当导引头指向红外源时，音调会升高。
 
 ## 导弹操作
@@ -52,5 +53,3 @@ LOCK 指示灯熄灭。
 
 如果成功锁定，音调将持续响起，SEAM
 LOCK 灯保持亮起，飞行员按下驾驶杆扳机来发射导弹。发射后，下一枚 AIM-9 将会被自动选中。
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4m-Q02gxFEA?si=uKW6h6gTzLfwNDxw" title="DCS World - F-14 Tomcat - Front Seat - Weapons - AIM-9 Sidewinder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
