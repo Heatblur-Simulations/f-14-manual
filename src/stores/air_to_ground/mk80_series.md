@@ -1,33 +1,21 @@
-# Mk-81, 82, 83, and 84 GP Bombs
+# Mk-81、Mk-82、Mk-83 和 Mk-84 通用航空炸弹
 
-![Mk-80 Series Bombs](../../img/weapons_dumb.jpg) _U.S. Navy photo by
-Photographer’s Mate Airman Justin S. Osborne. (030321-N-0382O-506)_
+![Mk-80 Series Bombs](../../img/weapons_dumb.jpg) _由美国海军摄影师 Justin S.
+Osborne 拍摄（030321-N-0382O-506）_
 
-The Mk-80 series bombs are the standard general-purpose bombs used by the US
-Navy and allies and were first dropped in combat during the Vietnam War. The
-Mk-82 also has the capability to mount a retardation system using either folding
-fins or an inflated ballute to brake the bomb after release, allowing them to be
-dropped at lower altitudes as the dropping aircraft has more time to move away
-from them. Those versions are called the Mk-82 Snake Eye (fins) and Mk-82AIR
-(ballute) in DCS.
+Mk-80 系列航弹是美国海军与盟国的标准通用航弹，这个系列的航弹在越战期间首次投入使用。
+Mk-82 还能够装备增阻部件——使用折叠式高阻尾翼或减速伞尾部组件使航弹减速，让飞机在低空投弹时有更多时间脱离，避免爆炸波及载机自身。
+Mk-82 航弹的这些高阻型号在 DCS 中被称为 MK-82“蛇眼”（高阻尾翼）和 MK-82AIR（减速伞）。
 
-The F-14 is capable of carrying all the various bombs in the Mk-80s series, 81
-through to 84. While the ground attack mission never really materialized for the
-F-14 in the Navy, it was tested for and cleared to deliver these weapons from
-the start.
+F-14 能够携带 Mk-80 系列中的各型航弹——从 Mk-81 到 Mk-84 。
+尽管设计时并没有考虑使用 F-14 执行对地攻击任务，但这些航弹从一开始就在 F-14 上进行了测试，并交付使用。
 
-The F-14 uses the Phoenix rails (stations 3-6) and the glove pylons’ lower
-stations to mount the bombs. The rails themselves can carry all four variants
-while the 81 to 83 can also be mounted on substations along the sides of the
-Phoenix rails as well as on TERs on the glove pylons.
+F-14 使用武器导轨（3号挂点至6号挂点）和翼套挂架下方的挂点来挂载航弹。
+导轨本身可以挂载 Mk-80 系列的四种航弹，而 Mk-81 至 Mk-83 也可以安装在武器导轨侧面的挂点上，也可以安装在翼套挂架连接的 TER 上。
 
-All of the Mk-80 bombs have nose fuzes only and should be dropped with the nose
-(N) fuze setting on the mechanical fuze switch on the RIO armament panel. The
-Mk-82AIR and Snake Eye variants use the tail fuze wire to enable bomb
-retardation, meaning that the nose/tail (N/T) mechanical fuze option should be
-used if retardation is needed.
+所有的 Mk-80 航弹仅含有头部引信\*，投放航弹时，应将 RIO 武器控制面板中的 MECH
+FUSE 开关设置到 NOSE（N）档位。
+Mk-82AIR 和 Mk-82“蛇眼”型号使用尾部引信线来启用增阻部件，这意味着，如需使用增阻部件，应选择使用头部/尾部（N/T）机械引信。
 
-The total amount of the different bombs carried depends on weapon weight and
-weapon clearance between the rails; the actual number varies from 18 for the 81s
-and 82s to just 4 for the 84s as those can only be mounted on the rails
-themselves. For more info, see the F-14 loadout diagrams.
+F-14 可挂载的不同航弹的总量取决于武器重量以及导轨上挂载的间距，
+实际载弹数量从18枚 Mk-81 或 Mk-82 到4枚 Mk-84 不等，这是因为 Mk-84 只能直接安装在导轨上。详细的挂载信息请参考下文中的 F-14 挂载示意图。

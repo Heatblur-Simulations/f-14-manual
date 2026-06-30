@@ -1,11 +1,7 @@
-# LUU-2 Parachute Flare
+# LUU-2 降落伞照明弹
 
-The LUU-2 parachute flare is an air-launched flare suspended by a parachute used
-to illuminate the ground during nighttime.
+LUU-2 降落伞照明弹是一种空射照明弹，通过降落伞减速在空中停留，用于在夜间照亮地面。
 
-The F-14 can carry up to 16 LUU-2 flares in up to 4 SUU-25 flare dispensers on
-TERs at stations 4 and 5, each TER capable of carrying up to 2 dispensers in
-order not to conflict with the fuselage.
+F-14 可以携带多达16枚 LUU-2 照明弹，4 号和 5 号挂点上连接 TER 时最多可挂载 4 个 SUU-25 照明弹吊舱，其中每个 TER 最多能携带 2 个吊舱，以免与机身冲突。
 
-The LUU-2 parachute flare is launched and set up in the same way as a
-general-purpose bomb.
+LUU-2 降落伞照明弹的发射和设置方式与通用航空炸弹相同。

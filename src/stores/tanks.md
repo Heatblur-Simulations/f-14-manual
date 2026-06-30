@@ -1,7 +1,6 @@
-# Tanks
+# 副油箱
 
-## FPU-1 Fuel Tank
+## FPU-1 副油箱
 
-The FPU-1 fuel tank is carried by the F-14 Tomcat on stations 2 and 7 on each
-engine nacelle. They each carry up to 2,000 pounds of fuel and can be jettisoned
-in the same way as other stores using the normal procedures.
+FPU-1 油箱安装在 F-14
+“雄猫”发动机短舱下方的 2 号和 7 号挂点。每个油箱能携带多达 2000 磅燃油，并且与其他挂载一样可以使用正常程序抛弃。

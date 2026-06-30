@@ -1,25 +1,19 @@
-# Pods
+# 吊舱
 
-## TACTS Pods
+## TACTS 吊舱
 
-The TACTS pod is an analysis pod used during training missions, carried on LAU-7
-rails instead of AIM-9s, normally on station 1A and 8A. They are normally
-carried as a pair of two, one on each side.
+TACTS 是训练任务中安装在 LAU-7 导轨上代替 AIM-9 的分析吊舱，一般是 1A 和 8A 挂点上。通常会在飞机上成对携带 TACTS 吊舱，每侧各一个。
 
-> 💡 In DCS, their functionality is purely cosmetic.
+> 💡 DCS 中的 TACTS 吊舱没有实际功能，仅作为装饰。
 
 ## LANTIRN
 
-![LANTIRN](../img/weapons_lantirn.jpg) _U.S. Navy photo by Photographers Mate
-Airman Jason Frost. (030122-N-9403F-002)_
+![LANTIRN](../img/weapons_lantirn.jpg) _由美国海军摄影师 Jason
+Frost 拍摄（030122-N-9403F-002）_
 
-The LANTIRN was adapted for use on the F-14 Tomcats during the 1990s as the
-F-14’s role started to gravitate towards including the precision strike role.
+随着作战职能开始逐渐偏向精确对地攻击，F-14“雄猫”在20世纪90年代适配了 LANTIRN 吊舱。
 
-The version carried on the Heatblur DCS F-14B Tomcat represents the earliest
-integrations of the LANTIRN, the pod being carried only on station 8B and
-hardwired to the control panel in the RIO cockpit and to the video input on the
-TID/VDI.
+Heatblur DCS
+F-14B“雄猫”上装备的是最早的集成在 F-14 上的 LANTIRN 吊舱，吊舱只能安装在 8B 挂点上，通过电路硬连线到 RIO 驾驶舱中的控制面板，以及硬连线至 TID/VDI 的视频输出源中。
 
-For more information regarding the use of the LANTIRN pod, see the section about
-it under the General Design and Systems Overview chapter.
+更多关于 LANTIRN 吊舱的信息，请查看总体设计和系统总览中对应的内容。

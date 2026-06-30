@@ -1,80 +1,54 @@
-# AIM-7 Sparrow
+# AIM-7 “麻雀”
 
-![AIM-7 Sparrow](../../img/weapons_aim-7.jpg) _U.S. Navy photo by Photographer’s
-Mate 3rd Class Joshua Karsten. (041108-N-8704K-008)_
+![AIM-7 Sparrow](../../img/weapons_aim-7.jpg) _由美国海军摄影师 Joshua
+Karsten 拍摄（041108-N-8704K-008）_
 
-The AIM-7 Sparrow air-to-air missile is a supersonic boost-glide missile capable
-of engaging both aircraft and missiles in all weather conditions. The AIM-7
-Sparrow missile is a medium-range air-to-air missile with a max range of at
-least 16 NM (30 km) for the AIM-7E and at least 38 NM (70 km) for the AIM-7F and
-AIM-7M. The all-weather capability comes from the missile being radar-guided,
-more exactly SARH (semi-active radar homing). This means that the seeker of the
-Sparrow relies on the AN/AWG-9 painting the targets for it and following the
-radar emissions being reflected off the target.
+AIM-7“麻雀”空空导弹是一种超音速助推-滑翔导弹，它能在全天候条件下攻击飞机和导弹。AIM-7
+“麻雀”是一款中程空对空导弹，AIM-7E 最大射程超过16海里（30千米）而 AIM-7F 和 AIM-7M 最大射程超过38海里（70千米）。
+AIM-7 的全天候能力来自于导弹使用雷达制导，更确切地说是半主动雷达制导（SARH）。
+这意味着“麻雀”只有依赖 AN/AWG-9 为其照射目标，其导引头才能跟踪目标的雷达反射信号。
 
-The F-14 can carry the AIM-7E, AIM-7F, and AIM-7M on four dedicated recesses on
-the aircraft fuselage and one each on the glove pylons.
+F-14 可以在机身上的四个专用半埋式挂架和左右翼套挂架上分别挂载一枚 AIM-7E、AIM-7F 或 AIM-7M 导弹。
 
-Apart from the various improvements to the missile range, seeker, and warhead,
-the major difference between the different versions is that the AIM-7F and newer
-missiles can also be guided via pulse doppler illumination in addition to CW as
-opposed to only CW.
+除了导弹射程，导引头和战斗部的各种改进之外，不同版本之间的主要区别在于 AIM-7F 及其改进型除了 CW（连续波）外也可以通过脉冲多普勒进行制导。
 
-## Missile Preparation
+## 导弹发射准备
 
 ![Missile Preparation](../../img/weapons_mslprep.jpg)
 
-Before launch, the AIM-7 missiles need to be prepared by the selection of the
-MSL PREP-ON pushbutton on the pilot ACM panel. This commands the WCS to start
-missile preparation for the AIM-7 and AIM-54.
+发射 AIM-7 导弹前，需要在前座飞行员 ACM 面板上选择 MSL
+PREP-ON 按钮来开始准备程序。这将指令 WCS 开始准备 AIM-7 和 AIM-54 导弹。
 
-In the case of the AIM-7, the WCS applies electrical power to the missile to
-pre-heat the electronics and gyros. It also injects CW radar video from the
-radar to the missiles via an emitter on the aft end of the rail to a receiver at
-the aft end of the missile. This video is used to tune the AIM-7 missile to the
-selected CW frequency on the RIO DDD panel. When the individual missiles are
-tuned and ready, the corresponding missile status windows turn white to indicate
-a ready missile.
+按下导弹发射准备按钮时，对于 AIM-7 来说，WCS 将为导弹提供预热电子元件和陀螺仪所需的电力。
+WCS 还将会通过导弹导轨后端的发射器向导弹尾部的接收机输入 CW 雷达视频。此视频用于将 AIM-7 导弹调谐到 RIO 在 DDD 面板中选定的 CW 频率上。
+当一枚导弹调谐并准备完毕时，ACM 面板对应的挂架状态标识旗将变成白色，表示对应挂架上的导弹已经准备完毕。
 
-## Launch Modes
+## 发射模式
 
-The two available launch modes for the AIM-7 on the F-14 are the normal mode and
-the boresight mode. To select the AIM-7 for launch, the pilot selects the SP/PH
-(sparrow/phoenix) position on the stick weapon selector. Selection of which
-Sparrow to launch is done automatically by the WCS.
+F-14 上有两种可用发射模式用于 AIM-7 ，分别是正常模式和瞄准轴模式。飞行员使用驾驶杆武器选择开关上的 SP/PH（“麻雀”/“不死鸟”）档位来选择发射 AIM-7。WCS 将自动选择一枚“麻雀”来发射。
 
-Depression of the weapon selector switches from SP to PH and vice versa. If an
-STT target is available, the WCS will automatically use the normal mode for
-launch unless BRSIT (boresight) is selected on the MSL MODE (missile mode)
-switch on the ACM panel. In all other cases, the boresight mode will be used.
+按下武器选择开关会将选定的武器从 SP 切换至 PH，反之亦然。
+如果武器控制系统有 STT 目标，那么，除非在 ACM 面板的 MSL
+MODE（导弹模式）开关上选择 BRSIT（瞄准轴），否则 WCS 将自动使用正常模式进行发射。所有其他情况下将使用瞄准轴模式发射导弹。
 
-### Normal Mode
+### 正常模式
 
 ![Missile Options](../../img/weapons_msloptionsp.jpg)
 
-As the normal mode is used to engage a target tracked in STT, the WCS is capable
-of using both CW and pulse doppler for guidance. When using CW in the normal
-mode, the AN/AWG-9 radar uses a dedicated CW antenna to spotlight the tracked
-target more directly than via the flood antenna. While CW is the normal guidance
-mode for all AIM-7 variants, it is possible to select the pulse doppler guidance
-mode instead when using the AIM-7F and AIM-7M missiles.
+因为正常模式是用于攻击使用 STT 跟踪的目标，所以 WCS 可以使用 CW（连续波）或脉冲多普勒进行制导。
+在正常模式下使用 CW 模式时，AN/AWG-9 雷达使用专用 CW 天线，它能比泛指天线更直接地聚焦照射跟踪的目标。
+虽然 CW 模式是所有 AIM-7 型号的正常制导模式，但使用 AIM-7F 和 AIM-7M 导弹时，可以选择脉冲多普勒制导模式。
 
-This is done on the RIO's armament panel with the MSL OPTIONS switch by setting
-it to SP DP (sparrow doppler). When selected, this causes the WCS to guide the
-Sparrow missiles using pulse doppler illumination instead.
+RIO 可以在武器控制面板上将 MSL OPTIONS 开关设置到 SP
+PD（“麻雀” 多普勒）档位来切换至脉冲多普勒制导。选择 SP
+PD 将使 WCS 采用脉冲多普勒照射来为“麻雀”导弹提供制导。
 
-Regardless of guidance mode, the WCS calculates the missile LAR (launch
-acceptance region) and displays the missile launch ranges on the VDI and TID.
-The HUD shows the target diamond and current target range, Rmin and Rmax, while
-the VDI, DDD, and TID display the attack guidance symbology as well as the
-above-mentioned missile LAR indications.
+无论采用哪种制导模式，WCS 都会计算导弹的 LAR（发射允许区间），并在 VDI 和 TID 上显示导弹发射距离。
+HUD 显示菱形目标指定符、当前目标距离、Rmin（最小发射距离）和 Rmax（最大发射距离），而 VDI、DDD 和 TID 显示攻击引导符号系统以及上述的导弹 LAR 指示。
 
-### Boresight Mode
+### 瞄准轴模式
 
-The boresight mode uses the CW flood antenna on the AN/AWG-9 radar and will
-cause the missile to track the strongest target return within the flood area. In
-addition to when launched in boresight mode, the radar will also switch to flood
-mode when a target is lost, either before launch or after launch, enabling the
-pilot to try and save the shot by keeping the target within the flood area.
+瞄准轴模式使用 AN/AWG-9 雷达上的 CW 泛指天线并使导弹跟踪泛指区内反射信号最强的目标。
+除了在瞄准轴模式下发射导弹外，雷达还将在目标丢失、麻雀发射前或者发射后切换至泛指模式，从而允许飞行员通过将目标保持在泛指区域内来尝试继续引导导弹。
 
 ![CW Flood](../../img/weapons_cwflood.jpg)

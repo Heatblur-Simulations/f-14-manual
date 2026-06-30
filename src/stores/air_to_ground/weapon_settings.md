@@ -1,57 +1,45 @@
-# Air-to-Ground Weapon Settings
+# 空对地武器设定
 
 ![Armament Panel](../../img/weapons_armamentpanel.jpg)
 
-The air-to-ground weapon delivery is set up by the RIO on his armament panel on
-the left vertical panel of the RIO cockpit.
+空对地武器投放是由 RIO 使用左侧垂直控制台中的武器控制面板来设置的。
 
-The type of munition for delivery is set up by the wheel on the top of the
-panel, turning it to the correct munition. This configures the WCS with the
-correct parameters for the selected munition.
+通过面板顶部的 WPN
+TYPE 拨轮来选择投放武器的类型，将其转动到对应的档位。转动到对应档位将配置 WCS 使用所选武器的正确投放参数。
 
-> 💡 The Mk-81, 82, and 83 have both an L and an H option for low-drag and
-> high-drag versions, respectively.
+> 💡
+> Mk-81、Mk-82 和 Mk-83都分别有 “L”（低阻）和 “H”（高阻）的选项，以区分航弹的低阻和高阻型号。
 
-Under **DLVY MODE** (delivery mode), it is possible to set STP/RPL (step/ripple)
-and SGL/PRS (single/pairs). The possible combinations are:
+在 **DLVY MODE** （投放模式）选择开关上，可以设置 STP / RPL（逐个/连投）和 SGL /
+PRS（单发/成对）投放选项。所有可能的组合如下：
 
-- **STP and SGL**: Releases one store with each depression of the bomb release
-  button on the pilot stick.
-- **STP and PRS**: As with STP and SGL but each depression of the bomb release
-  button on the pilot stick releases a pair of stores. Only works for paired
-  stations, 1 with 8, 3 with 6, and 4 with 5.
-- **RPL and SGL**: Used with all attack modes, each depression of the bomb
-  release button on the pilot stick releases a set amount of stores set by the
-  **QTY** (quantity) wheels with the interval set by the **INTERVAL** wheels (in
-  milliseconds).
-- **RPL and PRS**: As RPL and SGL but each release pulse releases a pair of
-  stores, **QTY** still sets the total amount of stores to be released.
+- **STP 和 SGL** - 驾驶杆上的航弹投放按钮，每按下一次投放一枚航弹。
+- **STP 和 PRS** - 与 STP 和 SGL 类似，投放按钮每按下一次投放一对航弹。
+这个模式只适用于对称的挂架， 1 号挂点对应 8 号挂点， 3 号挂点对应 6 号挂点， 4 号挂点对应 5 号挂点。
+- **RPL 和 SGL** - 适用于所有攻击模式，通过 **QTY** （数量）拨轮和 **INTERVAL**
+  （间隔）拨轮设置投放数量和间隔（单位是毫秒）后，按住航弹投放按钮，飞机会以设定的投放间隔和数量进行投放。
+- **RPL 和 PRS** - 与 RPL 和 SGL 类似，但按住航弹投放按钮会投放一对航弹，使用 QTY 拨轮来设置需要投放的航弹总数。
 
-The **MECH FUSE** switch sets which mechanical fuse to arm on the stores.
-**NOSE** arms the nose fuse, **SAFE** inhibits arming of the fuses, and
-**NOSE/TAIL** arms both fuses.
+使用 **MECH FUSE** 开关来选择挂载启用哪种机械引信。 **NOSE** 启用头部引信， **SAFE**
+禁止引信解除保险，而 **NOSE/TAIL** 同时启用头部引信和尾部引信。
 
-The **ELEC FUSE** selector knob sets the electrical fuse of the store to be
-released:
+使用 **ELEC FUSE** 开关来设置投放挂载的电子引信模式：
 
-- **SAFE**: Inhibits electrical bomb fusing.
-- **VT**: Sets air-burst mode at preset burst height for compatible stores.
-- **INST**: Sets instantaneous burst mode.
-- **DLY 1**: Sets preset time delay 1.
-- **DLY 2**: Sets preset time delay 2.
+- **SAFE** - 禁用航弹电子引信。
+- **VT** - 为支持空爆模式的挂载设置爆炸高度。
+- **INST** - 选择瞬时模式。
+- **DLY 1** - 选择预设的延时 1。
+- **DLY 2** - 选择预设的延时 2。
 
-The **INTERVAL** and **QTY** (quantity) wheels set the release interval (in
-milliseconds) and quantity of stores to be released, compatible with the
-delivery modes as seen above under **DLVY MODE**.
+**INTERVAL** 和 **QTY**
+（数量） 拨轮分别用于设置挂载投放间隔（单位为毫秒）和投放数量，这两个设定适用于 **DLVY
+MODE** 段落中所述的投放模式 。
 
-Lastly, the **6 STA SEL** (station select) switches set which pylons to use for
-store delivery (also used for selection of what stores to jettison). To select a
-pylon for store delivery, set the corresponding switch to **SEL**. Stations 1
-and 8 should be set to **B** for selection, **SW** was used to jettison AIM-9
-Sidewinders but is now inoperable.
+最后，6 个 **STA SEL**
+（挂点选择）开关用于选择投放挂载（或抛弃挂载）的挂架。将挂架对应的开关拨至 **SEL**
+档位来选择这个挂架进行投放。然而，选择 1 号挂点和 8 号挂点时，应将对应的开关拨至 **B**
+档位。开关的 **SW** 档位曾用于抛弃 AIM-9 “响尾蛇”导弹，但现已无法操作。
 
-> 💡 All F-14 bombs in DCS are assumed to have both types of fuzes, so both the
-> mechanical and electrical fuze need to be set. GBUs, Mk-20s, and Mk-81 to 84s
-> need the mechanical fuze set to either **N** or **N/T** settings, the Mk-82AIR
-> (ballute) and Mk-82 Snake-Eye can be dropped in free-fall with **N** and
-> retarded with **N/T**.
+> 💡 在 DCS 中，可以认为 F-14 挂载的所有类型的航弹都拥有两种引信，所以投放航弹时需要设置机械引信和电子引信。使用 GBU 航弹、Mk-20 系列以及 Mk-81 和 Mk-84 系列的航弹时，需要将机械引信设置到
+> **N** 或者 **N/T** 档位，而使用 Mk-82 AIR（减速伞）和 Mk-82 “蛇眼”炸弹时，选择 **N**
+> 档位会使投放的航弹自由下落，而选择 **N/T** 会启用航弹尾部的增阻组件。

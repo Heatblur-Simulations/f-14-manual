@@ -1,17 +1,9 @@
-# Mk-20 Rockeye
+# Mk-20 “石眼”
 
-The Mk-20 Rockeye is a conventional free-fall bomb like the Mk-80 series bombs,
-but instead of a conventional charge, it carries anti-tank submunitions. The
-Rockeye contains 247 of these anti-tank submunitions, which are released at a
-set height using a radar altimeter, the design being that the submunitions are
-dispersed over a large area for greater effect.
+Mk-20“石眼”和 Mk-80 系列航弹一样，是一种常规自由落体炸弹，但它携带的不是常规弹药，而是反坦克子母弹。“石眼”集束炸弹中包含 247 枚这种反坦克子弹药，Mk-20 使用雷达高度计在设定的高度释放子弹药，这种设计是为了将子弹药分散到更广的区域，增加杀伤效果。
 
-The fuze height itself is set by the ground crew as they’re loaded and can’t be
-changed by the pilot. To arm the Rockeye correctly, the mechanical fuse should
-be set to nose (N).
+引信激活高度只能由地勤人员在装载时调定，飞行员无法更改。投放“石眼”时，应将机械引信设置为头部引信（N）。
 
-The F-14 can carry up to 10 Mk-20 Rockeyes using the Phoenix rails and
-substations as well as TERs on the glove pylons.
+F-14 可以使用武器导轨、扩展挂架和翼套挂架连接的 TER 携带多达 10 枚 Mk-20“石眼”。
 
-> 💡 Additional fuse settings (FMU-140 fuse) pending additional weapon code
-> implementation.
+> 💡 FMU-140 引信设置将在武器系统相关代码完成后实装。

@@ -1,9 +1,5 @@
-# Smokewinder
+# 拉烟吊舱
 
-The Smokewinder is a smoke pod used for aerial displays simulating an AIM-9
-missile to the aircraft interface.
+拉烟吊舱用于空中表演，其模拟了AIM-9 导弹方便飞机接口进行控制。
 
-To enable and disable a Smokewinder, select AIM-9 for launch using boresight
-(BRSIT) and select the corresponding weapon station using the weapon selector on
-the pilot stick. When set up thusly and with master arm on, each pull of the
-trigger enables or disables the Smokewinder discharging smoke.
+选择 AIM-9 的瞄准轴发射模式，然后通过飞行员驾驶杆上的武器选择开关选择相应的武器挂点来启用和禁用拉烟吊舱。设置完成后，当主军械开启，飞行员便可以按下扳机来开始或者停止拉烟。

@@ -1,140 +1,82 @@
-# M-61 Vulcan Six-Barreled Gatling Cannon
+# M-61“火神”六管加特林航炮
 
-![M-61 Vulcan](../img/weapons_m61.jpg) _U.S. Navy photo by Photographers Mate
-Airman Kristopher Wilson. (041129-N-5345W-034)_
+![M-61 Vulcan](../img/weapons_m61.jpg) _由美国海军摄影师 Kristopher
+Wilson 拍摄（041129-N-5345W-034）_
 
-The M-61 Vulcan is a six-barreled hydraulically driven 20 mm automatic cannon
-capable of firing over 6,000 rpm (rounds per minute).
+M-61 “火神” 是一种六管液压驱动的 20 毫米航炮，能以每分钟 6000 发的速度射击。
 
-The F-14 carries the gun internally mounted beneath the cockpit with the muzzle
-being located on the lower left side of the fuselage. 676 20 mm rounds are
-carried in the ammunition drum for the gun and retain the spent cases after the
-rounds have been fired.
+M-61 安装在 F-14 驾驶舱下方的机身内，炮口位于机身的左下侧。航炮的弹鼓内备有 676 发 20 毫米炮弹，并且航炮会保留射击后留下的药筒。
 
-The gun itself is mounted to be elevated slightly more than 3° from the ADL to
-provide built-in lead for dog-fight situations.
+航炮安装的角度比武器基准线（ADL）略高3度，F-14 在格斗中进行提前射击时便能体现这样安装航炮的先天优势。
 
-To fire the gun, no input is needed from the WCS, the gun can be fired by the
-trigger on the pilot stick when selected by the weapons selector on that same
-stick, provided master arm is on. The WCS can, however, provide symbology on the
-HUD to increase gun accuracy. For both air-to-air and air-to-ground modes the
-gun has two sights available. For air-to-air it’s the manual sight and the RTGS
-(real-time gun sight).
+航炮击发无需经过 WCS，当武器选择开关选择 GUN 档位时，且主军械开关拨到 ON 档位，飞行员就可以通过按下驾驶杆中的扳机来发射机炮。但 WCS 可以在 HUD 上显示航炮攻击标识以提高射击精度。航炮在空对空和空对地模式下，每一种模式有两种可用的准星。空对空模式下使用的是手动空对空准星和实时航炮准星（RTGS）。
 
-Selection of the gun is indicated on the bottom of the HUD by a capital G with
-remaining hundreds of rounds indicated below.
+选择航炮作为武器时，HUD 底部会显示一个大写的 “G” 标识，这个标识下方显示了以百发为单位的剩余炮弹数量。
 
 ![Rounds Indicator](../img/weapons_rounds.jpg)
 
-Apart from the indication on the HUD, the rounds remaining indicator on the
-pilot right vertical panel also shows remaining rounds. The indicator counts
-down from 650 but can manually be reset by rotating the knob below the indicator
-to the desired quantity.
+除了 HUD 上的标识外，飞行员右垂直控制台上的航炮弹药计数器也显示了剩余弹药数量。指示器从 650 开始倒数，但可以通过旋转指示器下方的旋钮来重新调整至所需的炮弹剩余数量。
 
 ![Gun Rate Selector](../img/weapons_rate.jpg)
 
-The gun is capable of a 4,000 rpm or 6,000 rpm mode. The lower rate is normally
-used for air-to-ground engagement and the higher rate for air-to-air engagement.
-The gun rate is selected by the GUN RATE switch on the ACM, which also indicates
-the selected option. Selection of ACM will set it to high automatically. The
-maximum number of bullets fired by a trigger pull can be set to be either 50,
-100, 200, or unlimited. The default value is 200 bullets but can be set
-otherwise by the ground crew.
+航炮的两种模式对应的射击速率分别是每分钟 4000 发和每分钟 6000 发。低射速模式通常用于对地攻击，高射速模式用于对空攻击。可以通过 ACM 面板上的 GUN
+RATE（航炮射速）开关切换，面板上也会显示当前选定的模式。选择 ACM 模式将会自动选择航炮高射速模式。每次按下扳机的最大连射开火数值可以设置为50、100、200或无限制。默认值为200发，玩家可以通过地勤来变更为其它设置。
 
-> 💡 In DCS this is set via the kneeboard.
+> 💡 DCS 中通过膝板来设置。
 
-## Manual Air-to-Air Sight
+## 手动空对空准星
 
 ![Manual Air-to-Air Sight](../img/weapons_gunhudmanual.jpg)
 
-In manual mode, the HUD displays the ADL, the armament legend, and the manual
-pipper. This mode is accessed by depressing and releasing the CAGE/SEAM
-pushbutton on the left throttle when in the air-to-air mode with the gun
-selected. In this mode, the pilot has to manually aim the gun using the manual
-pipper as a reference to hit the target. Real target range and needed deflection
-need to be estimated by the pilot.
+在手动模式下，HUD 上显示了 ADL、武器标识以及手动准星。在空对空模式下选择航炮后，按下左油门握把上的 CAGE/SEAM 按钮来进入此模式。在手动模式下飞行员使用手动准星作为参考，操纵飞机来击中目标。实际目标距离和抬高/下压量需要飞行员自己估算。
 
-The manual piper is adjustable to enable the selection of the desired lead. The
-GUN ELEV panel on the pilot right vertical panel sets the lead; normally, this
-should be set to 53 milliradians to place the manual pipper on the gun sight
-line.
+飞行员可以调整手动准星的位置来选择所需的抬高/下压量角度。通过飞行员右垂直控制台上的准星偏移量设置面板来调定所需抬高/下压量，一般会将这个值设置为53毫弧度，以保持手动准星与航炮瞄准线位置对齐。
 
 ![Gun Elevation Panel](../img/weapons_gunelevation.jpg)
 
-## Real-Time Gunsight (RTGS)
+## 实时航炮准星（RTGS）
 
 ![RTGS No Target](../img/weapons_gunhudrtgsnotarget.jpg)
 
-The real-time gunsight mode is the standard gun mode when in the air-to-air mode
-with the gun selected.
+实时航炮准星模式是航炮在空对空模式下的标准射击模式。
 
-In RTGS, the WCS computes the bullet trajectory and displays the location the
-bullets will pass through at 1,000 and 2,000 feet, if no target data is
-available from the WCS. The pipper represents bullet location at 1,000 feet and
-the diamond represents the bullet location at 2,000 feet.
+在 RTGS 模式中，如果 WCS 无可用目标数据，WCS 会计算炮弹飞行轨迹，并显示炮弹在飞行1000英尺和2000英尺后将会通过的位置。十字准星指示1000英尺处炮弹通过的位置，而菱形标识则指示2000英尺处炮弹通过的位置。
 
 ![RTGS Target](../img/weapons_gunhudrtgs.jpg)
 
-If target data is available from the WCS (target tracked in an STT mode), the
-pipper instead displays bullet location at the target’s current range out to
-4,000 feet. The diamond will display radar line of sight to the target (target
-location). This means that when having a target track, the pilot should fly the
-aircraft to place the pipper over the target to hit it.
+如果 WCS 可以（使用 STT 模式跟踪目标）获取目标数据，当目标距离在 4000 英尺内时，十字准星将变为显示目标距离上航炮炮弹通过的位置。菱形标识则显示雷达的视线（也就是目标的位置）。这意味着飞行员需要控制飞机将十字准星对准目标来击落它。
 
-In addition to computing the solution to put bullets at the target's location,
-the RTGS sight will also calculate where the bullets actually are in relation to
-the target when at target range. When the bullets fired are computed to be at
-the target’s location, the diamond switches from target indication to indicating
-bullet position at target range (BATR). This is also indicated by the diamond
-flashing.
+除了根据目标位置计算航炮射击诸元外，RTGS 准星还将计算并显示目标距离上航炮炮弹通过的位置与目标实际位置之间的偏差
+（注：目标与本机的当前距离称为“目标距离”，航炮炮弹的飞行距离与目标距离相同时，炮弹所处的位置叫做 BATR，即目标距离上航炮炮弹通过的位置）。
+当 WCS 计算出炮弹飞行至目标所处的位置时，原本用作指示目标位置的菱形标识会切换为指示目标距离上航炮炮弹通过的位置（BATR），同时，菱形指示框会闪烁。
 
-Using this symbology, it’s possible to see where the target would have needed to
-be to be hit by the bullets. If the gun engagement was executed successfully,
-this means that the diamond should still be on top of the target, blinking,
-indicating that the bullets passed through the target’s location.
+利用这个标识便可以判断出，要击中目标，炮弹需要通过的位置。如果航炮成功命中目标，菱形标识应正好位于目标上方并闪烁，表示炮弹穿过了目标位置。
 
-## Manual Air-to-Ground Sight
+## 手动空对地准星
 
 ![Attack Mode](../img/weapons_attkmode.jpg)
 
-The manual air-to-ground sight works and looks the same way as the manual
-air-to-air sight except that it’s set by the RIO using the ATTK MODE selector on
-the armament control panel that’s located on the RIO left vertical panel.
-Selecting MAN on that selector enables the same HUD symbology as in the manual
-air-to-air sight upon the selection of the air-to-ground mode, the only
-additional HUD symbology being the display of the radar altitude on the right
-side of the HUD. The gun deflection should instead be set according to a
-pre-calculated setting depending on airspeed, target range, and dive angle.
+手动空对地准星的工作方式与手动空对空准星相同，只不过它是由 RIO 使用左侧垂直控制台上的武器控制面板 ATTK
+MODE 旋钮开关设置的。选择空对地模式时，通过 ATTK
+MODE 拨扭选择 MAN 档位， HUD 中会显示与空对空航炮准星相同的标识，唯一的区别是，HUD 右侧增加了当前雷达高度指示。航炮准星的偏移量需要考虑到空速、目标距离和俯冲角度，使用手动空对地模式进行攻击时，应根据这些数值，参考预制的航炮攻击参数进行对照设置。
 
-## Computer/Pilot Mode
+## 计算机/引导模式
 
 ![Computer/Pilot Mode](../img/weapons_guncomputerpilot.jpg)
 
-Computer/pilot mode is used to have the WCS continuously compute a weapon impact
-point for, among other air-to-ground weapons, the gun. It is set by the RIO on
-the ATTK MODE selector, as for manual air-to-ground sight, by selecting
-CMPTR-PLT.
+使用计算机/引导模式时，WCS 会连续计算航炮及其他空对地武器命中点。与手动空对地准星一样，计算机/引导模式是由 RIO 选择 ATTK
+MODE 旋钮开关上的 CMPTR-PLT 档位来启用的。
 
-In this mode, the AN/AWG-9 radar is slaved to the weapon impact point for
-accurate range measurements and enables the HUD display of that same impact
-point.
+在此模式下，AN/AWG-9 雷达会隶属到武器命中点并对准武器命中点来进行精确测距并在 HUD 上显示命中点位置。
 
-The HUD uses the pipper to indicate a real-time weapon impact point and the
-diamond to indicate out of range. When the diamond disappears, the gun is in
-range to engage a target under the pipper. The pull-up cue moves vertically on
-the HUD and when it’s at or above the weapon impact point (pipper), it indicates
-that an immediate pull-up is required to avoid striking the ground and that the
-target is too close to engage safely.
+HUD 上的十字准星指示武器实时命中点，菱形标识则代表超出武器射程。菱形消失表示十字准星指向的目标正处于航炮射程内。HUD 上的拉起提示符将根据飞机的高度垂直移动，当拉起提示符高于/处在武器命中点 (十字准星）的位置时，则表示高度过低，飞行员需要立刻拉起避免撞击地面以及目标过近无法保证安全的进行攻击。
 
-The right side of the HUD displays the barometric altitude scale.
+HUD 右侧显示了气压高度标度。
 
-## Mixed Gun Mode
+## 航炮混合模式
 
 ![Mixed Mode](../img/weapons_gunmixed.jpg)
 
-The gun can also be used at the same time as another air-to-ground munition is
-selected by setting the A/G GUN switch on the armament panel (on the RIO left
-vertical panel) to MIXED. This enables the trigger to fire the gun but no HUD
-symbology is available for the gun as it’s being used to display release data
-for the selected munition. In this mode, the pilot needs to estimate the gun
-impact point manually with the ADL as the only reference on the HUD.
+在选择了其他空对地武器的情况下，将武器控制面板（在 RIO 左侧垂直控制台上）的 A/G GUN 开关拨至 MIXED 档位，便可以同时使用航炮和其他武器。
+在设置为 MIXED 档位后，按下扳机可发射航炮，但是 HUD 中将不会显示航炮瞄准标识，因为 HUD 标识正被用于显示当前选中武器的投放数据。
+使用航炮混合模式时，HUD 中的 ADL 是航炮唯一的参考标识，飞行员需要自行估算炮弹命中点。

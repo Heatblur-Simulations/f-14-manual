@@ -1,129 +1,81 @@
-# Air-to-Ground Weapon Delivery
+# 空对地武器投放
 
-Air-to-ground delivery is initiated by pilot selection of the **A/G** mode on
-the display control panel. After tape read-in (about 30 seconds), the WCS
-initiates the air-to-ground mode and enables relevant symbology on the displays.
+飞行员在显示控制面板中选择了 **A/G**
+模式后飞机就会进入空对地投放模式。在磁带数据读入（需约30秒）完成后，WCS 将进入空对地模式并且在显示器上显示相关的符号。
 
-The weapon selection automatically switches to ordnance (**ORD** on the HUD)
-unless the pilot has selected another weapon. All other options are set by the
-RIO in the back seat.
+除非飞行员已经选择了其他武器，否则 HUD 会自动切换至（对地）挂载模式（HUD 中显示
+**ORD**）。所有其他投放选项都由后座 RIO 设置。
 
-The available attack modes in the F-14 are set by the **ATTK MODE** selector in
-the RIO pit and are:
+RIO 驾驶舱内的 **ATTK MODE** 选择旋钮用于选择攻击模式，F-14 中可用的攻击模式分别是：
 
-- **CMPTR TGT**: Computer target, a semi-automatic computer-guided mode similar
-  to a CCRP mode in newer aircraft.
-- **CMPTR IP**: Computer initial point, an extended CMPTR TGT mode using a known
-  initial point (IP) as a reference for store delivery. Mostly used in
-  situations where the actual target is expected to be hard to locate visually
-  and is located closely to an easily identifiable reference point/landmark.
-- **CMPTR PLT**: Computer pilot, a manual computer and pilot-guided mode using
-  the WCS for store impact point indication on HUD. Similar to a CCIP mode in
-  newer aircraft.
-- **MAN**: Manual, manual backup mode in which the HUD displays a pipper
-  (crosshair) on the HUD at the deflection set by the pilot. Used in case of a
-  systems failure prohibiting the other modes.
-- **D/L BOMB**: Data-link bomb, an automatic mode in which the pilot is steered
-  via data-link cues for remotely controlled store delivery. (Not implemented in
-  DCS at this point in time.)
+- **CMPTR
+  TGT** - 计算机目标模式，这是一种半自动计算机引导模式，类似于新型战机中的 CCRP（连续计算投放点）模式。
+- **CMPTR IP** - 计算机起始点模式是 CMPTR
+  TGT 模式的扩展模式，它使用一个已知的起始点（IP）作为挂载投放参考点。通常在预期目标难以被目视定位，但其附近有易于识别的参考点/地标的情况下使用。
+- **CMPTR
+  PLT** - 计算机引导模式——是一种手动、计算机以及飞行员引导的模式，计算机引导模式将使用 WCS 计算挂载命中点并将命中点显示在 HUD 中。计算机引导模式类似于新型战机中的 CCIP（连续计算命中点）模式。
+- **MAN** - 手动，手动模式是备用模式。该模式下，HUD 上会显示一个由飞行员设置的下压角度可调的准星（十字准星）。用于系统出现故障，其他模式无法启用时。
+- **D/L
+  BOMB** - 数据链投弹模式是一种驾驶员通过数据链路的提示来操纵飞机，在远程操纵下完成挂载投放的自动模式（DCS中尚未实装此功能）。
 
-## Computer Target
+## 计算机目标模式
 
 ![Computer Target](../../img/weapons_cmptrtgt.jpg)
 
-The computer target mode allows the pilot to designate a target onto which the
-WCS then guides the pilot towards store release. This mode is usable for all
-air-to-ground stores, including rockets.
+计算机目标模式允许飞行员指定目标，然后由 WCS 引导飞行员向目标投弹。 此模式适用于所有空对地挂载，包括火箭弹。
 
-When selected, the HUD displays the diamond as target designator and the bomb
-fall line (BFL) through the velocity vector and store impact point pipper
-(crosshair).
+选择计算机目标模式时，HUD 将显示菱形目标指示符、一条穿过速度矢量符的航弹下落线（BFL）和挂载命中点准星（十字准线）。
 
-To designate a target, the pilot steers the aircraft in azimuth to place the
-target along the BFL. Then **UP/DN** on the target designate switch on the left
-wall of the pilot cockpit is used to slew the target designator along the BFL
-until it overlays the target. At that point, the target is designated by
-pressing the target designate switch to **DES**.
+飞行员调整飞机航向，将目标置于 BFL 上来指定目标。 然后，用飞行员驾驶舱壁上的目标指定开关的
+**UP/DN** 来调整目标指示符位置，直到指示符覆盖目标。这时，按下目标指定开关至 **DES**
+档位来指定目标。
 
-After designation, the target designation diamond becomes stabilized to the
-designated position on the ground, and the AN/AWG-9 is slewed to it for range
-measurements. The BFL now remains overlaying the designated target while the
-store impact point pipper and aircraft velocity vector continue to follow
-aircraft movements. In addition, the HUD now displays the upper and lower
-solution cues on the BFL.
+指定目标后，菱形目标指定符会相对地面稳定，并且 AN/AWG-9 会指向指定的位置进行测距。 BFL 会保持在指定的目标上，而十字准星和飞机速度矢量继续跟随飞机移动。 此外，HUD 会在 BFL 上分别显示高低投放标识。
 
-The pilot should now fly the velocity vector and store impact point over the BFL
-until the solution cues reach them. The lower solution cue indicates imminent
-store release when passing the velocity vector, and the pilot should by now be
-holding the bomb release button depressed to authorize WCS store release. When
-the upper solution cue reaches the velocity vector, the WCS automatically
-releases set stores on the condition that the bomb release button is depressed.
+现在飞行员需要控制飞机，将速度矢量和十字准星置于 BFL 上，直到两个投放标识接近速度矢量符和准星。
+低投放标识穿过速度矢量符时，表示即将投弹，此时飞行员应按下并按住航弹投放按钮，授权 WCS 投放挂载。
+当高投放标识与速度矢量符位置重合时，如果投放按钮处于按下状态，WCS 将自动投放选定的挂载。
 
-The pull-up cue (bracket on the HUD) moves upwards on the HUD towards the
-velocity vector with decreasing altitude. When it reaches the velocity vector,
-it indicates that the aircraft is below safe altitude for store release.
+随着飞机高度降低，HUD 上的拉起标识（开口方向朝上的方括号）朝着速度矢量符向上移动。当它与速度矢量符重合时，表示飞机低于投放挂载的安全高度。
 
-## Computer Initial Point
+## 计算机起始点模式
 
-Functionally identical to the Computer Target mode except that a preset initial
-point (IP) is designated instead of the actual target. The IP is preset before
-takeoff using data-link or manually by the RIO using the CAP.
+功能上与计算机目标模式相同，区别在于计算机起始点模式指定预设起始点（IP），而不是指定目标实际位置。这个 IP 在起飞前通过数据链路或由 RIO 在 CAP 中手动设置。
 
-The IP waypoint should be a terrain feature expected to be visually identifiable
-by the pilot even if the target is not.
+IP 航路点应该是易于飞行员目视辨认的地形特征，即使目标不易于辨认。
 
-To set the CAP, the RIO designates the location of the IP waypoint as per the
-other waypoints in the system. (See CAP heading under AN/AWG-9 in the General
-Design and Systems Overview section or the Navigation Systems heading in the
-same section)
+RIO 使用 CAP 来设置 IP 航路点，操作与设置导航系统中其他航路点相同。（参见“总体设计和系统概述”中 AN/AWG-9 下的 CAP 航向部分，或同章节中的导航系统部分）
 
-The message (function) **IP TO TGT** on the CAP under the SPL category is then
-used with the prefixes **ALT**, **RNG**, and **BRG** to read out and set the
-following data points:
+CAP 上 SPL 类别中的 IP TO TGT MESSAGE（功能）与前缀按钮 **ALT**、 **RNG** 和 **BRG**
+一起使用用来读数和设置以下数据点：
 
-- **ALT**: Sets altitude difference of the target relative to the IP waypoint.
-- **RNG**: Sets range to target from the IP waypoint.
-- **BRG**: Sets the bearing to the target from the IP waypoint.
+- **ALT** - 设置目标与 IP 航路点之间的高度差。
+- **RNG** - 设置目标相对 IP 航路点的距离。
+- **RNG** - 设置目标相对 IP 航路点的方位。
 
-When the pilot designates the IP visually on the HUD, the WCS recalculates the
-target location using the data set under the **IP TO TGT** function on the CAP,
-moves the target diamond to that location, and instead displays guidance towards
-the real target location.
+飞行员在 HUD 上目视指定 IP 点后，WCS 会根据 CAP 中 **IP TO TGT**
+功能所设置的数据重新计算目标位置，并将菱形目标指示符移动到计算出的位置，使 HUD 显示的引导标识从 IP 航路点位置切换至目标实际位置。
 
-All other functions of this mode are identical to the Computer Target mode.
+此模式下的其他功能与计算机目标模式下的功能相同。
 
-## Computer Pilot
+## 计算机引导模式
 
 ![Computer Pilot](../../img/weapons_cmptrpilot.jpg)
 
-The computer pilot mode uses the WCS to continually calculate and display an
-impact point for the configured store on the HUD.
+计算机引导模式通过 WCS 连续计算并在 HUD 中显示当前配置挂载的命中点。
 
-When selected, the HUD displays the current store impact point in real-time
-using the pipper (crosshair). The target designation diamond is used when the
-WCS is configured for rockets and overlays the pipper to indicate that the
-configured store is out of range when displayed. As in the Computer Target and
-IP modes, the pull-up cue is used to indicate aircraft below safe store release
-altitude when at or above the velocity vector.
+选择计算机引导模式时，HUD 中的准星（十字）显示了当前挂载的实时命中点。WCS 设置为发射火箭弹时，如果菱形目标指示符出现在十字准星上方，则表示命中点在火箭弹射程外。与计算机目标和计算机起始点模式中一样，如果拉起标识位于速度矢量符上方，则表示飞机低于安全投放高度。
 
-To correctly engage the desired target, the pilot flies the impact point pipper
-on the HUD over the target and then depresses the bomb release button.
+飞行员需要操纵飞机，将 HUD 中的命中点准星置于目标上，并按下武器发射扳机来攻击目标。
 
-When using rockets, the pilot should wait until the diamond disappears,
-indicating that the selected store is within range and then use the control
-stick trigger to fire the rockets.
+使用火箭弹攻击时，飞行员应该等到准星上的菱形消失，这表示命中点在火箭弹的射程内，然后使用扳机发射火箭弹。
 
-## Manual
+## 手动模式
 
 ![Manual](../../img/weapons_man.jpg)
 
-The manual air-to-ground mode is used as a backup when the other modes are
-unavailable.
+其他模式不可用时，手动模式将作为备用模式使用。
 
-By principle, it works the same as the Computer Pilot mode in that the pilot
-should fly the pipper on the HUD over the desired target. The pipper is in this
-mode not updated by the WCS, however, but instead set at a deflection from the
-ADL according to desired engagement speed, dive angle, and release altitude.
+手动模式与计算机引导模式的基本原理相同，飞行员应控制飞机，将准星置于目标上方。虽然手动模式下 WCS 不会更新准星的位置，但可以根据所需的攻击速度、俯冲角度和投放高度来设置十字准星相对 ADL（武器基准线）的偏移量。
 
-This is set using the elevation lead panel on the pilot right side vertical
-panel using weapon engagement tables or by pilot estimation.
+这个偏移量是由飞行员估算或根据投弹数据表，然后在右侧垂直控制台中的准星提前量设置面板上调定的。
