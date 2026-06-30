@@ -1,138 +1,95 @@
-# Emergency
+# 应急系统
 
-## Fire Detection and Suppression System
+## 失火探测和灭火系统
 
-### Fire Detection System
+### 失火探测
 
-The fire detection system in the F-14 has two fire sensing loops, one in each
-engine.
+F-14 的失火探测系统含有两个火焰感测回路，每台发动机各一个。
 
-If these loops detects a temperature over 600 °F (about 316 °C) along its whole
-length or 1,000 °F (about 538 °C) in a single 6-inch section it triggers the
-fire detection circuits. The left detection loop illuminates the left fire
-warning light on the ACM panel and the right detection loop illuminates the
-right fire warning light, see Air Combat Maneuver Panel.
+如果整个回路中每一处都探测到温度都超过 600°F（约 316°C），或在任意 6 英寸范围内探测到温度超过 1000°F（约 538°C）便会触发失火探测回路。
+触发左探测回路使 ACM 面板中左发失火告警灯亮起，触发右探测回路使右发起火告警灯亮起，详情空战格斗面板 。
 
-In addition there are also sensors designed to detect hot air leaks in the
-engines and illuminate the BLEED DUCT caution light on the pilot caution -
-advisory indicator (see Caution - Advisory Indicator) if temperatures above 575
-°F (about 302 °C) are detected.
+此外，F-14 中还有多个设计用于探测发动机内热空气泄露的传感器，如果探测空气温度高于575
+°F （约302 °C），飞行员驾驶舱中注意 - 提示灯面板上的 BLEED DUCT 注意灯将亮起。
 
-| Left                                   | Right                                    |
+| 左                                     | 右                                       |
 | -------------------------------------- | ---------------------------------------- |
 | ![left1](../img/general_fire_left.jpg) | ![right1](../img/general_fire_right.jpg) |
 
-The fire suppression system in the F-14 contains two bottles filled with a fire
-suppression agent capable of being discharged into one engine selected by the
-pilot. Though the system contains two bottles, both are discharged at the same
-time making the system a one-shot system, capable of extinguishing only one
-engine.
+F-14 的灭火系统包含两个装有灭火剂的灭火瓶，灭火剂可以被注入飞行员选择的发动机中。
+虽然系统包含两瓶灭火瓶，但是两瓶灭火瓶会同时注入灭火剂使得灭火系统成为一次性系统，一次只能扑灭一台发动机中的火灾。\*译注：不会进入涡轮内部。
 
-As the effectiveness of the agent depends on it remaining in the engine until
-the fire is out the effectiveness is greater at lower airspeed as it takes
-longer for the agent to be blown clear of the engine. The agent itself is a low
-toxicity agent, designed to do as little damage to the engine as possible while
-still being an effective fire suppressant.
+由于灭火剂的有效性取决于在火被熄灭前留在发动机内的时长，因此，在飞机空速较低的情况下，灭火剂的灭火效果更佳，这是因为在低速下，需要更长的时间来将灭火剂从发动机中吹出。
+灭火剂毒性低，旨在有效灭火的前提下尽可能减少对发动机造成的损伤。
 
-To activate the system the pilot pulls the **FUEL SHUT OFF** handle (pictured
-above) corresponding to the alight engine and pushes the fire extinguisher
-button behind that handle. The pull-out of the handle shuts off the fuel to the
-connected engine and the button behind it releases the fire suppression agent
-into that engine.
+飞行员可以抽出失火发动机相应的 **FUEL SHUT OFF**
+手柄（见上图），并按下该手柄后面的灭火器按钮来激活灭火系统。拉起手柄将切断对应发动机的燃油供给，而灭火器按钮则将释放灭火剂注入到发动机中。
 
-Two advisory lights are connected to this system, each one indicating low
-pressure in one of the fire suppression agent bottles. The **ENG FIRE EXT**
-indicates low pressure in the main bottle and the **AUX FIRE EXT** the same in
-the auxiliary bottle. Both are located on the pilot caution - advisory
-indicator, see Caution - Advisory Indicator.
+还有两个提示灯连接到灭火系统中，每个提示灯用来指示其中一个灭火瓶中的压力较低。
+**ENG FIRE EXT** 表示主灭火瓶中压力较低， **AUX FIRE EXT**
+表示辅助灭火瓶中压力较低。两个提示灯都位于飞行员驾驶舱中注意-提示面板上，详见注意 - 提示灯面板 。
 
-The advisory lights will both illuminate after a successful application of the
-system and will also indicate if an error drains the pressure in the bottles.
+成功启用灭火系统后系统的两个提示灯将会亮起，并且还将指示是否错误释放瓶中的压力。
 
-### Fire Detection and Suppression System Test
+### 失火探测和灭火系统测试
 
-Both systems can be tested by selection of the **FIRE DET/EXT** position on the
-master test panel switch. (See Master Test Panel.) This will illuminate both
-fire warning lights on the ACM panel if their respective loop is functional and
-the **GO** light on the master test panel will illuminate if the suppression
-system is functional. If the **NO GO** or no lights illuminate there’s a problem
-in either the suppression system or the test circuitry.
+两个系统都可以通过选择位于主测试面板中的 **FIRE DET/EXT**
+档位来进行测试（详见主测试面板）。测试中，如果各自的回路正常工作，那么 ACM 面板中的两个失火告警灯将会亮起；如果测试中灭火系统正常工作，那么主测试面板中的
+**GO** 指示灯将会亮起。如果在测试中，主测试面板中 **NO GO**
+或没有指示灯亮起，那么表示灭火系统或测试回路存在问题。
 
-## Ejection System
+## 弹射系统
 
-The F-14 Tomcat is equipped with dual Martin-Baker GRU-7A rocket-assisted
-ejection seats, one for the pilot, one for the RIO. The ejection system is a
-zero/zero system, capable of successfully ejecting the crewmembers at zero
-airspeed, stationary, on the ground.
+F-14 “雄猫”配备了2台 Martin-Baker
+GRU-7A 火箭助推弹射座椅，一台飞行员使用，另一台 RIO 使用。弹射系统为零-零弹射，即——能够在零空速、零高度条件下，成功将机组成员弹射出驾驶舱。
 
-As the F-14 is a two seat aircraft it has additional controls apart from the
-ejection handles and arming systems, namely the ejection command lever. This
-lever, which is located in the RIO cockpit, selects if the RIO ejects the pilot
-as well when he ejects.
+由于 F-14 作为双座飞机，因此除了弹射手柄和解除保险系统外，弹射系统还有额外的控制开关，即弹射指令控制杆。弹射指令控制杆位于 RIO 驾驶舱中，控制杆可以选择在 RIO 弹射时是否也将飞行员弹射出驾驶舱。
 
-The lever is situated beside the sensor control panel, see Eject Command Lever.
-When set to **PILOT**, the pilot ejects both crewmembers, while the RIO ejects
-only himself. When set to **MCO** both crewmembers eject both crewmembers.
+弹射指令控制杆位于传感器控制面板旁，见弹射指令控制杆。当设置到 **PILOT**
+档位时，飞行员弹射时两名机组成员都将弹射出去，而 RIO 弹射仅会将自己弹射出去。当设置到
+**MCO** 档位时，任何一名机组弹射都会将另一名机组成员弹射出去。
 
-The system does not allow pilot-only ejection because it would be undesirable
-for the RIO to remain in the aircraft alone.
+系统不允许仅飞行员一人弹射出驾驶舱，因为让 RIO 孤零零留在驾驶舱内似乎不太好。
 
-The pilot has indication of what position the ejection command lever is at on
-the Landing Gear Control Panel, the **EJECT CMD** flip-flop indicator showing
-**PILOT** when the lever is in pilot and **MCO** when in MCO.
+飞行员可以在起落架控制面板中查看弹射指令控制杆设置的档位 **EJECT CMD**
+翻转指示器在弹射指令控制杆位于飞行员档位时将显示 PILOT ，位于 **MCO**
+档位时将显示为 MCO 。
 
-If the canopy does not jettison when initiating the ejection sequence it’s
-possible to manually jettison it using the Canopy Jettison Handle in the pilot
-cockpit or the Canopy Jettison Handle in the RIO cockpit. If the canopy
-inhibited ejection after ejection initiation, jettisoning the canopy will most
-likely restart it. If ejection is needed during a flat spin, it’s also
-recommended to manually jettison the canopy and allow it to clear before
-initiating the ejection sequence as the canopy might need longer to clear during
-a flat spin.
+当启动弹射程序时，如果座舱盖没有抛离，那么可以通过位于飞行员驾驶舱中的座舱盖抛离手柄或者后座 RIO 驾驶舱中的座舱盖抛离手柄手动抛离座舱盖。
+如果座舱盖在启动弹射后没有抛离，那么手动抛离座舱盖可能会重启弹射程序。
+如果要在尾旋期间弹射的话，还建议在启动弹射程序前手动抛离座舱盖，这是因为在尾旋时座舱盖需要更长时间来远离飞机。
 
-## Jettison System
+## 抛弃系统
 
-The Jettison system has four modes of operation: emergency, ACM, selective, and
-auxiliary.
+抛弃系统中包含四个工作模式，分别是：应急抛弃 、ACM、选择抛弃和辅助抛弃。
 
-### Emergency Jettison
+### 应急抛弃
 
-The emergency jettison is selected via the **EMERG STORES JETT** on the Landing
-Gear Control Panel. Selection causes the **EMERG JETT** caution light to
-illuminate on the pilot Caution - Advisory Indicator.
+应急抛弃通过位于起落架控制面板的 **EMERG STORES
+JETT**按钮来选择。按下应急抛弃按钮将使位于前座飞行员注意 - 提示灯面板中的
+**EMERG JETT** 注意灯亮起。
 
-The emergency jettison requires only no weight on wheels indicated (no master
-arm) and ejects all stores except for Sidewinders.
+应急抛弃在指示机轮不负重（无需主军械打开）的情况下就可以启动，应急抛弃会抛弃除 AIM-9
+“响尾蛇”导弹外飞机上全部的挂载。
 
-### ACM Jettison
+### ACM 抛弃
 
-The ACM jettison is selected via the **ACM JETT** button under the ACM
-cover/switch on the Air Combat Maneuver Panel.
+ACM 抛弃通过 空战格斗面板 中，ACM 保护盖下的 **ACM JETT** 按钮进行选择。
 
-The ACM jettison, like the emergency jettison, requires no master arm but
-instead requires that the landing gear lever is up. Unlike the emergency
-jettison the ACM jettison only ejects those stations selected by the RIO on the
-Armament Panel (set to **SEL** or **B** for stations 1 and 8).
+ACM 抛弃——就像应急抛弃一样，不需要主军械打开，但是需要起落架手柄位于收上档位。与应急抛弃不同，ACM 抛弃仅会抛弃 RIO 在武器控制面板中所选挂点的挂载（1号和8号挂点设置为
+**SEL** 或 **B** 档位来抛弃）。
 
-### Selective Jettison
+### 选择抛弃
 
-The selective jettison is set and executed by the RIO on the Armament Panel.
-This mode of jettisoning requires the landing gear handle to be in the up
-position and the master arm to be on.
+选择抛弃由后座 RIO 在武器控制面板设置和执行。选择抛弃模式要求起落架手柄处于收上档位且主军械开关打开。
 
-The procedure for jettison in selective mode is to set the desired station
-switches to **SEL** and hold the **SEL JETT** switch to **JETT**.
+选择抛弃模式的抛弃程序为：将需要抛弃的挂载的挂点开关拨至 **SEL** 档位，然后拨动
+**SEL JETT** 开关并保持在 **JETT** 档位。
 
-### Auxiliary Jettison
+### 辅助抛弃
 
-The auxiliary jettison mode is a backup mode to use when the other modes have
-failed. Like the selective jettison mode it requires the landing gear handle to
-be up and the master arm to be on.
+辅助抛弃模式作为备用模式在其他抛弃模式失效时使用。和选择抛弃模式一样，辅助抛弃需要起落架手柄处于收上档位且主军械开关打开。
 
-This mode can only eject air-to-ground stores and ejects them by actuating the
-normal release hooks. This means that the aircraft needs to fly straight and
-level as the stores are not ejected forcefully but instead just released and
-cleared using gravity.
+辅助抛弃模式只能抛弃空对地挂载，并且是通过作动正常投放挂钩来抛弃它们的。这意味着飞机必须水平直线飞行，这是因为挂载不是被强行抛弃，而是靠重力投放并离开挂架。
 
-> 💡 No jettison mode can jettison ITERs or stores loaded on those, they need to
-> be dropped like normal, with or without the fuzes armed.
+> 💡 所有抛弃模式都无法抛弃 ITER 或挂载在 ITER 中的武器挂载，因此，无论挂载是否装有引信，ITER 上的挂载必须像正常投放武器一样来抛弃。

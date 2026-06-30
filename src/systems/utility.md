@@ -1,57 +1,43 @@
-# Utility
+# 公用
 
-## Audio Warning Signals
+## 音频告警信号
 
-Audio warning signals from the weapon system are available to either or both
-crewmen through the ICS. Each signal has a distinct tone. A visual display
-accompanies most audio signals so that the flight crew can expect the tone and
-interpret its meaning. Most audio signals may be attenuated or turned off if not
-required, allowing the flight crew to concentrate on more critical tones.
+来自武器系统的音频警告信号可通过 ICS 播放给任何一名或两名机组人员。每个信号都有不同的音调。
+面板提示大多都伴随着音频信号，因此机组人员仅通过警告音的音调便能理解警告含义。
+如果不需要的话，大多数音频信号可以被减小或关闭，从而使机组能够专注于更危急的音调。
 
-Critical warning tones cannot be attenuated by any mode of ICS operation. The
-table below provides a glossary of audio warning signals available within the
-aircraft weapon systems. Approximately 1 minute of warmup is required to achieve
-normal operating temperature.
+任何 ICS 工作模式下都不能减小危急警告音。下表提供了机载武器系统内可用的音频警告信号表。为了达到正常的工作温度，系统需要大约1分钟时间预热。
 
-| Tone                             | Position    | Controls                                                                | Function                                      | Characteristics                                                      |
-| -------------------------------- | ----------- | ----------------------------------------------------------------------- | --------------------------------------------- | -------------------------------------------------------------------- |
-| **Sidewinder**                   | Pilot       | Volume/TACAN Command Panel                                              | Missile lock tone                             | High frequency, increases with lockon indication.                    |
-| **ALR-67**                       | Pilot & RIO | Volume/TACAN Command Panel (pilot) & Radar Warning Receiver Panel (RIO) | Threat indication                             | Low to high frequency, determined by threat level.                   |
-| **AN/ALQ-126**                   | RIO         | DECM Control Panel                                                      | Threat indication                             | Raw PRF sound.                                                       |
-| **Radar Altimeter**              | Pilot & RIO | Radar Altimeter Indicator (Pilot)                                       | Low altitude warning                          | 1 000 Hz tone, modulated at 2 pulses per second for 3 seconds.       |
-| **TACAN**                        | Pilot & RIO | TACAN Control Panel                                                     | Station identification                        | TACAN station Morse code.                                            |
-| **AN/ARC-159 (UHF 1)**           | Pilot & RIO | UHF 1 Control Panel (Pilot) & RIO Communication/TACAN Command Panel     | Own aircraft DF transmission                  | 1 020 Hz                                                             |
-| **AN/ARC-182 (V/UHF 2)**         | Pilot & RIO | V/UHF 2 Control Panel (RIO) & Volume/TACAN Command Panel (Pilot)        | Other aircraft DF transmission                | 1 020 Hz, Morse code or voice.                                       |
-| **Engine Stall/Overtemperature** | Pilot       | None                                                                    | Engine stall detection & EGT overtemp warning | Modulated 320 Hz for 10 seconds or until fault is removed if before. |
 
-## Oxygen System
+| 音调                     | 位置         | 控制                                                       | 功能                                | 特征                                                |
+| ------------------------ | ------------ | ---------------------------------------------------------- | ----------------------------------- | --------------------------------------------------- |
+| **响尾蛇**               | 飞行员       | 音量 / TACAN 指令面板                                      | 导弹锁定音调                        | 高频，随着锁定指示而增加。                          |
+| **ALR-67**               | 飞行员 & RIO | 音量 / TACAN 指令面板（飞行员）& 雷达告警接收机面板（RIO） | 威胁指示                            | 低频到高频，由威胁等级决定。                        |
+| **AN/ALQ-126**           | RIO          | DECM 控制面板                                              | 威胁指示                            | 原生 RPF 音。                                       |
+| **雷达高度表**           | 飞行员 & RIO | 雷达高度表（飞行员）                                       | 低高度警告                          | 每秒响两次、持续三秒的1000Hz单音。                  |
+| **TACAN**                | 飞行员 & RIO | TACAN 控制面板                                             | TACAN 台识别                        | TACAN 台莫尔斯码。                                  |
+| **AN/ARC-159 (UHF 1)**   | 飞行员 & RIO | UHF 1 控制面板（飞行员）& RIO 通信/ TANCAN 指令面板        | 向其它飞机传输 DF 信号              | 1 020 Hz                                            |
+| **AN/ARC-182 (V/UHF 2)** | 飞行员 & RIO | V/UHF 2 控制面板（RIO）& 音量/ TACAN 指令面板（飞行员）    | 接受来自其它飞机的 DF 信号          | 1 020 Hz, 莫尔斯码或话音。                          |
+| **发动机失速/超温**      | 飞行员       | 无                                                         | 检测到发动机失速 & 排气温度超温警告 | 播放 320 Hz单音最长 10 秒或直到 10 秒前将故障排除。 |
 
-The F-14 carries one or two 10-liter liquid oxygen bottles providing oxygen to
-the crew when needed.
+## 供氧系统
 
-The oxygen supply is controlled on the pilot Oxygen-Vent Airflow Control Panel
-and RIO Oxygen-Vent Airflow Control Panel respectively. Both panels contain an
-**OXYGEN** switch that sets oxygen supply to **ON** or **OFF**.
+F-14 携带一瓶或两瓶 10 升液态氧气瓶，液氧在需要时将为机组提供氧气。
 
-Liquid oxygen remaining is shown on the Liquid Oxygen Quantity Indicator on the
-pilot’s right side console. The gauge shows remaining liters of liquid oxygen up
-to 20 liters (if two bottles are installed). The indicator is electrically
-driven and if it receives no power an **OFF** flag will be visible and it will
-display 0 liters remaining.
+氧气供应分别由飞行员驾驶舱中的供氧-通风控制面板以及 RIO 驾驶舱中的供氧-通风控制面板来控制。
+两个面板中均包含一个 **OXYGEN** 开关，将开关拨至 **ON** 或 **OFF** 档位来设置氧气供应。
 
-Additionally the RIO Caution-Advisory Panel has the **OXY LOW** caution light
-which illuminates when the liquid oxygen quantity is below 2 liters.
+液氧余量将在飞行员驾驶舱中，右侧控制台上的 液氧储量表 显示出来。液氧储量表显示剩余的液氧储备量，显示的最大值为 20 升（如果安装了两瓶液氧瓶）。
+液氧储量表由电力驱动的，如果仪表没有通电的话，那么 **OFF** 旗帜将会显示出来，并且剩余储备量将显示为零公升。
 
-During the **INST** test on the MTPanel the liquid oxygen meter shows 2 liters
-and the **OXY LOW** caution light illuminates.
+除此之外，RIO 驾驶舱中的 注意-提示面板 包含了 **OXY LOW** 注意灯，当剩余液氧储备量低于 2 升时，注意灯将亮起。
 
-## Canopy
+在主测试面板进行 **INST** 测试过程中，液氧储量表将显示储备量为2公升，同时 OXY LOW 注意灯将会亮起。
 
-The rear-hinged F-14 canopy is operated hydraulically and pneumatically.
-Controls are present in both the pilot and RIO cockpits.
+## 座舱盖
 
-See Canopy Control Handle or Canopy Control Handle for the controls.
+F-14 的后铰链座舱盖由液压-气动驱动。前座飞行员和后座 RIO 驾驶舱中都含有座舱盖控制器。
 
-The **CANOPY** caution light on both the Pilot Caution - Advisory Indicator and
-the RIO Caution-Advisory Panel illuminates if the canopy is not in the down and
-locked, secured position.
+座舱盖控制可前往座舱盖控制手柄或者座舱盖控制手柄查看。
+
+飞行员驾驶舱中的注意 - 提示灯面板和后座 RIO 驾驶舱中的注意-提示面板都含有 **CANOPY** 注意灯，注意灯亮起表示座舱盖未处于关闭、锁定的安全位置。

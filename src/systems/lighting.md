@@ -1,68 +1,39 @@
-# Lighting System
+# 照明系统
 
-The F-14 Tomcat lighting system consists of the internal and the external
-lights.
+F-14 “雄猫”照明系统包含机内照明和机外照明。
 
-The internal lights are the red instrument panel and console lights, red and
-white floodlights and a moveable utility light at both crew stations.
+机内照明为红色仪表面板灯光和红色控制台灯光、红色和白色泛光灯以及两个驾驶舱中的可移动通用/地图照明灯。
 
-The external lights are the position lights, the anti-collision lights, the
-formation lights, the taxi light, the approach lights and the refueling probe
-light.
+机外照明包括了航行灯、防撞灯、编队灯、滑行灯、进近灯和受油管灯。
 
-## Internal Lighting
+## 机内照明
 
-The red instrument panel and console lights are the normally used lights during
-nighttime, they back-light all instruments and controls allowing their use while
-impacting night vision minimally.
+红色仪表面板和红色控制台灯光主要在夜间使用，所有仪表和控制开关/按钮使用背光进行照明，从而最大程度降低在照明时对使用夜视仪的影响。
 
-The floodlights allow for additional lighting of the cockpit panels but care
-should be taken to avoid affecting night vision.
+泛光灯为驾驶舱中的面板提供额外的照明，但是注意避免影响到夜视仪的使用。
 
-The utility lights are movable and can be used to illuminate a specific spot and
-as a map or reading light.
+通用/地图照明灯是可移动的，因此它可以照亮特定的位置并被用作地图灯或阅读灯。
 
-Controls for the internal lights are on the Master Light Control Panel in pilot
-cockpit and Interior Light Control Panel in the RIO cockpit, each controlling
-their own cockpit lighting.
+机内照明的控制面板位于前座飞行员的主灯光控制板中以及后座 RIO 的机内照明控制面板中，前座和后座分别控制各自区驾驶舱中的照明。
 
-> 💡 The utility light function is not modeled in DCS, but the flashlight
-> function, default keybind <kbd>LAlt</kbd> + <kbd>L</kbd>, which moves with the
-> cursor, can be used, providing a similar function.
+> 💡 通用/地图照明灯的功能并未在 DCS 中进行建模，但可以使用手电筒功能，默认按键
+> <kbd>左Alt</kbd> + <kbd>L</kbd> ，可以随鼠标移动来提供类似的照明功能。
 
-## External Lighting
+## 机外照明
 
-The position lights on the F-14 are located on the left wing tip (red), right
-wing tip (green), top aft of left vertical stabilizer (white) and upper and
-lower lights on the wing gloves on each side (red on left glove and green on
-right). The glove lights are additional lights supplementing the wing tip
-lights. When the wings are swept forward of 25° the wing tip lights are active
-and when aft of 25° the glove lights are active instead.
+F-14 中的的航行灯位于两侧机翼翼尖（左侧为红色，右侧为绿色）、左侧垂直安定面后上部（白色）以及扇翼上下两侧（左侧挂架为红色，右侧挂架为绿色）处。扇翼上下两侧的灯光作为翼尖灯的补充。
+当机翼后掠小于25°时，翼尖的航行灯将会亮起，当机翼后掠角度大于25°时，扇翼灯将会代替翼尖航行灯亮起。
 
-With the gear down, wings forward of 25° and the position lights in steady mode
-both the glove and wingtip position lights are lit. When the anti-collision
-lights are on the the position lights can only operate in the steady mode,
-otherwise they can be set to flash.
+在起落架放下，机翼后掠小于25°且航行灯处于稳定亮起时，翼尖灯和扇翼灯会同时亮起。当防撞灯处于开启档位时，航行灯只能在稳定亮起模式下工作。
 
-The anti-collision lights are located on the chin pod or TCS pod, top front of
-the left vertical stabilizer and top aft of the right vertical stabilizer. The
-anti-collision lights are all red flashing lights. The chin pod mounted lower
-light only operates while the nosegear wheel door is closed.
+防撞灯位于下巴吊舱（TCS 吊舱）、左垂直安定面前上部以及右垂直安定面后上部处。防撞灯均为红色频闪灯。位于 TCS 吊舱中的防撞灯仅在前轮轮舱盖关闭后工作。
 
-The formation lights are dim green lights used for formation flight which can be
-dimmed gradually. They are located on the aircraft nose (behind the radome), the
-wing tips, on the fuselage aft of the wings and on the top edge of the vertical
-stabilizers. All are duplicated on both sides of the aircraft.
+编队灯为低亮度绿色灯光，在编队飞行时使用编队灯，编队灯的亮度可以逐渐调暗。编队灯位于机头（就在雷达罩后面）、机翼翼尖、机翼后方机身处和垂直安定面顶部边缘处。
 
-The taxi light is a fixed headlight located on the nosewheel strut. It’s
-automatically turned off with gear retraction if set to on.
+滑行灯是一个固定的前灯，滑行灯位于前轮支柱上。滑行灯将会随起落架收上自动关闭（如果设置为打开）。
 
-The approach lights are also located on the nosewheel strut and replicate the
-AoA indexer for the LSOs during carrier traps.
+进近灯同样位于前轮支柱上，进近灯将复显进近迎角分度器来让 LSO 在着舰期间通过观察灯光来判断飞机的 AOA。
 
-The refueling probe light is used to illuminate the refueling probe and is
-automatically enabled with probe extension.
+受油管灯光用于照亮受油管，灯光随受油管伸出自动开启。
 
-All external light controls are located on the Master Light Control Panel except
-for the exterior lights switch on the left throttle (see Throttle) which
-disables or enables all external lights apart from the approach lights.
+除了左侧油门握把上的机外照明开关外（见油门握把），其他所有机外照明控制拨轮/开关都位于主灯光控制板处，油门握把中的机外照明开关可以关闭或者启动除进近灯以外的所有外部照明灯光。

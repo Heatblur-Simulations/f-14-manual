@@ -1,120 +1,96 @@
-# Environmental Control System
+# 环境控制系统
 
-The ECS or environmental control system controls and supplies temperature- and
-pressure-regulated air to cockpit systems and cooling for electronic equipment
-and weapons.
+ECS（环境控制系统）为驾驶舱系统提供温度控制和压力调节，同时还为电子设备和武器提供冷却。
 
-The air used is sourced from the engines, one or both, or if needed from the
-emergency ram air door on the fuselage inboard of the right glove.
+环控系统使用的气源来自发动机，可使用单发或双发引气，或使用机身右下部，右翼套挂架内侧的应急冲压空气进气门提供气源。
 
-Systems using ECS air in the cockpit are cockpit pressurization and canopy
-seals, anti-g suit inflation, aircrew suit ventilation, seat cushion ventilation
-and windshield anti-ice and defogging.
+驾驶舱中使用 ECS 气源的系统分别为：驾驶舱增压、座舱盖密封装置、抗荷服充气、机组抗荷服通风、坐垫通风以及风挡防冰和除雾。
 
-Other systems using ECS air outside of the cockpit are pressurization of
-external drop tanks, wing airbag seals, electronics cooling and cooling of the
-AN/AWG-9 radar and AIM-54 missiles via an air/liquid heat exchanger.
+其它使用 ECS 气源的驾驶舱外的系统分别为：副油箱增压、机翼密封气囊、电子设备冷却和 AN/AWG-9 雷达以及 AIM-54 导弹冷却（通过空气/液体换热器来冷却）。
 
-## Air Source and Cockpit Air Controls
+## 气源和驾驶舱引气控制开关/按钮
 
-Air source for the ECS is set using the controls on the Air Conditioning Control
-Panel.
+ECS 的气源通过空调控制面板中的控制按钮来设置。
 
-The **L ENG** set air source to left engine, **R ENG** to right engine and
-**BOTH** to both engines which is also the normal position while in use.
+选择 **L ENG** 档位将使用左侧发动机作为引气气源；选择 **R ENG**
+档位将使用右侧发动机作为引气气源选择 **BOTH**
+档位将同时使用两台发动机作为气源，同时也是正常情况下所选用的档位。
 
-**RAM** and **OFF** both enable the emergency ram door but **OFF** turns off
-pressurization and heating.
+选择 **RAM** 和 **OFF** 档位都将启用应急冲压空气进气门，但是选择 **OFF**
+档位将关闭加温系统和伺服系统的增压。
 
-During normal operation temperature in the cockpit is controlled using the
-**TEMP** switch and thumbwheel on that same panel. The thumbwheel sets the
-temperature which is automatic regardless of airspeed and altitude if the
-**TEMP** switch is set to **AUTO**. If that switch is set to **MAN**, manual, it
-will vary depending on airspeed and altitude.
+正常运行时，驾驶舱的温度由 **TEMP** 开关及同一面板中的拨轮来控制如果将 **TEMP**
+开关拨至 **AUTO**
+档位，环控系统将通过调节温度控制阀门来自动保持所选的驾驶舱温度如果 **TEMP**
+开关设置为 **MAN**
+档位——手动——在这个档位时，飞行员需要根据高度和空速变化调整拨轮来保持驾驶舱和抗荷服中的气温。
 
-The **CABIN PRESS** switch controls the cockpit safety valve, controlling
-whether the cockpit is pressurized or not. If set to **NORM** cockpit pressure
-is at 8,000 feet up to 23,000 feet and after that 5 psi higher than the
-atmosphere outside. **DUMP** depressurizes the cockpit by opening the cockpit
-safety valve.
+**CABIN PRESS**
+开关用于控制驾驶舱安全阀，而安全阀控制着驾驶舱是否增压。如果开关位于 **NORM**
+档位，那么驾驶舱气压将保持在8000英尺至23000英尺之间，当高度超过23000英尺后，调节器会将压差保持在对应高度5-psi 内。若开关位于
+**DUMP** 档位，驾驶舱安全阀打开，驾驶舱泄压。
 
-The **RAM AIR** switch is used to modulate cockpit air supply temperature when
-the ram air door is in use by opening and closing the emergency ram air door.
-This is as in this mode that air is mixed directly with hot bleed air from the
-engines. **INCR**, increase, opens the ram door, decreasing temperature and
-**DECR** closes the door and increases temperature. spring-loaded to center.
+**RAM AIR**
+开关用于当使用应急冲压空气进气门时，手动调节冲压空气进气门和座舱以及电子设备舱的供气量。在 RAM 模式下，空气将直接与发动机的高温引气混合。
+**INCR** ——增加进气量——选择这个档位将打开冲压空气进气门来降低温度 **DECR**
+——减小进气量——选择这个档位将关闭进气门来增加温度。RAM AIR 开关由弹簧归中。
 
-> 💡 Selection of RAM or OFF inhibits gun firing.
+> 💡 选择 RAM 或者 OFF 档位将禁止航炮开火。
 
-Current cabin air pressure altitude can be seen on the Cabin Pressure Altimeter
-in front of the pilot control stick.
+当前座舱气压高度可在驾驶杆前方的座舱压力高度表中查看。
 
-The **CABIN PRESS** caution light is present on the RIO Caution-Advisory Panel,
-indicating less than 5 psi absolute pressure or above 27,000 feet cockpit
-pressure. On the same panel is also the **COOLING AIR** advisory light which
-indicates overheat in the electronics cooling system, indicative of a failure in
-the ECS which might damage the electronics.
+**CABIN PRESS**
+注意灯位于 RIO 驾驶舱中的 注意-提示面板 内，注意灯亮起则表示座舱气压低于 5-psi 绝对气压或座舱其他高度高于27000英尺。在同一个面板中还有
+**COOLING AIR**
+提示灯，提示灯亮起表示电子设备冷却系统过热，以及指示 ECS 中存在故障，故障可能会导致电子设备损坏。
 
-The anti-g suit pressurization can be tested via the G-valve Button for the
-pilot and G-Valve Button for the RIO. The airflow through the suit, or seats if
-no suits are worn, are controlled by the **VENT AIRFLOW** thumbwheel on the
-pilot Oxygen-Vent Airflow Control Panel and RIO Oxygen-Vent Airflow Control
-Panel respectively.
+对于飞行员来说，抗荷服充气可以通过抗荷服充气检测按钮来测试，RIO 则可以通过 飞行服抗荷充气检测按钮 来测试。
+通过抗荷服或坐垫（如果没有穿着抗荷服）的气流分别由位于飞行员驾驶舱中 供氧-通风控制面板 面板上和位于 RIO 驾驶舱中供氧-通风控制面板面板上的
+**VENT AIRFLOW** 拨轮来控制。
 
-## Windshield Anti-Ice and Defogging
+## 风挡加温和除雾
 
-Windshield anti-ice and defogging is controlled via the External Environmental
-Control Panel and Canopy Defog/Cabin Air Lever.
+风挡加温和除雾通过外部环境控制面板和座舱盖除雾 / 座舱通风气流调节拉杆来控制。
 
-The **WSHLD**, windshield, switch on the external environment panel provides hot
-bleed air on the outside of the windshield to clear ice and rain on the glass.
-**AIR** enables airflow over windshield, **OFF** disables it.
+**WSHLD** ——风挡——开关位于外部环境控制面板中， WIND
+SHIELD 开关用来控制使用高温引气来对风挡玻璃进行除冰或除雨。 **AIR**
+档位将启用吹送高温空气，**OFF** 档位将关闭吹送。
 
-The Canopy Defog/Cabin Air Lever (for pilot) and Canopy Defog/Cabin Air Lever
-(for RIO) sets amount of air through the canopy air diffusers to be used to
-defog the canopy. Lever set fully to **CANOPY DEFOG** selects all cockpit air to
-be through the canopy diffusers while lever fully at **CABIN AIR** redirects 30%
-through the canopy diffusers and the rest to the cockpit diffusers.
+飞行员驾驶舱中的座舱盖除雾 / 座舱通风气流调节拉杆和 RIO 驾驶舱中的座舱盖除雾 / 座舱通风气流调节拉杆用来控制通过座舱盖空气散流器的空气流量，
+从座舱盖空气散流器中吹出的空气将用于座舱盖除雾。
+将手柄置于 **CANOPY DEFOG** 档位时，全部的驾驶舱空气将会通过座舱盖空气散流器；手柄置于**CABIN AIR** 档位时，
+只有30%的空气通过座舱盖空气散流器，余下的空气将进入驾驶舱空气散流器。
 
-The **WSHLD HOT** advisory light on the pilot Caution - Advisory Indicator
-illuminates when the windshield is warmer than 300° F (149° C). This
-automatically closes the valve and stops warm air to the windshield until cooled
-down.
+当风挡温度高于 300° F （149° C）时，飞行员驾驶舱中注意 - 提示灯面板中的 **WSHLD
+HOT** 提示灯将会亮起。WSHLD
+HOT 提示灯亮起时，阀门将被自动关闭，并停止向风挡送风，直到风挡冷却。
 
-## AN/AWG-9 and AIM-54 Cooling
+## AN/AWG-9 和 AIM-54 冷却
 
-The AN/AWG-9 radar and AIM-54 missiles are liquid cooled via independent
-liquid/air heat exchangers cooled by ECS air.
+AN/AWG-9 雷达和 AIM-54 导弹都通过液体来进行冷却，冷却导弹和雷达的液体则通过独立的液/气换热器经由 ECS 空气来进行热交换冷却。
 
-The Liquid Cooling Control Panel controls these cooling systems and should be
-set to **AWG-9** to enable only the AN/AWG-9 cooler if no AIM-54 Phoenix
-missiles are carried. If AIM-54 missiles are loaded **AWG-9/AIM-54** should
-instead be set to enable both systems. **OFF** turns off both systems and should
-not be set with systems in use as they will overheat.
+液冷控制面板开关用于控制这些冷却系统，并且在没有携带 AIM-54
+“不死鸟”导弹的情况下，应该选择 **AWG-9**
+档位来只启用 AN/AWG-9 冷却泵。若携带了 AIM-54 导弹，则应该选择 **AWG-9/AIM-54**
+来启用 AWG-9 和 AIM-54 的冷却泵。开关 OFF 档位时将关闭 AWG-9 和 AIM-54 的冷却泵，正在使用系统时不可选择 OFF 档位，否则系统将会过热。
 
-The RIO Caution-Advisory Panel contains advisory lights for these systems. The
-**AWG-9 COND** advisory light indicates overheat in the AN/AWG-9 cooling system,
-continuing use of the AN/AWG-9 might damage it. The **MSL COND** advisory light
-indicates overheat in the AIM-54 cooling system or operation of the WCS with
-AIM-54s loaded and liquid cooling switch not set to **AWG-9/AIM-54**.
+RIO 驾驶舱中的 注意-提示面板 上包含了这些系统的提示灯 **AWG-9 COND**
+提示灯用来指示 AN/AWG-9 雷达冷却系统过热，冷却系统超温后继续使用 AN/AWG-9 雷达可能会导致雷达损坏。
+**MSL COND** 提示灯指示 AIM-54 冷却系统超温或 WCS 正在挂载了 AIM-54 且 LIQ
+COOLING 开关未处于 **AWG-9/AIM-54** 档位的情况下运行。
 
-## External ECS Air Supply
+## 外部 ECS 气源
 
-For operation of systems requiring cooling on the ground or on deck it’s
-possible to connect an external ECS air source to cool them.
+对于在地面或甲板上运行时需要进行冷却的系统，可以通过接通外部 ECS 气源来冷却这些所需的系统。
 
-The normally used source isn’t able to provide cooling for all systems at the
-same time though and thus what is to be cooled needs to be set. This is
-controlled by the **GND CLG** switch on the IFF Antenna Control/Test Panel panel
-at the RIO right side console. **OBC/CABIN** provides the external ECS air to
-the cabin and all air cooled electronics. This setting disables the AN/AWG-9
-transmitter due to inadequate cooling. **AWG-9/AIM-54** provides the external
-ECS air to the AN/AWG-9 and AIM-54 heat exchangers and to related electronics.
-**OFF** turns off external ECS air supply and is the normal mode used when the
-engines are running.
+但是，通常所使用的外部气源无法同时为所有系统提供冷却，以此必须设置需要进行冷却的系统。通过 RIO 右侧控制台中的敌我识别（IFF）天线控制 / 测试面板上的
+**GND CLG** 开关来控制需要冷却的系统。开关拨动至 **OBC/CABIN**
+档位将为座舱和所有空气冷却的电子设备提供外部 ECS 气源。由于热交换的冷却空气不足，开关设置到 OBC/CABIN 档位将会禁用 AN/AWG-9 发射器。开关设置到
+**AWG-9/AIM-54**
+档位将为 AN/AWG-9 雷达和 AIM-54 换热器以及相关电子设备提供外部 ECS 气源。开关拨至
+**OFF** 档位将关闭外部 ECS 气源，OFF 档位是当发动机运转时所使用的正常模式。
 
-> 💡 Any setting on the **GND CLG** other than **OFF** should not be used when
-> the engines are running.
+> 💡 在发动机运转期间， **GND CLG** 开关不应设置为 **OFF** 以外的任何档位。
 
-> 💡 For the Heatblur F-14 in DCS the external ECS air supply is connected via
-> the same command as the engine starter air.
+> 💡 对于 DCS 中的 Heatblur
+> F-14 来说，使用发动机起动机气源命令将同时接通外部 ECS 气源。
