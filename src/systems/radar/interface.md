@@ -205,7 +205,7 @@ letting the WCS automatically control it.
 The **DDD** screen itself shows either only radar return data or radar returns
 combined with symbology depending on radar mode.
 
-In the pulse search mode the display shows only radar returns and the a visual
+In the pulse search mode the display shows only radar returns and a visual
 representation of the radar sweep and erase sweep. The screen shows range vs
 azimuth in this mode. In pulse doppler modes the AGC TRACE is added on the
 bottom showing supposed jamming intensity of the detected targets. The screen
@@ -222,12 +222,10 @@ generated target symbol is at the correct azimuth instead. In pulse doppler STT
 the AGC TRACE is added as well to give an indication of jamming strength. For
 information about the attack symbology see the VDIG section.
 
-> 💡 AGC TRACE not yet implemented.
-
 When the IFF interrogator is activated it superimposes the IFF information on
 top of the normal radar picture if in pulse search. In pulse doppler search the
 DDD switches to range vs azimuth at the previously set range scale while the IFF
-information is shown and in PD STT, if the target is hooked on the TID the DDD
+information is shown and in PD STT or TWS modes, if the target is hooked on the TID the DDD
 switches to a ±10 scale centered on the target while the IFF returns are shown.
 
 ## Tactical Information Display (TID) and Associated Controls
@@ -314,7 +312,7 @@ mode. The buttons are:
 | ALT NUM           | Altitude numerals, enables display of track altitudes on the left side of track symbols. Shows a single digit representing ten-thousands of feet, 1 as an example indicating an altitude of between 5 000 and 15 000 feet.                       |
 | SYM ELEM          | Symbology elements, enables display of all supplementary symbology of tracks and waypoints. If deselected all tracks and waypoints are represented only as dots on the TID.                                                                      |
 | DATA LINK         | Enables display of data link tracks.                                                                                                                                                                                                             |
-| JAM STROBE        | Enables display of jam strobes on the TID. Jamming targets exceeding the JAM/JET setting on the DDD are shown if enabled. Not yet implemented.                                                                                                   |
+| JAM STROBE        | Enables display of jam strobes on the TID. Jamming targets exceeding the JAM/JET setting on the DDD are shown if enabled.                                                                                                |
 | NON-ATTK          | Non-attack, enables or disables display of targets which aren’t possible to engage. Friendly targets being an example.                                                                                                                           |
 | VEL VECTOR        | Velocity vector, enables display of velocity vectors on tracks.                                                                                                                                                                                  |
 | LAUNCH ZONE       | Enables display of weapon launch zones depending on selected missile type. These replace the velocity vectors on relevant targets. This function is automatically enabled by the WCS 60 seconds prior to a target entering maximum launch range. |
@@ -350,7 +348,7 @@ information outside of own radar range.
 | **Data Readouts**           | Readouts showing data selected for readout from the WCS. Can be, as examples, data from hooked tracks or own aircraft. Functionality further expanded upon in the CAP section.                                                                       |
 | **Computer Run Indicators** | Readouts showing WCS program cycles running. Should continuously cycle numbers, if not this indicates a freeze or lockup in the WCS computer.                                                                                                        |
 | **Antenna Elevation**       | Shows current AN/AWG-9 radar antenna elevation if in STT or scan pattern elevation center if in a search mode.                                                                                                                                       |
-| **Scan Pattern Limits**     | Shows altitude limits of currently selected scan pattern at set TID display range in thousands of feet.                                                                                                                                              |
+| **Scan Pattern Limits**     | Shows altitude limits of currently selected scan pattern at the current HCU cursor position when half-action is pressed.                                                                                                                             |
 | **Navigation Status**       | Shows current status of the navigation system, IN for INS, AH for AHRS and an alternating MV if the manual magnetic variation differs from calculated magnetic variation.                                                                            |
 | **Target Closing Rate**     | Shows STT target or TWS hooked target closing rate to the closest whole tenth of knots. A plus sign indicates that the track is closing and a minus that the track is opening the distance to own aircraft.                                          |
 | **Selected Weapon**         | Indicates currently selected air-to-air weapon. G for gun, SW for sidewinder, SP for sparrow and PH for phoenix. SP and PH also indicates number of missiles of the selected type that are ready for launch. Display is blank in air-to-ground mode. |
@@ -448,10 +446,10 @@ Code**.
 As default the grid origin, **YY**, is positioned at the edge of the TID
 extending outwards along the set threat axis. The grid can be set to have
 between 1 and 6 sectors display, all being outlined meaning that the one sector
-display will have 2 lines delineating the limits and 6 having 7 lines. The size
-of the sectors depend on the total grid coverage, which can be up to 180
-degrees, which is then divided into the selected number of sectors. Along the
-sector demarkation lines are drawn range indicator marks at 50nm intervals, the
+display will have 2 lines delineating the limits and 6 sectors having 7 lines. The size
+of the sectors depends on the total grid coverage, which can be up to 180
+degrees, which is then divided into the selected number of sectors. Range indicator
+marks are drawn along the sector demarkation lines at 50nm intervals, the
 50nm marks being shorter than the even 100nm markers.
 
 The ground stab view as well as the grid can be offset as normal by the RIO via
@@ -528,9 +526,9 @@ ready when in the standby (STBY) and on positions, will remain on in the standby
 position and turn off in the on position when the TCS is ready for operation.
 The power reset indicator light indicates that one or more of the secondary
 power supplies are inoperative due to a power fault tripping it’s protection
-circuit. The WCS power indicator light indicates WCS in standby (STBY) or on but
+circuit. The WCS power indicator light indicates WCS is in standby (STBY) or on but
 that the radar is not ready to transmit. During startup the light will turn off
-until the radar startup timer times out. To reset radar cycle to standby and
+until the radar startup timer times out. To reset radar, cycle to standby and
 back to on.
 
 The **IR/TV** switch (<num>1</num>) in the upper left corner of the HCU controls
@@ -541,21 +539,21 @@ power to the WCS computer system and corresponding displays (DDD and TID) and
 inhibits or allows radar transmission. Standby (STBY) enables power to all WCS
 systems, including displays, and begins the radar warmup sequence. The displays
 requires 30 seconds warmup and the radar requires 3 minutes of warmup for
-operation. The on position enable radar transmission if weight on wheels is not
+operation. The on position enables radar transmission if weight on wheels is not
 present and radar timeout (warmup) is complete.
 
-The two buttons in the upper middle of the HCU is the **LIGHT TEST**
+The two buttons in the upper middle of the HCU are the **LIGHT TEST**
 (<num>3</num>) and **PWR RESET** (<num>5</num>) buttons. The LIGHT TEST button
-enables control of all WCS lights and indicators by enabling their lights. The
-PWR RESET button resets the protection circuits of the secondary power supplies
-re-enabling them, also resets missile power. Should only be used if the power
-reset indicator light is on, if the fault tripping the circuits remain the
-protection circuits and the indicator light will remain on.
+enables test of all WCS lights and indicators by enabling their lights. The
+PWR RESET button resets the protection circuits of the secondary power supplies,
+re-enabling any that have tripped, and also resets missile power. It should only
+be used if the power reset indicator light is on. If the fault tripping the circuits
+remains, the protection circuits will trip again and the indicator light will remain on.
 
 ### HCU Mode buttons
 
 The four lighted buttons on the left side (<num>12</num>) of the HCU stick are
-the HCU mode buttons which illuminates green to indicate which one is active,
+the HCU mode buttons which illuminate green to indicate which one is active;
 they are mutually exclusive. The **IR/TV** button selects TCS mode, allowing the
 HCU stick and controls to control the TCS. The **RDR** button selects radar
 mode, allowing the HCU stick and controls to control the radar acquisition
@@ -578,7 +576,7 @@ detent. **Half-action** enables display of the cursor for the selected mode
 except when in TCS mode where it enables stick control of TCS elevation and
 azimuth. In the radar mode it additionally enables the super search acquisition
 mode in the radar (See chapter about radar transitional modes for more
-information). **Full-action**, when enabled tells the TCS to lockon to a target
+information). **Full-action** when enabled tells the TCS to lock on to a target
 in the TCS mode if a target is present in its acquisition gates. In the radar
 mode it tells the radar to attempt lockon to a target in the radar range/rate
 gates at the set azimuth. In the DDD and TID modes it marks the current cursor
@@ -616,15 +614,15 @@ entering/reading data into/from the WCS computer.
 ### Numeric Keypad (3)
 
 The upper part of the CAP contains a numeric keypad with additional buttons for
-clearing input (CLEAR), entering input (ENTER) and two buttons for selecting S/W
-and N/E prefixes for coordinates. Some of the number keys has an additional
+clearing input (CLEAR), entering input (ENTER) and two buttons for selecting S/-/W
+and N/+/E prefixes for coordinates and other values. Some of the number keys have an additional
 function selecting a prefix for data display and/or entry. The keys containing
 functions and what those are:
 
 | Key | Function                                                   |
 | --: | ---------------------------------------------------------- |
 |   1 | LAT - Latitude, selects latitude for display and entry.    |
-|   2 | NBR - Number, used for IFT and BITs.                       |
+|   2 | NBR - Number, used for IFT and BITs as well as NAVGRID.    |
 |   3 | SPD - Speed, selects speed for display and entry.          |
 |   4 | ALT - Altitude, selects altitude for display and entry.    |
 |   5 | RNG - Range, selects range for display and entry.          |
@@ -685,8 +683,8 @@ The NAV category contains message button functions used for navigational fixes
 and updating data used by for INS operation and alignment. The OWN A/C (own
 aircraft) button selects own aircraft for data readout and entry, the same as
 hooking the own aircraft symbol on the TID. Its used to enter data critical for
-INS alignment like aircraft coordinates and altitude (and heading and speed if
-on a moving carrier) and can also be used for readout of the various data
+INS alignment like aircraft coordinates and altitude (and heading and speed when
+performing a handset alignment) and can also be used for readout of the various data
 available about own aircraft. The STORED HDG ALIGN button is used to store and
 indicate if a stored heading align is available. It also allows deselection of
 the function resulting in a normal alignment. The WIND SPD HDG button selects
@@ -763,9 +761,9 @@ Selection of desired symbol or function can be achieved either via **TID hook**
 or via the **CAP MESSAGE** buttons available under the different categories on
 the **CAP DRUM**.
 
-Most data readout prefixes displays multiple readouts, as an example calling up
-either latitude and longitude shows both and calling up range also displays
-bearing and vice versa but the selected prefix is the one used for data entry.
+Most data readout prefixes display multiple readouts, as an example calling up
+either latitude or longitude shows both and calling up range also displays
+bearing and vice versa. Only the selected prefix is the one used for data entry.
 
 To select another prefix for data readout without re-selecting the message
 function the **CLEAR** key on the CAP is used, this resets the readout and
@@ -804,7 +802,7 @@ line (ADL). The WCS computer can override this setting if necessary. The **AZ
 CTR** (azimuth control) and **EL CTR** (elevation control) knobs sets the
 elevation and azimuth centerpoint of the antenna scan pattern. The **azimuth
 control** moves the azimuth scan center within 65° degrees of the aircraft
-centerline, this is disabled if azimuth scan width is set to ±65° as it already
+centerline, this is has no effect if azimuth scan width is set to ±65° as it already
 scans the whole available azimuth range. Do not move the scan pattern so that it
 scans outside of 65° from aircraft centerline as this might damage the antenna
 as it might hit the antenna azimuth stops. The **elevation control** moves the
@@ -813,11 +811,12 @@ zero elevation. It can move from -76° to +54°. Both control knobs have marked
 centerpoints, being aircraft centerline and zero elevation respectively.
 
 The **AZ SCAN** (azimuth scan) and **EL BARS** (elevation bars) selector knobs
-controls the size of the antenna scan pattern. The AZ SCAN selector knob has
-four settings, ±10°, ±20°, ±40° and ±65°. The EL BARS selector knob also has
-four settings, 1, 2, 4 or 8 bars. 1 bar being 2.3°, 2 bars 3.6°, 4 bars 6.3° and
-8 bars 11.5°. The reason for the elevation coverage not equalling one bar times
-the number of bars being that the bars overlap slightly.
+control the size of the antenna scan pattern, in degrees either side of center. 
+The AZ SCAN selector knob has four settings, ±10°, ±20°, ±40° and ±65°. The 
+EL BARS selector knob also has four settings, 1, 2, 4 or 8 bars. 1 bar covers
+2.3° of elevation, 2 bars 3.6°, 4 bars 6.3° and 8 bars 11.5°. The reason for
+the elevation coverage not equalling one bar times the number of bars is that
+the bars overlap slightly.
 
 The last radar control on the panel is the **VSL** switch. Momentary selection
 of VSL HIGH or LOW activates the vertical scan lockon acquisition mode (VSL).
