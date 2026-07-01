@@ -35,6 +35,7 @@ NAV COMP 提示灯将保持亮起，而 RIO 应将 NAV MODE 旋钮转动至 IMU/
 NAV COMP 提示灯表示 RIO 使用NAV MODE 旋钮手动选择或由于 CSDC 或 IMU 失效而自动选择，INS 正在降级模式下运行。
 
 > 💡
+>
 > - 当 INS 模式下发生 IMU 量化器失效时，系统将自动选择 IMU/AM 模式，STBY/READY 提示灯和 NAV COMP 提示灯将亮起。
 > RIO 应该将 NAV MODE 旋钮从 INS 转动至 IMU/AM 档位。 STBY/READY 提示灯将熄灭——但 NAV COMP 提示灯将保持亮起。
 > - 当 TID 中显示 CSI ACRO 并且 NAV COMP 提示灯亮起时，HUD 或 VDI 不会自动切换至备用姿态源，RIO 也无法手动切换到任何备用模式。
