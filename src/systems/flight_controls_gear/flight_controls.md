@@ -1,209 +1,120 @@
-# Flight Controls & AFCS
+# 飞行控制系统 & AFCS
 
-The flight control system on the F-14 Tomcat is driven by the two main hydraulic
-circuits, powered by pumps connected to each engine.
+F-14 “雄猫” 的飞行控制系统由两个主液压回路驱动，液压由连接到每个发动机的液压泵提供动力。
 
-For longitudinal (pitch) control both tail stabilizers are deflected in unison,
-acting in the same way as traditional elevators.
+在进行纵向（俯仰）控制时，机尾两侧的水平安定面的偏转角度保持一致，其作动方式与传统升降舵相同。
 
-Lateral (roll) control is produced by both the tail stabilizers and the spoilers
-working in unison. To produce roll the stabilizers are deflected opposite each
-other to act as ailerons in combination with the spoilers on the side to which
-roll is commanded.
+横向（横滚）控制由水平安定面和扰流板一同作动。为了使飞机进行横滚，机尾两侧的水平安定面将会向相反的方向偏转并配合使用横滚方向的扰流板来达到副翼的效果。
 
-The rudders on the F-14 is a standard rudder configuration albeit in a two tail,
-two rudder configuration.
+尽管 F-14 安装有两个垂直安定面和两个方向舵，但这仍然是标准舵面配置。
 
-Control surface position is indicated on the Control Surface Position Indicator
-and can also be used to check trim position with controls at neutral.
+操纵面的位置将在操纵面位置指示器中指示出来，操纵面位置指示器也可以用于检查驾驶杆位于中立位置时，操纵面配平的位置。
 
-> 💡 Above 15 units AOA, the rudders should be used for lateral (roll) control
-> due to the different airflow along the aircraft control surfaces.
+> 💡 在 AOA 超过15个单位时，由于沿操纵面流过的气流发生变化，所以飞行员应使用方向舵来进行横向（横滚）控制。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b5opjCygZug?si=dhH39mxO0XQ-5ZpC"
-title="DCS World - F-14 Tomcat - Maneuvering and Flight Characteristics" frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## 配平
 
-## Trim
+飞行员可以通过驾驶杆中的配平开关进行俯仰和横滚配平。按下配平开关会改变驾驶杆的中立位置，从而配平飞机。
+方向舵通过进气道斜板/油门控制面板中的 **RUDDER TRIM** 开关进行配平，使用这个开关进行配平同样会改变脚蹬板的中立位置。
 
-Longitudinal and lateral trim is accomplished via the trim hat on the Control
-Stick. This changes the stick neutral position, thus trimming the aircraft.
-Rudder trim is accomplished via the **RUDDER TRIM** switch on the Inlet
-Ramps/Throttle Control Panel, changing the neutral rudder position.
+马赫数配平和 ITS（综合配平系统）会自动进行配平以补偿俯仰配平带来的变化。马赫数配平系统可以补偿在跨声速和超声速时的配平变化，而 ITS 将补偿由于减速板以及襟翼位置变化带来的配平变化。
 
-The Mach Trim and ITS (Integrated Trim System) automatically trims to compensate
-for changes in longitudinal trim. The Mach Trim system compensates for transonic
-and supersonic trim changes and the ITS for trim changes due to flap and
-speed-brake position changes.
+## AFCS 自动飞行控制系统
 
-## AFCS Automatic Flight Control System
+AFCS（自动飞行控制系统）可通过从 AFCS 传感器生成的自动操纵面指令来为飞机提供额外的稳定性（SAS 或增稳系统 ）。
+通过 :ref:`afcs` 中的三个开关分别控制 AFCS 的仰俯、横滚和偏航增稳，每个增稳开关都可以单独进行设置。
 
-The AFCS or Automatic Flight Control System provides additional aircraft
-stability (SAS or Stability Augmentation System) via automatic control surface
-commands generated from AFCS sensors. The AFCS is controlled by switches on the
-AFCS Control Panel and pitch, roll and yaw can each be set individually.
+俯仰和横滚增稳开关由弹簧归中，但是一般情况下通过为螺线管通电来使其保持在 ON 档位，这意味着，如果系统关闭或或无法进行操作，那么开关将会弹回 OFF 档位。偏航增稳开关是纯机械结构的开关。
 
-The pitch and roll switches are spring-loaded to off but normally held to on by
-solenoids meaning that if the system is turned off or inoperable the switches
-return to off. The yaw switch is purely mechanical.
+当 AOA 超过15个单位时，不得使用横滚 SAS，飞行员应该在格斗机动中将 ROLL SAS 设置为关闭。
 
-Roll SAS should not be used for situations involving flight at AOA above 15
-units and should therefore be set to off for combat maneuvers.
+按下驾驶杆中的自动驾驶应急断开宽柄开关会使横滚和俯仰增稳开关退回 OFF 档位。
 
-If the autopilot emergency disengage paddle on the control stick is held down
-the pitch and roll channels will be set to off.
+## 自动驾驶
 
-## Autopilot
+除开增稳外，AFCS 还用于为飞行员提供自动驾驶功能。如需使用自动驾驶功能，必须先启用所有三个增稳通道。
 
-Apart from stability augmentation the AFCS is also used to provide autopilot
-functionality. To use the autopilot all three stabilization channels must be
-enabled.
+自动驾驶系统的控制开关位于 AFCS 控制面板中。
 
-The controls for the autopilot system are situated on the AFCS Control Panel.
+可用的自动驾驶模式包括：姿态保持、航向保持、地面航迹、高度保持、VECTOR/PCD（精确航线方向）和 ACL（自动助降）模式。
 
-Autopilot modes available are attitude hold, heading hold, ground track,
-altitude hold, vector/pcd (precision course direction) and acl (automatic
-carrier landing).
+将自动驾驶的 **ENGAGE** 开关拨至 ON 即可接通姿态保持，并保持飞机当前的姿态。
+姿态保持的限制为30°俯仰和60°横滚，超出这个范围，飞机将自动移动至限制范围内。飞机当前的姿态可以通过操纵驾驶杆来变更，当释放驾驶杆时，自动驾驶将会保持释放驾驶杆时的姿态。
 
-By setting the autopilot **ENGAGE** switch to on the attitude hold is engaged,
-maintaining current aircraft attitude. Limited to within 30° pitch and 60° roll
-angles and the aircraft will be automatically moved within this range. Current
-attitude can be changed with the control stick and will be held when the stick
-is released.
+注意，在启用其它自动驾驶模式前，首先需要打开 **ENGAGE** 开关。
 
-The **ENGAGE** switch is also a prerequisite for all other autopilot modes.
+HDG 开关的 **HDG** 档位用来启用航向保持，操纵飞机转向至所需的航向，并将飞机坡度保持在5°以内来接通航向保持。
 
-The **HDG** position on the HDG switch enables heading hold, maneuver the
-aircraft to desired heading and with a bank angle of less than 5° to set
-heading.
+将 HDG 开关设置到 **GT** 档位时自动驾驶将进入地面航迹模式，等待垂直显示指示器（VDI）左侧的 **A/P REF** 告警灯亮起，之后按下驾驶杆中的前轮转向按钮。
+按下前轮转向按钮后 **A/P REF** 告警灯将熄灭，接着地面航迹模式将被启用，接通后将设置自动驾驶补偿飞机的风偏来跟随地面航迹。
 
-The ground track mode is entered by setting the HDG switch to **GT**, wait for
-the **A/P REF** warning light on the left side of the Vertical Display Indicator
-(VDI) to illuminate and then press the nosewheel steering button on the control
-stick. The **A/P REF** warning light will then turn off and the ground track
-mode will be enabled, setting the autopilot to follow a ground track by
-compensating for aircraft wind drift.
+**ALT** ——高度开关用于选择高度保持模式，与地面航迹模式相似，**A/P REF** 告警灯亮起后，按下前轮转向按钮启来接通高度保持模式。
 
-The altitude hold mode is set via the **ALT**, altitude, switch and like the
-ground track mode the **A/P REF** warning light will illuminate until the
-nosewheel steering button is depressed, enabling the mode.
+数据链路引导 - 精确航线方向模式用于允许 Link 4 操作员远程操纵飞机。该功能没有在 DCS 中进行模拟。
 
-The Data Link Vector - Precision Course Direction mode is used to allow a Link 4
-controller to remotely control the aircraft. This is not modelled in DCS.
+最后一种自动驾驶模式为 ACL，也就是自动助降模式，自动助降模式将联合 Link 4 数据链路和机载雷达信标来进行自动着舰。
+如需启用 ACL 模式，首先将 VEC/PCD 开关拨至 **ACL** 档位，拨至 ACL 档位后将使 **A/P REF** 告警灯将亮起。
+截获 ACL 下滑道后，且 VDI 一旁的 **ACL READY** 和 **A/P CPLR** 告警灯亮起后，按下驾驶杆中的前轮转向按钮。
+按下前轮转向按钮后 ACL 模式将被启用，此时将由数据链路来操纵飞机
+ACL 启用后 **A/P REF** 告警灯将熄灭。
 
-Finally the ACL or Automatic Carrier Landing mode is used to conduct automatic
-carrier landings in conjunction with the Link 4 data link and the on-board radar
-beacon. To enable the ACL, set the VEC/PCD switch to **ACL** which will cause
-the **A/P REF** warning light to illuminate. When intercepting the ACL
-glideslope and with the **ACL READY** and **A/P CPLR** warning lights
-illuminated on the VDI, depress the nosewheel steering button on the control
-stick. This engages the ACL and lets the data link control the aircraft. The
-**A/P REF** warning light will turn off.
+ACL 可以与 APC（详见油门控制握把 ）结合使用来进行全自动助降。
+ACL 可以通过右侧油门握把上的 **PLM** 按钮断开，而 APC 可以通过左侧油门握把上的 **CAGE/SEAM** 按钮来断开。
 
-The ACL can be used in conjunction with the APC (see Throttle Controls) for a
-fully automatic landing. The ACL can be disengaged via the **PLM** button on the
-right throttle and the APC via the **CAGE/SEAM** button on the left throttle.
+所有自动驾驶模式都可以通过用力移动驾驶杆来超控或可以通过自动驾驶应急断开手柄来解除自动驾驶，按下手柄后所有自动驾驶开关将复位至 OFF 档位。
 
-All the autopilot modes can be overridden by enough force on the control stick
-or by depression of the autopilot emergency disengagement paddle, automatically
-resetting all autopilot switches to off.
+## 扰流板
 
-## Spoilers
+扰流板位于机翼的上翼面，上文中（飞行控制系统）详细介绍了扰流板用于控制横滚，以及作为防滑系统的一部分用于在地面进行制动，同时扰流板也是 DLC 系统的一部分（详见下一部分）。
 
-The spoilers located on the upper surfaces of the wings are used to control roll
-as detailed above under Flight Control System, for braking on the ground as part
-of the Antiskid system and as a part of the DLC system (see next section).
+为了避免和机身冲突，扰流板仅能在机翼后掠角度小于 62° 时伸出。
 
-The spoilers are only used forwards of 62° wing-sweep as further aft these
-conflict with the fuselage.
+如果扰流板发送故障，无论是内侧还是外侧扰流板，扰流板对称保护逻辑将会禁用与故障扰流板位于同一部分中的所有扰流板。如果扰流板故障，注意 - 提示灯面板中的 **SPOILERS** 注意灯将会亮起。
 
-In case of a spoiler malfunction the spoiler symmetry protection logic disables
-all of the spoilers in the same section as the failed spoiler, either inboard or
-outboard spoilers. If this occurs the **SPOILERS** caution light on the
-Caution - Advisory Indicator illuminates.
+如需超控对称保护，升起保护盖并将扰流板故障超控中相应部分所对应的开关拨动至 **ORIDE** 档位，接着按下燃油管理面板中的 **MASTER RESET** 按钮来超控对称保护。
 
-To override this the switch corresponding to the relevant section on the Spoiler
-Failure Override can be set to override by lifting the guard and setting the
-switch to **ORIDE** and then depressing the **MASTER RESET** button on the Fuel
-Management Panel.
+扰流板的位置可以在操纵面位置指示器中查看。
 
-Spoiler position can be seen on the Control Surface Position Indicator.
+## 直接升力控制（DLC）
 
-## DLC Direct Lift Control
+直接升力控制（DLC）用于在无俯仰输入和油门调整的情况下控制飞机在下滑道上的位置。DLC 使用机翼两侧的内侧扰流板并联合小幅调整水平安定面来控制升力。
 
-The DLC or Direct Lift Control is used to control vertical glideslope position
-without pitch control inputs or engine throttle commands. The DLC uses the two
-inboard spoiler sections in conjunction with small corrections on the tail
-stabilizers to control lift.
+当襟翼放下且油门握把处在 **MIL** （军推）以下时，按下驾驶杆中的 DLC 开关来接通 DLC。
+接通 DLC 后，内侧扰流板将会伸出一半并允许使用驾驶杆中的 DLC 和机动襟翼控制拨轮对其进行控制。
+DLC 还需要 AFCS 横滚和俯仰通道、内侧扰流板和液压系统正常工作。
 
-The DLC is engaged by depression of the DLC switch on the control stick with
-flaps down and throttles less than **MIL**. This causes the inboard spoilers to
-extend to half and enables the DLC & maneuver flap command thumbwheel on the
-control stick to control them. The DLC also requires the AFCS roll and pitch
-channels, the inboard spoilers and the hydraulic systems to be operative as
-well.
+向前转动拨轮将使扰流板完全伸出，这将导致升力减小并使下滑道降低。向后转动拨轮将使扰流板收起到机翼表面，这将导致升力增加并使下滑道升高。
 
-Rotation of the thumbwheel forwards extends the spoilers towards the max up
-position, decreasing lift and adjusting glideslope position downward. Rotation
-of the thumbwheel aft retracts the spoilers towards the flush position,
-increasing lift and adjusting glideslope position upward.
+再次按下 DLC 开关会断开 DLC 系统。
 
-Another depression of the DLC switch disengages the system.
+## 襟翼和缝翼
 
-## Flaps and Slats
+F-14 “雄猫” 的襟翼和缝翼可在两种模式下使用。
 
-The flaps and slats on the F-14 Tomcat can be used in two modes.
+襟翼和前缘缝翼的放下一般通过油门弧座旁的 **FLAP** 控制杆来控制。襟翼可以调节至收上和完全放下之间的任何位置，襟翼最大偏转角度为35°，前缘缝翼则为17°。
+辅助襟翼——最内侧部分的襟翼，辅助襟翼只有两个位置——收上和完全放下。当 **FLAP** 控制杆移动超过 5° 的位置时，辅助襟翼将完全放下。
 
-The normal flap and slat extension is controlled using the **FLAP** handle on
-the Throttle Quadrant. The flaps can be set to anywhere between retracted and
-fully extended where the flaps will extend to 35° and the slats to 17°. The
-auxiliary flaps, the innermost section, only have two positions, retracted and
-extended. They will extend fully when the **FLAP** handle is at more than 5°
-extension.
+如果存在故障使得襟翼无法被收上，那么飞行员应将 **FLAP** 控制杆移至 **UP** 档位后，接着向外侧移动并向上推至 **EMER UP** 档位来超控故障的互锁机构。
 
-If a fault exists preventing retraction of flaps the **FLAP** handle should be
-moved to the **UP** position and then moved outboard and up to the **EMER UP**
-position, overriding faulty interlocks.
+另一种模式为 CADC 在机动襟翼系统中自动使用襟翼和前缘缝翼来改善飞机的飞行性能。在这个模式下，襟翼最大偏转至10°，前缘缝翼最大偏转至7°，禁用最内侧的辅助襟翼。
 
-The other mode is the maneuver flap system in which the CADC uses the flaps and
-slats automatically to improve aircraft performance. In this mode the flaps
-extends to 10° maximum and the slats to 7° maximum and the innermost flap
-section is disabled.
+一般来说，在自动模式下，机动襟翼系统仍然可以通过驾驶杆中的 DLC 和机动襟翼控制拨轮来手动控制机动襟翼。向前转动旋钮收起襟翼和前缘缝翼，向后转动旋钮放下襟翼和前缘缝翼。
 
-While normally automatic the maneuver flap system can be manually controlled
-using the DLC & maneuver flap command thumbwheel on the control stick. Forward
-thumbwheel rotation retracts the flaps and slats and aft thumbwheel rotation
-extends them.
+机翼后掠时，襟翼将受限于机翼后掠的位置。机翼后掠角大于21°时，辅助（内侧襟翼）襟翼将被禁用。机翼后掠角大于50°时，所有襟翼将被禁用。前缘缝翼不会由于机翼后掠而被禁止。
 
-When sweeping the wings the flaps are limited by the wing-sweep position. Aft of
-21° sweep the auxiliary (inboard flaps) are disabled up. Aft of 50° all flaps
-are disabled up. The slats are not inhibited by wing-sweep.
+襟翼和缝翼的位置在机轮-襟翼位置指示器中指示。
 
-Position of the flaps and slats are indicated on the Wheels-Flaps Position
-Indicator.
+飞行员驾驶舱中 注意 - 提示灯面板 上的 **FLAP** 灯亮起表示襟翼系统中发生故障，并且襟翼位置不对称
+垂直显示指示器（VDI）左侧的 **REDUCE SPEED** 告警灯表示指示空速超过225节但襟翼仍未收上。
 
-The **FLAP** light on the pilot Caution - Advisory Indicator indicates a
-malfunction in the flap system with flaps at non symmetrical positions. The
-**REDUCE SPEED** warning light on the left side of the Vertical Display
-Indicator (VDI) indicates flaps not retracted above 225 knots indicated
-airspeed.
+## 减速板
 
-## Speedbrakes
+F-14 “雄猫” 中的减速板由三个独立的操纵面组成，减速板位于飞机尾部，两台发动机之间，操纵面由联合液压系统提供动力。
 
-The speedbrakes on the F-14 Tomcat consists of three sections on the tail
-located between the engines and these are powered by the combined hydraulic
-system.
+减速板控制开关位于右侧油门握把中，根据控制开关保持在展开档位的时间，飞行员可以将减速板设置到所需的位置。收起减速板时将始终会直接完全收起。
 
-The speedbrake controls are located on the right Throttle and can be set to
-desired position depending on how long the switch is held to the extend
-position. Retraction always fully retracts the speedbrakes.
+为了避免减速板受损，空速超过400节后，减速板将会逐渐收起，并且使用 **MIL** （军推）或更大的推力时，减速板会被自动收起。
 
-To protect the speedbrakes they will start retracting above 400 knots and will
-continue to do so with increasing airspeed, additionally selection of **MIL**
-power or above automatically retracts them.
+由于减速板展开会扰动机尾附近的气流，为了避免放油时燃油溅到飞机上，减速板展开时，放油将会被禁用。
 
-As the speedbrakes disturb airflow around the tail the fuel dump is disabled
-with speedbrake extension as to not have the fuel hit the aircraft.
-
-Position of the speedbrakes can be seen on the Wheels-Flaps Position Indicator.
+减速板的位置可以在机轮-襟翼位置指示器中查看。

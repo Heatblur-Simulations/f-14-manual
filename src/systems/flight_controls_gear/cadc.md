@@ -1,8 +1,6 @@
-# Central Air Data Computer (CADC)
+# 中央大气数据计算机（CADC）
 
-The Central Air Data Computer or CADC is the computer acting as the spider in
-the web for most aircraft flight sensors and relaying this information to all
-systems needing them.
+中央大气数据计算机（CADC）就像蜘蛛网中心的蜘蛛一样接收绝大多数飞机飞行传感器收集的信息，并将这些信息传递给所有需要这些信息的系统。
 
-In addition, it also controls the wing-sweep via the wing-sweep schedule and
-also controls the flaps and slats as they are limited by that same schedule.
+
+除此之外，CADC 通过机翼后掠制度来控制机翼后掠，同时 CADC 还控制襟翼和前缘缝翼，并且还受到相同制度的限制。
