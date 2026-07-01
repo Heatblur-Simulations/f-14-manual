@@ -1,68 +1,47 @@
-# TSEC/KY-28 Voice Security Equipment
+# TSEC/KY-28 保密话音设备
 
-The security equipment is integrated and operates with the VHF/UHF 2 and UHF 1
-communication sets to enable secure voice in a hostile environment. The KY-28
-control panel on the RIO left side console is the only cockpit control for
-operating the KY-28 in either cipher or plain-language modes.
+保密话音设备已集成进 VHF/UHF 2 和 UHF 1 通信系统中并与两个无线电台协同运行以在敌对环境中提供保密话音通信。
+驾驶舱中唯一一个控制 KY-28 的密文或明文模式的是位于 RIO 左侧控制台的 KY-28 控制面板。
 
-The KY-28 has two basic modes of operation: plain (P) and cipher (C). The plain
-mode is used during normal UHF communications. The cipher mode is used when
-secure voice communications are desired. The radio sets must be ON to attain
-secure operation. The receiving station must be properly equipped to receive
-transmissions in the proper cipher mode.
+KY-28 有两种基本的工作模式：明文（P）或密文（C）。在正常的 UHF 通信下使用明文模式。
+当需要保密话音时则使用密文模式。无线电台必须位于 ON 以实现加密操作。接收机也应配备正确的设备来接收特定密文模式的传输。
 
-![ky-28](../../../img/general_communications_ky-28.jpg)
 
-| Control/Indicator       | Function                                                                                                                                                                                                                                                                                                                                              |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **ZEROIZE switch**      | By lifting the guard the preloaded codes are erased and must be loaded on the ground before the cipher mode can be used again. In DCS this is done via the ground crew communications menu.                                                                                                                                                           |
-| **Power-mode switch**   | P/OFF - UHF radio is used as a plain-language transceiver. Removes power from the system. C - Used to transmit and receive in secure mode (cipher) using preloaded codes. Also applies power to the system. To preload codes the system must be in this mode and power be applied. DELAY - Provides a time delay between PTT and actual transmission. |
-| **Radio-select switch** | RELAY - Re-transmits information acting as a relay for other stations, increasing their range. (Not functional in DCS) RAD-2 - Selects V/UHF 2 for secure voice. RAD-1 - Selects UHF 1 for secure voice.                                                                                                                                              |
+| 控制/指示器        | 功能                                                                                                                                                                                                               |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **ZEROIZE 开关**   | 掀起保护盖后预加载的密钥将被擦除，在重新使用密文模式前并且必须在地面重新加载密钥。在 DCS 中该步骤可以通过地勤通信菜单完成。                                                                                        |
+| **电源/模式旋钮**  | P/OFF - UHF 无线电台使用明文进行收发。系统未通电。 C - 此模式下使用预加载密钥进行密文模式（cipher）收发。
+系统此时接通电源。若需预加载密钥，系统须处于此模式并通电。 DELAY - 在按键通话和实际传输之间提供时间延迟。 |
+| **无线电选择旋钮** | RELAY - 为其他电台提供信号中继以延长传输距离。（DCS中无功能）
+RAD-2 - 选择 V/UHF 2 用于保密话音。
+RAD-1 - 选择 UHF 1 用于保密话音。                                                                                |
 
-## KY-28 Operation
+## KY-28 操作
 
-### Prelaunch
+**起飞前:**
 
-1. Determine that the proper code has been set by personnel qualified in voice
-   security equipment. In DCS and in combination with SRS (Simple Radio) this is
-   done through the ground crew communication menu in the DCS communications
-   menu.
-2. VHF/UHF radios - ON.
-3. Power mode switch - C.
-4. Radio selector - RAD-1 or RAD-2.
-5. If a ground test of equipment is desired, establish two-way, plain-text radio
-   communications on the plain-voice radio with a suitable remote station and
-   request an equipment check. (In DCS another player is needed)
-6. After a 2-minute warmup period, on the cipher-selected radio listen for a
-   steady, unbroken tone in the headset followed by a double-pitched broken
-   tone.
-7. Key the appropriate radio selected for transmission, hold for approximately 2
-   seconds, and release. The double-pitched broken tone will cease and no sound
-   will be heard.
-8. Key radio and hold. A single-beep tone will be heard in approximately 1-1/2
-   seconds. When this tone is heard, the equipment is ready to cipher
-   transmission.
-9. After the beep tone is heard, establish two-way cipher radio communications
-   with a cooperating ground station and check for readability and signal
-   strength.
-10. Set power mode and radio selector switches in accordance with the tactical
-    situation.
+1. 确认由具备使用保密话音设备资格的人员加载正确的密钥。在 DCS 中，以及和 SRS （Simple Radio）一起使用时，通过无线电菜单中的地勤来加载密钥。
+2. VHF/UHF 电台 - ON.
+3. 电源/模式旋钮 - C。
+4. 无线电台选择开关 - RAD-1 或 RAD-2。
+5. 若需对设备进行地面测试，请与另一台合适的无线电台建立双向明文无线电通信并请求通信检查。在 DCS 中这需要与另一名玩家配合。
+6. 在两分钟预热之后，选择密文后通过头戴收听一段稳定、连续的单音，随后是两个间断的单音。
+7. 选择适当的通信频率进行传输，按下 PTT 大约2秒后然后释放。间断的单音将会停止，且之后将不会播放声音。
+8. 再次按下 PTT 并保持。在大约0.5至1秒后将会听到一声嘟的单音。当听到此单音后，设备已准备好进行保密话音传输。
+9. 听见嘟的单音后，与地面电台建立双向 UHF 保密话音无线电通信来检查可读性和信号强度。
+10. 根据战术情况自行设定电源模式及无线电选择旋钮。
 
-> 💡 The above procedures may be used to perform an in-flight check of the
-> equipment.
+> 💡 上述步骤同样可用于设备的空中检查。
 
-### Postlaunch
+**起飞后:**
 
-The speech security equipment shall be operated as briefed.
+- 保密话音设备应按照简报进行操作。
 
-> 💡 If ZEROIZE is pressed during flight, ciphered communication is not
-> possible. The code can only be reset (or changed) through the ground crew
-> communications menu after landing.
+> 💡 若在飞行中按下了 ZEROIZE 开关，则无法进行密文通信。密钥只能在降落后通过地勤通信菜单进行复位或变更。
 
-### After Landing
+**降落后:**
 
-1. ZEROIZE switch - ZEROIZE (as briefed).
-2. Power switch - OFF.
+1. ZEROIZE 开关 - ZEROIZE（按简报要求）。
+2. 电源开关 - OFF。
 
-> 💡 If ZEROIZE has been pressed and the POWER MODE switch is in C, both
-> crewmembers will be warned by a continuing beeping sound.
+> 💡 若 POWER MODE 旋钮位于 C 档位时按下 ZEROIZE 开关，则飞行员和 RIO 均将听到连续的嘟嘟警告音。

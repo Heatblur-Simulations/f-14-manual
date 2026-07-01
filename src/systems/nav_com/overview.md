@@ -1,46 +1,23 @@
-# Navigation & Communication
+# 导航 & 通信
 
-The F-14’s primary navigation system is a multi-unit Carrier Aircraft Inertial
-Navigation System (CAINS) designated as AN/ASN-92. An INS system measures and
-integrates sensed inertia forces (acceleration) and rotational velocities to
-calculate aircraft position and linear velocity. A good navigation system can
-precisely guide an aircraft on a route to a mission objective hundred or
-thousand miles-long, and then back to the home base, safely and reliably. Such a
-system is even more important when an aircraft is designed to operate over the
-ocean, far away from any ground-based TACAN or visual references.
+F-14 的主要导航系统是一套多单位舰载机惯性导航系统（CAINS），该系统的代号为 AN/ASN-92。INS 系统测量和积分测得的惯性力（加速度）以及旋转角速度来计算飞机的位置和线速度。
+一套良好的导航系统可以精确地引导飞机前往数百或数千英里外的任务目标，然后安全、可靠地返回到基地。
+当飞机被设计为在远离地面塔康台和目视参考点的大洋上执行任务时，这样的导航系统显得更加重要。
 
-Designing an INS (IMU) is an engineering challenge, which requires consideration
-of such problems as calibration, alignment, Earth’s rotational motion, inertia
-forces, thermal stability, analogue-digital converters precision, all different
-types of corrections which have to be applied to keep the device precise over
-extended time, and many more. Simulating an INS platform is very similar - it is
-a complex undertaking.
+设计一套 INS（IMU）是一项有挑战性的工作，工程师需要全面考虑各项问题，如校正、对准、地球自转、惯性力、热稳定性、模数转换器精度、各种类型的校正以保证设备长时间运行后依旧保持精度，以及更多需要考虑的问题。模拟一套 INS 平台是也很相似——这也不是什么轻松的活。
 
-At Heatblur, we decided to develop an entirely new mathematical model to
-simulate the AN/ASN-92 for our F-14. We included all the potential sources of
-errors contributing to the final precision of the device, and recreated the
-characteristic behavior of a gimballed INS platform. The result is a set of
-algorithms providing an authentic representation of the AN/ASN-92 in DCS, yet
-optimized to have almost no impact on CPU performance.
+在 Heatblur ，我们决定开发一套全新的数学模型来模拟我们 F-14 的 AN/ASN-92。
+模型包括了所有导致设备最终精度偏差的潜在误差源，并重建了一个三环式三轴 INS 平台的特性行为。
+这一系列下来的结果是一组算法可以在 DCS 中真实还原 AN/ASN-92，但经过优化之后却能够做到几乎不影响 CPU 性能。
 
-The main components of the INS are the inertial measurement unit (IMU), the
-power supply unit and pilot and RIO navigation controls and displays.
+INS 的主要部件包括了惯性测量装置（IMU），电源以及飞行员及 RIO 的导航控制与显示。
 
-Although from the crew member’s point of view, the INS is used mostly for
-navigation, it is also essential for proper operations of other aircraft
-equipment. For example, the attitude is necessary for the radar. The attitude
-and the own position are required for some weapon delivery modes, particularly
-for long shots. Even more distressing to the crew, a complete failure of the INS
-renders the more advanced modes of weapons such as the AIM-7 and AIM-54 missiles
-inoperable.
+尽管对于机组来说，INS 主要用于导航，但 INS 对其他机载设备的正常运行来说也是必不可少的。
+例如，雷达就需要从 INS 获取飞机的姿态。一些武器投放模式（特别是那些长距离投放模式），需要获取姿态以及本机位置信息。
+更令机组痛苦的是，INS 的完全失效使得例如 AIM-7 或 AIM-54 的某些高级模式无法使用。
 
-The same information is used for data-link operations - when using erroneous INS
-data, own tracks and targets received from cooperating aircraft will not match
-and result in false contacts being displayed on the TID. These are only a few
-examples, and the INS data is used whenever aircraft position or attitude is
-required.
+同样的信息也被用于数据链路的运行——当使用错误的 INS 数据时，从友机接收的本机航迹以及目标信息将无法匹配，并且将导致 TID 显示错误的目标。
+以上的情况只是一些例子，每当飞机系统需要用到飞机姿态和位置数据时，这些数据均取自 INS 系统。
 
-Thus the inertial navigation system (INS) integrates with the AWG-9 computer
-(WCS computer) and the CSDC, the computer signal data converter. Other related
-equipment includes the attitude and heading reference system, central air data
-computer, radar altimeter, instrument landing system, and TACAN.
+因此，惯性导航系统（INS）与 AWG-9 计算机（WCS 计算机）以及 CSDC（计算机信号数据转换器，Computer Signal Data Converter）集成在一起。
+其他相关的设备包括姿态航向基准系统、中央大气数据计算机、雷达高度计，仪表着陆系统以及 TACAN。

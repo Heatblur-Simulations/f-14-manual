@@ -1,19 +1,9 @@
-# Bearing Distance and Heading Indicator (BDHI)
+# 方位距离航向指示器（BDHI）
 
-A BDHI is on the right side of the pilot and RIO instrument panels, see Bearing
-Distance Heading Indicator (BDHI). It displays aircraft magnetic heading with
-navigation bearing data and range information. The controls on the compass panel
-set the BDHI compass card to operate in a slaved or non-slaved (FREE DG) compass
-mode. A fixed index marker at the 12-o’clock position indicates the magnetic
-heading.
+BDHI 位于飞行员和 RIO 的右仪表板中，详见 方位距离航向指示器（BDHI） 。BDHI 显示飞机磁和导航方位数据以及距离信息。
+罗盘控制面板上的控制开关/按钮用于设置 BDHI 罗盘使用隶属或非隶属（FREE DG）罗盘模式运行。12点方向的固定指针用于指示飞机飞机的磁航向。
 
-Two servo-driven bearing needles show magnetic bearings to the selected UHF
-(ADF) and TACAN stations. The No.1 (single bar) needle receives signals from the
-UHF (ADF) system, the No.2 (double bar) needle receives signals from the TACAN
-coupler.
+两根伺服驱动方位指针用于显示选择的 UHF（ADF）和 TACAN 台的磁方位。一号指针（单根指针）接收 UHF（ADF）系统信号，二号指针（两根针组成）接收 TACAN 耦合器的信号。
 
-The No.1 needle will continue to point toward the signal source, even if the
-compass card is misaligned or a malfunction exists, but the bearing to the
-station is displayed on the indicator as a relative bearing and the top of the
-indicator bezel will show 000°. The No.2 needle will also continue to show the
-magnetic bearing to the selected station or may revert to the search mode.
+即使罗盘错位或故障，一号指针仍会指向信号源，但是电台的方位以相对方位显示在指示器中，并且一号指针在指向指示器顶部的固定指针时表示电台相对方位为000°。
+二号指针也将继续显示所选塔康台的磁方位或恢复到搜索模式。
