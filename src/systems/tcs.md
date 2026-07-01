@@ -1,209 +1,147 @@
 # AN/AXX-1 TCS
 
-![TCS](../img/general_tcs_tcs.jpg) _U.S. Navy photo by Photographer’s Mate
-Airman Justin S. Osborne. (030418-N-0382O-591)_
+![TCS](../img/general_tcs_tcs.jpg) _照片由美国海军摄影师 Justin S.
+Osborne 拍摄（030418-N-0382O-591）_
 
-The television camera set, or TCS, was constructed as a replacement for the IRST
-which was present in the first F-14As produced. When the IRST was found to have
-insufficient capability it was decided to replace it with the TCS giving the
-F-14 a long range visual identification capability.
+电视摄像套件（TCS），是为了替代早期 F-14A 战斗机所搭载的 IRST 而制造的。
+在军方发现 IRST 能力不足后，决定使用 TCS 替换原有的 IRST，以赋予 F-14 战机远程目视识别能力。
 
-The TCS is located underneath and behind the radar radome, just in front of the
-nose gear well. It contains an aircraft stabilized high resolution (for its
-time) closed circuit television camera. The sensor has two fields of view (FOV),
-narrow (NFOV) which is 0.44° or 10X magnification and wide (WFOV) which is 1.42°
-or 4X magnification. The gimbal limits are +/- 15° except upwards which is
-limited to +11° and the TCS is capable of independent contrast lock or being
-slaved to the AN/AWG-9 radar.
+TCS 位于雷达天线罩的后下方，正好在前轮轮舱的前方。TCS 包含相对飞机稳定的高分辨率闭路电视摄像机（相对当时来说）。
+传感器有两种视场（FOV），第一种是窄视场（NFOV）——视场 0.44°或10X 放大率，以及宽视场（WFOV）视场为 1.42°或4X 放大率。
+除了向上角度限制为+11°外，环架运动的限制为 +/- 15°，并且 TCS 拥有单独的对比度锁定或隶属至 AN/AWG-9 雷达的能力。
 
-The TCS is controlled by the RIO using the sensor control panel, DDD, TID and
-the HCU. Video from the sensor can be displayed on the TID and the VDI in the
-front seat. Also, the video can be recorded using the airborne video tape
-recorder for later review. (Not currently implemented in DCS.)
+TCS 可由 RIO 通过传感器控制面板、DDD、TID 和 HCU 来控制。传感器的视频可以显示在 TID 以及前座的 VDI 中。此外，视频还可以通过机载录像机来进行录制，以便事后观看。（DCS 中尚未实现）
 
-## Controls
+## 控制开关/按钮
 
-The controls for the TCS are located in the RIO cockpit at the sensor control
-panel, the DDD and the HCU/TID. The pilot display control panel contains a
-switch allowing display of TCS video on the VDI.
+TCS 的控制器位于 RIO 驾驶舱中的传感器控制面板上，DDD 和 HCU/TID 上。飞行员显示控制面板中包含了一个开关可允许选择在 VDI 中显示 TCS 视频。
 
-### Sensor Control Panel
+### 传感器控制面板
 
 ![Sensor Control Panel](../img/general_tcs_scp.jpg)
 
-The controls on the sensor control panel for the TCS are; the TCS trim knobs,
-the SLAVE switch, the field of view, FOV, switch and the acquire, ACQ, switch.
+传感器控制面板上用于控制 TCS 的控制开关/按钮有： TCS 调整旋钮、SLAVE 开关、FOV 开关 、目标捕获开关 ACQ 。
 
-The **TCS TRIM** knobs controls TCS sensor line of sight, LOS, calibration
-relative the AN/AWG-9 radar LOS. If needed these can be used to trim the TCS so
-that the two sensors LOS correlate. They have a ±2° range of motion and the
-easiest way to check and calibrate the TCS is to lock up a friendly target in
-STT and adjust the knobs until the TCS LOS is correctly aimed at the locked
-target.
+**TCS TRIM**
+旋钮用于控制 TCS 传感器的视线（LOS），校正相对于 AN/AWG-9 雷达的视线。如果有需要，可以使用这个旋钮来调整 TCS，使得两个传感器的视线相重合。
+TCS 调整旋钮的运动范围为 ±2°，检查和校正 TCS 最简单的方法是使用 STT 锁定一个友方目标，并通过调整旋钮直到 TCS
+LOS 正确地瞄准了锁定的目标为止。
 
-The **SLAVE** switch controls which sensor is controlled by the other. If set to
-**RDR** the radar is slaved to the TCS as long as an optical track exists. If
-set to **INDEP** each sensor operates independently of the other. And if set to
-**TCS** the TCS is slaved to radar LOS as long as an STT track exists.
+**SLAVE** 开关主要用来控制传感器的隶属关系如果设置到 **RDR**
+档位，雷达将会隶属至 TCS 直到光学跟踪丢失为止。如果设置为 **INDEP**
+，则各传感器会独立工作如果将开关设置为 **TCS**
+档位，TCS 将隶属至雷达 LOS 直到 STT 脱锁为止。
 
-The **FOV**, field of view switch controls what FOV is used in the TCS. **WIDE**
-sets the 1.42°, 4X magnification FOV and **NAR** sets the narrow 0.44°, 10X
-magnification FOV.
+**FOV** ，视场开关用于控制 TCS 使用哪种 FOV。 **WIDE\***
+档位将视场设置为 1.42°，4X 放大率，而 NAR 档位将视场设置为 0.44°, 10X 放大率。
 
-Lastly the **ACQ**, acquire switch controls the acquisition mode in use in the
-TCS. **AUTO SRCH** enables an automatic acquisition mode with a search pattern,
-enabling acquisition of the closest target even if outside current FOV. **MAN**
-selects purely manual acquisition with the HCU where the target needs to be
-pointed at directly. **AUTO** sets an automatic acquisition mode without a
-search pattern making the TCS snap to a target as long as it’s inside the TCS
-FOV.
+最后—— **ACQ** 开关，捕获开关用于控制 TCS 使用的捕获模式。选择 **AUTO SRCH**
+档位将启用带有搜索模式的自动捕获模式，此模式中即使目标在当前 FOV 外，也能够捕获最近的目标。选择
+**MAN** 档位则使用 HCU 纯手动直接指向所需的目标。选择 **AUTO**
+档位将使用无搜索模式的自动捕获模式，选择后将使得 TCS 可以自动捕获 FOV 内的目标。
 
-#### TCS Controls
+#### TCS 控制开关/按钮
 
-The **TCS TRIM** knobs controls TCS calibration in azimuth (AZ) and elevation
-(EL). This is used to calibrate the TCS line of sight to be equal to the radar
-line of sight. Normally this is done by locking a target in STT, setting slave
-to TCS and then fine-tuning the calibration knobs until the TCS looks directly
-at the locked target.
+**TCS TRIM** 旋钮用来校正 TCS 的方位（AZ）和仰角（EL）。TCS
+TRIM 旋钮用来校正 TCS 视线对准雷达视线。通常通过以下方式来完成校正：
+使用 STT 锁定一个目标，设置隶属为 TCS，接着微调校正旋钮直到 TCS 视线对准锁定的目标。
 
-The last two switches controlling the TCS are the ACQ (acquisition) and FOV
-(field of view) switches. The **ACQ** switch controls how the TCS locks onto
-targets. AUTO SRCH means the TCS will move by itself in a limited search pattern
-trying to find a target. MAN (manual) means the TCS only locks onto targets if
-commanded to by the HCU in TCS mode and AUTO means the TCS automatically tries
-to lock onto targets entering its field of view. The **FOV** switch sets whether
-the WIDE or NAR (narrow) field of view is used by the TCS.
+最后两个用于控制 TCS 的开关是 ACQ（捕获）开关和 FOV（视场）开关。 **ACQ**
+开关可以控制 TCS 如何锁定目标。当处于 AUTO
+SRCH 档位时 TCS 传感器会在有限扫描模式中移动尝试找到目标。
+MAN（手动）档位只能通过 HCU 在 IR/TV 模式下手动锁定目标，AUTO（自动）档位下 TCS 将自动尝试锁定进入视场内的目标。
+**FOV** 开关可以用来控制 TCS 使用 WIDE（宽）或 NAR（窄）视场。
 
 ### DDD
 
 ![DDD](../img/general_tcs_tcsddd.jpg)
 
-The DDD contains two indicators pertaining to the TCS.
+DDD 中包含两个与 TCS 相关的指示器。
 
-The **DDD EL** meter shows current elevation of the TCS sensor LOS as long as
-the IR/TV mode is selected on the HCU.
+只要在 HCU 上选择 IR/TV 模式， **DDD EL** 仪表就会显示 TCS LOS 的仰角。
 
-The **IROT** light indicates the presence of a TCS track. The IROT acronym is
-inherited from the IRST which the TCS replaced.
+**IROT**
+指示灯亮起表示 TCS 正在跟踪目标。缩写 IROT 是从被 TCS 所取代的 IRST 继承下来的。
 
 ### HCU/TID
 
 ![HCU/TID](../img/general_tcs_hcu.jpg)
 
-The HCU contains the power switch and indicator for the TCS as well as a button
-enabling selection for using the HCU to control the TCS while the TID itself has
-a control knob enabling display of the TCS video on the TID as well as a
-brightness and contrast control for the video on the TID.
+HCU 中包含了 TCS 的电源开关和指示器，以及一个用于选择使用 HCU 控制 TCS 的按钮，
+而 TID 中包含了一个用于在 TID 中显示 TCS 视频的控制旋钮以及用于控制 TID 中视频亮度与视频对比度的旋钮。
 
-The **IR/TV power** switch is located on the top left corner on the HCU panel
-and controls power to the TCS. **OFF** disables all power to the TCS. **STBY**
-enables power to the cooling fans and heaters in the TCS. **IR/TV** supplies
-power to all systems in the TCS, allow 1-2 minutes for the TCS to spin up and
-deliver video. TCS symbology on the TID on the other hand will be available
-directly. There is also no need to select the STBY position first, setting the
-switch to IR/TV directly works fine.
+**IR/TV power**
+开关位于 HCU 面板的左上角，这个按钮用来控制 TCS 的电源。处于 OFF 档位将关闭 TCS 的电源。
+**STBY** 档位将为 TCS 中的冷却风扇和加热器供电。 **IR/TV**
+档位为 TCS 中所有系统供电，等待1-2分钟使 TCS 起旋（译注：内部陀螺仪）并传输视频。
+但在另一方面，TID 中的 TCS 符号将会直接可用。同时也无需先选择 STBY 档位，直接将开关拨动至 IR/TV 档位即可。
 
-The indication light next to the power switch indicates a TCS over temperature
-condition is lit. If present the TCS should be powered off to prevent damage to
-the system.
+电源开关旁的指示灯亮起表示 TCS 超温。如果这个灯光亮起，应该关闭 TCS 的电源以防止系统损坏。
 
-The **IR/TV** button next to the HCU stick enables HCU stick control of the TCS
-sensor, half-action to manually control sensor LOS and full-action to command
-target acquisition.
+HCU 控制杆一旁的 **IR/TV**
+按钮用来启用 HCU 控制杆来操纵 TCS 传感器，按下扳机第一段来手动操纵传感器 LOS，按下扳机第二段来指令捕获目标。
 
-On the TID display control the **TID MODE** switch set to **TV** enables display
-of the TCS video on the TID. Note that this disables the TID repeat on the HSD.
+在 TID 控制面板上，转动 **TID MODE** 至 **TV**
+档位将启用 TCS 视频显示在 TID 中。请注意，这同时会禁用 HSD 中的 TID 复显。
 
-Finally the **CONTRAST** and **BRIGHTNESS** knobs on the upper part of the TID
-can be used to control the TCS video shown on the TID.
+最后，位于导航控制与数据读数面板上的 **CONTRAST** 和 **BRIGHTNESS**
+旋钮可用于控制显示在 TID 中的 TCS 视频。
 
-## Symbology
+## 标识符
 
 ![Symbology](../img/general_tcs_symbology.jpg)
 
-On the TID in non TV mode a TCS track is indicated by a 1.5” strobe at TCS LOS
-azimuth with a hollow circle at the end.
+TID 在非 TV 模式时，TCS 跟踪由 TCS LOS 方位上，1.5英寸长的射线和空心圆指示。
 
-The symbology on the video feed from the TCS has indicators for the FOV and two
-crosshairs indicating TCS LOS relative own aircraft, **GACH**, and AN/AWG-9
-radar LOS relative TCS LOS, **RACH**. Additionally the track window is indicated
-by 4 small squares representing each corner of that window.
+TCS 输出视频中的标识符包括了 FOV 指示器和两个十字准星，十字准星分别指示了相对本机的 TCS
+LOS—— **GACH** ，以及相对于 AN/AWG-9 雷达 LOS 的 TCS LOS—— **RACH**
+。此外，跟踪窗口由4个小正方形指示，每个小正方形对应跟踪窗口的一角。
 
-The field of view lines are shown when in the wide FOV indicating the size of
-the area visible when switching to the narrow FOV. They consist of two parallel
-lines together creating the sides of an imaginary box indicating the narrow FOV
-size.
+在宽 FOV 中，视场线条将会显示出来，视场线条用来指示当切换为窄视场时，可见区域的大小。
+视场线条由两条平行的线所组成，这两根平行线构成了虚构“框”的边，这个虚构的“框”则用来指示窄 FOV 的大小。
 
-The gimbal angle crosshairs or **GACH**, which is a solid cross, indicate
-deflection of the TCS LOS from the aircraft datum line, ADL. GACH crosshair in
-center indicates TCS LOS along ADL and deflection towards the edges indicate
-deflection towards the gimbal limits with the video edges being maximum
-deflection.
+环架角度十字准星或称为 **GACH**
+，这个十字准星为实线，用来指示相对于武器基准线（ADL）TCS
+LOS 的偏转。中心的 GACH 十字准星指示 TCS
+LOS 指向 ADL，GACH 向边缘偏转表示正在朝环架限制偏转，视频的边缘便是最大偏转角度。
 
-**RACH** or radar angle crosshairs, a dashed crosshair, indicate radar antenna
-LOS when inside the current TCS FOV. When the sensors are slaved to one another
-RACH and GACH will coincide creating a single solid crosshair.
+**RACH** 或称为雷达角度十字准星（虚线十字准星），RACH 指示在 TCS
+FOV 中雷达天线的 LOS。当传感器隶属至另一方时，RACH 和 GACH 将会重合，并将形成一个线条为实线的十字准星。
 
-The track window indicates the area that the TCS contrast tracker is currently
-locked on to if it has acquired a target. When not in an active track these
-squares collapse into the center of the display being 2% of the screen width
-when in manual mode and 5% when in an auto mode.
+如果 TCS 已捕获了一个目标，那么跟踪窗口表示 TCS 对比度跟踪器当前锁定的区域。当没有跟踪目标时，跟踪窗口将居中于屏幕中心，在手动模式下将缩放为屏幕宽度的2%，在自动模式下则为5%。
 
-## TCS Operation
+## TCS 操作
 
-All acquisition modes of the TCS have in common that they can be controlled
-using the HCU in IR/TV mode. Selection of the IR/TV button on the HCU enables
-this mode and also sets the DDD EL meter (right indicator) to show current TCS
-sensor LOS elevation. Half-action enables the HCU to directly control the LOS of
-the TCS and full-action commands target acquisition using the selected
-acquisition mode.
+TCS 的所有捕获模式都有一个共同点，那就是可以在 IR/TV 模式下使用 HCU 来控制 TCS。
+选择 HCU 中的 IR/TV 按钮将启用这个模式，同时将设置 DDD
+EL 指示器（右侧指示器）为显示当前 TCS 传感器 LOS 仰角。按下扳机第一段将启用 HCU 来直接控制 TCS
+LOS，按下扳机第二段将指令使用所选择捕获模式来进行目标捕获。
 
-For manual, **MAN**, TCS acquisition mode this means that the HCU must be used
-in half-action to position the tracking window indication over the target and
-then selecting full-action. If successfully acquired the track window will then
-expand to encompass the target and tracking will begin.
+手动 TCS 捕获模式—— **MAN**，表示必须使用 HCU 按下扳机第一段来将跟踪窗口置于目标上方，然后按下扳机第二段。
+如果成功捕获到了目标，跟踪窗口将扩展来框住目标，并开始跟踪。
 
-In automatic, **AUTO** acquisition mode half-action works the same but when
-selecting full-action for acquisition the TCS will instead automatically try to
-lock on to the target closest to the center in the current FOV. Automatic
-search, **AUTO SRCH** mode further enhances this by enabling a search pattern
-around the commanded FOV (by moving the sensor LOS) acquiring the first found
-target.
+自动捕获模式下—— **AUTO**，按下扳机第一段和手动相同，但是当按下扳机第二段进行捕获时，TCS 将会自动尝试锁定在当前 FOV 中离中心最近的目标。
+自动搜索捕获模式——**AUTO SRCH**，通过启用在指令 FOV 周围的搜索模式（通过移动传感器 LOS）来捕获发现的第一个目标，以此来进一步增强自动捕获模式。
 
-When using the TCS slave to radar option the two auto modes will automatically
-try to lock on to the STT target as soon as it exists and the TCS has been
-slewed to that target, enabling a fully automatic track of a target locked in
-STT. Additionally, as soon as a track is acquired from an STT lock the TCS will
-compare its own LOS to the radar LOS to check if the correct target has been
-locked, if the two LOS differ by more than a couple of degrees during a 3-second
-window a new acquisition will be attempted. The manual mode will also slave to
-radar LOS but will not lock on, instead just following the radar LOS.
+当使用 TCS 隶属至雷达时，两个自动模式将会自动尝试锁定 STT 目标（一旦存在），TCS 将被转动至锁定的目标上，从而实现对 STT 锁定目标的全自动跟踪。
+此外，一旦从 STT 锁定中捕获了一个跟踪，TCS 将会对 TCS 自身的 LOS 和雷达的 LOS 进行比较来检查是否锁定了正确的目标，
+如果在3秒窗口内，两者的 LOS 相差超过一定度数，TCS 将会尝试新的捕获。手动模式下同样也会隶属至雷达，不过并不会锁定目标，而是仅跟随雷达的 LOS。
 
-To unlock a tracked target when not being slaved to radar, select half-action
-and release.
+当没有隶属至雷达时，如需解锁跟踪的目标，按下扳机第一段并释放。
 
-For information about RDR slaved to TCS check the relevant AN/AWG-9 section.
+有关 RDR 隶属至 TCS 的信息，请参阅本章中 AN/AWG-9 部分下的相关介绍。
 
-### TCS Slave Radar Acquisition
+### 雷达隶属于 TCS 截获目标
 
-The TCS can be used to track a target in angle while still using the radar for
-range and rate. When selecting the radar to be slaved to the TCS line of sight
-via the sensor control panel (SLAVE in the RDR position) the radar will still be
-active but pointing in the direction of the TCS line of sight while the TCS has
-an active track instead of scanning.
+TCS 可用于对目标进行角跟踪并同时使用雷达对目标距离和接近率进行跟踪。当通过传感器控制面板开关设置雷达隶属于 TCS 视线时（SLAVE 开关设置为 RDR 档位），
+雷达仍启用但是当 TCS 正在跟踪一个目标时，雷达将指向 TCS 视线，而不是进行扫描。
 
-From this state it is possible to command half-action and then position the
-acquisition gates at the target video and then command full-action. This will
-result in either pulse doppler slaved or pulse slaved mode depending on previous
-radar mode. It is also possible to switch using the P STT and PD STT button on
-the DDD panel.
+此时可以按下 HCU 控制杆扳机第一段，然后将捕获门置于目标上方，接着按下扳机第二段。
+根据先前所选的搜索模式，按下扳机第二段后将会使雷达以脉冲多普勒模式或脉冲模式隶属至目标。
+可以使用 DDD 面板中的 P STT 按钮和 PD STT 按钮来切换 STT 模式。
 
-The resulting sub-mode entered is equivalent to an STT mode where the TCS is
-instead used to track the target's angle rather than the radar itself. The radar
-is still used to track range and rate, on the DDD the IROT lights instead of the
-ANT ROT, IROT relating to IR tracking which has been replaced by the TCS in the
-modeled F-14 versions.
+雷达进入子模式等同于 STT 模式，在这个子模式下，TCS 代替雷达本身用来对目标进行角跟踪。雷达仍然可用于对目标进行距离和接近率跟踪，在 DDD 中，IROT 将代替 ANT
+ROT 亮起，IROT 和红外跟踪有关，但是在模拟的 F-14 版本中红外跟踪已被 TCS 替代。
 
-This mode can be used to guide missiles, active and CW modes if in pulse and in
-PD if in pulse doppler. If the SLAVE switch is set to INDEP from this mode the
-system reverts to true pulse STT or pulse doppler STT depending on current mode.
+雷达隶属于 TCS 子模式可以为导弹提供制导，雷达在脉冲模式下使用主动模式发射和连续波模式来为导弹制导，在脉冲多普勒模式下则为 PD 模式为导弹提供制导。
+如果从子模式将 SLAVE 设置为 INDEP 档位，那么系统将会根据当前的 STT 模式恢复至真脉冲 STT 或真脉冲多普勒 STT。

@@ -1,79 +1,51 @@
-# ACM Modes
+# ACM 模式
 
-The AN/AWG-9 has three distinct ACM acquisition modes. Pilot lockon mode (PLM),
-vertical scan lockon (VSL) and manual rapid lockon (MRL).
+AN/AWG-9 雷达拥有三种不同的 ACM 截获模式。飞行员锁定模式（PLM）、垂直扫描锁定模式（VSL）和手动快速锁定（MRL）。
 
-The ACM modes are listed in priority order, the different modes overriding other
-modes lower in the prioritization. This means that PLM always overrides VSL and
-lower modes and VSL overrides PAL and lower modes but not PLM and so on.
+ACM 模式是以优先级顺序列出的，优先级较高的模式会超控其它优先级较低的模式。
+这意味着 PLM 模式始终超控 VSL 以及优先级更低的模式，VSL 模式超控 PAL 和优先级更低的模式，但是不会超控 PLM，依此类推。
 
-All of the modes can be exited by the RIO selecting half-action and release on
-the HCU except PLM which will be in effect until the pilot releases the PLM
-button.
+除了 PLM 模式外，所有 ACM 模式可以通过 RIO 按下并释放 HCU 扳机第一段来退出，PLM 模式将一直启用直到飞行员释放 PLM 按钮。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ujk4hL_EnUc?si=khwLvLn6hHSDWm9m"
-title="DCS World - F-14 Tomcat - Front Seat - ACM - Radar Acquisition Modes" frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-## Pilot Lockon Mode (PLM)
+## 飞行员锁定模式 (PLM)
 
 ![PLM](../../img/general_awg-9_plm.jpg)
 
-The PLM is the ACM mode with the highest priority, it always overrides any other
-radar mode and is enabled when the pilot presses the PLM button on the front of
-the right throttle. Depression of that button commands the antenna to the
-armament datum line (ADL) and causes it to lock onto the first target seen out
-to 5 NM.
+PLM 是 ACM 模式中优先级最高的模式，将始终会超控其它雷达模式，飞行员需要通过按下右发油门握把上的 PLM 按钮时来启用 PLM 模式。
+按下 PLM 按钮将会指令天线对准武器基准线（ADL），并使雷达尝试锁定5海里内的首个看到的目标。
 
-Thus the procedure to use PLM is for the pilot to fly the ADL marker on the HUD
-over the target and then press and hold the PLM button until lockon occurs. The
-PLM continues until a target is detected and transition to pulse STT occurs or
-the PLM button is released making the radar transition to pulse search instead.
+因此，使用 PLM 的方法就是飞行员将 HUD 中的 ADL 标记对准目标处，然后按下 PLM 按钮直到目标锁定。
+PLM 将会保持启用直到探测到目标并转换至脉冲 STT，或直到飞行员松开 PLM 按钮使雷达转换回脉冲搜索。
 
-## Vertical Scan Lockon (VSL)
+## 垂直扫描锁定模式（VSL）
 
 ![VSL](../../img/general_awg-9_vsl.jpg)
 
-The VSL mode is enabled by the pilot or the RIO and is used to acquire a target
-at own aircraft's current heading from an elevation of -15° to +55°. The RIO can
-use the VSL switch on the sensor control panel in the RIO cockpit. Two sub-modes
-are available by placing the switch into either VSL HI (high) or VSL LO (low)
-and releasing it back to center. The pilot can enable VSL HI or LO by selecting
-UP or DN respectively on the target designate switch when not in A/G mode.
+VSL 模式可以由飞行员或者 RIO 启用，VSL 模式用于锁定飞机当前航向上仰角 -15° 到 +55° 的目标。RIO 可以使用传感器控制面板上 VSL 开关选择 VSL 模式。
+RIO 可以通过将传感器控制面板中的 VSL 开关拨至 VSL HI（高目标）档位或 VSL LO（低目标）档位并松开来选择这两个子模式。
+除了在 A/G 模式下，飞行员可以使用目标指定开关 UP 或 DN 分别启用 VSL HI 或 VSL LO。
 
-This commands the antenna to start a volume 5° wide in a circular fashion. If
-VSL HI is commanded the vertical area covered is from +15° to +55° and if VSL LO
-is commanded the area covered is from -15° to +25°. VSL is indicated on the HUD
-by the diamond moving with antenna line of sight indicating its current
-position.
+启用 VSL 将命令天线以 5° 宽方位进行扫描。如果启用 VSL HI，那么垂直扫描的覆盖区间将为 +15° 到 +55°；
+如果启用 VSL LO，那么垂直扫描的覆盖区间将为 -15° 到 +25°。VSL 通过随天线视线移动的菱形在 HUD 中指示出来，菱形用来指示天线视线当前所处的位置。
 
-When a target is detected within 5 NM the radar transitions into pulse STT,
-otherwise it continues in VSL until another mode is selected.
+当探测到5海里内的目标时，雷达将转换至脉冲 STT 模式，否则将继续执行 VSL 直到选择其它模式。
 
-## Pilot Automatic Lockon (PAL)
+## 飞行员自动锁定模式（PAL）
 
-PAL is enabled by the pilot selecting DES on the target designate switch when
-not in A/G mode.
+在 A/G 模式以外时，飞行员可通过使用目标指定开关选择 DES 档位来启用 PAL 模式。
 
-PAL commands the antenna to an 8-bar ±20° scan pattern locking onto the first
-target detected out to 15 NM. This mode is indicated by the diamond on the HUD
-following current antenna line of sight.
+PAL 模式将指令天线进行 8 线 ±20° 栅状扫描，并锁定15海里内探测到的第一个目标。
+PAL 模式由 HUD 中，随天线视线移动的菱形指示，菱形用来指示天线实现当前的位置。
 
-## Manual Rapid Lockon (MRL)
+## 手动快速锁定（MRL）
 
 ![MRL](../../img/general_awg-9_mrl.jpg)
 
-The manual rapid lockon (MRL) mode allows the RIO to quickly acquire a target
-within the antenna limits out to 5 NM. When the MRL button on the right side of
-the HCU stick is depressed it commands the radar to start a one-bar supersearch
-pattern out to 5 NM.
+手动快速锁定模式（MRL）允许 RIO 在天线环架极限内快速锁定一个5海里内的目标。
+按下 HCU 控制杆右侧的 MRL 按钮将会命令雷达启用1线、锁定距离为5海里内的目标的超级搜索。
 
-The HCU stick controls the supersearch pattern in azimuth and elevation
-(left/right controlling azimuth and up/down controlling elevation). The DDD
-displays a normal supersearch pattern in 5 NM scale and additionally two tick
-marks are shown at the edge of the scan pattern indicating current elevation.
+HCU 控制杆用来控制超级搜索栅状扫描的方位和仰角（X 轴控制方位，Y 轴控制仰角）。
+DDD 中将会显示超级搜索的栅状扫描，DDD 显示的标度为5海里，并且在栅状扫描的边缘处还显示了两个刻度标记，刻度标记用来指示当前天线的仰角。
 
-When the target is visible the RIO commands full-action to acquire the target
-and transfer to pulse STT. If only half-action is commanded after entering into
-MRL and then released the radar transfers back to pulse search.
+当 DDD 中显示出目标时，RIO 可按下扳机第二段来截获目标并转换至脉冲 STT。
+如果在进入 MRL 后 RIO 仅按下扳机第一段并松开，那么雷达将会返回脉冲搜索模式。

@@ -1,10 +1,6 @@
-# AN/AWG-9 Radar
+# AN/AWG-9雷达
 
-The AN/AWG-9 radar in the F-14 is an all-weather, multi-mode pulse doppler radar
-using the X-band (X-band being 8-12 GHz). It was designed specifically to be a
-long range radar system capable of guiding up to 6 AIM-54 Phoenix missiles using
-its track while scan mode. One originally envisioned scenario was its use as a
-long range fleet defender intercepting russian bombers and attack aircraft
-threatening the fleet. During the F-14’s later service life this mission
-transitioned more towards the anti-fighter side, a mission for which it was very
-well adapted.
+F-14 所装备的 AN/AWG-9 雷达是一部工作在 X 波段（8 - 12 GHZ）下的全天候，多模式脉冲多普勒雷达。
+AWG-9 雷达专为远程攻击而设计，可以在边扫描边跟踪（TWS）模式下同时引导6枚 AIM-54 “不死鸟”导弹攻击不同的目标。
+在最初的设想中，F-14 用作为远程舰队守卫者拦截俄罗斯轰炸机和其他威胁到舰队的敌机。
+在 F-14 服役生涯的后期，F-14 的任务重心由拦截敌方轰炸机转为对抗敌方战斗机。事实证明，F-14 同样很擅长这项任务。
