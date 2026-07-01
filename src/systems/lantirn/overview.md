@@ -1,196 +1,118 @@
 # LANTIRN
 
-![LANTIRN](../../img/general_lantirn_lantirn.jpg) _U.S. Navy photo by
-Photographer’s Mate 2nd Class Felix Garza Jr. (030325-N-4142G-009)_
+![LANTIRN](../../img/general_lantirn_lantirn.jpg) _照片由美国海军摄影师 Felix Garza Jr 拍摄。（030325-N-4142G-009）_
 
-The LANTIRN or Low Altitude Navigation and Targeting Infrared for Night began
-life as combined targeting and navigation pods designed for the F-15E and F-16.
-When the US Navy became interested in using the F-14 Tomcat in the A/G role
-Martin Marietta (now Lockheed Martin) began its own program to show that the
-LANTIRN could quickly be adapted for F-14 use.
+LANTIRN（夜间低空导航与红外瞄准吊舱）最初是作为瞄准和导航吊舱的结合体为 F-15E 和 F-16 战机研发的。
+当美国海军开始对使用 F-14 雄猫进行对地攻击任务开始感兴趣时，
+马丁-马利埃塔（Martin-Marietta，现已并入洛克希德）公司开始了它们自己的计划来证明 LANTIRN 可以快速适配 F-14。
 
-As the pod was adapted for the F-14 the secondary navigational pod was deleted,
-keeping only the targeting pod. The pod was wired up to its own control panel as
-the F-14 didn’t have the required 1553-bus for complete integration. The control
-panel was patched into the TCS to TID video feed allowing it to select either
-the TCS or the LANTIRN for display on the TID and VDI.
+由于吊舱用于适配 F-14，所以移除了次要的导航吊舱，仅保留了瞄准吊舱。再由于 F-14 并没有安装完全集成进机内所需的 1553 总线，所以吊舱被连接到了其自身的控制面板中。
+控制面板被补丁连接至 TCS -> TID 视频输出源中从而使得控制面板可以选择在 TID 和 VDI 中显示 TCS 或 LANTIRN 视频。
 
-While the pod can read waypoints and selected weapon from the WCS, the pod has
-its own GPS receiver and is otherwise self-contained and controlled only via its
-own control panel. Additionally, it also has its own weapons release guidance
-removing the need to boresight the pod to the aircraft, a time-consuming task.
+虽然吊舱可以从 WCS 读取航路点和所选的武器，但吊舱自身具有 GPS 接收机并且吊舱是独立的，只能通过其控制面板进行操纵。除此之外，吊舱拥有独立的武器投放引导，从而无需耗费时间的将吊舱对准飞机。
 
-The FLIR sensor itself has three different zoom levels or fields of view (FoV).
-The Wide FoV limits are 5.9° and allows a maximum slew rate of 8.5°/s. The
-Narrow FoV limits are 1.7° and allows a maximum slew rate of 1.8°/s. The last
-mode, the Expanded FoV is a digital zoom of the Narrow FoV, meaning that the
-resolution will be worse in this mode. The FoV limits for the Expanded FoV are
-0.8° with a max slew rate of 0.7°/s.
+FLIR 传感器有三级不同的变焦等级或视场（FoV）。宽视场极限为5.9°并且最大移动速率为8.5°/s。窄视场极限为1.7°并且最大移动速率为1.8°/s。
+最后一种模式——扩展视场，扩展视场为窄视场的数码变焦，这表示在此模式下分辨率会变得更差。扩展视场的视场极限为0.8°以及最大移动速率0.7°每秒。
 
-## Controls and Displays
+## 控制和显示
 
-All the controls for the LANTIRN are situated on its own control panel mounted
-on the RIO’s left side console when the pod is present, including the switch
-controlling what video feed the TID and VDI display in the TV mode.
+装备了吊舱时，LANTIRN 的所有控制都在自身的控制面板中，这个控制面板安装在 RIO 左侧控制台上，包括控制在 TV 模式中，显示在 TID 和 VDI 的输出源。
 
-### LANTIRN Video Elements
+### LANTIRN 视频元素
 
-The FLIR (Forward Looking InfraRed) video-feed from the LANTIRN has superimposed
-data readout for the crew’s use. This video-feed can be viewed both on the TID
-(in TV-mode) and on the VDI (also in TV-mode) when the FLIR feed is selected on
-the control panel.
+LANTIRN 的 FLIR 视频输出源叠加了数据读数提供给机组使用。
+当在控制面板选择了 FLIR 源时，这个视频输出源就可以在 TID（在 TV 模式中）和 VDI（也是在 TV 模式中）中进行观看。
 
-Amongst other things the displays show own aircraft position, target position as
-well as targeting cues to the crew. When using the LANTIRN for A/G attack these
-readouts are also used as targeting and release cues.
+除此之外，显示器还向机组显示了本机位置、目标位置以及瞄准提示。当使用 LANTIRN 用于 A/G 攻击时这些读数也用于瞄准和投放提示。
 
 ![FLIR](../../img/general_lantirn_FLIR.jpg)
 
-Own aircraft data is shown in the upper left corner (<num>1</num>), showing
-position, altitude, groundspeed and pitch angle (dive).
+本机数据显示在视频左上角 (<num>1</num>)，显示位置、高度、地速以及俯仰角（dive）。
 
-On the left side (<num>2</num>) the pod displays whether it’s using white hot or
-black hot (WHOT and BHOT) as well as if the AGC (Automatic Gain Control) or MGC
-(Manual Gain Control) is in use.
+视频左侧 (<num>2</num>)，显示当前吊舱正在使用白热还是黑热（WHOT 和 BHOT），以及是否使用了 AGC（自动增益控制）或 MGC（手动增益控制）。
 
-The lower left data-block (<num>3</num>) shows pod information, SR is slant
-range (line of sight range), AZ and EL is pod line of sight azimuth and
-elevation relative aircraft ADL (with AZ having L or R for left or right of
-aircraft heading). Below that is current UTC time and then IBIT codes below
-that.
+视频左下角的数据（<num>3</num>）显示的是吊舱信息，SR——斜距（视线距离）、AZ 和 EL 为吊舱视线相对 ADL 的方位和仰角（AZ 则由字母 L 或 R 表示视线在飞机航向左侧或右侧）。
+位于AZ 和 EL 下方的是当前的 UTC 时间，再向下为 IBIT 代码。
 
-> 💡 IBIT codes are not implemented currently and the clock will show local
-> time.
+> 💡 IBIT 代码当前未实装，UTC 时间将显示本地时间。
 
-The lower middle (<num>4</num>) shows current pod mode (A/A or A/G) and track
-mode (AREA, POINT or Q designations) on the left side. The right side shows
-currently selected weapon and laser code while above and in the center an L is
-shown when the laser is armed and flashing when firing the laser.
+视频下部中间（<num>4</num>）左侧显示了当前吊舱的模式（A/A 或 A/G）、跟踪模式（AREA，POINT 和 Q 指定）。
+视频右侧显示当前所选的武器和在其上方的激光编码，当激光解除保险后将在视频中间显示字母 L，并且当激光照射时字母 L 将会开始闪烁。
 
-The lower right (<num>5</num>) shows data for currently selected Q (slew-point)
-except for QSNO, QADL and QHUD, TTG being time to go until on top of currently
-selected Q, the rows below that, bearing and range to Q, ELEV indicating
-elevation in feet of Q and lastly, below that, Q location.
+视频右下角(<num>5</num>)显示除 QSNO、QADL 和 QHUD 以外的当前所选 Q（隶属点）的数据，TTG 为到所选 Q 顶部的剩余时间，
+下面一行是到 Q 的方位和距离，ELEV 指示 Q 的高度（单位为英尺），下方的则为 Q 的位置。
 
-<num>6</num> is the crosshairs showing tracked position, in this case we have a
-bounding box, indicating currently tracked target in point mode. The two widest
-zoom modes will have boxes showing the field of view for the next, narrower,
-mode. Additionally there’s a small white square (FLIR pointing cue) moving
-around showing the current pod line of sight relative to aircraft from a top
-down perspective. In this case it’s right next to the upside down ^, top center,
-indicating that the pod is looking ahead of the aircraft. If the square is
-centered the pod is looking straight down and below center it indicates the pod
-looking aft.
+<num>6</num> 是显示跟踪位置的十字准星，在上图中还出现了一个指示框，这表示在点跟踪模式中当前处于跟踪的目标。最宽的两种变焦模式中会出现一个框，表示下一个较窄模式的视场。
+此外，还有一个小白色正方形（FLIR 指向提示）将四处移动，这个小白色正方形表示吊舱相对于飞机来说从上到下的当前的视线。
+在上图中，它正好在上下翻转的 ^ （顶部中央）的一侧，这表示吊舱正在看向飞机的正前方。如果正方形居中，表示吊舱正在朝正下方看，如果在中心以下，则表示吊舱在朝后看。
 
-Finally, <num>7</num> is the steering guidance towards the selected Q, the top
-one being commanded heading and the vertical one on the right the bomb release
-cue.
+最后，<num>7</num> 为飞向所选 Q 的转向引导，顶部的为指令航向，右侧垂直的为航弹投放提示。
 
-The commanded heading shows current aircraft heading above the inverted ^, with
-the commanded heading being displayed as a relative bearing either L (Left) or R
-(Right) of current aircraft heading below the line. The commanded heading is
-also indicated by a vertical line bisecting the horizontal one.
+在倒 ^ 的上方指令航向显示了当前飞机的航向，指令航向是作为当前飞机航向下方的横线（L 左或 R 右）的相对方位显示的。指令航向还通水平线上的短垂线来指示。
 
-The right, bomb release cue, is only shown if the selected Q is QDES and shows a
-vertical line along which a release cue travels downwards. This release cue is
-only visible with a valid weapon selection (bomb) and when it reaches the two
-tick marks, that’s the cue to release. Below the line is the indicated TREL
-(Time to Release) in seconds, changing to TIMP (Time to Impact) after release.
+右侧——航弹投放提示，仅在选择了 Q 为 QDES 和显示投放提示向下移动的垂线时显示。
+这个投放提示在已选择有效武器（航弹）时显示，并且当投放提示抵达两个刻度标记时，则表示是时候投放了。
+在垂线下方的是秒为单位的 TREL（投放时间）指示，在投放后，这个指示将变更为 TIMP（命中时间）。
 
-Around this all is the masking curve, indicating at what angles the pod will be
-masked by own aircraft (looking into the aircraft hull). This is relative to the
-FLIR pointing cue, when the cue moves outside the masking curve the sensor will
-be blocked by the hull.
+这些元素周围的弧线为遮挡弧线，这个弧线指示在何种角度下吊舱将会被本机遮挡住（看向机身）。弧线是相对于 FLIR 指向提示的，当指向提示移动到遮挡弧线外时，传感器将会被机身遮挡。
 
-### Control Panel
+### 控制面板
 
-The control panel contains all the controls for the pod, including the control
-stick.
+控制面板包含了吊舱所有的控制，包括控制杆。
 
 ![Control Panel](../../img/general_lantirn_panel.jpg)
 
-The power switch for the LANTIRN pod is located top left (<num>1</num>) with
-**OFF** disabling power to the system, **IMU** (blocked in above image) powering
-only the LANTIRN IMU and **POD** powering the whole system.
+LANTIRN 吊舱的电源开关旋钮位于面板的左上角（<num>1</num>）
+**OFF** 档位将不会为系统供电， **IMU** 档位（在上图中被遮挡）时仅向 LANTIRN IMU 供电， **POD** 档位则会为整个系统供电。
 
-> 💡 IMU selection has no current DCS function.
+> 💡 IMU 选项在 DCS 中无功能。
 
-The **MODE** switch (<num>2</num>) switches the POD sensor between **STBY**
-(Standby) and **OPER** (Operational).
+**MODE** 按钮（<num>2</num>）可以控制 POD 传感器在 **STBY** （待机）和 **OPER** （运行）之间切换。
 
-The **LASER ARMED** (<num>3</num>) light illuminates when the laser is armed
-while the **LASER** switch (<num>4</num>) arms it. (ARM and SAFE positions
-available.)
+当使用 LASER 开关（<num>4</num>）解除保险时，LASER ARMED （<num>3</num>）指示灯将会亮起。（ARM 和 SAFE 档位可用）。
 
-Down right is the **VIDEO** switch (<num>5</num>) which controls what video is
-fed to the TID and VDI, FLIR selecting LANTIRN FLIR video and TCS selecting TCS
-video.
+右下角的 **VIDEO** 按钮（<num>5</num>）用来控制 TID 和 VDI 的视频输出源，
+选择 FLIR 时会显示 LANTIRN FLIR 的视频，选择 TCS 时会显示 TCS 的视频。
 
-The four grouped indicator lights (<num>6</num>) indicate various error states
-in the LANTIRN system and the **IBIT** button (<num>7</num>) initiates the IBIT
-(Initialized Built-In-Test).
+四盏分组指示灯（<num>6</num>）用来指示 LANTIRN 系统中的各种错误状态。IBIT 按钮（<num>7</num>）用来启动 IBIT（已初始化机内自检）。
 
-> 💡 The IBIT and fault indicators are not currently implemented in DCS.
+> 💡 IBIT 和故障指示灯尚未实装进入 DCS。
 
-### Control Stick
+### 控制杆
 
-The control stick for the LANTIRN operates the LANTIRN’s sensor itself, note
-though that the stick itself does not move, the buttons and hats on the stick
-are used to control the pod.
+LANTIRN 的控制杆用来操控 LANTIRN 的传感器，请注意，尽管控制杆本身无法移动，但是控制杆上的按钮和苦力帽都是用于控制吊舱的。
 
 ![Control Stick](../../img/general_lantirn_stick.jpg)
 
-The left four-way hat, S3, (<num>1</num>) allows selection of QWp- and QWp+
-(left/right) in addition to Point Track (up) and Area Track (down) modes.
+左侧的四向苦力帽——S3（<num>1</num>）用于选择 QWP- 和 QWP+（向左/向右）以及点跟踪模式（向上）或者区域跟踪模式（向下）。
 
-The center slew hat (<num>2</num>) is used to slew the sensor line of sight
-itself and depression of this hat switches between white hot (WHOT) and black
-hot (BHOT) sensor modes.
+位于中间的苦力帽（<num>2</num>）用于控制传感器视线，按下这个苦力帽可以在白热（WHOT）传感器模式和黑热（BHOT）传感器模式之间切换。
 
-The right four-way hat, S4, (<num>3</num>) allows for selection of QADL/QHUD
-(up), QDES (right) and QSNO (down) in addition to declutter level which is
-cycled by momentary depression of the hat. The left slider additionally changes
-the right hat function as detailed further down.
+右侧的四向苦力帽——S4（<num>3</num>）可选择 QADL/QHUD（向上）、QDES（向右）、QSNO（向下）。
+除这些外，短暂按下苦力帽将会在不同简化等级之间循环。左侧的滑块还会变更右侧四向苦力帽的功能，详情见下。
 
-The red button on top (<num>4</num>) is used to cycle between the three fields
-of view (zoom levels) of the IR sensor.
+驾驶杆顶部的红色按钮（<num>4</num>）用于控制在 IR 传感器的三种不同的视场（变焦等级）之间循环。
 
-The two-way hat on the side (<num>5</num>) selects either the A/G or A/A modes
-of operation for the pod.
+位于侧面的的两向帽（<num>5</num>）用来选择 A/G 或 A/A 吊舱运行模式。
 
-Located on the left side of the stick head is a two way slider (<num>6</num>),
-spring-loaded to return to center. This switch changes the function of the right
-four-way hat.
+位于控制杆杆头左侧的两向滑块（<num>6</num>），滑块由弹簧归中。这个滑块用于变更右侧的四向苦力帽的功能。
 
-Sliding it forwards allows for selection of manual gain while releasing and
-sliding it forwards again re-selects automatic gain. Change of the manual gain
-with manual gain already selected can be done by sliding the switch forwards and
-holding it for 2 seconds. With this mode active up/down on the right hat
-increases and decreases the gain while left/right decreases and increases level.
+向前滑动滑块允许选择手动增益，而释放并再次向前滑动将重新选择自动增益。选择了手动增益的话，可以通过向前滑动滑块并保持 2 秒来变更手动增益。
+在手动增益模式中，右侧的苦力帽向上/向下拨动用于增加或减少增益，而向左/向右用于增加或减少电平。
 
-Sliding the switch aft momentarily allows selection of used laser code, while
-sliding it aft and holding allows for focus control. When set to laser code
-change, the right four-way hat selects digit to change with left/right and
-increases and decreases the selected digit with up/down. In focus control
-up/down increases and decreases focus.
+向后移动滑动滑块可对使用的激光编码进行选择，而向后滑动滑块并按住可以对聚焦进行控制。
+当设置为变更激光编码时，右侧的四向苦力帽向上/向下用于加减激光编码的数字，向左/向右用于变更选择的数位。在聚焦控制中，苦力帽向上/向下则用于加减聚焦。
 
-Located on the front of the stick (<num>7</num>) is a two-stage trigger, first
-detent manually lasing while the second detent fires the laser and designates
-QDES at current sensor position.
+位于控制杆前方的是一个二段式扳机（<num>7</num>），按下扳机第一段可以启用手动激光照射，而按下扳机第二段可以开启激光照射和指定当前传感器位置为 QDES。
 
-Lastly on the front side of the stick (<num>8</num>) is the latched laser fire
-button. Selecting it fires the laser for 60 seconds which can be overridden by
-the pressing and releasing the first trigger detent. A renewed press on the
-laser latch button resets the latched laser fire timer to 60 seconds, beginning
-a new 60 second countdown.
+最后，位于控制杆后方的是锁扣式激光照射按钮（<num>8</num>）。按下这个按钮后激光将会照射60秒钟，RIO 可以通过按下后并释放扳机第一段来超控。
+再次按下锁扣式激光照射按钮将复位锁扣式激光照射计时器至60秒钟，开始新的60秒钟倒计时。（译注：锁扣式按钮也就是按下后会自保持接通电路，而不需要按住按钮）
 
-## Startup
+## 启动
 
-To start the LANTIRN from cold, set the power switch to POD. This will start the
-LANTIRN power-up sequence which takes 8 minutes. When ready, this will be
-indicated by the MODE switch showing STBY.
+如要从未启动的 LANTIRN 启动它，将电源旋钮转动至 POD 档位。
+在拨动至 POD 档位时将会启动 LANTIRN 通电序列，启动可能需要花费 8 分钟时间，MODE 开关显示 STBY 后则表示准备就绪。
 
-When at STBY, depression of the MODE button switches the system to OPER
-(Operational), enabling the LANTIRN sensor after a 30-second initialization.
+STBY 亮起时，按下 MODE 按钮开关系统将会切换至 OPER（运行），在30秒钟初始化之后启用 LANTIRN 传感器。
 
-Lastly, to allow display of LANTIRN FLIR video, select FLIR on the VIDEO switch.
+最后，如需显示 LANTIRN FLIR 的视频，将 VIDEO 开关切换为 FLIR。
