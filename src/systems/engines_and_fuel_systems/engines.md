@@ -115,7 +115,8 @@ MCB 检测面板，位于雷达拦截官驾驶舱中右侧控制台中，MCB 检
 
 ![instrument-group](../../img/cockpit_detail_pilot_instrument-group.jpg)
 
-**ENGINE INSTRUMENT GROUP** （发动机仪表组）向飞行员显示 **RPM** （发动机转速）、**TIT** （涡轮进口温度，F-14A） **EGT** （排气温度，F-14B）以及 **FF** （燃油流量）以便监视发动机运转状态。
+**ENGINE INSTRUMENT GROUP** （发动机仪表组）向飞行员显示 **RPM** （发动机转速）、**TIT** （涡轮进口温度，F-14A）、
+**EGT** （排气温度，F-14B）以及 **FF** （燃油流量）以便监视发动机运转状态。
 
 > 💡 上图中显示的是 TF30 发动机仪表组，而 F110 发动机仪表组将在不久后实装。
 
