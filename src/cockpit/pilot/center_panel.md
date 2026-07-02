@@ -21,7 +21,7 @@ HUD, respectively. Each light indicates an engine stall condition in the corresp
 ![ctvs](../../img/cockpit_detail_pilot_ctvs.jpg)
 
 The cockpit television sensor (CTVS) records the HUD for registration of weapons delivery. It can be
-removed/hidden by clicking on it. Realistically, some pilots carried a wrench and removed it for 
+removed/hidden by clicking on it. Realistically, some pilots carried a wrench and removed it for
 improved visibility during carrier landings.
 
 > 💡 Recording functionality not currently implemented in DCS.
