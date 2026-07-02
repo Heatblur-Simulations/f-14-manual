@@ -811,8 +811,8 @@ zero elevation. It can move from -76° to +54°. Both control knobs have marked
 centerpoints, being aircraft centerline and zero elevation respectively.
 
 The **AZ SCAN** (azimuth scan) and **EL BARS** (elevation bars) selector knobs
-control the size of the antenna scan pattern, in degrees either side of center. 
-The AZ SCAN selector knob has four settings, ±10°, ±20°, ±40° and ±65°. The 
+control the size of the antenna scan pattern, in degrees either side of center.
+The AZ SCAN selector knob has four settings, ±10°, ±20°, ±40° and ±65°. The
 EL BARS selector knob also has four settings, 1, 2, 4 or 8 bars. 1 bar covers
 2.3° of elevation, 2 bars 3.6°, 4 bars 6.3° and 8 bars 11.5°. The reason for
 the elevation coverage not equalling one bar times the number of bars is that
