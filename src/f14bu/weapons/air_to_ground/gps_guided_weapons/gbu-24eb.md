@@ -51,4 +51,4 @@ cloud layer has been cleared.
 
 Due to its size, only 2 GBU-24E/Bs can be carried by a Tomcat at a time.
 Stations 3 and 5 are available for GBU-24E/B carriage. In the F-14B Upgrade, the
-GBU-24E/B can be released in a TOO capacity or as a Pre-Planned Mission.
+GBU-24E/B can be released in a TOO capacity or as a pre-planned mission.
