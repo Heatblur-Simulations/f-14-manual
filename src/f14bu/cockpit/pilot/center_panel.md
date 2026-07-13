@@ -381,7 +381,5 @@ while depressed.
 
 The weapon firing trigger (<num>8</num>) is a two-stage trigger.
 
-The first detent enables CTVS and gun camera. The second detent releases the
+The first detent enables CTVS and gun camera which will record for 10 seconds. The second detent releases the
 selected forward-firing weapon.
-
-> 💡 CTVS and gun camera are not implemented in DCS.
