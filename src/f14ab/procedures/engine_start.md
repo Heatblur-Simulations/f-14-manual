@@ -10,7 +10,7 @@
 |      |                                                                                                              | Verify control over horizontal and rudder control surfaces on surface position indicator.      |
 | 4    | EMERG FLT HYD switch to HIGH                                                                                 | Check for ON flag in EMER FLT HI hydraulic pressure window.                                    |
 |      | Verify control over horizontal and rudder control surfaces on surface position indicator.                    | Should have a higher deflection rate than LOW.                                                 |
-| 5    | EMERG FLT HYD switch to HIGH                                                                                 | Check for ON flag in EMER FLT HI hydraulic pressure window.                                    |
+| 5    | EMERG FLT HYD switch to AUTO(LOW)                                                                            | Check for OFF flags in both EMER FLT LOW and HI.                                               |
 | 6    | ENG CRANK switch to R (Right engine).                                                                        | Check for oil and hydraulic pressure at roughly 20% RPM.                                       |
 |      |                                                                                                              | Check START/VALVE caution light indication.                                                    |
 |      |                                                                                                              | Switch is held in position automatically by solenoid until engine is at roughly 50% RPM.       |
