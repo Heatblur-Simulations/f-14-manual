@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Left Instrument Panel - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../theme/visual.css">
+        <link rel="stylesheet" href="../../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../../theme/pdf.css">
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/f14ab/cockpit/rio/left_instrument_panel.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="left-instrument-panel"><a class="header" href="#left-instrument-panel">Left Instrument Panel</a></h1>
+<h2 id="servopneumatic-altimeter"><a class="header" href="#servopneumatic-altimeter">Servopneumatic Altimeter</a></h2>
+<p><img src="../../../img/cockpit_detail_rio_altimeter.jpg" alt="altimeter" /></p>
+<p>The servopneumatic altimeter provides altitude indication using both electrical
+and pressure-based systems.</p>
+<h3 id="altimeter-readout"><a class="header" href="#altimeter-readout">Altimeter Readout</a></h3>
+<p>The altimeter readout (<num>1</num>) displays altitude using three digital drums
+for 10,000, 1,000, and 100 feet, and a pointer on a circular scale indicating
+hundreds of feet.</p>
+<p>A pointer on the circular scale provides continuous indication in hundreds of
+feet.</p>
+<h3 id="baroset-knob"><a class="header" href="#baroset-knob">Baroset Knob</a></h3>
+<p>The baroset knob (<num>2</num>) sets local barometric pressure in inches of
+mercury (in.Hg).</p>
+<p>This setting only affects the local altimeter display. Other CADC-driven digital
+indicators use a fixed 29.92 in.Hg reference.</p>
+<h3 id="local-barometric-pressure-window"><a class="header" href="#local-barometric-pressure-window">Local Barometric Pressure Window</a></h3>
+<p>The local barometric pressure window (<num>3</num>), also known as the Kollsman
+window, displays the selected pressure setting.</p>
+<h3 id="mode-switch"><a class="header" href="#mode-switch">Mode Switch</a></h3>
+<p>The mode switch (<num>4</num>) selects altimeter operating mode and is
+spring-loaded from RESET.</p>
+<ul>
+<li>RESET - When CADC power and altitude data are available, holding RESET for
+approximately three seconds enables normal servoed operation.</li>
+<li>STBY - Selects backup pressure mode.</li>
+</ul>
+<p>If CADC data or electrical power is absent for more than three seconds, the
+system automatically reverts to standby mode.</p>
+<h3 id="stby-flag"><a class="header" href="#stby-flag">STBY Flag</a></h3>
+<p>The STBY flag is a red standby indication that appears when the altimeter is
+operating in backup (standby) mode (not visible in this image).</p>
+<blockquote>
+<p>💡 At high speeds and below 10,000 feet, pressure effects can produce
+significant readout errors: up to 1,200 feet when transonic and up to 4,000
+feet when supersonic.</p>
+</blockquote>
+<h2 id="airspeed-mach-indicator"><a class="header" href="#airspeed-mach-indicator">Airspeed Mach Indicator</a></h2>
+<p><img src="../../../img/cockpit_detail_rio_mach.jpg" alt="mach" /></p>
+<p>The airspeed Mach indicator displays indicated airspeed and Mach number.</p>
+<h3 id="airspeed-dial"><a class="header" href="#airspeed-dial">Airspeed Dial</a></h3>
+<p>The airspeed dial (<num>1</num>) integrates multiple scales to display both
+indicated airspeed and Mach number.</p>
+<h3 id="outer-airspeed-scale"><a class="header" href="#outer-airspeed-scale">Outer Airspeed Scale</a></h3>
+<p>The outer indicated airspeed scale (<num>2</num>) displays airspeed values up to
+200 knots.</p>
+<h3 id="inner-airspeed-scale"><a class="header" href="#inner-airspeed-scale">Inner Airspeed Scale</a></h3>
+<p>The inner airspeed scale (<num>3</num>) displays airspeed from 200 to 850 knots.</p>
+<p>This scale remains covered by the dial until applicable.</p>
+<h3 id="mach-number-scale"><a class="header" href="#mach-number-scale">Mach Number Scale</a></h3>
+<p>The Mach number scale (<num>4</num>) moves relative to airspeed to indicate
+current Mach number.</p>
+<h3 id="indicated-airspeed-index-pointer"><a class="header" href="#indicated-airspeed-index-pointer">Indicated Airspeed Index Pointer</a></h3>
+<p>The indicated airspeed index pointer (<num>5</num>) can be set to mark a desired
+airspeed.</p>
+<h3 id="mach-number-index-pointer"><a class="header" href="#mach-number-index-pointer">Mach Number Index Pointer</a></h3>
+<p>The Mach number index pointer (<num>6</num>) marks a selected Mach number.</p>
+<p>(Not visible in the referenced image.)</p>
+<h3 id="safe-mach-number-index-pointer"><a class="header" href="#safe-mach-number-index-pointer">Safe Mach Number Index Pointer</a></h3>
+<p>The safe Mach number index pointer (<num>7</num>) displays the maximum safe Mach
+number calculated by the CADC.</p>
+<p>(Not visible in the referenced image.)</p>
+<h3 id="index-selector-knob"><a class="header" href="#index-selector-knob">Index Selector Knob</a></h3>
+<p>The index knob (<num>8</num>) is a push-pull control.</p>
+<p>One position adjusts the airspeed index pointer, and the other adjusts the Mach
+index pointer.</p>
+<h2 id="standby-attitude-indicator"><a class="header" href="#standby-attitude-indicator">Standby Attitude Indicator</a></h2>
+<p><img src="../../../img/cockpit_detail_rio_standbyattitude.jpg" alt="standby attitude" /></p>
+<p>The standby attitude indicator provides independent attitude reference.</p>
+<h3 id="off-flag"><a class="header" href="#off-flag">OFF Flag</a></h3>
+<p>The OFF flag (<num>1</num>) appears when the instrument is un-powered or caged.</p>
+<h3 id="cage-and-trim-knob"><a class="header" href="#cage-and-trim-knob">Cage and Trim Knob</a></h3>
+<p>The cage and trim knob (<num>2</num>) controls indicator caging and pitch trim.</p>
+<ul>
+<li>Pulled out - Indicator is caged.</li>
+<li>Pushed in - Indicator is uncaged and pitch trim may be adjusted by rotating
+the knob.</li>
+</ul>
+<h2 id="uhf-remote-indicator"><a class="header" href="#uhf-remote-indicator">UHF Remote Indicator</a></h2>
+<p><img src="../../../img/cockpit_detail_rio_backremote.jpg" alt="back remote" /></p>
+<p>The UHF remote indicator provides a cockpit readout of ARC-159 radio tuning.</p>
+<p>The remote display shows the selected frequency or preset channel for UHF 1.</p>
+<p>The TEST button initiates an indicator self-test. A successful test results in a
+display of 888.888.</p>
+<p>The DIM knob controls indicator display brightness.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../f14ab/cockpit/rio/left_vertical_console.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../f14ab/cockpit/rio/center_panel.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../f14ab/cockpit/rio/left_vertical_console.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../../f14ab/cockpit/rio/left_vertical_console.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../../f14ab/cockpit/rio/center_panel.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../../f14ab/cockpit/rio/center_panel.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js"></script>
+        <script src="../../../mark.min.js"></script>
+        <script src="../../../searcher.js"></script>
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>

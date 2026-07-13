@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="ECMD_Symbols_-_Light" xmlns="http://www.w3.org/2000/svg" width="62" height="54" viewBox="0 0 62 54">
+  <g id="b" data-name="threat_land">
+    <path id="c" data-name="path47" d="M21.433,15.365v8.16l-7.381,7.492h7.159v14.503l-7.567,6.083h26.631l-7.159-5.601v-14.948h5.86l-6.491-7.01v-8.42l-5.263-10.939-5.79,10.68Z" fill="none" stroke="#000" stroke-miterlimit="15.1" stroke-width="3"/>
+    <g>
+      <line x1="21.21" y1="40.624" x2="34.563" y2="26.233" fill="none" stroke="#000" stroke-miterlimit="15.1" stroke-width="3"/>
+      <line x1="21.507" y1="16.849" x2="29.074" y2="8.689" fill="none" stroke="#000" stroke-miterlimit="15.1" stroke-width="3"/>
+      <line x1="18.836" y1="31.018" x2="32.486" y2="16.255" fill="none" stroke="#000" stroke-miterlimit="15.1" stroke-width="3"/>
+      <line x1="21.507" y1="51.566" x2="33.154" y2="39.029" fill="none" stroke="#000" stroke-miterlimit="15.1" stroke-width="3"/>
+      <line x1="31.93" y1="51.566" x2="35.453" y2="47.783" fill="none" stroke="#000" stroke-miterlimit="15.1" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Wing-Sweep System - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../theme/visual.css">
+        <link rel="stylesheet" href="../../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../../theme/pdf.css">
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/f14ab/systems/flight_controls_gear/wing_sweep.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="wing-sweep-system"><a class="header" href="#wing-sweep-system">Wing-Sweep System</a></h1>
+<p><img src="../../../img/general_wingsweep_sweepschedule.jpg" alt="sweep schedule" /></p>
+<p>Wing-sweep schedule as function of Mach number and related flap interlocks.</p>
+<p>The wing-sweep system controls the geometry of the F-14’s wings, allowing the
+wings to move from a 20° to a 68° position in the air. While on the deck an
+oversweep of 75° is also possible reducing the F-14’s wing span to 33 feet
+(about 10 meters).</p>
+<p>The wings are moved by hydro-mechanical screw-jack actuators which are
+interconnected mechanically, making sure they’re synchronized. As long as both
+main hydraulic systems are functioning the maximum wing-sweep change rate is
+about 15°/s. This can be affected negatively by negative g or large amounts of
+positive g.</p>
+<p>In normal operation the CADC, Central Air Data Computer, controls the wing
+position as a function of current Mach via the wing-sweep program, this is known
+as the <strong>AUTO</strong> mode. The pilot can also select a wing position aft of the
+wing-sweep program manually or choose the <strong>BOMB</strong> mode that sets the wings to
+55° or further aft depending on the program. Simply put, the CADC wing-sweep
+program determines the max forward position of the wings. All this is done
+electrically via two independent channels (for redundancy) to the wing-sweep
+actuators.</p>
+<p>Currently commanded wing position, CADC program wing position and actual wing
+position can be seen on the wing-sweep indicator next to the ACM panel.</p>
+<h2 id="emergency-mode"><a class="header" href="#emergency-mode">Emergency Mode</a></h2>
+<p>While the normal mode controls the wing-sweep electrically, to supplement this
+it’s also possible to control the wing-sweep mechanically via the emergency
+mode. This is done via the emergency wing-sweep handle on the right side of the
+throttle. That handle is connected mechanically to the hydraulic valves in the
+wing-sweep system, providing a physical back-up control.</p>
+<p>Normally this handle is moved with the electronic wing-sweep program by a servo
+located beneath it, making sure it’s at the actual wing position. To disengage
+the electric system and enable the emergency mode the guard over the handle is
+opened and then the handle is extended for additional leverage. Then the handle
+can be forced out of the spider-detent normally connecting it to the electrical
+servo and then used to manually set the wing position.</p>
+<p>In this mode the pilot has to make sure to follow the following schedule to
+avoid damage to the wings:</p>
+<div class="table-wrapper"><table><thead><tr><th>Speed (Indicated Mach)</th><th>Max Forward Wing Position</th></tr></thead><tbody>
+<tr><td>0.4</td><td>20°</td></tr>
+<tr><td>0.7</td><td>25°</td></tr>
+<tr><td>0.8</td><td>50°</td></tr>
+<tr><td>0.9</td><td>60°</td></tr>
+<tr><td>1.0</td><td>68°</td></tr>
+</tbody></table>
+</div>
+<p>To return to the normal mode of operation, the handle should be pushed into the
+desired position and pressed down and the guard closed. The <strong>MASTER RESET</strong>
+button on the fuel management panel should then be depressed and the wing-sweep
+system set to the same position as the handle. The servo will then drive to the
+commanded position and re-engage the handle to the spider detent, resuming
+normal operation.</p>
+<h2 id="oversweep"><a class="header" href="#oversweep">Oversweep</a></h2>
+<p>The emergency wing-sweep handle is also used to select the oversweep position of
+the wings. The oversweep is only used while on the ground to reduce the wing
+span to make it easier to spot the aircraft on the carrier deck. As the wing
+will sweep over the stabilizers on the tail the horizontal tail authority system
+is enabled to prevent the wings and stabilizers from damaging each other by
+restricting movement of the stabilizer.</p>
+<p>To set the wings to oversweep the emergency wing-sweep handle should be moved to
+the 68° position and held in the extended position. This will deflate the
+wing-seal airbags and activate the horizontal tail authority system, indicated
+by the <strong>HZ TAIL AUTH</strong> caution light illuminating. When the <strong>HZ TAIL AUTH</strong>
+caution light goes out and the <strong>OVER</strong> flag on the wing-sweep indicator appears
+the oversweep interlocks are free and the handle can now be moved to the 75°
+position and stowed.</p>
+<p>To move the wings out of oversweep the handle is pulled up and moved forwards of
+68°. This will again illuminate the <strong>HZ TAIL AUTH</strong> caution light. When the
+wings have physically exited the oversweep the caution light and the <strong>OVER</strong>
+flag will turn off.</p>
+<p>As with normal emergency mode operation the handle should now be set to the same
+position as the spider detent and the <strong>MASTER RESET</strong> button depressed.</p>
+<h2 id="controls-and-indicators"><a class="header" href="#controls-and-indicators">Controls and Indicators</a></h2>
+<p>The controls for the wing-sweep system are on the right throttle (electrical)
+and to the right of the right throttle (mechanical). See the Throttle and the
+Throttle Quadrant.</p>
+<p>The wing-sweep hat on the right throttle is normally set to <strong>AUTO</strong> enabling
+CADC control of the wings, this is the upper position. The down position sets
+the wing-sweep to the <strong>BOMB</strong> mode, 55° or aft.</p>
+<p>The <strong>AFT</strong> and <strong>FWD</strong> (forward) positions enable manual movement aft of the
+CADC scheduled position.</p>
+<p>The emergency wing-sweep handle on the throttle quadrant is used to control the
+mechanical emergency mode, see emergency mode above.</p>
+<p><img src="../../../img/general_wingsweep_wingsweep.jpg" alt="wing sweep" /></p>
+<p>The wing-sweep indicator to the right of the ACM panel is used to indicate the
+current wing-sweep positions. The pointer on the left side shows the CADC
+scheduled wing position. The left tape shows the manually commanded position and
+the right tape shows the actual wing position.</p>
+<p>The five windows on the right side show:</p>
+<ul>
+<li><strong>OFF:</strong> System inoperable.</li>
+<li><strong>AUTO:</strong> CADC controlling wing-sweep.</li>
+<li><strong>MAN:</strong> Wings set manually with the control on the right throttle.</li>
+<li><strong>EMER:</strong> Wings set with the emergency wing-sweep handle.</li>
+<li><strong>OVER:</strong> Wings in oversweep.</li>
+</ul>
+<p>The relevant warning and advisory lights are located on the Vertical Display
+Indicator (VDI) and the pilot Caution - Advisory Indicator.</p>
+<p>The <strong>WING SWEEP</strong> advisory light on the right side of the VDI illuminates when
+both wing-sweep electrical channels are inoperable or the emergency mode is in
+use. If it illuminates without the emergency mode being used that mode should
+then be used as the electrical system might not work.</p>
+<p>The <strong>WING SWEEP</strong> caution light on the pilot caution - advisory indicator
+illuminates when at least one electrical wing-sweep channel is inoperable.</p>
+<h2 id="wing-sweep-system-test"><a class="header" href="#wing-sweep-system-test">Wing-Sweep System Test</a></h2>
+<p>The wing-sweep system can be tested on the ground in pre-flight without moving
+the wings using the Master Test Panel.</p>
+<p>To conduct the test, set the wing-sweep mode to <strong>AUTO</strong> and push the <strong>MASTER
+RESET</strong> button. Set the <strong>MASTER TEST</strong> switch to <strong>WG SWP</strong>.</p>
+<p>The CADC commanded position indicator on the wing-sweep indicator will now move
+to 44°. The <strong>WING SWEEP</strong> and <strong>FLAP</strong> light will illuminate on the pilot
+Caution - Advisory Indicator and the <strong>REDUCE SPEED</strong> warning light on the
+Vertical Display Indicator (VDI).</p>
+<blockquote>
+<p>💡 The <strong>WING SWEEP</strong> advisory light will illuminate after 3 seconds into
+test, turn off and then illuminate again at 8 seconds.</p>
+</blockquote>
+<p>When the CADC commanded position indicator moves forward to the 20° position the
+test is over and the above light will turn off. The <strong>MASTER TEST</strong> switch can
+now be set to <strong>OFF</strong> and the test is complete. The test will take about 25
+seconds to complete.</p>
+<blockquote>
+<p>💡 The <strong>RUDDER AUTH</strong> and/or <strong>MACH TRIM</strong> lights might illuminate and the
+control stick might move. This can be ignored.</p>
+</blockquote>
+<blockquote>
+<p>💡 The WG SWP test on the Master Test panel is not implemented yet.</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../f14ab/systems/flight_controls_gear/flight_controls.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../f14ab/systems/flight_controls_gear/gear_ground_handling.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../f14ab/systems/flight_controls_gear/flight_controls.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../../f14ab/systems/flight_controls_gear/flight_controls.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../../f14ab/systems/flight_controls_gear/gear_ground_handling.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../../f14ab/systems/flight_controls_gear/gear_ground_handling.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js"></script>
+        <script src="../../../mark.min.js"></script>
+        <script src="../../../searcher.js"></script>
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>

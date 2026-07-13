@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="HAFU_-_Dark" xmlns="http://www.w3.org/2000/svg" width="99.093" height="101.33" viewBox="0 0 99.093 101.33">
+  <path d="M29.906,50.612v-.391c0-11.598,9.402-21,21-21h0c11.598,0,21,9.402,21,21v.391" fill="none" stroke="#ccc" stroke-miterlimit="10" stroke-width="4"/>
+  <path d="M29.906,51.979v.391c0,11.598,9.402,21,21,21h0c11.598,0,21-9.402,21-21v-.391" fill="none" stroke="#ccc" stroke-miterlimit="10" stroke-width="4"/>
+  <line x1="50.906" y1="47.571" x2="60.593" y2="99.169" stroke="#ccc" stroke-miterlimit="10" stroke-width="4"/>
+  <rect x="48.314" y="44.979" width="5.185" height="5.185" rx="2.592" ry="2.592" fill="#ccc" stroke="#ccc" stroke-miterlimit="10" stroke-width="4"/>
+</svg>

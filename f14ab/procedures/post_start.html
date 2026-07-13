@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Post Start - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/visual.css">
+        <link rel="stylesheet" href="../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../theme/pdf.css">
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/f14ab/procedures/post_start.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="post-start"><a class="header" href="#post-start">Post-Start</a></h1>
+<h2 id="pilot"><a class="header" href="#pilot">Pilot</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action/Details</th></tr></thead><tbody>
+<tr><td>1</td><td>STAB AUG switches</td><td>All ON</td></tr>
+<tr><td>2</td><td>MASTER TEST switch</td><td>EMERG GEN</td></tr>
+<tr><td></td><td></td><td>NO GO light should illuminate for about 1 sec before GO light illuminates.</td></tr>
+<tr><td></td><td></td><td>When disconnecting AHRS light might illuminate momentarily.</td></tr>
+<tr><td></td><td></td><td>Advise RIO test complete.</td></tr>
+<tr><td>3</td><td>VMCU operation - Check.</td><td>Following disengagement of MASTER TEST - EMERG GEN the following lights should illuminate for just under 2 secs:</td></tr>
+<tr><td></td><td></td><td>- PITCH STAB 1 and 2.</td></tr>
+<tr><td></td><td></td><td>- ROLL STAB 1 and 2.</td></tr>
+<tr><td></td><td></td><td>- YAW STAB OP and OUT.</td></tr>
+<tr><td></td><td></td><td>- SPOILERS.</td></tr>
+<tr><td></td><td></td><td>- HZ TAIL AUTH.</td></tr>
+<tr><td></td><td></td><td>- RUDDER AUTH.</td></tr>
+<tr><td></td><td></td><td>- AUTO PILOT.</td></tr>
+<tr><td></td><td></td><td>- MACH TRIM.</td></tr>
+<tr><td></td><td></td><td>RUDDER AUTH light will not go out until reset by MASTER RESET pushbutton and PITCH and ROLL STAB AUG switches will have turned OFF.</td></tr>
+<tr><td>4</td><td>Advise RIO that test and check is complete</td><td></td></tr>
+<tr><td>5</td><td>STAB AUG switches</td><td>All ON</td></tr>
+<tr><td>6</td><td>AFTC</td><td>Check</td></tr>
+<tr><td></td><td>L ENG MODE SELECT switch - SEC.</td><td>L ENG SEC light illuminates, left NOZ indicator points below zero.</td></tr>
+<tr><td></td><td>L ENG MODE SELECT switch - PRI.</td><td>L ENG SEC light goes out, NOZ indicator to 100%.</td></tr>
+<tr><td></td><td>R ENG MODE SELECT switch - SEC.</td><td>R ENG SEC light illuminates, right NOZ indicator points below zero.</td></tr>
+<tr><td></td><td>R ENG MODE SELECT switch - PRI.</td><td>R ENG SEC lights goes out, NOZ indicator to 100%.</td></tr>
+<tr><td>7</td><td>Emergency WING SWEEP handle</td><td>OV SW</td></tr>
+<tr><td></td><td></td><td>- If wings are not in oversweep, move the wing-sweep emergency handle to 68° in raised position.</td></tr>
+<tr><td></td><td></td><td>- Then raise handle to full extension and hold until HZ TAIL AUTH caution light goes out and OVER flag appears on wing-sweep indicator.</td></tr>
+<tr><td></td><td></td><td>- Move handle to full aft OV SW and stow.</td></tr>
+<tr><td>8</td><td>Wing-sweep mode switch</td><td>AUTO</td></tr>
+<tr><td>9</td><td>WING SWEEP DRIVE NO.1 and WG SW DR NO. 2/MANUV FLAP cb (LE1, LE2)</td><td>In</td></tr>
+<tr><td>10</td><td>WING/EXT TRANS switch</td><td>OFF</td></tr>
+<tr><td>11</td><td>MASTER RESET pushbutton</td><td>Depress</td></tr>
+<tr><td>12</td><td>COMM/NAV/GEAR/DISPLAYS</td><td>ON</td></tr>
+<tr><td></td><td></td><td>- UHF function selector - TR+G or BOTH.</td></tr>
+<tr><td></td><td></td><td>- TACAN function selector - T/R.</td></tr>
+<tr><td></td><td></td><td>- ARA-63 POWER switch - ON.</td></tr>
+<tr><td></td><td></td><td>- DISPLAYS control switches - ON.</td></tr>
+<tr><td></td><td></td><td>- RADAR ALTITUDE - ON.</td></tr>
+<tr><td>13</td><td>Trim</td><td>Set 000</td></tr>
+<tr><td>14</td><td>Standby attitude gyro</td><td>Erect</td></tr>
+<tr><td></td><td></td><td>Do this at least two minutes before take-off.</td></tr>
+<tr><td>15</td><td>MASTER RESET pushbutton</td><td>Depress</td></tr>
+<tr><td>16</td><td>MASTER TEST switch</td><td>OBC</td></tr>
+<tr><td></td><td></td><td>Coordinate with RIO and plane captain.</td></tr>
+<tr><td>17</td><td>Autopilot</td><td>Engage</td></tr>
+<tr><td></td><td></td><td>As part of above test.</td></tr>
+<tr><td>18</td><td>Speed brake switch</td><td>EXT, then RET</td></tr>
+<tr><td></td><td></td><td>First test partial extension and retraction, then full.</td></tr>
+<tr><td></td><td></td><td>Check for fluctuations in stabilizer to verify integrated trim operation.</td></tr>
+<tr><td>19</td><td>REFUEL PROBE switch</td><td>All EXT, then RET</td></tr>
+<tr><td></td><td></td><td>Check normal function and that transition light illuminates normally.</td></tr>
+<tr><td>20</td><td>WSHLD AIR switch</td><td>Cycle</td></tr>
+<tr><td>21</td><td>OBC</td><td>OFF</td></tr>
+<tr><td></td><td></td><td>If engaged, verify that autopilot disengages.</td></tr>
+<tr><td>22</td><td>WING/EXT TRANS switch</td><td>OFF</td></tr>
+<tr><td>23</td><td>Trim</td><td>Checked and Set 000</td></tr>
+<tr><td></td><td><strong>FOR CV OPERATIONS OMIT STEPS 24 - 42.</strong></td><td></td></tr>
+<tr><td>24</td><td>Emergency WING SWEEP handle</td><td>20°</td></tr>
+<tr><td></td><td></td><td><strong>CAUTION - WING MOVEMENT</strong></td></tr>
+<tr><td></td><td></td><td>After moving handle to 20° (full forward), engage spider detent.</td></tr>
+<tr><td></td><td></td><td>Stow handle and guard.</td></tr>
+<tr><td></td><td></td><td>HZ TAIL AUTH light will illuminate momentarily coming out of OVSW.</td></tr>
+<tr><td>25</td><td>MASTER RESET pushbutton</td><td>Depress</td></tr>
+<tr><td>26</td><td>External lights</td><td>Check</td></tr>
+<tr><td></td><td></td><td>According to situation.</td></tr>
+<tr><td>27</td><td>Flaps and slats</td><td>DN</td></tr>
+<tr><td></td><td></td><td>Check for full deflection and operation of outboard spoiler module.</td></tr>
+<tr><td></td><td></td><td>Also check for 3° trailing edge up of stabilizer.</td></tr>
+<tr><td>28</td><td>Flight controls</td><td>Cycle</td></tr>
+<tr><td></td><td></td><td>Verify full range of motion on control surfaces and normal speed and operation of said surfaces.</td></tr>
+<tr><td>29</td><td>DLC</td><td>Check</td></tr>
+<tr><td></td><td></td><td>Verify horizontal tail shift with DLC input.</td></tr>
+<tr><td>30</td><td>ANTI SKID SPOILER BK. switch</td><td>SPOILER BK</td></tr>
+<tr><td>31</td><td>MASTER TEST switch</td><td>STICK SW</td></tr>
+<tr><td></td><td></td><td>SPOILER light illuminates and all spoilers fall down.</td></tr>
+<tr><td></td><td></td><td>GO light should illuminate with 1 inch of movement of stick in each direction.</td></tr>
+<tr><td>32</td><td>Spoilers and throttles</td><td>Check</td></tr>
+<tr><td>33</td><td>ANTI SKID SPOILER BK switch</td><td>OFF</td></tr>
+<tr><td>34</td><td>Flaps and slats</td><td>UP</td></tr>
+<tr><td>35</td><td>Maneuver flaps</td><td>DN</td></tr>
+<tr><td>36</td><td>WING SWEEP MODE switch</td><td>MAN 50</td></tr>
+<tr><td></td><td></td><td>If sweep does not stop at 50° immediately select AUTO.</td></tr>
+<tr><td>37</td><td>Maneuver flaps</td><td>Crack Up</td></tr>
+<tr><td>38</td><td>WING SWEEP MODE switch</td><td>BOMB</td></tr>
+<tr><td></td><td></td><td>Check maneuver flap retraction.</td></tr>
+<tr><td>39</td><td>Emergency WING SWEEP handle</td><td>68°</td></tr>
+<tr><td>40</td><td>Emergency WING SWEEP handle</td><td>OV SW</td></tr>
+<tr><td>41</td><td>WING SWEEP MODE switch</td><td>AUTO</td></tr>
+<tr><td>42</td><td>MASTER RESET pushbutton</td><td>Depress</td></tr>
+<tr><td></td><td><strong>CHECKLIST FOR CV RESUMES</strong></td><td></td></tr>
+<tr><td>43</td><td>ANTI SKID SPOILER BK switch</td><td>BOTH</td></tr>
+<tr><td>44</td><td>ANTI SKID</td><td>BIT</td></tr>
+<tr><td></td><td></td><td>Ensure coarse gyro alignment complete before releasing parking brake.</td></tr>
+<tr><td>45</td><td>ANTI SKID SPOILER BK switch</td><td>OFF</td></tr>
+<tr><td>46</td><td></td><td>Radar altimeter - BIT.</td></tr>
+<tr><td></td><td></td><td>Depress SET knob, display should show 100 feet and indicator green light illuminates.</td></tr>
+<tr><td></td><td></td><td>Release and indicator should show 0 feet, warning tone should sound in both cockpits and ALT LOW illuminates correspondingly.</td></tr>
+<tr><td>47</td><td>Displays</td><td>Check</td></tr>
+<tr><td>48</td><td>TACAN</td><td>BIT</td></tr>
+<tr><td>49</td><td>ARA-63</td><td>BIT</td></tr>
+<tr><td>50</td><td>HUD-VIDEO</td><td>BIT</td></tr>
+<tr><td>51</td><td>Altimeter</td><td>SET/RESET MODE</td></tr>
+<tr><td>52</td><td>Compass</td><td>Check</td></tr>
+<tr><td></td><td></td><td>Check IMU heading on HUD, VDI, HSD and BDHI.</td></tr>
+<tr><td>53</td><td>Flight instruments</td><td>Check</td></tr>
+</tbody></table>
+</div>
+<h2 id="rio"><a class="header" href="#rio">RIO</a></h2>
+<blockquote>
+<p>💡 Note: The RIO must ensure that the EMERG GEN check is completed before
+commencing post-start checklist. The ECS (Environmental Control System) should
+run for at least 3 minutes before avionics and AWG-9 power-up.</p>
+</blockquote>
+<div class="table-wrapper"><table><thead><tr><th>Step</th><th>Item</th><th>Action/Details</th></tr></thead><tbody>
+<tr><td>1</td><td>WCS switch</td><td>STBY</td></tr>
+<tr><td></td><td></td><td>Verify that AWG-9 COND light illuminates.</td></tr>
+<tr><td>2</td><td>LIQ COOLING switch</td><td>AWG-9 or AWG-9/AIM-54</td></tr>
+<tr><td></td><td></td><td>Select AWG-9/AIM-54 if AIM-54 is loaded.</td></tr>
+<tr><td></td><td></td><td>Verify that AWG-9 COND light goes off and that AUTO BIT 2 is running (on TID).</td></tr>
+<tr><td>3</td><td>IR/TV power switch</td><td>STBY/IR/TV</td></tr>
+<tr><td>4</td><td>CATEGORY knob</td><td>NAV</td></tr>
+<tr><td>5</td><td>NAV MODE switch</td><td>Align</td></tr>
+<tr><td>6</td><td>Communications</td><td>ON and Set</td></tr>
+<tr><td></td><td></td><td>- U/VHF MODE selector - T/R G.</td></tr>
+<tr><td></td><td></td><td>- DATA LINK switch - ON.</td></tr>
+<tr><td>9</td><td>TACAN function selector</td><td>T/R</td></tr>
+<tr><td>10</td><td>RADAR WARNING RCVR panel</td><td>Set</td></tr>
+<tr><td></td><td></td><td>- Display type switch - NORM.</td></tr>
+<tr><td></td><td></td><td>- PWR switch - ON.</td></tr>
+<tr><td></td><td></td><td>- TEST switch - SPL.</td></tr>
+<tr><td></td><td></td><td>- MODE button - LMT.</td></tr>
+<tr><td>11</td><td>DECM knob</td><td>STBY</td></tr>
+<tr><td></td><td></td><td>- When STBY light goes off, select hold 3 SEC, then ACT for OBC.</td></tr>
+<tr><td>12</td><td>IFF MASTER knob</td><td>STBY</td></tr>
+<tr><td></td><td></td><td>- Set CODE knob - As required.</td></tr>
+<tr><td></td><td></td><td>- IFF panel - Test.</td></tr>
+<tr><td></td><td></td><td>- MC switch - OUT.</td></tr>
+<tr><td></td><td></td><td>- M1, M2 and M3 - Test.</td></tr>
+<tr><td></td><td></td><td>- MC - Test.</td></tr>
+<tr><td></td><td></td><td>- IFF ANT switch - AUTO.</td></tr>
+<tr><td></td><td></td><td>Select NORM and observe that TEST light</td></tr>
+<tr><td></td><td></td><td>illuminates.</td></tr>
+<tr><td>13</td><td>AUTO BIT 2</td><td>Verify Complete</td></tr>
+<tr><td></td><td></td><td>On TID.</td></tr>
+<tr><td>14</td><td>CAP</td><td>Enter own aircraft latitude, longitude and field or ship elevation</td></tr>
+<tr><td>15</td><td>Altimeter</td><td>Reset</td></tr>
+<tr><td>16</td><td>Computer address panel</td><td>Enter desired data</td></tr>
+<tr><td></td><td></td><td>WP, FP, etc, according to mission.</td></tr>
+<tr><td>17</td><td>DDD</td><td>Set</td></tr>
+<tr><td>18</td><td>TID controls</td><td>Set</td></tr>
+<tr><td></td><td></td><td>- CONTRAST - Set.</td></tr>
+<tr><td></td><td></td><td>- BRIGHT control - Set.</td></tr>
+<tr><td></td><td></td><td>- CLSN - OFF.</td></tr>
+<tr><td></td><td></td><td>- ALT NUM - ON.</td></tr>
+<tr><td></td><td></td><td>- SYM ELEM - ON.</td></tr>
+<tr><td></td><td></td><td>- DATA LINK - As required.</td></tr>
+<tr><td></td><td></td><td>- JAM strobe - As required.</td></tr>
+<tr><td></td><td></td><td>- NON ATTK - As required.</td></tr>
+<tr><td></td><td></td><td>- LAUNCH ZONE - As required.</td></tr>
+<tr><td></td><td></td><td>- VEL VECTOR - As required.</td></tr>
+<tr><td></td><td></td><td>- RANGE scale - As required.</td></tr>
+<tr><td>19</td><td>Multiple display indicator</td><td>Set</td></tr>
+<tr><td></td><td></td><td>- TEST button - Depress and Check.</td></tr>
+<tr><td></td><td></td><td>- BRIGHTNESS - Set.</td></tr>
+<tr><td>20</td><td>DATA/ADF switch</td><td>BOTH</td></tr>
+<tr><td>21</td><td>Hand control panel</td><td>Set</td></tr>
+<tr><td></td><td></td><td>- Light test - Depress and Check.</td></tr>
+<tr><td></td><td></td><td>- El Vernier - Set 0° elevation on radar.</td></tr>
+<tr><td></td><td></td><td>All AWG-9 lights should illuminate.</td></tr>
+<tr><td>22</td><td>AN/ALE-39</td><td>Set</td></tr>
+<tr><td></td><td></td><td>- BURST switch - 3.</td></tr>
+<tr><td></td><td></td><td>- BURST INTERVAL - 0.1.</td></tr>
+<tr><td></td><td></td><td>- SALVO - 2.</td></tr>
+<tr><td></td><td></td><td>- SALVO INTERVAL - 0.4.</td></tr>
+<tr><td>23</td><td>CANOPY DEFOG-CABIN AIR lever</td><td>CABIN AIR</td></tr>
+<tr><td>24</td><td>D/L reply</td><td>As required</td></tr>
+<tr><td>25</td><td>AAI control panel</td><td>Set</td></tr>
+<tr><td></td><td></td><td>- TEST/CHAL CC switch - Test.</td></tr>
+<tr><td></td><td></td><td>Check DDD display.</td></tr>
+<tr><td>26</td><td>Indicator lights</td><td>Test</td></tr>
+<tr><td>27</td><td>DDI BIT</td><td>Test</td></tr>
+<tr><td>28</td><td>After alignment complete:</td><td>- NAV mode - INS.</td></tr>
+<tr><td></td><td></td><td>- Program restart - Depress.</td></tr>
+<tr><td></td><td></td><td>- STBY/READY lights - OFF.</td></tr>
+<tr><td></td><td></td><td>- TID NAV mode - INS.</td></tr>
+<tr><td>29</td><td>DEST data</td><td>Verify</td></tr>
+<tr><td>30</td><td>BRG/DIST to destination</td><td>Check</td></tr>
+<tr><td>31</td><td>OWN A/C groundspeed</td><td>Check</td></tr>
+<tr><td>32</td><td>MAG VAR</td><td>Check</td></tr>
+<tr><td>33</td><td>KY-28/KY-58</td><td>As required</td></tr>
+<tr><td>34</td><td>Standby attitude gyro</td><td>Erect</td></tr>
+<tr><td>35</td><td>Notify pilot</td><td>Ready to taxi</td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../f14ab/procedures/engine_start.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../f14ab/emergency_procedures/overview.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../f14ab/procedures/engine_start.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../f14ab/procedures/engine_start.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../f14ab/emergency_procedures/overview.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../f14ab/emergency_procedures/overview.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>

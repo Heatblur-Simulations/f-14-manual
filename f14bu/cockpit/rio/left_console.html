@@ -1,0 +1,514 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Left Side Console - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../theme/visual.css">
+        <link rel="stylesheet" href="../../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../../theme/pdf.css">
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/f14bu/cockpit/rio/left_console.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="left-side-console"><a class="header" href="#left-side-console">Left Side Console</a></h1>
+<blockquote>
+<p>💡 The Left Side Console consists of the:</p>
+<ul>
+<li>Sensor Control Panel (<num>1</num>)</li>
+<li>Control Display Navigation Unit (CDNU) (<num>2</num>)</li>
+<li>LANTIRN Control Panel (LCP) (<num>3</num>)</li>
+<li>Computer Address Panel (CAP) (<num>4</num>)</li>
+<li>Communication / TACAN Command Panel (<num>5</num>)</li>
+<li>Radar Beacon Control Panel (<num>6</num>)</li>
+<li>Power System Test Panel (<num>7</num>)</li>
+<li>KY-28 Control Panel (<num>8</num>)</li>
+<li>Oxygen-Vent Airflow Control Panel (<num>9</num>)</li>
+<li>G-Valve Button (<num>10</num>)</li>
+<li>Liquid Cooling Control Panel (<num>11</num>)</li>
+<li>Eject Command Lever (<num>12</num>)</li>
+</ul>
+</blockquote>
+<p><img src="../../../img/bu/left_console-01.jpg" alt="lef-side-console" /></p>
+<h2 id="sensor-control-panel"><a class="header" href="#sensor-control-panel">Sensor Control Panel</a></h2>
+<p>The Sensor Control Panel (<num>1</num>) controls radar scan geometry, TCS
+operation, and AVTR recording.</p>
+<p><img src="../../../img/bu/left_console_sensor_control_panel.jpg" alt="Sensor Control Panel" /></p>
+<h3 id="stabilization-switch"><a class="header" href="#stabilization-switch">Stabilization Switch</a></h3>
+<p>The STAB switch (<num>1</num>) controls ground stabilization of the radar.</p>
+<h3 id="azimuth-center-knob"><a class="header" href="#azimuth-center-knob">Azimuth Center Knob</a></h3>
+<p>The AZ CTR knob (<num>2</num>) sets the center of the radar azimuth scan.</p>
+<h3 id="elevation-center-knob"><a class="header" href="#elevation-center-knob">Elevation Center Knob</a></h3>
+<p>The EL CTR knob (<num>3</num>) sets the center of the radar elevation scan.</p>
+<h3 id="vsl-switch"><a class="header" href="#vsl-switch">VSL Switch</a></h3>
+<p>The VSL switch (<num>4</num>) is spring-loaded to the OFF position and selects
+vertical scan mode.</p>
+<ul>
+<li>VSL HI</li>
+<li>VSL LO</li>
+</ul>
+<h3 id="azimuth-scan-knob"><a class="header" href="#azimuth-scan-knob">Azimuth Scan Knob</a></h3>
+<p>The AZ SCAN knob (<num>5</num>) selects azimuth scan width.</p>
+<h3 id="elevation-bars-knob"><a class="header" href="#elevation-bars-knob">Elevation Bars Knob</a></h3>
+<p>The EL BARS knob (<num>6</num>) selects number of elevation scan bars.</p>
+<h3 id="tcs-trim-knobs"><a class="header" href="#tcs-trim-knobs">TCS Trim Knobs</a></h3>
+<p>The TCS TRIM knobs (<num>7</num>) adjust azimuth and elevation alignment of TCS
+video.</p>
+<h3 id="slave-switch"><a class="header" href="#slave-switch">Slave Switch</a></h3>
+<p>The SLAVE switch (<num>8</num>) selects which sensor is slaved to the other.</p>
+<h3 id="acquisition-switch"><a class="header" href="#acquisition-switch">Acquisition Switch</a></h3>
+<p>The ACQ switch (<num>9</num>) selects TCS acquisition mode.</p>
+<ul>
+<li>AUTO SRCH</li>
+<li>MAN</li>
+<li>AUTO</li>
+</ul>
+<h3 id="field-of-view-switch"><a class="header" href="#field-of-view-switch">Field of View Switch</a></h3>
+<p>The FOV switch (<num>10</num>) selects TCS field of view.</p>
+<ul>
+<li>WIDE</li>
+<li>NAR</li>
+</ul>
+<h3 id="avtr-mode-knob"><a class="header" href="#avtr-mode-knob">AVTR Mode Knob</a></h3>
+<p>The MODE knob (<num>11</num>) selects what the airborne video tape recorder
+records.</p>
+<blockquote>
+<p>In the F-14B Upgrade that knob is disabled. VTR recording is selected via the
+ECMD. Reference the
+<a href="../../systems/nav_com/com/fast_tactical_imaging_set.html">Fast Tactical Imaging</a>
+section of this manual.</p>
+</blockquote>
+<h3 id="minutes-remaining-display"><a class="header" href="#minutes-remaining-display">Minutes Remaining Display</a></h3>
+<p>The MIN REMAIN display (<num>12</num>) shows remaining recording time.</p>
+<h3 id="record-switch"><a class="header" href="#record-switch">Record Switch</a></h3>
+<p>The RECORD switch (<num>13</num>) controls AVTR operation.</p>
+<ul>
+<li>OFF</li>
+<li>STBY</li>
+<li>ON</li>
+</ul>
+<p><a href="../../systems/nav_com/com/fast_tactical_imaging_set.html">FTI</a> is set to operate
+with the switch in STBY or ON.</p>
+<h3 id="avtr-indicator-lights"><a class="header" href="#avtr-indicator-lights">AVTR Indicator Lights</a></h3>
+<p>The indicator lights (<num>14</num>) show AVTR status.</p>
+<ul>
+<li>STBY</li>
+<li>EOT (end of tape)</li>
+<li>REC</li>
+</ul>
+<h2 id="control-display-navigation-unit-cdnu"><a class="header" href="#control-display-navigation-unit-cdnu">Control Display Navigation Unit (CDNU)</a></h2>
+<p>The CDNU (<num>2</num>) replaces the CAP in most of its Navigation input
+functions. The CDNU acts as the primary interface with the Navigation system for
+the RIO.</p>
+<p><img src="../../../img/bu/left_console_cdnu-01.jpg" alt="CDNU" /></p>
+<h3 id="line-select-keys"><a class="header" href="#line-select-keys">Line Select Keys</a></h3>
+<p>Eight Line Select Keys (<num>1</num>) (LSKs) (Numbered 1 through 8 from left to
+right) are used to initiate functions selected, insert data from the scratchpad,
+change the mode of operation, or change display to the page indicated when a Go
+To Arrow is displayed.</p>
+<h3 id="brightness-knob"><a class="header" href="#brightness-knob">Brightness knob</a></h3>
+<p>The BRT control (<num>2</num>) adjusts CDNU brightness.</p>
+<h3 id="on--off-knob"><a class="header" href="#on--off-knob">On / Off knob</a></h3>
+<p>The ON / OFF knob (<num>3</num>) turns the CDNU ON or OFF.</p>
+<h3 id="scratchpad"><a class="header" href="#scratchpad">Scratchpad</a></h3>
+<p>The Scratchpad (<num>4</num>) enclosed by brackets, is the bottom line on the
+display, and is used to display data entered using the alphanumeric keys.</p>
+<h3 id="function-keys"><a class="header" href="#function-keys">Function keys</a></h3>
+<p>The Function keys (<num>5</num>), F1 through F7, allow the operator to perform
+specific, aircraft related functions without accessing a particular CDNU page.
+Depressing the MENU Key displays the MENU Page, a quick reference guide to the
+available functions.</p>
+<h3 id="keypad"><a class="header" href="#keypad">Keypad</a></h3>
+<p>The Keypad (<num>6</num>) Alphanumeric keys allow the selection of either
+numbers or letters for entry into the scratchpad. The "N" "S", "E", and "W" keys
+are highlighted so they may be easily located when entering position in
+Latitude/Longitude coordinates.</p>
+<h3 id="arrow-keys"><a class="header" href="#arrow-keys">Arrow Keys</a></h3>
+<p>The Arrow keys (<num>7</num>) are provided to permit vertical and horizontal
+scrolling of pages.</p>
+<h3 id="dedicated-menu-select-keys"><a class="header" href="#dedicated-menu-select-keys">Dedicated Menu Select Keys</a></h3>
+<p>The FPLN (flight plan), PROG (progress), DIR (direct), RNAV (area navigation),
+and MARK (<num>8</num>) dedicated select keys allow the RIO to call up and
+display navigation data on the CRT.</p>
+<p>The STAT (status), MENU, and IDX (index) dedicated select keys permit access to
+a variety of information applicable to the general flight operation and
+maintenance of the navigation system.</p>
+<h2 id="lantirn-control-panel-lcp"><a class="header" href="#lantirn-control-panel-lcp">LANTIRN Control Panel (LCP)</a></h2>
+<p>The control panel (<num>3</num>) contains all the controls for the pod,
+including the control stick.</p>
+<p><img src="../../../img/bu/left_console_lcp-01.jpg" alt="Control Panel" /></p>
+<h3 id="power-switch"><a class="header" href="#power-switch">Power switch</a></h3>
+<p>Three-position rotary switch (<num>1</num>). OFF - No power applied to ITS or
+targeting pod. IMU - Powers ITS without powering targeting pod. Performs GPS
+alignment. POD - Provides full power to targeting pod and ITS.</p>
+<h3 id="hand-operated-controller"><a class="header" href="#hand-operated-controller">Hand Operated Controller</a></h3>
+<p>Provides for selection of critical targeting pod operating functions
+(<num>2</num>) detailed explanation in LANTIRN chapter.</p>
+<h3 id="mode-switch"><a class="header" href="#mode-switch">Mode switch</a></h3>
+<p>Standby/operate switch (<num>3</num>) and indicator.</p>
+<p>Following application of full power (POD on), STBY lamp off until all internal
+checks complete, FLIR has cooled to operating temperature, gimbal is stowed, and
+system is in low power state and ready to be commanded to operate mode.</p>
+<p>STBY - Pressing switch when STBY is on commands system to operate mode, while
+gimbal is un-stowing, lamp will flash. When gimbal is un-stowed, OPER lamp comes
+on and STBY lamp goes off.</p>
+<p>OPER - Pressing switch when OPER is on commands system to standby mode and stows
+gimbal. While gimbal is stowing, STBY lamp will flash and when fully stowed,
+STBY lamp is on steady and OPER lamp is off.</p>
+<h3 id="bit-advisory-lamps"><a class="header" href="#bit-advisory-lamps">Bit Advisory Lamps</a></h3>
+<p>The four grouped indicator lights (<num>4</num>) indicate various error states
+in the LANTIRN system</p>
+<h3 id="video-toggle-switch"><a class="header" href="#video-toggle-switch">Video toggle switch</a></h3>
+<p>This switch selects either TCS or FLIR video (<num>5</num>) and provides
+positive indication of current video output mode in use. Default selection at
+power on is TCS.</p>
+<ul>
+<li>FLIR - LANTIRN FLIR video mode.</li>
+<li>TCS - Television Camera System video mode.</li>
+</ul>
+<h3 id="ibit-switch"><a class="header" href="#ibit-switch">IBIT switch</a></h3>
+<p>The IBIT button (<num>6</num>) initiates the IBIT (Initialized Built-In-Test).</p>
+<h3 id="laser-arm-switch"><a class="header" href="#laser-arm-switch">LASER Arm switch</a></h3>
+<p>Lever locked laser arm switch (<num>7</num>).</p>
+<ul>
+<li>SAFE- Laser cannot be fired.</li>
+<li>ARM - Laser can be fired (If all conditions are met).</li>
+</ul>
+<h3 id="laser-armed-lamp"><a class="header" href="#laser-armed-lamp">LASER Armed lamp</a></h3>
+<p>Lamp (<num>8</num>) which indicates laser is armed. LASER ARMED lamp is on when
+LASER arm switch is in ARM and is off when LASER arm switch is in SAFE.</p>
+<h2 id="computer-address-panel-cap"><a class="header" href="#computer-address-panel-cap">Computer Address Panel (CAP)</a></h2>
+<p>The Computer Address Panel (<num>4</num>) is used to enter data into the Weapon
+Control System.</p>
+<p><img src="../../../img/bu/left_console_cap-01.jpg" alt="cap" /></p>
+<h3 id="clear-button"><a class="header" href="#clear-button">Clear Button</a></h3>
+<p>The CLEAR button (<num>1</num>) clears the current TID buffer without entering
+data.</p>
+<h3 id="enter-button"><a class="header" href="#enter-button">Enter Button</a></h3>
+<p>The ENTER button (<num>2</num>) inserts buffered data into the WCS.</p>
+<h3 id="prefix-and-numerical-buttons"><a class="header" href="#prefix-and-numerical-buttons">Prefix and Numerical Buttons</a></h3>
+<p>The numerical and prefix buttons (<num>3</num>) are used for data entry.</p>
+<h3 id="message-selection-buttons"><a class="header" href="#message-selection-buttons">Message Selection Buttons</a></h3>
+<p>The MESSAGE buttons (<num>4</num>) select functions indicated on the MESSAGE
+drum.</p>
+<h3 id="message-indicator-drum"><a class="header" href="#message-indicator-drum">Message Indicator Drum</a></h3>
+<p>The MESSAGE drum (<num>5</num>) displays available WCS message functions.</p>
+<h3 id="program-restart-button"><a class="header" href="#program-restart-button">Program Restart Button</a></h3>
+<p>The PRGM RESTRT button (<num>6</num>) restarts the active WCS program.</p>
+<h3 id="category-selector-knob"><a class="header" href="#category-selector-knob">Category Selector Knob</a></h3>
+<p>The CATEGORY knob (<num>7</num>) selects the active MESSAGE category.</p>
+<h3 id="tune-disable"><a class="header" href="#tune-disable">Tune Disable</a></h3>
+<p>The TUNE DSBL function (<num>8</num>) is non-functional.</p>
+<blockquote>
+<p>💡 All CAP buttons include indicator lights that illuminate based on selected
+function.</p>
+</blockquote>
+<h2 id="communication--tacan-command-panel"><a class="header" href="#communication--tacan-command-panel">Communication / TACAN Command Panel</a></h2>
+<p>Panel (<num>5</num>) controlling radio selection, antenna routing, and selects
+between TCN (TACAN) or EGI (Embedded GPS INS) as the navigation data source.</p>
+<p><img src="../../../img/bu/left_console_rdrbcn-03.jpg" alt="Panel" /></p>
+<h3 id="transmitter-select-switch"><a class="header" href="#transmitter-select-switch">Transmitter Select Switch</a></h3>
+<p>The XMTR SEL switch (<num>1</num>) selects which radio is keyed by the RIO PTT.</p>
+<ul>
+<li>UHF 1 - ARC-159.</li>
+<li>BOTH - Both radios.</li>
+<li>V/UHF 2 - ARC-182.</li>
+</ul>
+<h3 id="vuhf-2-antenna-switch"><a class="header" href="#vuhf-2-antenna-switch">V/UHF 2 Antenna Switch</a></h3>
+<p>The V/UHF 2 ANT switch (<num>2</num>) selects antenna used by the ARC-182.</p>
+<ul>
+<li>UPR - Upper antenna.</li>
+<li>LWR - Lower antenna.</li>
+</ul>
+<h3 id="tacanegi-command-switch"><a class="header" href="#tacanegi-command-switch">TACAN/EGI Command Switch</a></h3>
+<p>The TACAN/EGI CMD switch (<num>3</num>) selects whether steering displays
+display TACAN or EGI steering.</p>
+<h3 id="uhf-1-volume-knob"><a class="header" href="#uhf-1-volume-knob">UHF 1 Volume Knob</a></h3>
+<p>The UHF 1 VOL knob (<num>4</num>) controls UHF-1 audio volume to the RIO
+headset.</p>
+<h3 id="ky-mode-switch"><a class="header" href="#ky-mode-switch">KY Mode Switch</a></h3>
+<p>The KY MODE switch (<num>5</num>) is only functional with KY-58 encryption.</p>
+<p>The simulated aircraft uses KY-28; this switch is non-functional.</p>
+<h2 id="radar-beacon-control-panel"><a class="header" href="#radar-beacon-control-panel">Radar Beacon Control Panel</a></h2>
+<p>Panel (<num>6</num>) controlling the AN/APN-154 radar beacon.</p>
+<p><img src="../../../img/bu/left_console_rdrbcn-04.jpg" alt="beacon" /></p>
+<h3 id="beacon-mode-selector"><a class="header" href="#beacon-mode-selector">Beacon Mode Selector</a></h3>
+<p>The MODE selector (<num>1</num>) selects beacon operating mode.</p>
+<ul>
+<li>SINGLE - Responds to single-pulse interrogation.</li>
+<li>DOUBLE - Responds to double-pulse code.</li>
+<li>ACLS - Enables ACLS augmentation for carrier landings.</li>
+</ul>
+<h3 id="acls-test-button"><a class="header" href="#acls-test-button">ACLS Test Button</a></h3>
+<p>The ACLS TEST button (<num>2</num>) includes a green indicator light.</p>
+<ul>
+<li>Illuminates during successful test.</li>
+<li>Flashes when SPN-42 radar sweep is detected.</li>
+<li>Steady illumination indicates radar lock-on for ACLS.</li>
+</ul>
+<h3 id="power-switch-1"><a class="header" href="#power-switch-1">Power Switch</a></h3>
+<p>The PWR switch (<num>3</num>) controls beacon electrical power.</p>
+<ul>
+<li>PWR - Beacon fully active.</li>
+<li>STBY - Warm-up mode; ACLS replies enabled if MODE is ACLS.</li>
+<li>OFF - Beacon off.</li>
+</ul>
+<h2 id="power-system-test-panel"><a class="header" href="#power-system-test-panel">Power System Test Panel</a></h2>
+<p>Power System Test Panel (<num>7</num>).</p>
+<p><img src="../../../img/bu/left_console_rdrbcn-02.jpg" alt="power-sys-test" /></p>
+<blockquote>
+<p>💡 Non-functional in DCS.</p>
+</blockquote>
+<h2 id="ky-28-control-panel"><a class="header" href="#ky-28-control-panel">KY-28 Control Panel</a></h2>
+<p>Encryption control panel (<num>8</num>) for secure voice communications.</p>
+<p><img src="../../../img/cockpit_detail_rio_ky-28.jpg" alt="ky-28" /></p>
+<h3 id="zeroize-switch"><a class="header" href="#zeroize-switch">Zeroize Switch</a></h3>
+<p>The ZEROIZE switch (<num>1</num>) clears all encryption keys when actuated.</p>
+<h3 id="power-mode-switch"><a class="header" href="#power-mode-switch">Power-Mode Switch</a></h3>
+<p>The power-mode switch (<num>2</num>) selects KY-28 operating mode.</p>
+<h3 id="radio-select-switch"><a class="header" href="#radio-select-switch">Radio Select Switch</a></h3>
+<p>The radio select switch (<num>3</num>) selects which radio is encrypted.</p>
+<h2 id="oxygen-vent-airflow-control-panel"><a class="header" href="#oxygen-vent-airflow-control-panel">Oxygen-Vent Airflow Control Panel</a></h2>
+<p>Panel (<num>9</num>) controlling ventilation airflow and oxygen supply to the
+RIO.</p>
+<p><img src="../../../img/cockpit_detail_rio_oxygen-vent.jpg" alt="oxygen-vent" /></p>
+<h3 id="vent-airflow-dial"><a class="header" href="#vent-airflow-dial">Vent Airflow Dial</a></h3>
+<p>The VENT AIRFLOW dial controls airflow through the pressure suit or seat
+cushions when no pressure suit is worn.</p>
+<h3 id="oxygen-switch"><a class="header" href="#oxygen-switch">Oxygen Switch</a></h3>
+<p>The OXYGEN switch controls oxygen flow to the RIO oxygen mask.</p>
+<ul>
+<li>ON - Oxygen supplied to mask.</li>
+<li>OFF - Oxygen flow shut off.</li>
+</ul>
+<h2 id="g-valve-button"><a class="header" href="#g-valve-button">G-Valve Button</a></h2>
+<p>The G-valve button (<num>10</num>) is pressed to test inflation of the g-suit.</p>
+<p><img src="../../../img/cockpit_detail_rio_g-valve.jpg" alt="g-valve" /></p>
+<h2 id="liquid-cooling-control-panel"><a class="header" href="#liquid-cooling-control-panel">Liquid Cooling Control Panel</a></h2>
+<p><img src="../../../img/cockpit_detail_rio_liquidcooling.jpg" alt="liquid cooling" /></p>
+<p>LIQ COOLING switch (<num>11</num>) controlling the liquid cooling system for the
+AWG-9 and AIM-54. The AWG-9 circuit can be enabled independently of the AIM-54.
+This switch needs to be enabled for the respective system before AWG-9 operation
+or AIM-54 missile preparation.</p>
+<h2 id="eject-command-lever"><a class="header" href="#eject-command-lever">Eject Command Lever</a></h2>
+<p>The EJECT CMD lever (<num>12</num>) determines ejection logic when the RIO
+ejects.</p>
+<p><img src="../../../img/cockpit_detail_rio_ejectcommand.jpg" alt="eject command" /></p>
+<ul>
+<li>PILOT (lever forward) - Only the RIO ejects.</li>
+<li>MCO (lever aft) - Both crewmembers eject.</li>
+</ul>
+<p>Pilot-initiated ejection always ejects both crew members.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../f14bu/cockpit/rio/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../f14bu/cockpit/rio/left_vertical_console.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../f14bu/cockpit/rio/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../../f14bu/cockpit/rio/overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../../f14bu/cockpit/rio/left_vertical_console.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../../f14bu/cockpit/rio/left_vertical_console.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js"></script>
+        <script src="../../../mark.min.js"></script>
+        <script src="../../../searcher.js"></script>
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>

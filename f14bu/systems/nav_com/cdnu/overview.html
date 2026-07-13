@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>CDNU - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../../favicon.svg">
+        <link rel="stylesheet" href="../../../../css/variables.css">
+        <link rel="stylesheet" href="../../../../css/general.css">
+        <link rel="stylesheet" href="../../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../../highlight.css">
+        <link rel="stylesheet" href="../../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../../theme/visual.css">
+        <link rel="stylesheet" href="../../../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../../../theme/pdf.css">
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/f14bu/systems/nav_com/cdnu/overview.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="control-display-navigation-unit"><a class="header" href="#control-display-navigation-unit">CONTROL DISPLAY NAVIGATION UNIT</a></h1>
+<h2 id="general-function"><a class="header" href="#general-function">General Function</a></h2>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">Section</th><th>Name</th></tr></thead><tbody>
+<tr><td style="text-align: center">1.</td><td><a href="../cdnu/control_display_navigation_unit.html#the-cdnu">The CDNU</a></td></tr>
+<tr><td style="text-align: center">2.</td><td><a href="../cdnu/control_display_navigation_unit.html#cdnu-display">CDNU Display</a></td></tr>
+<tr><td style="text-align: center">3.</td><td><a href="../cdnu/control_display_navigation_unit.html#cdnu-front-panel">CDNU Front Panel</a></td></tr>
+<tr><td style="text-align: center">4.</td><td><a href="../cdnu/control_display_navigation_unit.html#line-select-keys">Line Select Keys</a></td></tr>
+<tr><td style="text-align: center">5.</td><td><a href="../cdnu/control_display_navigation_unit.html#alphanumeric-keys">Alphanumeric Keys</a></td></tr>
+<tr><td style="text-align: center">6.</td><td><a href="../cdnu/control_display_navigation_unit.html#function-keys">Function Keys</a></td></tr>
+<tr><td style="text-align: center">7.</td><td><a href="../cdnu/control_display_navigation_unit.html#dedicated-select-keys">Dedicated Select Keys</a></td></tr>
+<tr><td style="text-align: center">8.</td><td><a href="../cdnu/control_display_navigation_unit.html#scratchpad">Scratchpad</a></td></tr>
+<tr><td style="text-align: center">9.</td><td><a href="../cdnu/control_display_navigation_unit.html#page-scrolling">Page Scrolling</a></td></tr>
+<tr><td style="text-align: center">10.</td><td><a href="../cdnu/control_display_navigation_unit.html#clear-key">Clear Key</a></td></tr>
+<tr><td style="text-align: center">11.</td><td><a href="../cdnu/control_display_navigation_unit.html#common-symbology">Common Symbology</a></td></tr>
+<tr><td style="text-align: center">12.</td><td><a href="../cdnu/control_display_navigation_unit.html#the-cdnu-flight-plan-and-steering-sources">The CDNU flight plan and Steering sources</a></td></tr>
+<tr><td style="text-align: center">13.</td><td><a href="../cdnu/control_display_navigation_unit.html#data-entry">Data Entry</a></td></tr>
+<tr><td style="text-align: center">14.</td><td><a href="../cdnu/control_display_navigation_unit.html#cdnu-pages">CDNU Pages</a></td></tr>
+</tbody></table>
+</div>
+<h2 id="cdnu-pages"><a class="header" href="#cdnu-pages">CDNU Pages</a></h2>
+<p><img src="../../../../img/light/cdnu_page_tree-01.svg" alt="CDNU Page Tree" /></p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">Section</th><th>CDNU Page</th></tr></thead><tbody>
+<tr><td style="text-align: center">15.</td><td><a href="../cdnu/control_display_navigation_unit.html#cdnu-pages">Index Page</a></td></tr>
+<tr><td style="text-align: center">16.</td><td><a href="../cdnu/control_display_navigation_unit.html#start-page-12">Start Page 1/2</a></td></tr>
+<tr><td style="text-align: center">17.</td><td><a href="../cdnu/control_display_navigation_unit.html#start-page-22">Start Page 2/2</a></td></tr>
+<tr><td style="text-align: center">18.</td><td><a href="../cdnu/control_display_navigation_unit.html#mdl-start-page">MDL Start Page</a></td></tr>
+<tr><td style="text-align: center">19.</td><td><a href="../cdnu/control_display_navigation_unit.html#mdl-page">MDL Page</a></td></tr>
+<tr><td style="text-align: center">20.</td><td><a href="../cdnu/control_display_navigation_unit.html#flight-plan-select-page">Flight Plan Select Page</a></td></tr>
+<tr><td style="text-align: center">21.</td><td><a href="../cdnu/control_display_navigation_unit.html#flight-plan-page">Flight Plan Page</a></td></tr>
+<tr><td style="text-align: center">22.</td><td><a href="../cdnu/control_display_navigation_unit.html#waypoint-search-page">Waypoint Search Page</a></td></tr>
+<tr><td style="text-align: center">23.</td><td><a href="../cdnu/control_display_navigation_unit.html#attach-user-defined-label">User Defined Labels</a></td></tr>
+<tr><td style="text-align: center">24.</td><td><a href="../cdnu/control_display_navigation_unit.html#fpln-insert-initial-waypoint">FPLN Insert Initial Waypoint</a></td></tr>
+<tr><td style="text-align: center">25.</td><td><a href="../cdnu/control_display_navigation_unit.html#bearingdistance-vector-waypoint-calculator">Bearing/Distance Vector Waypoint Calculator</a></td></tr>
+<tr><td style="text-align: center">26.</td><td><a href="../cdnu/control_display_navigation_unit.html#fpln-insert-with-lantirn">FPLN Insert with LANTIRN</a></td></tr>
+<tr><td style="text-align: center">27.</td><td><a href="../cdnu/control_display_navigation_unit.html#fpln-waypoint-deletion">FPLN Waypoint Deletion</a></td></tr>
+<tr><td style="text-align: center">28.</td><td><a href="../cdnu/control_display_navigation_unit.html#waypoint-edit-page-12">Waypoint Edit Page 1/2</a></td></tr>
+<tr><td style="text-align: center">29.</td><td><a href="../cdnu/control_display_navigation_unit.html#waypoint-edit-page-22">Waypoint Edit Page 2/2</a></td></tr>
+<tr><td style="text-align: center">30.</td><td><a href="../cdnu/control_display_navigation_unit.html#high-precision-waypoint-edit-page">High Precision Coordinate Edit Page</a></td></tr>
+<tr><td style="text-align: center">31.</td><td><a href="../cdnu/control_display_navigation_unit.html#direct-steering">Direct Steering</a></td></tr>
+<tr><td style="text-align: center">32.</td><td><a href="../cdnu/control_display_navigation_unit.html#direct-to-a-flight-plan-waypoint">Direct to a Flight Plan Waypoint</a></td></tr>
+<tr><td style="text-align: center">33.</td><td><a href="../cdnu/control_display_navigation_unit.html#direct-to-an-impromptu-vector-waypoint-from-present-position">DIRECT-TO an Impromptu Vector Waypoint from present position</a></td></tr>
+<tr><td style="text-align: center">34.</td><td><a href="../cdnu/control_display_navigation_unit.html#progress-page-13">Progress Page 1/3</a></td></tr>
+<tr><td style="text-align: center">35.</td><td><a href="../cdnu/control_display_navigation_unit.html#progress-page-23">Progress Page 2/3</a></td></tr>
+<tr><td style="text-align: center">36.</td><td><a href="../cdnu/control_display_navigation_unit.html#progress-page-33">Progress Page 3/3</a></td></tr>
+<tr><td style="text-align: center">37.</td><td><a href="../cdnu/control_display_navigation_unit.html#mark-page">Mark Page</a></td></tr>
+<tr><td style="text-align: center">38.</td><td><a href="../cdnu/control_display_navigation_unit.html#rnav-inav-page">RNAV INAV Page</a></td></tr>
+<tr><td style="text-align: center">39.</td><td><a href="../cdnu/control_display_navigation_unit.html#rnav-gps-page">RNAV GPS Page</a></td></tr>
+<tr><td style="text-align: center">40.</td><td><a href="../cdnu/control_display_navigation_unit.html#rnav-ins-page">RNAV INS Page</a></td></tr>
+<tr><td style="text-align: center">41.</td><td><a href="../cdnu/control_display_navigation_unit.html#rnav-blend-page">RNAV Blend Page</a></td></tr>
+<tr><td style="text-align: center">42.</td><td><a href="../cdnu/control_display_navigation_unit.html#stat-page">Stat Page</a></td></tr>
+<tr><td style="text-align: center">43.</td><td><a href="../cdnu/control_display_navigation_unit.html#holding-page">Holding Page</a></td></tr>
+<tr><td style="text-align: center">44.</td><td><a href="../cdnu/control_display_navigation_unit.html#exiting-a-holding-pattern">Exiting a Holding Pattern</a></td></tr>
+<tr><td style="text-align: center">45.</td><td><a href="../cdnu/control_display_navigation_unit.html#intercept-page">Intercept Page</a></td></tr>
+<tr><td style="text-align: center">46.</td><td><a href="../cdnu/control_display_navigation_unit.html#parallel-offsets">Parallel Course Offsets</a></td></tr>
+<tr><td style="text-align: center">47.</td><td><a href="../cdnu/control_display_navigation_unit.html#bdhi-steering-page">BDHI Steering Page</a></td></tr>
+<tr><td style="text-align: center">48.</td><td><a href="../cdnu/control_display_navigation_unit.html#time-selection-page">Time Selection Page</a></td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../../f14bu/systems/nav_com/egi.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../../f14bu/systems/nav_com/cdnu/control_display_navigation_unit.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../../f14bu/systems/nav_com/egi.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../../../f14bu/systems/nav_com/egi.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../../../f14bu/systems/nav_com/cdnu/control_display_navigation_unit.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../../../f14bu/systems/nav_com/cdnu/control_display_navigation_unit.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../../elasticlunr.min.js"></script>
+        <script src="../../../../mark.min.js"></script>
+        <script src="../../../../searcher.js"></script>
+
+        <script src="../../../../clipboard.min.js"></script>
+        <script src="../../../../highlight.js"></script>
+        <script src="../../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>

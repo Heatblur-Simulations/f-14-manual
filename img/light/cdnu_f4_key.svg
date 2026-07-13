@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1573.826" height="129.913" viewBox="0 0 1573.826 129.913">
+  <g id="BUTTON_-_Light">
+    <rect x="779.587" y="20.5" width="83" height="91" rx="1.738" ry="1.738" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="5"/>
+    <rect x="770.587" y="11" width="101" height="110" rx="5.276" ry="5.276" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="5"/>
+  </g>
+  <g id="F4_-_Light">
+    <g>
+      <path d="M805.914,57.706v8.027h5.784v1.958h-5.784v11.845h-1.779v-23.789h13.436v1.958h-11.656Z" fill="#ccc" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+      <path d="M832.653,71.783h2.402v1.958h-2.402v4.895h-1.779v-4.895h-9.254v-2.131l9.194-16.861h1.838v17.033h0ZM830.872,58.446l-7.273,13.336h7.273v-13.336Z" fill="#ccc" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

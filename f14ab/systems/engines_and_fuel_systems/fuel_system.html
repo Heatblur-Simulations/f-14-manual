@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Fuel System - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../theme/visual.css">
+        <link rel="stylesheet" href="../../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../../theme/pdf.css">
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/f14ab/systems/engines_and_fuel_systems/fuel_system.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="fuel-system"><a class="header" href="#fuel-system">Fuel System</a></h1>
+<p><img src="../../../img/general_fuel_tanks.jpg" alt="tanks" /></p>
+<p><em>1. Refueling Probe, 2. Ground refueling Port (Right Side), 3. Forward Fuselage
+Tank, 4. Left External Drop Tank, 5. Left Box Beam Tank, 6. Left Wing Tank, 7.
+Vent Tank, 8. Fuel Dump Mast, 9. Aft Fuselage Tank, 10. Right Box Beam Tank, 11.
+Right Wing Tank, 12. Right External Drop Tank.</em></p>
+<p>The main fuel storage in the F-14 consists of two feed systems, one for each
+engine. The right engine feed system consists of the right wing and right box
+cells and the front fuselage cells while the left engine feed system consists of
+the left wing and left box cells in addition to the aft fuselage cells. This
+fact needs to be kept in mind when reading the fuel gauges.</p>
+<p>The total useable fuel quantity is roughly 20,000 pounds distributed as in the
+table below.</p>
+<div class="table-wrapper"><table><thead><tr><th>Tank group</th><th>Pounds</th></tr></thead><tbody>
+<tr><td>Forward Fuselage</td><td>4,700</td></tr>
+<tr><td>Aft Fuselage</td><td>4,400</td></tr>
+<tr><td>Right Feed Group</td><td>1,600</td></tr>
+<tr><td>Left Feed Group</td><td>1,500</td></tr>
+<tr><td>Internal Wings</td><td>4,000</td></tr>
+<tr><td>External Tanks</td><td>3,600</td></tr>
+</tbody></table>
+</div>
+<h2 id="fuel-quantity-indicators-and-controls"><a class="header" href="#fuel-quantity-indicators-and-controls">Fuel Quantity Indicators and Controls</a></h2>
+<p><img src="../../../img/general_fuel_fuelquantity.jpg" alt="fuel quantity" /></p>
+<p>The fuel quantity indicator on the pilot right knee panel displays internal and
+external fuel carried.</p>
+<p>The uppermost indicator (<num>1</num>) displays currently set <strong>BINGO</strong> fuel
+level, this quantity is set by rotating the knob (<num>5</num>) to desired
+amount. This indicator and control activates the BINGO caution light when total
+fuel level is below set amount.</p>
+<p>The <strong>TOTAL</strong> (<num>2</num>) indicator displays total carried fuel.</p>
+<p>The <strong>L</strong> and <strong>R</strong> (<num>3</num>) normally shows fuel carried in left and right
+fuel feeds respectively. A rocker switch on the fuel management panel enables
+selection of the wing internal tanks (<strong>WING</strong>) or external fuel tanks (<strong>EXT</strong>)
+for display but is spring-loaded to return to showing the feed tanks (<strong>FEED</strong>)
+automatically. When displaying wing internal tanks or external fuel tanks, the
+left wing or left external tank is shown on the L counter and the right wing or
+right external tank on the R counter.</p>
+<p>The <strong>FUS &amp; FEED</strong> tapes (fuselage and feed) shows the <strong>AFT &amp; L</strong> (aft fuselage
+and left feed) and <strong>FWD &amp; R</strong> (forward fuselage and right feed) in thousands of
+pounds.</p>
+<p>Additionally the RIO has a total fuel quantity display on the right instrument
+panel. This display counter can only show total fuel quantity. (See Fuel
+Quantity Totalizer.)</p>
+<p><img src="../../../img/general_fuel_fuel.jpg" alt="fuel" /></p>
+<p>The fuel management panel on the pilot’s left vertical console contains the
+applicable controls for the fuel system.</p>
+<p>The <strong>QTY SEL</strong> (<num>1</num>) rocker switch is detailed above under the
+description above about the L &amp; R fuel displays.</p>
+<p>The <strong>FEED</strong> switch allows the pilot to correct fuel imbalances caused by single
+engine operation or feed failures by selecting both engines to feed from either
+the <strong>FWD</strong> (forward and right tanks) or <strong>AFT</strong> (aft and left tanks) instead of
+from one feed system each as normal <strong>NORM</strong>. The switch guard locks the switch
+to the NORM position when down.</p>
+<p>The <strong>WING/EXT TRANS</strong> switch controls fuel transfer from the wing and external
+tanks into the fuselage feed systems. The normal <strong>AUTO</strong> position enables this
+transfer as soon the landing gear is retracted. The <strong>ORIDE</strong> position enables
+this transfer regardless of landing gear position, enabling transfer when on the
+ground or during a malfunction in the electrical system inhibiting landing gear
+retraction detection. Additionally the <strong>OFF</strong> position disables this transfer
+but can be overridden automatically to AUTO when the INST test is performed on
+the MTS panel, the refuel probe is set to ALL EXTD or when dumping fuel.</p>
+<p>The <strong>DUMP</strong> (<num>5</num>) switch enables fuel dump through the beaver tail
+fuel dump mast, it also enables all fuel transfer systems, enabling dump of fuel
+in wings and external tanks in addition to the fuselage. If there’s weight on
+the wheels or the speed brake is not fully retracted the fuel dump is inhibited.</p>
+<blockquote>
+<p>🟡 CAUTION: Even though technically possible to engage the afterburners after
+a fuel dump is in progress, this is not allowed due to the possibility of
+igniting the dumped fuel.</p>
+</blockquote>
+<h2 id="in-flight-refueling"><a class="header" href="#in-flight-refueling">In-Flight Refueling</a></h2>
+<p>The above panel also contains the control for the in-flight refueling system.</p>
+<p>The <strong>REFUEL PROBE</strong> (<num>6</num>) switch controls the extension of the
+refueling probe as well as setting up the fuel system to receive fuel. The two
+extended positions (<strong>EXTD</strong>) are <strong>ALL</strong>, enabling refueling of all tanks,
+including wings and external tanks and <strong>FUS</strong>, allowing refuel of only the
+fuselage tanks. When selecting the <strong>ALL</strong> position the fuel feed from the wings
+and external tanks are disabled to allow refueling of these tanks. <strong>RET</strong>
+(Retract) retracts the refueling probe and resumes normal fuel system operation.</p>
+<blockquote>
+<p>💡 Selecting <strong>EXTD ALL</strong> resets the <strong>WING/EXT TRANS</strong> switch to <strong>AUTO</strong>.</p>
+</blockquote>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f4y2oZ-7rM8?si=SArL4wXSpcNU-Rzj"
+title="DCS World - F-14 Tomcat - Air to Air Refueling" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../f14ab/systems/engines_and_fuel_systems/engines.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../f14ab/systems/nav_com/overview.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../f14ab/systems/engines_and_fuel_systems/engines.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../../f14ab/systems/engines_and_fuel_systems/engines.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../../f14ab/systems/nav_com/overview.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../../f14ab/systems/nav_com/overview.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js"></script>
+        <script src="../../../mark.min.js"></script>
+        <script src="../../../searcher.js"></script>
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>

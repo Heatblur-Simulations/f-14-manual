@@ -1,0 +1,495 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Navigation Controls and Displays - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../theme/visual.css">
+        <link rel="stylesheet" href="../../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../../theme/pdf.css">
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/f14bu/systems/nav_com/navigation_controls_displays.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="navigation-controls-and-displays"><a class="header" href="#navigation-controls-and-displays">NAVIGATION CONTROLS AND DISPLAYS</a></h1>
+<p>The Tomcat has a multitude of displays to show navigation data. Different input
+methods can be used to display different navigation data at the same time. The
+CDNU and PTID are the only Navigation data displays that also offer input
+methods. The CDNU is the primary navigation input device.</p>
+<p>Tactical navigational information is displayed on the VDIG-R, PMDIG, and BDHI.
+The type of information displayed is predicated on the PDCP display mode and
+steering sub-mode selected. System navigation information is displayed on the
+CDNU, PTID and HSD. Below a summary of system outputs available to the displays.
+Specific presentations for each navigation mode are presented in the navigation
+modes and steering section. All displays provide navigation information with
+respect to magnetic north. The navigation command and control grid displays are
+discussed in the PTID chapter.</p>
+<h2 id="pilot"><a class="header" href="#pilot">Pilot</a></h2>
+<p><img src="../../../img/bu/pilot_navigation_display.jpg" alt="Navigation_Display_Overview_Pilot" /></p>
+<p>(<num>1</num>) Vertical Display Indicator Group Replacement (VDIG-R)</p>
+<p>(<num>2</num>) Horizontal Situation Display (HSD)</p>
+<p>(<num>3</num>) Bearing Distance Heading Indicator (BDHI)</p>
+<p>(<num>4</num>) Pilot Display Control Panel (PDCP)</p>
+<p>(<num>5</num>) TACAN Control Panel</p>
+<p>(<num>6</num>) TACAN CMD Panel</p>
+<h2 id="rio"><a class="header" href="#rio">RIO</a></h2>
+<p><img src="../../../img/bu/rio_navigation_display.jpg" alt="Navigation_Display_Overview_RIO" /></p>
+<p>(<num>1</num>) Control Display Navigation Unit (CDNU)</p>
+<p>(<num>2</num>) Programmable Tactical Information Display (PTID)</p>
+<p>(<num>3</num>) Bearing Distance Heading Indicator (BDHI)</p>
+<p>(<num>4</num>) Electronic Countermeasure Display (ECMD)</p>
+<p>(<num>5</num>) Electronic Countermeasure Display Control Panel</p>
+<h2 id="system-architecture-and-terminology"><a class="header" href="#system-architecture-and-terminology">System Architecture and Terminology</a></h2>
+<p>With the F-14B Upgrade the Navigation system was upgraded significantly,
+replacing entire component groups or supplementing them with newer components.
+At the core of the Navigation system is the Embedded GPS INS (EGI). The EGI is
+controlled by the CDNU. The F-14s weapon system is controlled by the F-14s
+Mission Computer (FMC). The FMC requires analogue signals and interfaces with
+the CDNU and the EGI via the Computer Signal Data Converter (Replacement)
+CSDC(R).</p>
+<p>This means, that whilst the overall navigation solution for the Tomcat is
+determined by the EGI, there are four distinct sources for steering information:</p>
+<ol>
+<li>
+<p>The EGI steering solution which is controlled via the CDNU.</p>
+</li>
+<li>
+<p>The FMC steering solution which is controlled via the PTID.</p>
+</li>
+<li>
+<p>BDHI steering controlled via the CDNU.</p>
+</li>
+<li>
+<p>TACAN steering controlled via the Pilots TACAN panel.</p>
+</li>
+</ol>
+<p><img src="../../../img/bu/navigation_system_overview.jpg" alt="Navigation System Overview" /></p>
+<h3 id="egi-steering"><a class="header" href="#egi-steering">EGI Steering</a></h3>
+<p>The EGI provides flight plan AUTO, OFLY and MAN steering selected on the CDNU.
+If EGI (MAN/OFLY/AUTO) steering is selected via the PTID and EGI is selected on
+the TACAN CMD panel, the HUD and HSD reference the EGI steering solution. The
+current EGI steering waypoint is shown on the PTID as a "Hot-Dog" waypoint. The
+EGI always provides steering to the currently active flight plan waypoint.</p>
+<p><img src="../../../img/dark/ptid_waypoints_hotdog_wp.svg" alt="Hotdog Waypoint" /></p>
+<h3 id="destination-steering"><a class="header" href="#destination-steering">Destination Steering</a></h3>
+<p>The FMC provides two basic types of steering Navigation and Attack, Navigation
+steering is commonly referred to as destination steering. Any waypoint in the
+Flight Plan can be designated as the Destination waypoint. If destination
+steering is selected via the PTID tactical page using PBs 6, 8, and 9 and EGI is
+selected on the TACAN CMD panel, the HUD and HSD reference the destination
+steering solution. Destination steering is available on the HUD in all HUD
+modes, and is only available on the HSD if the DEST steering sub-mode is
+selected on the PDCP.</p>
+<p><img src="../../../img/dark/ptid_waypoints_dest_wp.svg" alt="Destination Waypoint" /></p>
+<h3 id="bdhi-steering"><a class="header" href="#bdhi-steering">BDHI Steering</a></h3>
+<p>Steering information to the CDNU Fly−To point (listed as the first waypoint on
+the CDNU Flight Plan page) can be displayed on the BDHI by ensuring that EGI is
+selected on the TACAN Control Panel. If EGI is selected, then the RIO has four
+options: selecting the EGI fly−to point (default), selecting a flight plan
+waypoint, selecting the GGW/LTS next launch WP (TGT or LP), or synchronizing the
+BDHI with HUD steering. Options are available on the BDHI Steering Selection
+page, accessed via the CDNU F4 function key. The RIO selects options by
+depressing the appropriate LSK. An asterisk next to the LSK shows which option
+is active.</p>
+<h3 id="tacan-steering"><a class="header" href="#tacan-steering">TACAN Steering</a></h3>
+<p>TACAN steering is shown on the HSD, HUD and BDHI if the Pilot or RIO has TACAN
+selected on the TACAN CMD panel. All displays will now reference the TACAN
+station as the steering source. The HSD will only show TACAN steering if TACAN
+is selected on the PDCP sub-mode.</p>
+<blockquote>
+<p>TACAN Yardstick is always displayed on the HUD with a valid TACAN station
+regardless of TACAN CMD panel EGI/TACAN switch position.</p>
+</blockquote>
+<h2 id="navigation-display-matrix"><a class="header" href="#navigation-display-matrix">Navigation Display Matrix</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>PDCP Mode</th><th>TACAN/EGI Pushbutton</th><th>PTID Steering Select (PB 9)</th><th>HUD/HSD/ECMD Displays (DEST and TACAN Display is the same between ECMD and HSD)</th><th>BDHI Display</th></tr></thead><tbody>
+<tr><td>TACAN</td><td>EGI</td><td>AUTO MAN OFLY DEST</td><td><strong>Command Heading:</strong> Wind corrected Heading to the EGI Fly-To Point. <strong>Range:</strong> To the EGI Fly-To Point. <strong>CDI Bar:</strong> Displayed (to the EGI Fly-To Point) for the course entered in the CDNU Flightplan</td><td>Steering and range to EGI "Fly-To" Point ("Hot Dog")</td></tr>
+<tr><td>TACAN</td><td>TACAN</td><td></td><td><strong>Command Heading:</strong> Wind corrected Heading (to the TACAN Station) required to maintain the HSD selected course. <strong>Range:</strong> To the TACAN Station. <strong>CDI Bar:</strong> Displayed (to the TACAN) for the course dialed on the HSD course knob.</td><td>TACAN</td></tr>
+<tr><td>DEST</td><td>EGI</td><td>AUTO MAN OFLY</td><td><strong>Command Heading:</strong> Wind corrected Heading to the EGI Fly-To Point. <strong>Range:</strong> To the EGI Fly-To Point. <strong>CDI Bar:</strong> None</td><td>Steering and range to EGI "Fly-To" Point ("Hot Dog")</td></tr>
+<tr><td>DEST</td><td>EGI</td><td>DEST</td><td><strong>Command Heading:</strong> Wind corrected Heading to the Destination Waypoint. <strong>Range:</strong> To the Destination Waypoint. <strong>CDI Bar:</strong> None</td><td>Steering and range to EGI "Fly-To" Point ("Hot Dog")</td></tr>
+<tr><td>DEST</td><td>TACAN</td><td></td><td></td><td>TACAN</td></tr>
+</tbody></table>
+</div>
+<blockquote>
+<p>With the PDCP mode in TACAN, then EGI or TACAN steering are the only available
+options for the HUD display. Destination Steering will not be displayed on the
+HUD even with the PTID Steering Select Pushbutton (PB 9) selected to DEST ##.</p>
+</blockquote>
+<h2 id="steering-select-sources"><a class="header" href="#steering-select-sources">Steering Select Sources</a></h2>
+<ol>
+<li>
+<p>Dest steering: activated via PTID, waypoint selected via PTID rotary or CDNU.</p>
+</li>
+<li>
+<p>EGI steering: activated via PTID, waypoint selected via CDNU.</p>
+</li>
+</ol>
+<h3 id="egi-steering-on-the-hudhsd"><a class="header" href="#egi-steering-on-the-hudhsd">EGI Steering on the HUD/HSD</a></h3>
+<p>To display steering information to the CDNU Fly−To point on the HUD and HSD, the
+RIO must first select AUTO, OFLY or MAN using the PTID Steering Select Rotary
+(PB 9). The pilot must then select DEST or TACAN on the PDCP.</p>
+<blockquote>
+<p>Note The TACAN Range displayed on the left side of the HUD is always present
+regardless of the PDCP mode or the status of TACAN/EGI command pushbutton With
+PDCP mode in TACAN, the TACAN/EGI command determines whether TACAN or EGI
+steering is displayed on the BDHI/HUD/HSD.</p>
+</blockquote>
+<h3 id="automanoflycdnu-steering"><a class="header" href="#automanoflycdnu-steering">AUTO/MAN/OFLY/CDNU Steering</a></h3>
+<p>Selection of "AUTO/MAN/OFLY/CDNU" (indication is dependent on steering mode
+selected on CDNU Flight Plan page, and the status of the EGI) on the PTID
+Destination Steering Select Rotary PB provides steering to the CDNU Fly−To
+waypoint on the HUD, HSD and BDHI when either DEST or TACAN is selected on the
+PDCP (assuming EGI is on). If DEST is selected on the PDCP, the HSD steering is
+derived by the FMC, but it is calculated for the same point as the CDNU
+calculation. For TACAN selected, the same data seen on the BDHI is provided on
+the HSD TACAN display. Both the Hot Dog and the Destination Steering symbols are
+posted on the fly−to waypoint if DEST is selected on the PDCP, or TACAN is
+selected on the PDCP with EGI selected on the TACAN Select Switch. The following
+table summarizes each mode:</p>
+<div class="table-wrapper"><table><thead><tr><th>MODE</th><th>DESCRIPTION</th></tr></thead><tbody>
+<tr><td>AUTO</td><td>Steering to the next waypoint in a flight plan is in accordance with FAA requirements for a "lead turn" when doing Airways Navigation. The lead turn is calculated using a fixed angle of bank, aircraft speed, and course geometry. Automatic sequencing occurs when the aircraft passes an imaginary line perpendicular to the inbound course through the "lead turn" point.</td></tr>
+<tr><td>MAN</td><td>Manual steering to a flight plan waypoint. No automatic sequencing to subsequent waypoint occurs upon reaching the selected waypoint.</td></tr>
+<tr><td>OFLY</td><td>Steering calculations are provided directly to the desired waypoint so that the aircraft passes directly over the waypoint. Automatic sequencing occurs when the aircraft passes an imaginary line perpendicular to the inbound course through the waypoint.</td></tr>
+</tbody></table>
+</div>
+<h3 id="destination-steering-via-cdnu"><a class="header" href="#destination-steering-via-cdnu">Destination Steering via CDNU</a></h3>
+<p>The RIO can select the destination steering source directly from the PTID TAC
+display page. Selecting (or "boxing") PTID PB6 (DEST) will replace the normal
+Steering Mode display on PB9 with the destination steering rotary on PB8 and
+PB9.</p>
+<p>The RIO can then use PB8 and PB9 to step through the available waypoints,
+stopping at the WP number to be designated Destination Steering Point. Unboxing
+the DEST pushbutton (PB6) restores the Steering Mode display. To designate a
+DEST waypoint via the CDNU, the RIO:</p>
+<ol>
+<li>
+<p>Hooks the desired waypoint (Note: if the waypoint is not visible on the PTID,
+the NVD WP page can be used to select the desired waypoint)</p>
+</li>
+<li>
+<p>PTID − Select WPEDIT (PB 8) to bring up the Waypoint Edit 1/2 page on the
+CDNU</p>
+</li>
+<li>
+<p>CDNU − Using LSK 2, cycle through the options until ":DEST" is visible then
+depress ENTER (LSK 6)</p>
+</li>
+<li>
+<p>Verify "D" is posted on the desired CDNU Waypoint Edit Page</p>
+</li>
+<li>
+<p>PTID − Using PB 9, ensure DEST ## is displayed, where ## is the waypoint
+number.</p>
+</li>
+<li>
+<p>PDCP − Pilot must select DEST to display steering information for the
+destination waypoint on the HUD.</p>
+</li>
+</ol>
+<h3 id="pdcp-display-modes-and-steering-sub-modes"><a class="header" href="#pdcp-display-modes-and-steering-sub-modes">PDCP Display Modes and Steering Sub-modes</a></h3>
+<p>The pilot has the option of selecting any one of five VDIG display formats,
+depending on the flight phase, to provide him with the data necessary to
+accomplish the particular flight phase. These five display modes are arranged as
+five vertical, mutually exclusive push-buttons on the pilot’s display control
+panel. The five phases are takeoff (T.O.), CRUISE, air-to-air (A/A),
+air-to-ground (A/G), and landing (LDG). Note ACM selection overrides the CRUISE
+A/A and A/G modes; however, it does not override the T.O. or LDG modes. In
+addition to controlling the VDIG(R) formats, the display mode selections also
+control DFCS, armament and FMC logic.</p>
+<p>In addition to the essential data such as altitude, vertical speed indicator,
+etc., the VDIG(R) format also provides steering cues. In each of the PDCP
+display modes, the pilot has the capability of displaying several types of
+steering commands. Altogether there are five distinct steering command
+sub-modes: TACAN, destination (DEST), AWL/PCD, vector (VEC), and manual (MAN).
+The five selections are arranged horizontally along the bottom of the display
+control panel. The five steering sub-modes determine the display format on the
+pilot’s HSD and the RIO’s multiple display indicator. The HSD and multiple
+display indicator present, in a horizontal plane, steering to the selected
+point. The HSD follows the five sub-modes when the pilot places the HSD-MODE
+switch to NAV. The RIO also performs the same function by setting the MODE
+switch on this multiple display indicator control panel to NAV. Also, when LDG
+is selected, the pilot has the option of displaying ILS or ACL information via
+switches that can be used to individually and independently select the HUD and
+VDI for display.</p>
+<p>A typical choice would be to select ILS (SPN-41/ARA-63) for the HUD and for D/L
+to VDI. Note All steering commands (such as command course and command heading)
+are processed to some extent through the FMC prior to display. The STEERING
+indicator legend on the PTID provides a readout for the RIO to inform him of
+what sub-mode the pilot has chosen.</p>
+<h2 id="egi-vs-dest-steering-mode-use-case-examples"><a class="header" href="#egi-vs-dest-steering-mode-use-case-examples">EGI vs DEST Steering mode use-case examples</a></h2>
+<p>EGI Steering provides the aircrew with steering information to the currently
+active flight plan waypoint. The currently active flight plan waypoint is shown
+on the FLPN page, and is denoted by the Hot-Dog symbol on the PTID. The CDNU has
+4 steering modes, the default steering mode is MAN. In MAN steering the flight
+plan does not advance automatically, it can only be advanced through using the
+DIR function. The DIR function will pass all bypassed waypoints into history. In
+AUTO or OFLY the EGI automatically sequences the waypoints once passed. This has
+the advantage of lowering crew tasks during critical phases of flight. It is
+particularly helpful for long routes and low level navigation, where a lot of
+waypoints need to be passed in short order.</p>
+<p>AUTO and OFLY have the disadvantage of passing waypoints into history, only 5
+history waypoints are stored.</p>
+<p>Destination steering provides steering to any flight plan waypoint regardless of
+its position in the flight plan. There is not Automatic sequencing of waypoints,
+the RIO has to manually select the desired waypoint via the PTID rotary or the
+CDNU WP edit page. This mode is particularly helpful in missions where no long
+routes are required such as a DCA mission.</p>
+<p>In Destination no waypoints pass into history, but the RIO always has to
+manually select the next desired waypoint once a waypoint has been passed.</p>
+<h3 id="dest-steering"><a class="header" href="#dest-steering">DEST steering</a></h3>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">PDCP</th><th style="text-align: center">TACAN CMD Panel</th></tr></thead><tbody>
+<tr><td style="text-align: center"><img src="../../../img/dark/pdcp_cruise_dest_pdcp_cutout.svg" alt="PDCP" /></td><td style="text-align: center"><img src="../../../img/dark/egi_tcn_cmd_rio.svg" alt="TCN CMD Panel" /></td></tr>
+<tr><td style="text-align: center">PTID</td><td style="text-align: center"></td></tr>
+<tr><td style="text-align: center"><img src="../../../img/dark/ptid_tac_nav_dest_guide_cutout.svg" alt="PTID Steering DEST" /></td><td style="text-align: center"></td></tr>
+</tbody></table>
+</div>
+<p>(<num>1</num>) PDCP sub-mode: DEST</p>
+<p>(<num>2</num>) TACAN CMD Panel: EGI</p>
+<p>(<num>3</num>) PTID: DEST on PB9</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">Result:</th><th style="text-align: center"></th></tr></thead><tbody>
+<tr><td style="text-align: center">HUD</td><td style="text-align: center">HSD</td></tr>
+<tr><td style="text-align: center"><img src="../../../img/dark/cruise_dest_nav_controls_displays.svg" alt="HUD Dest Steering" /></td><td style="text-align: center"><img src="../../../img/dark/hsd_nav_dest_guide_pmdig.svg" alt="PMDIG DEST" /></td></tr>
+</tbody></table>
+</div>
+<p>HUD/HSD: Show DEST wp.</p>
+<h3 id="egi-steering-1"><a class="header" href="#egi-steering-1">EGI steering</a></h3>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">PDCP</th><th style="text-align: center">TACAN CMD Panel</th></tr></thead><tbody>
+<tr><td style="text-align: center"><img src="../../../img/dark/pdcp_cruise_dest_pdcp_cutout.svg" alt="PDCP" /></td><td style="text-align: center"><img src="../../../img/dark/egi_tcn_cmd_rio.svg" alt="TCN CMD Panel" /></td></tr>
+<tr><td style="text-align: center">PTID</td><td style="text-align: center"></td></tr>
+<tr><td style="text-align: center"><img src="../../../img/dark/ptid_tac_nav_ofly_guide_cutout.svg" alt="PTID Steering EGI" /></td><td style="text-align: center"></td></tr>
+</tbody></table>
+</div>
+<p>(<num>1</num>) PDCP sub-mode: DEST</p>
+<p>(<num>2</num>) TACAN CMD Panel: EGI</p>
+<p>(<num>3</num>) PTID: OFLY on PB09</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">Result:</th><th style="text-align: center"></th></tr></thead><tbody>
+<tr><td style="text-align: center">HUD</td><td style="text-align: center">HSD</td></tr>
+<tr><td style="text-align: center"><img src="../../../img/dark/cruise_egi_nav_controls_displays.svg" alt="HUD EGI Steering" /></td><td style="text-align: center"><img src="../../../img/dark/hsd_nav_dest_guide_pmdig.svg" alt="PMDIG DEST" /></td></tr>
+</tbody></table>
+</div>
+<p>HUD/HSD: Show Hot-Dog wp.</p>
+<h3 id="tacan-steering-1"><a class="header" href="#tacan-steering-1">TACAN steering</a></h3>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">PDCP</th><th style="text-align: center">TACAN CMD Panel</th></tr></thead><tbody>
+<tr><td style="text-align: center"><img src="../../../img/dark/pdcp_cruise_tacan_pdcp_cutout.svg" alt="PDCP" /></td><td style="text-align: center"><img src="../../../img/dark/tcn_tcn_cmd_rio.svg" alt="TCN CMD Panel" /></td></tr>
+</tbody></table>
+</div>
+<p>(<num>1</num>) PDCP sub-mode: TACAN</p>
+<p>(<num>2</num>) TACAN CMD Panel: TACAN</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">Result:</th><th style="text-align: center"></th></tr></thead><tbody>
+<tr><td style="text-align: center">HUD</td><td style="text-align: center">HSD</td></tr>
+<tr><td style="text-align: center"><img src="../../../img/dark/cruise_tcn_nav_controls_displays.svg" alt="HUD TCN Steering" /></td><td style="text-align: center"><img src="../../../img/dark/hsd_nav_tacan_guide_pmdig.svg" alt="PMDIG TACAN" /></td></tr>
+</tbody></table>
+</div>
+<p>HUD/HSD: Show TACAN steering.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../f14bu/systems/nav_com/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../f14bu/systems/nav_com/egi.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../f14bu/systems/nav_com/overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../../f14bu/systems/nav_com/overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../../f14bu/systems/nav_com/egi.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../../f14bu/systems/nav_com/egi.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js"></script>
+        <script src="../../../mark.min.js"></script>
+        <script src="../../../searcher.js"></script>
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>

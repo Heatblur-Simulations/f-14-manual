@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="JDAM_TAC_PAGE_TARGET_CUE_-_Dark" xmlns="http://www.w3.org/2000/svg" width="2393.185" height="564.913" viewBox="0 0 2393.185 564.913">
+  <polygon points="989.6 185.467 974.119 211.561 1005.081 211.561 989.6 185.467" fill="none" stroke="#ccc" stroke-miterlimit="10" stroke-width="6"/>
+  <polygon points="1084.469 139.204 1068.988 165.298 1099.95 165.298 1084.469 139.204" fill="none" stroke="#ccc" stroke-miterlimit="10" stroke-width="6"/>
+  <g>
+    <rect x="1026.061" y="170.037" width="54.667" height="51.224" fill="none"/>
+    <path d="M1046.888,200.527h0v10.845h-3.993s-14.97,0-14.97,0v-4.295h14.954v-6.6h-13.159v-4.233h13.16v-6.555h-14.968v-4.233h14.968v-.004h4.009v15.075Z" fill="#ccc" stroke="#ccc" stroke-miterlimit="10"/>
+    <path d="M1065.726,191.688v8.696h8.362v2.22h-8.362v8.77h-2.368v-8.77h-8.363v-2.22h8.363v-8.696h2.368Z" fill="#ccc" stroke="#ccc" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+  <g>
+    <rect x="1113.346" y="120.613" width="54.667" height="51.224" fill="none"/>
+    <path d="M1135.535,161.947h-1.746s-14.583,0-14.583,0v.002h-4.009v-25.925h4.009v.006h14.968v4.255h-14.968v6.534h13.16v.017h3.169v15.11ZM1119.205,157.655h12.321v-6.603h-12.321v6.603Z" fill="#ccc" stroke="#ccc" stroke-miterlimit="10"/>
+    <path d="M1154.38,142.264v8.696h8.362v2.22h-8.362v8.77h-2.368v-8.77h-8.363v-2.22h8.363v-8.696h2.368Z" fill="#ccc" stroke="#ccc" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+  <line x1="1084.469" y1="156.6" x2="1091.269" y2="206.87" fill="none" stroke="#ccc" stroke-linecap="round" stroke-miterlimit="10" stroke-width="5"/>
+  <line x1="1002.424" y1="252.352" x2="989.6" y2="200.344" fill="none" stroke="#ccc" stroke-linecap="round" stroke-miterlimit="10" stroke-width="5"/>
+  <polygon points="1075.788 316.477 1060.307 342.571 1091.269 342.571 1075.788 316.477" fill="none" stroke="#ccc" stroke-miterlimit="10" stroke-width="6"/>
+  <g>
+    <rect x="1104.665" y="297.886" width="54.667" height="51.224" fill="none"/>
+    <path d="M1126.856,328.378h0v10.845h-4.009v-10.865h-16.331v-15.066h4.012v10.803h12.32v-10.792h4.009v15.075Z" fill="#ccc" stroke="#ccc" stroke-miterlimit="10"/>
+    <path d="M1145.699,319.537v8.696h8.362v2.22h-8.362v8.77h-2.368v-8.77h-8.363v-2.22h8.363v-8.696h2.368Z" fill="#ccc" stroke="#ccc" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+  <line x1="1075.788" y1="333.873" x2="1062.424" y2="381.532" fill="none" stroke="#ccc" stroke-linecap="round" stroke-miterlimit="10" stroke-width="5"/>
+  <polygon points="980.998 282.656 965.517 308.75 996.479 308.75 980.998 282.656" fill="none" stroke="#ccc" stroke-miterlimit="10" stroke-width="6"/>
+  <g>
+    <rect x="1017.459" y="267.226" width="54.667" height="51.224" fill="none"/>
+    <path d="M1039.647,308.562h-1.746s-17.567,0-17.567,0v-4.292h15.305v-6.603h-12.321v.049h-4.009v-15.075h4.009v.004h14.968v4.233h-14.968v6.555h13.16v.017h3.169v15.11Z" fill="#ccc" stroke="#ccc" stroke-miterlimit="10"/>
+    <path d="M1058.493,288.877v8.696h8.362v2.22h-8.362v8.77h-2.368v-8.77h-8.363v-2.22h8.363v-8.696h2.368Z" fill="#ccc" stroke="#ccc" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+  <line x1="996.012" y1="349.541" x2="980.998" y2="297.533" fill="none" stroke="#ccc" stroke-linecap="round" stroke-miterlimit="10" stroke-width="5"/>
+</svg>

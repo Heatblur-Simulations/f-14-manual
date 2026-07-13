@@ -1,0 +1,696 @@
+<!DOCTYPE HTML>
+<html lang="en" class="hb_light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Fast Tactical Imaging System - Heatblur F-14 Tomcat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Manual of the F-14 Tomcat by Heatblur Simulations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../../favicon.svg">
+        <link rel="stylesheet" href="../../../../css/variables.css">
+        <link rel="stylesheet" href="../../../../css/general.css">
+        <link rel="stylesheet" href="../../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../../highlight.css">
+        <link rel="stylesheet" href="../../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../../theme/visual.css">
+        <link rel="stylesheet" href="../../../../theme/hb_light.css">
+        <link rel="stylesheet" href="../../../../theme/hb_dark.css">
+        <link rel="stylesheet" href="../../../../theme/pdf.css">
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "hb_dark" : "hb_light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('hb_light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="hb_light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="hb_dark">Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pdf">(PDF)</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../../print.html" title="Print this manual" aria-label="Print this manual">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
+                            <i id="pdf-button" class="fa fa-file-pdf-o"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/f14bu/systems/nav_com/com/fast_tactical_imaging_set.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this manual ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="fast-tactical-imaging-system"><a class="header" href="#fast-tactical-imaging-system">Fast Tactical Imaging System</a></h1>
+<p>The Tactical Imaging Set (also called FTI), captures, digitizes, and compresses
+imagery from an external video source, then stores and/or transmits it over a
+secure communications link.</p>
+<p>The external video source is typically a camera/video system such as the nose
+mounted Television Camera System (TCS), Low Altitude Navigation and Targeting
+System for Night (LANTIRN), Head Up Display (HUD) camera. Maximum image capture
+rate is 4 images/second. In reality the Tactical Imaging Set could also receive
+images transmitted by other Tactical Imaging Sets or compatible systems (such as
+ground or base stations). Selected images can be displayed on the forward (Video
+Display Indicator−VDI) and/or aft (Programmable Tactical Information Display −
+PTID) cockpit display.</p>
+<p>The Tactical Imaging Set consists of a Remote Control Unit (RCU), Image
+Transceiver, Video Tape Recorder (VTR). The RCU mounts in the aft cockpit at the
+outboard front of the right side console.</p>
+<p>The Tactical Imaging System replaces large parts of the legacy AVTR system. The
+Image Transceiver, VTR, Interface Box, and cables are mechanically mounted as
+one unit, called the Naval Airborne Video Recorder and Image Transceiver
+(NAVGRIT) Unit, which is mounted the right side front fuselage avionics bay.</p>
+<p><img src="../../../../img/dark/overview_fti.svg" alt="FTI Overview" /></p>
+<p>(<num>1</num>) 48−character alphanumeric display consisting of 2 rows of 24
+characters each. Upper row shows operating status. Lower row identifies
+functions of switches.</p>
+<p>(<num>2</num>) Six pushbutton switches. Functions are as defined by lower row of
+display.</p>
+<h2 id="remote-control-unit-rcu"><a class="header" href="#remote-control-unit-rcu">Remote Control Unit (RCU)</a></h2>
+<p>The RCU is used to control the Image transceiver mounted in the avionics bay.
+The RCU display contains 2 lines of 24 green, night vision compatible,
+alphanumeric characters each. The top line provides status and messages. The
+bottom line provides a command menu. The command menu defines the functions of
+six pushbutton switches located below the display. The command menu, and thus
+the switch functions, varies depending on the selected operating mode. Display
+brightness is controlled via menu selection.</p>
+<p><img src="../../../../img/bu/right_console_fti-02.jpg" alt="RCU" /></p>
+<h2 id="image-transceiver"><a class="header" href="#image-transceiver">Image Transceiver</a></h2>
+<p>The Image Transceiver also has two Personal Computer Memories Card International
+Association (PCMCIA) card slots. The Image Transceiver has 26 MB of image memory
+allocated for storage of uncompressed image frames. The image memory is
+volatile, and so stored image frames are lost when power is removed.</p>
+<p>In DCS sent and received images are stored in the saved-games directory
+<code>Saved Games\DCS_F14\TIS</code> For each flown mission where the VTR or FTI are used a
+folder with that mission date is created. VTR recordings are stored with a time
+stamp. FTI images are stored and named in order of which they are received.</p>
+<p><img src="../../../../img/bu/tis_storage_fti.jpg" alt="TIS Storage" /></p>
+<h2 id="airborne-video-tape-recorder-avtr"><a class="header" href="#airborne-video-tape-recorder-avtr">Airborne Video Tape Recorder (AVTR)</a></h2>
+<p>The VTR is an airborne video recorder that can record and play back up to 2
+hours of information on a standard Hi 8 format cassette tape. The legacy AVTR
+front panel controls are disabled with the exception of the record switch; thus
+all VTR control is remotely performed. The RCU duplicates the AVTR record
+function through the view menu shown below.</p>
+<p>The AVTR can only record one display at a time. The displays are selected via
+the ECMD video menu which is accessed via the DDD cursor. The selected display
+is also the one that the FTI records for image sending.</p>
+<h3 id="ecmd-video-recording-menu"><a class="header" href="#ecmd-video-recording-menu">ECMD Video Recording Menu</a></h3>
+<p><img src="../../../../img/dark/ecmd_menu_video_pmdig.svg" alt="ECMD VIDEO Page" /></p>
+<p>(<num>1</num>) Hooking TCS with the ECMD cursor the TCS is selected for
+recording by the FTI and AVTR.</p>
+<p>(<num>2</num>) Hooking Pilot or RIO with the ECMD cursor the HUD or PTID are
+selected for recording by the FTI and AVTR.</p>
+<p>(<num>3</num>) Hooking STA8 with the ECMD cursor the LANTIRN is selected for
+display on the VDI.</p>
+<p>(<num>4</num>) Hooking STA8 with the ECMD cursor the LANTIRN is selected for
+display on the PTID.</p>
+<p>(<num>5</num>) Menu is Boxed.</p>
+<p>(<num>6</num>) Hooking TCS with the ECMD cursor the TCS is selected for display
+on the PTID.</p>
+<p>(<num>7</num>) Hooking TCS with the ECMD cursor the TCS is selected for display
+on the VDI.</p>
+<blockquote>
+<p>Note: ECMD Video Menu display selection is overridden by actuation of the LCP
+TCS/LTS video feed button.</p>
+</blockquote>
+<h2 id="operating-instructions"><a class="header" href="#operating-instructions">OPERATING INSTRUCTIONS</a></h2>
+<h3 id="power-up-sequence"><a class="header" href="#power-up-sequence">Power-up Sequence</a></h3>
+<p>Power up is accomplished using the aft cockpit Sensor Control Panel, moving the
+record switch from OFF into standby will apply power. Once power is applied, the
+Remote Control Unit (RCU) controls all functions, with the exception of VTR
+record which is accomplished by moving the record switch into the ON position.
+VTR record can also be initiated through the RCU, overriding the Sensor Control
+Panel Record switch position.</p>
+<h4 id="set-aft-cockpit-sensor-control-panel-selector-to-stby"><a class="header" href="#set-aft-cockpit-sensor-control-panel-selector-to-stby">Set aft cockpit Sensor Control Panel selector to STBY</a></h4>
+<p>RCU displays following sequence:</p>
+<div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+<tr><td>PHOTOTELESIS</td></tr>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+<tr><td>RCU 403</td></tr>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+<tr><td>Waiting ATR startup</td></tr>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+<tr><td>Unit is</td></tr>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+<tr><td>Waiting for ATR startup</td></tr>
+</tbody></table>
+</div>
+<h4 id="after-image-transceiver-startup-the-following-message-sequence-appears"><a class="header" href="#after-image-transceiver-startup-the-following-message-sequence-appears">After Image Transceiver startup, the following message sequence appears</a></h4>
+<div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+<tr><td>RCU RESET</td></tr>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+<tr><td>PHOTOTELESIS</td></tr>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+<tr><td>RCU 403</td></tr>
+</tbody></table>
+</div>
+<h4 id="boot-up-menu-appears"><a class="header" href="#boot-up-menu-appears">Boot up menu appears</a></h4>
+<p><img src="../../../../img/dark/boot_menu_fti.svg" alt="FTI Boot Menu" /></p>
+<p>(<num>1</num>) Where LOC is the local call sign (ownship). This is either the
+DCS unit name (pilot) set in the mission editor, or the callsign setup in the
+TIS DTM section. Up to 6 characters alphanumeric callsigns can be chosen.</p>
+<p>(<num>2</num>) SND is the first entry in the send to call sign directory. Can be
+set in the TIS DTM menu in the mission editor.</p>
+<h4 id="press-switch-corresponding-to-desired-display-brightness-level"><a class="header" href="#press-switch-corresponding-to-desired-display-brightness-level">Press switch corresponding to desired display brightness level</a></h4>
+<p>(if current level is satisfactory, do not press a switch):</p>
+<ul>
+<li><strong>EXT</strong> − Not used</li>
+<li><strong>NITE</strong> − Nighttime level from Settings menus</li>
+<li><strong>DAY</strong> − Daytime level from Settings menus</li>
+</ul>
+<ol>
+<li>Press OK switch. Main menu appears at currently selected brightness level.</li>
+</ol>
+<p><img src="../../../../img/dark/main_menu_fti.svg" alt="FTI Main Menu" /></p>
+<p>(<num>1</num>) Number of image frames in the send queue.</p>
+<p>(<num>2</num>) Number of image frames in the hold queue.</p>
+<p>(<num>3</num>) Number of image frames in the receive queue.</p>
+<p>(<num>4</num>) Is the VTR mode (S = standby, U = unthreaded, P = playback,
+flashing R =recording, all others = blank), ± is either a or a + indicating tape
+location is before or after the reset point, and the numbers (currently 000) is
+the VTR tape counter time in minutes.</p>
+<h2 id="settings-menus"><a class="header" href="#settings-menus">SETTINGS MENUS</a></h2>
+<p>The Settings menus are used to modify configuration parameters for capturing,
+compressing, transmitting, and receiving image frames, as well as other system
+level functions. The Settings menus are accessed and processed in sequence from
+the Main menu (by pressing the SET switch) as shown above.</p>
+<h3 id="settings-menus-format"><a class="header" href="#settings-menus-format">Settings Menus' Format</a></h3>
+<p>The Settings menus follow the general format:</p>
+<div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+<tr><td>Parameter: ######</td></tr>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+<tr><td>End BackSet Fld PrevNext</td></tr>
+</tbody></table>
+</div>
+<p>Where ####### (flashing) is the value of the parameter being set. Switch
+functions vary somewhat among menus, and are explained as each menu is
+described.</p>
+<h3 id="send-to-call-sign-menu"><a class="header" href="#send-to-call-sign-menu">Send to Call Sign Menu</a></h3>
+<p>This menu is used to select/deselect the call signs to be included in the next
+transmission. It provides access to submenus, which are used to maintain the
+call sign directory. The menu contains one value field. When selected, the first
+call sign in the directory is listed whether or not it is selected for
+transmission. The directory can be stepped through using the NEXT switch, and
+each entry can be selected or deselected, as desired. The displays for a call
+sign value differ slightly depending on whether that value is selected or not
+selected.</p>
+<p>For a selected call sign value:</p>
+<p><img src="../../../../img/dark/send_to_callsign_menu_01_fti_smol.svg" alt="FTI Callsign Menu Selected" /></p>
+<p>For a non−selected call sign value:</p>
+<p><img src="../../../../img/dark/send_to_callsign_menu_02_fti_smol.svg" alt="FTI Callsign Menu" /></p>
+<p><strong>END</strong> − Return to Main menu</p>
+<p><strong>MOD</strong> − Display Modify Call Sign menu</p>
+<p><strong>SET</strong> − Select next menu in sequence</p>
+<p><strong>YES</strong> − Select call sign</p>
+<p><strong>NO</strong> − Deselect call sign</p>
+<p><strong>NEXT</strong> − Change currently displayed call sign to next call sign in directory</p>
+<p>The callsign directory can be edited using the TIS DTM menu in the mission
+editor.</p>
+<h3 id="modify-call-sign-menu"><a class="header" href="#modify-call-sign-menu">Modify Call Sign Menu</a></h3>
+<p>This menu is used to add a new call sign to the directory or delete an existing
+call sign from the directory. It also provides access to the Edit Call Sign
+menu, which is used to define a newly added call sign.</p>
+<p><img src="../../../../img/dark/modify_callsign_menu_fti_smol.svg" alt="FTI Modify Callsign Menu" /></p>
+<p><strong>DONE</strong> −Return to Send to Call Sign menu</p>
+<p><strong>DEL</strong> − Delete the current call sign from the directory and display the next
+value (if no next value, default is 000000)</p>
+<p><strong>NEW</strong> − Create new unselected call sign with value of 000000 (if value 000000
+already exists, switch has no effect)</p>
+<p><strong>EDIT</strong> − Display Edit Call Sign menu</p>
+<p><strong>PREV</strong> − Change currently displayed call sign to previous call sign in
+directory</p>
+<p><strong>NEXT</strong> − Change currently displayed call sign to next call sign in directory</p>
+<h3 id="edit-call-sign-menu"><a class="header" href="#edit-call-sign-menu">Edit Call Sign Menu</a></h3>
+<p>This menu is used to change the name of an existing call sign, including a newly
+added call sign (000000). Each character in the call sign is considered a
+separate value field. Valid entries for each character are numerals, upper case
+letters, and blanks (, located in sequence between Z and 0). Blanks are not
+permitted within the body of the call sign; however, if a call sign has less
+than 6 characters, trailing blanks must be added to complete the 6 character
+call sign. Trailing blanks appear on the display only when the call sign value
+field is being edited.</p>
+<p><img src="../../../../img/dark/edit_callsign_menu_fti_smol.svg" alt="FTI Edit Callsign Menu" /></p>
+<p><strong>OK</strong> − Return to Modify Send to Call Sign menu</p>
+<p><strong>FLD</strong> − Select next field in call sign</p>
+<p><strong>PREV</strong> − Change currently selected call sign character to previous letter or
+number</p>
+<p><strong>NEXT</strong> − Change currently selected call sign character to next letter or
+number</p>
+<h3 id="local-call-sign-menu"><a class="header" href="#local-call-sign-menu">Local Call Sign Menu</a></h3>
+<p>This menu is used to modify the call sign associated with the Tactical Imaging
+Set. Each character in the call sign is considered a separate value field. Valid
+entries for each character are numerals, upper case letters, and blanks (4,
+located in sequence between Z and 0). Blanks are not permitted within the body
+of the call sign; however, if the call sign has less than 6 characters, trailing
+blanks must be added to complete the 6 character call sign. Trailing blanks
+appear on the display only when the call sign value field is being edited.</p>
+<p><img src="../../../../img/dark/local_callsign_menu_fti_smol.svg" alt="FTI Local Callsign Menu" /></p>
+<p><strong>END</strong> − Return to Main menu</p>
+<p><strong>BACK</strong>− Display PTAC Quick Start menu</p>
+<p><strong>SET</strong> − Display Brightness menu</p>
+<p><strong>FLD</strong> − Select next field in call sign</p>
+<p><strong>PREV</strong> − Change currently selected call sign character to previous letter or
+number</p>
+<p><strong>NEXT</strong> − Change currently selected call sign character to next letter or
+number</p>
+<h3 id="senddelete-function-menu"><a class="header" href="#senddelete-function-menu">Send/Delete Function Menu</a></h3>
+<p>This menu is used to toggle the send/delete mode parameter on or off. In
+send/delete mode, captured images are deleted as they are sent. With send/delete
+mode turned off, images are copied to the receive queue as they are sent. Valid
+values are YES and NO.</p>
+<p><img src="../../../../img/dark/send_delete_menu_fti_smol.svg" alt="Send/Delete Function" /></p>
+<p><strong>END</strong> − Return to Main menu</p>
+<p><strong>BACK</strong>− Display Send−to Call Sign menu</p>
+<p><strong>SET</strong> − Display Capture Rate menu</p>
+<p><strong>NEXT</strong> − Toggle send and delete mode value</p>
+<h3 id="capture-rate-menu"><a class="header" href="#capture-rate-menu">Capture Rate Menu</a></h3>
+<p>This menu is used to change the time interval between image captures in burst
+mode. Valid values range from 0.1 to 999.0. Values are incremented or
+decremented in 0.1−second steps when the value is less than 1 second, and in
+1−second steps when the value is greater than 1 second. Incrementing once from
+999.0 or decrementing once from 0.1 disables burst mode and enables single shot
+mode. In this case, the value field indicates SINGLESHOT.</p>
+<blockquote>
+<p>The capture rate can be set to 0.1 or 0.2 seconds/image; however, these
+settings are below the Tactical Imaging Set minimum capture rate value
+(fastest capture). If the capture rate is set to 0.1 or 0.2 seconds/image, the
+Tactical Imaging Set will capture image frames at its fastest speed, which is
+approximately 0.28 second/image in capture/hold mode. In capture/send mode,
+the minimum capture rate value is substantially higher due to the compression
+required to transfer image frames to the send queue.</p>
+</blockquote>
+<p><img src="../../../../img/dark/capture_rate_menu_fti_smol.svg" alt="Capture Rate Menu" /></p>
+<p><strong>END</strong> − Return to Main menu</p>
+<p><strong>BACK</strong> − Display Send/Delete menu</p>
+<p><strong>SET</strong> − Display Capture Time menu</p>
+<p><strong>PREV</strong> − Decrement currently displayed</p>
+<p><strong>NEXT</strong> − Increment currently displayed value</p>
+<h3 id="capture-time-menu"><a class="header" href="#capture-time-menu">Capture Time Menu</a></h3>
+<p>This menu is used to change the duration of image captures in burst mode. Valid
+values range from 001 to 999. Values are incremented or decremented in 1−second
+steps. Incrementing once from 999 or decrementing once from 001 selects
+continuous capturing. In this case, the value field indicates CONTINUOUS.</p>
+<p><img src="../../../../img/dark/capture_time_menu_fti_smol.svg" alt="Capture Time Menu" /></p>
+<p><strong>END</strong> − Return to Main menu</p>
+<p><strong>BACK</strong> − Display Capture Rate menu</p>
+<p><strong>SET</strong> − Display Max Key Time menu</p>
+<p><strong>PREV</strong> − Decrement currently displayed value</p>
+<p><strong>NEXT</strong> − Increment currently displayed value</p>
+<h3 id="display-brightness-menu"><a class="header" href="#display-brightness-menu">Display Brightness Menu</a></h3>
+<p>This menu is used to set RCU display brightness level for daytime or nighttime
+viewing, Valid values are EXTERNAL (not used), DAY, and NIGHT.</p>
+<p><img src="../../../../img/dark/display_brightness_fti_smol.svg" alt="Display Brightness Menu" /></p>
+<p><strong>END</strong> − Return to Main menu</p>
+<p><strong>BACK</strong> − Display Local Call Sign menu</p>
+<p><strong>SET</strong> − Display Image Dimension menu</p>
+<p><strong>DIM</strong> − Decrease brightness of display for selected DAY or NIGHT value</p>
+<p><strong>BRT</strong> − Increase brightness of display for selected DAY or NIGHT value</p>
+<p><strong>NEXT</strong> − Change currently selected brightness value to next value</p>
+<h3 id="format-sram-card-menu"><a class="header" href="#format-sram-card-menu">Format SRAM Card Menu</a></h3>
+<p>This menu is used to format the Image card (also called the Static Random Access
+Memory (SRAM) card) used to store the image frames in the send and receive
+queues. Valid values are YES and NO (NO is default).</p>
+<p><img src="../../../../img/dark/format_sram_card_fti_smol.svg" alt="Format SRAM Card Menu" /></p>
+<p><strong>END</strong> − Return to Main menu</p>
+<p><strong>BACK</strong> − Display Date and Time menu</p>
+<p><strong>SET</strong> − Display View Version Number menu</p>
+<p><strong>FMT</strong> − Format Image card if format value is YES (if format value is NO, this
+switch has no effect)</p>
+<p><strong>NEXT</strong> − Toggle format yes/no value</p>
+<p>Formatting an Image card causes all stored image frames in the send and receive
+queues to be deleted and the display to momentarily read:</p>
+<div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+<tr><td>Dumping SEND &amp; RECV</td></tr>
+</tbody></table>
+</div>
+<p>When all images are deleted, the display momentarily changes to read:</p>
+<div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+<tr><td>Formatting SRAM card</td></tr>
+</tbody></table>
+</div>
+<h2 id="capturingcompressingsavingtransmittingreceiving-images"><a class="header" href="#capturingcompressingsavingtransmittingreceiving-images">CAPTURING/COMPRESSING/SAVING/TRANSMITTING/RECEIVING IMAGES</a></h2>
+<h3 id="capturing-images"><a class="header" href="#capturing-images">Capturing Images</a></h3>
+<p>Image frames are captured in either burst mode or snap mode. In burst mode,
+image frames are captured at predetermined intervals for a predetermined length
+of time. In snap (single shot) mode, a single image frame is captured. The
+captured image frames are then either transmitted immediately (capture/send
+mode) or stored in the image buffer/hold queue (capture/hold mode). All modes
+and parameters are set using the Settings menu.</p>
+<h4 id="capturing-images-in-bursthold-mode"><a class="header" href="#capturing-images-in-bursthold-mode">Capturing Images in Burst/Hold Mode</a></h4>
+<blockquote>
+<p>Note If the specified capture rate is SINGLESHOT, the BRST switch label does
+not appear.</p>
+</blockquote>
+<ol>
+<li>
+<p>From the Main menu, press the BRST switch. The capture sequence proceeds
+automatically with image frames being captured at the specified rate for the
+specified duration (capture time).</p>
+</li>
+<li>
+<p>While the image frames are being captured, the menu appears as follows:
+<img src="../../../../img/dark/hold_capture_fti_smol.svg" alt="Capturing Images in Burst/Hold Mode" /></p>
+</li>
+<li>
+<p>The hold queue field (H012) increases by 1 as each image frame is captured.</p>
+</li>
+</ol>
+<blockquote>
+<p>Note If the hold queue is full (typically 188 image frames), burst mode is
+discontinued automatically.</p>
+</blockquote>
+<p>Burst length and Burst interval are changed in the settings menu.</p>
+<h4 id="capturing-images-in-snap-mode"><a class="header" href="#capturing-images-in-snap-mode">Capturing Images in Snap Mode</a></h4>
+<p>From the Main menu, press the SNAP switch. The capture sequence proceeds
+automatically with one image frame being captured. The Main menu remains
+unchanged, except that the hold queue field H012 increases by 1.</p>
+<p><img src="../../../../img/dark/hold_capture_fti_smol.svg" alt="Capturing Images in Snap/Hold Mode" /></p>
+<h3 id="saving-images"><a class="header" href="#saving-images">Saving Images</a></h3>
+<p>In capture/hold mode when no call signs are selected for transmission and
+reception is not occurring, all captured− but−not−compressed image frames in the
+hold queue can be compressed and stored in the send queue. In this situation,
+the following menu appears:</p>
+<p><img src="../../../../img/dark/save_captured_fti_smol.svg" alt="Saving Images" /></p>
+<p>Pressing the SEND switch transfers one image at a time from the send que (S002)
+into the Image card.</p>
+<blockquote>
+<p>🚧 Work In Progress.</p>
+</blockquote>
+<h3 id="transmitting-images"><a class="header" href="#transmitting-images">Transmitting Images</a></h3>
+<p>Image frames which have been captured and compressed are send using the SEND
+switch on the Main menu. The SEND switch appears when the Tactical Imaging Set
+is not currently transmitting or receiving image frames, there is at least one
+image frame in the send and/or hold queue, and at least one send−to call sign is
+selected. New image frames can be captured during transmission. Transmission of
+image frames on command is accomplished as follows:</p>
+<blockquote>
+<p>Note The Tactical Imaging Set transmits image frames to all selected call
+signs, but it does so sequentially, that is, it transmits all image frames to
+the first selected call sign.</p>
+</blockquote>
+<ol>
+<li>
+<p>On the Main menu, press the view key the following menu appears:
+<img src="../../../../img/dark/view_menu_fti_smol.svg" alt="View Menu" /></p>
+</li>
+<li>
+<p>In the view menu press the Hold key, the cockpit display will now display the
+images captured in the hold cue and the following menu appears:
+<img src="../../../../img/dark/hold_menu_fti_smol.svg" alt="Hold Menu" /> Within the hold
+menu scroll to the image or images that are to be transferred to the send
+cue. With the MARK key images are transferred into the send cue.</p>
+</li>
+<li>
+<p>On the Main menu, press the SEND switch. The Tactical Imaging Set
+automatically shifts into data mode, and the following menu appears:
+<img src="../../../../img/dark/main_menu_sending_fti_smol.svg" alt="Main Menu Sending" /></p>
+</li>
+</ol>
+<p>a. If there are image frames in the send queue with a valid callsign selected in
+the settings menu, those image frames are transmitted.</p>
+<p>b. If there are no images in the send cue, the send switch stores all images in
+the Hold cue on the image card.</p>
+<p>c. The S=00% displays to the aircrew the percentage of transmitted data
+successfully received by the receiving station.</p>
+<h3 id="receiving-images"><a class="header" href="#receiving-images">Receiving Images</a></h3>
+<p>Image reception is normally accomplished after coordinating voice communication
+with the transmitting station. Image reception cannot occur during transmission,
+and the Image card must have sufficient memory available to store the received
+images. Reception is initiated when a transmission to a call sign matching the
+local call sign is received. The local call sign is set using the Settings menu.
+Once reception is initiated, it proceeds until complete with no user
+intervention. When reception is complete, the Tactical Imaging Set sends an
+acknowledgement to the sending station, and the Main menu appears on the RCU.</p>
+<ol>
+<li>
+<p>Ensure that the transmitting station has the correct receiver callsign set in
+the settings menu. By default the unit name is used as the callsign. The
+local callsign can be changed in the settings menu. All callsigns of a group
+are stored by default. Callsigns can als be pre programmed via the DTM in the
+mission editor TIS menu.</p>
+</li>
+<li>
+<p>When reception begins, the following menu appears with the R000 field
+flashing:
+<img src="../../../../img/dark/main_menu_received_fti_smol.svg" alt="Main Menu Receiving" /></p>
+</li>
+<li>
+<p>Once images have been received the R002 menu will show the amount of images
+received. For example R002. These images can be viewed via the view/send menu
+described below.</p>
+</li>
+</ol>
+<h2 id="viewing-images"><a class="header" href="#viewing-images">VIEWING IMAGES</a></h2>
+<p>Images available for viewing are captured image frames in the hold queue,
+captured, marked, or sent image frames in the send queue, received, sent, or
+uploaded image frames in the receive queue, and live/playback VTR output. When
+no viewing option is selected, Television Camera System (TCS) output is
+displayed on the cockpit display. Image frames in the hold, send, and/or receive
+queue can also be deleted. All functions are accomplished using the View menu.</p>
+<ol>
+<li>
+<p>Pressing the VIEW switch on the Main menu accesses the View menu.</p>
+</li>
+<li>
+<p>From the View menu, press the SEND switch. The View Send menu sequence
+appears as follows, and the first image frame in the queue is decompressed
+and appears on the cockpit display:</p>
+</li>
+</ol>
+<p><img src="../../../../img/dark/send_image_decompression_fti_smol.svg" alt="FTI Decompress Image" /></p>
+<p>(Progress bar indicating status of decompression)</p>
+<p><img src="../../../../img/dark/send_view_menu_fti_smol.svg" alt="FTI Send View Menu" /></p>
+<p>Switch functions are as follows:</p>
+<p><strong>END</strong> − Return to Main menu</p>
+<p><strong>DEL</strong> − Delete current image frame</p>
+<p><strong>PREV</strong> − Display next image frame in queue</p>
+<p><strong>NEXT</strong> − Display previous image frame in queue</p>
+<p>b. Press the PREV or NEXT switch until the desired image frame is displayed</p>
+<p>The decompressed image appears on the cockpit display. The number of the image
+frame displayed is its position in the queue. This position is based on the
+image frames assigned image code (time code for FTI−captured image frames,
+externally assigned for received and previously loaded image frames). The queue
+wraps around so that the image frame selected by pressing the NEXT switch when
+viewing the last image frame in the queue is image frame number 1, and the image
+frame selected by pressing the PREV switch when viewing image frame number 1 is
+the last image frame in the queue.</p>
+<h2 id="controlling-vtr-functions"><a class="header" href="#controlling-vtr-functions">CONTROLLING VTR FUNCTIONS</a></h2>
+<p>The VTR can be controlled from either the RCU or the aft cockpit Sensor Control
+Panel, with the Sensor Control Panel taking precedence. When the Sensor Control
+Panel RECORD switch is set to OFF, power is removed from the Tactical Imaging
+Set, and the VTR tape is unthreaded. When the Sensor Control Panel RECORD switch
+is set to RECD, the VTR is commanded to record. When the Sensor Control Panel is
+set to STBY (normal situation), the VTR is commanded to perform the function set
+by the RCU. In either case, the Sensor Control Panel indicator lights indicate
+standby, end of tape (EOT), or unthreaded VTR status, as applicable. In
+practice, it is recommended that if the Sensor Control Panel is used to control
+the VTR record function, the RCU have STBY selected. If the RCU is used to
+control the VTR functions, the Sensor Control Panel selector must be set to
+STBY.</p>
+<ol>
+<li>
+<p>VTR control functions are part of the Tactical Imaging Set view functions The
+View menu is accessed by pressing the VIEW switch on the Main menu. The View
+menu appears as follows:
+<img src="../../../../img/dark/vtr_control_menu_stby_fti_smol.svg" alt="VTR Menu Standby" /></p>
+<ul>
+<li><strong>END</strong> − Return to Main menu</li>
+<li><strong>REC</strong> − Set VTR to record function</li>
+</ul>
+</li>
+<li>
+<p>Once the VTR is set to record an event mark switch appears on the RCU panel.
+The VTR recording time is also displayed.
+<img src="../../../../img/dark/vtr_control_menu_rec_fti_smol.svg" alt="VTR Menu Record" /></p>
+</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../../f14bu/systems/nav_com/bdhi.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../../f14bu/systems/ptid/overview.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                            <!-- Navigation button at bottom -->
+                            <a rel="prev" href="../../../../f14bu/systems/nav_com/bdhi.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i><span class="nav-chapters-text">Prev</span>
+                            </a>
+                            <!-- Navigation button on the left, not displayed, but needed for Aria nav -->
+                            <a rel="prev" href="../../../../f14bu/systems/nav_com/bdhi.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <!-- Navigation button at bottom -->
+                            <a rel="next prefetch" href="../../../../f14bu/systems/ptid/overview.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i><span class="nav-chapters-text">Next</span>
+                            </a>
+                            <!-- Navigation button on the right, not displayed, but needed for Aria nav -->
+                            <a rel="next prefetch" href="../../../../f14bu/systems/ptid/overview.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class="nav-chapters-text">Next</span><i class="fa fa-angle-right"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../../elasticlunr.min.js"></script>
+        <script src="../../../../mark.min.js"></script>
+        <script src="../../../../searcher.js"></script>
+
+        <script src="../../../../clipboard.min.js"></script>
+        <script src="../../../../highlight.js"></script>
+        <script src="../../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../../../js/jquery-3.7.1.min.js"></script>
+        <script src="../../../../js/extra.js"></script>
+
+
+    </div>
+    </body>
+</html>
