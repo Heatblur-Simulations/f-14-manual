@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Waypoints_Dark" xmlns="http://www.w3.org/2000/svg" width="62.365" height="54.611" viewBox="0 0 62.365 54.611">
+  <line x1="15.018" y1="11.359" x2="47.398" y2="43.739" fill="#cacaca" stroke="#cacaca" stroke-miterlimit="10" stroke-width="3"/>
+  <line x1="11.175" y1="23.335" x2="34.872" y2="47.032" fill="#cacaca" stroke="#cacaca" stroke-miterlimit="10" stroke-width="3"/>
+  <line x1="26.533" y1="7.976" x2="50.231" y2="31.674" fill="#cacaca" stroke="#cacaca" stroke-miterlimit="10" stroke-width="3"/>
+  <circle cx="30.98" cy="27.227" r="4.109" fill="#cacaca" stroke="#cacaca" stroke-miterlimit="10" stroke-width=".25"/>
+</svg>

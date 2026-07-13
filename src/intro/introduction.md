@@ -2,7 +2,7 @@
 
 ## Origins
 
-![U.S. Navy photo by LT J.G. Thomas Prochilo. (DN-SC-83-06680)](../img/intro_F-14TU95.jpg)
+![U.S. Navy photo by LT J.G. Thomas Prochilo. (DN-SC-83-06680)](../img/intro_f-14tu95.jpg)
 _U.S. Navy photo by LT J.G. Thomas Prochilo. (DN-SC-83-06680)_
 
 The F-14 Tomcat can trace its origin back to the 1950's and the US Navy's need
@@ -69,6 +69,16 @@ ability to carry and deliver gps-guided JDAMs was also added.
 
 Most of the LANTIRN equipped aircraft were the ones upgraded with the
 programmable TID or (PTID) allowing for greater integration of the LANTIRN.
+
+## F-14B UPGRADE
+
+Starting in september 1996 the NAVY Upgraded its entire F-14B fleet of 84
+aircraft to the F-14B(U) standard.
+
+Aside from numerous avionics improvements, the airframe changes over the
+standard B model included provision for the emerging capabilities of Night
+Vision Goggle (NVG) compatibility, LANTIRN provision and carriage/digital image
+transmission ability of the TARPS-DI pod.
 
 ## F-14D
 

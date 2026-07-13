@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Waypoints_Light" xmlns="http://www.w3.org/2000/svg" width="62.365" height="54.611" viewBox="0 0 62.365 54.611">
+  <line x1="13.503" y1="23.335" x2="37.201" y2="47.032" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+  <line x1="28.862" y1="7.976" x2="52.56" y2="31.674" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+  <circle cx="33.309" cy="27.227" r="4.109" stroke="#000" stroke-miterlimit="10" stroke-width=".25"/>
+</svg>

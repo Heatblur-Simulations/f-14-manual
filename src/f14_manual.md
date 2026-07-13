@@ -1,24 +1,24 @@
-# F-14 Manual
+# F-14 Tomcat Manual
 
 <!-- markdownlint-disable MD033 -->
-<img class="line_art_logo" alt="F14 Line Art" width="200" src="img/f14line_black.svg">
+<img class="line_art_logo" alt="F14 Line Art" width="200" src="./img/f14line_black.svg">
 <!-- markdownlint-enable MD033 -->
 
 ## Contents
 
-1. [Introduction](intro/introduction.md)
-2. [Cockpit Overview](cockpit/overview.md)
-3. [Systems Overview](systems/overview.md)
-4. [Weapons & Stores](stores/overview.md)
-5. [Jester & Iceman](jester_iceman/overview.md)
-6. [Normal Procedures](procedures/overview.md)
-7. [Emergency Procedures](emergency_procedures/overview.md)
-8. [DCS](dcs/overview.md)
-9. [Abbreviations](abbreviations.md)
-10. [Tutorials](tutorials.md)
-11. [Imprint](imprint.md)
+This documentation contains the manual for the F-14 Tomcat aircraft. The content
+is grouped per aircraft variant:
 
-<!-- markdown-link-check-disable -->
+- Chapter [F-14A/B](f14ab.md) is the main manual, listing and explaining all
+  systems. Special focus is given to the variants
+  - F-14A-95-GR (Export),
+  - F-14A-135-GR (Early),
+  - F-14A-135-GR (Late) and
+  - F-14B.
+- Chapter [F-14B(U)](f14bu.md) then goes into details on all changes introduced
+  with the F-14B Upgrade specifically.
+
+ <!-- markdown-link-check-disable -->
 
 This document is available [online](https://f14.manuals.heatblur.se/), as
 [PDF version](https://github.com/Heatblur-Simulations/f-14-manual/releases),

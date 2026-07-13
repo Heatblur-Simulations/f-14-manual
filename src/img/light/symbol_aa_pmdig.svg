@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="ECMD_Symbols_-_Light" xmlns="http://www.w3.org/2000/svg" width="62" height="54" viewBox="0 0 62 54">
+  <g id="b" data-name="threat_air">
+    <path id="c" data-name="path53" d="M35.734,44.334L7.44,27.149l28.294-17.476v34.66Z" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="15.1" stroke-width="3"/>
+    <path id="d" data-name="path53-2" d="M52.295,18.37v18.142l-15.645-9.071,15.645-9.071Z" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="15.1" stroke-width="3"/>
+    <g>
+      <line x1="45.704" y1="32.617" x2="52.378" y2="25.943" fill="none" stroke="#000" stroke-miterlimit="15.1" stroke-width="3"/>
+      <line x1="14.93" y1="31.935" x2="35.768" y2="11.138" fill="none" stroke="#000" stroke-miterlimit="15.1" stroke-width="3"/>
+      <line x1="24.208" y1="37.76" x2="35.506" y2="26.462" fill="none" stroke="#000" stroke-miterlimit="15.1" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

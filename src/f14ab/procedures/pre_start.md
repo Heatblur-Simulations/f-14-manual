@@ -1,0 +1,66 @@
+# Pre-Start
+
+## Pilot
+
+| Step | Item                                                                          | Action/Details                                                                                                                    |
+| ---- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | Order plane captain to connect and apply starter air and apply external power | Wait for confirmation.                                                                                                            |
+| 2    | If wings are not in OV SWP:                                                   |                                                                                                                                   |
+|      |                                                                               | WING SWEEP DRIVE NO. 1 and WG SWP DRIVE NO 2/MANUV FLAP cb's (LE1, LE2) - Pull.                                                   |
+|      |                                                                               | Emergency WINGSWEEP handle - Extend and match captain bars with wing position tape.                                               |
+|      |                                                                               | **CAUTION: Wings will move to emergency handle position regardless of wing-sweep circuit-breaker (cb) position.**                 |
+| 3    | ICS                                                                           | Check                                                                                                                             |
+| 4    | Landing gear indicator and transition light                                   | Check                                                                                                                             |
+|      |                                                                               | Check gear position indication down and transition light off.                                                                     |
+| 5    | MASTER TEST switch                                                            | Check                                                                                                                             |
+|      |                                                                               | - RPM - 96%.                                                                                                                      |
+|      |                                                                               | - EGT - 960 °C.                                                                                                                   |
+|      |                                                                               | - FF - 10500 Pph.                                                                                                                 |
+|      |                                                                               | - AOA - 18±5.                                                                                                                     |
+|      |                                                                               | - Wing sweep - 45°±2.5°.                                                                                                          |
+|      |                                                                               | - FUEL QTY - 2000±200 Pounds.                                                                                                     |
+|      |                                                                               | - Oxygen quantity - 2 Liters.                                                                                                     |
+|      |                                                                               | - L and R FUEL LOW lights - Illuminated.                                                                                          |
+|      |                                                                               | - MASTER TEST switch - OFF.                                                                                                       |
+|      |                                                                               | LTS - Check that all warning, caution and advisory lights illuminate. Coordinate with RIO.                                        |
+|      |                                                                               | Set brightness of the ACM panel and indexer lights during test.                                                                   |
+|      |                                                                               | The DATA LINK switch must be on to check DDI lights.                                                                              |
+|      |                                                                               | FIRE DET/EXT - Check that L and R FIRE and GO light illuminate. INST - Check for following responses on instruments after 5 secs: |
+|      |                                                                               | Makes L STALL and R STALL warning lights flash.                                                                                   |
+|      |                                                                               | Verify RIO FUEL QTY.                                                                                                              |
+| 6    | Ejection seats                                                                | Armed                                                                                                                             |
+|      |                                                                               | Verify RIO seats armed.                                                                                                           |
+| 7    | CANOPY handle                                                                 | Close                                                                                                                             |
+| 8    | ACM panel                                                                     | Set                                                                                                                               |
+|      |                                                                               | - Gun rate - Set and check rounds remaining.                                                                                      |
+|      |                                                                               | - SW COOL - OFF.                                                                                                                  |
+|      |                                                                               | - MSL PREP - OFF.                                                                                                                 |
+|      |                                                                               | - MSL MODE - NORM.                                                                                                                |
+|      |                                                                               | - Station loading status windows - Check.                                                                                         |
+|      |                                                                               | Verify consistency with loaded armaments.                                                                                         |
+| 9    | EMERG STORES JETT pushbutton light                                            | Out                                                                                                                               |
+| 10   | LADDER light                                                                  | Out                                                                                                                               |
+|      |                                                                               | Order plane captain to stow boarding ladder and steps.                                                                            |
+| 11   | Inform RIO                                                                    | Ready to start                                                                                                                    |
+
+## RIO
+
+| Step | Item                                            | Action/Details                                                                                                                                                          |
+| ---- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | Verify that external power and air is connected | **CAUTION: Starting WCS and or displays without external air can cause damage to those systems as external air is used for cooling when no on-board air is available.** |
+| 2    | ICS                                             | Check                                                                                                                                                                   |
+|      |                                                 | Verify two-way communication between crewmembers and adjust volume.                                                                                                     |
+| 3    | DL, TACAN and U/VHF                             | Set in accordance with mission parameters.                                                                                                                              |
+| 4    | Fuel quantity                                   | Check                                                                                                                                                                   |
+| 5    | Lights                                          | Check                                                                                                                                                                   |
+|      |                                                 | Adjust console and instrument lighting if required.                                                                                                                     |
+| 6    | LTS test                                        | Check                                                                                                                                                                   |
+|      |                                                 | Check that all caution and advisory lights, ECM lights and DDI lights illuminate.                                                                                       |
+|      |                                                 | This is done when pilot selects LTS test on MASTER TEST switch.                                                                                                         |
+|      |                                                 | _Note:_ When pilot selects INST test, RIO fuel counter should decrease to 2000 pounds and MASTER CAUTION, FUEL LOW and OXY LOW lights should illuminate.                |
+| 7    | Ejection seats                                  | Armed                                                                                                                                                                   |
+|      |                                                 | Visually check that pilot locking tab is depressed.                                                                                                                     |
+| 8    | CANOPY handle                                   | Close                                                                                                                                                                   |
+|      |                                                 | Verify that pilot is ready to close canopy.                                                                                                                             |
+| 9    | Acknowledge                                     | Ready to start                                                                                                                                                          |
+|      |                                                 | Inform pilot, ready to start.                                                                                                                                           |

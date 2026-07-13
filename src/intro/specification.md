@@ -4,10 +4,10 @@
 
 | Attribute            | Value                   |
 | -------------------- | ----------------------- |
-| Wingspan (Extended)  | 64’1.5” (~19.5 m)       |
-| Wingspan (Swept)     | 38’2.5” (~11.6 m)       |
-| Wingspan (Oversweep) | 33’3.5” (~10.1 m)       |
-| Length               | 62’8.5” (~19.1 m)       |
+| Wingspan (Extended)  | 64’1.5" (~19.5 m)       |
+| Wingspan (Swept)     | 38’2.5" (~11.6 m)       |
+| Wingspan (Oversweep) | 33’3.5" (~10.1 m)       |
+| Length               | 62’8.5" (~19.1 m)       |
 | Height               | 16’ (~4.9 m)            |
 | Wing Area            | 565 ft² (~52.5 m²)      |
 | Empty Weight         | 40,104 lbs (~18,200 kg) |
@@ -22,10 +22,10 @@
 
 | Attribute            | Value                   |
 | -------------------- | ----------------------- |
-| Wingspan (Extended)  | 64’1.5” (~19.5 m)       |
-| Wingspan (Swept)     | 38’2.5” (~11.6 m)       |
-| Wingspan (Oversweep) | 33’3.5” (~10.1 m)       |
-| Length               | 62’8.5” (~19.1 m)       |
+| Wingspan (Extended)  | 64’1.5" (~19.5 m)       |
+| Wingspan (Swept)     | 38’2.5" (~11.6 m)       |
+| Wingspan (Oversweep) | 33’3.5" (~10.1 m)       |
+| Length               | 62’8.5" (~19.1 m)       |
 | Height               | 16’ (~4.9 m)            |
 | Wing Area            | 565 ft² (~52.5 m²)      |
 | Empty Weight         | 41,780 lbs (~19,000 kg) |

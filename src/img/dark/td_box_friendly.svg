@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="HUD_TD_BOX_Variations_-_Dark" xmlns="http://www.w3.org/2000/svg" width="99.608" height="100.679" viewBox="0 0 99.608 100.679">
+  <path id="c" data-name="TargetDesignatorFriend" d="M71.955,72.518H28.146V28.709h43.809v43.809ZM28.146,72.518l43.809-43.809" fill="none" stroke="#ccc" stroke-miterlimit="15.1" stroke-width="4"/>
+  <line x1="28.146" y1="28.709" x2="71.955" y2="72.518" fill="none" stroke="#ccc" stroke-miterlimit="15.1" stroke-width="4"/>
+</svg>

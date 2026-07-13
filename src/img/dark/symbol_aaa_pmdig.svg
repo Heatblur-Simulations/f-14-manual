@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="ECMD_Symbols_-_Dark" xmlns="http://www.w3.org/2000/svg" width="62" height="54" viewBox="0 0 62 54">
+  <g id="b" data-name="threat_aaa">
+    <path id="c" data-name="path50" d="M18.587,25.674L47.145,3.85l2.497,2.497-20.979,16.23" fill="#ccc" stroke="#ccc" stroke-linecap="square" stroke-miterlimit="15.1" stroke-width="3"/>
+    <path d="M55.467,45.126c0-12.316-11.026-22.344-24.633-22.344S6.202,32.768,6.202,45.126" fill="none" stroke="#ccc" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line x1="6.16" y1="45.417" x2="55.467" y2="45.417" fill="none" stroke="#ccc" stroke-linecap="square" stroke-miterlimit="15.1" stroke-width="3"/>
+    <g>
+      <line x1="19.933" y1="45.417" x2="40.696" y2="24.696" fill="none" stroke="#ccc" stroke-miterlimit="15.1" stroke-width="3"/>
+      <line x1="6.327" y1="44.626" x2="28.171" y2="22.823" fill="none" stroke="#ccc" stroke-miterlimit="15.1" stroke-width="3"/>
+      <line x1="33.497" y1="45.126" x2="48.768" y2="29.855" fill="none" stroke="#ccc" stroke-miterlimit="15.1" stroke-width="3"/>
+      <line x1="46.729" y1="45.126" x2="54.011" y2="37.844" fill="none" stroke="#ccc" stroke-miterlimit="15.1" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

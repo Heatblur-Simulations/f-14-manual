@@ -12,10 +12,12 @@ Contact: <support@heatblur.se>
 Nicholas Dackard, Creative Director and Lead Artist\
 Daniel Malmquist, Lead Engineer (Flight Dynamics and JESTER-AI)\
 Bert van Leeuwen, Senior Programmer (Weapons, Radar, Systems and Multi-crew)\
-Krzysztof Sobczak, Senior Programmer (Systems, Avionics, RWR and Radios, Nav and LANTIRN)\
+Krzysztof Sobczak, Senior Programmer (Systems, Avionics, RWR and Radios, Nav and
+LANTIRN)\
 Andrew O'Donnell, Senior Programmer (Flight Dynamics, Systems and Engines)\
 Aleksander Studen-Kirchner, Producer (QA, Content and Director JESTER-AI)\
-Johan Malmquist - Lead Research and Lead Author Manual\
+Moritz Kroner - Lead Research and Lead Author F-14B(U) Manual\
+Johan Malmquist - Lead Research and Lead Author F-14A/B Manual\
 Andreas Sandin - Lead Design, Web-Design and Liveries\
 Adrian Caparzo, Video Editing and Trailers\
 Grayson Frohberg, Voice of the JESTER-AI
@@ -35,4 +37,4 @@ Daria Kurhuzova, Administrative Assistant
 
 ### See You In The Skies
 
-![F14 from behind](img/tomcat_flying_back.jpg)
+![F14 from behind](./img/tomcat_flying_back.jpg)
