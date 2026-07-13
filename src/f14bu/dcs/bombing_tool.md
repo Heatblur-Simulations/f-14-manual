@@ -86,5 +86,5 @@ IAS or TAS. Increment of 50 knots per click.
 Once all parameters are entered, you may click **Save** to add the entry to the
 Saved Solutions list, from which you can refer to later during the flight.
 
-> 💡 In order to close the manual, make sure to first remove keyboard focus from
+> 💡 In order to close the bombing tool, make sure to first remove keyboard focus from
 > it by clicking anywhere else in the cockpit.
