@@ -310,7 +310,7 @@ headset.
 
 The KY MODE switch (<num>5</num>) is only functional with KY-58 encryption.
 
-The simulated aircraft uses KY-28; this switch is non-functional.
+The simulated aircraft uses KY-58; this switch is non-functional.
 
 ## Radar Beacon Control Panel
 
@@ -354,7 +354,7 @@ Power System Test Panel (<num>7</num>).
 
 Encryption control panel (<num>8</num>) for secure voice communications.
 
-![ky-28](../../../img/cockpit_detail_rio_ky-28.jpg)
+![ky-58](../../../img/cockpit_detail_rio_ky-28.jpg)
 
 ### Zeroize Switch
 
@@ -362,7 +362,7 @@ The ZEROIZE switch (<num>1</num>) clears all encryption keys when actuated.
 
 ### Power-Mode Switch
 
-The power-mode switch (<num>2</num>) selects KY-28 operating mode.
+The power-mode switch (<num>2</num>) selects KY-58 operating mode.
 
 ### Radio Select Switch
 

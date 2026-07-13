@@ -32,7 +32,7 @@ The five indicator windows shows current operating mode.
 
 Emergency fuel shutoff handle for the right engine(<num>2</num>).
 
-![right engine shutoff](../../../img/bu/right_instrument_panel_canopy_jettison-02.jpg)
+![right engine shutoff](../../../img/bu/right_instrument_panel_fuel_shutoff_handle.jpg)
 
 Pulling the handle shuts off fuel flow to the right engine. Pushing the handle
 in restores fuel flow.
