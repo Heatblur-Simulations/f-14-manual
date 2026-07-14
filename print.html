@@ -10596,10 +10596,10 @@ the MASTER CAUTION light and reset button (<num>3</num>) and the turn-and-slip
 indicator (<num>4</num>).</p>
 <h3 id="cockpit-television-sensor-ctvs-1"><a class="header" href="#cockpit-television-sensor-ctvs-1">Cockpit Television Sensor (CTVS)</a></h3>
 <p>The cockpit television sensor (CTVS) (<num>2</num>) records the HUD for
-registration of weapons delivery.</p>
-<blockquote>
-<p>💡 Currently not implemented in DCS.</p>
-</blockquote>
+registration of weapons delivery. It activates for 10 seconds after each trigger pull if
+the AVTR is powered in the backseat. The gun cam overrides any other currently
+chosen recorded source for the duration of the 10 seconds. For more details
+refer to the <a href="f14bu/cockpit/pilot/../../systems/nav_com/com/fast_tactical_imaging_set.html#airborne-video-tape-recorder-avtr">Airborne Video Tape Recorder Chapter</a>.</p>
 <h3 id="master-caution-light-and-button-1"><a class="header" href="#master-caution-light-and-button-1">Master Caution Light and Button</a></h3>
 <p>The MASTER CAUTION light and reset button (<num>3</num>) flashes to indicate a
 status change on the pilot caution/advisory panel.</p>
@@ -10831,11 +10831,8 @@ OFF.</p>
 while depressed.</p>
 <h3 id="weapon-firing-trigger-1"><a class="header" href="#weapon-firing-trigger-1">Weapon Firing Trigger</a></h3>
 <p>The weapon firing trigger (<num>8</num>) is a two-stage trigger.</p>
-<p>The first detent enables CTVS and gun camera. The second detent releases the
-selected forward-firing weapon.</p>
-<blockquote>
-<p>💡 CTVS and gun camera are not implemented in DCS.</p>
-</blockquote>
+<p>The first detent enables CTVS and gun camera which will record for 10 seconds. The second
+detent releases the selected forward-firing weapon.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="right-windshield-frame-1"><a class="header" href="#right-windshield-frame-1">Right Windshield Frame</a></h1>
 <h2 id="ecm-warning-lights-1"><a class="header" href="#ecm-warning-lights-1">ECM Warning Lights</a></h2>
 <p><img src="f14bu/cockpit/pilot/../../../img/cockpit_detail_pilot_rwrcaution.jpg" alt="rwr caution" /></p>
@@ -10875,7 +10872,7 @@ max forward angle at present airspeed and altitude.</p>
 <p>The five indicator windows shows current operating mode.</p>
 <h2 id="right-engine-fuel-shutoff-handle-1"><a class="header" href="#right-engine-fuel-shutoff-handle-1">Right Engine Fuel Shutoff Handle</a></h2>
 <p>Emergency fuel shutoff handle for the right engine(<num>2</num>).</p>
-<p><img src="f14bu/cockpit/pilot/../../../img/bu/right_instrument_panel_canopy_jettison-02.jpg" alt="right engine shutoff" /></p>
+<p><img src="f14bu/cockpit/pilot/../../../img/bu/right_instrument_panel_fuel_shutoff_handle.jpg" alt="right engine shutoff" /></p>
 <p>Pulling the handle shuts off fuel flow to the right engine. Pushing the handle
 in restores fuel flow.</p>
 <p>This handle should not be used for normal engine shutdown.</p>
@@ -11671,7 +11668,7 @@ display TACAN or EGI steering.</p>
 headset.</p>
 <h3 id="ky-mode-switch-1"><a class="header" href="#ky-mode-switch-1">KY Mode Switch</a></h3>
 <p>The KY MODE switch (<num>5</num>) is only functional with KY-58 encryption.</p>
-<p>The simulated aircraft uses KY-28; this switch is non-functional.</p>
+<p>The simulated aircraft uses KY-58; this switch is non-functional.</p>
 <h2 id="radar-beacon-control-panel-1"><a class="header" href="#radar-beacon-control-panel-1">Radar Beacon Control Panel</a></h2>
 <p>Panel (<num>6</num>) controlling the AN/APN-154 radar beacon.</p>
 <p><img src="f14bu/cockpit/rio/../../../img/bu/left_console_rdrbcn-04.jpg" alt="beacon" /></p>
@@ -11704,11 +11701,11 @@ headset.</p>
 </blockquote>
 <h2 id="ky-28-control-panel-1"><a class="header" href="#ky-28-control-panel-1">KY-28 Control Panel</a></h2>
 <p>Encryption control panel (<num>8</num>) for secure voice communications.</p>
-<p><img src="f14bu/cockpit/rio/../../../img/cockpit_detail_rio_ky-28.jpg" alt="ky-28" /></p>
+<p><img src="f14bu/cockpit/rio/../../../img/cockpit_detail_rio_ky-28.jpg" alt="ky-58" /></p>
 <h3 id="zeroize-switch-1"><a class="header" href="#zeroize-switch-1">Zeroize Switch</a></h3>
 <p>The ZEROIZE switch (<num>1</num>) clears all encryption keys when actuated.</p>
 <h3 id="power-mode-switch-1"><a class="header" href="#power-mode-switch-1">Power-Mode Switch</a></h3>
-<p>The power-mode switch (<num>2</num>) selects KY-28 operating mode.</p>
+<p>The power-mode switch (<num>2</num>) selects KY-58 operating mode.</p>
 <h3 id="radio-select-switch-1"><a class="header" href="#radio-select-switch-1">Radio Select Switch</a></h3>
 <p>The radio select switch (<num>3</num>) selects which radio is encrypted.</p>
 <h2 id="oxygen-vent-airflow-control-panel-3"><a class="header" href="#oxygen-vent-airflow-control-panel-3">Oxygen-Vent Airflow Control Panel</a></h2>
@@ -19268,7 +19265,7 @@ IAS or TAS. Increment of 50 knots per click.</p>
 <p>Once all parameters are entered, you may click <strong>Save</strong> to add the entry to the
 Saved Solutions list, from which you can refer to later during the flight.</p>
 <blockquote>
-<p>💡 In order to close the manual, make sure to first remove keyboard focus from
+<p>💡 In order to close the bombing tool, make sure to first remove keyboard focus from
 it by clicking anywhere else in the cockpit.</p>
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="checklist-tool"><a class="header" href="#checklist-tool">Checklist Tool</a></h1>
@@ -19290,7 +19287,7 @@ also remains fully interactive on the 3D model itself, without the need to open
 it via the keybind. The tool has a default keybinding of <strong>RCtrl+C</strong>.</p>
 <p><img src="f14bu/dcs/../../img/bu/checklist_tool_example.jpg" alt="Checklist Tool Example" /></p>
 <blockquote>
-<p>💡 In order to close the manual, make sure to first remove keyboard focus from
+<p>💡 In order to close the checklist tool, make sure to first remove keyboard focus from
 it by clicking anywhere else in the cockpit.</p>
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="embedded-manual"><a class="header" href="#embedded-manual">Embedded Manual</a></h1>
@@ -19312,6 +19309,7 @@ and scroll to the section explaining that switch.</p>
 <p>💡 In order to close the manual, make sure to first remove keyboard focus from
 it by clicking anywhere else in the cockpit.</p>
 </blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="training-missions"><a class="header" href="#training-missions">Training Missions</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="acronyms-and-abbreviations"><a class="header" href="#acronyms-and-abbreviations">Acronyms and Abbreviations</a></h1>
 <h2 id="a"><a class="header" href="#a">A</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Abbreviation</th><th>Definition</th></tr></thead><tbody>
