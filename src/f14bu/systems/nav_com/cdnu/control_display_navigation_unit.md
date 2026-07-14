@@ -440,8 +440,14 @@ STEP 3: Press the arrow down key to switch to START page 2/2.
 
 (<num>1</num>) FOM: GPS Figure of Merit
 
-(<num>2</num>) PTID NAV MODE SEL Switch position: | | | ----- | | NAV | | GND |
-| CV | | AHRS | | IMU | | OFF |
+(<num>2</num>) PTID NAV MODE SEL Switch position:
+
+- NAV
+- GND
+- CV
+- AHRS
+- IMU
+- OFF
 
 (<num>3</num>) Number of Satellites.
 
@@ -450,9 +456,17 @@ chosen alignment mode.
 
 (<num>5</num>) Press LSK 4 to access the CV Manual Align page.
 
-(<num>6</num>) EGI Operation Mode: | | | --------------------------- | | Off |
-|Initialize | | Gyro Compass | | Stored Heading | | SINS In Motion Align (IMA) |
-| SINS Stored Heading | | GPS IMA | | Manual IMA | | Air Data IMA |
+(<num>6</num>) EGI Operation Mode:
+
+- Off
+- Initialize
+- Gyro Compass
+- Stored Heading
+- SINS In Motion Align (IMA)
+- SINS Stored Heading
+- GPS IMA
+- Manual IMA
+- Air Data IMA
 
 (<num>7</num>) Blended Align Quality in nm/hr.
 

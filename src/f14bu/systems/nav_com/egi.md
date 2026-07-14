@@ -314,7 +314,7 @@ chosen alignment mode.
 
 (<num>8</num>) Alignment time.
 
-(<num>8</num>) Position Solution: GPS; Blended/Aided; Blended/Unaided; Free
+(<num>9</num>) Position Solution: GPS; Blended/Aided; Blended/Unaided; Free
 Inertial.
 
 When the RIO selects an alignment mode using the NAV MODE SEL switch, alignment
