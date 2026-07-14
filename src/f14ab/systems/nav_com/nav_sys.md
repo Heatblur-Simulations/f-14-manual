@@ -137,11 +137,11 @@ windows:
 
 |                          |                       |
 | ------------------------ | --------------------- |
-| OWN</br>A/C              | TACAN</br>FIX         |
-| STORED</br>HDG</br>ALIGN | RDR</br>FIX           |
-|                          | VIS</br>FIX           |
-| WIND</br>SPD HDG         | FIX</br>ENABLE        |
-|                          | MAG</br>VAR</br>(HDG) |
+| OWN<br>A/C              | TACAN<br>FIX         |
+| STORED<br>HDG<br>ALIGN | RDR<br>FIX           |
+|                          | VIS<br>FIX           |
+| WIND<br>SPD HDG         | FIX<br>ENABLE        |
+|                          | MAG<br>VAR<br>(HDG) |
 
 Each window has a designated button. Pressing this button tells the WCS computer
 which function of the matrix to use. If OWN AC, WIND, or MAG VAR is pressed,
@@ -229,11 +229,11 @@ MESSAGE windows:
 
 |                  |                  |
 | ---------------- | ---------------- |
-| WAY</br>PT</br>1 | HOME</br>BASE    |
-| WAY</br>PT</br>2 | DEF</br>PT       |
-| WAY</br>PT</br>3 | HOST</br>AREA    |
-| FIX</br>PT       | SURF</br>TGT     |
-| IP               | PT</br>TO</br>PT |
+| WAY<br>PT<br>1 | HOME<br>BASE    |
+| WAY<br>PT<br>2 | DEF<br>PT       |
+| WAY<br>PT<br>3 | HOST<br>AREA    |
+| FIX<br>PT       | SURF<br>TGT     |
+| IP               | PT<br>TO<br>PT |
 
 The functions in this category have a TID symbol each, except the PT to PT
 FUNCTION. When pressing any one of these MESSAGE buttons, the TID symbol

@@ -1,8 +1,8 @@
 @media only screen and (max-width: 5000px) {
-  #sidebar-toggle-anchor:checked ~ .page-wrapper .nav-wide-wrapper {
+  #mdbook-sidebar-toggle-anchor:checked ~ .page-wrapper .nav-wide-wrapper {
     display: none;
   }
-  #sidebar-toggle-anchor:checked ~ .page-wrapper .nav-wrapper {
+  #mdbook-sidebar-toggle-anchor:checked ~ .page-wrapper .nav-wrapper {
     display: grid;
   }
 }
@@ -40,7 +40,7 @@
   text-decoration: none !important;
 }
 
-.mobile-nav-chapters .fa {
+.mobile-nav-chapters .fa-svg {
   display: block;
   /* Force the icons to come in at 24px -> 24/40 = 0.6 */
   font-size: 0.6em;
@@ -219,11 +219,11 @@ ol.chapter {
   margin-top: 0px;
 }
 
-#content table td {
+#mdbook-content table td {
   max-width: 250px;
 }
 
-#content table th:first-child {
+#mdbook-content table th:first-child {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
