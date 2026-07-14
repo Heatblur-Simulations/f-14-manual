@@ -48,9 +48,10 @@ indicator (<num>4</num>).
 ### Cockpit Television Sensor (CTVS)
 
 The cockpit television sensor (CTVS) (<num>2</num>) records the HUD for
-registration of weapons delivery.
-
-> 💡 Currently not implemented in DCS.
+registration of weapons delivery. It activates for 10 seconds after each trigger pull if
+the AVTR is powered in the backseat. The gun cam overrides any other currently
+chosen recorded source for the duration of the 10 seconds. For more details
+refer to the [Airborne Video Tape Recorder Chapter](../../systems/nav_com/com/fast_tactical_imaging_set.md#airborne-video-tape-recorder-avtr).
 
 ### Master Caution Light and Button
 
@@ -380,7 +381,5 @@ while depressed.
 
 The weapon firing trigger (<num>8</num>) is a two-stage trigger.
 
-The first detent enables CTVS and gun camera. The second detent releases the
-selected forward-firing weapon.
-
-> 💡 CTVS and gun camera are not implemented in DCS.
+The first detent enables CTVS and gun camera which will record for 10 seconds. The second
+detent releases the selected forward-firing weapon.

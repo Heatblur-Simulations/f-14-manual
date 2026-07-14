@@ -20,5 +20,5 @@ it via the keybind. The tool has a default keybinding of **RCtrl+C**.
 
 ![Checklist Tool Example](../../img/bu/checklist_tool_example.jpg)
 
-> 💡 In order to close the manual, make sure to first remove keyboard focus from
+> 💡 In order to close the checklist tool, make sure to first remove keyboard focus from
 > it by clicking anywhere else in the cockpit.
