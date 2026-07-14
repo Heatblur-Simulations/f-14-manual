@@ -236,37 +236,15 @@ remaining DTM designated jettison-able countermeasures.
 The Mode control switch (<num>10</num>) is a 6-position rotary switch is used to
 select one of six modes of operation.
 
-#### OFF Position
-
-OFF mode interrupts all power to the CMDS dispenser assemblies. This MODE of
-operation is overridden by JETTISON only
-
-#### STANDBY Position
-
-STBY mode allows the CMDS to power-up and initialize. The only dispensing
-function available while in STBY is JETTISON.
-
-#### MANUAL Position
-
-MAN mode allows the operator to select a manual program for dispensing.
-
-#### SEMI-AUTOMATIC Position
-
-SEMI mode allows the operator to select a manual program for dispensing.
-
-#### AUTOMATIC Position
-
-AUTO mode allows the operator to select a manual program for dispensing.
-
-#### BYPASS Position
-
-BYP allows selection of bypass mode for jettison only. To select the BYP
-position press knob down at AUTO position and turn.
+For a detailed discussion reference the [ALE-47 section](../../systems/defensive_systems/countermeasures/ale_47.md#mode-control-switch)
+of this manual.
 
 ### MANUAL Switch
 
 The Manual switch (<num>11</num>) is a 5-Position rotary that allows selection
-of countermeasure dispense programs 1 through 4 and PROGRAM (PRG).
+of countermeasure dispense programs 1 through 4 and PROGRAM (PRG). For a detailed
+discussion reference the [ALE-47 section](../../systems/defensive_systems/countermeasures/ale_47.md#manual-switch)
+of this manual.
 
 ### READY/NO GO Display
 
