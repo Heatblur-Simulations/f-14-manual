@@ -32,10 +32,10 @@ Navigation works as follows:
 
 ## Clipboard Configuration
 
-The clipboard configuration provides the crew with the familiar DCS 
+The clipboard configuration provides the crew with the familiar DCS
 kneeboard on the Pilot & RIO models.
 
-Pages can be cycled in desired direction by <kbd>clicking</kbd> on the left or right 
+Pages can be cycled in desired direction by <kbd>clicking</kbd> on the left or right
 side of the page.
 
 In order to access the clipboard configuration, the clamp at the top of the
@@ -44,6 +44,7 @@ kneeboard must be <kbd>clicked</kbd>. This will cycle through the tool configura
 ![Checklist Tool Example 2](../../img/bu/checklist_tool_example_2.jpg)
 
 Alternatively, you can change pages through using the regular keybinds, default:
+
 - <kbd>]</kbd> - Page Up
 - <kbd>[</kbd> - Page Down
 
