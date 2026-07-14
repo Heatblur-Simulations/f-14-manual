@@ -1,22 +1,22 @@
 # Enhanced Paveway™ III Dual Mode GPS/Laser Guided Bomb
 
 ![GBU-24E/B](../../../../img/bu/gbu24eb_testflight.jpg) _**First flights** - The
-GBU-24E/B hangs beneath an F-14 prior to one of two test missions in late
-September. The Tomcat was crewed by pilot Cdr. Mark Bathrick and LCdr. William
-Chubb, Radar Intercept Officer_
+GBU-24E/B hangs beneath an F-14 prior to one of two test missions in
+September 1999. The Tomcat was crewed by pilot CDR Mark Bathrick and Radar
+Intercept Officer LCDR William Chubb_
 
 GBU-24E/B is an Enhanced Paveway Laser Guided Bomb that was first tested in
 September 1999 at NAWCWD Point Mugu. The F-14B upgrade and the F-14D aircraft
 were able to employ the GBU-24E/B.
 
 GBU-24E/B is a precision-guided hardened target penetrator used to destroy
-hardened aircraft hangars and underground bunkers. It integrates a Global
-Positioning System and a ring laser gyro inertial measuring unit (IMU) to the
-already fielded GBU-24B/B "Paveway III" with the existing laser guidance.
+hardened aircraft hangars and underground bunkers. It integrates GPS and a ring
+laser gyro inertial measuring unit (IMU) to the already fielded GBU-24B/B "Paveway
+III" with the existing laser guidance.
 
-A guidance and control unit was modified to incorporate GPS electronics, a GPS
+A guidance and control unit was modified to incorporate a GPS
 antenna, IMU, and software for precision GPS/INS guidance. This was a significant
-war-fighting enhancement that enables the F-14B(U) to attack targets in all
+war-fighting enhancement that enabeled the F-14B(U) to attack targets in all
 weather conditions with a precision-guided munition.
 
 ## GBU-24 Employment Principles
