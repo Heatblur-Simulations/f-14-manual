@@ -17,8 +17,8 @@ On the evening of 11 March 2002, an F-14 dropped the first-ever combat JDAM
 during a mission against terrorist targets in Afghanistan. One F-14 crew
 commented: "We may be mature, but the claws are still sharp!"
 
-Both the F-14B(U) and F-14D had the capability to carry the 2,000-pound version
-of the JDAM.
+Both the F-14B Upgrade and F-14D had the capability to carry the 2,000-pound
+version of the JDAM.
 
 The F-14B(U) is capable of carrying both the GBU-31(V)4 with the 2,000-pound
 BLU-109 hard-target penetrator warhead and the GBU-31(V)2 with the 2,000-pound
@@ -55,7 +55,27 @@ targeting schemes, including pre-planned targeting and in-flight retargeting.
 
 ## Guided Bomb Unit 38 (GBU-38)
 
-![GBU-31](../../../../img/bu/gbu38_overview.jpg)
+![GBU-38](../../../../img/bu/gbu38_overview.jpg)
 
-The F-14D had for its last deployment with VF-31 and VF-213 also the capability
-to carry and drop the 500 lbs GBU-38.
+The Tomcat's JDAM capability continued to evolve during its final years in service.
+By the opening of Operation Iraqi Freedom in 2003, the F-14D had received GBU-31
+JDAM capability through the D04 operational software load. The software was designed
+to support both the 2,000-pound GBU-31 and the 500-pound GBU-38, although only the
+GBU-31 had completed the required integration and was employed operationally during
+the opening stages of the war.
+
+While the software already supported the GBU-38, the weapon itself had not yet
+completed the flight-clearance program required for release from the Tomcat.
+
+For the 2005–2006 deployment, the F-14D received the D05 operational software, which
+added the 500-pound GBU-38 JDAM to the Tomcat's approved weapons inventory. This
+provided crews with a lighter GPS-guided weapon that complemented the existing GBU-31
+and was better suited to many close air support missions where the larger 2,000-pound
+weapon was unnecessary.
+
+The F-14B Upgrade was retired before the GBU-38 completed its flight-clearance program
+and therefore never received operational clearance to employ the weapon. Had the F-14B
+Upgrade remained in service through 2005–2006, it would have received the same
+capability, as the underlying JDAM software architecture already supported both the
+GBU-31 and GBU-38.
+

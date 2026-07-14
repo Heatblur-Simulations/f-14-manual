@@ -32,12 +32,53 @@ with the 500-pound general-purpose BLU-111 warhead; and the Enhanced
 
 ![Stores](../../img/dark/options_status_stores.svg)
 
-The A/G stores available for the F-14B Upgrade are:
+The F-14B Upgrade is able to employ GPS and Laser Guided Stores from stations 4 -
+5 - 3 - 6, also commonly refered to as the tunnel stations. These stations utilze
+the phoenix pylon paired with the BRU-32 rack. The implementation of the 1553 data
+bus allows the aircraft to send targeting data to the stations for transferral into
+the JDAMs.
 
-- GBU-31v(2).
-- GBU-31v(4).
+The GPS Guided stores available for the F-14B Upgrade are:
+
+- GBU-31v(2)
+- GBU-31v(4)
 - GBU-24
 - GBU-38
+
+Loading of stores in the tunnel follows certain restrictions. These restrictions are only
+applied in DCS if the air-to-ground stores cannot physically fit side by side or behind one
+another in the tunnel, as is the case for the GBU-24 for example.
+
+Nonetheless, certain carriage rules should be followed to ensure that the Tomcat remains
+within CG limits and is flyable throughout all flight regimes.
+
+For single-type store loadouts, it is recommended to load the stores from front to back and
+release them in a back-to-front sequence. For example, when loading two GBU-31 JDAMs,
+they should be loaded on the front stations (3 and 6). When loading four GBU-31 JDAMs,
+they should then be released in the opposite order, i.e. back to front. Stations 4 and 5
+should be released first, followed by stations 3 and 6.
+
+When employing mixed loadouts, it is desirable to stagger the weapons in the tunnel. This
+ensures that stores can always be released from back to front while providing the aircrew
+with the ability to choose which stores are released. For example, when employing a mixed
+loadout of two GBU-31s and two GBU-12s, stations 3 and 6 should each carry one GBU-31 and
+one GBU-12, while stations 4 and 5 should each carry a GBU-31 and a GBU-12 on the opposite
+side.
+
+The F-14B Upgrade Tomcat in DCS comes with a default set of loadouts. These loadouts follow
+the Standard Conventional Loadout (SCL) principle. The SCLs are divided into air-to-air
+(A/A) and air-to-ground (A/G) categories, with a few special loadouts for TARPS missions
+and peacetime flight operations.
+
+The A/G SCLs in particular are not intended to provide a comprehensive set of loadouts, but
+rather a standard format in which specific air-to-ground stores can be exchanged depending
+on the mission.
+
+The SCLs are listed below, together with their gross weights and maximum trap fuel weights.
+The maximum trap fuel weight is the amount of fuel the Tomcat can carry with the specific
+loadout while remaining at the maximum carrier landing weight of 54,000 pounds.
+
+> 🚧 Work In Progress
 
 ## Armaments Section Overview
 
