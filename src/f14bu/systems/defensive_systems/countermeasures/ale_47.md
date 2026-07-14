@@ -89,19 +89,6 @@ remaining DTM designated jettison-able countermeasures.
 The Mode control switch (<num>10</num>) is a 6-position rotary switch is used to
 select one of six modes of operation.
 
-### MANUAL Switch
-
-The Manual switch (<num>11</num>) is a 5-Position rotary that allows selection
-of countermeasure dispense programs 1 through 4 and PROGRAM (PRG).
-
-### READY/NO GO Display
-
-The Ready display (<num>12</num>) is not utilized. Only illuminated during
-system power-up.
-
-The NO GO annunciator illuminates when the CMDS is NOT ready to dispense because
-of a system failure, during initial power-up, and in BYP Mode.
-
 #### OFF Position
 
 OFF mode interrupts all power to the CMDS dispenser assemblies. This MODE of
@@ -151,7 +138,7 @@ selected by the system. Programs 5, 6, 7, and 8 continue to function normally.
 BYP allows selection of bypass mode for jettison only. To select the BYP
 position press knob down at AUTO position and turn.
 
-### CMS MANUAL Switch
+### MANUAL Switch
 
 The Manual switch (<num>11</num>) is a 5-Position rotary that allows selection
 of countermeasure dispense programs 1 through 4 and PROGRAM (PRG).
@@ -167,7 +154,7 @@ the designated dispense switch in MAN, SEMI, and AUTO modes.
 If PRG is selected the ALE-47 system will default to manual program 4 for
 dispense.
 
-### READY/NO GO
+### READY/NO GO Display
 
 The Ready display (<num>12</num>) is not utilized. Only illuminated during
 system power-up.
