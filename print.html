@@ -17360,13 +17360,47 @@ with the 500-pound general-purpose BLU-111 warhead; and the Enhanced
 2,000-pound hard-target penetrator BLU-109 warhead.</p>
 <h2 id="loadout-1"><a class="header" href="#loadout-1">Loadout</a></h2>
 <p><img src="f14bu/weapons/../../img/dark/options_status_stores.svg" alt="Stores" /></p>
-<p>The A/G stores available for the F-14B Upgrade are:</p>
+<p>The F-14B Upgrade is able to employ GPS and Laser Guided Stores from stations 4 -
+5 - 3 - 6, also commonly refered to as the tunnel stations. These stations utilze
+the phoenix pylon paired with the BRU-32 rack. The implementation of the 1553 data
+bus allows the aircraft to send targeting data to the stations for transferral into
+the JDAMs.</p>
+<p>The GPS Guided stores available for the F-14B Upgrade are:</p>
 <ul>
-<li>GBU-31v(2).</li>
-<li>GBU-31v(4).</li>
+<li>GBU-31v(2)</li>
+<li>GBU-31v(4)</li>
 <li>GBU-24</li>
 <li>GBU-38</li>
 </ul>
+<p>Loading of stores in the tunnel follows certain restrictions. These restrictions are only
+applied in DCS if the air-to-ground stores cannot physically fit side by side or behind one
+another in the tunnel, as is the case for the GBU-24 for example.</p>
+<p>Nonetheless, certain carriage rules should be followed to ensure that the Tomcat remains
+within CG limits and is flyable throughout all flight regimes.</p>
+<p>For single-type store loadouts, it is recommended to load the stores from front to back and
+release them in a back-to-front sequence. For example, when loading two GBU-31 JDAMs,
+they should be loaded on the front stations (3 and 6). When loading four GBU-31 JDAMs,
+they should then be released in the opposite order, i.e. back to front. Stations 4 and 5
+should be released first, followed by stations 3 and 6.</p>
+<p>When employing mixed loadouts, it is desirable to stagger the weapons in the tunnel. This
+ensures that stores can always be released from back to front while providing the aircrew
+with the ability to choose which stores are released. For example, when employing a mixed
+loadout of two GBU-31s and two GBU-12s, stations 3 and 6 should each carry one GBU-31 and
+one GBU-12, while stations 4 and 5 should each carry a GBU-31 and a GBU-12 on the opposite
+side.</p>
+<p>The F-14B Upgrade Tomcat in DCS comes with a default set of loadouts. These loadouts follow
+the Standard Conventional Loadout (SCL) principle. The SCLs are divided into air-to-air
+(A/A) and air-to-ground (A/G) categories, with a few special loadouts for TARPS missions
+and peacetime flight operations.</p>
+<p>The A/G SCLs in particular are not intended to provide a comprehensive set of loadouts, but
+rather a standard format in which specific air-to-ground stores can be exchanged depending
+on the mission.</p>
+<p>The SCLs are listed below, together with their gross weights and maximum trap fuel weights.
+The maximum trap fuel weight is the amount of fuel the Tomcat can carry with the specific
+loadout while remaining at the maximum carrier landing weight of 54,000 pounds.</p>
+<blockquote>
+<p>🚧 Work In Progress</p>
+</blockquote>
 <h2 id="armaments-section-overview"><a class="header" href="#armaments-section-overview">Armaments Section Overview</a></h2>
 <p>This section covers the F-14B(U) specific weapons employment. For A/A weapons
 employment specific VDIG-R Formats and PTID Formats are covered. For a detailed
@@ -18105,8 +18139,8 @@ targets, proving the capabilities of the GPS-guided JDAM.</p>
 <p>On the evening of 11 March 2002, an F-14 dropped the first-ever combat JDAM
 during a mission against terrorist targets in Afghanistan. One F-14 crew
 commented: "We may be mature, but the claws are still sharp!"</p>
-<p>Both the F-14B(U) and F-14D had the capability to carry the 2,000-pound version
-of the JDAM.</p>
+<p>Both the F-14B Upgrade and F-14D had the capability to carry the 2,000-pound
+version of the JDAM.</p>
 <p>The F-14B(U) is capable of carrying both the GBU-31(V)4 with the 2,000-pound
 BLU-109 hard-target penetrator warhead and the GBU-31(V)2 with the 2,000-pound
 BLU-117 general-purpose warhead.</p>
@@ -18136,9 +18170,25 @@ provided for straight and level deliveries only. JDAM also allows multiple
 target engagements in a single pass. It provides the user with a variety of
 targeting schemes, including pre-planned targeting and in-flight retargeting.</p>
 <h2 id="guided-bomb-unit-38-gbu-38"><a class="header" href="#guided-bomb-unit-38-gbu-38">Guided Bomb Unit 38 (GBU-38)</a></h2>
-<p><img src="f14bu/weapons/air_to_ground/gps_guided_weapons/../../../../img/bu/gbu38_overview.jpg" alt="GBU-31" /></p>
-<p>The F-14D had for its last deployment with VF-31 and VF-213 also the capability
-to carry and drop the 500 lbs GBU-38.</p>
+<p><img src="f14bu/weapons/air_to_ground/gps_guided_weapons/../../../../img/bu/gbu38_overview.jpg" alt="GBU-38" /></p>
+<p>The Tomcat's JDAM capability continued to evolve during its final years in service.
+By the opening of Operation Iraqi Freedom in 2003, the F-14D had received GBU-31
+JDAM capability through the D04 operational software load. The software was designed
+to support both the 2,000-pound GBU-31 and the 500-pound GBU-38, although only the
+GBU-31 had completed the required integration and was employed operationally during
+the opening stages of the war.</p>
+<p>While the software already supported the GBU-38, the weapon itself had not yet
+completed the flight-clearance program required for release from the Tomcat.</p>
+<p>For the 2005–2006 deployment, the F-14D received the D05 operational software, which
+added the 500-pound GBU-38 JDAM to the Tomcat's approved weapons inventory. This
+provided crews with a lighter GPS-guided weapon that complemented the existing GBU-31
+and was better suited to many close air support missions where the larger 2,000-pound
+weapon was unnecessary.</p>
+<p>The F-14B Upgrade was retired before the GBU-38 completed its flight-clearance program
+and therefore never received operational clearance to employ the weapon. Had the F-14B
+Upgrade remained in service through 2005–2006, it would have received the same
+capability, as the underlying JDAM software architecture already supported both the
+GBU-31 and GBU-38.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="enhanced-paveway-iii-dual-mode-gpslaser-guided-bomb"><a class="header" href="#enhanced-paveway-iii-dual-mode-gpslaser-guided-bomb">Enhanced Paveway™ III Dual Mode GPS/Laser Guided Bomb</a></h1>
 <p><img src="f14bu/weapons/air_to_ground/gps_guided_weapons/../../../../img/bu/gbu24eb_testflight.jpg" alt="GBU-24E/B" /> <em><strong>First flights</strong> - The
 GBU-24E/B hangs beneath an F-14 prior to one of two test missions in late
