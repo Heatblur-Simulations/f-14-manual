@@ -1113,7 +1113,7 @@ and GPS.
 
 (<num>6</num>) Enters Navigation Update page.
 
-(<num>7</num>) Enters Map Bias page. 
+(<num>7</num>) Enters Map Bias page.
 
 ### RNAV GPS Page
 
