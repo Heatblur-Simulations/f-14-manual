@@ -78,4 +78,3 @@ and therefore never received operational clearance to employ the weapon. Had the
 Upgrade remained in service through 2005–2006, it would have received the same
 capability, as the underlying JDAM software architecture already supported both the
 GBU-31 and GBU-38.
-
