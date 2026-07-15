@@ -180,7 +180,7 @@
     - [Laser Pointer Designator](./f14bu/dcs/izlid.md)
     - [Jester Set Commands](./f14bu/dcs/jester_set_commands.md)
     - [Bombing Tool](./f14bu/dcs/bombing_tool.md)
-    - [Checklist Tool](./f14bu/dcs/checklist_tool.md)
+    - [Kneeboard](f14bu/dcs/kneeboard.md)
     - [Embedded Manual](./f14bu/dcs/ingame_manual.md)
     - [Training Missions](./f14bu/dcs/training_missions.md)
 - [Abbreviations](./abbreviations.md)
