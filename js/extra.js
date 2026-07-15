@@ -46,6 +46,31 @@ function swapLightDarkModeImages() {
   });
 }
 
+// Below functions fix initial explain me use switching to top of section/page by mistake
+function scrollToHash() {
+  if (!location.hash) return;
+  const id = decodeURIComponent(location.hash.slice(1));
+  const el = document.getElementById(id) || document.getElementsByName(id)[0];
+  if (el) el.scrollIntoView();
+}
+
+function scrollToHashWhenReady() {
+  if (!location.hash) return;
+
+  const pending = Array.from(document.images).filter(img => !img.complete);
+  const waits = pending.map(img => new Promise(resolve => {
+    img.addEventListener('load',  resolve, { once: true });
+    img.addEventListener('error', resolve, { once: true });   // broken img must not hang
+  }));
+
+  Promise.all(waits).then(() => {
+    // Two frames: let the final layout/paint flush before measuring.
+    requestAnimationFrame(() => requestAnimationFrame(scrollToHash));
+  });
+}
+
+$(window).on('load', scrollToHashWhenReady);
+
 $(document).ready(function () {
   swapLightDarkModeImages();
 });
@@ -56,10 +81,12 @@ $("html").onClassChange((el, newClass) => {
 
 window.setTheme = function setTheme(theme_id) {
   $("button.theme#mdbook-theme-" + theme_id).click();
+  scrollToHashWhenReady();
 };
 
 window.enableGameMode = function enableGameMode() {
   $("#mdbook-theme-toggle").hide(); // Themes switch automatically based on in-game time
   $(".right-buttons").hide(); // Print, PDF, GitHub, Edit Buttons
   $(".menu-logo").hide(); // Logo on the sidebar uses absolute path and hence is broken in-game
+  scrollToHashWhenReady();
 };
