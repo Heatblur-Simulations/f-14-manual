@@ -1,13 +1,13 @@
-# Checklist Tool
+# Kneeboard
 
-The checklist tool is present on both Pilot & RIO 3D models,
+The kneeboard is present on both Pilot & RIO 3D models,
 on the left leg. It also remains fully interactive on the 3D
-model itself, without the need to open it via the keybind.
+model, without the need to open it via the keybind.
 The Pilot / RIO 3D models have a default keybinding of
 <kbd>RSHIFT</kbd> + <kbd>P</kbd>.
 
 In order to cycle kneeboard configurations, the **clamp** at
-the top of the kneeboard must be <kbd>clicked</kbd>.
+the top of the kneeboard must be **clicked**.
 
 ## Checklist Configuration
 
@@ -35,11 +35,11 @@ Navigation works as follows:
 The clipboard configuration provides the crew with the familiar DCS
 kneeboard on the Pilot & RIO models.
 
-Pages can be cycled in desired direction by <kbd>clicking</kbd> on the left or right
+Pages can be cycled in desired direction by **clicking** on the left or right
 side of the page.
 
 In order to access the clipboard configuration, the clamp at the top of the
-kneeboard must be <kbd>clicked</kbd>. This will cycle through the tool configurations.
+kneeboard must be **clicked**. This will cycle through the tool configurations.
 
 ![Checklist Tool Example 2](../../img/bu/checklist_tool_example_2.jpg)
 
