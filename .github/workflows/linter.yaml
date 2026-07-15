@@ -3,6 +3,17 @@ name: Linter
 on: [pull_request]
 
 jobs:
+  mdbook-build:
+    name: "mdBook Build"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - name: Setup mdBook
+        uses: peaceiris/actions-mdbook@v2.0.0
+        with:
+          mdbook-version: "0.5.4"
+      - run: mdbook build
+
   markdown-linter:
     name: "Markdown Linter"
     runs-on: ubuntu-latest
