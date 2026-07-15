@@ -47,23 +47,23 @@
   --content-max-width: 800px;
 }
 
-.hb_dark .chapter-item.affix {
+.hb_dark .chapter-item.affix > .chapter-link-wrapper {
   background-color: var(--menu-affix);
 }
 
-.hb_dark .chapter li.chapter-item:hover {
+.hb_dark .chapter li.chapter-item > .chapter-link-wrapper:hover {
   background-color: var(--menu-main-chapter-hover);
 }
 
-.hb_dark .section li.chapter-item:hover {
+.hb_dark .section li.chapter-item > .chapter-link-wrapper:hover {
   background-color: var(--menu-inner-chapter-hover);
 }
 
-.hb_dark .chapter .chapter-item.expanded {
+.hb_dark .chapter .chapter-item.expanded > .chapter-link-wrapper {
   background-color: var(--menu-main-chapter-active);
 }
 
-.hb_dark .section .chapter-item.expanded {
+.hb_dark .section .chapter-item.expanded > .chapter-link-wrapper {
   background-color: var(--menu-inner-bg);
 }
 
@@ -75,7 +75,7 @@
   background-color: var(--menu-inner-bg-2);
 }
 
-.hb_dark .section ol > li > ol > li {
+.hb_dark .section ol > li > ol > li > .chapter-link-wrapper {
   background-color: var(--menu-inner-bg-3);
 }
 
