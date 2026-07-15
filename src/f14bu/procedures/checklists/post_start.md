@@ -6,18 +6,18 @@
 | ---- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | 1    | STAB AUG switches                                                   | All ON                                                                                                                                |
 | 2    | MASTER TEST switch                                                  | Set to EMERG GEN                                                                                                                      |
-| 3    | MASTER RESET pushbutton                                             | Depress <br> Verify DFCS caution lights extinguished                                                                                 |
+| 3    | MASTER RESET pushbutton                                             | Depress <br> Verify DFCS caution lights extinguished                                                                                  |
 | 4    | MASTER TEST switch                                                  | OFF                                                                                                                                   |
-| 5    | MASTER RESET pushbutton                                             | Depress <br> Verify DFCS caution lights extinguished. STAB AUG switches should not disengage.                                        |
+| 5    | MASTER RESET pushbutton                                             | Depress <br> Verify DFCS caution lights extinguished. STAB AUG switches should not disengage.                                         |
 | 6    | Notify RIO                                                          | Advise test complete                                                                                                                  |
 | 7    | STAB AUG switches                                                   | All ON                                                                                                                                |
 | 8    | AFTC                                                                | L/R ENG MODE SELECT: SEC → PRI                                                                                                        |
-| 9    | Emergency WING SWEEP handle                                         | If not over-swept:<br>Move to 68°<br>Then full OV SW<br>Hold until HZ TAIL AUTH light goes out and OVER flag appears<br>Then stow |
+| 9    | Emergency WING SWEEP handle                                         | If not over-swept:<br>Move to 68°<br>Then full OV SW<br>Hold until HZ TAIL AUTH light goes out and OVER flag appears<br>Then stow     |
 | 10   | Wing-sweep mode switch                                              | AUTO                                                                                                                                  |
 | 11   | WING SWEEP DRIVE NO.1 and WG SW DR NO.2/MANUV FLAP circuit breakers | In                                                                                                                                    |
 | 12   | WING/EXT TRANS switch                                               | OFF                                                                                                                                   |
 | 13   | MASTER RESET pushbutton                                             | Depress                                                                                                                               |
-| 14   | COMM/NAV/GEAR/DISPLAYS                                              | Set all to ON:<br>- UHF to TR+G or BOTH<br>- TACAN to T/R<br>- ARA-63 to ON<br>- DISPLAYS power switches ON<br>- RADAR ALT ON    |
+| 14   | COMM/NAV/GEAR/DISPLAYS                                              | Set all to ON:<br>- UHF to TR+G or BOTH<br>- TACAN to T/R<br>- ARA-63 to ON<br>- DISPLAYS power switches ON<br>- RADAR ALT ON         |
 | 15   | Trim                                                                | Set to 000                                                                                                                            |
 | 16   | Standby attitude gyro                                               | Erect                                                                                                                                 |
 | 17   | MASTER RESET pushbutton                                             | Depress                                                                                                                               |
@@ -48,7 +48,7 @@
 | 12   | Communications                 | ON and Set                                                   |
 | 13   | TACAN/EGI select switch        | EGI                                                          |
 | 14   | RADAR WARNING RCVR panel       | Set                                                          |
-| 15   | DECM knob                      | STBY<br>Wait for light to go off → HOLD 3 sec → ACT for OBC |
+| 15   | DECM knob                      | STBY<br>Wait for light to go off → HOLD 3 sec → ACT for OBC  |
 | 16   | IFF MASTER knob                | STBY                                                         |
 | 17   | AUTO BIT 2                     | Verify Complete                                              |
 | 18   | Verify pilot has OBC selected  | Check                                                        |
