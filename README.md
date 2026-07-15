@@ -39,8 +39,9 @@ before your first contribution.
 
 ### Building locally
 
-To build the website locally, you have to install **mdBook**, see the
-[installation guide](https://rust-lang.github.io/mdBook/guide/installation.html).
+To build the website locally, install **mdBook 0.5.4** by following the
+[installation guide](https://rust-lang.github.io/mdBook/guide/installation.html)
+or running `cargo install mdbook --version 0.5.4 --locked`.
 
 <!-- markdown-link-check-disable -->
 
@@ -51,9 +52,9 @@ updates whenever the contents change.
 
 <!-- markdown-link-check-enable -->
 
-To build the PDF locally, use
-`cargo install --git https://github.com/Heatblur-Simulations/mdbook-pdf` first.
-Then, when running `mdbook build`, the PDF will be created in `book/pdf`.
+To build the PDF locally, first run
+`cargo install mdbook-pdf --version 0.1.13 --locked`. Then, when running
+`mdbook build`, the PDF will be created in `book/pdf`.
 
 ## GH Pages
 

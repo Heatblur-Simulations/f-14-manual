@@ -411,7 +411,7 @@ Coordinates in the CDNU can be entered multiple ways:
 
 ## Pre-Planned JDAM tutorial by Baltic Dragon
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ESqfmpumaTw?si=3seGNP5sjMU_NE_9&amp"
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ESqfmpumaTw?si=3seGNP5sjMU_NE_9"
 title="DCS: F14B(U) JDAM training: pre-planned mode" frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
