@@ -81,26 +81,26 @@ fuel weights. The maximum trap fuel weight is the amount of fuel the Tomcat can
 carry with the specific loadout while remaining at the maximum carrier landing
 weight of 54,000 pounds.
 
-| SCL     | Description        | AA Stores | A/G Stores             | Gross Weight | Max Trap Fuel Weight |
-| ------- | ------------------ | --------- | ---------------------- | ------------ | -------------------- |
-| AAW01   | BFM                | (0/0/2)   | —                      | —            | —                    |
-| AAW02   | Light CAP          | (1/1/1)   | —                      | —            | —                    |
-| AAW03   | Light CAP          | (1/2/2)   | —                      | —            | —                    |
-| AAW04   | Medium CAP         | (2/3/2)   | —                      | —            | —                    |
-| AAW05   | Heavy CAP          | (4/2/2)   | —                      | —            | —                    |
-| AAW06   | Six Shooter        | (6/0/2)   | —                      | —            | —                    |
-| AG01    | Light Strike       | (1/0/2)   | 1×GBU-12, 1×GBU-16     | —            | —                    |
-| AG02    | Medium CAS         | (1/0/2)   | 2×GBU-12, 2×Mk-82 JDAM | —            | —                    |
-| AG03    | Medium CAS         | (1/0/2)   | 2×Mk-82 JDAM, 2×GBU-16 | —            | —                    |
-| AG04    | Medium Strike      | (1/0/2)   | 2×Mk-84 JDAM           | —            | —                    |
-| AG05    | Heavy CAS          | (1/0/2)   | 2×Mk-84 JDAM, 2×GBU-12 | —            | —                    |
-| AG06    | Heavy Strike       | (1/0/2)   | 2×GBU-24E/B            | —            | —                    |
-| AG07    | Heavy Strike       | (1/0/2)   | 3×Mk-84 JDAM           | —            | —                    |
-| AG08    | Heavy Strike       | (0/0/1)   | 4×Mk-84 JDAM           | —            | —                    |
-| AG09    | Self Escort Strike | (2/1/2)   | 1×Mk-82 JDAM           | —            | —                    |
-| TARPS01 | TARPS              | (0/2/2)   | TARPS Pod              | —            | —                    |
-| TNG01   | LTS                | (0/0/0)   | ACMI Pod, CATM-9M      | —            | —                    |
-| TNG02   | LTS                | (1/0/2)   | —                      | —            | —                    |
+| SCL     | Description        | AA Stores | A/G Stores         | Gross Weight | Max Trap Fuel Weight |
+| ------- | ------------------ | --------- | ------------------ | ------------ | -------------------- |
+| AAW01   | BFM                | (0/0/2)   | —                  | —            | —                    |
+| AAW02   | Light CAP          | (1/1/1)   | —                  | —            | —                    |
+| AAW03   | Light CAP          | (1/2/2)   | —                  | —            | —                    |
+| AAW04   | Medium CAP         | (2/3/2)   | —                  | —            | —                    |
+| AAW05   | Heavy CAP          | (4/2/2)   | —                  | —            | —                    |
+| AAW06   | Six Shooter        | (6/0/2)   | —                  | —            | —                    |
+| AG01    | Light Strike       | (1/0/2)   | 1×GBU-12, 1×GBU-16 | —            | —                    |
+| AG02    | Medium CAS         | (1/0/2)   | 2×GBU-12, 2×GBU-38 | —            | —                    |
+| AG03    | Medium CAS         | (1/0/2)   | 2×GBU-38, 2×GBU-16 | —            | —                    |
+| AG04    | Medium Strike      | (1/0/2)   | 2×GBU-31           | —            | —                    |
+| AG05    | Heavy CAS          | (1/0/2)   | 2×GBU-31, 2×GBU-12 | —            | —                    |
+| AG06    | Heavy Strike       | (1/0/2)   | 2×GBU-24E/B        | —            | —                    |
+| AG07    | Heavy Strike       | (1/0/2)   | 3×GBU-31           | —            | —                    |
+| AG08    | Heavy Strike       | (0/0/1)   | 4×GBU-31           | —            | —                    |
+| AG09    | Self Escort Strike | (2/1/2)   | 1×GBU-38           | —            | —                    |
+| TARPS01 | TARPS              | (0/2/2)   | TARPS Pod          | —            | —                    |
+| TNG01   | —                  | (0/0/0)   | ACMI Pod           | —            | —                    |
+| TNG02   | —                  | (1/0/2)   | ACMI Pod           | —            | —                    |
 
 The air to air stores are listed in a standard format.(AIM-54/AIM-7/AIM-9) The
 AIM-54 Phoenix is always written first, the AIM-7 Sparrow is second, the AIM-9
