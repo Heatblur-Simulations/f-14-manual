@@ -119,20 +119,20 @@ elevation. Displayed in A/A only.
 
 ### F−Pole Cue
 
-Cue to heading for maximum F−pole. Provides cues to achieve maximum slant range
-between the launch aircraft and target, at the time of missile impact. Displayed
-in PDSTT and TWSA.
+Cue to heading for maximum F−pole. (Single Solid Vertial Bar) Provides cues to achieve
+maximum slant range between the launch aircraft and target, at the time of missile impact.
+Displayed in PDSTT and TWSA.
 
 ![F−Pole Cue](../../../img/dark/f-pole_small_cutout_thin.svg)
 
 ### Notch Cue
 
-The Notch Cue is presented on the heading scale and provides the pilot steering
-to put the F−14 into the beam of the target. The cue is only provided in PDSTT.
-When the PDSTT lock is broken, the information is stored and the cue is
-displayed for an additional 15 seconds. Note Due to AWG−9 tracking limitations,
-after gimbaling the radar, the Notch Cue can initially overshoot the beam by
-approximately 5 degrees.
+The Notch Cue (Double Solid Vertial Bar) is presented on the heading scale and
+provides the pilot steering to put the F−14 into the beam of the target. The cue
+is only provided in PDSTT. When the PDSTT lock is broken, the information is
+stored and the cue is displayed for an additional 15 seconds. Note Due to AWG−9
+tracking limitations, after gimbaling the radar, the Notch Cue can initially
+overshoot the beam by approximately 5 degrees.
 
 ### A/A Track Info Box
 
