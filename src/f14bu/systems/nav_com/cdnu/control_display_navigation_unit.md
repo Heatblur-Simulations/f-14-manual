@@ -1115,6 +1115,8 @@ and GPS.
 
 (<num>7</num>) Enters Map Bias or Optimum page.
 
+(<num>7</num>) Enters Map Bias page.
+
 ### RNAV GPS Page
 
 STEP 1: Press RNAV key
