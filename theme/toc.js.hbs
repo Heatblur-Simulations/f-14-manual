@@ -10,6 +10,7 @@ class MDBookSidebarScrollbox extends HTMLElement {
     connectedCallback() {
         this.innerHTML = '<div class="menu-logo"><img alt="F14 Line Art" src="'
             + path_to_root + 'img/f14line.svg"></div>{{#toc}}{{/toc}}';
+        this.querySelector('ol.chapter > li.chapter-item')?.classList.add('affix');
         // Set the current, active page, and reveal it if it's hidden
         let current_page = document.location.href.toString().split('#')[0].split('?')[0];
         if (current_page.endsWith('/')) {
