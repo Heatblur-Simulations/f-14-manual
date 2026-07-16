@@ -21,7 +21,7 @@
 
 <iframe width="560" height="315"
 src="https://www.bilibili.com/video/BV1Mb411m7mp/"
-title="Heatblur DCS: F-14 "雄猫" - 2. 驾驶舱总览" frameborder="0"
+title="Heatblur DCS: F-14 雄猫 - 2. 驾驶舱总览" frameborder="0"
 allow="accelerometer; autoplay; clipboard-write;
 encrypted-media; gyroscope; picture-in-picture;
 web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -15,10 +15,10 @@
 |  7.  | [右仪表板](../rio/right_instrument_panel.md)      |
 |  8.  | [右膝仪表板](../rio/right_knee_panel.md)          |
 |  9.  | [右垂直控制台](../rio/right_vertical_console.md)  |
-| 10. | [右侧控制台](../rio/right_console.md)             |
-| 11. | [座舱盖控制手柄](../rio/canopy_control_handle.md) |
+| 10.  | [右侧控制台](../rio/right_console.md)             |
+| 11.  | [座舱盖控制手柄](../rio/canopy_control_handle.md) |
 
 <iframe width="560" height="315" src="https://www.bilibili.com/video/BV1kb411b7ns"
-title="Heatblur DCS: F-14 "雄猫" - 4. RIO" frameborder="0"
+title="Heatblur DCS: F-14 雄猫 - 4. RIO" frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
