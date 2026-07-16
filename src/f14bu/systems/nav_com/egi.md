@@ -682,6 +682,8 @@ zero. This mode should be considered a backup.
 
 ## NAVIGATION UPDATING
 
+> 🚧 Work in Progress
+
 The GPS receiver in the EGI provides highly accurate position. As a result,
 there is very little need to update the solution to account for drift. Even if
 GPS is degraded to Standard Positioning System accuracy, the quality of the EGI
