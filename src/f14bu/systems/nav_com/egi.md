@@ -426,18 +426,27 @@ position initialization by the EGI is:
 The procedure for initiating a GC alignment is:
 
 1. Parking Brake — SET
+
 2. CDNU — ON After CDNU SELF TEST complete:
+
 3. NAV MODE SEL switch — GND
+
 4. PTID — ON
+
 5. FMC — ON
+
 6. AWG-9 Cooling — AWG-9/AIM-54
+
 7. CDNU Index Page LSK1 — DEPRESS (Select EGI Start 1/2 Page) On either the EGI
    Start 1/2 or Start 2/2 page, ensure that present position is correct or enter
    a correct position.
+
 8. CDNU LSK1 — DEPRESS A momentary asterisk next to the position on display line
    1 confirms that the Anti-Spoof function (Y-Code) is correctly initialized.
    When ALIGN COMPLETE (Dot in diamond):
+
 9. NAV MODE Switch — INS
+
 10. Verify Blended Mode (BY acronym on PTID)
 
 If the parking brake is released before a COARSE ALIGN COMPLETE indication and
@@ -515,20 +524,35 @@ as well as roll, pitch, heading, and heading rate. To align the EGI using SINS
 data, use the following procedure:
 
 1. CDNU — ON
+
 2. DATA LINK — ON
-3. DATA LINK mode — TAC, After CDNU SELF TEST Complete:
+
+3. DATA LINK mode — TAC
+
+   After CDNU SELF TEST Complete:
+
 4. DATA LINK mode — CAINS/WAYPT
+
 5. NAV MODE SEL — CVA
+
 6. PTID Power — ON
+
 7. WCS — STBY
+
 8. CDNU INDEX Key — DEPRESS
+
 9. CDNU Index Page LSK1 — DEPRESS (Select EGI Start 1/2 Page), On either the EGI
    Start 1/2 or Start 2/2 page, ensure that present position is correct or enter
    a correct position.
+
 10. CDNU LSK1 — DEPRESS, A momentary asterisk next to the position on display
     line 1 confirms that the Anti-Spoof function (Y-Code) is correctly
-    initialized. When ALIGN COMPLETE (Dot in diamond):
+    initialized.
+
+    When ALIGN COMPLETE (Dot in diamond):
+
 11. NAV MODE SEL — INS
+
 12. Verify Blended Mode (BY acronym on PTID)
 
 To transition to GPS IMA from SINS IMA, insert the following steps into the
@@ -655,3 +679,135 @@ entire alignment period. If the air data become invalid for more than 5 seconds,
 the EGI will enter ALIGN HOLD. If this happens, the alignment will reinitialize
 once the data again become valid, and the Align Time will begin counting from
 zero. This mode should be considered a backup.
+
+## NAVIGATION UPDATING
+
+> 🚧 Work in Progress
+
+The GPS receiver in the EGI provides highly accurate position. As a result,
+there is very little need to update the solution to account for drift. Even if
+GPS is degraded to Standard Positioning System accuracy, the quality of the EGI
+Blended (Aided) solution will be much better than can be obtained using updates.
+For that reason, only “Map Bias” updates (temporary position offsets of a
+specific amount which are added on top of the Kalman filter solution) are
+allowed under normal circumstances. This feature allows the flight crew to
+modify their position to match other, non-GPS equipped units.
+
+> 💡 Note Only the Blended and Free-Inertial solutions will reflect the offset
+> when a Map Bias update is performed. The GPS solution will always show the
+> actual position computed by the GPS receiver.
+
+> An asterisk will appear next to the position readout on the RNAV, Start, and
+> Progress pages of the CDNU when a Map Bias is in effect.
+
+When the actual Blended and Free Inertial solutions must be updated because of
+drift experienced when GPS is unavailable, Kalman filter updates are permitted.
+The NAV MODE SEL Switch must be in an Align position (GND or CVA), and the
+update will not take effect if GPS is available. These updates are termed
+“Optimal” updates, and actually modify the Blended solution and Free Inertial
+calculations.
+
+The Updates can also be used to modify the latitude or longitude in
+[FMC](../nav_com/navigation_controls_displays.md#system-architecture-and-terminology)
+position of the aircraft in the AHRS/AM and IMU/AM modes if the EGI has failed.
+
+Similar navigation updating techniques are employed whether a Map Bias or
+Optimal position update is performed. For both, a ground reference point
+(latitude and longitude) position is required. The range and bearing of this
+position to present aircraft position is used to make the correction. The
+general procedure for doing an update is:
+
+1. Select the Map Bias page or Optimal Page on the
+   [CDNU RNAV](../nav_com/cdnu/control_display_navigation_unit.md#rnav-inav-page)
+   Page.
+2. Establish a reference point using an FMC navigation point.
+3. Determine the offset to that point.
+4. Accept or reject the update based on the size of the offset.
+5. Confirm that the CDNU reflects the update.
+
+The latitude and longitude of the desired update point must be stored in one of
+eighteen FMC navigation waypoint locations (12 WPs, FIX PT, HOME BASE, HOST
+AREA, DEF PT, and IP) prior to initiating the Map Bias or Optimal update. This
+data may be stored prior to flight, by data link, by manual insertion, or by
+transfer from the CDNU. The point selected for the update must be hooked. The
+pre-stored latitude and longitude should be checked on the PTID. The CATEGORY
+select switch is rotated to NAV and the desired type of update selected.
+
+> 💡 Note Do not use SURF TGT as a reference for updating the navigation system.
+> The surface target position symbol is repositioned with respect to
+> own-aircraft vice own-aircraft being updated in reference to the surface
+> target.
+
+### Radar Update
+
+For a radar update, the FMC computes own-aircraft position by measuring radar
+range and bearing from the reference point coordinates in the track file.
+
+Once the update point is called up, its latitude and longitude are verified on
+the PTID readouts. The same point is then located on the DDD, using the hand
+control with the radar operating in the pulse search mode. DDD CURSOR is
+selected on the hand control and halfaction is selected so that the DDD cursors
+are presented on the DDD. Once the cursors overlay the selected point, full
+action is selected. This tells the computer the point selected.
+
+> 💡 Note RDR FIX may be selected before or after positioning DDD cursors.
+
+When the RDR FIX pushbutton is depressed, the computer will compute the present
+position of the aircraft by measuring the range and bearing from the selected
+point. The difference between the computer position and the position determined
+by the EGI is then displayed on the PTID. If it is desired to enter this delta
+into the navigation computations, the FIX ENABLE pushbutton is depressed.
+However, if the observed delta does not appear to be correct, the computer and
+the readout can be cleared by deselecting the RDR FIX pushbutton. The fix may
+then be attempted again. Once FIX ENABLE is depressed on the CAP, the delta will
+appear on line five (5) of the Map Bias or Optimal page on the CDNU.
+
+> 💡 Note Data line five (5) of on the CDNU Map Bias and Optimal pages may be
+> toggled between delta latitude/delta longitude display or an error distance
+> display in nautical miles.
+
+Radar updating is performed as follows:
+
+1. Select — CDNU Map Bias or Optimal page.
+
+2. Hook — Desired navigation point.
+
+3. PULSE SRCH pushbutton — DEPRESS.
+
+4. On sensor control panel:
+
+   a. STAB switch — IN.\
+
+   b. EL BARS switch — 1.\
+
+   c. AZ SCAN switch — AS DESIRED.\
+
+5. If Ground Map desired:
+
+   a. CATEGORY Switch — TGT DATA.\
+
+   b. FB-1 — DEPRESS.\
+
+6. RDR FIX pushbutton — DEPRESS.
+
+7. CURSOR pushbutton — DEPRESS.
+
+8. HCU — Select HALF ACTION.
+
+9. Cursor — is displayed on DDD.
+
+10. Manipulate hand control — DDD cursor over desired ground map point.
+
+11. HCU — FULL ACTION and RELEASE.
+
+    > Note This causes the DDD cursor to remain at the selected position.
+
+12. Observe present position delta readout on the PTID.
+
+13. If Delta is Unsatisfactory:
+
+    a. Deselect — RDR FIX.\
+
+    b. Repeat — steps 2–11.\
+
+14. FIX ENABLE pushbutton — DEPRESS to accept update. 15. Confirm delta LAT/LONG
