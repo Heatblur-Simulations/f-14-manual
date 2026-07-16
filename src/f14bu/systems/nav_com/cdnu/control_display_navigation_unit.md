@@ -666,7 +666,7 @@ STEP 1: Press the FPLN Key
 ![FPLN Initial Waypoint](../../../../img/dark/cdnu_fpln_insert_wp_guide.svg)
 
 (<num>1</num>) Type in a Valid Coordinate format into SP. Waypoints can be
-entered in DDM or MGRS, for DMS use the high precision coordinate edit page.
+entered in DMM or MGRS, for DMS use the high precision coordinate edit page.
 
 (<num>2</num>) Depress the LSK next to the waypoint you want the new waypoint to
 precede, in this example the Flight plan is empty, so the new waypoint will be
