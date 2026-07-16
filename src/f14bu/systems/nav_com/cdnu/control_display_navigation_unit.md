@@ -1111,18 +1111,10 @@ and GPS.
 
 (<num>5</num>) CSDC(R) Selected System Mode.
 
-<<<<<<< HEAD
-(<num>6</num>) Changes between Metric or English units on all CDNU displays.
-
-(<num>7</num>) Enters Map Bias or Optimum page.
-
-(<num>7</num>) Enters Map Bias page.
-=======
 (<num>6</num>) Changes between Metric or English (imperial) units on all CDNU
 displays.
 
 (<num>7</num>) Enters Map Bias or Optimum page.
->>>>>>> fixes-01
 
 ### RNAV GPS Page
 
