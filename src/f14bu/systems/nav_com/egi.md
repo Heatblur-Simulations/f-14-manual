@@ -800,7 +800,7 @@ Radar updating is performed as follows:
 
 11. HCU — FULL ACTION and RELEASE.
 
-    > Note This causes the DDD cursor to remain at the selected position.
+    > Note 💡 This causes the DDD cursor to remain at the selected position.
 
 12. Observe present position delta readout on the PTID.
 
@@ -811,3 +811,130 @@ Radar updating is performed as follows:
     b. Repeat — steps 2–11.\
 
 14. FIX ENABLE pushbutton — DEPRESS to accept update. 15. Confirm delta LAT/LONG
+
+### TACAN Update
+
+Updating the navigation system by TACAN requires that the waypoint used for the
+update be the same latitude and longitude as the TACAN station. The TACAN
+channel that corresponds to the station selected must be selected, and should be
+verified by listening to the identifier (coded tone) in the headset. To update
+the aircraft position with respect to the station, the TACAN FIX pushbutton is
+depressed. The FMC then computes own aircraft position error based on the range
+and bearing from the TACAN station. The delta is then observed and entered into
+the computer in the same manner as for radar updating. TACAN updating is
+performed as follows:
+
+1. Pilot Select — TACAN channel corresponding to desired update point.
+
+2. Hook — Desired update point.
+
+3. Select — TACAN on TACAN CMD panel.
+
+   > Note 💡 Failure to select TACAN on the TACAN command panel will result in
+   > the use of the CDNU active waypoint instead of the TACAN station when
+   > determining delta latitude and longitude.
+
+4. Select — CDNU Map Bias or Optimal page.
+
+5. CATEGORY switch — NAV.
+
+6. TACAN FIX pushbutton — DEPRESS.
+
+7. Observe present position delta readout on the PTID.
+
+8. If Delta is Unsatisfactory:
+
+   a. Deselect — TACAN FIX.\
+
+   b. Repeat — steps 3–6.\
+
+9. FIX ENABLE pushbutton — DEPRESS to accept update.
+
+10. Confirm delta LAT/LONG appears on line five of the CDNU.
+
+> Note 💡 When performing a TACAN update, aircraft MAGVAR must match the TACAN
+> station’s declination, otherwise, the update will be in error. An assumption
+> is made by the FMC that the TACAN station bearing information is adjusted for
+> the TACAN’s declination, and that it is the same as the manually entered value
+> of MAGVAR. TACAN declination will normally not be the same as the MAGVAR at
+> the aircraft and may not be the same as the MAGVAR at the station. If the
+> TACAN station is one of the waypoints stored on the MDL or in the CDNU
+> database, TACAN declination can be found on the right side of Data Line 5 on
+> the CDNU Waypoint Data page for that station. To illustrate the impact of
+> MAGVAR error, assume that a TACAN station with a range of 100 nautical miles
+> from ownship is used for an update. A 1 degree difference between MAGVAR and
+> TACAN declination will result in a 1.74 nautical mile error in the update
+> position.
+
+### Visual Update
+
+A visual update is performed by flying over the previously entered FMC waypoint
+and depressing the VIS FIX pushbutton. A timing estimate must be made since the
+aircraft nose and fuselage may obscure the ground reference point for some time
+during the overflight. Also, it is difficult to estimate when directly overhead
+a ground reference point when altitude is greater than 10,000 feet. The delta
+then appears on the PTID. Again, this delta may be entered into the computer by
+depressing FIX ENABLE.
+
+Visual updating is accomplished as follows:
+
+1. Select — CDNU Map Bias or Optimal page.
+
+2. Hook — Desired update point.
+
+3. CATEGORY switch — NAV.
+
+4. Overfly the selected pre-stored point and when over the point, depress the
+   VIS FIX pushbutton on the CAP.
+
+5. Observe present position delta readout on the PTID.
+
+6. If delta is unsatisfactory:
+
+   a. Deselect — VIS FIX.\
+
+   b. Repeat — steps 3–5.\
+
+7. FIX ENABLE pushbutton — DEPRESS to accept update.
+
+8. Confirm delta LAT/LONG appears on line five of the CDNU.
+
+### CDNU Visual Update
+
+A Visual Update can also be accomplished using the CDNU alone with the following
+procedure:
+
+1. Select — CDNU Map Bias or Optimal page.
+
+2. Enter a known position into Data Line 3 of the CDNU using LSK2.
+
+3. Overfly known position, and when over the point, depress the MARK Key on the
+   CDNU.
+
+4. Enter the resulting position into Data Line 1 of the CDNU using LSK1.
+
+5. Observe present position delta on Data Line 5 of the CDNU.
+
+6. If delta is unsatisfactory:
+
+   a. LSK8 — DEPRESS.\
+
+   b. Repeat — steps 2–5.\
+
+7. LSK7 — Depress to accept the update
+
+### Fighter-to-Fighter Navigation Update
+
+Net aircraft using fighter-to-fighter data link (FF/DL) can coordinate their
+navigation systems while in the FF/DL mode. Hooking an associated net aircraft
+symbol and pressing D/L FB-5 causes the coordinates of the hooked aircraft to be
+used as a reference for updating own-aircraft coordinates. The exact procedure
+is:
+
+1. Obtain a radar STT on or fly in close formation with another net aircraft.
+
+2. CATEGORY switch — D/L.
+
+3. Hook — Net aircraft symbol.
+
+4. CAP FB-5 — DEPRESS.
