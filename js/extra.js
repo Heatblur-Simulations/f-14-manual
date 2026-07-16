@@ -39,11 +39,11 @@ $(document).ready(function() {
 $("html").onClassChange((el, newClass) => ensureLogoVisible());
 
 window.setTheme = function setTheme(theme_id) {
-  $("button.theme#" + theme_id).click();
-}
+  $("button.theme#mdbook-theme-" + theme_id).click();
+};
 
 window.enableGameMode = function enableGameMode() {
-  $("#theme-toggle").hide(); // Themes switch automatically based on in-game time
+  $("#mdbook-theme-toggle").hide(); // Themes switch automatically based on in-game time
   $(".right-buttons").hide(); // Print, PDF, GitHub, Edit Buttons
   $(".menu-logo").hide(); // Logo on the sidebar uses absolute path and hence is broken in-game
 }
