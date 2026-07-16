@@ -26,8 +26,9 @@ Grayson Frohberg, Voice of the JESTER-AI
 Daniel Tischner, Senior Programmer (UI, Systems and AI)\
 Dominik Głowacki, Senior Programmer (Systems, Avionics, AI)\
 Szymon Skarzyński, Senior Programmer (Systems, Avionics, AI)\
+Phil Jones, Senior Programmer, (A-6E AI)\
 Joshua Nelson, Programmer (Weapons)\
-Yannis Leon Bößmann, Junior Programmer\
+Yannis Leon Bößmann, Programmer (Cockpit Tools)\
 Nicola Faggiani, Artist, 3D Model\
 Davi Bernardino, Artist, 3D Model and Textures\
 Ben Mährlein, Liveries and Art\
