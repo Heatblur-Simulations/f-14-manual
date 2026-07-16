@@ -7,6 +7,20 @@
   }
 }
 
+.nav-wrapper {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.nav-wrapper .previous {
+  grid-column: 1;
+  justify-self: start;
+}
+
+.nav-wrapper .next {
+  grid-column: 2;
+  justify-self: end;
+}
+
 .mobile-nav-chapters {
   /* Flex is a better way to control the centered layout of the icon and text
    * given this is a button a not wrapping text */
@@ -214,10 +228,8 @@ ol.section ol {
 }
 
 .nav-chapters-text {
+  display: block;
   font-size: 0.5em;
-  vertical-align: middle;
-  margin: 0 7px;
-  padding-bottom: 6px;
   color: var(--icons) !important;
 }
 
