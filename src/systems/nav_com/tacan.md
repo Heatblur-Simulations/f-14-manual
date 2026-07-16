@@ -1,93 +1,55 @@
-# TACAN System (AN/ARN-84)
+# TACAN 系统（AN/ARN-84）
 
-The TACAN system indicates a slant range accurate to within 0.1 NM and a bearing
-of 0.5° to any surface station selected. Slant range to airborne stations is
-provided with an air-to-air (A/A) mode. The operating range is approximately 300
-NM, if line of sight is given.
+TACAN 系统可以指示任何所选的地面/水面塔康台并且精度为斜距 0.1 NM，方位 0.5 度。空对空（A/A）模式提供机载塔康台的斜距。如果在视线内，通信距离约为 300 NM。
 
-The system offers 126 operating channels in each of 2 modes. Receiving
-frequencies for surface-to-air operation are 962 to 1024 MHz and 1151 to 1213
-MHz, for air-to-air operations, the frequencies are from 1025 to 1150 MHz. The
-TACAN uses two antennas that automatically switch in a 6-second interval until a
-threshold signal is received. Note that the TACAN can take up to 2 minutes to
-warm up when turned on for the first time after a cold start.
+系统为2种模式中的每一种提供了126个工作波道。在空对地模式下，频率接收范围在 962 - 1024 MHz 和 1151 - 1213 MHz 之间，空对空模式则为 1025 - 1150 MHz。
+TACAN 每隔6秒会自动在两根天下之间进行切换，直到接收到阈值信号为止。注意，在冷启动后第一次开启 TACAN 时，TACAN 最多可能花费2分钟进行预热。
 
-## TACAN Modes
+## TACAN 模式
 
-The system is capable of receiving valid signals from a ground station
-simultaneously with 99 other aircraft in either REC or T/R mode.
+系统可以在 REC 或 T/R 模式中同时与其它 99 架飞机从地面台接收有效信号。
 
-In the A/A mode, the system is capable of transponding with each of five
-cooperating aircraft, indicating slant range information to each, but the system
-will interrogate and lock on to only one at a time.
+在 A/A 模式中，系统可以向五架合作飞机中的每一架飞机进行应答，向合作飞机显示斜距，但是每次只能问询和锁定一架飞机。
 
-Both pilot and RIO share Identical TACAN control panels on the left consoles.
-Individual TACAN CMD buttons on both the pilot and RIO left consoles provide
-transfer of TACAN control between pilot and RIO. Control of TACAN is indicated
-by a flip-flop indicator in each cockpit showing PLT (pilot) or RIO. Either
-crewman may adjust the audio level of the identification signal. For TACAN panel
-description see TACAN Control Panel.
+飞行员和 RIO 在左侧控制台上的 TACAN 控制面板相同。飞行员和 RIO 左侧控制台上的 TACAN CMD 按钮用来交换 飞行员和 RIO 的 TACAN 控制权。
+每个驾驶舱中的翻转指示器用来指示 TACAN 控制权，指示器显示 PLT（飞行员） 或 RIO。两名机组都可以调整识别信号的音量。有关 TACAN 控制面板描述，详见 TACAN 控制面板。
 
-## TACAN Displays
+## TACAN 显示
 
-Bearing and distance to a TACAN station are displayed on the BDHI, the HSD, and
-the multiple display indicator. Deviation to the TACAN station is displayed on
-the HUD and VDI (VDIG) and the HSD and multiple display indicator.
+TACAN 台的距离和方位显示在 BDHI、HSD 和 多功能显示指示器中。TACAN 台的偏差显示在 HUD 与 VDI（VDIG）以及 HSD、多功能显示指示器中。
 
-The MDIG displays TACAN bearing marker, deviation ticks, range-to-TACAN station,
-and course. The HUD and VDI display provide a TACAN deviation bar, which is
-coded, on the HUD: solid line - TO station, dashed line - FROM station and on
-the VDI: bright bar - TO station, dark bar - FROM station.
+TACAN 方位标记、偏差指针、TACAN 台的距离以及航线显示在 MDIG 中。
+HUD 和 VDI 可提供 TACAN 偏差指针显示，显示出来是经过编码的，在 HUD 中：
+实线——TO（朝向）塔康台，虚线——FROM（离开）塔康台，在 VDI 中：高亮线——TO 塔康台，黑线——FROM 塔康台。
 
-TACAN information is also displayed on both the pilot’s and RIO’s identical
-BDHI. The bearing and distance functions of the BDHI come alive when the TACAN
-mode select switch is set to T/R. In the REC and T/R modes, magnetic bearings
-are displayed by the No.2 (large) needle, which unlocks and enters a search mode
-(spins) whenever bearing information is unreliable.
+TACAN 信息同时也显示在飞行员和 RIO 的 BDHI 中。当 TACAN 模式旋钮设置为 T/R 档位时，BDHI 的方位和距离显示将可用。
+在 REC 和 T/R 模式中，二号（较大的）指针用于指示磁方位，当方位信息不可靠时，指针将会解除锁定并进入搜索模式（旋转）。
 
-Range information received in T/R or A/A mode is displayed in nautical miles on
-the distance counter. An OFF flag covers the counter window if the range
-information is unreliable or not available. TACAN information is also displayed
-on the pilot HSD, HUD, and VDI and on the RIO multiple display indicator in
-other navigation modes.
+在 T/R 和 A/A 模式中接收到的距离信息将显示在距离计数器中，单位为海里。如果距离信息不可靠或不可用，则 OFF 旗将覆盖计数器窗口。
+在其它导航模式中，TACAN 信息也将显示在飞行员 HSD、HUD 和 VDI 中，以及 RIO 的多功能显示指示器中。
 
-## TACAN Operation
+## TACAN 操作
 
-If after approximately 2 minutes warm up time the range and bearing indications
-continue to search when a reliable station is selected, check circuit breakers
-should or select another station. The system has a memory feature so that
-tracking will not be interrupted by momentary disruption of received signals.
+如果在预热大约2分钟后。选择了可靠的塔康台但方位和距离指示依旧在搜索，应该检查断路器或选择其它塔康台。由于系统具有记忆功能，因此不会因为接收信号瞬时中断而中止跟踪。
 
-A range signal that is lost and has been previously tracked for at least 10
-seconds, will be sustained by memory for 9 to 12 seconds. A bearing signal that
-has been tracked for at least 15 seconds will be retained for 3 to 8 seconds
-after signal loss. This allows for automatic antenna switching without a loss of
-TACAN displays.
+在先前至少跟踪了10秒后丢失的距离信号，将会由记忆元件持续显示9到12秒。在信号丢失后，先前跟踪了至少15秒的方位信号将保留3到8秒。这可以使得在自动切换天线期间不丢失 TACAN 显示。
 
-During the minimum warmup time, failure indications and erroneous readouts
-should be disregarded and self-test results may be inconclusive.
+用最短时间预热，应忽略错误读数以及故障指示，并且自检结果是不确定的。
 
 ## TACAN BIT
 
-The TACAN system has a built-in test that continuously monitors the TACAN
-functionality and provides an interruptive self-test. To start a 22-second
-interruptive self-test, use the momentary button (BIT switch) and monitor the GO
-(green) and NO-GO (amber) status lights.
+TACAN 系统装有机内自检功能，可以连续监测 TACAN 功能并提供中断自检。使用自复位按钮（BIT 开关）来开始22秒的中断自检，并观察 GO（绿）和 NO-GO（琥珀）指示灯。
 
-> 💡 A BIT performed on TACAN stations within 2 NM can give an invalid
-> indication. If a TCN acronym or NO-GO response is observed while tuned to a
-> local station, along with normal TACAN azimuth and range, the acronym and/or
-> the NO-GO should be disregarded.
+> 💡 在距离2海里内的 TACAN 台执行 BIT 可能会出现无效指示。
+> 如果在调谐至当地塔康台时观察到缩写 TCN 或 NO-GO 指示灯，以及正常的 TACAN 方位角和距离，应忽略缩写和/或 NO-GO 指示灯。
 
-The normal BIT sequence is as follows:
+正常 BIT 顺序如下：
 
-1. Set MODE switch to T/R, allow 2 minutes for warmup.
-2. Press and hold BIT button.
-3. Both GO and NO-GO lights illuminate (light test).
-4. BDHI range OFF flag appears.
-5. BDHI bearing needle rotates counterclockwise.
-6. Release button; both lights go out (self-test starts).
-7. After 5 to 6 seconds, BDHI and HSD range reads 2 NM, BDHI and HSD bearing
-   reads 4° (identify TACAN station).
-8. After 22 seconds, if good, green GO light illuminates, if bad, amber NO-GO
-   light illuminates.
+1. 将 MODE 旋钮转至 T/R，等待2分钟预热。
+2. 按住 BIT 按钮。
+3. GO 和 NO-GO 指示灯亮起（灯光测试）。
+4. BDHI 距离计数器显示 OFF 旗。
+5. BDHI 方位指针逆时针方向旋转。
+6. 松开按钮；两个指示灯熄灭（自检开始）。
+7. 5到6秒后，BDHI 和 HSD 距离读数为2海里，BDHI 和 HSD 方位读数为4°（识别塔康台）。
+8. 22秒后，如果无故障，绿色 GO 指示灯亮，如果有故障，琥珀色 NO-GO 指示灯亮起。

@@ -1,148 +1,86 @@
-# Landing Gear System & Ground Handling
+# 起落架系统 & 地面操纵
 
-The F-14 Tomcat has a tricycle landing gear designed to be fully retractable as
-well as hardened enough to withstand the rigours of carrier traps. The landing
-gear extension and retraction is powered by the combined hydraulic system as
-well as having an emergency extension system. The emergency extension system has
-a nitrogen bottle that can be used to power a one-shot emergency extension. With
-the emergency system triggered, the system needs to be reset by technicians on
-the ground to allow further normal retraction.
+F-14 “雄猫” 采用可完全收起的前三点式起落架，起落架被设计得足够结实以应对着舰时的严酷考验。起落架的收起和放下由联合液压系统提供动力，以及起落架还拥有应急放下系统。
+应急放下系统中含有一个氮气瓶，氮气瓶可用于为单次应急放下提供动力。应急系统被触发后，需要由地面技术人员复位应急放下系统后才能进一步正常收上起落架。
 
-For additional information on controls and indicators see Landing Gear Control
-Panel for controls and Wheels-Flaps Position Indicator for the indicators.
+有关控制开关/手柄和指示器的其它信息，详见起落架控制面板 （控制开关/手柄）和机轮-襟翼位置指示器（指示器）。
 
-## Nosewheel Steering
+## 前轮转向
 
-The nosewheel steering system on the F-14 can be activated with weight on wheels
-by depression of the nosewheel steering button on the Control Stick. The
-activation of this system is indicated via the **NWS ENGA** caution light on the
-left side of the HUD, see Wheels Warning/Brakes Warnings/ACLS/AP Caution/NWS
-Engage Caution/Auto Throttle Caution Lights.
+当机轮负重时，飞行员可以通过按下驾驶杆中的前轮转向按钮激活 F-14 中的前轮转向系统。
+位于 HUD 左侧的 **NWS ENGA** 注意灯亮起表示前轮转向系统已激活，详见机轮告警/刹车告警/ACLS 和 AP 注意/NWS 启用注意/自动油门注意灯 。
 
-Disengagement of this system occurs automatically with weight off wheels
-(take-off), electrical supply failure or lowering of the launch bar. It’s also
-possible to deactivate the system by depression of the nosewheel steering
-button.
+机轮不负重（起飞）、电源故障或放下弹射杆都将导致前轮转向自动断开。同时还可以通过按下驾驶杆中的前轮转向按钮来断开前轮转向。
 
-The nosewheel, with the system engaged, is controlled via the rudder pedals.
-It’s capable of a deflection of up to 70° meaning that it will turn tightly
-enough that the inner wheel will in fact move backwards.
+前轮转向系统激活时，飞行员通过脚蹬板来控制前轮进行转向。前轮最大偏转角度可达到70°，也就是说，只要转动到最大角度，转向内侧的机轮实际上会后移动。
 
-## Wheelbrakes
+## 机轮刹车
 
-The wheelbrakes can be applied either via the rudder pedals by pressing on the
-upper part of them, rotating them forwards. The other application is via the
-parking brake handle located on the Landing Gear Control Panel panel.
+机轮刹车可以通过踩下脚蹬板来启用。另一种方法是通过起落架控制面板中的停放刹车手柄来启用。
 
-The rudder pedals can be used to apply the brakes gradually while the parking
-brakes are either on or off.
+无论停放刹车是否开启，飞行员都可以通过踩下脚蹬板逐渐增加刹车力度。
 
-Normally both systems are supplied from the combined hydraulic system but if
-that system becomes depressurized the brake system automatically switches to the
-backup accumulators. The Emergency Brake Pressure Indicator shows current
-pressure in the emergency accumulators.
+一般情况下，两个机轮刹车系统中的液压都由联合液压系统来提供，但如果联合液压系统中的油液压力降低，那么机轮刹车系统将自动切换使用机轮刹车蓄压器。应急刹车压力表显示了当前机轮刹车蓄压器内的压力。
 
-If fully charged the auxiliary accumulator allows for about 13 to 14 wheelbrake
-applications from the pedals and the parking brake accumulator 3 parking brake
-applications minimum. These accumulators can be recharged via the Hydraulic Hand
-Pump.
+辅助刹车蓄压器内的油压最大时最多可提供大约13到14次机轮制动，停放刹车蓄压器最少可提供3次停放刹车。机轮刹车蓄压器可以通过手动液压泵来重新充压。
 
-The **BRAKES** warning light on the left side of the HUD indicates either
-parking brake applied, antiskid system fail or that the brakes are operating in
-the emergency mode (only when the pedals are depressed).
+HUD 左侧的 **BRAKES** 告警灯用来指示停放刹车是否激活、防滑系统故障或指示制动正在应急模式下运行（仅踩下脚蹬板时亮起）。
 
-## Antiskid
+## 防滑系统
 
-The antiskid system modulates the wheelbrakes to prevent skidding while on the
-ground. When armed in the air the system prevents braking until both main wheels
-are on the ground and the wheels have spun up. Also the system is not
-operational below 15 knots.
+防滑系统调节机轮刹车以防止飞机在地面上打滑。在空中启用防滑系统时，系统将在两个主起落架机轮接地并开始旋转前阻止进行制动。此外，滑行速度低于15节时，防滑系统不会工作。
 
-The antiskid system switch also controls the spoiler brake system that deploys
-the spoilers as brakes when the throttles are set to **IDLE** while on the
-ground.
+防滑系统还控制着扰流板制动系统，当飞机处在地面上且油门位于 **IDLE** 档位时，扰流板会作为刹车系统伸出。
 
-> 💡 The antiskid should be disabled during taxi as below 15 knots, the system
-> may disturb normal braking even though the antiskid feature is not operational
-> at those speeds.
+> 💡 滑行期间应该关闭防滑系统，这是因为滑行速度低于15节时，即使在低于这个速度下防滑功能并不会工作，但防滑系统仍有可能干扰一般刹车制动。
 
-The **ANTI SKID SPOILER BK** switch on the Fuel Management Panel panel controls
-the system. **OFF** disables the system, **BOTH** enables antiskid and the
-spoiler brake system and **SPOILER BK** enables only the spoiler brake system.
+位于燃油管理面板中的 **ANTI SKID SPOILER BK** 开关用于控制防滑系统。
+开关位于 **OFF** 档位将禁用系统，位于 **BOTH** 档位时将启用防滑和扰流板制动系统，位于 **SPOILER BK** 档位时仅启用扰流板制动系统。
 
-## Catapult Launch and Arresting Gear
+## 弹射起飞和拦阻装置
 
-### Nosegear Catapult System
+### 前轮弹射起飞系统
 
-The nosegear of the F-14 contains the system allowing for catapult assisted
-takeoff during carrier based operations.
+F-14 的前轮配有一套用于舰上作业时进行弹射起飞的系统。
 
-The three components mounted in or on the nosegear are the nosewheel kneel
-functionality, the launch bar and the holdback fitting.
+安装在或在前轮中的三个部件分别为前轮伸缩功能、弹射杆和限位杆连接件。
 
-To enable the system the aircraft is kneeled using the **NOSE STRUT** switch on
-the Landing Gear Control Panel. This is done by holding the switch to the
-**KNEEL** position until downward movement stops.
+如需启用用于弹射起飞的系统，需要先使用起落架控制面板中的 **NOSE STRUT** 开关来收缩前轮支柱
+将开关保持在 **KNEEL** 档位直到收缩动作停止来完成前轮支柱收缩。
 
-This drains hydraulic fluid from the shock absorber, compressing the nosegear
-strut 14 inches. When compressed this also releases the lock on the launch bar
-which can then be lowered manually by the deck crew or by turning the nosegear
-more than 10° from center.
+收缩前轮支柱时液压油将从减震器中排出从而使前轮支柱收缩14英寸。收缩完成后还将释放弹射杆的锁定机构，随后弹射杆可以由甲板人员手动放下或通过偏转前轮10°以上来放下。
 
-> 💡 In DCS, the launch bar is automatically lowered with nosegear kneel.
+> 💡 在 DCS 中，弹射杆会随前轮支柱的收缩自动放下。
 
-The aircraft can then be guided onto the catapult and connected to the shuttle,
-in DCS via default keybind <kbd>U</kbd>. The holdback bar is currently not
-modelled in DCS.
+放下弹射杆后，飞机将被引导至弹射器中，然后连接至往复车，在 DCS 中，连接往复车的默认按键为 <kbd>U</kbd> 。目前 DCS 未模拟限位杆。
 
-> 💡 Deselection of nosewheel steering should be done before final movement onto
-> the shuttle and hookup to avoid misalignment.
+> 💡 飞行员应该在最后移动至往复车并钩挂往复车前取消前轮转向来避免偏心。
 
-The final command to launch the aircraft, after proper procedures, is then to
-salute the “shooter” or officer in command of catapult launch, default keybind
-<kbd>LShift</kbd> + <kbd>U</kbd> in DCS.
+在完成正确的程序后，弹射起飞的最后一步是向 “shooter” 或弹射官敬礼，在 DCS 中，敬礼的默认按键为 <kbd>左Shift</kbd> + <kbd>U</kbd> 。
 
-After the catapult stroke, when the launch bar is released from the shuttle,
-stored hydraulic energy is released to impart a positive pitch moment to the
-aircraft. This also automatically raises the launch bar into its stowed
-position.
+当完成弹射滑跑距离，弹射杆脱离往复车时，存储的液压能量被释放回减震器，此时将会向飞机施加抬头力矩。向飞机施加抬头力矩的同时，弹射杆将自动升起至收上位置。
 
-Indication of the launch bar status is available on the Caution - Advisory
-Indicator via the **LAUNCH BAR** advisory light. The advisory light is on with
-weight on wheels when the launch bar is not up and locked and turns off if
-throttles are advanced to **MIL** to enable a lights out for launch criteria.
-With weight off wheels the **LAUNCH BAR** advisory light is on if the nose strut
-hasn’t fully extended, launch bar is not up and locked or nosewheel hasn’t
-centered correctly. This inhibits nosegear retraction.
+注意 - 提示灯面板中的 **LAUNCH BAR** 提示灯用来指示弹射杆的状态。
+当机轮负重且当弹射杆放下时，提示灯就会亮起；如果将油门推至 **MIL** 档位，那么提示灯将会熄灭来表示是否满足弹射起飞标准。
+当机轮不负重时，如果前轮支柱没有完全伸展、弹射杆未收起并锁定或前轮转向超过15°，那么 **LAUNCH BAR** 提示灯将会亮起。
+满足前述任一条件时前轮收起都将被禁止。
 
-The Launch Bar Abort Panel contains the LAUNCH BAR switch used to disengage the
-launch bar in case of an aborted launch. This functionality is currently not
-implemented in DCS, unhooking the launch bar is currently accomplished by
-another depression of the hookup key, default key <kbd>U</kbd>.
+弹射杆中止面板 中包含了 LAUNCH BAR 开关，LAUNCH BAR 开关用于在中止弹射起飞时使弹射杆与往复车分离。
+这个功能尚未在 DCS 中实现，如需将弹射杆分离往复车需要再按一次钩挂键，默认按键为 <kbd>U</kbd> 。
 
-### Arresting Gear
+### 拦阻装置
 
-The arresting hook located on the underside of the tail of the F-14 is used for
-arrested landings during carrier operations.
+位于 F-14 尾部下方的拦阻钩用于在舰上作业时进行拦阻着舰。
 
-The system uses hydraulic power from both flight and combined hydraulic systems
-and is controlled electrically, thus requiring electrical power as well.
+系统使用来自飞行液压系统和联合液压系统的液压动力，并且系统是由电力进行控制的，因此系统也需要电力。
 
-Operation of the system is via the arresting **HOOK** handle on the Arresting
-Hook Panel. **UP** raises the arresting hook and **DN**, down, lowers it to 37°
-allowing it to catch the wire during a correctly executed carrier “trap”. The
-transition light next to the arresting **HOOK** handle illuminates whenever the
-arresting hook position does not correspond with handle position.
+通过拦阻钩控制面板中的 **HOOK** 手柄来对系统进行操作。手柄位于 **UP** 档位时将收起拦阻钩，位于 **DN** 档位时，拦阻钩将被放下至37°从而使拦阻钩在着舰期间钩挂甲板阻拦索。
+当拦阻钩的位置与 HOOK 手柄的位置不一致时，位于 **HOOK** 手柄一旁的过渡指示灯就会亮起。
 
-If on board failures do not allow for normal hook lowering it’s possible to use
-a mechanical backup to deploy the hook. To activate the mechanical backup, pull
-the handle out and rotate it 90° counterclockwise. This releases the mechanical
-up-lock and drain the hydraulic pressure keeping the hook up, thus lowering it.
+当机上发生故障导致拦阻钩无法正常放下时，飞行员可使用机械备份来放下拦阻钩。
+如需激活机械备份，抽出 HOOK 手柄并逆时针旋转手柄90°。激活机械备份将解开机械锁定并释放使拦阻钩保持收上的液压，从而放下拦阻钩。
 
-If electrical power and hydraulic power are restored, it’s then possible to
-retract the hook by rotating the handle 90° clockwise and pushing the handle
-back in and then setting it in the default **UP** position.
+如果电力和液压动力都已恢复，那么可以顺时针旋转手柄90°并推回手柄，然后将手柄置于 **UP** 档位来收起拦阻钩。
 
-> 💡 Hook position also affects the AoA indexer and approach lights, making them
-> flash with gear down if the hook is not also down. This feature can be
-> disabled using the **HOOK BYPASS** switch on the Master Light Control Panel.
+> 💡 拦阻钩的位置同样会影响进近迎角分度器和进近灯，如果起落架放下时未放下拦阻钩，那么进近迎角分度器和进近灯将会闪烁。
+> 飞行员可以使用主灯光控制板中的 **HOOK BYPASS** 开关来禁用指示灯闪烁功能。

@@ -1,81 +1,44 @@
-# Attitude and Heading Reference Set (AHRS)
+# 姿态航向基准系统（AHRS）
 
-The AHRS provides backup pitch and roll information to the CSDC and WCS
-computer, if attitude data from the INS is not available. At any time, the AHRS
-provides prime magnetic heading to the BDHI for direct analog display and to the
-CSDC where it is converted to digital information for the VDIG, MDIG, and the
-WCS. Additionally, the autopilot gets its heading reference from the AHRS.
+如果 INS 无可用姿态信息的话，那么 AHRS 将会提供备用俯仰和横滚信息给 CSDC 和 WCS 计算机。
+任何时刻，AHRS 向 BDHI 和 CSDC 提供主要磁航向，BDHI 用于直接使用机械仪表显示，CSDC 则将其转换为数字信号提供给 VDIG、MDIG 和 WCS。
+此外，自动驾驶将从 AHRS 获取基准航向。
 
-> 💡 The only analog cockpit display for magnetic heading is the BDHI. The HUD,
-> VDI, TID, HSD, and multiple display indicator are digital and receive their
-> inputs from the AHRS through the CSDC. Thus. in case of a CSDC failure, the
-> only magnetic heading is displayed on the BDHI.
+> 💡 BDHI 是驾驶舱内唯一一个用于显示磁航向的机械仪表。HUD、VDI、HSD 和多功能显示指示器都为数字式的，并接收从 CSDC （来源于 AHRS）发送的信号输入。
+> 万一 CSDC 失效，那么就只有 BDHI 中显示磁航向了。
 
-The main assemblies of the AHRS are a two-gyro platform (vertical and
-directional displacement gyros), an electronic control amplifier, a compass
-controller, a magnetic azimuth detector, and an electronic compensator.
+AHRS 的主要组件为 二自由度陀螺（俯仰和方位）、电子控制放大器、罗盘控制器、磁方位探测器和电子补偿器。
 
-In case of an IMU failure, the CSDC automatically selects AHRS attitude
-information for display and autopilot control. The directional gyro smoothens
-the flux valve heading signal in the SLAVED mode or provides a direct heading
-reference in the DG mode. The resulting heading is transmitted to the BDHI, the
-CSDC, and the WCS.
+IMU 失效时，CSDC 将会自动选择 AHRS 姿态信息来用于显示和自动驾驶控制。
+SLAVED 模式中航向陀螺用于平滑化磁流瓣航向信号，或在 DG 模式直接提供基准航向。最终航向将传输至 BDHI、CSDC 和 WCS。
 
 > 💡
 >
-> - In the INS nav mode IMU true heading is used and must be converted to
->   magnetic heading by adding or subtracting the magnetic variation to have a
->   backup magnetic value, if needed. Under normal operation, AHRS magnetic
->   heading is used for all displays.
->
-> - The AHRS is unlimited in roll but limited to 82° in pitch. If the pitch
->   attitude exceeds ±82, it will precess. A gradual precession in roll, pitch,
->   and heading can also be expected in sustained turns at slow rates (less than
->   6° per minute). Large roll and pitch precession errors can be corrected by
->   flying straight and level, without accelerating, and pressing and holding
->   the HDG set button on the compass controller panel. Pressing and holding
->   this button corrects precession errors at a rate of 12° per minute minimum.
->   The HDG set button should be held for at least 3 minutes. Before repeating
->   the 3-minute cycle, it should be released for at least 1 minute.
+> - 在 INS 模式中，IMU 使用的为真航向并且必须通过加减去磁差来转换为磁航向以便在不时之需有备用磁航向值可用。在正常运行模式，所有显示器都使用 AHRS 的磁航向。
+> - AHRS 没有横滚角度限制，但是有82°的俯仰角度限制。如果俯仰姿态超过±82°的话，那么陀螺将会进动。低转弯率（小于 6° 每分钟）持续转弯时，横滚、俯仰和方位可能会出现缓慢进动。
+> 大幅度横滚和俯仰进动误差可以通过匀速直线飞行和水平飞行，并按住罗盘控制面板的 HDG 旋钮/按钮来修正。
+> 按住此按钮可以以每分钟12°的速度来修正进动误差。HDG 旋钮/按钮 最少按住3分钟。应在释放按钮后至少等待1分钟再次按下。
 
-## Compass Controller Panel
+## 罗盘控制器面板
 
-Use the compass controller panel to select one of three compass modes when the
-AHRS is used as a heading reference. For a description, see Compass Control
-Panel.
+当 AHRS 用作基准航向时，使用罗盘控制面板在三个工作模式中任选一个。有关说明请参阅 罗盘控制面板。
 
-When magnetic heading references are unreliable, operate the system in the DG
-mode. When the magnetic reference is reliable, operate the system in the SLAVED
-mode. When DG or SLAVED modes are inoperable, the COMP mode can be used for
-emergencies.
+当基准磁航向不可靠时，使用 DG 模式运行。基准磁航向可靠时，就用 SLAVED 模式。当 DG 或 SLAVED 模式都不可用时，COMP 模式可在紧急情况时使用。
 
-> 💡 If both the IMU and the AHRS fail, pitch and roll attitude indications from
-> the HUD, TID, and DDD will be removed, and the IMU and AHRS advisory lights
-> illuminate. Select COMP mode on the compass controller panel to possibly
-> restore valid magnetic heading information to the HUD, VDI, and HSD, the AHRS
-> advisory lights will go off. Disregard the invalid pitch and roll attitude
-> information that will be restored to the HUD and VDI.
+> 💡 如果 IMU 和 AHRS 都失效了，那么 HUD、TID 和 DDD上的姿态指示将会被移除，并且 IMU 和 AHRS 提示灯会亮起。
+> 在罗盘控制面板选择 COMP 模式，来将有效的磁航向信息恢复显示在 HUD、VDI 和 HSD 中，恢复后 AHRS 提示灯将熄灭。忽略恢复到 HUD 和 VDI 中的无效俯仰和横滚姿态信息。
 
-## AHRS Operation
+## AHRS 工作模式
 
-As a compass, the AHRS operates in three modes:
+作为罗盘，AHRS 在三种模式下工作：
 
-- The directional gyro (DG) mode provides a free-gyro heading reference with
-  Earth-rate correction.
-- The SLAVED mode provides a gyro-stabilized magnetic heading
-- And the compass (COMP) mode provides an emergency magnetic heading from the
-  compass transmitter only.
+- 航向陀螺（DG，Directional Gyro ）模式提供一个经过地球自转修正的自由陀螺仪作为基准航向。
+- SLAVED （隶属）模式提供陀螺稳定磁航向。
+- 罗盘（COMP）模式仅提供来自罗盘发射器的应急磁航向。
 
-If the COMP mode is selected, the AFCS is automatically disengaged to prevent
-erratic steering commands. The COMP mode cannot provide a sufficiently stable
-heading signal for AFCS operation and should only be used for emergencies. To
-erect the AHRS, press and hold the HDG set button on the compass controller (3
-minutes on, 1 minute off cycle) until the needle of the synchronous indicator is
-bracketing the null mark.
+如果选择了 COMP 模式，那么 AFCS 将会自动断开以防止出现不稳定的转向指令。COMP 模式不能为 AFCS 操作提供足够稳定的航向信号，只能用于紧急情况。
+在罗盘控制面板按住 HDG 旋钮/按钮（按下 3 分钟，释放 1 分钟 为一个循环），直到同步指示器指针归中至零位标记。
 
-If nav mode is set to INS or IMU/AM, attitude displays will continue to indicate
-properly when the AHRS pitch limit of 82° is exceeded, but all displays of
-magnetic heading will be in error and the advisory lights may be on or off. If
-this is encountered, accurate and stable magnetic heading displays on the HUD,
-VDI, HSD, TID, and multiple display indicator can be regained immediately by
-inserting the proper MAG VAR via the computer address panel.
+如果 NAV MDOE 旋钮位于为 INS 或 IMU/AM 档位，那么在超过 AHRS 俯仰极限 82° 后姿态显示将会继续正确指示飞机姿态，
+但是所有磁航向显示可能会出现误差，并且提示灯可能会、也有可能不会亮起。
+如果遇到这种情况，那么 RIO 可以通过计算机位址面板输入正确的 MAG VAR，立刻恢复 HUD、VDI、HSD、TID 和 多功能显示指示器 正确、稳定的磁航向显示。

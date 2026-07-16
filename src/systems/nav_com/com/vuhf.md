@@ -1,75 +1,69 @@
-# AN/ARC-182 (V/UHF 2) Radio
+# AN/ARC-182 (V/UHF 2) 无线电台
 
-The ARC-182 radio provides multi-mode, multichannel, air-to-air/air-to-surface
-voice and tone communications. The ARC-182 control panel is located on the RIO
-left console. Frequency range extends in four bands from 30 to 88, 108 to 156,
-156 to 174, and 225 to 399.975 MHz on any of 11,960 channels (separated by 25
-kHz).
+ARC-182 无线电台提供多模式，多波道，空空/空面话音及单音通信。ARC-182 控制面板位于 RIO 左侧控制台上。
+无线电频率有四个波段，分别为 30 至 88 ，108 至 156 ，156 至 174 ，以及 225 至 399.975MHz 内 11960 个波道中的任一波道（使用 25 KHz 开关调整）
 
-> 💡 The _Have Quick_ anti-jam function is not implemented in DCS.
+> 💡 在 DCS 中， _Have Quick_ 反干扰功能未实现。
 
-Transmission and reception are available in AM or FM bands. The modulation is
-selected automatically by the radio except in the 225 to 399.975 band (toggle
-switch). 30 preset channels are available. Guard frequency of each band may be
-monitored simultaneously with any other frequency selected. The radio is used
-with the ARA-50 to provide automatic direction finding (ADF) to the transmitting
-station. The ARC-182 operates with secure-voice equipment (KY-28, the KY-58 is
-not implemented in DCS). Upper and lower antenna installations provide reliable
-line-of-sight communications to 200 NM (depending on altitude and atmospheric
-conditions). A remote indicator on the pilot instrument panel indicates the
-channel or frequency selected.
+无线电台可以使用 AM 或 FM 模式进行收发。除了 225 至 399.975 波段（拨动开关）外，无线电台将自动选择调制方式。无线电台中有30个预设波道可用。每个波段的救生频率可随其它已选的频率同时守听。
+无线电被用于与 ARA-50 一起使用，提供信标的自动测向（ADF）。ARC-182 使用保密话音设备运行（KY-28，KY-58 在 DCS 中尚未实装）。上部与下部天线可在200海里内提供可靠的视线内通信（根据高度与的大气条件而定）。
+飞行员仪表板上的远程显示器显示了选择的频率或波道。
 
 ![arc-182](../../../img/general_communications_arc-182.jpg)
 
-| Control/Indicator                      | Function                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **VOL control**                        | Controls volume of RIO audio for V/UHF 2.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| **SQL (squelch) switch**               | On/off control for radio squelch (noise-blanking when carrier is not present).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **Frequency Tuning switches**          | Four frequency tuning switches are used to tune the transceiver when the mode selector switch is set to MANUAL. The left switch controls the hundreds and tens digits, the second switch controls units, the third switch controls tenths, and the right switch controls hundredths and thousandths. Forward deflection of the switch increases the numeric reading, and aft deflection decreases the numeric reading.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| **FREQ/(CHAN)**                        | Displays frequency when the mode selector switch is in MAN and displays V/UHF channel when mode switch is in PRESET.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **UHF Mode switch**                    | Operational when tuned to frequencies in the 225.000 to 399.000 MHz band. AM – Selects amplitude modulation signals. Varies with atmospheric conditions, susceptible to electromagnetic interference. FM – Selects frequency modulation signals. Reduces electromagnetic interference.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| **BRT control**                        | Controls brightness of radio FREQ/(CHAN) display.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| **MODE selector**                      | OFF – Secures VHF/UHF radio, unless the frequency mode switch is set to 243. T/R – Energizes transmitter and main receiver. T/R&G – Energizes transmitter, main, and guard receivers. DF – Provides automatic direction finding from 108 to 399.975 MHz. TEST – Indicates built-in-test (BIT) AT; displayed on FREQ/(CHAN) indicator.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| **Frequency Mode switch (Outer Dial)** | 243 – Turns on the transceiver (takes precedence over (outer dial) operational mode control) and causes the main transceiver, and guard receiver to tune to 243.000 MHz (UHF guard frequency). All functions except VOL SQL and BAT are disabled. MAN – Allows manual selection of an operating frequency using the frequency tuning switches. The transceiver is disabled during a frequency change. G – Tunes the transceiver to the guard frequency in the band to which the radio was last tuned. PRESET – Allows selection of any one of 40 present operating frequencies with the CHAN SEL switch. The selected channel is displayed on the FREQ/(CHAN) display. Channels 31 through 40 are for Have Quick (anti-jam) use and are not implemented in DCS. READ – Displays the frequency (rather than channel) of the preset channel selected. LOAD – Automatically places the displayed frequency into the memory for the selected preset channel. |
-| **CHAN SEL switch (Inner Dial)**       | Selects one of 40 preset frequency channels to use when the tuning selector switch is set to PRESET.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| 控制/指示器                      | 功能                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **VOL 旋钮**                     | 控制 RIO 头戴中 V/UHF 2 音频音量。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **SQL（静噪）开关**              | 开启或关闭无线电静噪（未收到载波时消除杂音）。                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **频率调谐开关**                 | 当模式选择旋钮设置为 MAN 时使用四个频率调谐开关来调谐收发器。
+左边的开关控制百位和十位数，从左往右第二位控制个位，右侧开关分别控制百分之一和千分之一。开关向前拨动频率增加，向后拨动则会减少。                                                                                                                                                                                                                                                                                                                             |
+| **FREQ/(CHAN)**                  | 模式选择旋钮位于 MAN 时显示频率，位于 PRESET 档位时显示 V/UHF 预设波道。                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **UHF 模式开关**                 | 频率在 225.000 到 399.000MHz 之间时可用。
+AM – 选择调幅信号。随大气条件而变化，容易受到电磁干扰。
+FM – 选择调频信号。减少电磁干扰。                                                                                                                                                                                                                                                                                                                                                                                     |
+| **BRT 旋钮**                     | 调节 FREQ/(CHAN) 显示窗的亮度。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **MODE 旋钮**                    | OFF – 关闭 VHF/UHF 无线电，除非无线电模式旋钮设置到243。
+T/R – 接通发射器和主接收机。
+T/R&G – 接通发射器，主要和应急接收机。
+DF – 在 108 至 399.975 MHz 内提供自动测向。
+TEST – 指示机内自检（BIT）AT；在 FREQ/(CHAN) 显示窗上显示。                                                                                                                                                                                                                                                                                 |
+| **频率模式选择旋钮（外侧旋钮）** | 243 – 打开收发器（越级控制运行模式旋钮）并使主收发器和应急接收机调谐至 243.000 MHz（UHF 救生频率）。除了 VOL SQL 和 BAT 功能外其它功能禁用。
+MAN – 允许通过使用频率调谐开关手动选择一个频率。频率变更期间禁用收发器。
+G – 将收发器调谐至无线电最后使用波段的救生频率。
+PRESET – 使用 CHAN SEL 旋钮选择40个预设工作频率中的任意一个。已选的波道将显示在 FREQ/(CHAN) 显示窗内。
+波道 31 - 40 为 Have Quick（反干扰）使用，DCS 中尚未实现。
+READ – 显示已选预设波道的频率。
+LOAD – 将显示窗中的频率保存至当前预设波道。 |
+| **CHAN SEL 旋钮（内侧旋钮）**    | 当频率模式选择旋钮设置为 PRESET 时，从40个预设波道中任选一个进行使用。                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
-## AN/ARC-182 BIT (Built-in Test)
+## AN/ARC-182 BIT（机内自检）
 
-BIT isolates faults in AN/ARC-182. BIT should be started if the FREQ/(CHAN)
-display blanks, indicates an erroneous readout, or the transceiver otherwise
-malfunctions.
+自检隔离了AN/ARC-182 的故障。如果 FREQ/(CHAN) 显示窗空白，或显示错误读数，那么需要开始机内自检。
 
-Proceed as follows:
+按以下步骤进行：
 
-1. MODE selector - TEST.
-2. BRT control- As Required.
-3. BIT requires approximately 10 seconds, observe FREQ/(CHAN) display.
-   - No fault is indicated by 888.888.
-   - Faults are indicated by a number that identifies the module or modules at
-     fault.
+1. MODE 选择旋钮 - TEST。
+2. BRT 旋钮- 按需。
+3. 机内自检需要大约10秒，观察 FREQ/(CHAN) 显示窗。
+    - 显示888.888时为无故障。
+    - 故障由标识故障模块的数字表示。
 
-| Mode | Display | Fault     | Interpretation         |
-| ---- | ------- | --------- | ---------------------- |
-| RCV  | '       | RMT or RT | Select test mode       |
-| XMT  | '       | LOW PWR   | Select test mode       |
-| TEST | '       | RMT CTRL  | Defective control      |
-| TEST | 888.888 | NONE      | RT and CTRL ok         |
-| TEST | 4 6 5   | RT        | Modules 4, 5, or 6 bad |
-| TEST | 0 6 1   | VSWR      | RT or antenna system   |
-| TEST | 6 5 1   | FWD PWR   | RT or antenna system   |
-| TEST | 1 5 7   | RT        | Modules 1, 5, or 7 bad |
-| TEST | 3 3 3   | RT        | Module 3 bad           |
+| 模式 | 显示    | 故障      | 解释              |
+| ---- | ------- | --------- | ----------------- |
+| RCV  | '       | RMT 或 RT | 选择测试模式      |
+| XMT  | '       | LOW PWR   | 选择测试模式      |
+| TEST | '       | RMT CTRL  | 错误控制          |
+| TEST | 888.888 | NONE      | RT 和 CTRL ok     |
+| TEST | 4 6 5   | RT        | 模块4、5或6损坏   |
+| TEST | 0 6 1   | VSWR      | RT 或天线系统     |
+| TEST | 6 5 1   | FWD PWR   | RT 或天线系统     |
+| TEST | 1 5 7   | RT        | 模块1、5或 7 损坏 |
+| TEST | 3 3 3   | RT        | 模块 3 损坏       |
 
-## AN/ARA-50 UHF Automatic Direction Finder
+## AN/ARA-50 UHF 自动测向仪
 
-The UHF automatic direction finder is used with the ARC-182 radio. ADF provides
-relative bearings to transmitting ground stations or other aircraft. It can
-receive signals on any 1 of 30 preset channels or on any manually set frequency
-in the 108 to 399.975 MHz range. The system has a line-of-sight range, varying
-with altitude.
+UHF 自动测向仪被用于与 ARC-182 无线电台一起工作。ADF 提供地面信标或其他飞机的相对方位。
+ADF 可以在30个预设波道中的任意一个或者是在 108 到 399.975 MHz 范围内的任何手动设定频率上接收信号。系统有视线内通信范围，随高度而变化。
 
-The system requires a 5-minute warmup period. During the warmup time, failure
-indications should be disregarded. The system uses the AS-909/ARA-48 ADF
-antenna. Bearing to transmitting stations is displayed on the pilot/RIO BDHI
-(No. 1 needle), pilot HSD, and RIO multiple display indicator. The ADF signal is
-interrupted during voice UHF transmissions.
+ADF 系统有五分钟的预热时间，在预热期间应忽略故障指示。系统使用 AS-909/ARA-48 ADF 天线。
+信标的方位将在 飞行员/RIO BDHI（一号指针）、飞行员 HSD 以及 RIO 多功能显示指示器中显示。在 UHF 话音传输时，ADF 信号将会中断。

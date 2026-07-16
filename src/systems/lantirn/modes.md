@@ -1,77 +1,42 @@
-# Modes
+# 模式
 
-## Sensor Modes and Operation
+## 传感器模式和操作
 
-The LANTIRN has two "master" modes, A/A and A/G. Both work similarly but are
-optimized for different types of targets. Additionally, the A/G mode allows for
-bomb release guidance.
+LANTIRN 有两种“主”模式，分别是 A/A 和 A/G。两种模式工作方式类似，但是不同的模式针对不同的目标类型进行了优化。此外，A/G 模式中还允许使用航弹投放引导。
 
-The pod has two main ways of controlling the sensor line of sight, either via
-contrast lock (image following) or via being slaved to a Q designation.
+吊舱有两种主要的方法来控制传感器视线，通过对比度锁定（图像跟踪）或通过隶属至一个 Q 指定点。
 
-The Area and Point Track modes are the two contrast lock modes in which the
-LANTIRN locks onto contrast differences in the LANTIRN FLIR video itself. This
-in itself only allows for angle tracking which gives imprecise ranging using own
-aircraft position and pod line of sight to calculate target position. It does
-however allow the system to track moving targets.
+LANTIRN 所使用的区域和点跟踪模式通过锁定 LANTIRN FLIR 视频内的对比度差异物体进行对比度锁定。
+对比度锁定本身只允许角跟踪，对比度跟踪中将使用本机位置和吊舱视线来计算目标位置来给出不精确的测距。但是，对比度锁定允许系统跟踪移动目标。
 
-The last tracking mode has the sensor slewed to a stored location/direction,
-called a Q. The directional Qs do not allow for guidance to a location while the
-location Qs do.
+最后一种跟踪模式是将传感器移动至预存的位置/方向，这种模式将其称之为 Q。方向 Q 无法引导至某个位置，而位置 Q 则可以。
 
-QSNO and QADL/QHUD are directional. QSNO slaves the sensor to the ground 15 NM
-directly in front of the aircraft along own aircraft heading. QADL and QHUD
-slave the sensor to either ADL (in A/A) or the aircraft wings symbol on the HUD
-(in A/G).
+QSNO 和 QADL/QHUD 为方向 Q。QSNO 为将传感器隶属至沿本机航向正前方15海里处的地面。
+QADL 和 QHUD 则隶属传感器至 ADL（A/A 模式中）或 HUD 中的飞机机翼符号（A/G 模式中）。
 
-The location Qs have two sources, QWp- and QWp+ on the stick’s left hat can be
-used to cycle through the WCS waypoints, allowing the RIO to slew to the
-different waypoints for navigation and target localization.
+位置 Q 有两个源，第一个源是使用控制杆左侧的苦力帽上的 QWp- 和 QWp+ 在 WCS 航路点之间循环，从而允许 RIO 将吊舱移动至不同的航路点进行导航或定位目标。
 
-The other source is via pod designation. By selecting the second detent on the
-LANTIRN trigger the current sensor track or location is lased and a new location
-stored using that data. This is called the QDES and is used to designate targets
-for engagement as well as allowing the RIO to select a new location for
-navigational reference on the fly. The QDES can not however be automatically
-transferred to the WCS, but the RIO can enter it manually using the target
-location information in the pod video feed.
+另一个源则是通过吊舱指定。通过按下控制杆上扳机第二段，将照射当前传感器跟踪或位置，并使用指定点的数据存储为新位置。
+这个位置称为 QDES，QDES 用来指定用于攻击的目标并且允许 RIO 选择在飞行中用于导航参考的新的位置。
+但是，QDES 无法自动传递至 WCS，但是 RIO 可以使用吊舱视频输出源中的目标位置信息来手动输入它。
 
-The lower right data-block is enabled for the location Qs only but will remain
-even when the pod is slewed away in area or point track modes. As soon as
-another Q is selected however, it will update to that location instead or be
-removed if a directional Q is selected.
+视频右下角的数据块仅位置 Q 时启用，即使吊舱在区域或点跟踪模式下将视线移动开来，数据块也将会保留在元素中。
+但是一旦选择了另一个 Q 的话，这个数据块将会更新至另一个 Q 的数据而不是移除，如果选择了方向 Q，那么数据块将会移除。
 
-## A/G Target Engagement and Designation
+## A/G 目标攻击和指定
 
-The LANTIRN steering cues for ground target engagement are automatically enabled
-when the LANTIRN is slewed to QDES or a new QDES is designated. The QDES itself
-will remain even if a new Q is selected and as long as it exists, the steering
-cues will point towards QDES even if slewed to another point. This is important
-to keep in mind as it is easy to think that the steering commands are to the
-current sensor location instead of the QDES.
+当 LANTIRN 视线移动至 QDES 时或指定了新 QDES 时，LANTIRN 攻击地面目标的转向提示将会自动启用。
+即使选择了新的 Q，QDES 本身还是会保留的，并且只要 QDES 存在，即使隶属至了另一个点，转向提示也将会指向 QDES。
+记住这点非常重要，因为很容易记混淆把转向指令当成是指向当前传感器位置而不是 QDES。
 
-The laser designation itself can however point to a different location than the
-QDES as the laser always points to the current track. This can be used to
-quickly change back to a target marked by the QDES if desired and when lasing a
-moving target a QDES should be set at an estimated target location at impact
-(estimated manually) and then the point track mode or manual slew can be used to
-designate the actual target more precisely.
+但是，激光指定本身可以指向一个不同于 QDES 的位置，因为激光的指向始终为当前跟踪。
+如有需要，可以用来通过 QDES 来快速变更回标记的目标，在照射移动中的目标时，QDES 应指向预计命中时目标的位置（手动估计），接着可使用点跟踪模式或手动移动跟随来更准确的指定实际的目标。
 
-To change laser code, move the stick left side slider aft and release, this will
-change right hat (S4) into laser code mode. The currently selected digit will
-blink and the S4 hat can then be used to set the digits. Left/right change what
-digit to set and up/down change the value of the digit. Renewed selection of aft
-on the left slider will then exit the laser code mode.
+要变更激光编码，向后拨动控制杆左侧的滑块并松开，这将会变更右侧的苦力帽（S4）功能为激光编码模式。
+当前所选的数字将会闪烁，然后 S4 苦力帽将可用于设置编码。向左/向右将变更需要进行设置的数位，向上/向下将变更数字的值。重新向后拨动左侧的滑块将会退出激光编码模式。
 
-If the right, S4, hat is depressed while in laser mode the automatic lase mode
-will be enabled, indicated by the M (for manual) left of the digits changing to
-an A (auto-lase). Repeat to switch back to manual mode. While activated, the
-auto-lase mode will begin firing the laser at 10 seconds TIMP until TIMP zero +4
-seconds.
+如果在激光编码模式中按下右侧的苦力帽（S4），那么将会启用自动照射模式，由编码数字左侧的 M（表示手动）变更为 A（自动照射）表示。
+再次按下来返回手动模式。激活自动照射后，自动照射模式将在 TIMP 剩余10秒时开始照射激光，直到 TIMP 为0秒+4秒为止。
 
-The bomb release cue is only visible with a valid weapon (bomb) selected and the
-selected bomb is read from the weapon selector wheel on the RIO armament panel
-via the WCS. The actual bomb release can be accomplished using the computer
-pilot or computer target modes but the manual mode is recommended. In manual
-mode the pilot follows the cues in the LANTIRN video feed on the VDI and
-releases the bomb when cued by the LANTIRN.
+航弹投放提示仅在选择了有效的武器（航弹）后可见，所选的航弹是通过 WCS 从 RIO 驾驶舱中武器控制面板上的 WPN TYPE 拨轮读取的。
+可以通过计算机引导模式或者计算机目标模式来实现航弹投放，但是建议使用手动模式。在手动模式下，飞行员跟随输出到 VDI 中的 LANTIRN 视频中的提示并根据航弹投放提示来投放航弹。

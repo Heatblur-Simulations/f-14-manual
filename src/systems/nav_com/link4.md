@@ -1,101 +1,62 @@
-# Link 4A & C Data Link
+# Link 4A & C 数据链路
 
-The F-14 Tomcat is equipped with the Link 4 data link system to allow for
-transmission and reception of target track, waypoint information and steering
-commands. Link 4 exists in two versions, the first being Link 4A which allows a
-surface ship or airborne AWACS to control the aircraft and also Link 4C, unique
-to the F-14, which is a fighter to fighter data link.
+F-14 雄猫配备了 Link 4 数据链路系统，可以用于传输和接收目标跟踪、航路点信息和转向命令。
+Link 4 有两个版本，第一个是 Link 4A，它允许水面舰艇或 AWACS 控制飞机，还有 Link 4C，它是 F-14 所独有的战机间数据链路。
 
-The Link 4A or TADIL C data link allows the F-14 to connect to a data link
-network controlled by a surface ship or an AWACS. The data source (or really its
-operator) will then provide the F-14 with target tracks, waypoints and control
-commands. Additionally, it’s also used for the carrier automatic landing system
-(ACLS).
+Link 4A（TADIL C）数据链路允许 F-14 连接到由水面舰艇或 AWACS 控制的数据链路网络。
+然后，数据源（或者说，数据源的操作员）将为 F-14 提供目标跟踪，航路点和控制命令。 此外，它还用于自动助降系统（ACLS）。
 
-Link 4C on the other hand allows up to four F-14 Tomcats to interconnect and
-share target tracks to coordinate their engagements.
+另一方面，Link 4C 最多允许4架 F-14 雄猫战机建立数据链路并共享目标跟踪来协同作战。
 
-The system does not allow an F-14 to use both at the same time as the same
-transmitter and receiver are used for both A and C links. The Link 4 system
-itself, operates using the UHF radio band at 5,000 bits per second.
+因为 Link 4A 与 Link 4C 使用同一个收发器，所以系统不允许同时使用 4A 与 4C。Link 4C 系统使用 UHF 波段工作，传输速率为5000bit/s。
 
-The Link 4 is controlled using the Data Link Control Panel and the Data Link
-Reply and Antenna Control Panel. Received control signals are displayed on the
-pilot VDI indicators (Vertical Display Indicator (VDI)) and the RIO DDI panel
-(Digital Data Indicator (DDI)).
+Link 4 数据链路系统通过数据链路控制面板、数据链路应答和天线控制面板进行控制。
+接收到的控制信号将在飞行员 VDI（垂直显示指示器（VDI））以及 RIO DDI 面板（数字数据显示面板（DDI））上显示。
 
-## Link 4 Controls
+## Link 4 控制开关/按钮
 
-![Data Link Control Panel](../../img/general_communications_datalink.jpg)
+![数据链路控制面板](../../img/general_communications_datalink.jpg)
 
-The Data Link Control Panel contains the main Link 4 system power switches and
-the frequency selection wheels.
+数据链路控制面板上包括了主 Link 4 系统的电源开关以及频率选择拨轮。
 
-The first switch (<num>1</num>) controls the Link 4 built in test and also
-enables the anti-jam (**A-J**) function, this control is currently
-non-functional in DCS and should be set to **NORMAL**.
+第一个开关（<num>1</num>）控制 Link 4 的机内自检，并同时激活 Link 4 的抗干扰功能（**A-J**），
+此模式在 DCS 中无功能，故该开关应拨动至 **NORMAL** 档位。
 
-The frequency thumbwheels (<num>2</num>) are used to set used data link
-frequency, note that the first digit (<num>3</num>) is set and displayed as a
-fixed number before the first wheel. The allowable frequency range is 300.0 MHz
-to 324.9 MHz.
+频率拨轮（<num>2</num>）用来设定所使用的数据链路频率，需要注意的是，第一个拨轮前的第一位数字（<num>3</num>）已被设置并无法更改，
+故系统所允许的频率范围为 300MHz 至 324.9MHz。
 
-The third switch (<num>3</num>) controls power and operational mode of the
-Link 4. **ON** turns on and enables the Link 4A data link, **OFF** disables the
-system and **AUX** enables the Link 4C data link.
+第三个开关（<num>3</num>）控制 Link 4 的电源以及工作模式。
+**ON** 将通电并启动 Link 4A 数据链路，**OFF** 将关闭系统电源，而 **AUX** 将启用 Link 4C 数据链路。
 
-![Data Link Reply and Antenna Control Panel](../../img/general_communications_datalinkantenna.jpg)
+![数据链路应答和天线控制面板](../../img/general_communications_datalinkantenna.jpg)
 
-The Data Link Reply and Antenna Control Panel is used to select what antenna to
-use, own aircraft data link address, whether to transmit and which mode the Link
-4A is used in.
+数据链路应答和天线控制面板用于选择使用什么天线，本机数据链路位址，是否进行传输以及 Link 4A 使用的模式。
 
-The **ANTENNA** switch (<num>1</num>) sets if the data link uses the upper or
-lower antenna. As these are the same antennas that the UHF 1 (AN/ARC-159) uses
-it automatically sets that radio to the other antenna.
+**ANTENNA** 开关（<num>1</num>）控制数据链路使用上部或下部天线。由于和 UHF 1（AN/ARC-159）所使用的天线相同，因此会自动设置 UHF 1 使用另一根天线。
 
-The **REPLY** switch (<num>2</num>) sets whether own aircraft replies to data
-link messages. **NORM** allows for normal operation while **CANC** turns off the
-transmitter and sets the data link to receive only.
+**REPLY** 开关（<num>2</num>）设置本机是否应答数据链路信息。**NORM** 为正常工作，而 **CANC** 将关闭发射器并将数据链路设置为仅接收。
 
-The **MODE** switch (<num>3</num>) controls whether the Link 4A operates in the
-normal **TAC** (Tactical) mode or the **CAINS/WAYPT** (Carrier Aircraft Inertial
-Navigation System/Waypoint) mode. The TAC mode is the normal airborne mode while
-the CAINS/WAYPT mode is used while on the carrier deck to receive preflight
-waypoints and INS alignment data from the ships INS system. The switch is
-solenoid held and spring-loaded to the TAC position, if the data link reception
-is lost or the power lost the switch automatically returns to the TAC mode,
-forcing an ongoing INS alignment to the backup handset mode. If the aircraft
-takes off with the switch in the CAINS/WAYPT position the weight on wheels
-sensor will also release it to TAC.
+**MODE** 开关（<num>3</num>）控制 Link 4A 是以正常的
+**TAC** （战术）模式运行还是以
+**CAINS/WAYPT** （Carrier Aircraft Inertial Navigation System / Waypoint，舰载机惯性导航系统/航路点）模式运行。
+TAC 模式是正常的空中运行模式，而 CAINS/WAYPT 模式用于在母舰上时从航母的 INS 系统中接收飞行计划与 INS 对准信息。
+这个开关由螺线管固定以及弹簧归中至 TAC 档位，如果数据链路接收信号丢失或系统失电，开关将自动返回 TAC 模式，强制将正在对准的 INS 进程切换至备用手动模式。
+若飞机起飞时开关仍处于 CAINS/WAYPT 档位，机轮负重传感器也会释放开关使其回跳至 TAC 位。
 
-The two address thumbwheel sets the least significant bits (two lowest numbers)
-of the aircraft data link address, the rest has to be set by the ground crew.
+两个位址拨轮用于设置本机使用的数据链路位址的最低有效位（最低的两位数字），而其余部分必须由地勤人员设置。
 
-## Link 4 in DCS
+## DCS 中的 Link 4
 
-The Link 4 implementation in the Heatblur DCS F-14 implements both the Link 4A
-and C versions.
+Heatblur DCS F-14 的 Link 4 模拟了 Link 4A 及 Link 4C 。
 
-To use Link 4A the data link has to be powered on, set to Link 4A mode (ON) and
-tuned to the correct data link frequency for the desired host which can be found
-on the kneeboard. On the ground and set to the CAINS/WAYPT mode the data link
-will receive the ME set waypoints and allow for CVA alignment if on a carrier.
-The frequency does not need to be set to use CAINS/WAYPT as that frequency is
-set with jumpers on the actual equipment by the ground crew.
+若要使用 Link 4A，必须打开数据链路电源并设置为 Link 4A 模式（ON），且调谐至所需数据主机的正确数据链路频率，该频率可以在膝板上查看。
+若是处在地面并设置为 CAINS/WAYPT 模式，数据链路将会接收 ME 中编辑好的航路点，如果在航母上将允许进行 CVA 对准。
+使用 CAINS/WAYPT 不需要设置频率，因为地勤人员在真机设备上使用跳线设置该频率。
 
-When set to TAC the data link will then receive the 8 target tracks with the
-highest priority from the TDS controller. The Link 4A also allows for automatic
-carrier landings with the data link set to use the carrier as a host.
+当设置为 TAC 模式时，数据链路将接收由操作员发送的最高优先级的8个跟踪目标。Link 4A 还支持通过将航母设置为数据链路主机实现自动助降的功能。
 
-To use Link 4C the data link should be set to Link 4C (AUX) and be tuned to a
-frequency agreed upon between participating aircraft. Up to four aircraft can
-participate within a flight and all four aircraft should have different
-addresses set. As the ground crew set the two most significant bits to be the
-same for a flight automatically the link can only be used within the same flight
-currently.
+若要使用 Link 4C，数据链路模式应设置为 Link 4C（即 AUX），参与组建数据链路的飞机应使用调谐至相同的频率。
+一个小队最多编入四架战机，四架战机应该设置不同的位址。由于地勤将会自动将小队的前两位最高有效位设置为相同，因此 Link 4C 数据链路只能在小队内使用。
 
-In Link 4C the participating aircraft shares up to 4 target tracks, selected by
-the RIO using the CAP as well as own aircraft position. The CAP also allows the
-RIO to update own aircraft INS position to another aircraft on the link to
-correlate track transmissions.
+在 Link 4C 中，参与组建数据链路的飞机最多可共享4个跟踪目标以及本机位置，共享目标由 RIO 通过 CAP 来进行选择。
+CAP 同时还允许 RIO 将本机 INS 位置更新到链路上的另一架飞机以同步目标跟踪的传输。
