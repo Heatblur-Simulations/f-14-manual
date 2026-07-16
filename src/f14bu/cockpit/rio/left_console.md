@@ -9,7 +9,7 @@
 > - Communication / TACAN Command Panel (<num>5</num>)
 > - Radar Beacon Control Panel (<num>6</num>)
 > - Power System Test Panel (<num>7</num>)
-> - KY-28 Control Panel (<num>8</num>)
+> - KY-58 Control Panel (<num>8</num>)
 > - Oxygen-Vent Airflow Control Panel (<num>9</num>)
 > - G-Valve Button (<num>10</num>)
 > - Liquid Cooling Control Panel (<num>11</num>)
@@ -350,7 +350,7 @@ Power System Test Panel (<num>7</num>).
 
 > 💡 Non-functional in DCS.
 
-## KY-28 Control Panel
+## KY-58 Control Panel
 
 Encryption control panel (<num>8</num>) for secure voice communications.
 
