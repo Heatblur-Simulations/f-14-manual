@@ -311,7 +311,8 @@ headset.
 The KY MODE switch (<num>5</num>) controls frequency ranges encrypted by the KY-58.
 
 - BB - Normal mode for FM transmission.
-- AUTO - Provides automatic selection of BB/FM and DP/AM. Changes as the frequency on the ARC-182 is changed.
+- AUTO - Provides automatic selection of BB/FM and DP/AM. Changes as the frequency on
+the ARC-182 is changed.
 - DP - Normal mode for AM transmission.
 
 UHF 1 (ARC-159) is capable of DP mode only.
@@ -369,7 +370,8 @@ The ZEROIZE switch (<num>1</num>) clears all encryption keys when actuated.
 The power-mode switch (<num>2</num>) selects KY-58 operating mode.
 
 - P/OFF - UHF radio is used as a plain language receiver/transmitter. Removes power from the system.
-- C - Applies power to KY-58 system and is used to transmit and receive secure voice communications over the UHF radio. 
+- C - Applies power to KY-58 system and is used to transmit and receive
+secure voice communications over the UHF radio.
 - DELAY - Provides a time delay between push-to-talk and actual transmit.
 
 ### Radio Select Switch
