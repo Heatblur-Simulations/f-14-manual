@@ -379,7 +379,7 @@ secure voice communications over the UHF radio.
 The radio select switch (<num>3</num>) selects which radio is encrypted.
 
 - RELAY - Relay position: re-transmits information between other facilities. (Relay position is not operational.)
-- RAD-2 - Selects V/UHF 2 for secure voice.dd
+- RAD-2 - Selects V/UHF 2 for secure voice.
 - RAD-1 - Selects UHF 1 for secure voice.
 
 ## Oxygen-Vent Airflow Control Panel
