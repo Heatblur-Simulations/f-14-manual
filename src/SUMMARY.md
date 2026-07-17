@@ -182,7 +182,7 @@
     - [Bombing Tool](./f14bu/dcs/bombing_tool.md)
     - [Kneeboard](f14bu/dcs/kneeboard.md)
     - [Embedded Manual](./f14bu/dcs/ingame_manual.md)
-    - [Training Missions](./f14bu/dcs/training_missions.md)
+    - [Training Lessons](./f14bu/dcs/training_missions.md)
 - [Abbreviations](./abbreviations.md)
 - [Tutorials](./tutorials.md)
 - [Imprint](./imprint.md)
