@@ -35,27 +35,28 @@
 |   22.   | [Waypoint Search Page](../cdnu/control_display_navigation_unit.md#waypoint-search-page)                                                                                 |
 |   23.   | [User Defined Labels](../cdnu/control_display_navigation_unit.md#attach-user-defined-label)                                                                             |
 |   24.   | [FPLN Insert Initial Waypoint](../cdnu/control_display_navigation_unit.md#fpln-insert-initial-waypoint)                                                                 |
-|   25.   | [Bearing/Distance Vector Waypoint Calculator](../cdnu/control_display_navigation_unit.md#bearingdistance-vector-waypoint-calculator)                                    |
-|   26.   | [FPLN Insert with LANTIRN](../cdnu/control_display_navigation_unit.md#fpln-insert-with-lantirn)                                                                         |
-|   27.   | [FPLN Waypoint Deletion](../cdnu/control_display_navigation_unit.md#fpln-waypoint-deletion)                                                                             |
-|   28.   | [Waypoint Edit Page 1/2](../cdnu/control_display_navigation_unit.md#waypoint-edit-page-12)                                                                              |
-|   29.   | [Waypoint Edit Page 2/2](../cdnu/control_display_navigation_unit.md#waypoint-edit-page-22)                                                                              |
-|   30.   | [High Precision Coordinate Edit Page](../cdnu/control_display_navigation_unit.md#high-precision-waypoint-edit-page)                                                     |
-|   31.   | [Direct Steering](../cdnu/control_display_navigation_unit.md#direct-steering)                                                                                           |
-|   32.   | [Direct to a Flight Plan Waypoint](../cdnu/control_display_navigation_unit.md#direct-to-a-flight-plan-waypoint)                                                         |
-|   33.   | [DIRECT-TO an Impromptu Vector Waypoint from present position](../cdnu/control_display_navigation_unit.md#direct-to-an-impromptu-vector-waypoint-from-present-position) |
-|   34.   | [Progress Page 1/3](../cdnu/control_display_navigation_unit.md#progress-page-13)                                                                                        |
-|   35.   | [Progress Page 2/3](../cdnu/control_display_navigation_unit.md#progress-page-23)                                                                                        |
-|   36.   | [Progress Page 3/3](../cdnu/control_display_navigation_unit.md#progress-page-33)                                                                                        |
-|   37.   | [Mark Page](../cdnu/control_display_navigation_unit.md#mark-page)                                                                                                       |
-|   38.   | [RNAV INAV Page](../cdnu/control_display_navigation_unit.md#rnav-inav-page)                                                                                             |
-|   39.   | [RNAV GPS Page](../cdnu/control_display_navigation_unit.md#rnav-gps-page)                                                                                               |
-|   40.   | [RNAV INS Page](../cdnu/control_display_navigation_unit.md#rnav-ins-page)                                                                                               |
-|   41.   | [RNAV Blend Page](../cdnu/control_display_navigation_unit.md#rnav-blend-page)                                                                                           |
-|   42.   | [Stat Page](../cdnu/control_display_navigation_unit.md#stat-page)                                                                                                       |
-|   43.   | [Holding Page](../cdnu/control_display_navigation_unit.md#holding-page)                                                                                                 |
-|   44.   | [Exiting a Holding Pattern](../cdnu/control_display_navigation_unit.md#exiting-a-holding-pattern)                                                                       |
-|   45.   | [Intercept Page](../cdnu/control_display_navigation_unit.md#intercept-page)                                                                                             |
-|   46.   | [Parallel Course Offsets](../cdnu/control_display_navigation_unit.md#parallel-offsets)                                                                                  |
-|   47.   | [BDHI Steering Page](../cdnu/control_display_navigation_unit.md#bdhi-steering-page)                                                                                     |
-|   48.   | [Time Selection Page](../cdnu/control_display_navigation_unit.md#time-selection-page)                                                                                   |
+|   25.   | [FPLN Insert a Waypoint](../cdnu/control_display_navigation_unit.md#fpln-page-insert-a-waypoint)                                                                        |
+|   26.   | [Bearing/Distance Vector Waypoint Calculator](../cdnu/control_display_navigation_unit.md#bearingdistance-vector-waypoint-calculator)                                    |
+|   27.   | [FPLN Insert with LANTIRN](../cdnu/control_display_navigation_unit.md#fpln-insert-with-lantirn)                                                                         |
+|   28.   | [FPLN Waypoint Deletion](../cdnu/control_display_navigation_unit.md#fpln-waypoint-deletion)                                                                             |
+|   29.   | [Waypoint Edit Page 1/2](../cdnu/control_display_navigation_unit.md#waypoint-edit-page-12)                                                                              |
+|   30.   | [Waypoint Edit Page 2/2](../cdnu/control_display_navigation_unit.md#waypoint-edit-page-22)                                                                              |
+|   31.   | [High Precision Coordinate Edit Page](../cdnu/control_display_navigation_unit.md#high-precision-waypoint-edit-page)                                                     |
+|   32.   | [Direct Steering](../cdnu/control_display_navigation_unit.md#direct-steering)                                                                                           |
+|   33.   | [Direct to a Flight Plan Waypoint](../cdnu/control_display_navigation_unit.md#direct-to-a-flight-plan-waypoint)                                                         |
+|   34.   | [DIRECT-TO an Impromptu Vector Waypoint from present position](../cdnu/control_display_navigation_unit.md#direct-to-an-impromptu-vector-waypoint-from-present-position) |
+|   35.   | [Progress Page 1/3](../cdnu/control_display_navigation_unit.md#progress-page-13)                                                                                        |
+|   36.   | [Progress Page 2/3](../cdnu/control_display_navigation_unit.md#progress-page-23)                                                                                        |
+|   37.   | [Progress Page 3/3](../cdnu/control_display_navigation_unit.md#progress-page-33)                                                                                        |
+|   38.   | [Mark Page](../cdnu/control_display_navigation_unit.md#mark-page)                                                                                                       |
+|   39.   | [RNAV INAV Page](../cdnu/control_display_navigation_unit.md#rnav-inav-page)                                                                                             |
+|   40.   | [RNAV GPS Page](../cdnu/control_display_navigation_unit.md#rnav-gps-page)                                                                                               |
+|   41.   | [RNAV INS Page](../cdnu/control_display_navigation_unit.md#rnav-ins-page)                                                                                               |
+|   42.   | [RNAV Blend Page](../cdnu/control_display_navigation_unit.md#rnav-blend-page)                                                                                           |
+|   43.   | [Stat Page](../cdnu/control_display_navigation_unit.md#stat-page)                                                                                                       |
+|   44.   | [Holding Page](../cdnu/control_display_navigation_unit.md#holding-page)                                                                                                 |
+|   45.   | [Exiting a Holding Pattern](../cdnu/control_display_navigation_unit.md#exiting-a-holding-pattern)                                                                       |
+|   46.   | [Intercept Page](../cdnu/control_display_navigation_unit.md#intercept-page)                                                                                             |
+|   47.   | [Parallel Course Offsets](../cdnu/control_display_navigation_unit.md#parallel-offsets)                                                                                  |
+|   48.   | [BDHI Steering Page](../cdnu/control_display_navigation_unit.md#bdhi-steering-page)                                                                                     |
+|   49.   | [Time Selection Page](../cdnu/control_display_navigation_unit.md#time-selection-page)                                                                                   |
