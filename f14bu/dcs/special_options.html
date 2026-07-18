@@ -182,24 +182,195 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="special-options"><a class="header" href="#special-options">Special Options</a></h1>
-<blockquote>
-<p>🚧 Work in Progress</p>
-</blockquote>
-<p>Available under: <strong>OPTIONS → SPECIAL → F-14</strong></p>
+<p>The Tomcat offers several options that can be set within the <em>Special Option</em>
+menu in DCS.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../../img/special_options.jpg" alt="Special Option Menu"><span class="img-wrapper"><img src="../../img/special_options.jpg" alt="Special Option Menu"></span></label></p>
+<h2 id="customized-cockpit"><a class="header" href="#customized-cockpit">Customized Cockpit</a></h2>
+<p>Dropdown to select whether customized cockpits are used for the respective
+models.</p>
+<p>For the F-14A (all variants), the custom cockpit folder is located at
+<code>C:\Users\John Doe\Saved Games\DCS\Liveries\F14A_Cockpit</code>.</p>
+<p>For the F-14B, the custom cockpit folder is located at
+<code>C:\Users\John Doe\Saved Games\DCS\Liveries\F14B_Cockpit</code>.</p>
+<p>For the F-14B Upgrade, the custom cockpit folder is located at
+<code>C:\Users\John Doe\Saved Games\DCS\Liveries\Cockpit_F14BU</code>.</p>
+<h2 id="radio-menu-and-ptt-behavior"><a class="header" href="#radio-menu-and-ptt-behavior">Radio Menu and PTT Behavior</a></h2>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../../img/special_options_radio_menu.jpg" alt="Radio Menu"><span class="img-wrapper"><img src="../../img/special_options_radio_menu.jpg" alt="Radio Menu"></span></label></p>
+<p>Dropdown to select the behavior of the push to talk bind for the radio.</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Control</th><th>Function</th></tr>
+<tr><th>Option</th><th>Close Menu</th><th>Menu must be open</th><th>Export Voice</th></tr>
 </thead>
 <tbody>
-<tr><td>Radio Menu and PTT Behavior</td><td>Configures radio PTT integration, useful for SRS</td></tr>
-<tr><td>Use Head Movement in Jester Menu</td><td>Enables VR/TrackIR head control to select petals</td></tr>
-<tr><td>Boring Jester</td><td>Disables Jester’s jokes and embellishments (not yet implemented)</td></tr>
-<tr><td>Switch PD-STT to P-STT Lock in WVR</td><td>Jester switches to P-STT automatically within ACM range</td></tr>
-<tr><td>Jester Menu Camera</td><td>Enables live Jester camera feed in the radial menu</td></tr>
+<tr><td>Default</td><td>❌</td><td>❌</td><td>✅</td></tr>
+<tr><td>Open Menu</td><td>❌</td><td>✅</td><td>✅</td></tr>
+<tr><td>Hide on Release</td><td>✅</td><td>❌</td><td>✅</td></tr>
+<tr><td>No Export</td><td>❌</td><td>❌</td><td>❌</td></tr>
 </tbody>
 </table>
 </div>
+<p>The columns have the following effects:</p>
+<ul>
+<li>Close Menu - when releasing the key, the DCS communication menu is
+automatically closed</li>
+<li>Menu must be open - the key only works when the DCS communication menu is
+currently open</li>
+<li>Export Voice - when pressed down, voice is exported to tools like SRS</li>
+</ul>
+<h2 id="repeat-rio-weapon-type-on-tid"><a class="header" href="#repeat-rio-weapon-type-on-tid">Repeat RIO weapon type on TID</a></h2>
+<p>For easier visibility, since RIO weapon type window is as difficult to read
+in-game as it was in real life. Shown in A/G mode with pilot weapon selector
+off. The real F-14 could not repeat RIO weapon wheel on TID.</p>
+<h2 id="require-weapon-selector-press-between-off-and-gun"><a class="header" href="#require-weapon-selector-press-between-off-and-gun">Require weapon selector press between OFF and GUN</a></h2>
+<p>For enhanced realism, pilot weapon selector needs to be pressed while moving
+between OFF and GUN positions. This may be impractical with many consumer
+joysticks, hence it is an optional feature.</p>
+<h2 id="use-ffb-trim-implementation"><a class="header" href="#use-ffb-trim-implementation">Use FFB trim implementation</a></h2>
+<p>For enhanced realism when using a force feedback device for primary flight
+control. Shifts FFB stick neutral position to match trim actuator position. This
+option only has effect when FFB device is detected.</p>
+<h2 id="enable-afterburner-gate"><a class="header" href="#enable-afterburner-gate">Enable Afterburner Gate</a></h2>
+<p>Restricts throttle to MIL range unless AB gate key is pressed. While pressed,
+full throttle movement into AB range is unrestricted. Once key is released, AB
+operation continues until throttle is moved back to MIL range. Set MIL throttle
+detent below.</p>
+<h2 id="automatic-external-lights-at-carrier-launch"><a class="header" href="#automatic-external-lights-at-carrier-launch">Automatic External Lights at Carrier Launch</a></h2>
+<p>Automatically turns on the external lights when saluting the catapult officer at
+night, providing a nighttime launch signal.</p>
+<h2 id="emergency-wing-sweep-handle-raised-condition"><a class="header" href="#emergency-wing-sweep-handle-raised-condition">Emergency Wing Sweep Handle raised condition</a></h2>
+<p>Require the Emergency Wing Sweep Handle to be raised before moving it. In
+reality handle can be moved regardless of its vertical position.</p>
+<h2 id="enable-alternate-aoa-buffet"><a class="header" href="#enable-alternate-aoa-buffet">Enable Alternate AOA Buffet</a></h2>
+<p>This option enables a more 'realistic' AOA buffet based on F-14 pilot SME
+feedback.</p>
+<h2 id="tinted-visor-effect"><a class="header" href="#tinted-visor-effect">Tinted Visor Effect</a></h2>
+<p>When enabled, moving the pilots helmet visor down adds a graphical effect to
+help against bright lighting conditions. By default, this option is unchecked.</p>
+<h2 id="high-framerate-tis-recordings"><a class="header" href="#high-framerate-tis-recordings">High Framerate TIS Recordings</a></h2>
+<p>Records Tactical Imaging Set video at 30 fps instead of the default 15 fps. This
+results in smoother video at the cost of larger files and potentially worse
+performance.</p>
+<h2 id="stick-automatic-hiding"><a class="header" href="#stick-automatic-hiding">Stick Automatic Hiding</a></h2>
+<p>When enabled, this allows for automatic hiding of the stick when the cursor is
+above it.</p>
+<h2 id="afterburner-detent"><a class="header" href="#afterburner-detent">Afterburner Detent</a></h2>
+<p>Two options to define at which point of the physical hardware throttle input (0
+to 100%) the aircraft will light the afterburner.</p>
+<p>That is, if set to 80%, the MIL power range of the aircraft will be commanded
+between 0% and 80% of your physical throttle, while the remaining 20% will
+control the afterburner range.</p>
+<p>The deadzone option can be used to split the points in the range at which the
+afterburner will be turned on and off. For example, setting 20% for the deadzone
+and 80% for the detent results in afterburner activation at 82% and deactivation
+at 78% of throttle input.</p>
+<h2 id="jester-ai-contract"><a class="header" href="#jester-ai-contract">Jester AI Contract</a></h2>
+<h3 id="use-head-movement-to-select-items-in-jester-menu"><a class="header" href="#use-head-movement-to-select-items-in-jester-menu">Use head movement to select items in Jester Menu</a></h3>
+<p>This option, when enabled, allows using your head movement for selection of menu
+items.</p>
+<h3 id="jester-landing-callouts"><a class="header" href="#jester-landing-callouts">Jester Landing Callouts</a></h3>
+<p>This option enables Jester to give callouts to assist during landings.</p>
+<h3 id="switch-pd-stt-to-p-stt-lock-when-going-wvr"><a class="header" href="#switch-pd-stt-to-p-stt-lock-when-going-wvr">Switch PD-STT to P-STT lock when going WVR</a></h3>
+<p>P-STT is better suited in when close to target but does not allow AIM-54 data
+link updates. If option is checked Jester will automatically try to switch
+PD-STT lock to P-STT when close to enemy.</p>
+<h3 id="jester-menu-camera"><a class="header" href="#jester-menu-camera">Jester menu camera</a></h3>
+<p>This option shows Jester's camera in center of Jester menu.</p>
+<h3 id="jester-tid-auto-expand"><a class="header" href="#jester-tid-auto-expand">Jester TID Auto Expand</a></h3>
+<p>With this option enabled, Jester automatically expands TID, using the TID EXP
+option, with overlapping hooked target.</p>
+<h3 id="jester-auto-tcsflir-vid"><a class="header" href="#jester-auto-tcsflir-vid">Jester Auto TCS/FLIR VID</a></h3>
+<p>When enabled, Jester automatically points the TCS (or LANTIRN in air-to-air) at
+hooked targets to identify them visually.</p>
+<h3 id="jester-subtitles-experimental"><a class="header" href="#jester-subtitles-experimental">Jester Subtitles (Experimental)</a></h3>
+<p>Dropdown select to show subtitles for Jester's lines (experimental).</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Option</th><th>Subtitles</th><th>Portrait</th></tr>
+</thead>
+<tbody>
+<tr><td>Off</td><td>❌</td><td>❌</td></tr>
+<tr><td>On, with portrait</td><td>✅</td><td>✅</td></tr>
+<tr><td>On, without portrait</td><td>✅</td><td>❌</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="use-ai-generated-female-jester-voice-conversion-experimental"><a class="header" href="#use-ai-generated-female-jester-voice-conversion-experimental">Use AI generated female Jester voice conversion (experimental)</a></h3>
+<p>The option replaces Jester's voice with an AI voice-converted version that
+sounds female. These are the original Jester voice recordings (performed by
+Grayson) run through AI voice conversion - no lines are AI-written or newly
+generated, it is the same performance converted to a female-sounding voice. May
+contain occasional AI conversion artifacts.</p>
+<h3 id="jester-treats-no-iff-reply-as-bandit"><a class="header" href="#jester-treats-no-iff-reply-as-bandit">Jester treats no IFF reply as bandit</a></h3>
+<p>When Jester interrogates IFF, a contact that does not reply is normally left as
+an unknown bogey. With this option, Jester instead flags any contact that fails
+to reply as hostile (bandit).</p>
+<blockquote>
+<p>💡 A friendly with an inoperative or mis-set transponder, or one out of
+interrogation range, may be flagged as a bandit.</p>
+</blockquote>
+<h3 id="jester-records-gun-camera-tis-by-default"><a class="header" href="#jester-records-gun-camera-tis-by-default">Jester records gun camera (TIS) by default</a></h3>
+<p>When on, the Tactical Imaging Set comes up powered (except on a cold start) and
+Jester records HUD gun-camera footage automatically when you hold the trigger
+first detent. Turn off if you do not want gun-camera video recorded by default -
+you can still switch the TIS on from the cockpit switch or the Jester wheel.</p>
+<h2 id="hb-ui"><a class="header" href="#hb-ui">HB UI</a></h2>
+<h3 id="resolution-override"><a class="header" href="#resolution-override">Resolution Override</a></h3>
+<p>User interface elements, such as the Jester Wheel, the manual, virtual browser
+and others are scaled and positioned via a fixed resolution that must match the
+resolution of the in-game surface they are rendered on.</p>
+<p>With the option unchecked, this resolution is automatically determined based on
+screen settings. However, in certain situations, especially when using VR or
+having a multi-monitor setup, this automatic detection might fail and compute an
+incorrect resolution.</p>
+<p>Should UI elements be misplaced, for example the Jester Wheel not being centered
+or even cut off, check this setting and edit the resolution manually until the
+UI is displayed properly.</p>
+<h3 id="offset"><a class="header" href="#offset">Offset</a></h3>
+<p>Allows to displace the UI horizontally and vertically. Positive values shift it
+to the right or down, negative values to the left or up.</p>
+<p>Normally, this should be kept at the default value of 0 px. However, in certain
+cases (e.g. when using VR and setting it to render on the LEFT or RIGHT eye,
+while having the checkbox for <em>"Use DCS System Resolution"</em> not checked) it is
+possible that the UI gets cut off. This setting then allows to move the UI back
+into view, but therefore giving up proper alignment on the UI, such as the
+Jester UI being centered on the screen.</p>
+<h3 id="domain-access"><a class="header" href="#domain-access">Domain Access</a></h3>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../../img/hb_ui_domain_access_option.jpg" alt="Domain Access Types"><span class="img-wrapper"><img src="../../img/hb_ui_domain_access_option.jpg" alt="Domain Access Types"></span></label></p>
+<p>Defines which domains the HB UI is allowed to access.</p>
+<p><strong>Full</strong> allows for free browsing, allowing to visit any website with the
+<a href="virtual_browser.html">Virtual Browser</a>.</p>
+<p>The default option <strong>Whitelist</strong> defines which sites can be accessed by using a
+whitelist file. Only domains passing the rules setup in the file are allowed.
+The default rules are setup to support all HB UI features and a hand full of
+useful websites for the Virtual Browser, such as <em>YouTube</em>.</p>
+<p>This file is automatically created at</p>
+<p><code>C:\Users\John Doe\Saved Games\DCS_F14\hbui_whitelist.txt</code></p>
+<p>when launching the Tomcat for the first time.</p>
+<blockquote>
+<p>💡 Deleting the file will lead to it being recreated on the next launch. That
+way, one can have it updated to the newest set of rules - should there have
+been any changes.</p>
+</blockquote>
+<p>Selecting <strong>Offline</strong> will disable the Virtual Browser and any other HB UI
+features and elements that require an active online connection.</p>
+<h3 id="language"><a class="header" href="#language">Language</a></h3>
+<p>Dropdown to select the language used for all HB UI elements. Available are:</p>
+<ul>
+<li>English</li>
+<li>Chinese (<em>中文</em>)</li>
+<li>German (<em>Deutsch</em>)</li>
+<li>Korean (<em>한국어</em>)</li>
+</ul>
+<p>Affects for example the Jester UI, the Bombing Tool, but also the in-game
+version of this Manual and more.</p>
+<h3 id="theme"><a class="header" href="#theme">Theme</a></h3>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../../img/special_option_hb_ui_theme.jpg" alt="UI Theme"><span class="img-wrapper"><img src="../../img/special_option_hb_ui_theme.jpg" alt="UI Theme"></span></label></p>
+<p>Allows to select which color theme is used by the UI. All UI elements support a
+light and a dark theme.</p>
+<p>The default option <strong>AUTO</strong> will pick the theme dynamically based on the in-game
+time. Light during the day and Dark for a night mission.</p>
 
                     </main>
 
