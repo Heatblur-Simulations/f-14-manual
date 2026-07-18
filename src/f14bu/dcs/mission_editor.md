@@ -5,7 +5,7 @@
 The F-14 has many aircraft-specific settings and waypoints that are configured
 in the **Mission Editor**.
 
-## Addition Aircraft Properties
+## Additional Aircraft Properties
 
 Aircraft specific options are set up under the Additional Properties for
 Aircraft page available when setting up an aircraft group containing F-14s.
