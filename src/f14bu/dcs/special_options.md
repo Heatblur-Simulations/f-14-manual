@@ -222,7 +222,7 @@ This file is automatically created at
 
 `C:\Users\John Doe\Saved Games\DCS_F14\hbui_whitelist.txt`
 
-when launching the Phantom for the first time.
+when launching the Tomcat for the first time.
 
 > 💡 Deleting the file will lead to it being recreated on the next launch. That
 > way, one can have it updated to the newest set of rules - should there have
