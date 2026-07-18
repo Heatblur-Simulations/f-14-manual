@@ -176,6 +176,7 @@
     - [Special Options](./f14bu/dcs/special_options.md)
     - [Mission Editor](./f14bu/dcs/mission_editor.md)
     - [Grease Pencil](./f14bu/dcs/grease_pencil.md)
+    - [Virtual Browser](./f14bu/dcs/virtual_browser.md)
     - [Instant Camera](./f14bu/dcs/polaroid_camera.md)
     - [Laser Pointer Designator](./f14bu/dcs/izlid.md)
     - [Jester Set Commands](./f14bu/dcs/jester_set_commands.md)
