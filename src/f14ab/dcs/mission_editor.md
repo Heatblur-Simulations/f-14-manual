@@ -22,7 +22,6 @@ containing F-14s.
 | TACAN Band                      | Preselected band (X or Y)                      |
 | ILS Channel Preset              | Preselected ICLS channel                       |
 | KY-28 Encryption Key            | Encryption key loaded into KY-28               |
-| Laser Code 1st–4th Digit        | Preset code for laser-guided munitions         |
 
 ## Waypoints Types
 
