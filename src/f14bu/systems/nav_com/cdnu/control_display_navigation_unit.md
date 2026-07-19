@@ -225,6 +225,37 @@ selected on the PDCP will show TACAN steering on the HSD. The BDHI is not
 affected if TACAN steering is selected and the RIO has the BDHI set to EGI
 fly-to or FPLN waypoint steering.
 
+### Active Flight Plan Waypoint
+
+The active waypoint is the waypoint to which all flight instrument and CDNU
+guidance displays are referenced. Pressing the FPLN key on the CDNU will access
+the Flight Plan page with the active waypoint displayed. Associated with the
+active waypoint are the following quantities:
+
+1. Current desired inbound horizontal course,
+2. Current desired inbound vertical angle (optional, contingent on entry of
+   altitude),
+3. Active waypoint position, or User-defined label (optional).
+4. Current Flight Mode,
+5. Altitude assigned to the active waypoint (optional — for CDNU fixed waypoints
+   only),
+6. Planned time of arrival (PTA) at the active waypoint (optional — for CDNU
+   fixed waypoints only). If a planned time of arrival is specified, the ground
+   speed required to achieve it will be generated and displayed on the
+   [Progress 1/3 page.](#progress-page-13)
+
+### Future Waypoints
+
+Up to 49 future waypoints may be [inserted](#fpln-page-insert-a-waypoint) for
+execution after the active waypoint is passed. To access these future points the
+flight plan is scrolled vertically with the arrow keys. When scrolled away from
+the active waypoint, two display formats are available:
+
+1. Expanded display, showing full display of waypoint attributes, but with only
+   two waypoints displayed per page.
+2. Condensed display, showing only horizontal positions, but with four waypoints
+   displayed at the same time.
+
 ### History Waypoints
 
 The five waypoints most recently passed are also maintained in the flight plan.

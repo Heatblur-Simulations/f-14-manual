@@ -373,6 +373,43 @@ VDI display.
 > independent. The pilot must ensure BOTH systems are updated with every
 > altimeter change.
 
+### TACAN course deviation indicator
+
+The displacement of the course bar from the reference symbol provides TACAN
+deviation. The vertical course bar is solid when receiving TO TACAN information
+and dashed when receiving FROM TACAN information. Two solid dots appear on the
+course bar side of the reference symbol and perpendicular to it. The dot closest
+to the reference symbol represents a half scale deflection of 3° off course. The
+outermost dot represents full scale deflection of 6° off course. For
+deviations > 7°, the bar pegs. When the aircraft crosses the selected course,
+the bar moves to the opposite side of the reference symbol and the dots appears
+on that side. If the bar is centered on course ±1/2°, the dots disappear. The
+course bar indicates being on course when centered over the reference symbol.
+Course and deviation dots are to the right of the reference symbol when TACAN
+deviation is positive and to the left when negative. The course bar and
+deviation dots are only displayed with TACAN steering selected while in T.O.,
+CRUISE and LDG modes.
+
+### ICLS Vectors
+
+The ILS vectors consist of two independent vectors (horizontal and vertical)
+which form a cross pointer. The displacement of the horizontal vector from the
+reference symbol indicates the ILS glide slope error and the vertical vector
+displacement indicates the ILS localizer error. The ILS vectors are only
+displayed in LDG mode with AWL steering selected. The Vectors are displayed by
+default on the VDI, they are only displayed on the HUD when the VDI mode is in
+Video whilst AWL is selected on the PDCP submode. (ACL Tadpole explained below).
+
+![ICLS ACLS](../../../img/dark/icls_acls_small_cutout.svg)
+
+### Automatic Carrier Landing (ACL) Steering Indicator
+
+The ACL steering indicator displays ACL steering information with respect to the
+reference symbol. Zero vertical and lateral error results in the indicator being
+superimposed on the reference symbol. It is only displayed in LDG with AWL
+steering selected. The ACL Steering Indicator is always displayed on HUD and VDI
+with AWL submode and LNG selected on the PDCP, and valid ACLS datalink tuned.
+
 ### Navigation Data Readout
 
 DEST/TACAN steering range and range source are displayed at the lower right
@@ -394,9 +431,8 @@ T/O, A/A, A/G, and CRUISE.
 
 The steering mode options include:
 
-- None
 - DEST
-- CDNU Mode (NONE/MAN/AUTO/OFLY)
+- CDNU Mode (MAN/AUTO/OFLY)
 
 ![Steering Mode](../../../img/dark/hud_navigationdata_small_cutout_thin.svg)
 

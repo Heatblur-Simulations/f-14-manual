@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="ICLS_x2F_ACL_-_Light" xmlns="http://www.w3.org/2000/svg" width="2061.538" height="685.565" viewBox="0 0 2061.538 685.565">
+  <line x1="860.237" y1="290.348" x2="1201.302" y2="290.348" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="6"/>
+  <line x1="1003.302" y1="200.601" x2="1003.302" y2="541.665" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="6"/>
+  <path id="c" data-name="acl_steer" d="M1051.551,262.235c0,7.852-6.367,14.148-14.148,14.148s-14.148-6.296-14.148-14.148,6.367-14.148,14.148-14.148,14.148,6.296,14.148,14.148ZM1037.404,248.087v-28.295" fill="none" stroke="#000" stroke-miterlimit="15.1" stroke-width="6"/>
+</svg>
