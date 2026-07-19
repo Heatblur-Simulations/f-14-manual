@@ -130,6 +130,7 @@
 | HOJ          | Home-on-Jam                     |
 | HOST         | Hostile                         |
 | HPRF         | High Pulse Repetition Frequency |
+| HRWS         | Hot Range While Search          |
 | HSD          | Horizontal Situation Display    |
 | HSI          | Horizontal Situation Indicator  |
 | HUD          | Heads-up Display                |
@@ -179,7 +180,7 @@
 | LPRF         | Low Pulse Repetition Frequency      |
 | LSO          | Landing Signal Officer or "Paddles" |
 | LTE          | Launch-to-Eject                     |
-| LTS          | LANTIRN Targeting Sytem             |
+| LTS          | LANTIRN Targeting System             |
 
 ## M
 
