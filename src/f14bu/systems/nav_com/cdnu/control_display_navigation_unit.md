@@ -485,7 +485,8 @@ STEP 3: Press the arrow down key to switch to START page 2/2.
 (<num>4</num>) Restart Alignment: Returns EGI to Initialize and then to the EGI
 chosen alignment mode.
 
-(<num>5</num>) Press LSK 4 to access the CV Manual Align page.
+(<num>5</num>) Press LSK 4 to access the
+[CV Manual Align page](../egi.md#manual-in-motion-alignment-manual-ima).
 
 (<num>6</num>) EGI Operation Mode:
 

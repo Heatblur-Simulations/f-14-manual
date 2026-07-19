@@ -627,7 +627,18 @@ suspended and an ALIGN HOLD indication will be posted on the PTID and the CDNU.
 If, after entering SINS IMA, the EGI fails to detect valid SINS data, it will
 transition to the Manual IMA mode. If this occurs, the RIO should enter the
 appropriate latitude, longitude, carrier heading, carrier speed and Z-lever arm
-on the EGI Manual Page of the CDNU.
+on the CV Manual Page of the CDNU. The CV Manual Page is accessed via the
+[Start 2/2 page](../nav_com/cdnu/control_display_navigation_unit.md#start-page-22).
+
+![CV Manual Align Page](../../../img/dark/cdnu_cv_manual_page_guide.svg)
+
+(<num>1</num>) Carrier True Heading.
+
+(<num>2</num>) Carrier Start Location.
+
+(<num>3</num>) Carrier Speed.
+
+(<num>4</num>) Depressing RTN, enters the input data.
 
 > 💡 Any time the "HS" telltale flashes on the PTID alignment display, the RIO
 > should enter or re-enter the manual alignment data.
