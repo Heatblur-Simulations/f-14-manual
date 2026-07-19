@@ -390,6 +390,8 @@ deviation is positive and to the left when negative. The course bar and
 deviation dots are only displayed with TACAN steering selected while in T.O.,
 CRUISE and LDG modes.
 
+![TACAN Deviation Indicators](../../../img/dark/tacan_small_cutout_thin.svg)
+
 ### ICLS Vectors
 
 The ILS vectors consist of two independent vectors (horizontal and vertical)
