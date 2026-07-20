@@ -15172,7 +15172,7 @@ Inertial.</p>
 <p>The Mission Data Loader (MDL) provides bulk storage of mission essential data.
 The Data Transfer Module (DTM), can be loaded in the Mission Editor with up to
 12 flight plans, Pre-Planned Missions for JDAM employment and countermeasure
-profiles for the ALE-47 CDMS.</p>
+profiles for the ALE-47 CMDS.</p>
 <p>The MDL Start page is accessed by scrolling up from the EGI Start 1/2 page or
 down from the EGI Start 2/2 page. Display line 3 contains the MDL cartridge
 label and date stamp; display line 3 is blank if no cartridge is installed.</p>
@@ -17804,7 +17804,7 @@ TCS/LTS video feed button.</p>
 <tr><td style="text-align: center">6.</td><td><a href="#waypoint-display-priority">Waypoint Designation</a></td></tr>
 <tr><td style="text-align: center">7.</td><td><a href="#plot-lines-1">Plot Line Designation</a></td></tr>
 <tr><td style="text-align: center">8.</td><td><a href="#jdam-planning-tool">JDAM Planning Tool</a></td></tr>
-<tr><td style="text-align: center">9.</td><td><a href="#ale-47-counter-measure-dispensing-system-cdms-programming">CDMS</a></td></tr>
+<tr><td style="text-align: center">9.</td><td><a href="#ale-47-counter-measure-dispensing-system-cdms-programming">CMDS</a></td></tr>
 <tr><td style="text-align: center">10.</td><td><a href="#tactical-imaging-system">Tactical Imaging Set</a></td></tr>
 </tbody>
 </table>
@@ -18006,8 +18006,8 @@ together to plot complex areas.</p>
 <h2 id="jdam-planning-tool"><a class="header" href="#jdam-planning-tool">JDAM Planning Tool</a></h2>
 <p>The JDAM Planning Tool section is found in the
 <a href="#pre-planned-jdam-employment">GGW Pre Planned Employment Section</a>.</p>
-<h2 id="ale-47-counter-measure-dispensing-system-cdms-programming"><a class="header" href="#ale-47-counter-measure-dispensing-system-cdms-programming">ALE-47 Counter Measure Dispensing system (CDMS) programming</a></h2>
-<p>The CDMS programmer is found in the
+<h2 id="ale-47-counter-measure-dispensing-system-cmds-programming"><a class="header" href="#ale-47-counter-measure-dispensing-system-cmds-programming">ALE-47 Counter Measure Dispensing system (CMDS) programming</a></h2>
+<p>The CMDS programmer is found in the
 <a href="#programmer-1">ALE-47 Section</a>.</p>
 <h2 id="tactical-imaging-system"><a class="header" href="#tactical-imaging-system">Tactical Imaging System</a></h2>
 <p>The TIS Section is found in the
@@ -20500,11 +20500,15 @@ stored alignment to be completed upon aircraft cold start.</p>
 <p>This option removes the refueling probe cover while loaded in the mission. This
 option overrides the livery refueling probe cover option.</p>
 <h2 id="dtc"><a class="header" href="#dtc">DTC</a></h2>
+<p>The F-14B Upgrade has its Mission Data Loader integrated into DCS' Mission
+Editor using the DTC menu. Refer to the
+<a href="#mission-data-loader">Mission Data Loader section</a> on more
+in-depth how to use MDL with the DTC menu.</p>
 <h3 id="navigation"><a class="header" href="#navigation">Navigation</a></h3>
-<blockquote>
-<p>🚧 Work in Progress</p>
-</blockquote>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dtc_navigation_page.jpg" alt="DTC Navigation Page"><span class="img-wrapper"><img src="img/dtc_navigation_page.jpg" alt="DTC Navigation Page"></span></label></p>
+<p>Refer to the
+<a href="#flight-plan">Flight Plan subsection</a> of
+the MDL section for more information.</p>
 <h3 id="jdam"><a class="header" href="#jdam">JDAM</a></h3>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dtc_jdam_page.jpg" alt="DTC JDAM Page"><span class="img-wrapper"><img src="img/dtc_jdam_page.jpg" alt="DTC JDAM Page"></span></label></p>
 <p>See the
@@ -20521,6 +20525,8 @@ for further information on programming the ALE-47 using the DTC menu.</p>
 <a href="#fast-tactical-imaging-system">Fast Tactical Imaging System</a>
 page for my information on how to use the Tactical Imaging Set.</p>
 <h4 id="ownship-callsign"><a class="header" href="#ownship-callsign">Ownship Callsign</a></h4>
+<p>Callsign for ownship can be changed here. By default, "Use mission callsign", is
+checked which means the DCS unit name (pilot) set in the mission editor is used.</p>
 <h4 id="send-to-callsigns"><a class="header" href="#send-to-callsigns">Send-To Callsigns</a></h4>
 <p>The option to disable or enable the ability to auto-add wingmen to send list is
 provided. Additionally, callsigns can be manually added to the send list.</p>
