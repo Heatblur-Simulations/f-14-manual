@@ -10365,6 +10365,8 @@ chapter <a href="#f-14ab">F-14A/B</a> for an overview on the aircraft itself fir
 <p>The following chapter gives a detailed overview of the pilot's cockpit, as well
 as that of the Radar Interceptor Officer (RIO). Each single switch will be
 outlined and explained briefly, while giving context to the functions.</p>
+<p><a href="#pilot-cockpit-overview-1">Pilot Cockpit</a></p>
+<p><a href="#rio-cockpit-overview-1">RIO Cockpit</a></p>
 <p>More in-depth details on the various systems and consequences of using a switch
 beyond their brief explanation are available in the
 <a href="#systems-overview-1">Systems Overview Chapter</a>.</p>
@@ -14394,7 +14396,13 @@ transition to AIR DATA IMA if the aircraft is airborne.</p>
 <p>If, after entering SINS IMA, the EGI fails to detect valid SINS data, it will
 transition to the Manual IMA mode. If this occurs, the RIO should enter the
 appropriate latitude, longitude, carrier heading, carrier speed and Z-lever arm
-on the EGI Manual Page of the CDNU.</p>
+on the CV Manual Page of the CDNU. The CV Manual Page is accessed via the
+<a href="#start-page-22">Start 2/2 page</a>.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dark/cdnu_cv_manual_page_guide.svg" alt="CV Manual Align Page"><span class="img-wrapper"><img src="img/dark/cdnu_cv_manual_page_guide.svg" alt="CV Manual Align Page"></span></label></p>
+<p>(<num>1</num>) Carrier True Heading.</p>
+<p>(<num>2</num>) Carrier Start Location.</p>
+<p>(<num>3</num>) Carrier Speed.</p>
+<p>(<num>4</num>) Depressing RTN, enters the input data.</p>
 <blockquote>
 <p>💡 Any time the "HS" telltale flashes on the PTID alignment display, the RIO
 should enter or re-enter the manual alignment data.</p>
@@ -14441,9 +14449,6 @@ the EGI will enter ALIGN HOLD. If this happens, the alignment will reinitialize
 once the data again become valid, and the Align Time will begin counting from
 zero. This mode should be considered a backup.</p>
 <h2 id="navigation-updating"><a class="header" href="#navigation-updating">NAVIGATION UPDATING</a></h2>
-<blockquote>
-<p>🚧 Work in Progress</p>
-</blockquote>
 <p>The GPS receiver in the EGI provides highly accurate position. As a result,
 there is very little need to update the solution to account for drift. Even if
 GPS is degraded to Standard Positioning System accuracy, the quality of the EGI
@@ -14452,6 +14457,14 @@ For that reason, only “Map Bias” updates (temporary position offsets of a
 specific amount which are added on top of the Kalman filter solution) are
 allowed under normal circumstances. This feature allows the flight crew to
 modify their position to match other, non-GPS equipped units.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dark/cdnu_map_bias_page_guide.svg" alt="Map Bias Page"><span class="img-wrapper"><img src="img/dark/cdnu_map_bias_page_guide.svg" alt="Map Bias Page"></span></label></p>
+<p>(<num>1</num>) EGI calculated Coordinates of the fix location with current
+drift.</p>
+<p>(<num>2</num>) Known location of the fix.</p>
+<p>(<num>3</num>) Offset from both locations, toggles between degrees and nm error.</p>
+<p>(<num>4</num>) Indicates map bias is currently off.</p>
+<p>(<num>5</num>) Accept Fix.</p>
+<p>(<num>6</num>) Reject Fix.</p>
 <blockquote>
 <p>💡 Note Only the Blended and Free-Inertial solutions will reflect the offset
 when a Map Bias update is performed. The GPS solution will always show the
@@ -14467,6 +14480,16 @@ The NAV MODE SEL Switch must be in an Align position (GND or CVA), and the
 update will not take effect if GPS is available. These updates are termed
 “Optimal” updates, and actually modify the Blended solution and Free Inertial
 calculations.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dark/cdnu_optimal_update_page_guide.svg" alt="Optimal Update Page"><span class="img-wrapper"><img src="img/dark/cdnu_optimal_update_page_guide.svg" alt="Optimal Update Page"></span></label></p>
+<p>(<num>1</num>) EGI calculated Coordinates of the fix location with current
+drift.</p>
+<p>(<num>2</num>) Known location of the fix.</p>
+<p>(<num>3</num>) Offset from both locations, toggles between degrees and nm error.</p>
+<p>(<num>4</num>) Returns to Map Bias Page.</p>
+<p>(<num>5</num>) Optimal Update page is selected (NAV Mode selector must be in GND
+or CVA).</p>
+<p>(<num>6</num>) Accept Fix.</p>
+<p>(<num>7</num>) Reject Fix.</p>
 <p>The Updates can also be used to modify the latitude or longitude in
 <a href="#system-architecture-and-terminology">FMC</a>
 position of the aircraft in the AHRS/AM and IMU/AM modes if the EGI has failed.</p>
@@ -14756,7 +14779,7 @@ is:</p>
 </table>
 </div>
 <h2 id="cdnu-pages"><a class="header" href="#cdnu-pages">CDNU Pages</a></h2>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/light/cdnu_page_tree-01.svg" alt="CDNU Page Tree"><span class="img-wrapper"><img src="img/light/cdnu_page_tree-01.svg" alt="CDNU Page Tree"></span></label></p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/cdnu_page_tree-01.svg" alt="CDNU Page Tree"><span class="img-wrapper"><img src="img/bu/cdnu_page_tree-01.svg" alt="CDNU Page Tree"></span></label></p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -14787,17 +14810,18 @@ is:</p>
 <tr><td style="text-align: center">36.</td><td><a href="#progress-page-23">Progress Page 2/3</a></td></tr>
 <tr><td style="text-align: center">37.</td><td><a href="#progress-page-33">Progress Page 3/3</a></td></tr>
 <tr><td style="text-align: center">38.</td><td><a href="#mark-page">Mark Page</a></td></tr>
-<tr><td style="text-align: center">39.</td><td><a href="#rnav-inav-page">RNAV INAV Page</a></td></tr>
-<tr><td style="text-align: center">40.</td><td><a href="#rnav-gps-page">RNAV GPS Page</a></td></tr>
-<tr><td style="text-align: center">41.</td><td><a href="#rnav-ins-page">RNAV INS Page</a></td></tr>
-<tr><td style="text-align: center">42.</td><td><a href="#rnav-blend-page">RNAV Blend Page</a></td></tr>
-<tr><td style="text-align: center">43.</td><td><a href="#stat-page">Stat Page</a></td></tr>
-<tr><td style="text-align: center">44.</td><td><a href="#holding-page">Holding Page</a></td></tr>
-<tr><td style="text-align: center">45.</td><td><a href="#exiting-a-holding-pattern">Exiting a Holding Pattern</a></td></tr>
-<tr><td style="text-align: center">46.</td><td><a href="#intercept-page">Intercept Page</a></td></tr>
-<tr><td style="text-align: center">47.</td><td><a href="#parallel-offsets">Parallel Course Offsets</a></td></tr>
-<tr><td style="text-align: center">48.</td><td><a href="#bdhi-steering-page">BDHI Steering Page</a></td></tr>
-<tr><td style="text-align: center">49.</td><td><a href="#time-selection-page">Time Selection Page</a></td></tr>
+<tr><td style="text-align: center">39.</td><td><a href="#time-page">Time Page</a></td></tr>
+<tr><td style="text-align: center">40.</td><td><a href="#rnav-inav-page">RNAV INAV Page</a></td></tr>
+<tr><td style="text-align: center">41.</td><td><a href="#rnav-gps-page">RNAV GPS Page</a></td></tr>
+<tr><td style="text-align: center">42.</td><td><a href="#rnav-ins-page">RNAV INS Page</a></td></tr>
+<tr><td style="text-align: center">43.</td><td><a href="#rnav-blend-page">RNAV Blend Page</a></td></tr>
+<tr><td style="text-align: center">44.</td><td><a href="#stat-page">Stat Page</a></td></tr>
+<tr><td style="text-align: center">45.</td><td><a href="#holding-page">Holding Page</a></td></tr>
+<tr><td style="text-align: center">46.</td><td><a href="#exiting-a-holding-pattern">Exiting a Holding Pattern</a></td></tr>
+<tr><td style="text-align: center">47.</td><td><a href="#intercept-page">Intercept Page</a></td></tr>
+<tr><td style="text-align: center">48.</td><td><a href="#parallel-offsets">Parallel Course Offsets</a></td></tr>
+<tr><td style="text-align: center">49.</td><td><a href="#bdhi-steering-page">BDHI Steering Page</a></td></tr>
+<tr><td style="text-align: center">50.</td><td><a href="#time-selection-page">Time Selection Page</a></td></tr>
 </tbody>
 </table>
 </div>
@@ -15011,6 +15035,35 @@ DEST steering is selected on the PDCP, the HSD will not display it; only TACAN
 selected on the PDCP will show TACAN steering on the HSD. The BDHI is not
 affected if TACAN steering is selected and the RIO has the BDHI set to EGI
 fly-to or FPLN waypoint steering.</p>
+<h3 id="active-flight-plan-waypoint"><a class="header" href="#active-flight-plan-waypoint">Active Flight Plan Waypoint</a></h3>
+<p>The active waypoint is the waypoint to which all flight instrument and CDNU
+guidance displays are referenced. Pressing the FPLN key on the CDNU will access
+the Flight Plan page with the active waypoint displayed. Associated with the
+active waypoint are the following quantities:</p>
+<ol>
+<li>Current desired inbound horizontal course,</li>
+<li>Current desired inbound vertical angle (optional, contingent on entry of
+altitude),</li>
+<li>Active waypoint position, or User-defined label (optional).</li>
+<li>Current Flight Mode,</li>
+<li>Altitude assigned to the active waypoint (optional — for CDNU fixed waypoints
+only),</li>
+<li>Planned time of arrival (PTA) at the active waypoint (optional — for CDNU
+fixed waypoints only). If a planned time of arrival is specified, the ground
+speed required to achieve it will be generated and displayed on the
+<a href="#progress-page-13">Progress 1/3 page.</a></li>
+</ol>
+<h3 id="future-waypoints"><a class="header" href="#future-waypoints">Future Waypoints</a></h3>
+<p>Up to 49 future waypoints may be <a href="#fpln-page-insert-a-waypoint">inserted</a> for
+execution after the active waypoint is passed. To access these future points the
+flight plan is scrolled vertically with the arrow keys. When scrolled away from
+the active waypoint, two display formats are available:</p>
+<ol>
+<li>Expanded display, showing full display of waypoint attributes, but with only
+two waypoints displayed per page.</li>
+<li>Condensed display, showing only horizontal positions, but with four waypoints
+displayed at the same time.</li>
+</ol>
 <h3 id="history-waypoints"><a class="header" href="#history-waypoints">History Waypoints</a></h3>
 <p>The five waypoints most recently passed are also maintained in the flight plan.
 These waypoints along with the associated altitude, Flight Mode and planned time
@@ -15198,7 +15251,8 @@ initialization mode can be enabled with LS key 1.</p>
 <p>(<num>3</num>) Number of Satellites.</p>
 <p>(<num>4</num>) Restart Alignment: Returns EGI to Initialize and then to the EGI
 chosen alignment mode.</p>
-<p>(<num>5</num>) Press LSK 4 to access the CV Manual Align page.</p>
+<p>(<num>5</num>) Press LSK 4 to access the
+<a href="#manual-in-motion-alignment-manual-ima">CV Manual Align page</a>.</p>
 <p>(<num>6</num>) EGI Operation Mode:</p>
 <ul>
 <li>Off</li>
@@ -15637,6 +15691,13 @@ then press the LSK to the left of the waypoint to be copied. This will enter the
 position (or user-defined label) in the scratchpad, as well as all available
 waypoint attributes (identifier, elevation, frequency, and declination). Go to
 the Mark List page and insert the waypoint normally.</p>
+<h3 id="time-page"><a class="header" href="#time-page">Time Page</a></h3>
+<p>STEP 1: Press the IDX key</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dark/cdnu_idx_key.svg" alt="IDX Key"><span class="img-wrapper"><img src="img/dark/cdnu_idx_key.svg" alt="IDX Key"></span></label></p>
+<p>STEP 2: Press LSK 3 (TIME Page)</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dark/cdnu_time_page_guide.svg" alt="Time Page"><span class="img-wrapper"><img src="img/dark/cdnu_time_page_guide.svg" alt="Time Page"></span></label></p>
+<p>With no GPS available the CDNU time page is used to enter EGI system time. Exit
+using the F1 key.</p>
 <h3 id="rnav-inav-page"><a class="header" href="#rnav-inav-page">RNAV INAV Page</a></h3>
 <p>STEP 1: Press the RNAV key</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dark/cdnu_rnav_key.svg" alt="RNAV Key"><span class="img-wrapper"><img src="img/dark/cdnu_rnav_key.svg" alt="RNAV Key"></span></label></p>
@@ -17339,6 +17400,37 @@ VDI display.</p>
 independent. The pilot must ensure BOTH systems are updated with every
 altimeter change.</p>
 </blockquote>
+<h3 id="tacan-course-deviation-indicator"><a class="header" href="#tacan-course-deviation-indicator">TACAN course deviation indicator</a></h3>
+<p>The displacement of the course bar from the reference symbol provides TACAN
+deviation. The vertical course bar is solid when receiving TO TACAN information
+and dashed when receiving FROM TACAN information. Two solid dots appear on the
+course bar side of the reference symbol and perpendicular to it. The dot closest
+to the reference symbol represents a half scale deflection of 3° off course. The
+outermost dot represents full scale deflection of 6° off course. For
+deviations &gt; 7°, the bar pegs. When the aircraft crosses the selected course,
+the bar moves to the opposite side of the reference symbol and the dots appears
+on that side. If the bar is centered on course ±1/2°, the dots disappear. The
+course bar indicates being on course when centered over the reference symbol.
+Course and deviation dots are to the right of the reference symbol when TACAN
+deviation is positive and to the left when negative. The course bar and
+deviation dots are only displayed with TACAN steering selected while in T.O.,
+CRUISE and LDG modes.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dark/tacan_small_cutout_thin.svg" alt="TACAN Deviation Indicators"><span class="img-wrapper"><img src="img/dark/tacan_small_cutout_thin.svg" alt="TACAN Deviation Indicators"></span></label></p>
+<h3 id="icls-vectors"><a class="header" href="#icls-vectors">ICLS Vectors</a></h3>
+<p>The ILS vectors consist of two independent vectors (horizontal and vertical)
+which form a cross pointer. The displacement of the horizontal vector from the
+reference symbol indicates the ILS glide slope error and the vertical vector
+displacement indicates the ILS localizer error. The ILS vectors are only
+displayed in LDG mode with AWL steering selected. The Vectors are displayed by
+default on the VDI, they are only displayed on the HUD when the VDI mode is in
+Video whilst AWL is selected on the PDCP submode. (ACL Tadpole explained below).</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dark/icls_acls_small_cutout.svg" alt="ICLS ACLS"><span class="img-wrapper"><img src="img/dark/icls_acls_small_cutout.svg" alt="ICLS ACLS"></span></label></p>
+<h3 id="automatic-carrier-landing-acl-steering-indicator"><a class="header" href="#automatic-carrier-landing-acl-steering-indicator">Automatic Carrier Landing (ACL) Steering Indicator</a></h3>
+<p>The ACL steering indicator displays ACL steering information with respect to the
+reference symbol. Zero vertical and lateral error results in the indicator being
+superimposed on the reference symbol. It is only displayed in LDG with AWL
+steering selected. The ACL Steering Indicator is always displayed on HUD and VDI
+with AWL submode and LNG selected on the PDCP, and valid ACLS datalink tuned.</p>
 <h3 id="navigation-data-readout"><a class="header" href="#navigation-data-readout">Navigation Data Readout</a></h3>
 <p>DEST/TACAN steering range and range source are displayed at the lower right
 corner of the HUD.</p>
@@ -17355,9 +17447,8 @@ corner of the HUD.</p>
 T/O, A/A, A/G, and CRUISE.</p>
 <p>The steering mode options include:</p>
 <ul>
-<li>None</li>
 <li>DEST</li>
-<li>CDNU Mode (NONE/MAN/AUTO/OFLY)</li>
+<li>CDNU Mode (MAN/AUTO/OFLY)</li>
 </ul>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dark/hud_navigationdata_small_cutout_thin.svg" alt="Steering Mode"><span class="img-wrapper"><img src="img/dark/hud_navigationdata_small_cutout_thin.svg" alt="Steering Mode"></span></label></p>
 <h3 id="time-display"><a class="header" href="#time-display">Time Display</a></h3>
@@ -18726,6 +18817,8 @@ weight of 54,000 pounds.</p>
 <tr><td>TARPS01</td><td>TARPS</td><td>(0/2/2)</td><td>TARPS Pod</td><td>—</td><td>—</td></tr>
 <tr><td>TNG01</td><td>—</td><td>(0/0/0)</td><td>ACMI Pod</td><td>—</td><td>—</td></tr>
 <tr><td>TNG02</td><td>—</td><td>(1/0/2)</td><td>ACMI Pod</td><td>—</td><td>—</td></tr>
+<tr><td>SPL01</td><td>SARH</td><td>(0/4/4)</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>SPL02</td><td>Clean</td><td>(0/0/4)</td><td>—</td><td>—</td><td>—</td></tr>
 </tbody>
 </table>
 </div>
@@ -21143,8 +21236,8 @@ qualifications, the training lessons introduce you to new features of the B(U)
 variant. You will work through the new systems, refined avionics, and updated
 workflows that are required to master this wonderful airplane. We've thoroughly
 revised the most important lessons in order to improve the quality, stability,
-clearity, and learning experience for the most important crew members on the
-course of our longterm Tomcat journey, and that is YOU.</p>
+clarity, and learning experience for the most important crew members during the
+course of our long-term Tomcat journey, and that is YOU.</p>
 <h2 id="lesson-design"><a class="header" href="#lesson-design">Lesson design</a></h2>
 <p>The training lessons for the F-14B(U) have been designed in such a way that, as
 a beginner, everything important that you need for a successful start is
@@ -21157,7 +21250,7 @@ complexity and richness of the F-14B(U) lessons is somewhere in the middle
 between the original F-14A/B lessons from 2019, and the newer F-4E lessons
 from 2024. The following slide shows the didactic elements used in the F-14B(U)
 training lessons:</p>
-<p>[Insert Image]</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/lesson_design.jpg" alt="Lesson Design"><span class="img-wrapper"><img src="img/bu/lesson_design.jpg" alt="Lesson Design"></span></label></p>
 <h2 id="for-beginners"><a class="header" href="#for-beginners">For beginners</a></h2>
 <p>For beginners, it should be easy to follow the instructions, because everything
 is explained by using on-screen text and audio, together with highlights of the
@@ -21210,27 +21303,39 @@ entirely. Omitting steps of the original procedures leads to leaving out their
 numbering during the course of the procedure. Please note that the procedure can
 therefore continue with step 27 right after step 22. Think, for example, of the
 ejection seat harness, the oxygen mask and its test, the transponder, or similar
-items which cannot be set or tested. Furthermore, certain steps (like many of
-the internal inspection procedure) were not coded because the respective
-controls/switches are already set correctly after spawning the aircraft. This
-was decided to help you speed up the lesson tempo to get you in the air; of
-course you may check all these items after entering the cockpit and before
-pressing SPACEBAR for the first time.</p>
+items which cannot be set or tested. Furthermore, certain steps were not coded
+because the respective controls/switches are already set correctly after
+spawning the aircraft. This was decided in order to help you speed up the lesson
+tempo and to get you in the air as quickly as possible; of course you may check
+all these items after entering the cockpit and before pressing SPACEBAR for the
+first time.</p>
 <h2 id="interaction"><a class="header" href="#interaction">Interaction</a></h2>
 <p>For many steps, you will need to press the SPACEBAR to confirm what you have
 done / checked / heard / found in the cockpit, or to simply progress with the
 lesson. Therefore, please make sure that the SPACEBAR key is not assigned to any
 other action, like "Weapon fire" or similar.</p>
+<h2 id="lesson-overview"><a class="header" href="#lesson-overview">Lesson overview</a></h2>
+<p>For your training on the F-14B(U) Tomcat, these lessons are currently available:</p>
+<h3 id="difference-training"><a class="header" href="#difference-training">Difference training</a></h3>
+<p>Lesson 01: F-14BU Differences Familiarization</p>
+<p>Lesson 04: F-14BU Basic Navigation</p>
+<h3 id="type-training"><a class="header" href="#type-training">Type training</a></h3>
+<p>Lesson 02a: F-14BU Cold Start Airfield PILOT</p>
+<p>Lesson 02b: F-14BU Cold Start Carrier PILOT</p>
+<p>Lesson 03: F-14BU Cold Start Carrier RIO</p>
+<h3 id="weapon-training"><a class="header" href="#weapon-training">Weapon training</a></h3>
+<p>F-14BU JDAM PP Mode</p>
+<p>F-14BU JDAM TOO Mode</p>
 <h2 id="general-tips--tricks"><a class="header" href="#general-tips--tricks">General Tips &amp; Tricks</a></h2>
 <ul>
 <li>
-<p>Before starting a lesson once loaded, make sure the keybindings and HOTAS
-assignments are done properly. For this, go to OPTIONS &gt; CONTROLS and assign
-keys and joystick / throttle buttons to the most important functions. The
-lessons usually provide a list of keybindings used in that particular lesson,
-and a few more that we think you could need. DCS only provides a rough basic
-setup for most HOTAS controls available on the market, so it is worth looking
-into this before beginning.</p>
+<p>Once the lesson was loaded, right before pressing SPACEBAR for the first time,
+please make sure that the actions (keybindings and HOTAS assignments) are done
+properly. For this, go to OPTIONS &gt; CONTROLS and assign keys and joystick /
+throttle buttons to the most important actions. The lessons usually provide a
+list of actions used in that particular lesson, and a few more that we think
+you could need. DCS only provides a rough basic setup for most HOTAS controls
+available on the market, so it is worth looking into this before beginning.</p>
 </li>
 <li>
 <p>Make sure your system is able to keep a suitable frame rate of at least 30 fps
@@ -21239,21 +21344,20 @@ OPTIONS &gt; SYSTEM. You may load one of the INSTANT ACTION MISSIONS, and see ho
 your system performs.</p>
 </li>
 <li>
-<p>The lessons contain a lot audio material spoken by an instructor, so be
+<p>The lessons contain a lot of audio material spoken by an instructor, so be
 prepared to listen a lot. Therefore, adjust the audio settings to a
-comfortable level in OPTIONS &gt; AUDIO. The lessons are designed in a way, that
-no other surrounding noise disturbs the flow of the lesson, with the exception
-of one lesson, which has a nice surprise right at the beginning (sorry, but we
-couldn't resist).</p>
+comfortable level in OPTIONS &gt; AUDIO. The lessons are designed in a way, so
+that no other surrounding noise disturbs the flow of the lesson, with the
+exception of one lesson, which has a nice surprise right at the beginning
+(sorry, but we couldn't resist).</p>
 </li>
 </ul>
 <h2 id="time-acceleration"><a class="header" href="#time-acceleration">Time acceleration</a></h2>
 <p>The influence of the time accelerationfunction on the stability of the lessons
 is not documented properly. The lessons do not contain phases in which nothing
 happens for a long time, so mostly you will not need it. To be on the safe side,
-it is most probably better to not use the time acceleration function. Especially
-if you would like to save track files of your lessons, it is highly recommended
-to not use it.</p>
+it is most probably better not to use the time acceleration function, especially
+if you would like to save track files of your lessons.</p>
 <h2 id="lesson-got-stuck"><a class="header" href="#lesson-got-stuck">Lesson got stuck</a></h2>
 <p>There might be situations in which you feel the lesson does not continue or no
 longer works properly for any reason. Fortunately, this happens very rarely!
@@ -21264,12 +21368,12 @@ measures:</p>
 <p>Act like a pilot: Stay calm!</p>
 </li>
 <li>
-<p>Check if everything in the aircraft is actually set up as required according
-to the checklist/procedure. If necessary, check each of the previous steps
+<p>Check if everything is actually set up as required and according to the
+checklist / procedure. If necessary, check each of the previous steps
 individually and carefully, starting from the top by asking yourself the
-following questions: "What is written in the procedure/checklist/book?" and
-"How did I set it up?". An example is the Wing Sweep Handle; it can be moved
-fully aft, but if the oversweep locks open, you may then move it further aft.
+following questions: "What is written in the procedure / checklist / book?"
+and "How did I set it up?". An example is the Wing Sweep Handle; it can be
+moved aft, but if the oversweep locks open, you may then move it further aft.
 This requires precision and patience, but also knowledge of how the lever and
 the control and indication system works.</p>
 </li>
@@ -21291,11 +21395,865 @@ forums.</p>
 <p>If you then still suspect the same issue, please open a new ticket in the DCS
 forum: English &gt; Licensed Third Party Projects &gt; Heatblur Simulations &gt; DCS:
 F-14B(U) &gt; <a href="https://forum.dcs.world/forum/1434-bugs-problems">Problems</a> Please
-add as much information as possible in order to help us finding the issue,
-best is to ad a track file of your flight. We apologize for that, and also
+add as much information as possible in order to help us finding the issue.
+Best is to add a track file of your flight. We apologize for that, and also
 thank you in advance for your efforts reporting a possible bug!</p>
 </li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="lesson-01-f-14bu-differences-familiarization"><a class="header" href="#lesson-01-f-14bu-differences-familiarization">Lesson 01: F-14B(U) Differences Familiarization</a></h1>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/lesson1image.jpg" alt="Lesson 01 Design"><span class="img-wrapper"><img src="img/bu/lesson1image.jpg" alt="Lesson 01 Design"></span></label></p>
+<h2 id="lesson-01-introduction"><a class="header" href="#lesson-01-introduction">Lesson 01: Introduction</a></h2>
+<p>Welcome to the differences familiarization of the F-14B(U) Tomcat! You aircraft
+is spawned hot over Tblisi, and you are placed in the PILOT seat. Switching to
+the RIO is possible during the course of the lesson.</p>
+<h2 id="objectives"><a class="header" href="#objectives">Objectives</a></h2>
+<p>This lesson introduces you to the most important changes in the B(U) version
+compared to the A/B version. You will fly a pre-determined route through Georgia
+while listening to the instructor. The instructor will give you an overview of
+the most important changes in the cockpit, although the lesson focuses a bit
+more on the pilot seat. On the other hand, the lesson doesn't go into much
+detail for now, because the operation of the new systems is explained in other
+training lessons.</p>
+<h2 id="prerequisites"><a class="header" href="#prerequisites">Prerequisites</a></h2>
+<p>For this flight, it is helpful if you have some experience on any of the older
+Tomcat variants, at least in terms of flying the aircraft during cruise.</p>
+<h2 id="lesson-01-documentation"><a class="header" href="#lesson-01-documentation">Lesson 01: Documentation</a></h2>
+<p>If you feel the need for knowledge, you may read through the following chapters
+of the manual:</p>
+<p>Chapter &gt; <a href="#introduction">History</a></p>
+<p>Chapter &gt;
+<a href="#navigation-controls-and-displays">Navigation system Overview (for a first glance)</a></p>
+<p>Chapter &gt;
+<a href="#introduction-1">Navigation system Introduction (in depth details)</a></p>
+<p>Chapter &gt;
+<a href="#center-panel-2">Center panel (including HUD, VDI, ACM, HSD)</a></p>
+<p>Chapter &gt; <a href="#dfcs-control-panel">DFCS panel</a></p>
+<p>Chapter &gt; <a href="#digital-flight-control-system">DFCS - Digital Flight Control System</a></p>
+<p>Chapter &gt;
+<a href="#tacan-command-switch-2">TACAN Command panel</a></p>
+<p>Chapter &gt;
+<a href="#tacan-steering">TACAN Steering</a></p>
+<p>Chapter &gt;
+<a href="#joint-direct-attack-munition">JDAM - Joint Direct Attack Munition</a></p>
+<p>Chapter &gt;
+<a href="#anale-47-countermeasures-dispensing-set">AN/ALE-47 Panel</a></p>
+<p>Chapter &gt; <a href="#anasq-215-mission-data-loader-1">MDL - AN/ASQ-215 Mission Data Loader</a></p>
+<h2 id="lesson-01-keybindings"><a class="header" href="#lesson-01-keybindings">Lesson 01: Keybindings</a></h2>
+<p>Before flying the lesson, check &amp; assign all necessary actions and keybindings
+for the F-14B(U) Pilot, and in case you want to switch seats also for the
+F-14B(U) RIO! Take special care for bindings that have no clickable control
+elements in the cockpit!</p>
+<h3 id="f-14bu-pilot--category--axis-commands"><a class="header" href="#f-14bu-pilot--category--axis-commands">F-14B(U) Pilot → Category → Axis Commands</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Pitch</td><td>To be assigned</td></tr>
+<tr><td>Roll</td><td>To be assigned</td></tr>
+<tr><td>Rudder</td><td>To be assigned</td></tr>
+<tr><td>Throttle Left</td><td>To be assigned</td></tr>
+<tr><td>Throttle Right</td><td>To be assigned</td></tr>
+<tr><td>Throttle (both)</td><td>Alternatively assign this if you only have one throttle axis available</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--stick"><a class="header" href="#f-14bu-pilot--category--stick">F-14B(U) Pilot → Category → Stick</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Trigger</td><td>De-assign <strong>Spacebar</strong></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--throttle"><a class="header" href="#f-14bu-pilot--category--throttle">F-14B(U) Pilot → Category → Throttle</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Wing Sweep Auto Mode</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Bomb Mode</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Forward</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Aft</td><td>To be assigned</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--flight-control"><a class="header" href="#f-14bu-pilot--category--flight-control">F-14B(U) Pilot → Category → Flight Control</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Flaps Up</td><td><kbd>Left Shift</kbd> + <kbd>F</kbd></td></tr>
+<tr><td>Flaps Down</td><td><kbd>F</kbd></td></tr>
+<tr><td>Trim Pitch Up</td><td><kbd>Right Ctrl</kbd> + <kbd>.</kbd></td></tr>
+<tr><td>Trim Pitch Down</td><td><kbd>Right Ctrl</kbd> + <kbd>;</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--gears-brakes-and-hook"><a class="header" href="#f-14bu-pilot--category--gears-brakes-and-hook">F-14B(U) Pilot → Category → Gears, Brakes, and Hook</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Speed Brake Extend</td><td><kbd>Left Ctrl</kbd> + <kbd>B</kbd></td></tr>
+<tr><td>Speed Brake Retract</td><td><kbd>Left Shift</kbd> + <kbd>B</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--view-cockpit"><a class="header" href="#f-14bu-pilot--category--view-cockpit">F-14B(U) Pilot → Category → View Cockpit</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Occupy WSO Seat</td><td><kbd>2</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-rio--category--view-cockpit"><a class="header" href="#f-14bu-rio--category--view-cockpit">F-14B(U) RIO → Category → View Cockpit</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Occupy Pilot Seat</td><td><kbd>1</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="lesson-01-audio--text"><a class="header" href="#lesson-01-audio--text">Lesson 01: Audio &amp; Text</a></h2>
+<p>Since the lesson is a first familiarization, you may fly the aircraft totally
+unhurried. All text is displayed at the top right corner of the screen. The text
+remains visible on the screen for a maximum of 1000 seconds, until it either
+disappears after that time, or is replaced by new text. You can access the
+message log by pressing the ESC key, and then selecting MESSAGES HISTORY
+anytime.</p>
+<h2 id="lesson-01-tips--tricks"><a class="header" href="#lesson-01-tips--tricks">Lesson 01: Tips &amp; tricks</a></h2>
+<p>If you have troubles in flying the aircraft while listening to the audio or
+reading through the text, you may use the autopilot in attitude hold mode
+(key-binding "Autopilot toggle", default LAlt + A). Another option would be to
+use the active pause function of DCS (keybinding "Active Pause", default LWin +
+PAUSE) ; this stops the aircraft from moving, but the simulation in the
+background keeps running.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="lesson-02a-f-14bu-cold-start-airfield-pilot"><a class="header" href="#lesson-02a-f-14bu-cold-start-airfield-pilot">Lesson 02a: F-14B(U) Cold Start Airfield PILOT</a></h1>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/lesson2aimage.jpg" alt="Lesson 02a Design"><span class="img-wrapper"><img src="img/bu/lesson2aimage.jpg" alt="Lesson 02a Design"></span></label></p>
+<h2 id="lesson-02a-introduction"><a class="header" href="#lesson-02a-introduction">Lesson 02a: Introduction</a></h2>
+<p>Welcome to the cold &amp; dark startup of the F-14B(U) Tomcat on an airfield! Your
+aircraft is spawned cold on the apron in Batumi airfield, and you are placed in
+the PILOT seat. It is not possible to switch seats during the course of the
+lesson.</p>
+<h2 id="objectives-1"><a class="header" href="#objectives-1">Objectives</a></h2>
+<p>The instructor will guide you through an extremely abbreviated INTERIOR
+INSPECTION procedure, the full PRESTART procedure, the full ENGINE START
+procedure, and the full POSTSTART procedure for land-based operations, until
+reaching "ready for taxi". You will then have the choice to either taxi &amp;
+takeoff on your own discretion without guidance, or to end the lesson.</p>
+<h2 id="prerequisites-1"><a class="header" href="#prerequisites-1">Prerequisites</a></h2>
+<p>For the procedures covered in this lesson you do not need experience on the
+older versions of the Tomcat.</p>
+<p>It is recommended that you first glance over the procedures in order to get a
+first overview. Look into your kneeboard or the pictures in the briefing window.
+Following the procedures from top to down, you may then read through the
+respective sections in the aircraft manual for each aircraft system, although
+this takes a considerable amount of time and is not really required for
+accomplishing the lesson. Another option is to hop into the jet, start over with
+the lesson, and in case you are interested in more details on a certain system,
+open up the in-game manual and read after while going through the procedures.</p>
+<h2 id="system-tests"><a class="header" href="#system-tests">System tests</a></h2>
+<p>As you will notice, many steps during the course of the procedures are system
+tests. If you don't want to perform them, you may bypass them by pressing
+SPACEBAR during the explanations. For the purpose of DCS, these tests are in
+fact not necessary, because in DCS the aircraft is always spawned in a perfect
+condition. All such steps are introduced with the phrase "SYSTEM TEST" in the
+on-screen text of the DCS window. Please note that during such steps, certain
+levers / switches / controls still must be set according to the procedure, so
+look out for the label "REQUIRED: " in the on-screen text. This means that you
+have to set the levers / switches / controls to a certain position, but it is
+not necessary to perform a system test. The reason behind is that systems
+covered in subsequent steps might need the specific levers / switches / controls
+set to this very position in order to work properly on their side.</p>
+<h2 id="interaction-1"><a class="header" href="#interaction-1">Interaction</a></h2>
+<p>Considering you set everything correctly, you can skip instructions by pressing
+SPACEBAR, although for many steps it's better to listen carefully before taking
+action!</p>
+<h2 id="duration"><a class="header" href="#duration">Duration</a></h2>
+<p>Considering you listen to all instructions and perform all system tests
+carefully, this lesson takes about 30 minutes. If you skip the instructions and
+leave out all system tests, this lesson takes about 10 minutes.</p>
+<h2 id="lesson-02a-keybindings"><a class="header" href="#lesson-02a-keybindings">Lesson 02a: Keybindings</a></h2>
+<p>Before flying the lesson, check &amp; assign all necessary actions and keybindings
+for the F-14B(U) Pilot! Take special care for bindings that have no clickable
+control elements in the cockpit!</p>
+<h3 id="f-14bu-pilot--category--axis-commands-1"><a class="header" href="#f-14bu-pilot--category--axis-commands-1">F-14B(U) Pilot → Category → Axis Commands</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Pitch</td><td>To be assigned</td></tr>
+<tr><td>Roll</td><td>To be assigned</td></tr>
+<tr><td>Rudder</td><td>To be assigned</td></tr>
+<tr><td>Throttle Left</td><td>To be assigned</td></tr>
+<tr><td>Throttle Right</td><td>To be assigned</td></tr>
+<tr><td>Throttle (both)</td><td>Alternatively assign this if you only have one throttle axis available</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--stick-1"><a class="header" href="#f-14bu-pilot--category--stick-1">F-14B(U) Pilot → Category → Stick</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Autopilot Reference / Nosewheel Steering Toggle</td><td><kbd>N</kbd></td></tr>
+<tr><td>DLC Toggle / Countermeasure Dispense</td><td>To be assigned</td></tr>
+<tr><td>DLC Thumbwheel Forward</td><td>To be assigned</td></tr>
+<tr><td>DLC Thumbwheel Aft</td><td>To be assigned</td></tr>
+<tr><td>Trigger</td><td>De-assign <strong>Spacebar</strong></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--throttle-1"><a class="header" href="#f-14bu-pilot--category--throttle-1">F-14B(U) Pilot → Category → Throttle</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Exterior Lights Master Switch ON</td><td>To be assigned</td></tr>
+<tr><td>Exterior Lights Master Switch OFF</td><td>To be assigned</td></tr>
+<tr><td>Left Engine Cutoff - ON</td><td>To be assigned</td></tr>
+<tr><td>Right Engine Cutoff - ON</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Forward</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Aft</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Auto Mode</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Bomb Mode</td><td>To be assigned</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--communications"><a class="header" href="#f-14bu-pilot--category--communications">F-14B(U) Pilot → Category → Communications</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Communication Menu</td><td><kbd>\</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--flight-control-1"><a class="header" href="#f-14bu-pilot--category--flight-control-1">F-14B(U) Pilot → Category → Flight Control</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Flaps Up</td><td><kbd>Left Shift</kbd> + <kbd>F</kbd></td></tr>
+<tr><td>Flaps Down</td><td><kbd>F</kbd></td></tr>
+<tr><td>Trim Pitch Up</td><td><kbd>Right Ctrl</kbd> + <kbd>.</kbd></td></tr>
+<tr><td>Trim Pitch Down</td><td><kbd>Right Ctrl</kbd> + <kbd>;</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--gears-brakes-and-hook-1"><a class="header" href="#f-14bu-pilot--category--gears-brakes-and-hook-1">F-14B(U) Pilot → Category → Gears, Brakes, and Hook</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Gears Up</td><td><kbd>Left Shift</kbd> + <kbd>G</kbd></td></tr>
+<tr><td>Gears Down</td><td><kbd>Left Ctrl</kbd> + <kbd>G</kbd></td></tr>
+<tr><td>Speed Brake Extend</td><td><kbd>Left Ctrl</kbd> + <kbd>B</kbd></td></tr>
+<tr><td>Speed Brake Retract</td><td><kbd>Left Shift</kbd> + <kbd>B</kbd></td></tr>
+<tr><td>Wheel Brake Both (Gradual)</td><td>To be assigned</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--jester-ai"><a class="header" href="#f-14bu-pilot--category--jester-ai">F-14B(U) Pilot → Category → Jester AI</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Toggle Menu</td><td><kbd>A</kbd></td></tr>
+<tr><td>Command 3</td><td><kbd>Left Ctrl</kbd> + <kbd>3</kbd></td></tr>
+<tr><td>Command 4</td><td><kbd>Left Ctrl</kbd> + <kbd>4</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--systems"><a class="header" href="#f-14bu-pilot--category--systems">F-14B(U) Pilot → Category → Systems</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Seat Adjustment Up</td><td><kbd>Left Shift</kbd> + <kbd>S</kbd></td></tr>
+<tr><td>Seat Adjustment Down</td><td><kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>S</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="lesson-02a-audio--text"><a class="header" href="#lesson-02a-audio--text">Lesson 02a: Audio &amp; Text</a></h2>
+<p>Always listen carefully to the instructor. Assume that everything he says is
+important. All text is displayed at the top right corner of the screen. The text
+remains visible on the screen for a maximum of 1000 seconds, until it either
+disappears after that time, or is replaced by new text. You can access the
+message log by pressing the ESC key, and then selecting MESSAGES HISTORY
+anytime.</p>
+<h2 id="lesson-02a-tips--tricks"><a class="header" href="#lesson-02a-tips--tricks">Lesson 02a: Tips &amp; tricks</a></h2>
+<p><em>To be filled in once fellow pilots send some feedback ...</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="lesson-02b-f-14bu-cold-start-carrier-pilot"><a class="header" href="#lesson-02b-f-14bu-cold-start-carrier-pilot">Lesson 02b: F-14B(U) Cold Start Carrier PILOT</a></h1>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/lesson2bimage.jpg" alt="Lesson 02b Design"><span class="img-wrapper"><img src="img/bu/lesson2bimage.jpg" alt="Lesson 02b Design"></span></label></p>
+<h2 id="lesson-02b-introduction"><a class="header" href="#lesson-02b-introduction">Lesson 02b: Introduction</a></h2>
+<p>Welcome to the cold &amp; dark start up of the F-14B(U) Tomcat on the carrier! Your
+aircraft is spawned cold on the parking area of the CVN-74, and you are placed
+in the PILOT seat. It is not possible to switch seats during the course of the
+lesson.</p>
+<h2 id="objectives-2"><a class="header" href="#objectives-2">Objectives</a></h2>
+<p>The instructor will guide you through an extremely abbreviated INTERIOR
+INSPECTION procedure, the full PRESTART procedure, the full ENGINE START
+procedure, and the POSTSTART procedure for carrier operations until step 26. As
+you will notice, the procedures are basically the same as in lesson 02a (cold &amp;
+dark from airfield as pilot), but now steps 27 to 51 are left out now, because
+they were performed before connecting the catapult. You will then have the
+choice to either taxi to the ramp, perform all these checks, and then takeoff on
+your own discretion without guidance, or to end the lesson.</p>
+<h2 id="prerequisites-2"><a class="header" href="#prerequisites-2">Prerequisites</a></h2>
+<p>For the procedures covered in this lesson you do not need experience on the
+older versions of the Tomcat.</p>
+<p>It is recommended that you first glance over the procedures in order to get a
+first overview. Look into your kneeboard or the pictures in the briefing window.
+Following the procedures from top to down, you may then read through the
+respective sections in the aircraft manual for each aircraft system, although
+this takes a considerable amount of time and is not really required for
+accomplishing the lesson. Another option is to hop into the jet, start over with
+the lesson, and in case you are interested in more details on a certain system,
+open up the in-game manual and read after while going through the procedures.</p>
+<h2 id="system-tests-1"><a class="header" href="#system-tests-1">System tests</a></h2>
+<p>As you will notice, many steps during the course of the procedures are system
+tests. If you don't want to perform them, you may bypass them by pressing
+SPACEBAR during the explanations. For the purpose of DCS, these tests are in
+fact not necessary, because in DCS the aircraft is always spawned in a perfect
+condition. All such steps are introduced with the phrase "SYSTEM TEST" in the
+on-screen text of the DCS window.</p>
+<h2 id="interaction-2"><a class="header" href="#interaction-2">Interaction</a></h2>
+<p>Considering you set everything correctly, you can skip instructions by pressing
+SPACEBAR, although for many steps it's better to listen carefully before taking
+action!</p>
+<h2 id="planned-duration"><a class="header" href="#planned-duration">Planned duration</a></h2>
+<p>Considering you listen to all instructions and perform all system tests
+carefully, this lesson takes about 20 minutes. If you skip the instructions and
+leave out all system tests, this lesson takes about 10 minutes.</p>
+<h2 id="lesson-02b-keybindings"><a class="header" href="#lesson-02b-keybindings">Lesson 02b: Keybindings</a></h2>
+<p>Before flying the lesson, check &amp; assign all necessary actions and keybindings
+for the F-14B(U) Pilot! Take special care for bindings that have no clickable
+control elements in the cockpit!</p>
+<h3 id="f-14bu-pilot--category--axis-commands-2"><a class="header" href="#f-14bu-pilot--category--axis-commands-2">F-14B(U) Pilot → Category → Axis Commands</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Pitch</td><td>To be assigned</td></tr>
+<tr><td>Roll</td><td>To be assigned</td></tr>
+<tr><td>Rudder</td><td>To be assigned</td></tr>
+<tr><td>Throttle Left</td><td>To be assigned</td></tr>
+<tr><td>Throttle Right</td><td>To be assigned</td></tr>
+<tr><td>Throttle (both)</td><td>Alternatively assign this if you only have one throttle axis available</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--stick-2"><a class="header" href="#f-14bu-pilot--category--stick-2">F-14B(U) Pilot → Category → Stick</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Autopilot Reference / Nosewheel Steering Toggle</td><td><kbd>N</kbd></td></tr>
+<tr><td>DLC Toggle / Countermeasure Dispense</td><td>To be assigned</td></tr>
+<tr><td>DLC Thumbwheel Forward</td><td>To be assigned</td></tr>
+<tr><td>DLC Thumbwheel Aft</td><td>To be assigned</td></tr>
+<tr><td>Trigger</td><td>De-assign <strong>Spacebar</strong></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--throttle-2"><a class="header" href="#f-14bu-pilot--category--throttle-2">F-14B(U) Pilot → Category → Throttle</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Exterior Lights Master Switch ON</td><td>To be assigned</td></tr>
+<tr><td>Exterior Lights Master Switch OFF</td><td>To be assigned</td></tr>
+<tr><td>Left Engine Cutoff - ON</td><td>To be assigned</td></tr>
+<tr><td>Right Engine Cutoff - ON</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Forward</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Aft</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Auto Mode</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Bomb Mode</td><td>To be assigned</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--communications-1"><a class="header" href="#f-14bu-pilot--category--communications-1">F-14B(U) Pilot → Category → Communications</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Communication Menu</td><td><kbd>\</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--flight-control-2"><a class="header" href="#f-14bu-pilot--category--flight-control-2">F-14B(U) Pilot → Category → Flight Control</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Catapult Hook Up</td><td><kbd>U</kbd></td></tr>
+<tr><td>Catapult Salute</td><td><kbd>Left Shift</kbd> + <kbd>U</kbd></td></tr>
+<tr><td>Flaps Up</td><td><kbd>Left Shift</kbd> + <kbd>F</kbd></td></tr>
+<tr><td>Flaps Down</td><td><kbd>F</kbd></td></tr>
+<tr><td>Trim Pitch Up</td><td><kbd>Right Ctrl</kbd> + <kbd>.</kbd></td></tr>
+<tr><td>Trim Pitch Down</td><td><kbd>Right Ctrl</kbd> + <kbd>;</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--gears-brakes-and-hook-2"><a class="header" href="#f-14bu-pilot--category--gears-brakes-and-hook-2">F-14B(U) Pilot → Category → Gears, Brakes, and Hook</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Gears Up</td><td><kbd>Left Shift</kbd> + <kbd>G</kbd></td></tr>
+<tr><td>Gears Down</td><td><kbd>Left Ctrl</kbd> + <kbd>G</kbd></td></tr>
+<tr><td>Hook Extend</td><td><kbd>Left Ctrl</kbd> + <kbd>H</kbd></td></tr>
+<tr><td>Hook Retract</td><td><kbd>Left Shift</kbd> + <kbd>H</kbd></td></tr>
+<tr><td>Speed Brake Extend</td><td><kbd>Left Ctrl</kbd> + <kbd>B</kbd></td></tr>
+<tr><td>Speed Brake Retract</td><td><kbd>Left Shift</kbd> + <kbd>B</kbd></td></tr>
+<tr><td>Wheel Brake Both (Gradual)</td><td>To be assigned</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--jester-ai-1"><a class="header" href="#f-14bu-pilot--category--jester-ai-1">F-14B(U) Pilot → Category → Jester AI</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Toggle Menu</td><td><kbd>A</kbd></td></tr>
+<tr><td>Command 3</td><td><kbd>Left Ctrl</kbd> + <kbd>3</kbd></td></tr>
+<tr><td>Command 4</td><td><kbd>Left Ctrl</kbd> + <kbd>4</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--systems-1"><a class="header" href="#f-14bu-pilot--category--systems-1">F-14B(U) Pilot → Category → Systems</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Seat Adjustment Up</td><td><kbd>Left Shift</kbd> + <kbd>S</kbd></td></tr>
+<tr><td>Seat Adjustment Down</td><td><kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>S</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="lesson-02b-audio--text"><a class="header" href="#lesson-02b-audio--text">Lesson 02b: Audio &amp; Text</a></h2>
+<p>Always listen carefully to the instructor. Assume that everything he says is
+important. All text is displayed at the top right corner of the screen. The text
+remains visible on the screen for a maximum of 1000 seconds, until it either
+disappears after that time, or is replaced by new text. You can access the
+message log by pressing the ESC key, and then selecting MESSAGES HISTORY
+anytime.</p>
+<h2 id="lesson-02b-tips--tricks"><a class="header" href="#lesson-02b-tips--tricks">Lesson 02b: Tips &amp; tricks</a></h2>
+<p><em>To be filled in once fellow pilots send some feedback ...</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="lesson-03-f-14bu-cold-start-carrier-rio"><a class="header" href="#lesson-03-f-14bu-cold-start-carrier-rio">Lesson 03: F-14B(U) Cold Start Carrier RIO</a></h1>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/lesson2bimage.jpg" alt="Lesson 03 Design"><span class="img-wrapper"><img src="img/bu/lesson2bimage.jpg" alt="Lesson 03 Design"></span></label></p>
+<h2 id="lesson-03-introduction"><a class="header" href="#lesson-03-introduction">Lesson 03: Introduction</a></h2>
+<p>Welcome to the cold &amp; dark start up of the F-14B(U) Tomcat on the carrier! Your
+aircraft is spawned cold on the parking area of the CVN-74, and you are placed
+in the RIO seat. It is not possible to switch seats during the course of the
+lesson.</p>
+<h2 id="objectives-3"><a class="header" href="#objectives-3">Objectives</a></h2>
+<p>The instructor will guide you through the PRESTART procedure and the POSTSTART
+procedure for carrier operations, but without actually starting the engines. All
+RIO systems can be used because ground power and external cooling air are
+available. Since the back seat doesn't provide primary flight controls, you will
+then have the choice to either emphasize on the RIO cockpit and the systems
+(which we highly recommend by the way), or to end the lesson.</p>
+<h2 id="prerequisites-3"><a class="header" href="#prerequisites-3">Prerequisites</a></h2>
+<p>For the procedures covered in this lesson you do not need experience on the
+older versions of the Tomcat.</p>
+<p>It is recommended that you first glance over the procedures in order to get a
+first overview. Look into your kneeboard or the pictures in the briefing window.
+Following the procedures from top to down, you may then read through the
+respective sections in the aircraft manual for each aircraft system, although
+this takes a considerable amount of time and is not really required for
+accomplishing the lesson. Another option is to hop into the jet, start over with
+the lesson, and in case you are interested in more details on a certain system,
+open up the in-game manual and read after while going through the procedures.</p>
+<h2 id="interaction-3"><a class="header" href="#interaction-3">Interaction</a></h2>
+<p>Considering you set everything correctly, you can skip instructions by pressing
+SPACEBAR, although for many steps it's better to listen carefully before taking
+action!</p>
+<h2 id="planned-duration-1"><a class="header" href="#planned-duration-1">Planned duration</a></h2>
+<p>Considering you listen to all instructions and perform all system tests
+carefully, this lesson takes about 20 minutes. If you skip the instructions and
+leave out all system tests, this lesson takes about 10 minutes.</p>
+<h2 id="lesson-03-documentation"><a class="header" href="#lesson-03-documentation">Lesson 03: Documentation</a></h2>
+<p>If you feel the need for knowledge, you may read through the following chapters
+of the manual:</p>
+<p>Chapter &gt;
+<a href="#environmental-control-system">External ECS Air Supply</a></p>
+<p>Chapter &gt; <a href="#oxygen-system">Oxygen System</a></p>
+<p>Chapter &gt;
+<a href="#ics---intercommunications-system">ICS - Intercommunications System</a></p>
+<p>Chapter &gt;
+<a href="#fuel-system">Fuel System</a></p>
+<p>Chapter &gt;
+<a href="#internal-lighting">Internal Lighting</a></p>
+<p>Chapter &gt;
+<a href="#master-test-selector">Master Test Selector</a></p>
+<p>Chapter &gt; <a href="#ejection-system">Ejection System</a></p>
+<p>Chapter &gt; <a href="#canopy">Canopy</a></p>
+<p>Chapter &gt; <a href="#systems-overview-1">Systems Overview</a></p>
+<p>Chapter &gt; <a href="#link-4a--c-data-link">Link 4A &amp; C Data Link</a></p>
+<p>Chapter &gt;
+<a href="#wcs-power-switch">WCS Power Switch</a></p>
+<p>Chapter &gt;
+<a href="#programmable-tactical-information-display-1">PTID</a></p>
+<p>Chapter &gt;
+<a href="#anawg-9-and-aim-54-cooling">AN/AWG-9 and AIM-54 Cooling</a></p>
+<p>Chapter &gt;
+<a href="#egi-alignment-modes">EGI ALIGNMENT MODES</a></p>
+<p>Chapter &gt; <a href="#mission-data-loader">DTC/MDL</a></p>
+<p>Chapter &gt;
+<a href="#the-cdnu-flight-plan-and-steering-sources">CDNU</a></p>
+<p>Chapter &gt;
+<a href="#irtv-switch">IR/TV Switch</a></p>
+<p>Chapter &gt;
+<a href="#navigation-controls-and-displays">NAVIGATION CONTROLS AND DISPLAYS</a></p>
+<p>Chapter &gt;
+<a href="#analr-67-rwr">AN/ALR-67 RWR</a></p>
+<p>Chapter &gt;
+<a href="#decm-controls-and-indicators">DECM Controls and Indicators</a></p>
+<p>Chapter &gt;
+<a href="#identification-systems">AN/APX-76 IFF Interrogator</a></p>
+<p>Chapter &gt;
+<a href="#detail-data-display-ddd-and-panel">Detail Data Display (DDD) and Panel</a></p>
+<p>Chapter &gt; <a href="#anale-47-countermeasures-dispensing-set">ALE-47</a></p>
+<p>Chapter &gt; <a href="#bearing-distance-heading-indicator">BDHI</a></p>
+<p>Chapter &gt;
+<a href="#standby-attitude-indicator-3">Standby Attitude Indicator</a></p>
+<h2 id="lesson-03-keybindings"><a class="header" href="#lesson-03-keybindings">Lesson 03: Keybindings</a></h2>
+<p>Before flying the lesson, check &amp; assign all necessary actions and keybindings
+for the F-14B(U) RIO! Take special care for bindings that have no clickable
+control elements in the cockpit!</p>
+<h3 id="f-14bu-rio--category--communications"><a class="header" href="#f-14bu-rio--category--communications">F-14B(U) RIO → Category → Communications</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Communication Menu</td><td><kbd>\</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-rio--category--systems"><a class="header" href="#f-14bu-rio--category--systems">F-14B(U) RIO → Category → Systems</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Seat Adjustment Up</td><td><kbd>Left Shift</kbd> + <kbd>S</kbd></td></tr>
+<tr><td>Seat Adjustment Down</td><td><kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>S</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-rio--category--cockpit-mechanics"><a class="header" href="#f-14bu-rio--category--cockpit-mechanics">F-14B(U) RIO → Category → Cockpit Mechanics</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Toggle Canopy</td><td><kbd>Left Ctrl</kbd> + <kbd>C</kbd></td></tr>
+<tr><td>Canopy - CLOSE</td><td>To be assigned (alternative to Toggle Canopy)</td></tr>
+<tr><td>Canopy - OPEN</td><td>To be assigned (alternative to Toggle Canopy)</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-rio--category--axis-commands"><a class="header" href="#f-14bu-rio--category--axis-commands">F-14B(U) RIO → Category → Axis Commands</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>HCU Left/Right</td><td>To be assigned</td></tr>
+<tr><td>HCU Up/Down</td><td>To be assigned</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-rio--category--hand-control-unit"><a class="header" href="#f-14bu-rio--category--hand-control-unit">F-14B(U) RIO → Category → Hand Control Unit</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>HCU Half Action</td><td><kbd>Home</kbd></td></tr>
+<tr><td>HCU Full Action</td><td><kbd>Page Up</kbd></td></tr>
+<tr><td>HCU Offset</td><td>To be assigned</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="lesson-03-audio--text"><a class="header" href="#lesson-03-audio--text">Lesson 03: Audio &amp; Text</a></h2>
+<p>Always listen carefully to the instructor. Assume that everything he says is
+important. All text is displayed at the top right corner of the screen. The text
+remains visible on the screen for a maximum of 1000 seconds, until it either
+disappears after that time, or is replaced by new text. You can access the
+message log by pressing the ESC key, and then selecting MESSAGES HISTORY
+anytime.</p>
+<h2 id="lesson-03-tips--tricks"><a class="header" href="#lesson-03-tips--tricks">Lesson 03: Tips &amp; tricks</a></h2>
+<p><em>To be filled in once fellow pilots send some feedback ...</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="lesson-04-f-14bu-basic-navigation"><a class="header" href="#lesson-04-f-14bu-basic-navigation">Lesson 04: F-14B(U) Basic Navigation</a></h1>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/lesson4image.jpg" alt="Lesson 04 Design"><span class="img-wrapper"><img src="img/bu/lesson4image.jpg" alt="Lesson 04 Design"></span></label></p>
+<h2 id="lesson-04-introduction"><a class="header" href="#lesson-04-introduction">Lesson 04: Introduction</a></h2>
+<p>Welcome to the basic navigation flight in the F-14B(U) Tomcat. You aircraft is
+hot on the parking spot on the airfield in Senaik-Kolkhi, and you are placed in
+the PILOT seat. It is possible to switch seats during the course of the lesson.</p>
+<h2 id="objectives-4"><a class="header" href="#objectives-4">Objectives</a></h2>
+<p>The instructor will guide you through the flight through western Georgia.</p>
+<p>It first starts with a comparison of the navigations systems of the older and
+the newer Tomcat variants, followed by an introduction to the waypoint
+management and the BDHI in the new variant.</p>
+<p>The instructor then guides you through some cockpit preparations and will
+explain the planned route. In order to perform the management of the navigations
+system and its waypoints, you may decide to work together with Jester, or switch
+seats to do some Jester work from the rear seat on your own.</p>
+<p>The flight takes you through a few waypoints over land, and a visit of the
+aircraft carrier over sea, using different steering methods, like the EGI
+GPS/inertial navigation functionality and the TACAN radio navigation system
+functionality.</p>
+<h2 id="prerequisites-4"><a class="header" href="#prerequisites-4">Prerequisites</a></h2>
+<p>For this flight, you need some experience on any of the older Tomcat variants,
+at least in terms of taxi, takeoff and cruise.</p>
+<h2 id="interaction-4"><a class="header" href="#interaction-4">Interaction</a></h2>
+<p>Considering you set everything correctly, you can skip instructions by pressing
+SPACEBAR, although for many steps it's better to listen carefully before taking
+action!</p>
+<h2 id="planned-duration-2"><a class="header" href="#planned-duration-2">Planned duration</a></h2>
+<p>Considering you listen to all instructions and approach all navigation points,
+this flight takes about 30 to 60 minutes, depending on your learning experience
+and your airspeed.</p>
+<h2 id="lesson-04-documentation"><a class="header" href="#lesson-04-documentation">Lesson 04: Documentation</a></h2>
+<p>If you feel the need for knowledge, you may read through the following chapters
+of the manual:</p>
+<p>Chapter &gt; <a href="#systems-overview-1">Systems Overview</a></p>
+<p>Chapter &gt; <a href="#navigation-controls-and-displays">NAV (general)</a></p>
+<p>Chapter &gt; <a href="#vertical-display-indicator-group-replacement">VDIG-R (pilot seat)</a></p>
+<p>Chapter &gt; <a href="#bearing-distance-heading-indicator">BDHI (both seats)</a></p>
+<p>Chapter &gt;
+<a href="#the-cdnu-flight-plan-and-steering-sources">CDNU (rear seat)</a></p>
+<p>Chapter &gt; <a href="#programmable-tactical-information-display">PTID (rear seat)</a></p>
+<h3 id="other-stuff"><a class="header" href="#other-stuff">Other stuff</a></h3>
+<p>Please review other topics to brush up your knowledge in case necessary:</p>
+<ul>
+<li>Jester wheel handling</li>
+<li>Seat switching</li>
+<li>Basic aircraft handling</li>
+<li>Flight controls</li>
+<li>Wing sweep</li>
+<li>Flaps &amp; slats</li>
+<li>Landing gear</li>
+<li>Nose wheel steering</li>
+<li>Parking brake</li>
+<li>Wheel braking</li>
+<li>Throttle settings</li>
+</ul>
+<h2 id="lesson-04-keybindings"><a class="header" href="#lesson-04-keybindings">Lesson 04: Keybindings</a></h2>
+<p>Before flying the lesson, check &amp; assign all necessary actions and keybindings
+for the F-14B(U) Pilot, and in case you want to switch seats also for the
+F-14B(U) RIO! Take special care for bindings that have no clickable control
+elements in the cockpit!</p>
+<h3 id="f-14bu-pilot--category--axis-commands-3"><a class="header" href="#f-14bu-pilot--category--axis-commands-3">F-14B(U) Pilot → Category → Axis Commands</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Pitch</td><td>To be assigned</td></tr>
+<tr><td>Roll</td><td>To be assigned</td></tr>
+<tr><td>Rudder</td><td>To be assigned</td></tr>
+<tr><td>Throttle Left</td><td>To be assigned</td></tr>
+<tr><td>Throttle Right</td><td>To be assigned</td></tr>
+<tr><td>Throttle (both)</td><td>Alternatively assign this if you only have one throttle axis available</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--stick-3"><a class="header" href="#f-14bu-pilot--category--stick-3">F-14B(U) Pilot → Category → Stick</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Autopilot Reference / Nosewheel Steering Toggle</td><td><kbd>N</kbd></td></tr>
+<tr><td>DLC Toggle / Countermeasure Dispense</td><td>To be assigned</td></tr>
+<tr><td>DLC Thumbwheel Forward</td><td>To be assigned</td></tr>
+<tr><td>DLC Thumbwheel Aft</td><td>To be assigned</td></tr>
+<tr><td>Trigger</td><td>De-assign <strong>Spacebar</strong></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--throttle-3"><a class="header" href="#f-14bu-pilot--category--throttle-3">F-14B(U) Pilot → Category → Throttle</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Exterior Lights Master Switch ON</td><td>To be assigned</td></tr>
+<tr><td>Exterior Lights Master Switch OFF</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Forward</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Aft</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Auto Mode</td><td>To be assigned</td></tr>
+<tr><td>Wing Sweep Bomb Mode</td><td>To be assigned</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--communications-2"><a class="header" href="#f-14bu-pilot--category--communications-2">F-14B(U) Pilot → Category → Communications</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Communication Menu</td><td><kbd>\</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--flight-control-3"><a class="header" href="#f-14bu-pilot--category--flight-control-3">F-14B(U) Pilot → Category → Flight Control</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Flaps Up</td><td><kbd>Left Shift</kbd> + <kbd>F</kbd></td></tr>
+<tr><td>Flaps Down</td><td><kbd>F</kbd></td></tr>
+<tr><td>Trim Pitch Up</td><td><kbd>Right Ctrl</kbd> + <kbd>.</kbd></td></tr>
+<tr><td>Trim Pitch Down</td><td><kbd>Right Ctrl</kbd> + <kbd>;</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--gears-brakes-and-hook-3"><a class="header" href="#f-14bu-pilot--category--gears-brakes-and-hook-3">F-14B(U) Pilot → Category → Gears, Brakes, and Hook</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Gears Up</td><td><kbd>Left Shift</kbd> + <kbd>G</kbd></td></tr>
+<tr><td>Gears Down</td><td><kbd>Left Ctrl</kbd> + <kbd>G</kbd></td></tr>
+<tr><td>Speed Brake Extend</td><td><kbd>Left Ctrl</kbd> + <kbd>B</kbd></td></tr>
+<tr><td>Speed Brake Retract</td><td><kbd>Left Shift</kbd> + <kbd>B</kbd></td></tr>
+<tr><td>Wheel Brake Both (Gradual)</td><td>To be assigned</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--jester-ai-2"><a class="header" href="#f-14bu-pilot--category--jester-ai-2">F-14B(U) Pilot → Category → Jester AI</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Toggle Menu</td><td><kbd>A</kbd></td></tr>
+<tr><td>Command 1/2/3/4/5/6/7/8</td><td><kbd>Left Ctrl</kbd> + <kbd>1/2/3/4/5/6/7/8</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--systems-2"><a class="header" href="#f-14bu-pilot--category--systems-2">F-14B(U) Pilot → Category → Systems</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Seat Adjustment Up</td><td><kbd>Left Shift</kbd> + <kbd>S</kbd></td></tr>
+<tr><td>Seat Adjustment Down</td><td><kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>S</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-pilot--category--view-cockpit-1"><a class="header" href="#f-14bu-pilot--category--view-cockpit-1">F-14B(U) Pilot → Category → View Cockpit</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Occupy WSO Seat</td><td><kbd>2</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="f-14bu-rio--category--view-cockpit-1"><a class="header" href="#f-14bu-rio--category--view-cockpit-1">F-14B(U) RIO → Category → View Cockpit</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Command</th><th>Suggested Assignment</th></tr>
+</thead>
+<tbody>
+<tr><td>Occupy Pilot Seat</td><td><kbd>1</kbd></td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="lesson-04-audio--text"><a class="header" href="#lesson-04-audio--text">Lesson 04: Audio &amp; Text</a></h2>
+<p>Always listen carefully to the instructor. Assume that everything he says is
+important. All text is displayed at the top right corner of the screen. The text
+remains visible on the screen for a maximum of 1000 seconds, until it either
+disappears after that time, or is replaced by new text. You can access the
+message log by pressing the ESC key, and then selecting MESSAGES HISTORY
+anytime.</p>
+<h2 id="lesson-04-tips--tricks"><a class="header" href="#lesson-04-tips--tricks">Lesson 04: Tips &amp; tricks</a></h2>
+<p><em>To be filled in once fellow pilots send some feedback ...</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="f-14bu-jdam-pp-mode"><a href="#f-14bu-jdam-pp-mode" class="header">F-14BU JDAM PP Mode</a></h1>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="f-14bu-jdam-too-mode"><a href="#f-14bu-jdam-too-mode" class="header">F-14BU JDAM TOO Mode</a></h1>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="acronyms-and-abbreviations"><a class="header" href="#acronyms-and-abbreviations">Acronyms and Abbreviations</a></h1>
 <h2 id="a"><a class="header" href="#a">A</a></h2>
