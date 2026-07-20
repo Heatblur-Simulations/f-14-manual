@@ -49,18 +49,25 @@ option overrides the livery refueling probe cover option.
 
 ## DTC
 
+The F-14B Upgrade has its Mission Data Loader integrated into DCS' Mission
+Editor using the DTC menu. Refer to the
+[Mission Data Loader section](../systems/mdl/mission_data_loader.md) on more
+in-depth how to use MDL with the DTC menu.
+
 ### Navigation
 
-> 🚧 Work in Progress
-
 ![DTC Navigation Page](../../img/dtc_navigation_page.jpg)
+
+Refer to the
+[Flight Plan subsection](../systems/mdl/mission_data_loader.md#flight-plan) of
+the MDL section for more information.
 
 ### JDAM
 
 ![DTC JDAM Page](../../img/dtc_jdam_page.jpg)
 
 See the
-[Pre-Planned JDAM Employment section](..//weapons/air_to_ground/gps_guided_weapons/ggw_employment.md#pre-planned-jdam-employment)
+[Pre-Planned JDAM Employment section](../weapons/air_to_ground/gps_guided_weapons/ggw_employment.md#pre-planned-jdam-employment)
 for further information on programming the JDAMs using the DTC menu.
 
 ### CMDS
@@ -80,6 +87,9 @@ Refer to the
 page for my information on how to use the Tactical Imaging Set.
 
 #### Ownship Callsign
+
+Callsign for ownship can be changed here. By default, "Use mission callsign", is
+checked which means the DCS unit name (pilot) set in the mission editor is used.
 
 #### Send-To Callsigns
 
