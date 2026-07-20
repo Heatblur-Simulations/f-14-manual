@@ -227,10 +227,10 @@ fly-to or FPLN waypoint steering.
 
 ### Active Flight Plan Waypoint
 
-The active waypoint is the waypoint to which all flight instruments (in EGI
-steering) and CDNU guidance displays are referenced. Pressing the FPLN key on
-the CDNU will access the Flight Plan page with the active waypoint displayed.
-Associated with the active waypoint are the following quantities:
+The active waypoint is the waypoint to which all flight instrument and CDNU
+guidance displays are referenced. Pressing the FPLN key on the CDNU will access
+the Flight Plan page with the active waypoint displayed. Associated with the
+active waypoint are the following quantities:
 
 1. Current desired inbound horizontal course,
 2. Current desired inbound vertical angle (optional, contingent on entry of
@@ -520,7 +520,7 @@ STEP 3: Vertical scroll until MDL START page
 The Mission Data Loader (MDL) provides bulk storage of mission essential data.
 The Data Transfer Module (DTM), can be loaded in the Mission Editor with up to
 12 flight plans, Pre-Planned Missions for JDAM employment and countermeasure
-profiles for the ALE-47 CDMS.
+profiles for the ALE-47 CMDS.
 
 The MDL Start page is accessed by scrolling up from the EGI Start 1/2 page or
 down from the EGI Start 2/2 page. Display line 3 contains the MDL cartridge

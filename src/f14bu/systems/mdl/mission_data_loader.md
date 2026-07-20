@@ -217,9 +217,9 @@ For an in depth discussion of plot lines refer to the
 The JDAM Planning Tool section is found in the
 [GGW Pre Planned Employment Section](../../../f14bu/weapons/air_to_ground/gps_guided_weapons/ggw_employment.md#pre-planned-jdam-employment).
 
-## ALE-47 Counter Measure Dispensing system (CDMS) programming
+## ALE-47 Counter Measure Dispensing system (CMDS) programming
 
-The CDMS programmer is found in the
+The CMDS programmer is found in the
 [ALE-47 Section](../../../f14bu/systems/defensive_systems/countermeasures/ale_47.md#programmer).
 
 ## Tactical Imaging System

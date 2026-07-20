@@ -13,8 +13,8 @@ qualifications, the training lessons introduce you to new features of the B(U)
 variant. You will work through the new systems, refined avionics, and updated
 workflows that are required to master this wonderful airplane. We've thoroughly
 revised the most important lessons in order to improve the quality, stability,
-clearity, and learning experience for the most important crew members on the
-course of our longterm Tomcat journey, and that is YOU.
+clarity, and learning experience for the most important crew members during the
+course of our long-term Tomcat journey, and that is YOU.
 
 ## Lesson design
 
@@ -30,7 +30,7 @@ between the original F-14A/B lessons from 2019, and the newer F-4E lessons
 from 2024. The following slide shows the didactic elements used in the F-14B(U)
 training lessons:
 
-[Insert Image]
+![Lesson Design](../../../img/bu/lesson_design.jpg)
 
 ## For beginners
 
@@ -93,12 +93,12 @@ entirely. Omitting steps of the original procedures leads to leaving out their
 numbering during the course of the procedure. Please note that the procedure can
 therefore continue with step 27 right after step 22. Think, for example, of the
 ejection seat harness, the oxygen mask and its test, the transponder, or similar
-items which cannot be set or tested. Furthermore, certain steps (like many of
-the internal inspection procedure) were not coded because the respective
-controls/switches are already set correctly after spawning the aircraft. This
-was decided to help you speed up the lesson tempo to get you in the air; of
-course you may check all these items after entering the cockpit and before
-pressing SPACEBAR for the first time.
+items which cannot be set or tested. Furthermore, certain steps were not coded
+because the respective controls/switches are already set correctly after
+spawning the aircraft. This was decided in order to help you speed up the lesson
+tempo and to get you in the air as quickly as possible; of course you may check
+all these items after entering the cockpit and before pressing SPACEBAR for the
+first time.
 
 ## Interaction
 
@@ -107,36 +107,59 @@ done / checked / heard / found in the cockpit, or to simply progress with the
 lesson. Therefore, please make sure that the SPACEBAR key is not assigned to any
 other action, like "Weapon fire" or similar.
 
+## Lesson overview
+
+For your training on the F-14B(U) Tomcat, these lessons are currently available:
+
+### Difference training
+
+Lesson 01: F-14BU Differences Familiarization
+
+Lesson 04: F-14BU Basic Navigation
+
+### Type training
+
+Lesson 02a: F-14BU Cold Start Airfield PILOT
+
+Lesson 02b: F-14BU Cold Start Carrier PILOT
+
+Lesson 03: F-14BU Cold Start Carrier RIO
+
+### Weapon training
+
+F-14BU JDAM PP Mode
+
+F-14BU JDAM TOO Mode
+
 ## General Tips & Tricks
 
-- Before starting a lesson once loaded, make sure the keybindings and HOTAS
-  assignments are done properly. For this, go to OPTIONS > CONTROLS and assign
-  keys and joystick / throttle buttons to the most important functions. The
-  lessons usually provide a list of keybindings used in that particular lesson,
-  and a few more that we think you could need. DCS only provides a rough basic
-  setup for most HOTAS controls available on the market, so it is worth looking
-  into this before beginning.
+- Once the lesson was loaded, right before pressing SPACEBAR for the first time,
+  please make sure that the actions (keybindings and HOTAS assignments) are done
+  properly. For this, go to OPTIONS > CONTROLS and assign keys and joystick /
+  throttle buttons to the most important actions. The lessons usually provide a
+  list of actions used in that particular lesson, and a few more that we think
+  you could need. DCS only provides a rough basic setup for most HOTAS controls
+  available on the market, so it is worth looking into this before beginning.
 
 - Make sure your system is able to keep a suitable frame rate of at least 30 fps
   throughout the normal game play. For this, adjust your graphic settings in
   OPTIONS > SYSTEM. You may load one of the INSTANT ACTION MISSIONS, and see how
   your system performs.
 
-- The lessons contain a lot audio material spoken by an instructor, so be
+- The lessons contain a lot of audio material spoken by an instructor, so be
   prepared to listen a lot. Therefore, adjust the audio settings to a
-  comfortable level in OPTIONS > AUDIO. The lessons are designed in a way, that
-  no other surrounding noise disturbs the flow of the lesson, with the exception
-  of one lesson, which has a nice surprise right at the beginning (sorry, but we
-  couldn't resist).
+  comfortable level in OPTIONS > AUDIO. The lessons are designed in a way, so
+  that no other surrounding noise disturbs the flow of the lesson, with the
+  exception of one lesson, which has a nice surprise right at the beginning
+  (sorry, but we couldn't resist).
 
 ## Time acceleration
 
 The influence of the time accelerationfunction on the stability of the lessons
 is not documented properly. The lessons do not contain phases in which nothing
 happens for a long time, so mostly you will not need it. To be on the safe side,
-it is most probably better to not use the time acceleration function. Especially
-if you would like to save track files of your lessons, it is highly recommended
-to not use it.
+it is most probably better not to use the time acceleration function, especially
+if you would like to save track files of your lessons.
 
 ## Lesson got stuck
 
@@ -147,12 +170,12 @@ measures:
 
 - Act like a pilot: Stay calm!
 
-- Check if everything in the aircraft is actually set up as required according
-  to the checklist/procedure. If necessary, check each of the previous steps
+- Check if everything is actually set up as required and according to the
+  checklist / procedure. If necessary, check each of the previous steps
   individually and carefully, starting from the top by asking yourself the
-  following questions: "What is written in the procedure/checklist/book?" and
-  "How did I set it up?". An example is the Wing Sweep Handle; it can be moved
-  fully aft, but if the oversweep locks open, you may then move it further aft.
+  following questions: "What is written in the procedure / checklist / book?"
+  and "How did I set it up?". An example is the Wing Sweep Handle; it can be
+  moved aft, but if the oversweep locks open, you may then move it further aft.
   This requires precision and patience, but also knowledge of how the lever and
   the control and indication system works.
 
@@ -169,6 +192,6 @@ measures:
 - If you then still suspect the same issue, please open a new ticket in the DCS
   forum: English > Licensed Third Party Projects > Heatblur Simulations > DCS:
   F-14B(U) > [Problems](https://forum.dcs.world/forum/1434-bugs-problems) Please
-  add as much information as possible in order to help us finding the issue,
-  best is to ad a track file of your flight. We apologize for that, and also
+  add as much information as possible in order to help us finding the issue.
+  Best is to add a track file of your flight. We apologize for that, and also
   thank you in advance for your efforts reporting a possible bug!
