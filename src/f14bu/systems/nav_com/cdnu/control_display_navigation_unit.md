@@ -717,7 +717,7 @@ inserted as the active waypoint regardless if LSK1 or LSK2 is depressed.
 
 ![FPLN Insert Waypoint](../../../../img/dark/cdnu_fpln_page_ll_guide.svg)
 
-(<num>3</num>) New waypoint added between AAA and BBB.
+(<num>3</num>) New waypoint is inserted before AAA.
 
 ### Bearing/Distance Vector Waypoint Calculator
 
