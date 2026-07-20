@@ -1,12 +1,14 @@
 # Lesson 04: F-14B(U) Basic Navigation
 
+![Lesson 04 Design](../../../img/bu/lesson4image.jpg)
+
 ## Lesson 04: Introduction
 
 Welcome to the basic navigation flight in the F-14B(U) Tomcat. You aircraft is
 hot on the parking spot on the airfield in Senaik-Kolkhi, and you are placed in
 the PILOT seat. It is possible to switch seats during the course of the lesson.
 
-### Objectives
+## Objectives
 
 The instructor will guide you through the flight through western Georgia.
 
@@ -24,18 +26,18 @@ aircraft carrier over sea, using different steering methods, like the EGI
 GPS/inertial navigation functionality and the TACAN radio navigation system
 functionality.
 
-### Prerequisites
+## Prerequisites
 
 For this flight, you need some experience on any of the older Tomcat variants,
 at least in terms of taxi, takeoff and cruise.
 
-### Interaction
+## Interaction
 
 Considering you set everything correctly, you can skip instructions by pressing
 SPACEBAR, although for many steps it's better to listen carefully before taking
 action!
 
-### Planned duration
+## Planned duration
 
 Considering you listen to all instructions and approach all navigation points,
 this flight takes about 30 to 60 minutes, depending on your learning experience
@@ -43,31 +45,21 @@ and your airspeed.
 
 ## Lesson 04: Documentation
 
-### Chapter: Systems Overview
+If you feel the need for knowledge, you may read through the following chapters
+of the manual:
 
-<https://heatblur-simulations.github.io/f-14bu-manual/f14bu/systems/overview.html>
+Chapter > [Systems Overview](../../systems/overview.md)
 
-### Chapter: NAV (general)
+Chapter > [NAV (general)](../../systems/nav_com/navigation_controls_displays.md)
 
-<https://heatblur-simulations.github.io/f-14bu-manual/f14bu/systems/nav_com>
+Chapter > [VDIG-R (pilot seat)](../../systems/vdig_r/overview.md)
 
-navigation_controls_displays.html
+Chapter > [BDHI (both seats)](../../systems/nav_com/bdhi.md)
 
-### Chapter: VDIG-R (pilot seat)
+Chapter >
+[CDNU (rear seat)](../../systems/nav_com/cdnu/control_display_navigation_unit.md#the-cdnu-flight-plan-and-steering-sources)
 
-<https://heatblur-simulations.github.io/f-14bu-manual/f14bu/systems/vdig_r/overview.html>
-
-### Chapter: BDHI (both seats)
-
-<https://heatblur-simulations.github.io/f-14bu-manual/f14bu/systems/nav_com/bdhi.html>
-
-### Chapter: CDNU (rear seat)
-
-<https://heatblur-simulations.github.io/f-14bu-manual/f14bu/systems/nav_com/cdnu/control_display_navigation_unit.html#the-cdnu-flight-plan-and-steering-sources>
-
-### Chapter: PTID (rear seat)
-
-<https://heatblur-simulations.github.io/f-14bu-manual/f14bu/systems/ptid/overview.html>
+Chapter > [PTID (rear seat)](../../systems/ptid/overview.md)
 
 ### Other stuff
 
@@ -92,88 +84,88 @@ for the F-14B(U) Pilot, and in case you want to switch seats also for the
 F-14B(U) RIO! Take special care for bindings that have no clickable control
 elements in the cockpit!
 
-### F-14B(U) Pilot > Category > Axis Commands
+### F-14B(U) Pilot → Category → Axis Commands
 
-| Action                                                               | Binding        |
-| -------------------------------------------------------------------- | -------------- |
-| "Pitch"                                                              | to be assigned |
-| "Roll"                                                               | to be assigned |
-| "Rudder"                                                             | to be assigned |
-| "Throttle Left"                                                      | to be assigned |
-| "Throttle Right"                                                     | to be assigned |
-| "Throttle (both)"; alternatively if you have only one axis available | to be assigned |
+| Command         | Suggested Assignment                                                   |
+| --------------- | ---------------------------------------------------------------------- |
+| Pitch           | To be assigned                                                         |
+| Roll            | To be assigned                                                         |
+| Rudder          | To be assigned                                                         |
+| Throttle Left   | To be assigned                                                         |
+| Throttle Right  | To be assigned                                                         |
+| Throttle (both) | Alternatively assign this if you only have one throttle axis available |
 
-### F-14B(U) Pilot > Category > Stick
+### F-14B(U) Pilot → Category → Stick
 
-| Action                                            | Binding                   |
-| ------------------------------------------------- | ------------------------- |
-| "Autopilot Reference / Nosewheel Steering Toggle" | N                         |
-| "DLC Toggle/Countermeasure Dispense"              | to be assigned            |
-| "DLC Thumbwheel Forward"                          | to be assigned            |
-| "DLC Thumbwheel Aft"                              | to be assigned            |
-| "Trigger"                                         | please de-assign SPACEBAR |
+| Command                                         | Suggested Assignment   |
+| ----------------------------------------------- | ---------------------- |
+| Autopilot Reference / Nosewheel Steering Toggle | <kbd>N</kbd>           |
+| DLC Toggle / Countermeasure Dispense            | To be assigned         |
+| DLC Thumbwheel Forward                          | To be assigned         |
+| DLC Thumbwheel Aft                              | To be assigned         |
+| Trigger                                         | De-assign **Spacebar** |
 
-### F-14B(U) Pilot > Category > Throttle
+### F-14B(U) Pilot → Category → Throttle
 
-| Action                              | Binding        |
-| ----------------------------------- | -------------- |
-| "Exterior Lights Master Switch ON"  | to be assigned |
-| "Exterior Lights Master Switch OFF" | to be assigned |
-| "Wing Sweep Forward"                | to be assigned |
-| "Wing Sweep Aft"                    | to be assigned |
-| "Wing Sweep Auto Mode"              | to be assigned |
-| "Wing Sweep Bomb Mode"              | to be assigned |
+| Command                           | Suggested Assignment |
+| --------------------------------- | -------------------- |
+| Exterior Lights Master Switch ON  | To be assigned       |
+| Exterior Lights Master Switch OFF | To be assigned       |
+| Wing Sweep Forward                | To be assigned       |
+| Wing Sweep Aft                    | To be assigned       |
+| Wing Sweep Auto Mode              | To be assigned       |
+| Wing Sweep Bomb Mode              | To be assigned       |
 
-### F-14B(U) Pilot > Category > Communications
+### F-14B(U) Pilot → Category → Communications
 
-| Action               | Binding |
-| -------------------- | ------- |
-| "Communication menu" | \       |
+| Command            | Suggested Assignment |
+| ------------------ | -------------------- |
+| Communication Menu | <kbd>\\</kbd>        |
 
-### F-14B(U) Pilot > Category > Flight Control
+### F-14B(U) Pilot → Category → Flight Control
 
-| Action            | Binding    |
-| ----------------- | ---------- |
-| "Flaps Up"        | LShift + F |
-| "Flaps Down"      | F          |
-| "Trim Pitch Up"   | RCtrl + .  |
-| "Trim Pitch Down" | RCtrl + ;  |
+| Command         | Suggested Assignment                 |
+| --------------- | ------------------------------------ |
+| Flaps Up        | <kbd>Left Shift</kbd> + <kbd>F</kbd> |
+| Flaps Down      | <kbd>F</kbd>                         |
+| Trim Pitch Up   | <kbd>Right Ctrl</kbd> + <kbd>.</kbd> |
+| Trim Pitch Down | <kbd>Right Ctrl</kbd> + <kbd>;</kbd> |
 
-### F-14B(U) Pilot > Category > Gears, brakes, and hook
+### F-14B(U) Pilot → Category → Gears, Brakes, and Hook
 
-| Action                       | Binding        |
-| ---------------------------- | -------------- |
-| "Gears Up"                   | LShift + G     |
-| "Gears Down"                 | LCtrl + G      |
-| "Speed brake extend"         | LCtrl + B      |
-| "Speed brake retract"        | LShift + B     |
-| "Wheel brake both (Gradual)" | to be assigned |
+| Command                    | Suggested Assignment                 |
+| -------------------------- | ------------------------------------ |
+| Gears Up                   | <kbd>Left Shift</kbd> + <kbd>G</kbd> |
+| Gears Down                 | <kbd>Left Ctrl</kbd> + <kbd>G</kbd>  |
+| Speed Brake Extend         | <kbd>Left Ctrl</kbd> + <kbd>B</kbd>  |
+| Speed Brake Retract        | <kbd>Left Shift</kbd> + <kbd>B</kbd> |
+| Wheel Brake Both (Gradual) | To be assigned                       |
 
-### F-14B(U) Pilot > Category > Jester AI
+### F-14B(U) Pilot → Category → Jester AI
 
-| Action                    | Binding                 |
-| ------------------------- | ----------------------- |
-| "Toggle menu"             | A                       |
-| "Command 1/2/3/4/5/6/7/8" | LCtrl + 1/2/3/4/5/6/7/8 |
+| Command                 | Suggested Assignment                              |
+| ----------------------- | ------------------------------------------------- |
+| Toggle Menu             | <kbd>A</kbd>                                      |
+| Command 1/2/3/4/5/6/7/8 | <kbd>Left Ctrl</kbd> + <kbd>1/2/3/4/5/6/7/8</kbd> |
 
-### F-14B(U) Pilot > Category > Systems
+### F-14B(U) Pilot → Category → Systems
 
-| Action                 | Binding           |
-| ---------------------- | ----------------- |
-| "Seat Adjustment Up"   | LShift + S        |
-| "Seat Adjustment Down" | LAlt + LShift + S |
+| Command              | Suggested Assignment                                       |
+| -------------------- | ---------------------------------------------------------- |
+| Seat Adjustment Up   | <kbd>Left Shift</kbd> + <kbd>S</kbd>                       |
+| Seat Adjustment Down | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>S</kbd> |
 
-### F-14B(U) Pilot > Category > View cockpit
+### F-14B(U) Pilot → Category → View Cockpit
 
-| Action            | Binding |
-| ----------------- | ------- |
-| "Occupy WSO Seat" | 2       |
+| Command         | Suggested Assignment |
+| --------------- | -------------------- |
+| Occupy WSO Seat | <kbd>2</kbd>         |
 
-### F-14B(U) RIO > Category > View cockpit
+### F-14B(U) RIO → Category → View Cockpit
 
-| Action              | Binding |
-| ------------------- | ------- |
-| "Occupy Pilot Seat" | 1       |
+| Command           | Suggested Assignment |
+| ----------------- | -------------------- |
+| Occupy Pilot Seat | <kbd>1</kbd>         |
 
 ## Lesson 04: Audio & Text
 

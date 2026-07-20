@@ -1,6 +1,6 @@
 # Lesson 02a: F-14B(U) Cold Start Airfield PILOT
 
-![Lesson 02 Design](../../../img/bu/lesson1image.jpg)
+![Lesson 02a Design](../../../img/bu/lesson2aimage.jpg)
 
 ## Lesson 02a: Introduction
 
@@ -9,7 +9,7 @@ aircraft is spawned cold on the apron in Batumi airfield, and you are placed in
 the PILOT seat. It is not possible to switch seats during the course of the
 lesson.
 
-### Objectives
+## Objectives
 
 The instructor will guide you through an extremely abbreviated INTERIOR
 INSPECTION procedure, the full PRESTART procedure, the full ENGINE START
@@ -17,7 +17,7 @@ procedure, and the full POSTSTART procedure for land-based operations, until
 reaching "ready for taxi". You will then have the choice to either taxi &
 takeoff on your own discretion without guidance, or to end the lesson.
 
-### Prerequisites
+## Prerequisites
 
 For the procedures covered in this lesson you do not need experience on the
 older versions of the Tomcat.
@@ -31,7 +31,7 @@ accomplishing the lesson. Another option is to hop into the jet, start over with
 the lesson, and in case you are interested in more details on a certain system,
 open up the in-game manual and read after while going through the procedures.
 
-### System tests
+## System tests
 
 As you will notice, many steps during the course of the procedures are system
 tests. If you don't want to perform them, you may bypass them by pressing
@@ -46,13 +46,13 @@ not necessary to perform a system test. The reason behind is that systems
 covered in subsequent steps might need the specific levers / switches / controls
 set to this very position in order to work properly on their side.
 
-### Interaction
+## Interaction
 
 Considering you set everything correctly, you can skip instructions by pressing
 SPACEBAR, although for many steps it's better to listen carefully before taking
 action!
 
-### Duration
+## Duration
 
 Considering you listen to all instructions and perform all system tests
 carefully, this lesson takes about 30 minutes. If you skip the instructions and
@@ -64,79 +64,79 @@ Before flying the lesson, check & assign all necessary actions and keybindings
 for the F-14B(U) Pilot! Take special care for bindings that have no clickable
 control elements in the cockpit!
 
-### F-14B(U) Pilot > Category > Axis Commands
+### F-14B(U) Pilot → Category → Axis Commands
 
-| Action                                                               | Binding        |
-| -------------------------------------------------------------------- | -------------- |
-| "Pitch"                                                              | to be assigned |
-| "Roll"                                                               | to be assigned |
-| "Rudder"                                                             | to be assigned |
-| "Throttle Left"                                                      | to be assigned |
-| "Throttle Right"                                                     | to be assigned |
-| "Throttle (both)"; alternatively if you have only one axis available | to be assigned |
+| Command         | Suggested Assignment                                                   |
+| --------------- | ---------------------------------------------------------------------- |
+| Pitch           | To be assigned                                                         |
+| Roll            | To be assigned                                                         |
+| Rudder          | To be assigned                                                         |
+| Throttle Left   | To be assigned                                                         |
+| Throttle Right  | To be assigned                                                         |
+| Throttle (both) | Alternatively assign this if you only have one throttle axis available |
 
-### F-14B(U) Pilot > Category > Stick
+### F-14B(U) Pilot → Category → Stick
 
-| Action                                            | Binding                   |
-| ------------------------------------------------- | ------------------------- |
-| "Autopilot Reference / Nosewheel Steering Toggle" | N                         |
-| "DLC Toggle/Countermeasure Dispense"              | to be assigned            |
-| "DLC Thumbwheel Forward"                          | to be assigned            |
-| "DLC Thumbwheel Aft"                              | to be assigned            |
-| "Trigger"                                         | please de-assign SPACEBAR |
+| Command                                         | Suggested Assignment   |
+| ----------------------------------------------- | ---------------------- |
+| Autopilot Reference / Nosewheel Steering Toggle | <kbd>N</kbd>           |
+| DLC Toggle / Countermeasure Dispense            | To be assigned         |
+| DLC Thumbwheel Forward                          | To be assigned         |
+| DLC Thumbwheel Aft                              | To be assigned         |
+| Trigger                                         | De-assign **Spacebar** |
 
-### F-14B(U) Pilot > Category > Throttle
+### F-14B(U) Pilot → Category → Throttle
 
-| Action                              | Binding        |
-| ----------------------------------- | -------------- |
-| "Exterior Lights Master Switch ON"  | to be assigned |
-| "Exterior Lights Master Switch OFF" | to be assigned |
-| "Left Engine Cutoff - ON"           | to be assigned |
-| "Right Engine Cutoff - ON"          | to be assigned |
-| "Wing Sweep Forward"                | to be assigned |
-| "Wing Sweep Aft"                    | to be assigned |
-| "Wing Sweep Auto Mode"              | to be assigned |
-| "Wing Sweep Bomb Mode"              | to be assigned |
+| Command                           | Suggested Assignment |
+| --------------------------------- | -------------------- |
+| Exterior Lights Master Switch ON  | To be assigned       |
+| Exterior Lights Master Switch OFF | To be assigned       |
+| Left Engine Cutoff - ON           | To be assigned       |
+| Right Engine Cutoff - ON          | To be assigned       |
+| Wing Sweep Forward                | To be assigned       |
+| Wing Sweep Aft                    | To be assigned       |
+| Wing Sweep Auto Mode              | To be assigned       |
+| Wing Sweep Bomb Mode              | To be assigned       |
 
-### F-14B(U) Pilot > Category > Communications
+### F-14B(U) Pilot → Category → Communications
 
-| Action               | Binding |
-| -------------------- | ------- |
-| "Communication menu" | \       |
+| Command            | Suggested Assignment |
+| ------------------ | -------------------- |
+| Communication Menu | <kbd>\\</kbd>        |
 
-### F-14B(U) Pilot > Category > Flight Control
+### F-14B(U) Pilot → Category → Flight Control
 
-| Action            | Binding    |
-| ----------------- | ---------- |
-| "Flaps Up"        | LShift + F |
-| "Flaps Down"      | F          |
-| "Trim Pitch Up"   | RCtrl + .  |
-| "Trim Pitch Down" | RCtrl + ;  |
+| Command         | Suggested Assignment                 |
+| --------------- | ------------------------------------ |
+| Flaps Up        | <kbd>Left Shift</kbd> + <kbd>F</kbd> |
+| Flaps Down      | <kbd>F</kbd>                         |
+| Trim Pitch Up   | <kbd>Right Ctrl</kbd> + <kbd>.</kbd> |
+| Trim Pitch Down | <kbd>Right Ctrl</kbd> + <kbd>;</kbd> |
 
-### F-14B(U) Pilot > Category > Gears, brakes, and hook
+### F-14B(U) Pilot → Category → Gears, Brakes, and Hook
 
-| Action                       | Binding        |
-| ---------------------------- | -------------- |
-| "Gears Up"                   | LShift + G     |
-| "Gears Down"                 | LCtrl + G      |
-| "Speed brake extend"         | LCtrl + B      |
-| "Speed brake retract"        | LShift + B     |
-| "Wheel brake both (Gradual)" | to be assigned |
+| Command                    | Suggested Assignment                 |
+| -------------------------- | ------------------------------------ |
+| Gears Up                   | <kbd>Left Shift</kbd> + <kbd>G</kbd> |
+| Gears Down                 | <kbd>Left Ctrl</kbd> + <kbd>G</kbd>  |
+| Speed Brake Extend         | <kbd>Left Ctrl</kbd> + <kbd>B</kbd>  |
+| Speed Brake Retract        | <kbd>Left Shift</kbd> + <kbd>B</kbd> |
+| Wheel Brake Both (Gradual) | To be assigned                       |
 
-### F-14B(U) Pilot > Category > Jester AI
+### F-14B(U) Pilot → Category → Jester AI
 
-| Action        | Binding   |
-| ------------- | --------- |
-| "Toggle menu" | A         |
-| "Command 3"   | LCtrl + 3 |
-| "Command 4"   | LCtrl + 4 |
+| Command     | Suggested Assignment                |
+| ----------- | ----------------------------------- |
+| Toggle Menu | <kbd>A</kbd>                        |
+| Command 3   | <kbd>Left Ctrl</kbd> + <kbd>3</kbd> |
+| Command 4   | <kbd>Left Ctrl</kbd> + <kbd>4</kbd> |
 
-### F-14B(U) Pilot > Category > Systems
+### F-14B(U) Pilot → Category → Systems
 
-| Action                 | Binding           |
-| ---------------------- | ----------------- |
-| "Seat Adjustment Up"   | LShift + S        |
-| "Seat Adjustment Down" | LAlt + LShift + S |
+| Command              | Suggested Assignment                                       |
+| -------------------- | ---------------------------------------------------------- |
+| Seat Adjustment Up   | <kbd>Left Shift</kbd> + <kbd>S</kbd>                       |
+| Seat Adjustment Down | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>S</kbd> |
 
 ## Lesson 02a: Audio & Text
 
