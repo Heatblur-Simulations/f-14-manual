@@ -479,16 +479,15 @@ information display.
 
 ## All Weather Landing (AWL) Page
 
-PTID AOA, VV, ILS, and ACLS (AVIA) Displays
-
 AOA, VV, ILS, and ACLS are displayed on the PTID when AWL is hooked on PTID
 menu.
 
 By hooking the +ACL acronym on the PTID, the ACLS display replaces the ILS and
 the ACL is highlighted. If the ACLS data becomes invalid, the azimuth and
-elevation needles are cleared. When a waveoff signal is received, a waveoff "X"
-appears in the azimuth and elevation needles are cleared. If no message is
-received for more than 2 seconds, a TILT acronym appears on the PTID
+elevation needles are not displayed. When a waveoff signal is received, a
+waveoff "X" appears and the azimuth and elevation needles are cleared. If no
+ACLS or ICLS data is received for more than 2 seconds, a TILT acronym appears on
+the PTID.
 
 ![PTID AWL Page](../../../img/dark/awl_page_trnsp_guide.svg)
 
