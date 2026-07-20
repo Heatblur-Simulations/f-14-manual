@@ -113,17 +113,17 @@ For your training on the F-14B(U) Tomcat, these lessons are currently available:
 
 ### Difference training
 
-Lesson 01: F-14BU Differences Familiarization
+Lesson 01: [F-14BU Differences Familiarization](./lesson01.md)
 
-Lesson 04: F-14BU Basic Navigation
+Lesson 04: [F-14BU Basic Navigation](./lesson04.md)
 
 ### Type training
 
-Lesson 02a: F-14BU Cold Start Airfield PILOT
+Lesson 02a: [F-14BU Cold Start Airfield PILOT](./lesson02a.md)
 
-Lesson 02b: F-14BU Cold Start Carrier PILOT
+Lesson 02b: [F-14BU Cold Start Carrier PILOT](./lesson02b.md)
 
-Lesson 03: F-14BU Cold Start Carrier RIO
+Lesson 03: [F-14BU Cold Start Carrier RIO](./lesson03.md)
 
 ### Weapon training
 
