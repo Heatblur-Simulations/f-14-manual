@@ -227,10 +227,10 @@ fly-to or FPLN waypoint steering.
 
 ### Active Flight Plan Waypoint
 
-The active waypoint is the waypoint to which all flight instrument and CDNU
-guidance displays are referenced. Pressing the FPLN key on the CDNU will access
-the Flight Plan page with the active waypoint displayed. Associated with the
-active waypoint are the following quantities:
+The active waypoint is the waypoint to which all flight instruments (in EGI
+steering) and CDNU guidance displays are referenced. Pressing the FPLN key on
+the CDNU will access the Flight Plan page with the active waypoint displayed.
+Associated with the active waypoint are the following quantities:
 
 1. Current desired inbound horizontal course,
 2. Current desired inbound vertical angle (optional, contingent on entry of
