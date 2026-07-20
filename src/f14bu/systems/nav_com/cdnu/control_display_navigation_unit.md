@@ -1122,6 +1122,19 @@ position (or user-defined label) in the scratchpad, as well as all available
 waypoint attributes (identifier, elevation, frequency, and declination). Go to
 the Mark List page and insert the waypoint normally.
 
+### Time Page
+
+STEP 1: Press the IDX key
+
+![IDX Key](../../../../img/dark/cdnu_idx_key.svg)
+
+STEP 2: Press LSK 3 (TIME Page)
+
+![Time Page](../../../../img/dark/cdnu_time_page_guide.svg)
+
+With no GPS available the CDNU time page is used to enter EGI system time. Exit
+using the F1 key.
+
 ### RNAV INAV Page
 
 STEP 1: Press the RNAV key
