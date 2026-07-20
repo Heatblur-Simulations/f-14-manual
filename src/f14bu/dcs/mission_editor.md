@@ -84,7 +84,7 @@ for further information on programming the ALE-47 using the DTC menu.
 
 Refer to the
 [Fast Tactical Imaging System](../systems/nav_com/com/fast_tactical_imaging_set.md)
-page for my information on how to use the Tactical Imaging Set.
+page for further information on how to use the Tactical Imaging Set.
 
 #### Ownship Callsign
 
