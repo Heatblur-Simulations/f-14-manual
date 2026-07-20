@@ -4397,7 +4397,8 @@ the aircraft descends below the altitude set on the low-altitude limit bug.</p>
 <li>
 <p><strong>Inertial Navigation Mode (INS)</strong></p>
 <ul>
-<li>Achieved by the INS, employing the IMU (and PSU) and the CSDC.</li>
+<li>The primary navigation mode is inertial and is achieved by the INS,
+employing the IMU (and PSU) and the CSDC.</li>
 <li>Provides the flight crew with own-aircraft position, velocity, attitude,
 and heading information.</li>
 </ul>
@@ -4418,103 +4419,78 @@ and heading information.</li>
 </li>
 </ol>
 <h3 id="inertial-navigation-mode"><a class="header" href="#inertial-navigation-mode">Inertial Navigation Mode</a></h3>
+<p>INS mode should be entered following an alignment. The READY light illuminates
+in GND and CVA alignment positions and stays on after launch in CAT alignment,
+indicating completion of alignment. If the INS mode is selected, both the STBY
+and READY lights will go out. However, if the INS mode is selected before the
+caret turns into a diamond, both the STBY and READY lights will illuminate and
+the system will revert to the IMU/AM backup mode.</p>
+<p>In the INS mode, IMU and CSDC provide the following outputs:</p>
 <ul>
-<li>INS mode should be entered following an alignment.</li>
-<li>READY light illuminates in GND and CVA alignment positions and stays on after
-launch in CAT alignment, indicating completion of alignment.</li>
-<li>If the INS mode is selected, both the STBY and READY lights will go out.
-However, if the INS mode is selected before the caret turns into a diamond,
-both the STBY and READY lights will illuminate, and the system will revert to
-the IMU/AM backup mode.</li>
+<li>Aircraft latitude and longitude</li>
+<li>Aircraft magnetic or true heading (depending on CAP prefix button selected)</li>
+<li>System altitude (barometric damped inertial altitude)</li>
+<li>Platform wander angle</li>
+<li>Velocity components (x, y, z)</li>
+<li>Vertical acceleration</li>
 </ul>
-<h4 id="outputs-provided-by-imu-and-csdc-in-ins-mode"><a class="header" href="#outputs-provided-by-imu-and-csdc-in-ins-mode">Outputs provided by IMU and CSDC in INS mode</a></h4>
-<ul>
-<li>
-<p>Aircraft latitude and longitude</p>
-</li>
-<li>
-<p>Aircraft magnetic or true heading (depending on CAP prefix button selected)</p>
-</li>
-<li>
-<p>System altitude (barometric damped inertial altitude)</p>
-</li>
-<li>
-<p>Platform wander angle</p>
-</li>
-<li>
-<p>Velocity components (x, y, z)</p>
-</li>
-<li>
-<p>Vertical acceleration</p>
-</li>
-<li>
-<p>Aircraft magnetic heading is derived from the AHRS. If the AHRS fails,
-magnetic heading is derived by subtracting the MAG VAR from the true heading.</p>
-</li>
-<li>
-<p>The TID can display latitude, longitude, ground speed, ground track, true
-airspeed, wind (speed and direction), MAG VAR, altitude, and aircraft true or
-magnetic heading.</p>
-</li>
-<li>
+<p>Aircraft magnetic heading is derived from the AHRS. If the AHRS fails, magnetic
+heading is then derived by subtracting the MAG VAR from the true heading. The
+available readouts on the TID can display latitude, longitude, ground speed,
+ground track, true airspeed, wind (speed and direction), MAG VAR, altitude, and
+aircraft true or magnetic heading.</p>
 <p>The WCS computer makes calculations in true north coordinates for steering and
-uses the magnetic heading input from the AHRS to update the value.</p>
-</li>
-<li>
-<p>Wind is computed from the difference between inertial velocities and air mass
-velocities.</p>
-</li>
-<li>
-<p>The WCS and CSDC also provide the steering and cueing functions required for
-display to the flight crew.</p>
-</li>
-<li>
-<p>Destination or navigation points include waypoints 1, 2, or 3, fixed point,
-home base, surface target, and initial point, which may be designated by the
+uses the magnetic heading input from the AHRS to update the value. Wind is
+computed from the difference between inertial velocities and air mass
+velocities. The WCS and CSDC also provide the steering and cueing functions
+required for display to the flight crew. The information can be displayed on the
+TID, HSD, multiple display indicator, HUD, and VDI, depending on the navigation
+and steering modes selected by the flight crew.</p>
+<p>The available destination or navigation points are waypoints 1, 2, or 3, fixed
+point, home base, surface target, and initial point and may be designated by the
 DEST switch on the TID.</p>
-</li>
-<li>
-<p>Navigational points (latitude and longitude) can also be inserted by the RIO
-using the CAP or by datalink message (when on the deck) using either cable or
-the RF link.</p>
-</li>
-<li>
+<p>Additionally, navigational points (latitude and longitude) may also be inserted
+by the RIO using the CAP or by datalink message (when on the deck) using either
+cable or the RF link.</p>
 <p>The course to set (heading to a selected navigational point), range, bearing,
-and time-to-go to a point are based on great circle calculations.</p>
-</li>
-</ul>
+and time-to-go to a point are based on great circle calculations. The time-to-go
+assumes the aircraft is flown at its present groundspeed along the great circle
+heading to the selected point.</p>
 <blockquote>
 <p>💡 If INS fails, the RIO should verify MAG VAR calculated and WIND data and
 update via manual entries as required.</p>
 </blockquote>
 <h3 id="imuam-navigation-mode"><a class="header" href="#imuam-navigation-mode">IMU/AM Navigation Mode</a></h3>
-<ul>
-<li>If a failure of the navigation computer section of the CSDC or certain
-failures in the IMU are detected, the IMU/AM mode is entered automatically.</li>
-<li>Failures are indicated by the STBY and READY lights illuminating and the NAV
-COMP light illuminating on the RIO CAUTION/ADVISORY panel.</li>
-<li>The switch to IMU/AM is indicated by the IN acronym on the TID and HSD
-changing to IM. The RIO should select IMU/AM on the NAV MODE switch to
-extinguish the STBY and READY lights.</li>
-<li>The IMU/AM mode can be entered manually by selecting IMU/AM with the NAV MODE
-switch.</li>
-<li>If the switch is turned off before selecting IMU/AM mode, the computer cannot
-enter the IMU/AM mode for approximately 3 to 5 minutes. During this time, the
-aircraft must remain stationary on the ground or in level un-accelerated
-flight.</li>
-</ul>
+<p>If a failure of the navigation computer section of the CSDC or certain failures
+in the IMU are detected, the IMU/AM mode is entered automatically. The failures
+are indicated by the STBY and READY lights illuminating and the NAV COMP light
+illuminating on the RIO CAUTION/ ADVISORY panel.</p>
+<p>The switch to IMU/AM is indicated by the IN acronym on the TID and HSD changing
+to IM. The RIO should select IMU/AM on the NAV MODE switch to extinguish the
+STBY and READY lights. The IMU/AM mode can be entered manually by selecting
+IMU/AM with the NAV MODE switch.</p>
+<p>If the switch is turned off before selecting IMU/AM mode, the computer cannot
+enter the IMU/AM mode for approximately 3 to 5 minutes. This is necessary to
+allow the IMU to level itself after being turned off. During these 3 to 5
+minutes, the aircraft must remain stationary on the ground or in level
+unaccelerated flight. Until the IMU is leveled, the computer will use the AHRS/
+AM mode. If the IMU is level (i.e., alignment past coarse align completed), the
+entry into IMU/AM will occur immediately upon selection.</p>
 <blockquote>
 <p>💡 If an alignment past coarse exists with no NAV COMP failure and the RIO
 switches to IMU/AM, the READY light will flash, indicating that if the switch
 is not returned to INS within 5 seconds the INS mode cannot be re-entered
 without completing a new alignment.</p>
 </blockquote>
-<ul>
-<li>The WCS computer performs dead-reckoning navigation in the IMU/AM mode, using
-heading information from the IMU and true airspeed from the CADC.</li>
-<li>Wind can be applied by either using the wind last computed in the INS mode or
-wind data manually entered through the CAP.</li>
-</ul>
+<p>The WCS computer performs dead-reckoning navigation in the IMU/AM mode, using
+heading information from the IMU and true airspeed from the CADC. The same
+general navigation functions are performed in the backup mode as for the INS
+mode. The accuracy of the computer outputs degrades because of the inferior
+available speed and heading information.</p>
+<p>Wind can be applied by either using the wind last computed in the INS mode or
+wind data manually entered through the CAP. The IMU heading is equally
+referenced to the last computed INS heading or to manual entry of true heading
+data via the CAP.</p>
 <blockquote>
 <p>💡 After entering the IMU/AM mode, check wind and MAG VAR values. If MV is in
 error, enter own-aircraft true heading. If winds are in error, update.</p>
@@ -4527,16 +4503,14 @@ error, enter own-aircraft true heading. If winds are in error, update.</p>
 <li>Verify IM acronym.</li>
 </ol>
 <h3 id="ahrsair-mass-mode"><a class="header" href="#ahrsair-mass-mode">AHRS/Air Mass Mode</a></h3>
-<ul>
-<li>The AHRS/AM mode is another backup mode for navigation. It uses the last known
-aircraft position, either from the last navigation computer value or by manual
-data entry from the RIO. It then extrapolates the present position of the
-aircraft.</li>
-<li>AHRS/AM mode is automatically selected if the IMU fails or by switching to
+<p>The AHRS/AM mode is another backup mode for navigation. It uses the last known
+aircraft position, by either taking the last navigation computer value or by
+manual data entry from the RIO. It then extrapolates the present position of the
+aircraft.</p>
+<p>AHRS/AM mode is automatically selected if the IMU fails or by switching to
 AHRS/AM on the NAV MODE switch. An IMU failure is indicated by the STBY and
 READY status lights and the IMU advisory light illuminating. Additionally, the
-attitude status readout on the TID changes to AH.</li>
-</ul>
+attitude status readout on the TID changes to AH.</p>
 <blockquote>
 <p>🟡 CAUTION: The navigation mode will not automatically switch to AHRS/AM upon
 an IMU failure when the navigation system is in IMU/AM mode with a failed IMU
@@ -4549,68 +4523,49 @@ AHRS/AM.</p>
 fails, the STBY and READY lights will remain on until the RIO selects AHRS/AM
 on the NAV MODE switch.</p>
 </blockquote>
-<ul>
-<li>When AHRS/AM is selected on the NAV MODE switch, the AHRS provides heading
-information required for DR navigation in place of the IMU platform and the
-CSDC provides barometric altitude, altitude rate, and true airspeed as in the
-IMU/AM mode.</li>
-<li>To update wind speed and direction and magnetic variation, use the CAP.</li>
-</ul>
+<p>When AHRS/AM is selected on the NAV MODE switch, the AHRS provides heading
+information required for DR navigation in place of the IMU platform and the CSDC
+provides barometric altitude, altitude rate, and true airspeed as in the IMU/ AM
+mode. To update wind speed and direction and magnetic variation, use the CAP.</p>
 <p>The AHRS can be operated in any of three subheading modes selected on the
 compass controller panel:</p>
 <ul>
-<li>
-<p><strong>SLAVED</strong> - Magnetic north referenced (flux value), directional gyro is
+<li><strong>SLAVED</strong> - Magnetic north referenced (flux value), directional gyro is
 slaved to flux value, used where reliable magnetic heading reference is
-available.</p>
-</li>
-<li>
-<p><strong>DG</strong> - Free azimuth gyro, compensated for drift because of Earth’s (polar
-operations), used where magnetic reference is unreliable.</p>
-</li>
-<li>
-<p><strong>COMP</strong> - Magnetic north reference direct (flux value), no gyro damping. The
+available.</li>
+<li><strong>DG</strong> - Free azimuth gyro, compensated for drift because of Earth’s (polar
+operations), used where magnetic reference is unreliable.</li>
+<li><strong>COMP</strong> - Magnetic north reference direct (flux value), no gyro damping. The
 HUD, VDI, HSD, and multiple display indicator use manual magnetic variation
-(vM) automatically in this mode.</p>
-</li>
-<li>
+(vM) automatically in this mode.</li>
+</ul>
 <p>The RIO can switch from either INS mode to AHRS/AM mode or from IMU/AM mode to
 AHRS/AM mode for comparison, without fear of degradation, since the AHRS is a
-separate system.</p>
-</li>
-<li>
-<p>This cannot be done with the INS and IMU/AM modes since the IMU is used in
-both cases and it would result in permanent degradation to the IMU alignment.</p>
-</li>
-<li>
-<p>In the case of an IMU failure, the nav system will automatically operate in
-the AHRS/AM mode with the navigation and data readout panel in INS, as long as
-the WCS computer receives heading from the AHRS and airspeed from the CADC.</p>
-</li>
-</ul>
+separate system. This cannot be done with the INS and IMU/AM modes since the IMU
+is used in both cases and it would result in permanent degradation to the IMU
+alignment. In the case of an IMU failure the nav system will automatically
+operate in the AHRS/AM mode with the navigation and data readout panel in INS,
+as long as the WCS computer receives heading from the AHRS and airspeed from the
+CADC.</p>
 <blockquote>
 <p>💡 If takeoff is performed in the AHRS/AM mode, MAG VAR and WIND must be
 manually inserted via CAP for proper navigation computations.</p>
 </blockquote>
-<ul>
-<li>When the platform is aligned and the AHRS/AM backup navigation mode is
-selected, the STBY light is off but the READY light is on, indicating that the
-inertial navigation mode can be selected if desired. The same functions and
-outputs for display are computed as in INS, however since different inputs are
-used for some calculations a degraded navigation performance is to be
-expected.</li>
-</ul>
+<p>When the platform is aligned and the AHRS/AM backup navigation mode is selected,
+the STBY light is off but the READY light is on, indicating that the inertial
+navigation mode can be selected if desired. The same functions and outputs for
+display are computed as in INS, however since different inputs are used for some
+calculations a degraded navigation performance is to be expected.</p>
 <h3 id="steering"><a class="header" href="#steering">Steering</a></h3>
 <p>There are two basic types of steering: navigation and attack. Attack steering
 modes will be covered in the Weapons and Weapons Employment overview.</p>
-<ul>
-<li>Navigation steering is computed on either a great circle course or rhumb line
-to a fixed point on the Earth’s surface or as a deviation from a selected
-course or heading.</li>
-<li>The point used for steering can be the RIO’s selected destination (three
+<p>Navigation steering is computed on either a great circle course or rhumb line to
+a fixed point on the Earth’s surface or as a deviation from a selected course or
+heading. In general, great circle computations are used for long ranges and
+rhumb line for short distances (where it is close to great circle course).</p>
+<p>The point used for steering can be the RIO’s selected destination (three
 waypoints, fixed point, identification point, surface target, or home base), a
-TACAN station, ADF information, ACLS information, or a data link waypoint.</li>
-</ul>
+TACAN station, ADF information, ACLS information, or a data link waypoint.</p>
 <h3 id="flight-modes-and-steering-sub-modes"><a class="header" href="#flight-modes-and-steering-sub-modes">Flight Modes and Steering Sub-Modes</a></h3>
 <p>The pilot can choose between five VDIG display formats (HUD modes) on the pilot
 display control panel. These five flight modes are arranged as five vertical,
@@ -4626,53 +4581,29 @@ mutually exclusive buttons:</p>
 <p>💡 ACM cover open selection overrides all modes, except the T.O. and LDG
 modes.</p>
 </blockquote>
-<ul>
-<li>Apart from the VDIG displays, the flight mode selections also control AFCS,
+<p>Apart from the VDIG displays, the flight mode selections also control AFCS,
 armament, and WCS logic. In addition to the essential data such as altitude,
-vertical speed indicator etc. the VDIG format also provides steering cues.</li>
-</ul>
+vertical speed indicator etc. the VDIG format also provides steering cues.</p>
 <p>In each of the flight modes, the pilot can choose between the following five
 types of steering commands:</p>
 <ul>
-<li>
-<p>TACAN (TACAN)</p>
-</li>
-<li>
-<p>Destination (DEST)</p>
-</li>
-<li>
-<p>AWL/PCD</p>
-</li>
-<li>
-<p>Vector (VEC)</p>
-</li>
-<li>
-<p>Manual (MAN)</p>
-</li>
-<li>
+<li>TACAN (TACAN)</li>
+<li>Destination (DEST)</li>
+<li>AWL/PCD</li>
+<li>Vector (VEC)</li>
+<li>Manual (MAN)</li>
+</ul>
 <p>The five selections are arranged horizontally along the bottom of the PDCP.
 These steering modes determine the display format on the pilot HSD and the RIO
-multiple display indicator.</p>
-</li>
-<li>
-<p>The HSD and multiple display indicator present, in a horizontal plane,
-steering to the selected point.</p>
-</li>
-<li>
-<p>The HSD follows the five sub-modes when the pilot places the HSD-MODE switch
-to NAV.</p>
-</li>
-<li>
+multiple display indicator. The HSD and multiple display indicator present, in a
+horizontal plane, steering to the selected point. The HSD follows the five
+submodes when the pilot places the HSD-MODE switch to NAV.</p>
 <p>The RIO can do the same by setting the MODE switch on his multiple display
-indicator control panel to NAV.</p>
-</li>
-<li>
-<p>Also, when LDG is selected, the pilot has the option of displaying ICLS or ACL
-information via switches on the PDCP that can be used to individually and
-independently select the HUD and VDI for display. A typical choice would be to
-select ICLS (SPN-41 /ARA-63) for the HUD and for D/L the VDI.</p>
-</li>
-</ul>
+indicator control panel to NAV. Also, when LDG is selected, the pilot has the
+option of displaying ICLS or ACL information via switches on the PDCP that can
+be used to individually and independently select the HUD and VDI for display. A
+typical choice would be to select ICLS (SPN-41 /ARA-63) for the HUD and for D/L
+the VDI.</p>
 <p>A/A (air-to-air) and A/G (air-to-ground) modes are further explained in the
 Weapons and Weapons Employment overview.</p>
 <blockquote>
@@ -4681,86 +4612,68 @@ panel provides a readout for the RIO to inform him of what steering sub-mode
 the pilot bas chosen.</p>
 </blockquote>
 <h3 id="takeoff-steering"><a class="header" href="#takeoff-steering">Takeoff Steering</a></h3>
-<ul>
-<li>To enter the takeoff steering mode, press the T.O. button on the display
-control panel. The VDIG will display a vertical speed indicator on the left
-side and an altitude scale on the right side in the HUD.</li>
-<li>Before takeoff, the pilot should check the magnetic heading on top of the HUD
-and VDI against a known reference (i.e., runway heading and most importantly
-BRC on the carrier, due to the large magnetic distortion on the ship). The
-vertical speed indicator should be used to verify a positive climb after
-takeoff.</li>
-<li>After takeoff, the navigation system normally computes wind and magnetic
+<p>To enter the takeoff steering mode, press the T.O. button on the display control
+panel. The VDIG will display a vertical speed indicator on the left side and an
+altitude scale on the right side in the HUD. Before takeoff, the pilot should
+check the magnetic heading on top of the HUD and VDI against a known reference
+(i.e. runway heading and most importantly BRC on the carrier, due to the large
+magnetic distortion on the ship). The vertical speed indicator should be used to
+verify a positive climb after takeoff.</p>
+<p>After takeoff, the navigation system normally computes wind and magnetic
 variation, which are needed for steering. For backup modes, the WCS uses the
-last computed or RIO-entered wind speed, direction, and magnetic variation.</li>
-</ul>
+last computed or RIO-entered wind speed, direction, and magnetic variation.</p>
 <h4 id="take-off-tacan-steering"><a class="header" href="#take-off-tacan-steering">Take-Off-TACAN Steering</a></h4>
-<ul>
-<li>The TACAN steering sub-mode works the same, whether used for takeoff, cruise,
-or landing, by providing the pilot with a TACAN deviation.</li>
-<li>The pilot can set the course or TACAN radial with the CRS control on the HSD.
-The TACAN displays are available on the HUD, VDI, HSD, and multiple display
-indicator. The HSD and the CMD display TACAN range and the relative bearing to
-a selected TACAN station.</li>
-<li>To enter the sub-mode, press the TACAN button on the PDCP. After selection of
+<p>The TACAN steering submode works the same, whether used for takeoff, cruise, or
+landing, by providing the pilot with a TACAN deviation. The pilot can set the
+course or TACAN radial with the CRS control on the HSD. The TACAN displays are
+available on the HUD, VDI, HSD, and multiple display indicator. The HSD and the
+ECMD display TACAN range and the relative bearing to a selected TACAN station.</p>
+<p>To enter the submode, press the TACAN button on the PDCP. After selection of
 TACAN course, the HUD and VDI display the TACAN deviation symbol and a TO and
-FROM symbology.</li>
-<li>On the HSD and multiple display indicator, an arrow on the deviation bar
-pointing in the same direction as the TACAN course indicates a course toward
-the station, an arrow pointing in the opposite direction indicates a course
-away from the station. On the HUD, a dashed line indicates FROM, a solid line
-indicates TO. On the VDI, a dark bar indicates FROM, a bright bar indicates
-TO.</li>
-<li>On the HUD, the deviation symbol moves 3° (linear) in the field of view for a
-6° deviation from the selected TACAN radial. These limits prevent the symbol
-from leaving the field of view or interfering with the scales on the left and
-right side. On the VDI, the deviation symbol is scaled to move 1.5 inches
-(linear) for a 6° deviation.</li>
-</ul>
+FROM symbology. This indicates whether the TACAN course is toward or away from
+the TACAN station. On the HSD and multiple display indicator, an arrow on the
+deviation bar pointing in the same direction as the TACAN course indicates a
+course toward the station, an arrow pointing in the opposite direction indicates
+a course away from the station. On the HUD, a dashed line indicates FROM, a
+solid line indicates TO. On the VDI, a dark bar indicates FROM, a bright bar
+indicates TO.</p>
+<p>On the HUD, the deviation symbol moves 3° (linear) in the field of view for a 6°
+deviation from the selected TACAN radial. These limits prevent the symbol from
+leaving the field of view or interfering with the scales on the left and right
+side. On the VDI, the deviation symbol is scaled to move 1.5 inches (linear) for
+a 6° deviation.</p>
 <h4 id="takeoff-manual-steering"><a class="header" href="#takeoff-manual-steering">Takeoff Manual Steering</a></h4>
-<ul>
-<li>The manual steering mode is similar to the basic takeoff mode.</li>
-<li>The mode is entered by pressing the MAN button and selecting a desired course
-with the CRS control on the HSD.</li>
-<li>The navigation system will then display a command heading on the VDI as a
-small diamond under the magnetic heading scale.</li>
-</ul>
+<p>The manual steering mode is similar to the basic takeoff mode. The mode is
+entered by pressing the MAN button and selecting a desired course with the CRS
+control on the HSD. The navigation system will then display a command heading on
+the VDI as a small diamond under the magnetic heading scale.</p>
 <h3 id="cruise-steering"><a class="header" href="#cruise-steering">Cruise Steering</a></h3>
-<ul>
-<li>To enter the cruise flight mode, press the CRUISE button on the PDCP.</li>
-<li>There are four steering sub-modes available during cruise operations: TACAN,
-destination, manual, and vector.</li>
-<li>While it is physically possible to press the AWL/PCD steering button on the
-display control panel, the action is without function in cruise mode.</li>
-</ul>
+<p>To enter the cruise flight mode. press the CRUISE button on the PDCP. There are
+four steering submodes available during cruise operations: TACAN, destination,
+manual and vector. While it is physically possible to press the AWL/PCD steering
+button on the display control panel, the action is without function in cruise
+mode.</p>
 <blockquote>
 <p>💡 Should the AWL/PCD sub-mode be selected while in CRUISE, it will inhibit
 the display of other steering cues.</p>
 </blockquote>
 <h4 id="cruise-tacan-steering"><a class="header" href="#cruise-tacan-steering">Cruise TACAN Steering</a></h4>
-<ul>
-<li>This sub-mode works in the same way as take off TACAN steering and provides
-the same readouts and displays to the flight crew as described under take off
-TACAN steering.</li>
-</ul>
+<p>This submode works in the same way as take off TACAN steering and provides the
+same readouts and displays to the flight crew as described under take off TACAN
+steering.</p>
 <h4 id="cruise-destination-steering"><a class="header" href="#cruise-destination-steering">Cruise Destination Steering</a></h4>
-<ul>
-<li>To enter the cruise destination steering mode, press the DEST button on the
-PDCP.</li>
-<li>This will provide steering as a command heading symbol on the VDI and HSD to a
-waypoint selected by the RIO on the navigation control and data readout panel.</li>
-<li>The RIO can change latitude/longitude of the destination by hooking the point
-on the TID and inserting new data.</li>
-</ul>
+<p>To enter the cruise destination steering mode, press the DEST button on the
+PDCP. This will provide steering as a command heading symbol on the VDI and HSD
+to a waypoint selected by the RIO on the navigation control and data readout
+panel. The RIO can change latitude/longitude of the destination by hooking the
+point on the TID and inserting new data.</p>
 <blockquote>
 <p>💡 Destination steering to the defended point is provided by the RIO selecting
 MAN with the TID DEST switch. This option is not available in TARPS.</p>
-</blockquote>
-<ul>
-<li>In the destination steering sub-mode, the destination selected by the RIO and
+<p>In the destination steering sub-mode, the destination selected by the RIO and
 the NAV MODE in use will be alternately displayed on the bottom center of the
-HSD.</li>
-</ul>
+HSD.</p>
+</blockquote>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/general_navigation_cruiseman.jpg" alt="cruise man"><span class="img-wrapper"><img src="img/general_navigation_cruiseman.jpg" alt="cruise man"></span></label> <em>ECMD showing the
 navigational display for Cruise with Manual steering selected.</em></p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/general_navigation_cruisetac.jpg" alt="cruise tac"><span class="img-wrapper"><img src="img/general_navigation_cruisetac.jpg" alt="cruise tac"></span></label> <em>VDI and HSD
@@ -4768,17 +4681,15 @@ showing navigational displays for Cruise with TACAN steering selected.</em></p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/general_navigation_cruisedest.jpg" alt="cruise dest"><span class="img-wrapper"><img src="img/general_navigation_cruisedest.jpg" alt="cruise dest"></span></label> <em>HSD showing
 navigational display for Cruise with Waypoint 1 set as Destination.</em></p>
 <h3 id="landing-steering-modes"><a class="header" href="#landing-steering-modes">Landing Steering Modes</a></h3>
-<ul>
-<li>To enter the landing steering mode, press the LDG button on the PDCP.</li>
-<li>Usually, the LDG mode is engaged at any point from marshal point on. In the
-case of a go-around, waveoff, or bolter, the pilot can press the T.O. button
-on the PDCP to engage the take-off steering mode.</li>
-<li>The landing mode symbology is in general the same as the takeoff mode
-symbology. Exceptions are the addition of angle-of-attack error symbol on the
-HUD (the E-bracket, referenced towards the displayed aircraft wings and not
-the velocity vector) and the velocity vector symbol, as well as 5° pitch
-increments on the VDI.</li>
-</ul>
+<p>To enter the landing steering mode, press the LDG button on the PDCP. Usually
+the LDG mode is engaged at any point from marshal point on. In the case of a go
+around, waveoff or bolter, the pilot can press the T.O. button on the PDCP to
+engage the take off steering mode.</p>
+<p>The landing mode symbology is in general the same as the takeoff mode symbology.
+Exceptions are the addition of angle-of-attack error symbol on the HUD (the
+E-bracket, referenced towards the displayed aircraft wings and not the velocity
+vector) and the velocity vector symbol, as well as 5° pitch increments on the
+VDI.</p>
 <blockquote>
 <p>💡 In all landing sub-modes, a VDIG breakaway symbol can be displayed upon
 receipt of a D/L waveoff message.</p>
@@ -4879,17 +4790,14 @@ the INS is operating in a degraded mode as a result of manual selection by the
 RIO using the NAV MODE switch or automatic selection because of a failure of the
 CSDC or the IMU.</p>
 <blockquote>
-<p>💡</p>
-<ul>
-<li>When an IMU quantizer failure occurs in the INS mode, the system will
+<p>💡 When an IMU quantizer failure occurs in the INS mode, the system will
 automatically select the IMU/AM mode and the STBY/READY and NAV COMP lights
 will illuminate. The RIO should move the NAV MODE switch from the INS to
 IMU/AM. The STBY/READY lights go out - but the NAV COMP light will remain
-illuminated.</li>
-<li>With a NAV COMP light and a CSI ACRO displayed on the TID, there is no
-auto-switch to a backup attitude source for the HUD or the VDI nor is the
-RIO able to manually switch to any backup mode.</li>
-</ul>
+illuminated.</p>
+<p>With a NAV COMP light and a CSI ACRO displayed on the TID, there is no
+auto-switch to a backup attitude source for the HUD or the VDI nor is the RIO
+able to manually switch to any backup mode.</p>
 </blockquote>
 <h3 id="imu-light"><a class="header" href="#imu-light">IMU Light</a></h3>
 <p>If there is a failure in the IMU, the IMU advisory light will illuminate; the
@@ -5043,18 +4951,14 @@ after. If the S does not disappear, there is a failure and the result will be a
 bad alignment. The S also appears if incoming SINS data is not valid, in which
 case the alignment should not be trusted.</p>
 <blockquote>
-<p>💡</p>
-<ul>
-<li>The CSDC and IMU outputs as well as data inputs are constantly monitored and
-if either an excessive value in the X or Y acceleration is sensed, or a bad
-value from wrong lat or long data input, a 0 (bad observable) is posted on
-the TID and the alignment stalls (ceases to continue).</li>
-<li>The IMU may be preheated by selecting IMU/AM on the TID NAV MODE switch when
+<p>💡 The CSDC and IMU outputs as well as data inputs are constantly monitored
+and if either an excessive value in the X or Y acceleration is sensed, or a
+bad value from wrong lat or long data input, a 0 (bad observable) is posted on
+the TID and the alignment stalls (ceases to continue).</p>
+<p>The IMU may be preheated by selecting IMU/AM on the TID NAV MODE switch when
 operating on ground or aircraft power. This energizes the IMU and navigation
 power supply, which turns on the IMU heater prior to start of a ground or
-carrier alignment. The IMU should not be preheated for longer than 5
-minutes.</li>
-</ul>
+carrier alignment. The IMU should not be preheated for longer than 5 minutes.</p>
 </blockquote>
 <p>During coarse alignment, the alignment caret moves based on the wander angle
 error. If the parking brake is released during this phase, the alignment will
@@ -5097,14 +5001,11 @@ alignment.</p>
 tactical display will appear, and the normal navigation display will become
 available.</p>
 <blockquote>
-<p>💡</p>
-<ul>
-<li>When the NAV MODE switch is set to INS, the CSDC is in navigation mode and
-the READY light goes out.</li>
-<li>After selecting the INS navigation mode, the AWG-9 align program continues
-for approximately three align data cycles (18 seconds) before entering INS.
-This also applies if the aircraft takes off before INS is selected.</li>
-</ul>
+<p>💡 When the NAV MODE switch is set to INS, the CSDC is in navigation mode and
+the READY light goes out.</p>
+<p>After selecting the INS navigation mode, the AWG-9 align program continues for
+approximately three align data cycles (18 seconds) before entering INS. This
+also applies if the aircraft takes off before INS is selected.</p>
 </blockquote>
 <p>The RIO and pilot can then observe an IN acronym on the attitude status readout
 on the TID or TID repeat.</p>
@@ -5152,16 +5053,13 @@ the CVA alignment method, follow these steps:</p>
 transmitted to the WCS computer. The WCS computer compares the IMU data with the
 ship’s INS data and sends correction signals to the CSDC to fine align the IMU.</p>
 <blockquote>
-<p>💡</p>
-<ul>
-<li>If CVA or CAT ALIGN is selected prior to selecting OBC BIT, data link OBC
-testing is inhibited. (Not implemented yet)</li>
-<li>The fine alignment complete tick mark indicates completion of fine align and
-whether alignment data is SINS or handset. When good SINS data is not
-received during a filter cycle, the fine alignment complete tick mark jumps
-to the left approximately 0.75 inches. The jump indicates the SINS data is
-intermittent, and handset alignment data is required.</li>
-</ul>
+<p>💡 If CVA or CAT ALIGN is selected prior to selecting OBC BIT, data link OBC
+testing is inhibited. (Not implemented yet)</p>
+<p>The fine alignment complete tick mark indicates completion of fine align and
+whether alignment data is SINS or handset. When good SINS data is not received
+during a filter cycle, the fine alignment complete tick mark jumps to the left
+approximately 0.75 inches. The jump indicates the SINS data is intermittent,
+and handset alignment data is required.</p>
 </blockquote>
 <p>CVA ALIGN is much similar to GND ALIGN, and alignment is suspended, stalled, and
 reinitialized in the same manner as during GND ALIGN, depending on whether it
@@ -5181,16 +5079,13 @@ will continue.</p>
 aligned INS is indicated by both the STBY and READY lights off and the IN
 acronym in the status readout on the TID.</p>
 <blockquote>
-<p>💡</p>
-<ul>
-<li>Do not switch to INS while the ship is in a turn, even if fine align has
-been completed. This will degrade the alignment quality significantly. If
-you wait until the ship’s turn is complete, alignment quality will not be
-affected. Handset alignment is not affected.</li>
-<li>If during a CVA alignment the CAINS/WAYPT-TAC switch is unlatched to TAC by
-power transient, or data link signal is lost, the INS will revert to a
-handset alignment (HS).</li>
-</ul>
+<p>💡 Do not switch to INS while the ship is in a turn, even if fine align has
+been completed. This will degrade the alignment quality significantly. If you
+wait until the ship’s turn is complete, alignment quality will not be
+affected. Handset alignment is not affected.</p>
+<p>If during a CVA alignment the CAINS/WAYPT-TAC switch is unlatched to TAC by
+power transient, or data link signal is lost, the INS will revert to a handset
+alignment (HS).</p>
 </blockquote>
 <h4 id="carrier-cable-alignment"><a class="header" href="#carrier-cable-alignment">Carrier Cable Alignment</a></h4>
 <p>The deck-edge cable alignment (SINS) is an alternative to the RF data link
