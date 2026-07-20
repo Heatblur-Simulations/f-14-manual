@@ -7,7 +7,7 @@
 | ACL          | Automatic Carrier Landing         |
 | ACLS         | Automatic Carrier Landing System  |
 | ACM          | Air Combat Maneuver               |
-| ACP          | Armament Control Panel            | 
+| ACP          | Armament Control Panel            |
 | ACQ          | Acquisition                       |
 | ADF          | Automatic Direction Finder        |
 | ADI          | Attitude Director Indicator       |
@@ -45,7 +45,7 @@
 | CANTCO       | Can't Comply                                |
 | CAP          | Computer Address Panel                      |
 | CCIP         | Continuously Computed Impact Point          |
-| CDNU         | Control Display Navigation Unit             | 
+| CDNU         | Control Display Navigation Unit             |
 | CICU         | Computer Integrated Converter Unit          |
 | CLSN         | Collision                                   |
 | CM           | Continuous Monitor                          |
@@ -68,7 +68,7 @@
 | DES          | Designate                            |
 | DEST         | Destination                          |
 | DF           | Direction Finder                     |
-| DFCS         | Digital Flight Control System        | 
+| DFCS         | Digital Flight Control System        |
 | D/L          | Data Link                            |
 | DLC          | Direct Lift Control                  |
 | DME          | Distance Measuring Equipment         |
@@ -83,7 +83,7 @@
 | ECCM         | Electronic Counter-Countermeasures |
 | ECMD         | Electronic Countermeasures Display |
 | ECS          | Environmental Control System       |
-| EGI          | Embedded GPS/INS                   | 
+| EGI          | Embedded GPS/INS                   |
 | EGT          | Exhaust Gas Temperature            |
 | EIG          | Engine Instrument Group            |
 | ETA          | Estimated Time of Arrival          |
@@ -93,13 +93,13 @@
 
 | Abbreviation | Definition                          |
 | ------------ | ----------------------------------- |
-| FAR          | False Alarm Rate                    | 
+| FAR          | False Alarm Rate                    |
 | FCLP         | Field Carrier Landing Practice      |
 | FEMS         | Fatigue Engine Monitoring System    |
 | FF           | Fuel Flow                           |
 | FLOLS        | Fresnel Lens Optical Landing System |
-| FLIR         | Forward Looking Infrared            | 
-| FMC          | F-14 Mission Computer               | 
+| FLIR         | Forward Looking Infrared            |
+| FMC          | F-14 Mission Computer               |
 | FMR          | Frequency Ranging                   |
 | FOV          | Field of View                       |
 | FRL          | Fuselage Reference Line             |
@@ -114,7 +114,7 @@
 | GACH         | Gimbal Angle Crosshair      |
 | GCI          | Ground Controlled Intercept |
 | GCS          | Gun Control System          |
-| GGW          | GPS Guided Weapon           | 
+| GGW          | GPS Guided Weapon           |
 | GM           | Ground Map                  |
 | GPS          | Global Positioning System   |
 | GSS          | Gun Scoring System          |
@@ -180,7 +180,7 @@
 | LPRF         | Low Pulse Repetition Frequency      |
 | LSO          | Landing Signal Officer or "Paddles" |
 | LTE          | Launch-to-Eject                     |
-| LTS          | LANTIRN Targeting System             |
+| LTS          | LANTIRN Targeting System            |
 
 ## M
 
@@ -193,7 +193,7 @@
 | MAN          | Manual                               |
 | MAND         | Mandatory                            |
 | MDIG         | Multipurpose Display Indicator Group |
-| MDL          | Mission Data Loader                  | 
+| MDL          | Mission Data Loader                  |
 | MEC          | Main Engine Control                  |
 | MIL          | Military                             |
 | ML           | Missile Launch                       |
@@ -243,7 +243,7 @@
 | PS           | Pulse Search                                  |
 | PSTT         | Pulse Single Target Track                     |
 | PT           | Point                                         |
-| PTID         | Programmable Tactical Information Display     |  
+| PTID         | Programmable Tactical Information Display     |
 
 ## Q
 
@@ -269,7 +269,7 @@
 | ROT          | Range on Target         |
 | RTGS         | Real-Time Gun Sight     |
 | RWS          | Range While Search      |
-| RWR          | Radar Warning Receiver  | 
+| RWR          | Radar Warning Receiver  |
 
 ## S
 
@@ -331,7 +331,7 @@
 | VDIG         | Vertical Display Indicator Group (HUD & VDI) |
 | VEC          | Vector                                       |
 | VFR          | Visual Flight Rules                          |
-| VHF          | Very High Frequency                          | 
+| VHF          | Very High Frequency                          |
 | VID          | Visual Identification                        |
 | vM           | Manual MAG VAR                               |
 | VMCU         | Voltage Monitor Control Unit                 |
