@@ -520,7 +520,7 @@ STEP 3: Vertical scroll until MDL START page
 The Mission Data Loader (MDL) provides bulk storage of mission essential data.
 The Data Transfer Module (DTM), can be loaded in the Mission Editor with up to
 12 flight plans, Pre-Planned Missions for JDAM employment and countermeasure
-profiles for the ALE-47 CDMS.
+profiles for the ALE-47 CMDS.
 
 The MDL Start page is accessed by scrolling up from the EGI Start 1/2 page or
 down from the EGI Start 2/2 page. Display line 3 contains the MDL cartridge
