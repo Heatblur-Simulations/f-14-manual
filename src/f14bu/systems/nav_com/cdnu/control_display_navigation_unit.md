@@ -227,10 +227,10 @@ fly-to or FPLN waypoint steering.
 
 ### Active Flight Plan Waypoint
 
-The active waypoint is the waypoint to which all flight instrument and CDNU
-guidance displays are referenced. Pressing the FPLN key on the CDNU will access
-the Flight Plan page with the active waypoint displayed. Associated with the
-active waypoint are the following quantities:
+The active waypoint is the waypoint to which all flight instruments (in EGI
+steering) and CDNU guidance displays are referenced. Pressing the FPLN key on
+the CDNU will access the Flight Plan page with the active waypoint displayed.
+Associated with the active waypoint are the following quantities:
 
 1. Current desired inbound horizontal course,
 2. Current desired inbound vertical angle (optional, contingent on entry of
@@ -717,7 +717,7 @@ inserted as the active waypoint regardless if LSK1 or LSK2 is depressed.
 
 ![FPLN Insert Waypoint](../../../../img/dark/cdnu_fpln_page_ll_guide.svg)
 
-(<num>3</num>) New waypoint added between AAA and BBB.
+(<num>3</num>) New waypoint is inserted before AAA.
 
 ### Bearing/Distance Vector Waypoint Calculator
 
