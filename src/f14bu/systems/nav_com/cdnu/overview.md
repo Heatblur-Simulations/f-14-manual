@@ -21,7 +21,7 @@
 
 ## CDNU Pages
 
-![CDNU Page Tree](../../../../img/light/cdnu_page_tree-01.svg)
+![CDNU Page Tree](../../../../img/bu/cdnu_page_tree-01.svg)
 
 | Section | CDNU Page                                                                                                                                                               |
 | :-----: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -49,14 +49,15 @@
 |   36.   | [Progress Page 2/3](../cdnu/control_display_navigation_unit.md#progress-page-23)                                                                                        |
 |   37.   | [Progress Page 3/3](../cdnu/control_display_navigation_unit.md#progress-page-33)                                                                                        |
 |   38.   | [Mark Page](../cdnu/control_display_navigation_unit.md#mark-page)                                                                                                       |
-|   39.   | [RNAV INAV Page](../cdnu/control_display_navigation_unit.md#rnav-inav-page)                                                                                             |
-|   40.   | [RNAV GPS Page](../cdnu/control_display_navigation_unit.md#rnav-gps-page)                                                                                               |
-|   41.   | [RNAV INS Page](../cdnu/control_display_navigation_unit.md#rnav-ins-page)                                                                                               |
-|   42.   | [RNAV Blend Page](../cdnu/control_display_navigation_unit.md#rnav-blend-page)                                                                                           |
-|   43.   | [Stat Page](../cdnu/control_display_navigation_unit.md#stat-page)                                                                                                       |
-|   44.   | [Holding Page](../cdnu/control_display_navigation_unit.md#holding-page)                                                                                                 |
-|   45.   | [Exiting a Holding Pattern](../cdnu/control_display_navigation_unit.md#exiting-a-holding-pattern)                                                                       |
-|   46.   | [Intercept Page](../cdnu/control_display_navigation_unit.md#intercept-page)                                                                                             |
-|   47.   | [Parallel Course Offsets](../cdnu/control_display_navigation_unit.md#parallel-offsets)                                                                                  |
-|   48.   | [BDHI Steering Page](../cdnu/control_display_navigation_unit.md#bdhi-steering-page)                                                                                     |
-|   49.   | [Time Selection Page](../cdnu/control_display_navigation_unit.md#time-selection-page)                                                                                   |
+|   39.   | [Time Page](../cdnu/control_display_navigation_unit.md#time-page)                                                                                                       |
+|   40.   | [RNAV INAV Page](../cdnu/control_display_navigation_unit.md#rnav-inav-page)                                                                                             |
+|   41.   | [RNAV GPS Page](../cdnu/control_display_navigation_unit.md#rnav-gps-page)                                                                                               |
+|   42.   | [RNAV INS Page](../cdnu/control_display_navigation_unit.md#rnav-ins-page)                                                                                               |
+|   43.   | [RNAV Blend Page](../cdnu/control_display_navigation_unit.md#rnav-blend-page)                                                                                           |
+|   44.   | [Stat Page](../cdnu/control_display_navigation_unit.md#stat-page)                                                                                                       |
+|   45.   | [Holding Page](../cdnu/control_display_navigation_unit.md#holding-page)                                                                                                 |
+|   46.   | [Exiting a Holding Pattern](../cdnu/control_display_navigation_unit.md#exiting-a-holding-pattern)                                                                       |
+|   47.   | [Intercept Page](../cdnu/control_display_navigation_unit.md#intercept-page)                                                                                             |
+|   48.   | [Parallel Course Offsets](../cdnu/control_display_navigation_unit.md#parallel-offsets)                                                                                  |
+|   49.   | [BDHI Steering Page](../cdnu/control_display_navigation_unit.md#bdhi-steering-page)                                                                                     |
+|   50.   | [Time Selection Page](../cdnu/control_display_navigation_unit.md#time-selection-page)                                                                                   |

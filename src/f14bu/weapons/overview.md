@@ -101,6 +101,8 @@ weight of 54,000 pounds.
 | TARPS01 | TARPS              | (0/2/2)   | TARPS Pod          | —            | —                    |
 | TNG01   | —                  | (0/0/0)   | ACMI Pod           | —            | —                    |
 | TNG02   | —                  | (1/0/2)   | ACMI Pod           | —            | —                    |
+| SPL01   | SARH               | (0/4/4)   | —                  | —            | —                    |
+| SPL02   | Clean              | (0/0/4)   | —                  | —            | —                    |
 
 The air to air stores are listed in a standard format.(AIM-54/AIM-7/AIM-9) The
 AIM-54 Phoenix is always written first, the AIM-7 Sparrow is second, the AIM-9
