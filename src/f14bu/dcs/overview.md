@@ -9,7 +9,7 @@ simulation of the Tomcat inside DCS.
 | :-----: | ---------------------------------------------------- |
 |   1.    | [Special Options](../dcs/special_options.md)         |
 |   2.    | [Mission Editor](../dcs/mission_editor.md)           |
-|   3.    | [Grease Pencil](../fdcs/grease_pencil.md)            |
+|   3.    | [Grease Pencil](../dcs/grease_pencil.md)             |
 |   4.    | [Virtual Browser](../dcs/virtual_browser.md)         |
 |   5.    | [Instant Camera](../dcs/polaroid_camera.md)          |
 |   6.    | [Laser Pointer Designator](../dcs/izlid.md)          |
