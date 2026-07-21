@@ -138,7 +138,11 @@ jobs:
 
           # Files allowed to exceed 150 KB
           EXCEPTIONS=(
-            #"src/img/large-example-diagram.jpg"
+            "src/img/dark/throttlequadrants-01.svg"
+            "src/img/light/throttlequadrants-01.svg"
+            "src/img/dark/vdigr_hud_vdigr.svg"
+            "src/img/light/vdigr_hud_vdigr.svg"
+            "src/img/bu/cdnu_page_tree-01.svg"
           )
 
           is_exception() {

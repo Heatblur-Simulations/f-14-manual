@@ -71,16 +71,15 @@ the INS is operating in a degraded mode as a result of manual selection by the
 RIO using the NAV MODE switch or automatic selection because of a failure of the
 CSDC or the IMU.
 
-> 💡
+> 💡 When an IMU quantizer failure occurs in the INS mode, the system will
+> automatically select the IMU/AM mode and the STBY/READY and NAV COMP lights
+> will illuminate. The RIO should move the NAV MODE switch from the INS to
+> IMU/AM. The STBY/READY lights go out - but the NAV COMP light will remain
+> illuminated.
 >
-> - When an IMU quantizer failure occurs in the INS mode, the system will
->   automatically select the IMU/AM mode and the STBY/READY and NAV COMP lights
->   will illuminate. The RIO should move the NAV MODE switch from the INS to
->   IMU/AM. The STBY/READY lights go out - but the NAV COMP light will remain
->   illuminated.
-> - With a NAV COMP light and a CSI ACRO displayed on the TID, there is no
->   auto-switch to a backup attitude source for the HUD or the VDI nor is the
->   RIO able to manually switch to any backup mode.
+> With a NAV COMP light and a CSI ACRO displayed on the TID, there is no
+> auto-switch to a backup attitude source for the HUD or the VDI nor is the RIO
+> able to manually switch to any backup mode.
 
 ### IMU Light
 
@@ -251,17 +250,15 @@ after. If the S does not disappear, there is a failure and the result will be a
 bad alignment. The S also appears if incoming SINS data is not valid, in which
 case the alignment should not be trusted.
 
-> 💡
+> 💡 The CSDC and IMU outputs as well as data inputs are constantly monitored
+> and if either an excessive value in the X or Y acceleration is sensed, or a
+> bad value from wrong lat or long data input, a 0 (bad observable) is posted on
+> the TID and the alignment stalls (ceases to continue).
 >
-> - The CSDC and IMU outputs as well as data inputs are constantly monitored and
->   if either an excessive value in the X or Y acceleration is sensed, or a bad
->   value from wrong lat or long data input, a 0 (bad observable) is posted on
->   the TID and the alignment stalls (ceases to continue).
-> - The IMU may be preheated by selecting IMU/AM on the TID NAV MODE switch when
->   operating on ground or aircraft power. This energizes the IMU and navigation
->   power supply, which turns on the IMU heater prior to start of a ground or
->   carrier alignment. The IMU should not be preheated for longer than 5
->   minutes.
+> The IMU may be preheated by selecting IMU/AM on the TID NAV MODE switch when
+> operating on ground or aircraft power. This energizes the IMU and navigation
+> power supply, which turns on the IMU heater prior to start of a ground or
+> carrier alignment. The IMU should not be preheated for longer than 5 minutes.
 
 During coarse alignment, the alignment caret moves based on the wander angle
 error. If the parking brake is released during this phase, the alignment will
@@ -307,13 +304,12 @@ Selecting INS will turn off the READY light, terminate alignment and the
 tactical display will appear, and the normal navigation display will become
 available.
 
-> 💡
+> 💡 When the NAV MODE switch is set to INS, the CSDC is in navigation mode and
+> the READY light goes out.
 >
-> - When the NAV MODE switch is set to INS, the CSDC is in navigation mode and
->   the READY light goes out.
-> - After selecting the INS navigation mode, the AWG-9 align program continues
->   for approximately three align data cycles (18 seconds) before entering INS.
->   This also applies if the aircraft takes off before INS is selected.
+> After selecting the INS navigation mode, the AWG-9 align program continues for
+> approximately three align data cycles (18 seconds) before entering INS. This
+> also applies if the aircraft takes off before INS is selected.
 
 The RIO and pilot can then observe an IN acronym on the attitude status readout
 on the TID or TID repeat.
@@ -368,15 +364,14 @@ The received data is processed by the data link equipment in the aircraft and
 transmitted to the WCS computer. The WCS computer compares the IMU data with the
 ship’s INS data and sends correction signals to the CSDC to fine align the IMU.
 
-> 💡
+> 💡 If CVA or CAT ALIGN is selected prior to selecting OBC BIT, data link OBC
+> testing is inhibited. (Not implemented yet)
 >
-> - If CVA or CAT ALIGN is selected prior to selecting OBC BIT, data link OBC
->   testing is inhibited. (Not implemented yet)
-> - The fine alignment complete tick mark indicates completion of fine align and
->   whether alignment data is SINS or handset. When good SINS data is not
->   received during a filter cycle, the fine alignment complete tick mark jumps
->   to the left approximately 0.75 inches. The jump indicates the SINS data is
->   intermittent, and handset alignment data is required.
+> The fine alignment complete tick mark indicates completion of fine align and
+> whether alignment data is SINS or handset. When good SINS data is not received
+> during a filter cycle, the fine alignment complete tick mark jumps to the left
+> approximately 0.75 inches. The jump indicates the SINS data is intermittent,
+> and handset alignment data is required.
 
 CVA ALIGN is much similar to GND ALIGN, and alignment is suspended, stalled, and
 reinitialized in the same manner as during GND ALIGN, depending on whether it
@@ -396,15 +391,14 @@ To complete the alignment, set the NAV MODE switch to INS. A successfully
 aligned INS is indicated by both the STBY and READY lights off and the IN
 acronym in the status readout on the TID.
 
-> 💡
+> 💡 Do not switch to INS while the ship is in a turn, even if fine align has
+> been completed. This will degrade the alignment quality significantly. If you
+> wait until the ship’s turn is complete, alignment quality will not be
+> affected. Handset alignment is not affected.
 >
-> - Do not switch to INS while the ship is in a turn, even if fine align has
->   been completed. This will degrade the alignment quality significantly. If
->   you wait until the ship’s turn is complete, alignment quality will not be
->   affected. Handset alignment is not affected.
-> - If during a CVA alignment the CAINS/WAYPT-TAC switch is unlatched to TAC by
->   power transient, or data link signal is lost, the INS will revert to a
->   handset alignment (HS).
+> If during a CVA alignment the CAINS/WAYPT-TAC switch is unlatched to TAC by
+> power transient, or data link signal is lost, the INS will revert to a handset
+> alignment (HS).
 
 #### Carrier Cable Alignment
 

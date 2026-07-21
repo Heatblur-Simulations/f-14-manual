@@ -2,9 +2,10 @@
 
 The Mission Data Loader (MDL) provides bulk storage of mission-essential data.
 
-The Data Transfer Module (DTM) can be loaded in the Mission Editor with a range
-of navigation and mission computer data. Navigation data are transferred to the
-CDNU using a special pass-through function of the EGI.
+The Data Transfer Module (DTM) can be edited in the
+[Mission Editor](../../dcs/mission_editor.md) or the ground crew <kbd>F10</kbd>
+menu, with a range of navigation and mission computer data. Navigation data are
+transferred to the CDNU using a special pass-through function of the EGI.
 
 The MDL may contain two separate waypoint databases, a magnetic variation
 (MAGVAR) table, up to twelve flight plans, and the current GPS almanac. The
@@ -217,9 +218,9 @@ For an in depth discussion of plot lines refer to the
 The JDAM Planning Tool section is found in the
 [GGW Pre Planned Employment Section](../../../f14bu/weapons/air_to_ground/gps_guided_weapons/ggw_employment.md#pre-planned-jdam-employment).
 
-## ALE-47 Counter Measure Dispensing system (CDMS) programming
+## ALE-47 Counter Measure Dispensing system (CMDS) programming
 
-The CDMS programmer is found in the
+The CMDS programmer is found in the
 [ALE-47 Section](../../../f14bu/systems/defensive_systems/countermeasures/ale_47.md#programmer).
 
 ## Tactical Imaging System

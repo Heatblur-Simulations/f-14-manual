@@ -627,7 +627,18 @@ suspended and an ALIGN HOLD indication will be posted on the PTID and the CDNU.
 If, after entering SINS IMA, the EGI fails to detect valid SINS data, it will
 transition to the Manual IMA mode. If this occurs, the RIO should enter the
 appropriate latitude, longitude, carrier heading, carrier speed and Z-lever arm
-on the EGI Manual Page of the CDNU.
+on the CV Manual Page of the CDNU. The CV Manual Page is accessed via the
+[Start 2/2 page](../nav_com/cdnu/control_display_navigation_unit.md#start-page-22).
+
+![CV Manual Align Page](../../../img/dark/cdnu_cv_manual_page_guide.svg)
+
+(<num>1</num>) Carrier True Heading.
+
+(<num>2</num>) Carrier Start Location.
+
+(<num>3</num>) Carrier Speed.
+
+(<num>4</num>) Depressing RTN, enters the input data.
 
 > 💡 Any time the "HS" telltale flashes on the PTID alignment display, the RIO
 > should enter or re-enter the manual alignment data.
@@ -682,8 +693,6 @@ zero. This mode should be considered a backup.
 
 ## NAVIGATION UPDATING
 
-> 🚧 Work in Progress
-
 The GPS receiver in the EGI provides highly accurate position. As a result,
 there is very little need to update the solution to account for drift. Even if
 GPS is degraded to Standard Positioning System accuracy, the quality of the EGI
@@ -692,6 +701,21 @@ For that reason, only “Map Bias” updates (temporary position offsets of a
 specific amount which are added on top of the Kalman filter solution) are
 allowed under normal circumstances. This feature allows the flight crew to
 modify their position to match other, non-GPS equipped units.
+
+![Map Bias Page](../../../img/dark/cdnu_map_bias_page_guide.svg)
+
+(<num>1</num>) EGI calculated Coordinates of the fix location with current
+drift.
+
+(<num>2</num>) Known location of the fix.
+
+(<num>3</num>) Offset from both locations, toggles between degrees and nm error.
+
+(<num>4</num>) Indicates map bias is currently off.
+
+(<num>5</num>) Accept Fix.
+
+(<num>6</num>) Reject Fix.
 
 > 💡 Note Only the Blended and Free-Inertial solutions will reflect the offset
 > when a Map Bias update is performed. The GPS solution will always show the
@@ -706,6 +730,24 @@ The NAV MODE SEL Switch must be in an Align position (GND or CVA), and the
 update will not take effect if GPS is available. These updates are termed
 “Optimal” updates, and actually modify the Blended solution and Free Inertial
 calculations.
+
+![Optimal Update Page](../../../img/dark/cdnu_optimal_update_page_guide.svg)
+
+(<num>1</num>) EGI calculated Coordinates of the fix location with current
+drift.
+
+(<num>2</num>) Known location of the fix.
+
+(<num>3</num>) Offset from both locations, toggles between degrees and nm error.
+
+(<num>4</num>) Returns to Map Bias Page.
+
+(<num>5</num>) Optimal Update page is selected (NAV Mode selector must be in GND
+or CVA).
+
+(<num>6</num>) Accept Fix.
+
+(<num>7</num>) Reject Fix.
 
 The Updates can also be used to modify the latitude or longitude in
 [FMC](../nav_com/navigation_controls_displays.md#system-architecture-and-terminology)
