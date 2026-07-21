@@ -2,9 +2,10 @@
 
 The Mission Data Loader (MDL) provides bulk storage of mission-essential data.
 
-The Data Transfer Module (DTM) can be loaded in the Mission Editor with a range
-of navigation and mission computer data. Navigation data are transferred to the
-CDNU using a special pass-through function of the EGI.
+The Data Transfer Module (DTM) can be edited in the
+[Mission Editor](../../dcs/mission_editor.md) or the ground crew <kbd>F10</kbd>
+menu, with a range of navigation and mission computer data. Navigation data are
+transferred to the CDNU using a special pass-through function of the EGI.
 
 The MDL may contain two separate waypoint databases, a magnetic variation
 (MAGVAR) table, up to twelve flight plans, and the current GPS almanac. The
@@ -61,7 +62,7 @@ selected. The cartridge name is physically shown on the cartridge in the
 aircraft.
 
 Navigation lets the operator plan 12 unique flight plans with 50 preset
-waypoints each. JDAM lets the operator pre-plan a JDAM strike. CDMS lets the
+waypoints each. JDAM lets the operator pre-plan a JDAM strike. CMDS lets the
 operator define countermeasure profiles. TIS lets the operator enter special
 settings for the Tactical Imaging Set.
 
