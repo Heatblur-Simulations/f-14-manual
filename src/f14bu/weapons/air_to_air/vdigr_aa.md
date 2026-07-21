@@ -119,9 +119,9 @@ elevation. Displayed in A/A only.
 
 ### F−Pole Cue
 
-Cue to heading for maximum F−pole. (Single Solid Vertial Bar) Provides cues to achieve
-maximum slant range between the launch aircraft and target, at the time of missile impact.
-Displayed in PDSTT and TWSA.
+Cue to heading for maximum F−pole. (Single Solid Vertial Bar) Provides cues to
+achieve maximum slant range between the launch aircraft and target, at the time
+of missile impact. Displayed in PDSTT and TWSA.
 
 ![F−Pole Cue](../../../img/dark/f-pole_small_cutout_thin.svg)
 
@@ -401,3 +401,9 @@ ACM Cover UP: Target Designate Switch Actuates Pilot selected Radar Modes.
 
 For a complete discussion of Pilot selected Radar modes refer to the
 [Radar Chapter](../../../f14ab/systems/radar/acm_modes.md#acm-modes)
+
+The ACM cover in the up position overrides the Cruise mode declutter. With the
+ACM cover in the up positon the A/A Target info box is displayed in cruise. ACM
+cover up also allows for A/A weapons employment. Note the ACM cover weapons
+logic discussed in the
+[AWG-9 Chapter](../../../f14ab/systems/radar/overview.md).
