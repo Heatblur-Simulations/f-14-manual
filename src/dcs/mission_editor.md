@@ -66,6 +66,26 @@ historic (based on livery) or override.
 | Off (Bulletcover Variant)  | Disables TCS and equips bulletcover chinpod regardless of livery option                                        |
 | Off (Chinpod Variant)      | Disables TCS and equips the chinpod without TCS housing regardless of livery option                            |
 
+## Waypoints Types (F-14A/B Only)
+
+As the F-14A/B's navigational system only has three numbered waypoints, most
+other waypoints are set using Navigation Target Points.
+
+- **Waypoints 1–3**: Set directly in the mission editor.
+- **Home Base**: Set to the landing waypoint.
+- **All others**: Set by naming _Navigation Target Points_ as below:
+
+| Waypoint                | Name                      |
+| ----------------------- | ------------------------- |
+| Fix Point               | `FP`                      |
+| Initial Point           | `IP`                      |
+| Surface Target          | `ST`                      |
+| Defended Point          | `DP`                      |
+| Hostile Area            | `HA`                      |
+| Datalink Waypoint 1–3   | `DLWP1`, `DLWP2`, `DLWP3` |
+| Datalink Surface Target | `DLST`                    |
+| Datalink Fixed Point    | `DLFP`                    |
+
 ## DTC (F-14B Upgrade Only)
 
 The F-14B Upgrade has its Mission Data Loader integrated into DCS' Mission
