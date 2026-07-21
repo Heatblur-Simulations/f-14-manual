@@ -17,7 +17,8 @@ simulation of the Tomcat inside DCS.
 |   8.    | [Bombing Tool](../dcs/bombing_tool.md)                  |
 |   9.    | [Kneeboard](../dcs/kneeboard.md)                        |
 |   10.   | [Embedded Manual](../dcs/ingame_manual.md)              |
-|   11.   | [Training Lessons](../dcs/training_lessons/overview.md) |
+|   11.   | [Character](../dcs/character.md)                        |
+|   12.   | [Training Lessons](../dcs/training_lessons/overview.md) |
 
 Of special note are the explanation available to
 [mission designers](mission_editor.md).
