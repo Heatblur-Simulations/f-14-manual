@@ -56,7 +56,7 @@ This dropdown selection, for the F-14A Early and F-14A Late, allows mission
 editors to select the TCS or select no TCS with ability to select between
 historic (based on livery) or override.
 
-![Mission Editor TCS Dropdown](../../img/mission_editor_tcs_dropdown.jpg)
+![Mission Editor TCS Dropdown](../img/mission_editor_tcs_dropdown.jpg)
 
 | Option                     | Description                                                                                                    |
 | -------------------------- | -------------------------------------------------------------------------------------------------------------- |
