@@ -10,7 +10,7 @@ in the **Mission Editor**.
 Aircraft specific options are set up under the Additional Properties for
 Aircraft page available when setting up an aircraft group containing F-14s.
 
-![Mission Editor Special Options](../../img/mission_editor_special_options.jpg)
+![Mission Editor Special Options](../../img/mission_editor_special_options_bu.jpg)
 
 ### M-61 Burst Mode
 
