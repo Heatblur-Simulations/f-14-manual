@@ -7,6 +7,7 @@
 | ACL          | Automatic Carrier Landing         |
 | ACLS         | Automatic Carrier Landing System  |
 | ACM          | Air Combat Maneuver               |
+| ACP          | Armament Control Panel            |
 | ACQ          | Acquisition                       |
 | ADF          | Automatic Direction Finder        |
 | ADI          | Attitude Director Indicator       |
@@ -44,6 +45,7 @@
 | CANTCO       | Can't Comply                                |
 | CAP          | Computer Address Panel                      |
 | CCIP         | Continuously Computed Impact Point          |
+| CDNU         | Control Display Navigation Unit             |
 | CICU         | Computer Integrated Converter Unit          |
 | CLSN         | Collision                                   |
 | CM           | Continuous Monitor                          |
@@ -66,6 +68,7 @@
 | DES          | Designate                            |
 | DEST         | Destination                          |
 | DF           | Direction Finder                     |
+| DFCS         | Digital Flight Control System        |
 | D/L          | Data Link                            |
 | DLC          | Direct Lift Control                  |
 | DME          | Distance Measuring Equipment         |
@@ -80,25 +83,29 @@
 | ECCM         | Electronic Counter-Countermeasures |
 | ECMD         | Electronic Countermeasures Display |
 | ECS          | Environmental Control System       |
+| EGI          | Embedded GPS/INS                   |
 | EGT          | Exhaust Gas Temperature            |
 | EIG          | Engine Instrument Group            |
 | ETA          | Estimated Time of Arrival          |
 | EXP          | Expand                             |
-| FAR          | False Alarm Rate                   |
 
 ## F
 
 | Abbreviation | Definition                          |
 | ------------ | ----------------------------------- |
+| FAR          | False Alarm Rate                    |
 | FCLP         | Field Carrier Landing Practice      |
 | FEMS         | Fatigue Engine Monitoring System    |
 | FF           | Fuel Flow                           |
 | FLOLS        | Fresnel Lens Optical Landing System |
+| FLIR         | Forward Looking Infrared            |
+| FMC          | F-14 Mission Computer               |
 | FMR          | Frequency Ranging                   |
 | FOV          | Field of View                       |
 | FRL          | Fuselage Reference Line             |
 | FSK          | Frequency-Shift-Keyed               |
 | FWD          | Forward                             |
+| FTI          | Fast Tactical Imaging System        |
 
 ## G
 
@@ -107,6 +114,7 @@
 | GACH         | Gimbal Angle Crosshair      |
 | GCI          | Ground Controlled Intercept |
 | GCS          | Gun Control System          |
+| GGW          | GPS Guided Weapon           |
 | GM           | Ground Map                  |
 | GPS          | Global Positioning System   |
 | GSS          | Gun Scoring System          |
@@ -122,6 +130,7 @@
 | HOJ          | Home-on-Jam                     |
 | HOST         | Hostile                         |
 | HPRF         | High Pulse Repetition Frequency |
+| HRWS         | Hot Range While Search          |
 | HSD          | Horizontal Situation Display    |
 | HSI          | Horizontal Situation Indicator  |
 | HUD          | Heads-up Display                |
@@ -171,6 +180,7 @@
 | LPRF         | Low Pulse Repetition Frequency      |
 | LSO          | Landing Signal Officer or "Paddles" |
 | LTE          | Launch-to-Eject                     |
+| LTS          | LANTIRN Targeting System            |
 
 ## M
 
@@ -183,6 +193,7 @@
 | MAN          | Manual                               |
 | MAND         | Mandatory                            |
 | MDIG         | Multipurpose Display Indicator Group |
+| MDL          | Mission Data Loader                  |
 | MEC          | Main Engine Control                  |
 | MIL          | Military                             |
 | ML           | Missile Launch                       |
@@ -213,24 +224,26 @@
 
 ## P
 
-| Abbreviation | Definition                        |
-| ------------ | --------------------------------- |
-| Paddles      | See LSO                           |
-| PAL          | Pilot Automatic Lockon            |
-| PCD          | Precision Course Direction        |
-| PD           | Pulse Doppler                     |
-| PDCP         | Pilot Display Control Panel       |
-| PDRSL        | Pulse Doppler Radar Slaved        |
-| PDS          | Pulse Doppler Search              |
-| PDSTT        | Pulse Doppler Single Target Track |
-| PH           | AIM-54 Phoenix Missile            |
-| PLM          | Pilot Lockon Mode                 |
-| PRF          | Pulse Repetition Frequency        |
-| PRI          | Primary                           |
-| PRSL         | Pulse Radar Slaved                |
-| PS           | Pulse Search                      |
-| PSTT         | Pulse Single Target Track         |
-| PT           | Point                             |
+| Abbreviation | Definition                                    |
+| ------------ | --------------------------------------------- |
+| Paddles      | See LSO                                       |
+| PAL          | Pilot Automatic Lockon                        |
+| PCD          | Precision Course Direction                    |
+| PD           | Pulse Doppler                                 |
+| PDCP         | Pilot Display Control Panel                   |
+| PDRSL        | Pulse Doppler Radar Slaved                    |
+| PDS          | Pulse Doppler Search                          |
+| PDSTT        | Pulse Doppler Single Target Track             |
+| PH           | AIM-54 Phoenix Missile                        |
+| PLM          | Pilot Lockon Mode                             |
+| PMDIG        | Programmable Multiple Display Indicator Group |
+| PRF          | Pulse Repetition Frequency                    |
+| PRI          | Primary                                       |
+| PRSL         | Pulse Radar Slaved                            |
+| PS           | Pulse Search                                  |
+| PSTT         | Pulse Single Target Track                     |
+| PT           | Point                                         |
+| PTID         | Programmable Tactical Information Display     |
 
 ## Q
 
@@ -256,6 +269,7 @@
 | ROT          | Range on Target         |
 | RTGS         | Real-Time Gun Sight     |
 | RWS          | Range While Search      |
+| RWR          | Radar Warning Receiver  |
 
 ## S
 
@@ -291,6 +305,7 @@
 | THRLD        | Threshold                              |
 | TID          | Tactical Information Display           |
 | TIT          | Turbine Inlet Temperature              |
+| TREL         | Time-to-Release                        |
 | TTG          | Time-to-Go                             |
 | TUIR         | Time Until in Range                    |
 | TUMR         | Time Until Maximum Range               |
@@ -316,6 +331,7 @@
 | VDIG         | Vertical Display Indicator Group (HUD & VDI) |
 | VEC          | Vector                                       |
 | VFR          | Visual Flight Rules                          |
+| VHF          | Very High Frequency                          |
 | VID          | Visual Identification                        |
 | vM           | Manual MAG VAR                               |
 | VMCU         | Voltage Monitor Control Unit                 |
