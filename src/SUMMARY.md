@@ -183,6 +183,7 @@
     - [Bombing Tool](./f14bu/dcs/bombing_tool.md)
     - [Kneeboard](f14bu/dcs/kneeboard.md)
     - [Embedded Manual](./f14bu/dcs/ingame_manual.md)
+    - [Character](./f14bu/dcs/character.md)
     - [Training Lessons](./f14bu/dcs/training_lessons/overview.md)
       - [Lesson 01: F-14BU Differences Familiarization](./f14bu/dcs/training_lessons/lesson01.md)
       - [Lesson 02a: F-14BU Cold Start Airfield PILOT](./f14bu/dcs/training_lessons/lesson02a.md)
