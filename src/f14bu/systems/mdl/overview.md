@@ -12,5 +12,5 @@
 |   6.    | [Waypoint Designation](../mdl/mission_data_loader.md#waypoint-display-priority)                                                           |
 |   7.    | [Plot Line Designation](../mdl/mission_data_loader.md#plot-lines)                                                                         |
 |   8.    | [JDAM Planning Tool](../mdl/mission_data_loader.md#jdam-planning-tool)                                                                    |
-|   9.    | [CDMS](../mdl/mission_data_loader.md#ale-47-counter-measure-dispensing-system-cdms-programming)                                           |
+|   9.    | [CMDS](../mdl/mission_data_loader.md#ale-47-counter-measure-dispensing-system-cdms-programming)                                           |
 |   10.   | [Tactical Imaging Set](../mdl/mission_data_loader.md#tactical-imaging-system)                                                             |
