@@ -62,7 +62,7 @@ selected. The cartridge name is physically shown on the cartridge in the
 aircraft.
 
 Navigation lets the operator plan 12 unique flight plans with 50 preset
-waypoints each. JDAM lets the operator pre-plan a JDAM strike. CDMS lets the
+waypoints each. JDAM lets the operator pre-plan a JDAM strike. CMDS lets the
 operator define countermeasure profiles. TIS lets the operator enter special
 settings for the Tactical Imaging Set.
 
