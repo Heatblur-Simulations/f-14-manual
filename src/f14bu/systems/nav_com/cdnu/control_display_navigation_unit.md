@@ -1060,6 +1060,7 @@ desired altitude.
 (<num>3</num>) SYNC function. Syncs maintain alt readout back to glidepath.
 
 (<num>4</num>) Indicates required descend angle to intercept glideslope.
+(<num>8</num>) On right side shows data.
 
 (<num>5</num>) Current Altitude MSL.
 
