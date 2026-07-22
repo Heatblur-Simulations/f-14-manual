@@ -202,7 +202,7 @@ panel. The five phases are takeoff (T.O.), CRUISE, air-to-air (A/A),
 air-to-ground (A/G), and landing (LDG). Note ACM selection overrides the CRUISE
 A/A and A/G modes; however, it does not override the T.O. or LDG modes. In
 addition to controlling the VDIG(R) formats, the display mode selections also
-control DFCS, armament and FMC logic.
+controls armament and FMC logic.
 
 In addition to the essential data such as altitude, vertical speed indicator,
 etc., the VDIG(R) format also provides steering cues. In each of the PDCP
