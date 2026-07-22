@@ -979,20 +979,27 @@ waypoint is displayed with the "Hot Dog" Symbol.
 Direct STEP 1: Press the DIR key
 
 ![DIR Key](../../../../img/dark/cdnu_dir_key.svg)
-![DIR to Impromptu](../../../../img/dark/cdnu_dir_to_impromptu_guide.svg)
+![DIR to Impromptu](../../../../img/dark/cdnu_dir_impromptu_verctor_guide.svg)
 
 (<num>1</num>) Enter desired vector into SP.
 
-(<num>2</num>) New waypoint is entered as new EGI Fly To Point into flight plan.
+(<num>2</num>) Press LSK 1. New waypoint is entered as new EGI Fly To Point (51)
+into flight plan. A cumputer generated turn point is also entereted into the
+flight plan and numbered 52. This waypoint will pass into history immidiately.
 
 (<num>3</num>) After new waypoint has been passed normal flight plan sequencing
 will continue.
 
 ![DIR to Impromptu vector Graphic](../../../../img/dark/cdnu_dir_to_impromptu_vector_graphic.svg)
 
-The Vector is inserted as Lat Long into the flight plan.
+The Vector is inserted with a User Defined Label (UDL) of the desired vector
+into the flight plan.
 
-![DIR to Impromptu vector Result](../../../../img/dark/cdnu_dir_to_coords_result_guide.svg)
+![DIR to Impromptu vector Result](../../../../img/dark/cdnu_dir_impromptu_verctor_result_guide.svg)
+
+(<num>1</num>) Vector waypoint with UDL.
+
+(<num>2</num>) Computer generated turn point. (Passes into history when passed).
 
 ### Progress Page 1/3
 
