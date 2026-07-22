@@ -402,8 +402,8 @@ ACM Cover UP: Target Designate Switch Actuates Pilot selected Radar Modes.
 For a complete discussion of Pilot selected Radar modes refer to the
 [Radar Chapter](../../../f14ab/systems/radar/acm_modes.md#acm-modes)
 
-The ACM cover in the up position overrides the Cruise mode declutter. With the
-ACM cover in the up positon the A/A Target info box is displayed in cruise. ACM
-cover up also allows for A/A weapons employment. Note the ACM cover weapons
-logic discussed in the
+The ACM cover in the up position overrides the Cruise and A/G VDIG-R display
+modes. With the ACM cover in the up positon the A/A Target info box is displayed
+in cruise and A/G. ACM cover up also allows for A/A weapons employment. Refer to
+the ACM cover weapons logic discussed in the
 [AWG-9 Chapter](../../../f14ab/systems/radar/overview.md).
