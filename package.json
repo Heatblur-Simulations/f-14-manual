@@ -1,0 +1,8 @@
+{
+  "name": "f-14-manual",
+  "private": true,
+  "scripts": {
+    "build": "node i18n/build.js",
+    "serve": "node i18n/serve.js"
+  }
+}

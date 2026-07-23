@@ -4,7 +4,7 @@
 
 [![license](https://img.shields.io/badge/license-CC_BY--NC--ND_4.0-blue)](https://github.com/Heatblur-Simulations/f-14-manual/blob/master/LICENSE)
 
-![Tomcat from back](src/img/tomcat_flying_back.jpg)
+![Tomcat from back](src/en/img/tomcat_flying_back.jpg)
 
 Manual of the F-14 Tomcat by Heatblur Simulations. This is a
 [mdBook](https://rust-lang.github.io/mdBook/) project, content is written in the
@@ -55,6 +55,13 @@ updates whenever the contents change.
 To build the PDF locally, first run
 `cargo install mdbook-pdf --version 0.1.13 --locked`. Then, when running
 `mdbook build`, the PDF will be created in `book/pdf`.
+
+### Building every language
+
+The commands above only build `src/en`. To build every language in one go
+(one HTML site and one PDF per language) run `npm run build`, or
+`npm run serve` to build and preview the result at
+[localhost:3000](http://localhost:3000/) — see [i18n/README.md](i18n/README.md).
 
 ## GH Pages
 
