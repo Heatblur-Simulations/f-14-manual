@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Embedded Manual - Heatblur F-14 Tomcat</title>
+        <title>Jester Set Commands (F-14B(U)) - Heatblur F-14 Tomcat</title>
 
         <!-- Custom HTML head -->
 
@@ -11,36 +11,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="../../favicon.svg">
-        <link rel="stylesheet" href="../../css/variables.css">
-        <link rel="stylesheet" href="../../css/general.css">
-        <link rel="stylesheet" href="../../css/chrome.css">
-        <link rel="stylesheet" href="../../css/print.css" media="print">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="../../fonts/fonts.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="mdbook-highlight-css" href="../../highlight.css">
-        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../../tomorrow-night.css">
-        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../../ayu-highlight.css">
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="../../theme/visual.css">
-        <link rel="stylesheet" href="../../theme/hb_light.css">
-        <link rel="stylesheet" href="../../theme/hb_dark.css">
-        <link rel="stylesheet" href="../../theme/pdf.css">
+        <link rel="stylesheet" href="../theme/visual.css">
+        <link rel="stylesheet" href="../theme/hb_light.css">
+        <link rel="stylesheet" href="../theme/hb_dark.css">
+        <link rel="stylesheet" href="../theme/pdf.css">
 
 
         <!-- Provide site root and default themes to javascript -->
         <script>
-            const path_to_root = "../../";
+            const path_to_root = "../";
             const default_light_theme = "hb_light";
             const default_dark_theme = "hb_dark";
-            window.path_to_searchindex_js = "../../searchindex.js";
+            window.path_to_searchindex_js = "../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../toc.js"></script>
+        <script src="../toc.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -107,7 +107,7 @@
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
-                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
             </noscript>
             <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -139,7 +139,7 @@
                     <h1 class="menu-title">Heatblur F-14 Tomcat</h1>
 
                     <div class="right-buttons">
-                        <a href="../../print.html" title="Print this manual" aria-label="Print this manual">
+                        <a href="../print.html" title="Print this manual" aria-label="Print this manual">
                             <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
                         </a>
                         <a href="https://github.com/Heatblur-Simulations/f-14-manual/releases" title="PDF version" aria-label="PDF version">
@@ -148,7 +148,7 @@
                         <a href="https://github.com/Heatblur-Simulations/f-14-manual" title="Git repository" aria-label="Git repository">
                             <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
                         </a>
-                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/f14bu/dcs/ingame_manual.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                        <a href="https://github.com/Heatblur-Simulations/f-14-manual/edit/master/src/dcs/jester_set_commands_bu.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
                             <span class=fa-svg id="git-edit-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M421.7 220.3l-11.3 11.3-22.6 22.6-205 205c-6.6 6.6-14.8 11.5-23.8 14.1L30.8 511c-8.4 2.5-17.5 .2-23.7-6.1S-1.5 489.7 1 481.2L38.7 353.1c2.6-9 7.5-17.2 14.1-23.8l205-205 22.6-22.6 11.3-11.3 33.9 33.9 62.1 62.1 33.9 33.9zM96 353.9l-9.3 9.3c-.9 .9-1.6 2.1-2 3.4l-25.3 86 86-25.3c1.3-.4 2.5-1.1 3.4-2l9.3-9.3H112c-8.8 0-16-7.2-16-16V353.9zM453.3 19.3l39.4 39.4c25 25 25 65.5 0 90.5l-14.5 14.5-22.6 22.6-11.3 11.3-33.9-33.9-62.1-62.1L314.3 67.7l11.3-11.3 22.6-22.6 14.5-14.5c25-25 65.5-25 90.5 0z"/></svg></span>
                         </a>
                     </div>
@@ -181,35 +181,392 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="embedded-manual"><a class="header" href="#embedded-manual">Embedded Manual</a></h1>
-<p>This manual is embedded into the game and can be read while flying.</p>
-<p>It also offers a way to explain switches in the cockpit directly by opening the
-manual scrolled right to the spot explaining the corresponding switch.</p>
-<h2 id="controls"><a class="header" href="#controls">Controls</a></h2>
-<p>The default bind <kbd>M</kbd> can be used to toggle the manual. When holding it
-down while clicking a switch in the cockpit, the manual will automatically open
-and scroll to the section explaining that switch.</p>
-<p>Additionally, the following binds are available as well:</p>
+                        <h1 id="jester--iceman-set-commands-f-14bu"><a class="header" href="#jester--iceman-set-commands-f-14bu">JESTER / ICEMAN SET COMMANDS (F-14B(U))</a></h1>
+<p>Published fixed-value commands from <strong>10000 to 10099</strong> for use by the mission
+editor (trigger action <em>"X: Set command"</em>, see <code>proxy_device.lua</code>). Because
+these use fixed values it is not necessary to rebuild <code>Command.h</code> after
+adding/changing values in this range.</p>
+<p><code>SET COMMAND</code> can only accept numerical values <code>&gt;= -1</code> and <code>&lt;= 1</code>. Several
+commands below encode an index into that range using the <code>0.XX</code> convention
+(<code>0.01</code> = item 1, <code>0.99</code> = item 99, <code>1.00</code> = item 100).</p>
+<h2 id="general--pilot-commands"><a class="header" href="#general--pilot-commands">General / Pilot Commands</a></h2>
+<h3 id="10000--enable-acm-guns-air-to-air"><a class="header" href="#10000--enable-acm-guns-air-to-air"><code>10000</code> — Enable ACM guns, air-to-air</a></h3>
 <ul>
-<li><kbd>RSHIFT</kbd> + <kbd>M</kbd> - open the manual</li>
-<li><kbd>RCTRL</kbd> + <kbd>M</kbd> - close the manual</li>
-<li><kbd>RALT</kbd> + <kbd>M</kbd> - toggle the manual</li>
+<li><code>1</code> — enables</li>
+<li><code>0</code> — disables <em>(default)</em></li>
 </ul>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../../img/bu/ingame_manual_example.jpg" alt="Checklist Tool Example"><span class="img-wrapper"><img src="../../img/bu/ingame_manual_example.jpg" alt="Checklist Tool Example"></span></label></p>
+<h3 id="10001--carrier-landing"><a class="header" href="#10001--carrier-landing"><code>10001</code> — Carrier landing</a></h3>
+<ul>
+<li><code>1</code> — initiates the carrier landing sequence</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10002--ground-landing"><a class="header" href="#10002--ground-landing"><code>10002</code> — Ground landing</a></h3>
+<ul>
+<li><code>1</code> — initiates the ground landing sequence</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10003--case-1-recovery"><a class="header" href="#10003--case-1-recovery"><code>10003</code> — Case 1 recovery</a></h3>
+<ul>
+<li><code>1</code> — initiates a Case 1 recovery</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10004--pilot-vsl-vertical-scan-lock"><a class="header" href="#10004--pilot-vsl-vertical-scan-lock"><code>10004</code> — Pilot VSL (Vertical Scan Lock)</a></h3>
+<ul>
+<li><code>1</code> — commands the pilot to attempt a VSL lock</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10005--wings-swept"><a class="header" href="#10005--wings-swept"><code>10005</code> — Wings swept</a></h3>
+<ul>
+<li><code>1</code> — sweeps the wings</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10006--air-to-ground-mode"><a class="header" href="#10006--air-to-ground-mode"><code>10006</code> — Air-to-ground mode</a></h3>
+<ul>
+<li><code>1</code> — selects air-to-ground</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10007--parking-brake"><a class="header" href="#10007--parking-brake"><code>10007</code> — Parking brake</a></h3>
+<ul>
+<li><code>1</code> — sets the parking brake</li>
+<li><code>0</code> — releases <em>(default)</em></li>
+</ul>
+<h3 id="10008--radar-weight-on-wheels-wow"><a class="header" href="#10008--radar-weight-on-wheels-wow"><code>10008</code> — Radar weight-on-wheels (WOW)</a></h3>
+<ul>
+<li><code>1</code> — WOW asserted</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h2 id="jester-lantirn--targeting"><a class="header" href="#jester-lantirn--targeting">Jester LANTIRN / Targeting</a></h2>
+<h3 id="10009--jester-lantirn-auto-designate"><a class="header" href="#10009--jester-lantirn-auto-designate"><code>10009</code> — Jester LANTIRN auto designate</a></h3>
+<ul>
+<li><code>1</code> — disables Jester LANTIRN auto designate</li>
+<li><code>0</code> — enables Jester LANTIRN auto designate <em>(default)</em></li>
+</ul>
+<h3 id="10010--jester-silent"><a class="header" href="#10010--jester-silent"><code>10010</code> — Jester silent</a></h3>
+<ul>
+<li><code>1</code> — silences Jester</li>
+<li><code>0</code> — Jester will talk again <em>(default)</em></li>
+</ul>
+<h3 id="10011--jester-pause"><a class="header" href="#10011--jester-pause"><code>10011</code> — Jester pause</a></h3>
+<ul>
+<li><code>1</code> — disables (pauses) Jester</li>
+<li><code>0</code> — reactivates Jester <em>(default)</em></li>
+</ul>
+<h3 id="10012--force-jester-to-track-a-target-by-unit-name"><a class="header" href="#10012--force-jester-to-track-a-target-by-unit-name"><code>10012</code> — Force Jester to track a target by unit name</a></h3>
+<p>Special command to force Jester to track a specific target using unit name.
+Since <code>SET COMMAND</code> only accepts values <code>&gt;= -1</code> and <code>&lt;= 1</code>, the following rule
+is used:</p>
+<ul>
+<li><code>0.01</code> — track unit named <code>LantirnTarget01</code></li>
+<li><code>0.02</code> — track unit named <code>LantirnTarget02</code> <em>(… continues …)</em></li>
+<li><code>0.99</code> — track unit named <code>LantirnTarget99</code></li>
+<li><code>1.00</code> — track unit named <code>LantirnTarget100</code></li>
+<li><code>0</code> — resume Jester state to normal operations</li>
+</ul>
+<h3 id="10013--force-jester-to-track-a-zone"><a class="header" href="#10013--force-jester-to-track-a-zone"><code>10013</code> — Force Jester to track a zone</a></h3>
+<p>Same as <code>10012</code>, but Jester tracks zones.</p>
+<ul>
+<li><code>0.01</code> — track zone named <code>LantirnZone01</code></li>
+<li><code>0.02</code> — track zone named <code>LantirnZone02</code> <em>(… continues …)</em></li>
+<li><code>0.99</code> — track zone named <code>LantirnZone99</code></li>
+<li><code>1.00</code> — track zone named <code>LantirnZone100</code></li>
+<li><code>0</code> — resume Jester state to normal operations</li>
+</ul>
 <blockquote>
-<p>💡 In order to close the manual, make sure to first remove keyboard focus from
-it by clicking anywhere else in the cockpit.</p>
+<p><strong>Note:</strong> Commands <code>10012</code> and <code>10013</code> are exclusive. When Jester is tracking
+a unit using <code>10012</code>, activating <code>10013</code> forces Jester to stop tracking that
+unit and start tracking a zone, and vice versa. Using <code>0</code> in either command
+stops tracking both units and zones.</p>
 </blockquote>
+<h3 id="10014--manual-designate"><a class="header" href="#10014--manual-designate"><code>10014</code> — Manual designate</a></h3>
+<p>Jester will designate manually what is under the LANTIRN cross.</p>
+<h2 id="radio--navigation"><a class="header" href="#radio--navigation">Radio / Navigation</a></h2>
+<h3 id="10015--tune-anarc-182-to-a-selected-channel"><a class="header" href="#10015--tune-anarc-182-to-a-selected-channel"><code>10015</code> — Tune AN/ARC-182 to a selected channel</a></h3>
+<ul>
+<li>Pass the value as <code>0.XX</code> where <code>XX</code> is the two-digit channel number.</li>
+</ul>
+<h3 id="10016--tune-tacan-channel"><a class="header" href="#10016--tune-tacan-channel"><code>10016</code> — Tune TACAN channel</a></h3>
+<p>Construct the value as <code>s0.XXXY</code>, where:</p>
+<ul>
+<li><code>s</code> — optional <code>-</code> sign; use <strong>negative</strong> values for A/A and <strong>positive</strong> for
+T/R</li>
+<li><code>XXX</code> — three-digit channel number (keep the leading zeroes for channels lower
+than 100)</li>
+<li><code>Y</code> — <code>0</code> for X-mode, <code>1</code> for Y-mode</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><code>0.0630</code> — channel 63X, T/R</li>
+<li><code>-0.0081</code> — channel 8Y, A/A</li>
+</ul>
+<h3 id="10017--dest-knob"><a class="header" href="#10017--dest-knob"><code>10017</code> — DEST knob</a></h3>
+<ul>
+<li><code>0.1</code> — WP1</li>
+<li><code>0.2</code> — WP2</li>
+<li><code>0.3</code> — WP3</li>
+<li><code>0.4</code> — FP</li>
+<li><code>0.5</code> — IP</li>
+<li><code>0.6</code> — ST</li>
+<li><code>0.7</code> — HB</li>
+<li><code>0.8</code> — MAN</li>
+</ul>
+<h3 id="10018--select-waypoint-to-enter-coords-from-a-trigger-zone"><a class="header" href="#10018--select-waypoint-to-enter-coords-from-a-trigger-zone"><code>10018</code> — Select waypoint to enter coords from a trigger zone</a></h3>
+<blockquote>
+<p>💡 This command does no action in the cockpit</p>
+</blockquote>
+<ul>
+<li><code>0.1</code> — WP1</li>
+<li><code>0.2</code> — WP2</li>
+<li><code>0.3</code> — WP3</li>
+<li><code>0.4</code> — FP</li>
+<li><code>0.5</code> — IP</li>
+<li><code>0.6</code> — ST</li>
+<li><code>0.7</code> — HB</li>
+<li><code>0.8</code> — MAN</li>
+</ul>
+<h3 id="10019--enter-coords-from-trigger-zone"><a class="header" href="#10019--enter-coords-from-trigger-zone"><code>10019</code> — Enter coords from trigger zone</a></h3>
+<p>Enter coords from a trigger zone for the waypoint selected with <code>10018</code> (if none
+selected, WP1).</p>
+<ul>
+<li><code>0.01</code> — <code>WaypointZone01</code></li>
+<li><code>0.02</code> — <code>WaypointZone02</code></li>
+<li><em>(… continues …)</em></li>
+<li><code>0.99</code> — <code>WaypointZone99</code></li>
+<li><code>-0.01</code> — <code>GGWZone01</code> <em>(negative values select GGW zones)</em></li>
+<li><em>(… continues …)</em></li>
+<li><code>-0.99</code> — <code>GGWZone99</code></li>
+</ul>
+<h2 id="jester-systems"><a class="header" href="#jester-systems">Jester Systems</a></h2>
+<h3 id="10020--wcs-switch"><a class="header" href="#10020--wcs-switch"><code>10020</code> — WCS switch</a></h3>
+<ul>
+<li><code>0.1</code> — OFF</li>
+<li><code>0.2</code> — STBY</li>
+<li><code>0.3</code> — ON</li>
+<li><code>0.0</code> — return to automatic</li>
+</ul>
+<h3 id="10021--run-rwr-bit"><a class="header" href="#10021--run-rwr-bit"><code>10021</code> — Run RWR BIT</a></h3>
+<ul>
+<li>No value parameter; runs the RWR built-in test.</li>
+</ul>
+<h3 id="10022--tid-range-knob"><a class="header" href="#10022--tid-range-knob"><code>10022</code> — TID range knob</a></h3>
+<ul>
+<li><code>0.1</code> — 25 NM</li>
+<li><code>0.2</code> — 50 NM</li>
+<li><code>0.3</code> — 100 NM</li>
+<li><code>0.4</code> — 200 NM</li>
+<li><code>0.5</code> — 400 NM</li>
+<li><code>0.0</code> — return to automatic</li>
+</ul>
+<h3 id="10023--jester-eject"><a class="header" href="#10023--jester-eject"><code>10023</code> — Jester Eject</a></h3>
+<ul>
+<li>Commands Jester to eject.</li>
+</ul>
+<h2 id="jester-radar--air-to-air"><a class="header" href="#jester-radar--air-to-air">Jester Radar / Air-to-Air</a></h2>
+<h3 id="10024--stt-target"><a class="header" href="#10024--stt-target"><code>10024</code> — STT target</a></h3>
+<ul>
+<li><code>0.00</code> — stop force STT track</li>
+<li><code>0.01</code> — <code>AirTarget01</code></li>
+<li><code>0.02</code> — <code>AirTarget02</code></li>
+<li><em>(… continues …)</em></li>
+<li><code>0.99</code> — <code>AirTarget99</code></li>
+</ul>
+<h3 id="10025--break-lock"><a class="header" href="#10025--break-lock"><code>10025</code> — Break lock</a></h3>
+<ul>
+<li>Drops the current track.</li>
+</ul>
+<h3 id="10033--radar-azimuth"><a class="header" href="#10033--radar-azimuth"><code>10033</code> — Radar azimuth</a></h3>
+<ul>
+<li>Accepts <code>-1</code> to <code>1</code>.</li>
+</ul>
+<h3 id="10034--radar-elevation"><a class="header" href="#10034--radar-elevation"><code>10034</code> — Radar elevation</a></h3>
+<ul>
+<li>Accepts <code>-1</code> to <code>1</code>.</li>
+</ul>
+<h2 id="jester-weapons"><a class="header" href="#jester-weapons">Jester Weapons</a></h2>
+<h3 id="10026--weapon-station-state"><a class="header" href="#10026--weapon-station-state"><code>10026</code> — Weapon station state</a></h3>
+<p>Format <code>0.xy</code>:</p>
+<ul>
+<li><code>x</code> — station number (1–8)</li>
+<li><code>y</code> — state: <code>0</code> down (safe), <code>1</code> up (selected)</li>
+</ul>
+<h3 id="10027--weapon-wheel-option"><a class="header" href="#10027--weapon-wheel-option"><code>10027</code> — Weapon wheel option</a></h3>
+<ul>
+<li><code>0.10</code> — MK-81H</li>
+<li><code>0.11</code> — MK-81L</li>
+<li><code>0.12</code> — MK-82H</li>
+<li><code>0.13</code> — MK-82L</li>
+<li><code>0.14</code> — MK-83H</li>
+<li><code>0.15</code> — MK-83L</li>
+<li><code>0.16</code> — MK-84</li>
+<li><code>0.17</code> — LAU-10</li>
+<li><code>0.19</code> — CBU-59A</li>
+<li><code>0.20</code> — CBU-59B</li>
+<li><code>0.21</code> — CBU-59C</li>
+<li><code>0.22</code> — MK-20A</li>
+<li><code>0.23</code> — MK-20B</li>
+<li><code>0.24</code> — MK-20C</li>
+<li><code>0.25</code> — MK-45</li>
+<li><code>0.26</code> — GBU-10</li>
+<li><code>0.27</code> — GBU-12</li>
+<li><code>0.28</code> — GBU-16</li>
+<li><code>0.29</code> — GBU-24</li>
+<li><code>0.30</code> — BDU-33</li>
+<li><code>0.31</code> — TALD</li>
+<li><code>0.32</code> — SUU-25</li>
+</ul>
+<h3 id="10028--attk-mode-knob"><a class="header" href="#10028--attk-mode-knob"><code>10028</code> — ATTK MODE knob</a></h3>
+<ul>
+<li><code>0.0</code> — CMPTR TGT</li>
+<li><code>0.1</code> — CMPTR IP</li>
+<li><code>0.2</code> — CMPTR PLT</li>
+<li><code>0.3</code> — MAN</li>
+</ul>
+<h3 id="10029--dlvy-mode-switches"><a class="header" href="#10029--dlvy-mode-switches"><code>10029</code> — DLVY MODE switches</a></h3>
+<p>Format <code>0.xy</code>:</p>
+<ul>
+<li><code>x</code> — <code>0</code> STP, <code>1</code> RPL</li>
+<li><code>y</code> — <code>0</code> SGL, <code>1</code> PRS</li>
+</ul>
+<h3 id="10030--dlvy-interval"><a class="header" href="#10030--dlvy-interval"><code>10030</code> — DLVY INTERVAL</a></h3>
+<p>Format <code>0.xy</code>:</p>
+<ul>
+<li><code>x</code> — first roller</li>
+<li><code>y</code> — second roller</li>
+</ul>
+<h3 id="10031--dlvy-qty"><a class="header" href="#10031--dlvy-qty"><code>10031</code> — DLVY QTY</a></h3>
+<p>Format <code>0.xy</code>:</p>
+<ul>
+<li><code>x</code> — first roller</li>
+<li><code>y</code> — second roller</li>
+</ul>
+<h3 id="10032--msl-launch"><a class="header" href="#10032--msl-launch"><code>10032</code> — MSL launch</a></h3>
+<ul>
+<li>Launches the selected missile.</li>
+</ul>
+<h2 id="jester-lantirn-zoom"><a class="header" href="#jester-lantirn-zoom">Jester LANTIRN Zoom</a></h2>
+<h3 id="10035--lantirn-zoom-level"><a class="header" href="#10035--lantirn-zoom-level"><code>10035</code> — LANTIRN zoom level</a></h3>
+<ul>
+<li><code>0</code> — auto</li>
+<li><code>0.33</code> — wide</li>
+<li><code>0.66</code> — narrow</li>
+<li><code>1.0</code> — expanded</li>
+</ul>
+<h2 id="jester-backup-bu-waypoint--nav-commands"><a class="header" href="#jester-backup-bu-waypoint--nav-commands">Jester Backup (BU) Waypoint / Nav Commands</a></h2>
+<h3 id="10036--create-waypoint-from-trigger-zone"><a class="header" href="#10036--create-waypoint-from-trigger-zone"><code>10036</code> — Create waypoint from trigger zone</a></h3>
+<p>Creates a waypoint from a trigger zone (zone selected first by <code>10019</code>, or
+target with <code>10046</code>).</p>
+<ul>
+<li><code>0.01</code> – <code>0.99</code> — specific waypoint ID (e.g. <code>0.03</code> = wpt 3)</li>
+<li><code>0</code> — last waypoint created by this command</li>
+<li><code>&gt;= 1</code> — new waypoint</li>
+</ul>
+<blockquote>
+<p>Also auto-selects the created/updated waypoint (as if <code>10037</code> was called), so
+a following command operates on it without an explicit select.</p>
+</blockquote>
+<h3 id="10037--select-waypoint"><a class="header" href="#10037--select-waypoint"><code>10037</code> — Select waypoint</a></h3>
+<p>Selects which waypoint Jester should perform the following operations on. Do
+this first, then issue the other commands.</p>
+<ul>
+<li><code>0.01</code> — wpt 1</li>
+<li><code>0.25</code> — wpt 25 <em>(etc.)</em></li>
+<li><code>0.0</code> — special: the most recently created waypoint through <code>10036</code></li>
+</ul>
+<h3 id="10038--set-special-designation"><a class="header" href="#10038--set-special-designation"><code>10038</code> — Set special designation</a></h3>
+<p>Sets the special designation for the selected waypoint.</p>
+<ul>
+<li><code>0.0</code> — clear SD</li>
+<li><code>0.1</code> — destination</li>
+<li><code>0.2</code> — surface target</li>
+<li><code>0.3</code> — fixed point</li>
+<li><code>0.4</code> — initial point</li>
+<li><code>0.5</code> — HA</li>
+<li><code>0.6</code> — DP</li>
+<li><code>-0.1</code> – <code>-0.7</code> — P1–P7</li>
+</ul>
+<h3 id="10039--transfer-jdam-station"><a class="header" href="#10039--transfer-jdam-station"><code>10039</code> — Transfer JDAM station</a></h3>
+<p>Transfers selected wpt coordinates to a station.</p>
+<ul>
+<li><code>0.0</code> — next selected</li>
+<li><code>0.3</code> — station 3</li>
+<li><code>0.4</code> — station 4</li>
+<li><code>0.5</code> — station 5</li>
+<li><code>0.6</code> — station 6</li>
+</ul>
+<h3 id="10040--set-lts"><a class="header" href="#10040--set-lts"><code>10040</code> — Set LTS</a></h3>
+<ul>
+<li><code>0</code> — remove LTS</li>
+<li><code>1</code> — set LTS</li>
+</ul>
+<h3 id="10041--hook-selected-waypoint"><a class="header" href="#10041--hook-selected-waypoint"><code>10041</code> — Hook selected waypoint</a></h3>
+<ul>
+<li><code>1.0</code> — hook selected wp</li>
+<li><code>0.0</code> — unhook (if selected)</li>
+</ul>
+<h3 id="10042--direct-to-selected-waypoint"><a class="header" href="#10042--direct-to-selected-waypoint"><code>10042</code> — Direct-to selected waypoint</a></h3>
+<ul>
+<li><code>1.0</code> — direct to selected wp</li>
+</ul>
+<h3 id="10043--steering-mode"><a class="header" href="#10043--steering-mode"><code>10043</code> — Steering mode</a></h3>
+<ul>
+<li><code>0.0</code> — dest</li>
+<li><code>0.33</code> — auto</li>
+<li><code>0.66</code> — ofly</li>
+<li><code>1.0</code> — man</li>
+</ul>
+<h3 id="10044--bdhi-mode"><a class="header" href="#10044--bdhi-mode"><code>10044</code> — BDHI mode</a></h3>
+<ul>
+<li><code>0.0</code> — HUD sync</li>
+<li><code>0.1</code> — FP WP (selected with <code>10037</code>)</li>
+<li><code>0.3</code> — Launch Point</li>
+<li><code>0.4</code> — Target</li>
+</ul>
+<h3 id="10045--tcn--egi-select"><a class="header" href="#10045--tcn--egi-select"><code>10045</code> — TCN / EGI select</a></h3>
+<ul>
+<li><code>0.0</code> — EGI</li>
+<li><code>1.0</code> — TCN</li>
+</ul>
+<h3 id="10046--waypoint-from-ggw-target"><a class="header" href="#10046--waypoint-from-ggw-target"><code>10046</code> — Waypoint from GGW target</a></h3>
+<p>Like <code>10019</code>, but selects the source from a live unit's current position for
+<code>10036</code>.</p>
+<ul>
+<li><code>0.01</code> – <code>0.99</code> — unit named <code>"GGWTarget01"</code>..<code>"GGWTarget99"</code> (value × 100 =
+id)</li>
+</ul>
+<h3 id="10047--izlid-pointzone"><a class="header" href="#10047--izlid-pointzone"><code>10047</code> — IZLID point/zone</a></h3>
+<p>Jester points his IR target designator at the point selected by <code>10019</code> (trigger
+zone) or <code>10046</code> (GGW target). The value scales the lasing duration:</p>
+<ul>
+<li><code>value × 60</code> = seconds (<code>1.0</code> = 60s)</li>
+<li><code>-1</code> — lase until told to stop</li>
+<li><code>0</code> — stop immediately</li>
+</ul>
+<h2 id="iceman-ai-pilot-commands"><a class="header" href="#iceman-ai-pilot-commands">Iceman (AI Pilot) Commands</a></h2>
+<ul>
+<li><code>10080</code> — set heading (absolute)</li>
+<li><code>10081</code> — set heading (relative)</li>
+<li><code>10082</code> — set speed (absolute)</li>
+<li><code>10083</code> — set speed (relative)</li>
+<li><code>10084</code> — set altitude (absolute)</li>
+<li><code>10085</code> — set altitude (relative)</li>
+<li><code>10086</code> — navigate: fly to steerpoint</li>
+<li><code>10087</code> — navigate: orbit steerpoint</li>
+<li><code>10088</code> — hold current heading/speed/altitude</li>
+</ul>
+<h2 id="sentinel"><a class="header" href="#sentinel">Sentinel</a></h2>
+<ul>
+<li><code>10099</code> — <code>PROXY_last_command_sentinel</code> (marks the end of the fixed-value
+range; not a usable command).</li>
+</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
-                            <a rel="prev" href="../../f14bu/dcs/kneeboard.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../dcs/jester_set_commands_ab.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                                 <span class="nav-chapters-text">Prev</span>
                             </a>
 
-                            <a rel="next prefetch" href="../../f14bu/dcs/character.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../dcs/bombing_tool.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class="nav-chapters-text">Next</span>
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
@@ -218,19 +575,19 @@ it by clicking anywhere else in the cockpit.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../../f14bu/dcs/kneeboard.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../dcs/jester_set_commands_ab.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                         <span class="nav-chapters-text">Prev</span>
                     </a>
-                    <a rel="prev" href="../../f14bu/dcs/kneeboard.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../dcs/jester_set_commands_ab.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="../../f14bu/dcs/character.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../dcs/bombing_tool.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class="nav-chapters-text">Next</span>
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
-                    <a rel="next prefetch" href="../../f14bu/dcs/character.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../dcs/bombing_tool.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
@@ -251,17 +608,17 @@ it by clicking anywhere else in the cockpit.</p>
         </script>
 
 
-        <script src="../../elasticlunr.min.js"></script>
-        <script src="../../mark.min.js"></script>
-        <script src="../../searcher.js"></script>
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
 
-        <script src="../../clipboard.min.js"></script>
-        <script src="../../highlight.js"></script>
-        <script src="../../book.js"></script>
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
-        <script src="../../js/jquery-3.7.1.min.js"></script>
-        <script src="../../js/extra.js"></script>
+        <script src="../js/jquery-3.7.1.min.js"></script>
+        <script src="../js/extra.js"></script>
 
 
 

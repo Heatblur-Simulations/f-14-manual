@@ -449,7 +449,6 @@ exhaustive list provided at the <a href="#acronyms-and-abbreviations">Abbreviati
 <li><a href="#jester--iceman">Jester &amp; Iceman</a></li>
 <li><a href="#normal-procedures">Normal Procedures</a></li>
 <li><a href="#emergency-procedures">Emergency Procedures</a></li>
-<li><a href="#dcs">DCS</a></li>
 <li><a href="#acronyms-and-abbreviations">Abbreviations</a></li>
 <li><a href="#tutorials">Tutorials</a></li>
 <li><a href="#imprint">Imprint</a></li>
@@ -10163,250 +10162,6 @@ commanded RPM.</li>
 </table>
 </div>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="dcs"><a class="header" href="#dcs">DCS</a></h1>
-<p>This chapter contains systems, settings and interfaces specific to the
-simulation of the Tomcat inside DCS.</p>
-<p>Of special note are the explanation available to
-<a href="#mission-editor">mission designers</a>.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dcs_overview.jpg" alt="DCS"><span class="img-wrapper"><img src="img/dcs_overview.jpg" alt="DCS"></span></label></p>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="special-options"><a class="header" href="#special-options">Special Options</a></h1>
-<p>The Tomcat offers several options that can be set within the <em>Special Option</em>
-menu in DCS.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/special_options.jpg" alt="Special Option Menu"><span class="img-wrapper"><img src="img/special_options.jpg" alt="Special Option Menu"></span></label></p>
-<h2 id="customized-cockpit"><a class="header" href="#customized-cockpit">Customized Cockpit</a></h2>
-<p>Dropdown to select whether customized cockpits are used for the respective
-models.</p>
-<p>For the F-14A (all variants), the custom cockpit folder is located at
-<code>C:\Users\John Doe\Saved Games\DCS\Liveries\F14A_Cockpit</code>.</p>
-<p>For the F-14B, the custom cockpit folder is located at
-<code>C:\Users\John Doe\Saved Games\DCS\Liveries\F14B_Cockpit</code>.</p>
-<p>For the F-14B Upgrade, the custom cockpit folder is located at
-<code>C:\Users\John Doe\Saved Games\DCS\Liveries\Cockpit_F14BU</code>.</p>
-<h2 id="radio-menu-and-ptt-behavior"><a class="header" href="#radio-menu-and-ptt-behavior">Radio Menu and PTT Behavior</a></h2>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/special_options_radio_menu.jpg" alt="Radio Menu"><span class="img-wrapper"><img src="img/special_options_radio_menu.jpg" alt="Radio Menu"></span></label></p>
-<p>Dropdown to select the behavior of the push to talk bind for the radio.</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Option</th><th>Close Menu</th><th>Menu must be open</th><th>Export Voice</th></tr>
-</thead>
-<tbody>
-<tr><td>Default</td><td>❌</td><td>❌</td><td>✅</td></tr>
-<tr><td>Open Menu</td><td>❌</td><td>✅</td><td>✅</td></tr>
-<tr><td>Hide on Release</td><td>✅</td><td>❌</td><td>✅</td></tr>
-<tr><td>No Export</td><td>❌</td><td>❌</td><td>❌</td></tr>
-</tbody>
-</table>
-</div>
-<p>The columns have the following effects:</p>
-<ul>
-<li>Close Menu - when releasing the key, the DCS communication menu is
-automatically closed</li>
-<li>Menu must be open - the key only works when the DCS communication menu is
-currently open</li>
-<li>Export Voice - when pressed down, voice is exported to tools like SRS</li>
-</ul>
-<h2 id="repeat-rio-weapon-type-on-tid"><a class="header" href="#repeat-rio-weapon-type-on-tid">Repeat RIO weapon type on TID</a></h2>
-<p>For easier visibility, since RIO weapon type window is as difficult to read
-in-game as it was in real life. Shown in A/G mode with pilot weapon selector
-off. The real F-14 could not repeat RIO weapon wheel on TID.</p>
-<h2 id="require-weapon-selector-press-between-off-and-gun"><a class="header" href="#require-weapon-selector-press-between-off-and-gun">Require weapon selector press between OFF and GUN</a></h2>
-<p>For enhanced realism, pilot weapon selector needs to be pressed while moving
-between OFF and GUN positions. This may be impractical with many consumer
-joysticks, hence it is an optional feature.</p>
-<h2 id="use-ffb-trim-implementation"><a class="header" href="#use-ffb-trim-implementation">Use FFB trim implementation</a></h2>
-<p>For enhanced realism when using a force feedback device for primary flight
-control. Shifts FFB stick neutral position to match trim actuator position. This
-option only has effect when FFB device is detected.</p>
-<h2 id="enable-afterburner-gate"><a class="header" href="#enable-afterburner-gate">Enable Afterburner Gate</a></h2>
-<p>Restricts throttle to MIL range unless AB gate key is pressed. While pressed,
-full throttle movement into AB range is unrestricted. Once key is released, AB
-operation continues until throttle is moved back to MIL range. Set MIL throttle
-detent below.</p>
-<h2 id="automatic-external-lights-at-carrier-launch"><a class="header" href="#automatic-external-lights-at-carrier-launch">Automatic External Lights at Carrier Launch</a></h2>
-<p>Automatically turns on the external lights when saluting the catapult officer at
-night, providing a nighttime launch signal.</p>
-<h2 id="emergency-wing-sweep-handle-raised-condition"><a class="header" href="#emergency-wing-sweep-handle-raised-condition">Emergency Wing Sweep Handle raised condition</a></h2>
-<p>Require the Emergency Wing Sweep Handle to be raised before moving it. In
-reality handle can be moved regardless of its vertical position.</p>
-<h2 id="enable-alternate-aoa-buffet"><a class="header" href="#enable-alternate-aoa-buffet">Enable Alternate AOA Buffet</a></h2>
-<p>This option enables a more 'realistic' AOA buffet based on F-14 pilot SME
-feedback.</p>
-<h2 id="tinted-visor-effect"><a class="header" href="#tinted-visor-effect">Tinted Visor Effect</a></h2>
-<p>When enabled, moving the pilots helmet visor down adds a graphical effect to
-help against bright lighting conditions. By default, this option is unchecked.</p>
-<h2 id="high-framerate-tis-recordings"><a class="header" href="#high-framerate-tis-recordings">High Framerate TIS Recordings</a></h2>
-<p>Records Tactical Imaging Set video at 30 fps instead of the default 15 fps. This
-results in smoother video at the cost of larger files and potentially worse
-performance.</p>
-<h2 id="stick-automatic-hiding"><a class="header" href="#stick-automatic-hiding">Stick Automatic Hiding</a></h2>
-<p>When enabled, this allows for automatic hiding of the stick when the cursor is
-above it.</p>
-<h2 id="afterburner-detent"><a class="header" href="#afterburner-detent">Afterburner Detent</a></h2>
-<p>Two options to define at which point of the physical hardware throttle input (0
-to 100%) the aircraft will light the afterburner.</p>
-<p>That is, if set to 80%, the MIL power range of the aircraft will be commanded
-between 0% and 80% of your physical throttle, while the remaining 20% will
-control the afterburner range.</p>
-<p>The deadzone option can be used to split the points in the range at which the
-afterburner will be turned on and off. For example, setting 20% for the deadzone
-and 80% for the detent results in afterburner activation at 82% and deactivation
-at 78% of throttle input.</p>
-<h2 id="jester-ai-contract"><a class="header" href="#jester-ai-contract">Jester AI Contract</a></h2>
-<h3 id="use-head-movement-to-select-items-in-jester-menu"><a class="header" href="#use-head-movement-to-select-items-in-jester-menu">Use head movement to select items in Jester Menu</a></h3>
-<p>This option, when enabled, allows using your head movement for selection of menu
-items.</p>
-<h3 id="jester-landing-callouts"><a class="header" href="#jester-landing-callouts">Jester Landing Callouts</a></h3>
-<p>This option enables Jester to give callouts to assist during landings.</p>
-<h3 id="switch-pd-stt-to-p-stt-lock-when-going-wvr"><a class="header" href="#switch-pd-stt-to-p-stt-lock-when-going-wvr">Switch PD-STT to P-STT lock when going WVR</a></h3>
-<p>P-STT is better suited in when close to target but does not allow AIM-54 data
-link updates. If option is checked Jester will automatically try to switch
-PD-STT lock to P-STT when close to enemy.</p>
-<h3 id="jester-menu-camera"><a class="header" href="#jester-menu-camera">Jester menu camera</a></h3>
-<p>This option shows Jester's camera in center of Jester menu.</p>
-<h3 id="jester-tid-auto-expand"><a class="header" href="#jester-tid-auto-expand">Jester TID Auto Expand</a></h3>
-<p>With this option enabled, Jester automatically expands TID, using the TID EXP
-option, with overlapping hooked target.</p>
-<h3 id="jester-auto-tcsflir-vid"><a class="header" href="#jester-auto-tcsflir-vid">Jester Auto TCS/FLIR VID</a></h3>
-<p>When enabled, Jester automatically points the TCS (or LANTIRN in air-to-air) at
-hooked targets to identify them visually.</p>
-<h3 id="jester-subtitles-experimental"><a class="header" href="#jester-subtitles-experimental">Jester Subtitles (Experimental)</a></h3>
-<p>Dropdown select to show subtitles for Jester's lines (experimental).</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Option</th><th>Subtitles</th><th>Portrait</th></tr>
-</thead>
-<tbody>
-<tr><td>Off</td><td>❌</td><td>❌</td></tr>
-<tr><td>On, with portrait</td><td>✅</td><td>✅</td></tr>
-<tr><td>On, without portrait</td><td>✅</td><td>❌</td></tr>
-</tbody>
-</table>
-</div>
-<h3 id="use-ai-generated-female-jester-voice-conversion-experimental"><a class="header" href="#use-ai-generated-female-jester-voice-conversion-experimental">Use AI generated female Jester voice conversion (experimental)</a></h3>
-<p>The option replaces Jester's voice with an AI voice-converted version that
-sounds female. These are the original Jester voice recordings (performed by
-Grayson) run through AI voice conversion - no lines are AI-written or newly
-generated, it is the same performance converted to a female-sounding voice. May
-contain occasional AI conversion artifacts.</p>
-<h3 id="jester-treats-no-iff-reply-as-bandit"><a class="header" href="#jester-treats-no-iff-reply-as-bandit">Jester treats no IFF reply as bandit</a></h3>
-<p>When Jester interrogates IFF, a contact that does not reply is normally left as
-an unknown bogey. With this option, Jester instead flags any contact that fails
-to reply as hostile (bandit).</p>
-<blockquote>
-<p>💡 A friendly with an inoperative or mis-set transponder, or one out of
-interrogation range, may be flagged as a bandit.</p>
-</blockquote>
-<h3 id="jester-records-gun-camera-tis-by-default"><a class="header" href="#jester-records-gun-camera-tis-by-default">Jester records gun camera (TIS) by default</a></h3>
-<p>When on, the Tactical Imaging Set comes up powered (except on a cold start) and
-Jester records HUD gun-camera footage automatically when you hold the trigger
-first detent. Turn off if you do not want gun-camera video recorded by default -
-you can still switch the TIS on from the cockpit switch or the Jester wheel.</p>
-<h2 id="hb-ui"><a class="header" href="#hb-ui">HB UI</a></h2>
-<h3 id="resolution-override"><a class="header" href="#resolution-override">Resolution Override</a></h3>
-<p>User interface elements, such as the Jester Wheel, the manual, virtual browser
-and others are scaled and positioned via a fixed resolution that must match the
-resolution of the in-game surface they are rendered on.</p>
-<p>With the option unchecked, this resolution is automatically determined based on
-screen settings. However, in certain situations, especially when using VR or
-having a multi-monitor setup, this automatic detection might fail and compute an
-incorrect resolution.</p>
-<p>Should UI elements be misplaced, for example the Jester Wheel not being centered
-or even cut off, check this setting and edit the resolution manually until the
-UI is displayed properly.</p>
-<h3 id="offset"><a class="header" href="#offset">Offset</a></h3>
-<p>Allows to displace the UI horizontally and vertically. Positive values shift it
-to the right or down, negative values to the left or up.</p>
-<p>Normally, this should be kept at the default value of 0 px. However, in certain
-cases (e.g. when using VR and setting it to render on the LEFT or RIGHT eye,
-while having the checkbox for <em>"Use DCS System Resolution"</em> not checked) it is
-possible that the UI gets cut off. This setting then allows to move the UI back
-into view, but therefore giving up proper alignment on the UI, such as the
-Jester UI being centered on the screen.</p>
-<h3 id="domain-access"><a class="header" href="#domain-access">Domain Access</a></h3>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/hb_ui_domain_access_option.jpg" alt="Domain Access Types"><span class="img-wrapper"><img src="img/hb_ui_domain_access_option.jpg" alt="Domain Access Types"></span></label></p>
-<p>Defines which domains the HB UI is allowed to access.</p>
-<p><strong>Full</strong> allows for free browsing, allowing to visit any website with the
-<a href="#virtual-browser">Virtual Browser</a>.</p>
-<p>The default option <strong>Whitelist</strong> defines which sites can be accessed by using a
-whitelist file. Only domains passing the rules setup in the file are allowed.
-The default rules are setup to support all HB UI features and a hand full of
-useful websites for the Virtual Browser, such as <em>YouTube</em>.</p>
-<p>This file is automatically created at</p>
-<p><code>C:\Users\John Doe\Saved Games\DCS_F14\hbui_whitelist.txt</code></p>
-<p>when launching the Tomcat for the first time.</p>
-<blockquote>
-<p>💡 Deleting the file will lead to it being recreated on the next launch. That
-way, one can have it updated to the newest set of rules - should there have
-been any changes.</p>
-</blockquote>
-<p>Selecting <strong>Offline</strong> will disable the Virtual Browser and any other HB UI
-features and elements that require an active online connection.</p>
-<h3 id="language"><a class="header" href="#language">Language</a></h3>
-<p>Dropdown to select the language used for all HB UI elements. Available are:</p>
-<ul>
-<li>English</li>
-<li>Chinese (<em>中文</em>)</li>
-<li>German (<em>Deutsch</em>)</li>
-<li>Korean (<em>한국어</em>)</li>
-</ul>
-<p>Affects for example the Jester UI, the Bombing Tool, but also the in-game
-version of this Manual and more.</p>
-<h3 id="theme"><a class="header" href="#theme">Theme</a></h3>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/special_option_hb_ui_theme.jpg" alt="UI Theme"><span class="img-wrapper"><img src="img/special_option_hb_ui_theme.jpg" alt="UI Theme"></span></label></p>
-<p>Allows to select which color theme is used by the UI. All UI elements support a
-light and a dark theme.</p>
-<p>The default option <strong>AUTO</strong> will pick the theme dynamically based on the in-game
-time. Light during the day and Dark for a night mission.</p>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="mission-editor"><a class="header" href="#mission-editor">Mission Editor</a></h1>
-<p>The F-14 has many aircraft-specific settings and waypoints that are configured
-in the <strong>Mission Editor</strong>.</p>
-<h2 id="additional-aircraft-properties"><a class="header" href="#additional-aircraft-properties">Additional Aircraft Properties</a></h2>
-<p>Aircraft specific options are set up under the Additional Properties for
-Aircraft page available when setting up an aircraft group containing F-14s.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/mission_editor_special_options_ab.jpg" alt="Mission Editor Special Options"><span class="img-wrapper"><img src="img/mission_editor_special_options_ab.jpg" alt="Mission Editor Special Options"></span></label></p>
-<h3 id="m-61-burst-mode"><a class="header" href="#m-61-burst-mode">M-61 Burst Mode</a></h3>
-<p>This dropdown allows for changes in the M61's max burst length. The "Manual"
-option fires until empty.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/mission_editor_m61_burst_setting_ab.jpg" alt="Mission Editor M61 Burst Mode"><span class="img-wrapper"><img src="img/mission_editor_m61_burst_setting_ab.jpg" alt="Mission Editor M61 Burst Mode"></span></label></p>
-<h3 id="anale-39-loadout"><a class="header" href="#anale-39-loadout">AN/ALE-39 Loadout</a></h3>
-<p>This dropdown allows for changes in the AN/ALE-39 countermeasure loadout.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/mission_editor_ale39_loadout.jpg" alt="Mission Editor ALE-39 Loadout"><span class="img-wrapper"><img src="img/mission_editor_ale39_loadout.jpg" alt="Mission Editor ALE-39 Loadout"></span></label></p>
-<h3 id="ins-reference-alignment-stored"><a class="header" href="#ins-reference-alignment-stored">INS Reference Alignment Stored</a></h3>
-<p>This sets whether INS reference is pre-aligned at spawn. This allows for a
-stored alignment to be completed upon aircraft cold start.</p>
-<h3 id="tacan-channel-preset-and-band"><a class="header" href="#tacan-channel-preset-and-band">TACAN Channel Preset and Band</a></h3>
-<p>This allows the initial TACAN channel and band to be preset.</p>
-<h3 id="ils-channel-preset"><a class="header" href="#ils-channel-preset">ILS Channel Preset</a></h3>
-<p>This allows the initial ILS channel preset to be set.</p>
-<h3 id="ky-28-encryption-key"><a class="header" href="#ky-28-encryption-key">KY-28 Encryption Key</a></h3>
-<p>This allows the initial KY-28 encryption key to be preset.</p>
-<h3 id="refueling-probe-cover-removed"><a class="header" href="#refueling-probe-cover-removed">Refueling Probe Cover Removed</a></h3>
-<p>This option removes the refueling probe cover while loaded in the mission. This
-option overrides the livery refueling probe cover option.</p>
-<h3 id="tcs-f-14a-early-and-f-14a-late-only"><a class="header" href="#tcs-f-14a-early-and-f-14a-late-only">TCS (F-14A Early and F-14A Late Only)</a></h3>
-<p>This dropdown selection, for the F-14A Early and F-14A Late, allows mission
-editors to select the TCS or select no TCS with ability to select between
-historic (based on livery) or override.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/mission_editor_tcs_dropdown.jpg" alt="Mission Editor TCS Dropdown"><span class="img-wrapper"><img src="img/mission_editor_tcs_dropdown.jpg" alt="Mission Editor TCS Dropdown"></span></label></p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Option</th><th>Description</th></tr>
-</thead>
-<tbody>
-<tr><td>Historic (based on livery)</td><td>Uses the livery's set option</td></tr>
-<tr><td>On</td><td>Enables the TCS and equips chinpod with TCS regardless of livery option</td></tr>
-<tr><td>Off (Historic Variant)</td><td>Disables TCS and equips chinpod based on livery (if TCS was originally on livery, the bulletcover is equipped)</td></tr>
-<tr><td>Off (Bulletcover Variant)</td><td>Disables TCS and equips bulletcover chinpod regardless of livery option</td></tr>
-<tr><td>Off (Chinpod Variant)</td><td>Disables TCS and equips the chinpod without TCS housing regardless of livery option</td></tr>
-</tbody>
-</table>
-</div>
-<div style="break-before: page; page-break-before: always;"></div>
 <h1 id="f-14b-upgrade-1"><a class="header" href="#f-14b-upgrade-1">F-14B Upgrade</a></h1>
 <p>Details on all changes introduced to the F-14B(U) variant specifically. Read
 chapter <a href="#f-14ab">F-14A/B</a> for an overview on the aircraft itself first.</p>
@@ -10417,7 +10172,7 @@ chapter <a href="#f-14ab">F-14A/B</a> for an overview on the aircraft itself fir
 <li><a href="#systems-overview-1">Systems Overview</a></li>
 <li><a href="#f-14b-upgrade-weapons-employment">Weapons Employment</a></li>
 <li><a href="#normal-procedures-1">Normal Procedures</a></li>
-<li><a href="#dcs-1">DCS</a></li>
+<li><a href="#dcs">DCS</a></li>
 <li><a href="#acronyms-and-abbreviations">Abbreviations</a></li>
 <li><a href="#tutorials">Tutorials</a></li>
 <li><a href="#imprint">Imprint</a></li>
@@ -17987,9 +17742,10 @@ TCS/LTS video feed button.</p>
 <h1 id="mission-data-loader"><a class="header" href="#mission-data-loader">Mission Data Loader</a></h1>
 <p>The Mission Data Loader (MDL) provides bulk storage of mission-essential data.</p>
 <p>The Data Transfer Module (DTM) can be edited in the
-<a href="#mission-editor-1">Mission Editor</a> or the ground crew <kbd>F10</kbd>
-menu, with a range of navigation and mission computer data. Navigation data are
-transferred to the CDNU using a special pass-through function of the EGI.</p>
+<a href="#mission-editor">Mission Editor</a> or the ground crew
+<kbd>F10</kbd> menu, with a range of navigation and mission computer data.
+Navigation data are transferred to the CDNU using a special pass-through
+function of the EGI.</p>
 <p>The MDL may contain two separate waypoint databases, a magnetic variation
 (MAGVAR) table, up to twelve flight plans, and the current GPS almanac. The
 waypoint databases contain 5-character alphanumeric identifiers and the
@@ -20486,346 +20242,23 @@ jester to move the pod to the indicated location.</p>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dark/jester_context_key_actions_context_key_ag.svg" alt="Jester A/G context key actions"><span class="img-wrapper"><img src="img/dark/jester_context_key_actions_context_key_ag.svg" alt="Jester A/G context key actions"></span></label></p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="dcs-1"><a class="header" href="#dcs-1">DCS</a></h1>
+<h1 id="dcs"><a class="header" href="#dcs">DCS</a></h1>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/dcs_specific_features.jpg" alt="DCS"><span class="img-wrapper"><img src="img/bu/dcs_specific_features.jpg" alt="DCS"></span></label></p>
 <p>This chapter contains systems, settings and interfaces specific to the
-simulation of the Tomcat inside DCS.</p>
+simulation of the F-14B Upgrade inside DCS. Refer to the
+<a href="#dcs">DCS section</a> for information that pertains to both the B
+Upgrade and A/B model Tomcats.</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th style="text-align: center">Section</th><th>Name</th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align: center">1.</td><td><a href="#special-options-1">Special Options</a></td></tr>
-<tr><td style="text-align: center">2.</td><td><a href="#mission-editor-1">Mission Editor</a></td></tr>
-<tr><td style="text-align: center">3.</td><td><a href="#grease-pencil">Grease Pencil</a></td></tr>
-<tr><td style="text-align: center">4.</td><td><a href="#virtual-browser">Virtual Browser</a></td></tr>
-<tr><td style="text-align: center">5.</td><td><a href="#instant-camera">Instant Camera</a></td></tr>
-<tr><td style="text-align: center">6.</td><td><a href="#laser-pointer-designator">Laser Pointer Designator</a></td></tr>
-<tr><td style="text-align: center">7.</td><td><a href="#jester--iceman-set-commands">Jester Set Commands</a></td></tr>
-<tr><td style="text-align: center">8.</td><td><a href="#bombing-tool">Bombing Tool</a></td></tr>
-<tr><td style="text-align: center">9.</td><td><a href="#kneeboard">Kneeboard</a></td></tr>
-<tr><td style="text-align: center">10.</td><td><a href="#embedded-manual">Embedded Manual</a></td></tr>
-<tr><td style="text-align: center">11.</td><td><a href="#character">Character</a></td></tr>
-<tr><td style="text-align: center">12.</td><td><a href="#training-lessons">Training Lessons</a></td></tr>
+<tr><td style="text-align: center">1.</td><td><a href="#laser-pointer-designator">Laser Pointer Designator</a></td></tr>
+<tr><td style="text-align: center">2.</td><td><a href="#training-lessons">Training Lessons</a></td></tr>
 </tbody>
 </table>
 </div>
-<p>Of special note are the explanation available to
-<a href="#mission-editor-1">mission designers</a>.</p>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="special-options-1"><a class="header" href="#special-options-1">Special Options</a></h1>
-<p>The Tomcat offers several options that can be set within the <em>Special Option</em>
-menu in DCS.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/special_options.jpg" alt="Special Option Menu"><span class="img-wrapper"><img src="img/special_options.jpg" alt="Special Option Menu"></span></label></p>
-<h2 id="customized-cockpit-1"><a class="header" href="#customized-cockpit-1">Customized Cockpit</a></h2>
-<p>Dropdown to select whether customized cockpits are used for the respective
-models.</p>
-<p>For the F-14A (all variants), the custom cockpit folder is located at
-<code>C:\Users\John Doe\Saved Games\DCS\Liveries\F14A_Cockpit</code>.</p>
-<p>For the F-14B, the custom cockpit folder is located at
-<code>C:\Users\John Doe\Saved Games\DCS\Liveries\F14B_Cockpit</code>.</p>
-<p>For the F-14B Upgrade, the custom cockpit folder is located at
-<code>C:\Users\John Doe\Saved Games\DCS\Liveries\Cockpit_F14BU</code>.</p>
-<h2 id="radio-menu-and-ptt-behavior-1"><a class="header" href="#radio-menu-and-ptt-behavior-1">Radio Menu and PTT Behavior</a></h2>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/special_options_radio_menu.jpg" alt="Radio Menu"><span class="img-wrapper"><img src="img/special_options_radio_menu.jpg" alt="Radio Menu"></span></label></p>
-<p>Dropdown to select the behavior of the push to talk bind for the radio.</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Option</th><th>Close Menu</th><th>Menu must be open</th><th>Export Voice</th></tr>
-</thead>
-<tbody>
-<tr><td>Default</td><td>❌</td><td>❌</td><td>✅</td></tr>
-<tr><td>Open Menu</td><td>❌</td><td>✅</td><td>✅</td></tr>
-<tr><td>Hide on Release</td><td>✅</td><td>❌</td><td>✅</td></tr>
-<tr><td>No Export</td><td>❌</td><td>❌</td><td>❌</td></tr>
-</tbody>
-</table>
-</div>
-<p>The columns have the following effects:</p>
-<ul>
-<li>Close Menu - when releasing the key, the DCS communication menu is
-automatically closed</li>
-<li>Menu must be open - the key only works when the DCS communication menu is
-currently open</li>
-<li>Export Voice - when pressed down, voice is exported to tools like SRS</li>
-</ul>
-<h2 id="repeat-rio-weapon-type-on-tid-1"><a class="header" href="#repeat-rio-weapon-type-on-tid-1">Repeat RIO weapon type on TID</a></h2>
-<p>For easier visibility, since RIO weapon type window is as difficult to read
-in-game as it was in real life. Shown in A/G mode with pilot weapon selector
-off. The real F-14 could not repeat RIO weapon wheel on TID.</p>
-<h2 id="require-weapon-selector-press-between-off-and-gun-1"><a class="header" href="#require-weapon-selector-press-between-off-and-gun-1">Require weapon selector press between OFF and GUN</a></h2>
-<p>For enhanced realism, pilot weapon selector needs to be pressed while moving
-between OFF and GUN positions. This may be impractical with many consumer
-joysticks, hence it is an optional feature.</p>
-<h2 id="use-ffb-trim-implementation-1"><a class="header" href="#use-ffb-trim-implementation-1">Use FFB trim implementation</a></h2>
-<p>For enhanced realism when using a force feedback device for primary flight
-control. Shifts FFB stick neutral position to match trim actuator position. This
-option only has effect when FFB device is detected.</p>
-<h2 id="enable-afterburner-gate-1"><a class="header" href="#enable-afterburner-gate-1">Enable Afterburner Gate</a></h2>
-<p>Restricts throttle to MIL range unless AB gate key is pressed. While pressed,
-full throttle movement into AB range is unrestricted. Once key is released, AB
-operation continues until throttle is moved back to MIL range. Set MIL throttle
-detent below.</p>
-<h2 id="automatic-external-lights-at-carrier-launch-1"><a class="header" href="#automatic-external-lights-at-carrier-launch-1">Automatic External Lights at Carrier Launch</a></h2>
-<p>Automatically turns on the external lights when saluting the catapult officer at
-night, providing a nighttime launch signal.</p>
-<h2 id="emergency-wing-sweep-handle-raised-condition-1"><a class="header" href="#emergency-wing-sweep-handle-raised-condition-1">Emergency Wing Sweep Handle raised condition</a></h2>
-<p>Require the Emergency Wing Sweep Handle to be raised before moving it. In
-reality handle can be moved regardless of its vertical position.</p>
-<h2 id="enable-alternate-aoa-buffet-1"><a class="header" href="#enable-alternate-aoa-buffet-1">Enable Alternate AOA Buffet</a></h2>
-<p>This option enables a more 'realistic' AOA buffet based on F-14 pilot SME
-feedback.</p>
-<h2 id="tinted-visor-effect-1"><a class="header" href="#tinted-visor-effect-1">Tinted Visor Effect</a></h2>
-<p>When enabled, moving the pilots helmet visor down adds a graphical effect to
-help against bright lighting conditions. By default, this option is unchecked.</p>
-<h2 id="high-framerate-tis-recordings-1"><a class="header" href="#high-framerate-tis-recordings-1">High Framerate TIS Recordings</a></h2>
-<p>Records Tactical Imaging Set video at 30 fps instead of the default 15 fps. This
-results in smoother video at the cost of larger files and potentially worse
-performance.</p>
-<h2 id="stick-automatic-hiding-1"><a class="header" href="#stick-automatic-hiding-1">Stick Automatic Hiding</a></h2>
-<p>When enabled, this allows for automatic hiding of the stick when the cursor is
-above it.</p>
-<h2 id="afterburner-detent-1"><a class="header" href="#afterburner-detent-1">Afterburner Detent</a></h2>
-<p>Two options to define at which point of the physical hardware throttle input (0
-to 100%) the aircraft will light the afterburner.</p>
-<p>That is, if set to 80%, the MIL power range of the aircraft will be commanded
-between 0% and 80% of your physical throttle, while the remaining 20% will
-control the afterburner range.</p>
-<p>The deadzone option can be used to split the points in the range at which the
-afterburner will be turned on and off. For example, setting 20% for the deadzone
-and 80% for the detent results in afterburner activation at 82% and deactivation
-at 78% of throttle input.</p>
-<h2 id="jester-ai-contract-1"><a class="header" href="#jester-ai-contract-1">Jester AI Contract</a></h2>
-<h3 id="use-head-movement-to-select-items-in-jester-menu-1"><a class="header" href="#use-head-movement-to-select-items-in-jester-menu-1">Use head movement to select items in Jester Menu</a></h3>
-<p>This option, when enabled, allows using your head movement for selection of menu
-items.</p>
-<h3 id="jester-landing-callouts-1"><a class="header" href="#jester-landing-callouts-1">Jester Landing Callouts</a></h3>
-<p>This option enables Jester to give callouts to assist during landings.</p>
-<h3 id="switch-pd-stt-to-p-stt-lock-when-going-wvr-1"><a class="header" href="#switch-pd-stt-to-p-stt-lock-when-going-wvr-1">Switch PD-STT to P-STT lock when going WVR</a></h3>
-<p>P-STT is better suited in when close to target but does not allow AIM-54 data
-link updates. If option is checked Jester will automatically try to switch
-PD-STT lock to P-STT when close to enemy.</p>
-<h3 id="jester-menu-camera-1"><a class="header" href="#jester-menu-camera-1">Jester menu camera</a></h3>
-<p>This option shows Jester's camera in center of Jester menu.</p>
-<h3 id="jester-tid-auto-expand-1"><a class="header" href="#jester-tid-auto-expand-1">Jester TID Auto Expand</a></h3>
-<p>With this option enabled, Jester automatically expands TID, using the TID EXP
-option, with overlapping hooked target.</p>
-<h3 id="jester-auto-tcsflir-vid-1"><a class="header" href="#jester-auto-tcsflir-vid-1">Jester Auto TCS/FLIR VID</a></h3>
-<p>When enabled, Jester automatically points the TCS (or LANTIRN in air-to-air) at
-hooked targets to identify them visually.</p>
-<h3 id="jester-subtitles-experimental-1"><a class="header" href="#jester-subtitles-experimental-1">Jester Subtitles (Experimental)</a></h3>
-<p>Dropdown select to show subtitles for Jester's lines (experimental).</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Option</th><th>Subtitles</th><th>Portrait</th></tr>
-</thead>
-<tbody>
-<tr><td>Off</td><td>❌</td><td>❌</td></tr>
-<tr><td>On, with portrait</td><td>✅</td><td>✅</td></tr>
-<tr><td>On, without portrait</td><td>✅</td><td>❌</td></tr>
-</tbody>
-</table>
-</div>
-<h3 id="use-ai-generated-female-jester-voice-conversion-experimental-1"><a class="header" href="#use-ai-generated-female-jester-voice-conversion-experimental-1">Use AI generated female Jester voice conversion (experimental)</a></h3>
-<p>The option replaces Jester's voice with an AI voice-converted version that
-sounds female. These are the original Jester voice recordings (performed by
-Grayson) run through AI voice conversion - no lines are AI-written or newly
-generated, it is the same performance converted to a female-sounding voice. May
-contain occasional AI conversion artifacts.</p>
-<h3 id="jester-treats-no-iff-reply-as-bandit-1"><a class="header" href="#jester-treats-no-iff-reply-as-bandit-1">Jester treats no IFF reply as bandit</a></h3>
-<p>When Jester interrogates IFF, a contact that does not reply is normally left as
-an unknown bogey. With this option, Jester instead flags any contact that fails
-to reply as hostile (bandit).</p>
-<blockquote>
-<p>💡 A friendly with an inoperative or mis-set transponder, or one out of
-interrogation range, may be flagged as a bandit.</p>
-</blockquote>
-<h3 id="jester-records-gun-camera-tis-by-default-1"><a class="header" href="#jester-records-gun-camera-tis-by-default-1">Jester records gun camera (TIS) by default</a></h3>
-<p>When on, the Tactical Imaging Set comes up powered (except on a cold start) and
-Jester records HUD gun-camera footage automatically when you hold the trigger
-first detent. Turn off if you do not want gun-camera video recorded by default -
-you can still switch the TIS on from the cockpit switch or the Jester wheel.</p>
-<h2 id="hb-ui-1"><a class="header" href="#hb-ui-1">HB UI</a></h2>
-<h3 id="resolution-override-1"><a class="header" href="#resolution-override-1">Resolution Override</a></h3>
-<p>User interface elements, such as the Jester Wheel, the manual, virtual browser
-and others are scaled and positioned via a fixed resolution that must match the
-resolution of the in-game surface they are rendered on.</p>
-<p>With the option unchecked, this resolution is automatically determined based on
-screen settings. However, in certain situations, especially when using VR or
-having a multi-monitor setup, this automatic detection might fail and compute an
-incorrect resolution.</p>
-<p>Should UI elements be misplaced, for example the Jester Wheel not being centered
-or even cut off, check this setting and edit the resolution manually until the
-UI is displayed properly.</p>
-<h3 id="offset-1"><a class="header" href="#offset-1">Offset</a></h3>
-<p>Allows to displace the UI horizontally and vertically. Positive values shift it
-to the right or down, negative values to the left or up.</p>
-<p>Normally, this should be kept at the default value of 0 px. However, in certain
-cases (e.g. when using VR and setting it to render on the LEFT or RIGHT eye,
-while having the checkbox for <em>"Use DCS System Resolution"</em> not checked) it is
-possible that the UI gets cut off. This setting then allows to move the UI back
-into view, but therefore giving up proper alignment on the UI, such as the
-Jester UI being centered on the screen.</p>
-<h3 id="domain-access-1"><a class="header" href="#domain-access-1">Domain Access</a></h3>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/hb_ui_domain_access_option.jpg" alt="Domain Access Types"><span class="img-wrapper"><img src="img/hb_ui_domain_access_option.jpg" alt="Domain Access Types"></span></label></p>
-<p>Defines which domains the HB UI is allowed to access.</p>
-<p><strong>Full</strong> allows for free browsing, allowing to visit any website with the
-<a href="#virtual-browser">Virtual Browser</a>.</p>
-<p>The default option <strong>Whitelist</strong> defines which sites can be accessed by using a
-whitelist file. Only domains passing the rules setup in the file are allowed.
-The default rules are setup to support all HB UI features and a hand full of
-useful websites for the Virtual Browser, such as <em>YouTube</em>.</p>
-<p>This file is automatically created at</p>
-<p><code>C:\Users\John Doe\Saved Games\DCS_F14\hbui_whitelist.txt</code></p>
-<p>when launching the Tomcat for the first time.</p>
-<blockquote>
-<p>💡 Deleting the file will lead to it being recreated on the next launch. That
-way, one can have it updated to the newest set of rules - should there have
-been any changes.</p>
-</blockquote>
-<p>Selecting <strong>Offline</strong> will disable the Virtual Browser and any other HB UI
-features and elements that require an active online connection.</p>
-<h3 id="language-1"><a class="header" href="#language-1">Language</a></h3>
-<p>Dropdown to select the language used for all HB UI elements. Available are:</p>
-<ul>
-<li>English</li>
-<li>Chinese (<em>中文</em>)</li>
-<li>German (<em>Deutsch</em>)</li>
-<li>Korean (<em>한국어</em>)</li>
-</ul>
-<p>Affects for example the Jester UI, the Bombing Tool, but also the in-game
-version of this Manual and more.</p>
-<h3 id="theme-1"><a class="header" href="#theme-1">Theme</a></h3>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/special_option_hb_ui_theme.jpg" alt="UI Theme"><span class="img-wrapper"><img src="img/special_option_hb_ui_theme.jpg" alt="UI Theme"></span></label></p>
-<p>Allows to select which color theme is used by the UI. All UI elements support a
-light and a dark theme.</p>
-<p>The default option <strong>AUTO</strong> will pick the theme dynamically based on the in-game
-time. Light during the day and Dark for a night mission.</p>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="mission-editor-1"><a class="header" href="#mission-editor-1">Mission Editor</a></h1>
-<blockquote>
-<p>🚧 Work in Progress</p>
-</blockquote>
-<p>The F-14 has many aircraft-specific settings and waypoints that are configured
-in the <strong>Mission Editor</strong>.</p>
-<h2 id="additional-aircraft-properties-1"><a class="header" href="#additional-aircraft-properties-1">Additional Aircraft Properties</a></h2>
-<p>Aircraft specific options are set up under the Additional Properties for
-Aircraft page available when setting up an aircraft group containing F-14s.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/mission_editor_special_options_bu.jpg" alt="Mission Editor Special Options"><span class="img-wrapper"><img src="img/mission_editor_special_options_bu.jpg" alt="Mission Editor Special Options"></span></label></p>
-<h3 id="m-61-burst-mode-1"><a class="header" href="#m-61-burst-mode-1">M-61 Burst Mode</a></h3>
-<p>This dropdown allows for changes in the M61's max burst length. The "Manual"
-option fires until empty.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/mission_editor_m61_burst_setting_bu.jpg" alt="Mission Editor M61 Burst Mode"><span class="img-wrapper"><img src="img/mission_editor_m61_burst_setting_bu.jpg" alt="Mission Editor M61 Burst Mode"></span></label></p>
-<h3 id="anale-47-loadout"><a class="header" href="#anale-47-loadout">AN/ALE-47 Loadout</a></h3>
-<p>This dropdown allows for changes in the AN/ALE-47 countermeasure loadout.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/mission_editor_ale47_loadout.jpg" alt="Mission Editor ALE-47 Loadout"><span class="img-wrapper"><img src="img/mission_editor_ale47_loadout.jpg" alt="Mission Editor ALE-47 Loadout"></span></label></p>
-<h3 id="ins-reference-alignment-stored-1"><a class="header" href="#ins-reference-alignment-stored-1">INS Reference Alignment Stored</a></h3>
-<p>This sets whether INS reference is pre-aligned at spawn. This allows for a
-stored alignment to be completed upon aircraft cold start.</p>
-<h3 id="tacan-channel-preset-and-band-1"><a class="header" href="#tacan-channel-preset-and-band-1">TACAN Channel Preset and Band</a></h3>
-<p>This allows the initial TACAN channel and band to be preset.</p>
-<h3 id="ils-channel-preset-1"><a class="header" href="#ils-channel-preset-1">ILS Channel Preset</a></h3>
-<p>This allows the initial ILS channel preset to be set.</p>
-<h3 id="ky-28-encryption-key-1"><a class="header" href="#ky-28-encryption-key-1">KY-28 Encryption Key</a></h3>
-<p>This allows the initial KY-28 encryption key to be preset.</p>
-<h3 id="refueling-probe-cover-removed-1"><a class="header" href="#refueling-probe-cover-removed-1">Refueling Probe Cover Removed</a></h3>
-<p>This option removes the refueling probe cover while loaded in the mission. This
-option overrides the livery refueling probe cover option.</p>
-<h2 id="dtc"><a class="header" href="#dtc">DTC</a></h2>
-<p>The F-14B Upgrade has its Mission Data Loader integrated into DCS' Mission
-Editor using the DTC menu. Refer to the
-<a href="#mission-data-loader">Mission Data Loader section</a> on more
-in-depth how to use MDL with the DTC menu.</p>
-<h3 id="navigation"><a class="header" href="#navigation">Navigation</a></h3>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dtc_navigation_page.jpg" alt="DTC Navigation Page"><span class="img-wrapper"><img src="img/dtc_navigation_page.jpg" alt="DTC Navigation Page"></span></label></p>
-<p>Refer to the
-<a href="#flight-plan">Flight Plan subsection</a> of
-the MDL section for more information.</p>
-<h3 id="jdam"><a class="header" href="#jdam">JDAM</a></h3>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dtc_jdam_page.jpg" alt="DTC JDAM Page"><span class="img-wrapper"><img src="img/dtc_jdam_page.jpg" alt="DTC JDAM Page"></span></label></p>
-<p>See the
-<a href="#pre-planned-jdam-employment">Pre-Planned JDAM Employment section</a>
-for further information on programming the JDAMs using the DTC menu.</p>
-<h3 id="cmds"><a class="header" href="#cmds">CMDS</a></h3>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dtc_cmds_page.jpg" alt="DTC CMDS Page"><span class="img-wrapper"><img src="img/dtc_cmds_page.jpg" alt="DTC CMDS Page"></span></label></p>
-<p>See the
-<a href="#programmer-1">Programmer section</a>
-for further information on programming the ALE-47 using the DTC menu.</p>
-<h3 id="tis-tactical-imaging-set"><a class="header" href="#tis-tactical-imaging-set">TIS (Tactical Imaging Set)</a></h3>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dtc_tis_page.jpg" alt="DTC TIS Page"><span class="img-wrapper"><img src="img/dtc_tis_page.jpg" alt="DTC TIS Page"></span></label></p>
-<p>Refer to the
-<a href="#fast-tactical-imaging-system">Fast Tactical Imaging System</a>
-page for further information on how to use the Tactical Imaging Set.</p>
-<h4 id="ownship-callsign"><a class="header" href="#ownship-callsign">Ownship Callsign</a></h4>
-<p>Callsign for ownship can be changed here. By default, "Use mission callsign", is
-checked which means the DCS unit name (pilot) set in the mission editor is used.</p>
-<h4 id="send-to-callsigns"><a class="header" href="#send-to-callsigns">Send-To Callsigns</a></h4>
-<p>The option to disable or enable the ability to auto-add wingmen to send list is
-provided. Additionally, callsigns can be manually added to the send list.</p>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="grease-pencil"><a class="header" href="#grease-pencil">Grease Pencil</a></h1>
-<p>Both crew members can use a grease pencil to draw on the side of their canopy.</p>
-<p>The interface can be opened by clicking on the corresponding spot on the right
-front side of the canopy.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/grease_pencil_ui_overview.jpg" alt="grease_pencil_ui"><span class="img-wrapper"><img src="img/bu/grease_pencil_ui_overview.jpg" alt="grease_pencil_ui"></span></label></p>
-<p>Holding down left click allows drawing, while right click will use the eraser.</p>
-<p>After closing the window by clicking on the canopy spot again, the results are
-rendered on the canopy.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/grease_pencil_ui_result.jpg" alt="grease_pencil_ui_result"><span class="img-wrapper"><img src="img/bu/grease_pencil_ui_result.jpg" alt="grease_pencil_ui_result"></span></label></p>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="virtual-browser"><a class="header" href="#virtual-browser">Virtual Browser</a></h1>
-<p>To enhance in-flight studies of the aircraft or simply to overcome some
-downtime, a virtual browser can be opened (by default
-<kbd>RCTRL</kbd>+<kbd>V</kbd>).</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/virtual_browser.jpg" alt="Virtual Browser UI"><span class="img-wrapper"><img src="img/virtual_browser.jpg" alt="Virtual Browser UI"></span></label></p>
-<p>The browser enables users to</p>
-<ul>
-<li>watch tutorial videos,</li>
-<li>read documentation provided by third parties,</li>
-<li>listen to a music playlist while flying,</li>
-<li>or also playing some browser games and much more.</li>
-</ul>
-<p>The UI is embedded in-game, can be resized and moved around. Buttons on the top
-left corner allow for quick navigation.</p>
-<blockquote>
-<p>💡 To allow free browsing select <strong>Full</strong> for the
-<a href="#domain-access-1">Special Option</a> <em>HB UI Domain Access</em>.</p>
-</blockquote>
-<h2 id="session"><a class="header" href="#session">Session</a></h2>
-<p>Session data is memorized and saved locally in a folder like</p>
-<p><code>C:\Users\John Doe\Saved Games\DCS_F14\cache\</code></p>
-<p>Clearing this folder will reset all browser preferences and settings.</p>
-<p>If required, sound level of the browser can be controlled via the volume mixer
-provided by Windows through the <strong>HeatblurUi.exe</strong> entry.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/virtual_browser_volume_control.jpg" alt="Volume Control"><span class="img-wrapper"><img src="img/virtual_browser_volume_control.jpg" alt="Volume Control"></span></label></p>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="instant-camera"><a class="header" href="#instant-camera">Instant Camera</a></h1>
-<p>Cameras such as those made by Polaroid were a common sight before the widespread
-adoption of digital cameras. They were often personally purchased by aircrew for
-capturing memorable images, but they also served a practical purpose. Instant
-cameras allowed crews to quickly document subjects such as intercepted aircraft,
-mission events, and other items of interest without the delay associated with
-traditional film processing.</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th style="text-align: center"></th><th></th></tr>
-</thead>
-<tbody>
-<tr><td style="text-align: center"><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/instant_camera_example.jpg" alt="Instant Camera Example"><span class="img-wrapper"><img src="img/bu/instant_camera_example.jpg" alt="Instant Camera Example"></span></label></td><td><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/instant_camera_example_02.jpg" alt="Instant Camera Example"><span class="img-wrapper"><img src="img/bu/instant_camera_example_02.jpg" alt="Instant Camera Example"></span></label></td></tr>
-</tbody>
-</table>
-</div>
-<p>In DCS, the instant camera can be opened with a keybind, and the shutter can be
-activated with a separate keybind. The text below the image can be modified
-during flight by selecting the text field with the mouse cursor.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/instant_camera_keybinds.jpg" alt="Instant Camera Controls"><span class="img-wrapper"><img src="img/bu/instant_camera_keybinds.jpg" alt="Instant Camera Controls"></span></label></p>
-<p>Your Instant Camera shots are stored in the <code>Saved Games/DCS_F14/Instant Camera</code>
-directory.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/instant_camera_example_storage.jpg" alt="Instant Camera Storage"><span class="img-wrapper"><img src="img/bu/instant_camera_example_storage.jpg" alt="Instant Camera Storage"></span></label></p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="laser-pointer-designator"><a class="header" href="#laser-pointer-designator">Laser Pointer Designator</a></h1>
 <p>As the Tomcat became the Navy's premier FAC(A) platform in the late 1990s, the
@@ -20844,635 +20277,6 @@ laser is only visible through night vision goggles during nighttime operations.<
 <p>Below a usage example of using the laser pointer designator under night vision
 googles.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/lsr_dsgntr_example.jpg" alt="Laser Pointer Designator Example"><span class="img-wrapper"><img src="img/bu/lsr_dsgntr_example.jpg" alt="Laser Pointer Designator Example"></span></label></p>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="jester--iceman-set-commands"><a class="header" href="#jester--iceman-set-commands">JESTER / ICEMAN SET COMMANDS</a></h1>
-<p>Published fixed-value commands from <strong>10000 to 10099</strong> for use by the mission
-editor (trigger action <em>"X: Set command"</em>, see <code>proxy_device.lua</code>). Because
-these use fixed values it is not necessary to rebuild <code>Command.h</code> after
-adding/changing values in this range.</p>
-<p><code>SET COMMAND</code> can only accept numerical values <code>&gt;= -1</code> and <code>&lt;= 1</code>. Several
-commands below encode an index into that range using the <code>0.XX</code> convention
-(<code>0.01</code> = item 1, <code>0.99</code> = item 99, <code>1.00</code> = item 100).</p>
-<h2 id="general--pilot-commands"><a class="header" href="#general--pilot-commands">General / Pilot Commands</a></h2>
-<h3 id="10000--enable-acm-guns-air-to-air"><a class="header" href="#10000--enable-acm-guns-air-to-air"><code>10000</code> — Enable ACM guns, air-to-air</a></h3>
-<ul>
-<li><code>1</code> — enables</li>
-<li><code>0</code> — disables <em>(default)</em></li>
-</ul>
-<h3 id="10001--carrier-landing"><a class="header" href="#10001--carrier-landing"><code>10001</code> — Carrier landing</a></h3>
-<ul>
-<li><code>1</code> — initiates the carrier landing sequence</li>
-<li><code>0</code> — <em>(default)</em></li>
-</ul>
-<h3 id="10002--ground-landing"><a class="header" href="#10002--ground-landing"><code>10002</code> — Ground landing</a></h3>
-<ul>
-<li><code>1</code> — initiates the ground landing sequence</li>
-<li><code>0</code> — <em>(default)</em></li>
-</ul>
-<h3 id="10003--case-1-recovery"><a class="header" href="#10003--case-1-recovery"><code>10003</code> — Case 1 recovery</a></h3>
-<ul>
-<li><code>1</code> — initiates a Case 1 recovery</li>
-<li><code>0</code> — <em>(default)</em></li>
-</ul>
-<h3 id="10004--pilot-vsl-vertical-scan-lock"><a class="header" href="#10004--pilot-vsl-vertical-scan-lock"><code>10004</code> — Pilot VSL (Vertical Scan Lock)</a></h3>
-<ul>
-<li><code>1</code> — commands the pilot to attempt a VSL lock</li>
-<li><code>0</code> — <em>(default)</em></li>
-</ul>
-<h3 id="10005--wings-swept"><a class="header" href="#10005--wings-swept"><code>10005</code> — Wings swept</a></h3>
-<ul>
-<li><code>1</code> — sweeps the wings</li>
-<li><code>0</code> — <em>(default)</em></li>
-</ul>
-<h3 id="10006--air-to-ground-mode"><a class="header" href="#10006--air-to-ground-mode"><code>10006</code> — Air-to-ground mode</a></h3>
-<ul>
-<li><code>1</code> — selects air-to-ground</li>
-<li><code>0</code> — <em>(default)</em></li>
-</ul>
-<h3 id="10007--parking-brake"><a class="header" href="#10007--parking-brake"><code>10007</code> — Parking brake</a></h3>
-<ul>
-<li><code>1</code> — sets the parking brake</li>
-<li><code>0</code> — releases <em>(default)</em></li>
-</ul>
-<h3 id="10008--radar-weight-on-wheels-wow"><a class="header" href="#10008--radar-weight-on-wheels-wow"><code>10008</code> — Radar weight-on-wheels (WOW)</a></h3>
-<ul>
-<li><code>1</code> — WOW asserted</li>
-<li><code>0</code> — <em>(default)</em></li>
-</ul>
-<h2 id="jester-lantirn--targeting"><a class="header" href="#jester-lantirn--targeting">Jester LANTIRN / Targeting</a></h2>
-<h3 id="10009--jester-lantirn-auto-designate"><a class="header" href="#10009--jester-lantirn-auto-designate"><code>10009</code> — Jester LANTIRN auto designate</a></h3>
-<ul>
-<li><code>1</code> — disables Jester LANTIRN auto designate</li>
-<li><code>0</code> — enables Jester LANTIRN auto designate <em>(default)</em></li>
-</ul>
-<h3 id="10010--jester-silent"><a class="header" href="#10010--jester-silent"><code>10010</code> — Jester silent</a></h3>
-<ul>
-<li><code>1</code> — silences Jester</li>
-<li><code>0</code> — Jester will talk again <em>(default)</em></li>
-</ul>
-<h3 id="10011--jester-pause"><a class="header" href="#10011--jester-pause"><code>10011</code> — Jester pause</a></h3>
-<ul>
-<li><code>1</code> — disables (pauses) Jester</li>
-<li><code>0</code> — reactivates Jester <em>(default)</em></li>
-</ul>
-<h3 id="10012--force-jester-to-track-a-target-by-unit-name"><a class="header" href="#10012--force-jester-to-track-a-target-by-unit-name"><code>10012</code> — Force Jester to track a target by unit name</a></h3>
-<p>Special command to force Jester to track a specific target using unit name.
-Since <code>SET COMMAND</code> only accepts values <code>&gt;= -1</code> and <code>&lt;= 1</code>, the following rule
-is used:</p>
-<ul>
-<li><code>0.01</code> — track unit named <code>LantirnTarget01</code></li>
-<li><code>0.02</code> — track unit named <code>LantirnTarget02</code> <em>(… continues …)</em></li>
-<li><code>0.99</code> — track unit named <code>LantirnTarget99</code></li>
-<li><code>1.00</code> — track unit named <code>LantirnTarget100</code></li>
-<li><code>0</code> — resume Jester state to normal operations</li>
-</ul>
-<h3 id="10013--force-jester-to-track-a-zone"><a class="header" href="#10013--force-jester-to-track-a-zone"><code>10013</code> — Force Jester to track a zone</a></h3>
-<p>Same as <code>10012</code>, but Jester tracks zones.</p>
-<ul>
-<li><code>0.01</code> — track zone named <code>LantirnZone01</code></li>
-<li><code>0.02</code> — track zone named <code>LantirnZone02</code> <em>(… continues …)</em></li>
-<li><code>0.99</code> — track zone named <code>LantirnZone99</code></li>
-<li><code>1.00</code> — track zone named <code>LantirnZone100</code></li>
-<li><code>0</code> — resume Jester state to normal operations</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong> Commands <code>10012</code> and <code>10013</code> are exclusive. When Jester is tracking
-a unit using <code>10012</code>, activating <code>10013</code> forces Jester to stop tracking that
-unit and start tracking a zone, and vice versa. Using <code>0</code> in either command
-stops tracking both units and zones.</p>
-</blockquote>
-<h3 id="10014--manual-designate"><a class="header" href="#10014--manual-designate"><code>10014</code> — Manual designate</a></h3>
-<p>Jester will designate manually what is under the LANTIRN cross.</p>
-<h2 id="radio--navigation"><a class="header" href="#radio--navigation">Radio / Navigation</a></h2>
-<h3 id="10015--tune-anarc-182-to-a-selected-channel"><a class="header" href="#10015--tune-anarc-182-to-a-selected-channel"><code>10015</code> — Tune AN/ARC-182 to a selected channel</a></h3>
-<ul>
-<li>Pass the value as <code>0.XX</code> where <code>XX</code> is the two-digit channel number.</li>
-</ul>
-<h3 id="10016--tune-tacan-channel"><a class="header" href="#10016--tune-tacan-channel"><code>10016</code> — Tune TACAN channel</a></h3>
-<p>Construct the value as <code>s0.XXXY</code>, where:</p>
-<ul>
-<li><code>s</code> — optional <code>-</code> sign; use <strong>negative</strong> values for A/A and <strong>positive</strong> for
-T/R</li>
-<li><code>XXX</code> — three-digit channel number (keep the leading zeroes for channels lower
-than 100)</li>
-<li><code>Y</code> — <code>0</code> for X-mode, <code>1</code> for Y-mode</li>
-</ul>
-<p>Examples:</p>
-<ul>
-<li><code>0.0630</code> — channel 63X, T/R</li>
-<li><code>-0.0081</code> — channel 8Y, A/A</li>
-</ul>
-<h3 id="10017--dest-knob"><a class="header" href="#10017--dest-knob"><code>10017</code> — DEST knob</a></h3>
-<ul>
-<li><code>0.1</code> — WP1</li>
-<li><code>0.2</code> — WP2</li>
-<li><code>0.3</code> — WP3</li>
-<li><code>0.4</code> — FP</li>
-<li><code>0.5</code> — IP</li>
-<li><code>0.6</code> — ST</li>
-<li><code>0.7</code> — HB</li>
-<li><code>0.8</code> — MAN</li>
-</ul>
-<h3 id="10018--select-waypoint-to-enter-coords-from-a-trigger-zone"><a class="header" href="#10018--select-waypoint-to-enter-coords-from-a-trigger-zone"><code>10018</code> — Select waypoint to enter coords from a trigger zone</a></h3>
-<blockquote>
-<p>💡 This command does no action in the cockpit</p>
-</blockquote>
-<ul>
-<li><code>0.1</code> — WP1</li>
-<li><code>0.2</code> — WP2</li>
-<li><code>0.3</code> — WP3</li>
-<li><code>0.4</code> — FP</li>
-<li><code>0.5</code> — IP</li>
-<li><code>0.6</code> — ST</li>
-<li><code>0.7</code> — HB</li>
-<li><code>0.8</code> — MAN</li>
-</ul>
-<h3 id="10019--enter-coords-from-trigger-zone"><a class="header" href="#10019--enter-coords-from-trigger-zone"><code>10019</code> — Enter coords from trigger zone</a></h3>
-<p>Enter coords from a trigger zone for the waypoint selected with <code>10018</code> (if none
-selected, WP1).</p>
-<ul>
-<li><code>0.01</code> — <code>WaypointZone01</code></li>
-<li><code>0.02</code> — <code>WaypointZone02</code></li>
-<li><em>(… continues …)</em></li>
-<li><code>0.99</code> — <code>WaypointZone99</code></li>
-<li><code>-0.01</code> — <code>GGWZone01</code> <em>(negative values select GGW zones)</em></li>
-<li><em>(… continues …)</em></li>
-<li><code>-0.99</code> — <code>GGWZone99</code></li>
-</ul>
-<h2 id="jester-systems"><a class="header" href="#jester-systems">Jester Systems</a></h2>
-<h3 id="10020--wcs-switch"><a class="header" href="#10020--wcs-switch"><code>10020</code> — WCS switch</a></h3>
-<ul>
-<li><code>0.1</code> — OFF</li>
-<li><code>0.2</code> — STBY</li>
-<li><code>0.3</code> — ON</li>
-<li><code>0.0</code> — return to automatic</li>
-</ul>
-<h3 id="10021--run-rwr-bit"><a class="header" href="#10021--run-rwr-bit"><code>10021</code> — Run RWR BIT</a></h3>
-<ul>
-<li>No value parameter; runs the RWR built-in test.</li>
-</ul>
-<h3 id="10022--tid-range-knob"><a class="header" href="#10022--tid-range-knob"><code>10022</code> — TID range knob</a></h3>
-<ul>
-<li><code>0.1</code> — 25 NM</li>
-<li><code>0.2</code> — 50 NM</li>
-<li><code>0.3</code> — 100 NM</li>
-<li><code>0.4</code> — 200 NM</li>
-<li><code>0.5</code> — 400 NM</li>
-<li><code>0.0</code> — return to automatic</li>
-</ul>
-<h3 id="10023--jester-eject"><a class="header" href="#10023--jester-eject"><code>10023</code> — Jester Eject</a></h3>
-<ul>
-<li>Commands Jester to eject.</li>
-</ul>
-<h2 id="jester-radar--air-to-air"><a class="header" href="#jester-radar--air-to-air">Jester Radar / Air-to-Air</a></h2>
-<h3 id="10024--stt-target"><a class="header" href="#10024--stt-target"><code>10024</code> — STT target</a></h3>
-<ul>
-<li><code>0.00</code> — stop force STT track</li>
-<li><code>0.01</code> — <code>AirTarget01</code></li>
-<li><code>0.02</code> — <code>AirTarget02</code></li>
-<li><em>(… continues …)</em></li>
-<li><code>0.99</code> — <code>AirTarget99</code></li>
-</ul>
-<h3 id="10025--break-lock"><a class="header" href="#10025--break-lock"><code>10025</code> — Break lock</a></h3>
-<ul>
-<li>Drops the current track.</li>
-</ul>
-<h3 id="10033--radar-azimuth"><a class="header" href="#10033--radar-azimuth"><code>10033</code> — Radar azimuth</a></h3>
-<ul>
-<li>Accepts <code>-1</code> to <code>1</code>.</li>
-</ul>
-<h3 id="10034--radar-elevation"><a class="header" href="#10034--radar-elevation"><code>10034</code> — Radar elevation</a></h3>
-<ul>
-<li>Accepts <code>-1</code> to <code>1</code>.</li>
-</ul>
-<h2 id="jester-weapons"><a class="header" href="#jester-weapons">Jester Weapons</a></h2>
-<h3 id="10026--weapon-station-state"><a class="header" href="#10026--weapon-station-state"><code>10026</code> — Weapon station state</a></h3>
-<p>Format <code>0.xy</code>:</p>
-<ul>
-<li><code>x</code> — station number (1–8)</li>
-<li><code>y</code> — state: <code>0</code> down (safe), <code>1</code> up (selected)</li>
-</ul>
-<h3 id="10027--weapon-wheel-option"><a class="header" href="#10027--weapon-wheel-option"><code>10027</code> — Weapon wheel option</a></h3>
-<ul>
-<li><code>0.10</code> — MK-81H</li>
-<li><code>0.11</code> — MK-81L</li>
-<li><code>0.12</code> — MK-82H</li>
-<li><code>0.13</code> — MK-82L</li>
-<li><code>0.14</code> — MK-83H</li>
-<li><code>0.15</code> — MK-83L</li>
-<li><code>0.16</code> — MK-84</li>
-<li><code>0.17</code> — LAU-10</li>
-<li><code>0.19</code> — CBU-59A</li>
-<li><code>0.20</code> — CBU-59B</li>
-<li><code>0.21</code> — CBU-59C</li>
-<li><code>0.22</code> — MK-20A</li>
-<li><code>0.23</code> — MK-20B</li>
-<li><code>0.24</code> — MK-20C</li>
-<li><code>0.25</code> — MK-45</li>
-<li><code>0.26</code> — GBU-10</li>
-<li><code>0.27</code> — GBU-12</li>
-<li><code>0.28</code> — GBU-16</li>
-<li><code>0.29</code> — GBU-24</li>
-<li><code>0.30</code> — BDU-33</li>
-<li><code>0.31</code> — TALD</li>
-<li><code>0.32</code> — SUU-25</li>
-</ul>
-<h3 id="10028--attk-mode-knob"><a class="header" href="#10028--attk-mode-knob"><code>10028</code> — ATTK MODE knob</a></h3>
-<ul>
-<li><code>0.0</code> — CMPTR TGT</li>
-<li><code>0.1</code> — CMPTR IP</li>
-<li><code>0.2</code> — CMPTR PLT</li>
-<li><code>0.3</code> — MAN</li>
-</ul>
-<h3 id="10029--dlvy-mode-switches"><a class="header" href="#10029--dlvy-mode-switches"><code>10029</code> — DLVY MODE switches</a></h3>
-<p>Format <code>0.xy</code>:</p>
-<ul>
-<li><code>x</code> — <code>0</code> STP, <code>1</code> RPL</li>
-<li><code>y</code> — <code>0</code> SGL, <code>1</code> PRS</li>
-</ul>
-<h3 id="10030--dlvy-interval"><a class="header" href="#10030--dlvy-interval"><code>10030</code> — DLVY INTERVAL</a></h3>
-<p>Format <code>0.xy</code>:</p>
-<ul>
-<li><code>x</code> — first roller</li>
-<li><code>y</code> — second roller</li>
-</ul>
-<h3 id="10031--dlvy-qty"><a class="header" href="#10031--dlvy-qty"><code>10031</code> — DLVY QTY</a></h3>
-<p>Format <code>0.xy</code>:</p>
-<ul>
-<li><code>x</code> — first roller</li>
-<li><code>y</code> — second roller</li>
-</ul>
-<h3 id="10032--msl-launch"><a class="header" href="#10032--msl-launch"><code>10032</code> — MSL launch</a></h3>
-<ul>
-<li>Launches the selected missile.</li>
-</ul>
-<h2 id="jester-lantirn-zoom"><a class="header" href="#jester-lantirn-zoom">Jester LANTIRN Zoom</a></h2>
-<h3 id="10035--lantirn-zoom-level"><a class="header" href="#10035--lantirn-zoom-level"><code>10035</code> — LANTIRN zoom level</a></h3>
-<ul>
-<li><code>0</code> — auto</li>
-<li><code>0.33</code> — wide</li>
-<li><code>0.66</code> — narrow</li>
-<li><code>1.0</code> — expanded</li>
-</ul>
-<h2 id="jester-backup-bu-waypoint--nav-commands"><a class="header" href="#jester-backup-bu-waypoint--nav-commands">Jester Backup (BU) Waypoint / Nav Commands</a></h2>
-<h3 id="10036--create-waypoint-from-trigger-zone"><a class="header" href="#10036--create-waypoint-from-trigger-zone"><code>10036</code> — Create waypoint from trigger zone</a></h3>
-<p>Creates a waypoint from a trigger zone (zone selected first by <code>10019</code>, or
-target with <code>10046</code>).</p>
-<ul>
-<li><code>0.01</code> – <code>0.99</code> — specific waypoint ID (e.g. <code>0.03</code> = wpt 3)</li>
-<li><code>0</code> — last waypoint created by this command</li>
-<li><code>&gt;= 1</code> — new waypoint</li>
-</ul>
-<blockquote>
-<p>Also auto-selects the created/updated waypoint (as if <code>10037</code> was called), so
-a following command operates on it without an explicit select.</p>
-</blockquote>
-<h3 id="10037--select-waypoint"><a class="header" href="#10037--select-waypoint"><code>10037</code> — Select waypoint</a></h3>
-<p>Selects which waypoint Jester should perform the following operations on. Do
-this first, then issue the other commands.</p>
-<ul>
-<li><code>0.01</code> — wpt 1</li>
-<li><code>0.25</code> — wpt 25 <em>(etc.)</em></li>
-<li><code>0.0</code> — special: the most recently created waypoint through <code>10036</code></li>
-</ul>
-<h3 id="10038--set-special-designation"><a class="header" href="#10038--set-special-designation"><code>10038</code> — Set special designation</a></h3>
-<p>Sets the special designation for the selected waypoint.</p>
-<ul>
-<li><code>0.0</code> — clear SD</li>
-<li><code>0.1</code> — destination</li>
-<li><code>0.2</code> — surface target</li>
-<li><code>0.3</code> — fixed point</li>
-<li><code>0.4</code> — initial point</li>
-<li><code>0.5</code> — HA</li>
-<li><code>0.6</code> — DP</li>
-<li><code>-0.1</code> – <code>-0.7</code> — P1–P7</li>
-</ul>
-<h3 id="10039--transfer-jdam-station"><a class="header" href="#10039--transfer-jdam-station"><code>10039</code> — Transfer JDAM station</a></h3>
-<p>Transfers selected wpt coordinates to a station.</p>
-<ul>
-<li><code>0.0</code> — next selected</li>
-<li><code>0.3</code> — station 3</li>
-<li><code>0.4</code> — station 4</li>
-<li><code>0.5</code> — station 5</li>
-<li><code>0.6</code> — station 6</li>
-</ul>
-<h3 id="10040--set-lts"><a class="header" href="#10040--set-lts"><code>10040</code> — Set LTS</a></h3>
-<ul>
-<li><code>0</code> — remove LTS</li>
-<li><code>1</code> — set LTS</li>
-</ul>
-<h3 id="10041--hook-selected-waypoint"><a class="header" href="#10041--hook-selected-waypoint"><code>10041</code> — Hook selected waypoint</a></h3>
-<ul>
-<li><code>1.0</code> — hook selected wp</li>
-<li><code>0.0</code> — unhook (if selected)</li>
-</ul>
-<h3 id="10042--direct-to-selected-waypoint"><a class="header" href="#10042--direct-to-selected-waypoint"><code>10042</code> — Direct-to selected waypoint</a></h3>
-<ul>
-<li><code>1.0</code> — direct to selected wp</li>
-</ul>
-<h3 id="10043--steering-mode"><a class="header" href="#10043--steering-mode"><code>10043</code> — Steering mode</a></h3>
-<ul>
-<li><code>0.0</code> — dest</li>
-<li><code>0.33</code> — auto</li>
-<li><code>0.66</code> — ofly</li>
-<li><code>1.0</code> — man</li>
-</ul>
-<h3 id="10044--bdhi-mode"><a class="header" href="#10044--bdhi-mode"><code>10044</code> — BDHI mode</a></h3>
-<ul>
-<li><code>0.0</code> — HUD sync</li>
-<li><code>0.1</code> — FP WP (selected with <code>10037</code>)</li>
-<li><code>0.3</code> — Launch Point</li>
-<li><code>0.4</code> — Target</li>
-</ul>
-<h3 id="10045--tcn--egi-select"><a class="header" href="#10045--tcn--egi-select"><code>10045</code> — TCN / EGI select</a></h3>
-<ul>
-<li><code>0.0</code> — EGI</li>
-<li><code>1.0</code> — TCN</li>
-</ul>
-<h3 id="10046--waypoint-from-ggw-target"><a class="header" href="#10046--waypoint-from-ggw-target"><code>10046</code> — Waypoint from GGW target</a></h3>
-<p>Like <code>10019</code>, but selects the source from a live unit's current position for
-<code>10036</code>.</p>
-<ul>
-<li><code>0.01</code> – <code>0.99</code> — unit named <code>"GGWTarget01"</code>..<code>"GGWTarget99"</code> (value × 100 =
-id)</li>
-</ul>
-<h3 id="10047--izlid-pointzone"><a class="header" href="#10047--izlid-pointzone"><code>10047</code> — IZLID point/zone</a></h3>
-<p>Jester points his IR target designator at the point selected by <code>10019</code> (trigger
-zone) or <code>10046</code> (GGW target). The value scales the lasing duration:</p>
-<ul>
-<li><code>value × 60</code> = seconds (<code>1.0</code> = 60s)</li>
-<li><code>-1</code> — lase until told to stop</li>
-<li><code>0</code> — stop immediately</li>
-</ul>
-<h2 id="iceman-ai-pilot-commands"><a class="header" href="#iceman-ai-pilot-commands">Iceman (AI Pilot) Commands</a></h2>
-<ul>
-<li><code>10080</code> — set heading (absolute)</li>
-<li><code>10081</code> — set heading (relative)</li>
-<li><code>10082</code> — set speed (absolute)</li>
-<li><code>10083</code> — set speed (relative)</li>
-<li><code>10084</code> — set altitude (absolute)</li>
-<li><code>10085</code> — set altitude (relative)</li>
-<li><code>10086</code> — navigate: fly to steerpoint</li>
-<li><code>10087</code> — navigate: orbit steerpoint</li>
-<li><code>10088</code> — hold current heading/speed/altitude</li>
-</ul>
-<h2 id="sentinel"><a class="header" href="#sentinel">Sentinel</a></h2>
-<ul>
-<li><code>10099</code> — <code>PROXY_last_command_sentinel</code> (marks the end of the fixed-value
-range; not a usable command).</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bombing-tool"><a class="header" href="#bombing-tool">Bombing Tool</a></h1>
-<p>In the F-14, the Bombing Tool gives the Pilot a simplified method to transfer
-desired bombing release settings to Jester. The tool is entirely optional to use
-for the pilot, as the traditional method of transferring weapon release settings
-via the Jester Wheel works alongside the bombing tool. The tool simplifies the
-workflow for the Pilot by reducing the time spent in the Jester wheel, if you
-require multiple release settings to be set.</p>
-<p>For the B(U) aircraft variant, the tool also provides a JDAM Manual Release
-Calculator. This can be used to calculate horizontal RMAX (Maximum Release
-Range) &amp; TOF (Time of Flight) at different drop parameters, useful in preparing
-for a TOO JDAM release.</p>
-<p>The tool can be accessed with <strong>RCtrl+B</strong>.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/bombing_tool_example.jpg" alt="Bombing Tool Example"><span class="img-wrapper"><img src="img/bu/bombing_tool_example.jpg" alt="Bombing Tool Example"></span></label></p>
-<h2 id="input"><a class="header" href="#input">Input</a></h2>
-<p>For each release setting, Jester will automatically change the setting once an
-option is entered.</p>
-<h3 id="attack-mode"><a class="header" href="#attack-mode">Attack Mode</a></h3>
-<ul>
-<li>Pilot (PLT)</li>
-<li>Target (TGT)</li>
-<li>Initial Point (IP)</li>
-<li>Manual (MAN)</li>
-</ul>
-<h3 id="electric-fuze-type"><a class="header" href="#electric-fuze-type">Electric Fuze Type</a></h3>
-<ul>
-<li>Instantaneous (INST)</li>
-<li>Preset Time Delay 1 (DLY 1)</li>
-<li>Preset Time Delay 2 (DLY 2)</li>
-<li>Air-burst (VT)</li>
-<li>Safe (SAFE)</li>
-</ul>
-<h3 id="mechanical-fuze-type"><a class="header" href="#mechanical-fuze-type">Mechanical Fuze Type</a></h3>
-<ul>
-<li>Nose</li>
-<li>Nose Tail</li>
-</ul>
-<h3 id="delivery-mode"><a class="header" href="#delivery-mode">Delivery Mode</a></h3>
-<ul>
-<li>Step | Single</li>
-<li>Step | Pairs</li>
-<li>Ripple | Single</li>
-<li>Ripple | Pairs</li>
-</ul>
-<h3 id="ripple-interval"><a class="header" href="#ripple-interval">Ripple Interval</a></h3>
-<p>Tells Jester to set the desired bomb release interval in milliseconds (ms). You
-can set it in 10 ms increments per click.</p>
-<h3 id="ripple-quantity"><a class="header" href="#ripple-quantity">Ripple Quantity</a></h3>
-<p>Tells Jester the desired quantity of bombs to release upon the press of 'weapon
-release'.</p>
-<h2 id="jdam-manual-release"><a class="header" href="#jdam-manual-release">JDAM Manual Release</a></h2>
-<p>Used to calculate horizontal RMAX (Maximum Release Range) &amp; TOF (Time of Flight)
-at different drop parameters.</p>
-<h3 id="jdam-type"><a class="header" href="#jdam-type">JDAM Type</a></h3>
-<p>Set to desired JDAM type (drag and glide coefficients are adjusted per JDAM
-type).</p>
-<h3 id="release-altitude"><a class="header" href="#release-altitude">Release Altitude</a></h3>
-<p>Enter altitude at which you plan to release the weapon. Values in kft, increment
-of 5 per click.</p>
-<h3 id="impact-angle"><a class="header" href="#impact-angle">Impact Angle</a></h3>
-<p>Set desired final weapon impact angle. Currently only 65 degrees modelled &amp;
-selectable.</p>
-<h3 id="release-aircraft-ground-speed"><a class="header" href="#release-aircraft-ground-speed">Release Aircraft Ground Speed</a></h3>
-<p>Enter the planned ground speed for release. Note it is ground speed and <strong>NOT</strong>
-IAS or TAS. Increment of 50 knots per click.</p>
-<p>Once all parameters are entered, you may click <strong>Save</strong> to add the entry to the
-Saved Solutions list, from which you can refer to later during the flight.</p>
-<blockquote>
-<p>💡 In order to close the bombing tool, make sure to first remove keyboard focus from
-it by clicking anywhere else in the cockpit.</p>
-</blockquote>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="kneeboard"><a class="header" href="#kneeboard">Kneeboard</a></h1>
-<p>The kneeboard is present on both Pilot &amp; RIO 3D models,
-on the left leg. It also remains fully interactive on the 3D
-model, without the need to open it via the keybind.
-The Pilot / RIO 3D models have a default keybinding of
-<kbd>RSHIFT</kbd> + <kbd>P</kbd>.</p>
-<p>In order to cycle kneeboard configurations, the <strong>clamp</strong> at
-the top of the kneeboard must be <strong>clicked</strong>.</p>
-<h2 id="checklist-configuration"><a class="header" href="#checklist-configuration">Checklist Configuration</a></h2>
-<p>The checklists included provides the crew with Normal Procedure,
-Attack &amp; Emergency Checklists, as well as aircraft reference
-data. The checklist procedures are an abridged version of the checklists found
-in the NAVAIR 01-F14AAP-1B NATOPS Pocket Checklist.</p>
-<p>The Checklist configuration can be interacted with the mouse in the cockpit.
-Navigation works as follows:</p>
-<ul>
-<li>Each of the 11 sections can be quickly skipped to from the front contents page
-by clicking on the right-hand side section list.</li>
-<li>The pages can also be scrolled manually using the arrows on the bottom
-navigation bar.</li>
-<li>Return to the contents page via the <strong>Home</strong> icon on the bottom right.</li>
-</ul>
-<p>The 2D version of the Checklist configuration has a default keybinding
-of <kbd>RCTRL</kbd> + <kbd>C</kbd>.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/checklist_tool_example.jpg" alt="Checklist Tool Example"><span class="img-wrapper"><img src="img/bu/checklist_tool_example.jpg" alt="Checklist Tool Example"></span></label></p>
-<h2 id="clipboard-configuration"><a class="header" href="#clipboard-configuration">Clipboard Configuration</a></h2>
-<p>The clipboard configuration provides the crew with the familiar DCS
-kneeboard on the Pilot &amp; RIO models.</p>
-<p>Pages can be cycled in desired direction by <strong>clicking</strong> on the left or right
-side of the page.</p>
-<p>In order to access the clipboard configuration, the clamp at the top of the
-kneeboard must be <strong>clicked</strong>. This will cycle through the tool configurations.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/checklist_tool_example_2.jpg" alt="Checklist Tool Example 2"><span class="img-wrapper"><img src="img/bu/checklist_tool_example_2.jpg" alt="Checklist Tool Example 2"></span></label></p>
-<p>Alternatively, you can change pages through using the regular keybinds, default:</p>
-<ul>
-<li><kbd>]</kbd> - Page Up</li>
-<li><kbd>[</kbd> - Page Down</li>
-</ul>
-<p>The 2D version of the Clipboard configuration has a default keybinding
-of <kbd>RSHIFT</kbd> + <kbd>K</kbd>.</p>
-<blockquote>
-<p>💡 In order to close the 2D checklist tool, make sure to first remove keyboard focus from
-it by clicking anywhere else in the cockpit.</p>
-</blockquote>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="embedded-manual"><a class="header" href="#embedded-manual">Embedded Manual</a></h1>
-<p>This manual is embedded into the game and can be read while flying.</p>
-<p>It also offers a way to explain switches in the cockpit directly by opening the
-manual scrolled right to the spot explaining the corresponding switch.</p>
-<h2 id="controls-3"><a class="header" href="#controls-3">Controls</a></h2>
-<p>The default bind <kbd>M</kbd> can be used to toggle the manual. When holding it
-down while clicking a switch in the cockpit, the manual will automatically open
-and scroll to the section explaining that switch.</p>
-<p>Additionally, the following binds are available as well:</p>
-<ul>
-<li><kbd>RSHIFT</kbd> + <kbd>M</kbd> - open the manual</li>
-<li><kbd>RCTRL</kbd> + <kbd>M</kbd> - close the manual</li>
-<li><kbd>RALT</kbd> + <kbd>M</kbd> - toggle the manual</li>
-</ul>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/ingame_manual_example.jpg" alt="Checklist Tool Example"><span class="img-wrapper"><img src="img/bu/ingame_manual_example.jpg" alt="Checklist Tool Example"></span></label></p>
-<blockquote>
-<p>💡 In order to close the manual, make sure to first remove keyboard focus from
-it by clicking anywhere else in the cockpit.</p>
-</blockquote>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="character"><a class="header" href="#character">Character</a></h1>
-<h2 id="customization"><a class="header" href="#customization">Customization</a></h2>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/character_customization_ui.jpg" alt="Customization Interface"><span class="img-wrapper"><img src="img/character_customization_ui.jpg" alt="Customization Interface"></span></label></p>
-<p>The Pilot and RIO character can be customized through an in-game menu which
-allows, for example, selecting one of the many flight suit variations. This menu
-can be entered via an assignable special bind.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/character_customizer_binds.jpg" alt="Character Customization Binds"><span class="img-wrapper"><img src="img/character_customizer_binds.jpg" alt="Character Customization Binds"></span></label></p>
-<p>The outfit presets can be saved and loaded using the in-game menu. They are
-saved locally at <code>C:\Users\John Doe\Saved Games\DCS_F14\character_presets</code>.
-Presets already stored in that folder can be loaded using the select preset
-dropdown.</p>
-<p>The defaults for the currently selected aircraft livery as shown with the
-<code>(Livery Default)</code> text next to the customization option. If one desires to
-reset their customization back to the livery's defaults, pressing the
-<code>Reset to Livery</code> button will reset the Pilot/RIO customization back to the
-livery's defaults.</p>
-<h3 id="options"><a class="header" href="#options">Options</a></h3>
-<p>Customization options currently include:</p>
-<ul>
-<li>Facial Hair
-<ul>
-<li>Moustache</li>
-<li>None</li>
-</ul>
-</li>
-<li>Head
-<ul>
-<li>Male</li>
-<li>Female</li>
-</ul>
-</li>
-<li>Flight Suit
-<ul>
-<li>Default</li>
-<li>Olive</li>
-<li>Orange</li>
-<li>Blue</li>
-<li>Tan</li>
-<li>Black</li>
-</ul>
-</li>
-<li>Helmet
-<ul>
-<li>HGU-55</li>
-<li>HGU-33</li>
-</ul>
-</li>
-<li>Helmet Cover
-<ul>
-<li>None</li>
-<li>M81 Woodland</li>
-<li>M81 Desert - 3 Color</li>
-<li>M81 Desert - 6 Color</li>
-</ul>
-</li>
-<li>Visor
-<ul>
-<li>Black</li>
-<li>Clear</li>
-<li>Gold</li>
-<li>Yellow</li>
-</ul>
-</li>
-<li>Mask
-<ul>
-<li>MBU-23</li>
-<li>MBU-12</li>
-</ul>
-</li>
-<li>Glasses
-<ul>
-<li>None</li>
-<li>Aviators</li>
-<li>Wraparound</li>
-</ul>
-</li>
-</ul>
-<h2 id="visor-and-oxygen-mask-visibility"><a class="header" href="#visor-and-oxygen-mask-visibility">Visor and Oxygen Mask Visibility</a></h2>
-<p>In addition to the ability to customize the visor and oxygen mask, the visor can
-be lowered and the oxygen mask can be removed using assignable special binds.</p>
-<blockquote>
-<p>💡 Lowering the visor with the
-"<a href="#tinted-visor-effect-1">Tinted Visor Effect</a>" special option
-enabled will result in the tinted visor effect being shown.</p>
-</blockquote>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/visor_mask_binds.jpg" alt="Visor and Mask Binds"><span class="img-wrapper"><img src="img/visor_mask_binds.jpg" alt="Visor and Mask Binds"></span></label></p>
-<h2 id="selfie-mode"><a class="header" href="#selfie-mode">Selfie Mode</a></h2>
-<p>To enable great screenshots, a special <em>Selfie Mode</em> can be entered via an
-assignable special bind.</p>
-<p>In this mode, the character model is rendered even though the player is
-currently in First-Person-View (<kbd>F1</kbd>).</p>
-<p>The camera can then be moved for example to the front via standard DCS controls:</p>
-<ul>
-<li><kbd>RCtrl</kbd> + <kbd>RShift</kbd> + <kbd>8</kbd> (Numpad): Move up</li>
-<li><kbd>RCtrl</kbd> + <kbd>RShift</kbd> + <kbd>2</kbd> (Numpad): Move down</li>
-<li><kbd>RCtrl</kbd> + <kbd>RShift</kbd> + <kbd>4</kbd> (Numpad): Move left</li>
-<li><kbd>RCtrl</kbd> + <kbd>RShift</kbd> + <kbd>6</kbd> (Numpad): Move right</li>
-<li><kbd>RCtrl</kbd> + <kbd>RShift</kbd> + <kbd>/</kbd> (Numpad): Move forward</li>
-<li><kbd>RCtrl</kbd> + <kbd>RShift</kbd> + <kbd>*</kbd> (Numpad): Move aft</li>
-</ul>
-<p>The view can be turned back to face the pilot by using <kbd>LAlt</kbd> +
-<kbd>C</kbd> and then using the mouse.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/selfie_shot.jpg" alt="Selfie Shot"><span class="img-wrapper"><img src="img/selfie_shot.jpg" alt="Selfie Shot"></span></label></p>
-<p>Additionally, another special bind exists to freeze the character model
-movement.</p>
-<p>By default, the cameras movement area is restricted to avoid glitching the view
-during normal flight (for example when moving the head into a panel during VR).
-This restriction can be lifted by editing
-<code>&lt;DCS Install Folder&gt;/Mods/aircraft/F14/Entry/Views.lua</code>, allowing moving the
-camera anywhere in the cockpit.</p>
-<h2 id="crew-animations"><a class="header" href="#crew-animations">Crew Animations</a></h2>
-<p>There are several special binds available to the Pilot and RIO for special
-animations to be played using the character models.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/pilot_animation_binds.jpg" alt="Pilot Animation Binds"><span class="img-wrapper"><img src="img/pilot_animation_binds.jpg" alt="Pilot Animation Binds"></span></label></p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/rio_animation_binds.jpg" alt="RIO Animation Binds"><span class="img-wrapper"><img src="img/rio_animation_binds.jpg" alt="RIO Animation Binds"></span></label></p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="training-lessons"><a class="header" href="#training-lessons">Training Lessons</a></h1>
 <blockquote>
@@ -22506,6 +21310,1305 @@ anytime.</p>
 <h1 id="f-14bu-jdam-pp-mode"><a href="#f-14bu-jdam-pp-mode" class="header">F-14BU JDAM PP Mode</a></h1>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="f-14bu-jdam-too-mode"><a href="#f-14bu-jdam-too-mode" class="header">F-14BU JDAM TOO Mode</a></h1>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="dcs-1"><a class="header" href="#dcs-1">DCS</a></h1>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dcs_overview.jpg" alt="DCS"><span class="img-wrapper"><img src="img/dcs_overview.jpg" alt="DCS"></span></label></p>
+<p>This chapter contains systems, settings and interfaces specific to the
+simulation of the Tomcat inside DCS. Refer to the F-14B Upgrade's
+<a href="#dcs">DCS section</a> for information that exclusively to the
+F-14B Upgrade.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th style="text-align: center">Section</th><th>Name</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: center">1.</td><td><a href="#special-options">Special Options</a></td></tr>
+<tr><td style="text-align: center">2.</td><td><a href="#mission-editor">Mission Editor</a></td></tr>
+<tr><td style="text-align: center">3.</td><td><a href="#grease-pencil">Grease Pencil</a></td></tr>
+<tr><td style="text-align: center">4.</td><td><a href="#virtual-browser">Virtual Browser</a></td></tr>
+<tr><td style="text-align: center">5.</td><td><a href="#instant-camera">Instant Camera</a></td></tr>
+<tr><td style="text-align: center">6.</td><td><a href="#jester--iceman-set-commands-f-14ab">Jester Set Commands (F-14A/B)</a></td></tr>
+<tr><td style="text-align: center">7.</td><td><a href="#jester--iceman-set-commands-f-14bu">Jester Set Commands (F-14B(U)</a></td></tr>
+<tr><td style="text-align: center">8.</td><td><a href="#bombing-tool">Bombing Tool</a></td></tr>
+<tr><td style="text-align: center">9.</td><td><a href="#kneeboard">Kneeboard</a></td></tr>
+<tr><td style="text-align: center">10.</td><td><a href="#embedded-manual">Embedded Manual</a></td></tr>
+<tr><td style="text-align: center">11.</td><td><a href="#character">Character</a></td></tr>
+</tbody>
+</table>
+</div>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="special-options"><a class="header" href="#special-options">Special Options</a></h1>
+<p>The Tomcat offers several options that can be set within the <em>Special Option</em>
+menu in DCS.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/special_options.jpg" alt="Special Option Menu"><span class="img-wrapper"><img src="img/special_options.jpg" alt="Special Option Menu"></span></label></p>
+<h2 id="customized-cockpit"><a class="header" href="#customized-cockpit">Customized Cockpit</a></h2>
+<p>Dropdown to select whether customized cockpits are used for the respective
+models.</p>
+<p>For the F-14A (all variants), the custom cockpit folder is located at
+<code>C:\Users\John Doe\Saved Games\DCS\Liveries\F14A_Cockpit</code>.</p>
+<p>For the F-14B, the custom cockpit folder is located at
+<code>C:\Users\John Doe\Saved Games\DCS\Liveries\F14B_Cockpit</code>.</p>
+<p>For the F-14B Upgrade, the custom cockpit folder is located at
+<code>C:\Users\John Doe\Saved Games\DCS\Liveries\Cockpit_F14BU</code>.</p>
+<h2 id="radio-menu-and-ptt-behavior"><a class="header" href="#radio-menu-and-ptt-behavior">Radio Menu and PTT Behavior</a></h2>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/special_options_radio_menu.jpg" alt="Radio Menu"><span class="img-wrapper"><img src="img/special_options_radio_menu.jpg" alt="Radio Menu"></span></label></p>
+<p>Dropdown to select the behavior of the push to talk bind for the radio.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Option</th><th>Close Menu</th><th>Menu must be open</th><th>Export Voice</th></tr>
+</thead>
+<tbody>
+<tr><td>Default</td><td>❌</td><td>❌</td><td>✅</td></tr>
+<tr><td>Open Menu</td><td>❌</td><td>✅</td><td>✅</td></tr>
+<tr><td>Hide on Release</td><td>✅</td><td>❌</td><td>✅</td></tr>
+<tr><td>No Export</td><td>❌</td><td>❌</td><td>❌</td></tr>
+</tbody>
+</table>
+</div>
+<p>The columns have the following effects:</p>
+<ul>
+<li>Close Menu - when releasing the key, the DCS communication menu is
+automatically closed</li>
+<li>Menu must be open - the key only works when the DCS communication menu is
+currently open</li>
+<li>Export Voice - when pressed down, voice is exported to tools like SRS</li>
+</ul>
+<h2 id="repeat-rio-weapon-type-on-tid"><a class="header" href="#repeat-rio-weapon-type-on-tid">Repeat RIO weapon type on TID</a></h2>
+<p>For easier visibility, since RIO weapon type window is as difficult to read
+in-game as it was in real life. Shown in A/G mode with pilot weapon selector
+off. The real F-14 could not repeat RIO weapon wheel on TID.</p>
+<h2 id="require-weapon-selector-press-between-off-and-gun"><a class="header" href="#require-weapon-selector-press-between-off-and-gun">Require weapon selector press between OFF and GUN</a></h2>
+<p>For enhanced realism, pilot weapon selector needs to be pressed while moving
+between OFF and GUN positions. This may be impractical with many consumer
+joysticks, hence it is an optional feature.</p>
+<h2 id="use-ffb-trim-implementation"><a class="header" href="#use-ffb-trim-implementation">Use FFB trim implementation</a></h2>
+<p>For enhanced realism when using a force feedback device for primary flight
+control. Shifts FFB stick neutral position to match trim actuator position. This
+option only has effect when FFB device is detected.</p>
+<h2 id="enable-afterburner-gate"><a class="header" href="#enable-afterburner-gate">Enable Afterburner Gate</a></h2>
+<p>Restricts throttle to MIL range unless AB gate key is pressed. While pressed,
+full throttle movement into AB range is unrestricted. Once key is released, AB
+operation continues until throttle is moved back to MIL range. Set MIL throttle
+detent below.</p>
+<h2 id="automatic-external-lights-at-carrier-launch"><a class="header" href="#automatic-external-lights-at-carrier-launch">Automatic External Lights at Carrier Launch</a></h2>
+<p>Automatically turns on the external lights when saluting the catapult officer at
+night, providing a nighttime launch signal.</p>
+<h2 id="emergency-wing-sweep-handle-raised-condition"><a class="header" href="#emergency-wing-sweep-handle-raised-condition">Emergency Wing Sweep Handle raised condition</a></h2>
+<p>Require the Emergency Wing Sweep Handle to be raised before moving it. In
+reality handle can be moved regardless of its vertical position.</p>
+<h2 id="enable-alternate-aoa-buffet"><a class="header" href="#enable-alternate-aoa-buffet">Enable Alternate AOA Buffet</a></h2>
+<p>This option enables a more 'realistic' AOA buffet based on F-14 pilot SME
+feedback.</p>
+<h2 id="tinted-visor-effect"><a class="header" href="#tinted-visor-effect">Tinted Visor Effect</a></h2>
+<p>When enabled, moving the pilots helmet visor down adds a graphical effect to
+help against bright lighting conditions. By default, this option is unchecked.</p>
+<h2 id="high-framerate-tis-recordings"><a class="header" href="#high-framerate-tis-recordings">High Framerate TIS Recordings</a></h2>
+<p>Records Tactical Imaging Set video at 30 fps instead of the default 15 fps. This
+results in smoother video at the cost of larger files and potentially worse
+performance.</p>
+<h2 id="stick-automatic-hiding"><a class="header" href="#stick-automatic-hiding">Stick Automatic Hiding</a></h2>
+<p>When enabled, this allows for automatic hiding of the stick when the cursor is
+above it.</p>
+<h2 id="afterburner-detent"><a class="header" href="#afterburner-detent">Afterburner Detent</a></h2>
+<p>Two options to define at which point of the physical hardware throttle input (0
+to 100%) the aircraft will light the afterburner.</p>
+<p>That is, if set to 80%, the MIL power range of the aircraft will be commanded
+between 0% and 80% of your physical throttle, while the remaining 20% will
+control the afterburner range.</p>
+<p>The deadzone option can be used to split the points in the range at which the
+afterburner will be turned on and off. For example, setting 20% for the deadzone
+and 80% for the detent results in afterburner activation at 82% and deactivation
+at 78% of throttle input.</p>
+<h2 id="jester-ai-contract"><a class="header" href="#jester-ai-contract">Jester AI Contract</a></h2>
+<h3 id="use-head-movement-to-select-items-in-jester-menu"><a class="header" href="#use-head-movement-to-select-items-in-jester-menu">Use head movement to select items in Jester Menu</a></h3>
+<p>This option, when enabled, allows using your head movement for selection of menu
+items.</p>
+<h3 id="jester-landing-callouts"><a class="header" href="#jester-landing-callouts">Jester Landing Callouts</a></h3>
+<p>This option enables Jester to give callouts to assist during landings.</p>
+<h3 id="switch-pd-stt-to-p-stt-lock-when-going-wvr"><a class="header" href="#switch-pd-stt-to-p-stt-lock-when-going-wvr">Switch PD-STT to P-STT lock when going WVR</a></h3>
+<p>P-STT is better suited in when close to target but does not allow AIM-54 data
+link updates. If option is checked Jester will automatically try to switch
+PD-STT lock to P-STT when close to enemy.</p>
+<h3 id="jester-menu-camera"><a class="header" href="#jester-menu-camera">Jester menu camera</a></h3>
+<p>This option shows Jester's camera in center of Jester menu.</p>
+<h3 id="jester-tid-auto-expand"><a class="header" href="#jester-tid-auto-expand">Jester TID Auto Expand</a></h3>
+<p>With this option enabled, Jester automatically expands TID, using the TID EXP
+option, with overlapping hooked target.</p>
+<h3 id="jester-auto-tcsflir-vid"><a class="header" href="#jester-auto-tcsflir-vid">Jester Auto TCS/FLIR VID</a></h3>
+<p>When enabled, Jester automatically points the TCS (or LANTIRN in air-to-air) at
+hooked targets to identify them visually.</p>
+<h3 id="jester-subtitles-experimental"><a class="header" href="#jester-subtitles-experimental">Jester Subtitles (Experimental)</a></h3>
+<p>Dropdown select to show subtitles for Jester's lines (experimental).</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Option</th><th>Subtitles</th><th>Portrait</th></tr>
+</thead>
+<tbody>
+<tr><td>Off</td><td>❌</td><td>❌</td></tr>
+<tr><td>On, with portrait</td><td>✅</td><td>✅</td></tr>
+<tr><td>On, without portrait</td><td>✅</td><td>❌</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="use-ai-generated-female-jester-voice-conversion-experimental"><a class="header" href="#use-ai-generated-female-jester-voice-conversion-experimental">Use AI generated female Jester voice conversion (experimental)</a></h3>
+<p>The option replaces Jester's voice with an AI voice-converted version that
+sounds female. These are the original Jester voice recordings (performed by
+Grayson) run through AI voice conversion - no lines are AI-written or newly
+generated, it is the same performance converted to a female-sounding voice. May
+contain occasional AI conversion artifacts.</p>
+<h3 id="jester-treats-no-iff-reply-as-bandit"><a class="header" href="#jester-treats-no-iff-reply-as-bandit">Jester treats no IFF reply as bandit</a></h3>
+<p>When Jester interrogates IFF, a contact that does not reply is normally left as
+an unknown bogey. With this option, Jester instead flags any contact that fails
+to reply as hostile (bandit).</p>
+<blockquote>
+<p>💡 A friendly with an inoperative or mis-set transponder, or one out of
+interrogation range, may be flagged as a bandit.</p>
+</blockquote>
+<h3 id="jester-records-gun-camera-tis-by-default"><a class="header" href="#jester-records-gun-camera-tis-by-default">Jester records gun camera (TIS) by default</a></h3>
+<p>When on, the Tactical Imaging Set comes up powered (except on a cold start) and
+Jester records HUD gun-camera footage automatically when you hold the trigger
+first detent. Turn off if you do not want gun-camera video recorded by default -
+you can still switch the TIS on from the cockpit switch or the Jester wheel.</p>
+<h2 id="hb-ui"><a class="header" href="#hb-ui">HB UI</a></h2>
+<h3 id="resolution-override"><a class="header" href="#resolution-override">Resolution Override</a></h3>
+<p>User interface elements, such as the Jester Wheel, the manual, virtual browser
+and others are scaled and positioned via a fixed resolution that must match the
+resolution of the in-game surface they are rendered on.</p>
+<p>With the option unchecked, this resolution is automatically determined based on
+screen settings. However, in certain situations, especially when using VR or
+having a multi-monitor setup, this automatic detection might fail and compute an
+incorrect resolution.</p>
+<p>Should UI elements be misplaced, for example the Jester Wheel not being centered
+or even cut off, check this setting and edit the resolution manually until the
+UI is displayed properly.</p>
+<h3 id="offset"><a class="header" href="#offset">Offset</a></h3>
+<p>Allows to displace the UI horizontally and vertically. Positive values shift it
+to the right or down, negative values to the left or up.</p>
+<p>Normally, this should be kept at the default value of 0 px. However, in certain
+cases (e.g. when using VR and setting it to render on the LEFT or RIGHT eye,
+while having the checkbox for <em>"Use DCS System Resolution"</em> not checked) it is
+possible that the UI gets cut off. This setting then allows to move the UI back
+into view, but therefore giving up proper alignment on the UI, such as the
+Jester UI being centered on the screen.</p>
+<h3 id="domain-access"><a class="header" href="#domain-access">Domain Access</a></h3>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/hb_ui_domain_access_option.jpg" alt="Domain Access Types"><span class="img-wrapper"><img src="img/hb_ui_domain_access_option.jpg" alt="Domain Access Types"></span></label></p>
+<p>Defines which domains the HB UI is allowed to access.</p>
+<p><strong>Full</strong> allows for free browsing, allowing to visit any website with the
+<a href="#virtual-browser">Virtual Browser</a>.</p>
+<p>The default option <strong>Whitelist</strong> defines which sites can be accessed by using a
+whitelist file. Only domains passing the rules setup in the file are allowed.
+The default rules are setup to support all HB UI features and a hand full of
+useful websites for the Virtual Browser, such as <em>YouTube</em>.</p>
+<p>This file is automatically created at</p>
+<p><code>C:\Users\John Doe\Saved Games\DCS_F14\hbui_whitelist.txt</code></p>
+<p>when launching the Tomcat for the first time.</p>
+<blockquote>
+<p>💡 Deleting the file will lead to it being recreated on the next launch. That
+way, one can have it updated to the newest set of rules - should there have
+been any changes.</p>
+</blockquote>
+<p>Selecting <strong>Offline</strong> will disable the Virtual Browser and any other HB UI
+features and elements that require an active online connection.</p>
+<h3 id="language"><a class="header" href="#language">Language</a></h3>
+<p>Dropdown to select the language used for all HB UI elements. Available are:</p>
+<ul>
+<li>English</li>
+<li>Chinese (<em>中文</em>)</li>
+<li>German (<em>Deutsch</em>)</li>
+<li>Korean (<em>한국어</em>)</li>
+</ul>
+<p>Affects for example the Jester UI, the Bombing Tool, but also the in-game
+version of this Manual and more.</p>
+<h3 id="theme"><a class="header" href="#theme">Theme</a></h3>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/special_option_hb_ui_theme.jpg" alt="UI Theme"><span class="img-wrapper"><img src="img/special_option_hb_ui_theme.jpg" alt="UI Theme"></span></label></p>
+<p>Allows to select which color theme is used by the UI. All UI elements support a
+light and a dark theme.</p>
+<p>The default option <strong>AUTO</strong> will pick the theme dynamically based on the in-game
+time. Light during the day and Dark for a night mission.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="mission-editor"><a class="header" href="#mission-editor">Mission Editor</a></h1>
+<p>The F-14 has many aircraft-specific settings and waypoints that are configured
+in the <strong>Mission Editor</strong>.</p>
+<h2 id="additional-aircraft-properties"><a class="header" href="#additional-aircraft-properties">Additional Aircraft Properties</a></h2>
+<p>Aircraft specific options are set up under the Additional Properties for
+Aircraft page available when setting up an aircraft group containing F-14s.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/mission_editor_special_options_ab.jpg" alt="Mission Editor Special Options A/B"><span class="img-wrapper"><img src="img/mission_editor_special_options_ab.jpg" alt="Mission Editor Special Options A/B"></span></label></p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/mission_editor_special_options_bu.jpg" alt="Mission Editor Special Options B(U)"><span class="img-wrapper"><img src="img/mission_editor_special_options_bu.jpg" alt="Mission Editor Special Options B(U)"></span></label></p>
+<h3 id="m-61-burst-mode"><a class="header" href="#m-61-burst-mode">M-61 Burst Mode</a></h3>
+<p>This dropdown allows for changes in the M61's max burst length. The "Manual"
+option fires until empty.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/mission_editor_m61_burst_setting_bu.jpg" alt="Mission Editor M61 Burst Mode"><span class="img-wrapper"><img src="img/mission_editor_m61_burst_setting_bu.jpg" alt="Mission Editor M61 Burst Mode"></span></label></p>
+<h3 id="anale-39-anale-47-for-f-14b-upgrade-loadout"><a class="header" href="#anale-39-anale-47-for-f-14b-upgrade-loadout">AN/ALE-39 (AN/ALE-47 for F-14B Upgrade) Loadout</a></h3>
+<p>This dropdown allows for changes in the AN/ALE-39 (AN/ALE-47 for F-14B Upgrade)
+countermeasure loadout.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/mission_editor_ale39_loadout.jpg" alt="Mission Editor ALE-39 Loadout"><span class="img-wrapper"><img src="img/mission_editor_ale39_loadout.jpg" alt="Mission Editor ALE-39 Loadout"></span></label></p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/mission_editor_ale47_loadout.jpg" alt="Mission Editor ALE-47 Loadout"><span class="img-wrapper"><img src="img/mission_editor_ale47_loadout.jpg" alt="Mission Editor ALE-47 Loadout"></span></label></p>
+<h3 id="ins-reference-alignment-stored"><a class="header" href="#ins-reference-alignment-stored">INS Reference Alignment Stored</a></h3>
+<p>This sets whether INS reference is pre-aligned at spawn. This allows for a
+stored alignment to be completed upon aircraft cold start.</p>
+<h3 id="tacan-channel-preset-and-band"><a class="header" href="#tacan-channel-preset-and-band">TACAN Channel Preset and Band</a></h3>
+<p>This allows the initial TACAN channel and band to be preset.</p>
+<h3 id="ils-channel-preset"><a class="header" href="#ils-channel-preset">ILS Channel Preset</a></h3>
+<p>This allows the initial ILS channel preset to be set.</p>
+<h3 id="ky-28-encryption-key"><a class="header" href="#ky-28-encryption-key">KY-28 Encryption Key</a></h3>
+<p>This allows the initial KY-28 encryption key to be preset.</p>
+<h3 id="refueling-probe-cover-removed"><a class="header" href="#refueling-probe-cover-removed">Refueling Probe Cover Removed</a></h3>
+<p>This option removes the refueling probe cover while loaded in the mission. This
+option overrides the livery refueling probe cover option.</p>
+<h3 id="tcs-f-14a-early-and-f-14a-late-only"><a class="header" href="#tcs-f-14a-early-and-f-14a-late-only">TCS (F-14A Early and F-14A Late Only)</a></h3>
+<p>This dropdown selection, for the F-14A Early and F-14A Late, allows mission
+editors to select the TCS or select no TCS with ability to select between
+historic (based on livery) or override.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/mission_editor_tcs_dropdown.jpg" alt="Mission Editor TCS Dropdown"><span class="img-wrapper"><img src="img/mission_editor_tcs_dropdown.jpg" alt="Mission Editor TCS Dropdown"></span></label></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Option</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>Historic (based on livery)</td><td>Uses the livery's set option</td></tr>
+<tr><td>On</td><td>Enables the TCS and equips chinpod with TCS regardless of livery option</td></tr>
+<tr><td>Off (Historic Variant)</td><td>Disables TCS and equips chinpod based on livery (if TCS was originally on livery, the bulletcover is equipped)</td></tr>
+<tr><td>Off (Bulletcover Variant)</td><td>Disables TCS and equips bulletcover chinpod regardless of livery option</td></tr>
+<tr><td>Off (Chinpod Variant)</td><td>Disables TCS and equips the chinpod without TCS housing regardless of livery option</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="waypoints-types-f-14ab-only"><a class="header" href="#waypoints-types-f-14ab-only">Waypoints Types (F-14A/B Only)</a></h2>
+<p>As the F-14A/B's navigational system only has three numbered waypoints, most
+other waypoints are set using Navigation Target Points.</p>
+<ul>
+<li><strong>Waypoints 1–3</strong>: Set directly in the mission editor.</li>
+<li><strong>Home Base</strong>: Set to the landing waypoint.</li>
+<li><strong>All others</strong>: Set by naming <em>Navigation Target Points</em> as below:</li>
+</ul>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Waypoint</th><th>Name</th></tr>
+</thead>
+<tbody>
+<tr><td>Fix Point</td><td><code>FP</code></td></tr>
+<tr><td>Initial Point</td><td><code>IP</code></td></tr>
+<tr><td>Surface Target</td><td><code>ST</code></td></tr>
+<tr><td>Defended Point</td><td><code>DP</code></td></tr>
+<tr><td>Hostile Area</td><td><code>HA</code></td></tr>
+<tr><td>Datalink Waypoint 1–3</td><td><code>DLWP1</code>, <code>DLWP2</code>, <code>DLWP3</code></td></tr>
+<tr><td>Datalink Surface Target</td><td><code>DLST</code></td></tr>
+<tr><td>Datalink Fixed Point</td><td><code>DLFP</code></td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="dtc-f-14b-upgrade-only"><a class="header" href="#dtc-f-14b-upgrade-only">DTC (F-14B Upgrade Only)</a></h2>
+<p>The F-14B Upgrade has its Mission Data Loader integrated into DCS' Mission
+Editor using the DTC menu. Refer to the
+<a href="#mission-data-loader">Mission Data Loader section</a> on
+more in-depth how to use MDL with the DTC menu.</p>
+<h3 id="navigation"><a class="header" href="#navigation">Navigation</a></h3>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dtc_navigation_page.jpg" alt="DTC Navigation Page"><span class="img-wrapper"><img src="img/dtc_navigation_page.jpg" alt="DTC Navigation Page"></span></label></p>
+<p>Refer to the
+<a href="#flight-plan">Flight Plan subsection</a>
+of the MDL section for more information.</p>
+<h3 id="jdam"><a class="header" href="#jdam">JDAM</a></h3>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dtc_jdam_page.jpg" alt="DTC JDAM Page"><span class="img-wrapper"><img src="img/dtc_jdam_page.jpg" alt="DTC JDAM Page"></span></label></p>
+<p>See the
+<a href="#pre-planned-jdam-employment">Pre-Planned JDAM Employment section</a>
+for further information on programming the JDAMs using the DTC menu.</p>
+<h3 id="cmds"><a class="header" href="#cmds">CMDS</a></h3>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dtc_cmds_page.jpg" alt="DTC CMDS Page"><span class="img-wrapper"><img src="img/dtc_cmds_page.jpg" alt="DTC CMDS Page"></span></label></p>
+<p>See the
+<a href="#programmer-1">Programmer section</a>
+for further information on programming the ALE-47 using the DTC menu.</p>
+<h3 id="tis-tactical-imaging-set"><a class="header" href="#tis-tactical-imaging-set">TIS (Tactical Imaging Set)</a></h3>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dtc_tis_page.jpg" alt="DTC TIS Page"><span class="img-wrapper"><img src="img/dtc_tis_page.jpg" alt="DTC TIS Page"></span></label></p>
+<p>Refer to the
+<a href="#fast-tactical-imaging-system">Fast Tactical Imaging System</a>
+page for further information on how to use the Tactical Imaging Set.</p>
+<h4 id="ownship-callsign"><a class="header" href="#ownship-callsign">Ownship Callsign</a></h4>
+<p>Callsign for ownship can be changed here. By default, "Use mission callsign", is
+checked which means the DCS unit name (pilot) set in the mission editor is used.</p>
+<h4 id="send-to-callsigns"><a class="header" href="#send-to-callsigns">Send-To Callsigns</a></h4>
+<p>The option to disable or enable the ability to auto-add wingmen to send list is
+provided. Additionally, callsigns can be manually added to the send list.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="grease-pencil"><a class="header" href="#grease-pencil">Grease Pencil</a></h1>
+<p>Both crew members can use a grease pencil to draw on the side of their canopy.</p>
+<p>The interface can be opened by clicking on the corresponding spot on the right
+front side of the canopy.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/grease_pencil_ui_overview.jpg" alt="grease_pencil_ui"><span class="img-wrapper"><img src="img/bu/grease_pencil_ui_overview.jpg" alt="grease_pencil_ui"></span></label></p>
+<p>Holding down left click allows drawing, while right click will use the eraser.</p>
+<p>After closing the window by clicking on the canopy spot again, the results are
+rendered on the canopy.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/grease_pencil_ui_result.jpg" alt="grease_pencil_ui_result"><span class="img-wrapper"><img src="img/bu/grease_pencil_ui_result.jpg" alt="grease_pencil_ui_result"></span></label></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="virtual-browser"><a class="header" href="#virtual-browser">Virtual Browser</a></h1>
+<p>To enhance in-flight studies of the aircraft or simply to overcome some
+downtime, a virtual browser can be opened (by default
+<kbd>RCTRL</kbd>+<kbd>V</kbd>).</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/virtual_browser.jpg" alt="Virtual Browser UI"><span class="img-wrapper"><img src="img/virtual_browser.jpg" alt="Virtual Browser UI"></span></label></p>
+<p>The browser enables users to</p>
+<ul>
+<li>watch tutorial videos,</li>
+<li>read documentation provided by third parties,</li>
+<li>listen to a music playlist while flying,</li>
+<li>or also playing some browser games and much more.</li>
+</ul>
+<p>The UI is embedded in-game, can be resized and moved around. Buttons on the top
+left corner allow for quick navigation.</p>
+<blockquote>
+<p>💡 To allow free browsing select <strong>Full</strong> for the
+<a href="#domain-access">Special Option</a> <em>HB UI Domain Access</em>.</p>
+</blockquote>
+<h2 id="session"><a class="header" href="#session">Session</a></h2>
+<p>Session data is memorized and saved locally in a folder like</p>
+<p><code>C:\Users\John Doe\Saved Games\DCS_F14\cache\</code></p>
+<p>Clearing this folder will reset all browser preferences and settings.</p>
+<p>If required, sound level of the browser can be controlled via the volume mixer
+provided by Windows through the <strong>HeatblurUi.exe</strong> entry.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/virtual_browser_volume_control.jpg" alt="Volume Control"><span class="img-wrapper"><img src="img/virtual_browser_volume_control.jpg" alt="Volume Control"></span></label></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="instant-camera"><a class="header" href="#instant-camera">Instant Camera</a></h1>
+<p>Cameras such as those made by Polaroid were a common sight before the widespread
+adoption of digital cameras. They were often personally purchased by aircrew for
+capturing memorable images, but they also served a practical purpose. Instant
+cameras allowed crews to quickly document subjects such as intercepted aircraft,
+mission events, and other items of interest without the delay associated with
+traditional film processing.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th style="text-align: center"></th><th></th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: center"><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/instant_camera_example.jpg" alt="Instant Camera Example"><span class="img-wrapper"><img src="img/bu/instant_camera_example.jpg" alt="Instant Camera Example"></span></label></td><td><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/instant_camera_example_02.jpg" alt="Instant Camera Example"><span class="img-wrapper"><img src="img/bu/instant_camera_example_02.jpg" alt="Instant Camera Example"></span></label></td></tr>
+</tbody>
+</table>
+</div>
+<p>In DCS, the instant camera can be opened with a keybind, and the shutter can be
+activated with a separate keybind. The text below the image can be modified
+during flight by selecting the text field with the mouse cursor.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/instant_camera_keybinds.jpg" alt="Instant Camera Controls"><span class="img-wrapper"><img src="img/bu/instant_camera_keybinds.jpg" alt="Instant Camera Controls"></span></label></p>
+<p>Your Instant Camera shots are stored in the <code>Saved Games/DCS_F14/Instant Camera</code>
+directory.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/instant_camera_example_storage.jpg" alt="Instant Camera Storage"><span class="img-wrapper"><img src="img/bu/instant_camera_example_storage.jpg" alt="Instant Camera Storage"></span></label></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="jester--iceman-set-commands-f-14ab"><a class="header" href="#jester--iceman-set-commands-f-14ab">JESTER / ICEMAN SET COMMANDS (F-14A/B)</a></h1>
+<p>Published fixed-value commands from <strong>10000 to 10099</strong> for use by the mission
+editor (trigger action <em>"X: Set command"</em>, see <code>proxy_device.lua</code>). Because
+these use fixed values it is not necessary to rebuild <code>Command.h</code> after
+adding/changing values in this range.</p>
+<p><code>SET COMMAND</code> can only accept numerical values <code>&gt;= -1</code> and <code>&lt;= 1</code>. Several
+commands below encode an index into that range using the <code>0.XX</code> convention
+(<code>0.01</code> = item 1, <code>0.99</code> = item 99, <code>1.00</code> = item 100).</p>
+<h2 id="general--pilot-commands"><a class="header" href="#general--pilot-commands">General / Pilot Commands</a></h2>
+<h3 id="10000--enable-acm-guns-air-to-air"><a class="header" href="#10000--enable-acm-guns-air-to-air"><code>10000</code> — Enable ACM guns, air-to-air</a></h3>
+<ul>
+<li><code>1</code> — enables</li>
+<li><code>0</code> — disables <em>(default)</em></li>
+</ul>
+<h3 id="10001--carrier-landing"><a class="header" href="#10001--carrier-landing"><code>10001</code> — Carrier landing</a></h3>
+<ul>
+<li><code>1</code> — initiates the carrier landing sequence</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10002--ground-landing"><a class="header" href="#10002--ground-landing"><code>10002</code> — Ground landing</a></h3>
+<ul>
+<li><code>1</code> — initiates the ground landing sequence</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10003--case-1-recovery"><a class="header" href="#10003--case-1-recovery"><code>10003</code> — Case 1 recovery</a></h3>
+<ul>
+<li><code>1</code> — initiates a Case 1 recovery</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10004--pilot-vsl-vertical-scan-lock"><a class="header" href="#10004--pilot-vsl-vertical-scan-lock"><code>10004</code> — Pilot VSL (Vertical Scan Lock)</a></h3>
+<ul>
+<li><code>1</code> — commands the pilot to attempt a VSL lock</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10005--wings-swept"><a class="header" href="#10005--wings-swept"><code>10005</code> — Wings swept</a></h3>
+<ul>
+<li><code>1</code> — sweeps the wings</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10006--air-to-ground-mode"><a class="header" href="#10006--air-to-ground-mode"><code>10006</code> — Air-to-ground mode</a></h3>
+<ul>
+<li><code>1</code> — selects air-to-ground</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10007--parking-brake"><a class="header" href="#10007--parking-brake"><code>10007</code> — Parking brake</a></h3>
+<ul>
+<li><code>1</code> — sets the parking brake</li>
+<li><code>0</code> — releases <em>(default)</em></li>
+</ul>
+<h3 id="10008--radar-weight-on-wheels-wow"><a class="header" href="#10008--radar-weight-on-wheels-wow"><code>10008</code> — Radar weight-on-wheels (WOW)</a></h3>
+<ul>
+<li><code>1</code> — WOW asserted</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h2 id="jester-lantirn--targeting"><a class="header" href="#jester-lantirn--targeting">Jester LANTIRN / Targeting</a></h2>
+<h3 id="10009--jester-lantirn-auto-designate"><a class="header" href="#10009--jester-lantirn-auto-designate"><code>10009</code> — Jester LANTIRN auto designate</a></h3>
+<ul>
+<li><code>1</code> — disables Jester LANTIRN auto designate</li>
+<li><code>0</code> — enables Jester LANTIRN auto designate <em>(default)</em></li>
+</ul>
+<h3 id="10010--jester-silent"><a class="header" href="#10010--jester-silent"><code>10010</code> — Jester silent</a></h3>
+<ul>
+<li><code>1</code> — silences Jester</li>
+<li><code>0</code> — Jester will talk again <em>(default)</em></li>
+</ul>
+<h3 id="10011--jester-pause"><a class="header" href="#10011--jester-pause"><code>10011</code> — Jester pause</a></h3>
+<ul>
+<li><code>1</code> — disables (pauses) Jester</li>
+<li><code>0</code> — reactivates Jester <em>(default)</em></li>
+</ul>
+<h3 id="10012--force-jester-to-track-a-target-by-unit-name"><a class="header" href="#10012--force-jester-to-track-a-target-by-unit-name"><code>10012</code> — Force Jester to track a target by unit name</a></h3>
+<p>Special command to force Jester to track a specific target using unit name.
+Since <code>SET COMMAND</code> only accepts values <code>&gt;= -1</code> and <code>&lt;= 1</code>, the following rule
+is used:</p>
+<ul>
+<li><code>0.01</code> — track unit named <code>LantirnTarget01</code></li>
+<li><code>0.02</code> — track unit named <code>LantirnTarget02</code> <em>(… continues …)</em></li>
+<li><code>0.99</code> — track unit named <code>LantirnTarget99</code></li>
+<li><code>1.00</code> — track unit named <code>LantirnTarget100</code></li>
+<li><code>0</code> — resume Jester state to normal operations</li>
+</ul>
+<h3 id="10013--force-jester-to-track-a-zone"><a class="header" href="#10013--force-jester-to-track-a-zone"><code>10013</code> — Force Jester to track a zone</a></h3>
+<p>Same as <code>10012</code>, but Jester tracks zones.</p>
+<ul>
+<li><code>0.01</code> — track zone named <code>LantirnZone01</code></li>
+<li><code>0.02</code> — track zone named <code>LantirnZone02</code> <em>(… continues …)</em></li>
+<li><code>0.99</code> — track zone named <code>LantirnZone99</code></li>
+<li><code>1.00</code> — track zone named <code>LantirnZone100</code></li>
+<li><code>0</code> — resume Jester state to normal operations</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Commands <code>10012</code> and <code>10013</code> are exclusive. When Jester is tracking
+a unit using <code>10012</code>, activating <code>10013</code> forces Jester to stop tracking that
+unit and start tracking a zone, and vice versa. Using <code>0</code> in either command
+stops tracking both units and zones.</p>
+</blockquote>
+<h3 id="10014--manual-designate"><a class="header" href="#10014--manual-designate"><code>10014</code> — Manual designate</a></h3>
+<p>Jester will designate manually what is under the LANTIRN cross.</p>
+<h2 id="radio--navigation"><a class="header" href="#radio--navigation">Radio / Navigation</a></h2>
+<h3 id="10015--tune-anarc-182-to-a-selected-channel"><a class="header" href="#10015--tune-anarc-182-to-a-selected-channel"><code>10015</code> — Tune AN/ARC-182 to a selected channel</a></h3>
+<ul>
+<li>Pass the value as <code>0.XX</code> where <code>XX</code> is the two-digit channel number.</li>
+</ul>
+<h3 id="10016--tune-tacan-channel"><a class="header" href="#10016--tune-tacan-channel"><code>10016</code> — Tune TACAN channel</a></h3>
+<p>Construct the value as <code>s0.XXXY</code>, where:</p>
+<ul>
+<li><code>s</code> — optional <code>-</code> sign; use <strong>negative</strong> values for A/A and <strong>positive</strong> for
+T/R</li>
+<li><code>XXX</code> — three-digit channel number (keep the leading zeroes for channels lower
+than 100)</li>
+<li><code>Y</code> — <code>0</code> for X-mode, <code>1</code> for Y-mode</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><code>0.0630</code> — channel 63X, T/R</li>
+<li><code>-0.0081</code> — channel 8Y, A/A</li>
+</ul>
+<h3 id="10017--dest-knob"><a class="header" href="#10017--dest-knob"><code>10017</code> — DEST knob</a></h3>
+<ul>
+<li><code>0.1</code> — WP1</li>
+<li><code>0.2</code> — WP2</li>
+<li><code>0.3</code> — WP3</li>
+<li><code>0.4</code> — FP</li>
+<li><code>0.5</code> — IP</li>
+<li><code>0.6</code> — ST</li>
+<li><code>0.7</code> — HB</li>
+<li><code>0.8</code> — MAN</li>
+</ul>
+<h3 id="10018--select-waypoint-to-enter-coords-from-a-trigger-zone"><a class="header" href="#10018--select-waypoint-to-enter-coords-from-a-trigger-zone"><code>10018</code> — Select waypoint to enter coords from a trigger zone</a></h3>
+<blockquote>
+<p>💡 This command does no action in the cockpit</p>
+</blockquote>
+<ul>
+<li><code>0.1</code> — WP1</li>
+<li><code>0.2</code> — WP2</li>
+<li><code>0.3</code> — WP3</li>
+<li><code>0.4</code> — FP</li>
+<li><code>0.5</code> — IP</li>
+<li><code>0.6</code> — ST</li>
+<li><code>0.7</code> — HB</li>
+<li><code>0.8</code> — MAN</li>
+</ul>
+<h3 id="10019--enter-coords-from-trigger-zone"><a class="header" href="#10019--enter-coords-from-trigger-zone"><code>10019</code> — Enter coords from trigger zone</a></h3>
+<p>Enter coords from a trigger zone for the waypoint selected with <code>10018</code> (if none
+selected, WP1).</p>
+<ul>
+<li><code>0.01</code> — <code>WaypointZone01</code></li>
+<li><code>0.02</code> — <code>WaypointZone02</code></li>
+<li><em>(… continues …)</em></li>
+<li><code>0.99</code> — <code>WaypointZone99</code></li>
+<li><code>-0.01</code> — <code>GGWZone01</code> <em>(negative values select GGW zones)</em></li>
+<li><em>(… continues …)</em></li>
+<li><code>-0.99</code> — <code>GGWZone99</code></li>
+</ul>
+<h2 id="jester-systems"><a class="header" href="#jester-systems">Jester Systems</a></h2>
+<h3 id="10020--wcs-switch"><a class="header" href="#10020--wcs-switch"><code>10020</code> — WCS switch</a></h3>
+<ul>
+<li><code>0.1</code> — OFF</li>
+<li><code>0.2</code> — STBY</li>
+<li><code>0.3</code> — ON</li>
+<li><code>0.0</code> — return to automatic</li>
+</ul>
+<h3 id="10021--run-rwr-bit"><a class="header" href="#10021--run-rwr-bit"><code>10021</code> — Run RWR BIT</a></h3>
+<ul>
+<li>No value parameter; runs the RWR built-in test.</li>
+</ul>
+<h3 id="10022--tid-range-knob"><a class="header" href="#10022--tid-range-knob"><code>10022</code> — TID range knob</a></h3>
+<ul>
+<li><code>0.1</code> — 25 NM</li>
+<li><code>0.2</code> — 50 NM</li>
+<li><code>0.3</code> — 100 NM</li>
+<li><code>0.4</code> — 200 NM</li>
+<li><code>0.5</code> — 400 NM</li>
+<li><code>0.0</code> — return to automatic</li>
+</ul>
+<h3 id="10023--jester-eject"><a class="header" href="#10023--jester-eject"><code>10023</code> — Jester Eject</a></h3>
+<ul>
+<li>Commands Jester to eject.</li>
+</ul>
+<h2 id="jester-radar--air-to-air"><a class="header" href="#jester-radar--air-to-air">Jester Radar / Air-to-Air</a></h2>
+<h3 id="10024--stt-target"><a class="header" href="#10024--stt-target"><code>10024</code> — STT target</a></h3>
+<ul>
+<li><code>0.00</code> — stop force STT track</li>
+<li><code>0.01</code> — <code>AirTarget01</code></li>
+<li><code>0.02</code> — <code>AirTarget02</code></li>
+<li><em>(… continues …)</em></li>
+<li><code>0.99</code> — <code>AirTarget99</code></li>
+</ul>
+<h3 id="10025--break-lock"><a class="header" href="#10025--break-lock"><code>10025</code> — Break lock</a></h3>
+<ul>
+<li>Drops the current track.</li>
+</ul>
+<h3 id="10033--radar-azimuth"><a class="header" href="#10033--radar-azimuth"><code>10033</code> — Radar azimuth</a></h3>
+<ul>
+<li>Accepts <code>-1</code> to <code>1</code>.</li>
+</ul>
+<h3 id="10034--radar-elevation"><a class="header" href="#10034--radar-elevation"><code>10034</code> — Radar elevation</a></h3>
+<ul>
+<li>Accepts <code>-1</code> to <code>1</code>.</li>
+</ul>
+<h2 id="jester-weapons"><a class="header" href="#jester-weapons">Jester Weapons</a></h2>
+<h3 id="10026--weapon-station-state"><a class="header" href="#10026--weapon-station-state"><code>10026</code> — Weapon station state</a></h3>
+<p>Format <code>0.xy</code>:</p>
+<ul>
+<li><code>x</code> — station number (1–8)</li>
+<li><code>y</code> — state: <code>0</code> down (safe), <code>1</code> up (selected)</li>
+</ul>
+<h3 id="10027--weapon-wheel-option"><a class="header" href="#10027--weapon-wheel-option"><code>10027</code> — Weapon wheel option</a></h3>
+<ul>
+<li><code>0.10</code> — MK-81H</li>
+<li><code>0.11</code> — MK-81L</li>
+<li><code>0.12</code> — MK-82H</li>
+<li><code>0.13</code> — MK-82L</li>
+<li><code>0.14</code> — MK-83H</li>
+<li><code>0.15</code> — MK-83L</li>
+<li><code>0.16</code> — MK-84</li>
+<li><code>0.17</code> — LAU-10</li>
+<li><code>0.19</code> — CBU-59A</li>
+<li><code>0.20</code> — CBU-59B</li>
+<li><code>0.21</code> — CBU-59C</li>
+<li><code>0.22</code> — MK-20A</li>
+<li><code>0.23</code> — MK-20B</li>
+<li><code>0.24</code> — MK-20C</li>
+<li><code>0.25</code> — MK-45</li>
+<li><code>0.26</code> — GBU-10</li>
+<li><code>0.27</code> — GBU-12</li>
+<li><code>0.28</code> — GBU-16</li>
+<li><code>0.29</code> — GBU-24</li>
+<li><code>0.30</code> — BDU-33</li>
+<li><code>0.31</code> — TALD</li>
+<li><code>0.32</code> — SUU-25</li>
+</ul>
+<h3 id="10028--attk-mode-knob"><a class="header" href="#10028--attk-mode-knob"><code>10028</code> — ATTK MODE knob</a></h3>
+<ul>
+<li><code>0.0</code> — CMPTR TGT</li>
+<li><code>0.1</code> — CMPTR IP</li>
+<li><code>0.2</code> — CMPTR PLT</li>
+<li><code>0.3</code> — MAN</li>
+</ul>
+<h3 id="10029--dlvy-mode-switches"><a class="header" href="#10029--dlvy-mode-switches"><code>10029</code> — DLVY MODE switches</a></h3>
+<p>Format <code>0.xy</code>:</p>
+<ul>
+<li><code>x</code> — <code>0</code> STP, <code>1</code> RPL</li>
+<li><code>y</code> — <code>0</code> SGL, <code>1</code> PRS</li>
+</ul>
+<h3 id="10030--dlvy-interval"><a class="header" href="#10030--dlvy-interval"><code>10030</code> — DLVY INTERVAL</a></h3>
+<p>Format <code>0.xy</code>:</p>
+<ul>
+<li><code>x</code> — first roller</li>
+<li><code>y</code> — second roller</li>
+</ul>
+<h3 id="10031--dlvy-qty"><a class="header" href="#10031--dlvy-qty"><code>10031</code> — DLVY QTY</a></h3>
+<p>Format <code>0.xy</code>:</p>
+<ul>
+<li><code>x</code> — first roller</li>
+<li><code>y</code> — second roller</li>
+</ul>
+<h3 id="10032--msl-launch"><a class="header" href="#10032--msl-launch"><code>10032</code> — MSL launch</a></h3>
+<ul>
+<li>Launches the selected missile.</li>
+</ul>
+<h2 id="jester-lantirn-zoom"><a class="header" href="#jester-lantirn-zoom">Jester LANTIRN Zoom</a></h2>
+<h3 id="10035--lantirn-zoom-level"><a class="header" href="#10035--lantirn-zoom-level"><code>10035</code> — LANTIRN zoom level</a></h3>
+<ul>
+<li><code>0</code> — auto</li>
+<li><code>0.33</code> — wide</li>
+<li><code>0.66</code> — narrow</li>
+<li><code>1.0</code> — expanded</li>
+</ul>
+<h2 id="iceman-ai-pilot-commands"><a class="header" href="#iceman-ai-pilot-commands">Iceman (AI Pilot) Commands</a></h2>
+<ul>
+<li><code>10080</code> — set heading (absolute)</li>
+<li><code>10081</code> — set heading (relative)</li>
+<li><code>10082</code> — set speed (absolute)</li>
+<li><code>10083</code> — set speed (relative)</li>
+<li><code>10084</code> — set altitude (absolute)</li>
+<li><code>10085</code> — set altitude (relative)</li>
+<li><code>10086</code> — navigate: fly to steerpoint</li>
+<li><code>10087</code> — navigate: orbit steerpoint</li>
+<li><code>10088</code> — hold current heading/speed/altitude</li>
+</ul>
+<h2 id="sentinel"><a class="header" href="#sentinel">Sentinel</a></h2>
+<ul>
+<li><code>10099</code> — <code>PROXY_last_command_sentinel</code> (marks the end of the fixed-value
+range; not a usable command).</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="jester--iceman-set-commands-f-14bu"><a class="header" href="#jester--iceman-set-commands-f-14bu">JESTER / ICEMAN SET COMMANDS (F-14B(U))</a></h1>
+<p>Published fixed-value commands from <strong>10000 to 10099</strong> for use by the mission
+editor (trigger action <em>"X: Set command"</em>, see <code>proxy_device.lua</code>). Because
+these use fixed values it is not necessary to rebuild <code>Command.h</code> after
+adding/changing values in this range.</p>
+<p><code>SET COMMAND</code> can only accept numerical values <code>&gt;= -1</code> and <code>&lt;= 1</code>. Several
+commands below encode an index into that range using the <code>0.XX</code> convention
+(<code>0.01</code> = item 1, <code>0.99</code> = item 99, <code>1.00</code> = item 100).</p>
+<h2 id="general--pilot-commands-1"><a class="header" href="#general--pilot-commands-1">General / Pilot Commands</a></h2>
+<h3 id="10000--enable-acm-guns-air-to-air-1"><a class="header" href="#10000--enable-acm-guns-air-to-air-1"><code>10000</code> — Enable ACM guns, air-to-air</a></h3>
+<ul>
+<li><code>1</code> — enables</li>
+<li><code>0</code> — disables <em>(default)</em></li>
+</ul>
+<h3 id="10001--carrier-landing-1"><a class="header" href="#10001--carrier-landing-1"><code>10001</code> — Carrier landing</a></h3>
+<ul>
+<li><code>1</code> — initiates the carrier landing sequence</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10002--ground-landing-1"><a class="header" href="#10002--ground-landing-1"><code>10002</code> — Ground landing</a></h3>
+<ul>
+<li><code>1</code> — initiates the ground landing sequence</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10003--case-1-recovery-1"><a class="header" href="#10003--case-1-recovery-1"><code>10003</code> — Case 1 recovery</a></h3>
+<ul>
+<li><code>1</code> — initiates a Case 1 recovery</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10004--pilot-vsl-vertical-scan-lock-1"><a class="header" href="#10004--pilot-vsl-vertical-scan-lock-1"><code>10004</code> — Pilot VSL (Vertical Scan Lock)</a></h3>
+<ul>
+<li><code>1</code> — commands the pilot to attempt a VSL lock</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10005--wings-swept-1"><a class="header" href="#10005--wings-swept-1"><code>10005</code> — Wings swept</a></h3>
+<ul>
+<li><code>1</code> — sweeps the wings</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10006--air-to-ground-mode-1"><a class="header" href="#10006--air-to-ground-mode-1"><code>10006</code> — Air-to-ground mode</a></h3>
+<ul>
+<li><code>1</code> — selects air-to-ground</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h3 id="10007--parking-brake-1"><a class="header" href="#10007--parking-brake-1"><code>10007</code> — Parking brake</a></h3>
+<ul>
+<li><code>1</code> — sets the parking brake</li>
+<li><code>0</code> — releases <em>(default)</em></li>
+</ul>
+<h3 id="10008--radar-weight-on-wheels-wow-1"><a class="header" href="#10008--radar-weight-on-wheels-wow-1"><code>10008</code> — Radar weight-on-wheels (WOW)</a></h3>
+<ul>
+<li><code>1</code> — WOW asserted</li>
+<li><code>0</code> — <em>(default)</em></li>
+</ul>
+<h2 id="jester-lantirn--targeting-1"><a class="header" href="#jester-lantirn--targeting-1">Jester LANTIRN / Targeting</a></h2>
+<h3 id="10009--jester-lantirn-auto-designate-1"><a class="header" href="#10009--jester-lantirn-auto-designate-1"><code>10009</code> — Jester LANTIRN auto designate</a></h3>
+<ul>
+<li><code>1</code> — disables Jester LANTIRN auto designate</li>
+<li><code>0</code> — enables Jester LANTIRN auto designate <em>(default)</em></li>
+</ul>
+<h3 id="10010--jester-silent-1"><a class="header" href="#10010--jester-silent-1"><code>10010</code> — Jester silent</a></h3>
+<ul>
+<li><code>1</code> — silences Jester</li>
+<li><code>0</code> — Jester will talk again <em>(default)</em></li>
+</ul>
+<h3 id="10011--jester-pause-1"><a class="header" href="#10011--jester-pause-1"><code>10011</code> — Jester pause</a></h3>
+<ul>
+<li><code>1</code> — disables (pauses) Jester</li>
+<li><code>0</code> — reactivates Jester <em>(default)</em></li>
+</ul>
+<h3 id="10012--force-jester-to-track-a-target-by-unit-name-1"><a class="header" href="#10012--force-jester-to-track-a-target-by-unit-name-1"><code>10012</code> — Force Jester to track a target by unit name</a></h3>
+<p>Special command to force Jester to track a specific target using unit name.
+Since <code>SET COMMAND</code> only accepts values <code>&gt;= -1</code> and <code>&lt;= 1</code>, the following rule
+is used:</p>
+<ul>
+<li><code>0.01</code> — track unit named <code>LantirnTarget01</code></li>
+<li><code>0.02</code> — track unit named <code>LantirnTarget02</code> <em>(… continues …)</em></li>
+<li><code>0.99</code> — track unit named <code>LantirnTarget99</code></li>
+<li><code>1.00</code> — track unit named <code>LantirnTarget100</code></li>
+<li><code>0</code> — resume Jester state to normal operations</li>
+</ul>
+<h3 id="10013--force-jester-to-track-a-zone-1"><a class="header" href="#10013--force-jester-to-track-a-zone-1"><code>10013</code> — Force Jester to track a zone</a></h3>
+<p>Same as <code>10012</code>, but Jester tracks zones.</p>
+<ul>
+<li><code>0.01</code> — track zone named <code>LantirnZone01</code></li>
+<li><code>0.02</code> — track zone named <code>LantirnZone02</code> <em>(… continues …)</em></li>
+<li><code>0.99</code> — track zone named <code>LantirnZone99</code></li>
+<li><code>1.00</code> — track zone named <code>LantirnZone100</code></li>
+<li><code>0</code> — resume Jester state to normal operations</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Commands <code>10012</code> and <code>10013</code> are exclusive. When Jester is tracking
+a unit using <code>10012</code>, activating <code>10013</code> forces Jester to stop tracking that
+unit and start tracking a zone, and vice versa. Using <code>0</code> in either command
+stops tracking both units and zones.</p>
+</blockquote>
+<h3 id="10014--manual-designate-1"><a class="header" href="#10014--manual-designate-1"><code>10014</code> — Manual designate</a></h3>
+<p>Jester will designate manually what is under the LANTIRN cross.</p>
+<h2 id="radio--navigation-1"><a class="header" href="#radio--navigation-1">Radio / Navigation</a></h2>
+<h3 id="10015--tune-anarc-182-to-a-selected-channel-1"><a class="header" href="#10015--tune-anarc-182-to-a-selected-channel-1"><code>10015</code> — Tune AN/ARC-182 to a selected channel</a></h3>
+<ul>
+<li>Pass the value as <code>0.XX</code> where <code>XX</code> is the two-digit channel number.</li>
+</ul>
+<h3 id="10016--tune-tacan-channel-1"><a class="header" href="#10016--tune-tacan-channel-1"><code>10016</code> — Tune TACAN channel</a></h3>
+<p>Construct the value as <code>s0.XXXY</code>, where:</p>
+<ul>
+<li><code>s</code> — optional <code>-</code> sign; use <strong>negative</strong> values for A/A and <strong>positive</strong> for
+T/R</li>
+<li><code>XXX</code> — three-digit channel number (keep the leading zeroes for channels lower
+than 100)</li>
+<li><code>Y</code> — <code>0</code> for X-mode, <code>1</code> for Y-mode</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><code>0.0630</code> — channel 63X, T/R</li>
+<li><code>-0.0081</code> — channel 8Y, A/A</li>
+</ul>
+<h3 id="10017--dest-knob-1"><a class="header" href="#10017--dest-knob-1"><code>10017</code> — DEST knob</a></h3>
+<ul>
+<li><code>0.1</code> — WP1</li>
+<li><code>0.2</code> — WP2</li>
+<li><code>0.3</code> — WP3</li>
+<li><code>0.4</code> — FP</li>
+<li><code>0.5</code> — IP</li>
+<li><code>0.6</code> — ST</li>
+<li><code>0.7</code> — HB</li>
+<li><code>0.8</code> — MAN</li>
+</ul>
+<h3 id="10018--select-waypoint-to-enter-coords-from-a-trigger-zone-1"><a class="header" href="#10018--select-waypoint-to-enter-coords-from-a-trigger-zone-1"><code>10018</code> — Select waypoint to enter coords from a trigger zone</a></h3>
+<blockquote>
+<p>💡 This command does no action in the cockpit</p>
+</blockquote>
+<ul>
+<li><code>0.1</code> — WP1</li>
+<li><code>0.2</code> — WP2</li>
+<li><code>0.3</code> — WP3</li>
+<li><code>0.4</code> — FP</li>
+<li><code>0.5</code> — IP</li>
+<li><code>0.6</code> — ST</li>
+<li><code>0.7</code> — HB</li>
+<li><code>0.8</code> — MAN</li>
+</ul>
+<h3 id="10019--enter-coords-from-trigger-zone-1"><a class="header" href="#10019--enter-coords-from-trigger-zone-1"><code>10019</code> — Enter coords from trigger zone</a></h3>
+<p>Enter coords from a trigger zone for the waypoint selected with <code>10018</code> (if none
+selected, WP1).</p>
+<ul>
+<li><code>0.01</code> — <code>WaypointZone01</code></li>
+<li><code>0.02</code> — <code>WaypointZone02</code></li>
+<li><em>(… continues …)</em></li>
+<li><code>0.99</code> — <code>WaypointZone99</code></li>
+<li><code>-0.01</code> — <code>GGWZone01</code> <em>(negative values select GGW zones)</em></li>
+<li><em>(… continues …)</em></li>
+<li><code>-0.99</code> — <code>GGWZone99</code></li>
+</ul>
+<h2 id="jester-systems-1"><a class="header" href="#jester-systems-1">Jester Systems</a></h2>
+<h3 id="10020--wcs-switch-1"><a class="header" href="#10020--wcs-switch-1"><code>10020</code> — WCS switch</a></h3>
+<ul>
+<li><code>0.1</code> — OFF</li>
+<li><code>0.2</code> — STBY</li>
+<li><code>0.3</code> — ON</li>
+<li><code>0.0</code> — return to automatic</li>
+</ul>
+<h3 id="10021--run-rwr-bit-1"><a class="header" href="#10021--run-rwr-bit-1"><code>10021</code> — Run RWR BIT</a></h3>
+<ul>
+<li>No value parameter; runs the RWR built-in test.</li>
+</ul>
+<h3 id="10022--tid-range-knob-1"><a class="header" href="#10022--tid-range-knob-1"><code>10022</code> — TID range knob</a></h3>
+<ul>
+<li><code>0.1</code> — 25 NM</li>
+<li><code>0.2</code> — 50 NM</li>
+<li><code>0.3</code> — 100 NM</li>
+<li><code>0.4</code> — 200 NM</li>
+<li><code>0.5</code> — 400 NM</li>
+<li><code>0.0</code> — return to automatic</li>
+</ul>
+<h3 id="10023--jester-eject-1"><a class="header" href="#10023--jester-eject-1"><code>10023</code> — Jester Eject</a></h3>
+<ul>
+<li>Commands Jester to eject.</li>
+</ul>
+<h2 id="jester-radar--air-to-air-1"><a class="header" href="#jester-radar--air-to-air-1">Jester Radar / Air-to-Air</a></h2>
+<h3 id="10024--stt-target-1"><a class="header" href="#10024--stt-target-1"><code>10024</code> — STT target</a></h3>
+<ul>
+<li><code>0.00</code> — stop force STT track</li>
+<li><code>0.01</code> — <code>AirTarget01</code></li>
+<li><code>0.02</code> — <code>AirTarget02</code></li>
+<li><em>(… continues …)</em></li>
+<li><code>0.99</code> — <code>AirTarget99</code></li>
+</ul>
+<h3 id="10025--break-lock-1"><a class="header" href="#10025--break-lock-1"><code>10025</code> — Break lock</a></h3>
+<ul>
+<li>Drops the current track.</li>
+</ul>
+<h3 id="10033--radar-azimuth-1"><a class="header" href="#10033--radar-azimuth-1"><code>10033</code> — Radar azimuth</a></h3>
+<ul>
+<li>Accepts <code>-1</code> to <code>1</code>.</li>
+</ul>
+<h3 id="10034--radar-elevation-1"><a class="header" href="#10034--radar-elevation-1"><code>10034</code> — Radar elevation</a></h3>
+<ul>
+<li>Accepts <code>-1</code> to <code>1</code>.</li>
+</ul>
+<h2 id="jester-weapons-1"><a class="header" href="#jester-weapons-1">Jester Weapons</a></h2>
+<h3 id="10026--weapon-station-state-1"><a class="header" href="#10026--weapon-station-state-1"><code>10026</code> — Weapon station state</a></h3>
+<p>Format <code>0.xy</code>:</p>
+<ul>
+<li><code>x</code> — station number (1–8)</li>
+<li><code>y</code> — state: <code>0</code> down (safe), <code>1</code> up (selected)</li>
+</ul>
+<h3 id="10027--weapon-wheel-option-1"><a class="header" href="#10027--weapon-wheel-option-1"><code>10027</code> — Weapon wheel option</a></h3>
+<ul>
+<li><code>0.10</code> — MK-81H</li>
+<li><code>0.11</code> — MK-81L</li>
+<li><code>0.12</code> — MK-82H</li>
+<li><code>0.13</code> — MK-82L</li>
+<li><code>0.14</code> — MK-83H</li>
+<li><code>0.15</code> — MK-83L</li>
+<li><code>0.16</code> — MK-84</li>
+<li><code>0.17</code> — LAU-10</li>
+<li><code>0.19</code> — CBU-59A</li>
+<li><code>0.20</code> — CBU-59B</li>
+<li><code>0.21</code> — CBU-59C</li>
+<li><code>0.22</code> — MK-20A</li>
+<li><code>0.23</code> — MK-20B</li>
+<li><code>0.24</code> — MK-20C</li>
+<li><code>0.25</code> — MK-45</li>
+<li><code>0.26</code> — GBU-10</li>
+<li><code>0.27</code> — GBU-12</li>
+<li><code>0.28</code> — GBU-16</li>
+<li><code>0.29</code> — GBU-24</li>
+<li><code>0.30</code> — BDU-33</li>
+<li><code>0.31</code> — TALD</li>
+<li><code>0.32</code> — SUU-25</li>
+</ul>
+<h3 id="10028--attk-mode-knob-1"><a class="header" href="#10028--attk-mode-knob-1"><code>10028</code> — ATTK MODE knob</a></h3>
+<ul>
+<li><code>0.0</code> — CMPTR TGT</li>
+<li><code>0.1</code> — CMPTR IP</li>
+<li><code>0.2</code> — CMPTR PLT</li>
+<li><code>0.3</code> — MAN</li>
+</ul>
+<h3 id="10029--dlvy-mode-switches-1"><a class="header" href="#10029--dlvy-mode-switches-1"><code>10029</code> — DLVY MODE switches</a></h3>
+<p>Format <code>0.xy</code>:</p>
+<ul>
+<li><code>x</code> — <code>0</code> STP, <code>1</code> RPL</li>
+<li><code>y</code> — <code>0</code> SGL, <code>1</code> PRS</li>
+</ul>
+<h3 id="10030--dlvy-interval-1"><a class="header" href="#10030--dlvy-interval-1"><code>10030</code> — DLVY INTERVAL</a></h3>
+<p>Format <code>0.xy</code>:</p>
+<ul>
+<li><code>x</code> — first roller</li>
+<li><code>y</code> — second roller</li>
+</ul>
+<h3 id="10031--dlvy-qty-1"><a class="header" href="#10031--dlvy-qty-1"><code>10031</code> — DLVY QTY</a></h3>
+<p>Format <code>0.xy</code>:</p>
+<ul>
+<li><code>x</code> — first roller</li>
+<li><code>y</code> — second roller</li>
+</ul>
+<h3 id="10032--msl-launch-1"><a class="header" href="#10032--msl-launch-1"><code>10032</code> — MSL launch</a></h3>
+<ul>
+<li>Launches the selected missile.</li>
+</ul>
+<h2 id="jester-lantirn-zoom-1"><a class="header" href="#jester-lantirn-zoom-1">Jester LANTIRN Zoom</a></h2>
+<h3 id="10035--lantirn-zoom-level-1"><a class="header" href="#10035--lantirn-zoom-level-1"><code>10035</code> — LANTIRN zoom level</a></h3>
+<ul>
+<li><code>0</code> — auto</li>
+<li><code>0.33</code> — wide</li>
+<li><code>0.66</code> — narrow</li>
+<li><code>1.0</code> — expanded</li>
+</ul>
+<h2 id="jester-backup-bu-waypoint--nav-commands"><a class="header" href="#jester-backup-bu-waypoint--nav-commands">Jester Backup (BU) Waypoint / Nav Commands</a></h2>
+<h3 id="10036--create-waypoint-from-trigger-zone"><a class="header" href="#10036--create-waypoint-from-trigger-zone"><code>10036</code> — Create waypoint from trigger zone</a></h3>
+<p>Creates a waypoint from a trigger zone (zone selected first by <code>10019</code>, or
+target with <code>10046</code>).</p>
+<ul>
+<li><code>0.01</code> – <code>0.99</code> — specific waypoint ID (e.g. <code>0.03</code> = wpt 3)</li>
+<li><code>0</code> — last waypoint created by this command</li>
+<li><code>&gt;= 1</code> — new waypoint</li>
+</ul>
+<blockquote>
+<p>Also auto-selects the created/updated waypoint (as if <code>10037</code> was called), so
+a following command operates on it without an explicit select.</p>
+</blockquote>
+<h3 id="10037--select-waypoint"><a class="header" href="#10037--select-waypoint"><code>10037</code> — Select waypoint</a></h3>
+<p>Selects which waypoint Jester should perform the following operations on. Do
+this first, then issue the other commands.</p>
+<ul>
+<li><code>0.01</code> — wpt 1</li>
+<li><code>0.25</code> — wpt 25 <em>(etc.)</em></li>
+<li><code>0.0</code> — special: the most recently created waypoint through <code>10036</code></li>
+</ul>
+<h3 id="10038--set-special-designation"><a class="header" href="#10038--set-special-designation"><code>10038</code> — Set special designation</a></h3>
+<p>Sets the special designation for the selected waypoint.</p>
+<ul>
+<li><code>0.0</code> — clear SD</li>
+<li><code>0.1</code> — destination</li>
+<li><code>0.2</code> — surface target</li>
+<li><code>0.3</code> — fixed point</li>
+<li><code>0.4</code> — initial point</li>
+<li><code>0.5</code> — HA</li>
+<li><code>0.6</code> — DP</li>
+<li><code>-0.1</code> – <code>-0.7</code> — P1–P7</li>
+</ul>
+<h3 id="10039--transfer-jdam-station"><a class="header" href="#10039--transfer-jdam-station"><code>10039</code> — Transfer JDAM station</a></h3>
+<p>Transfers selected wpt coordinates to a station.</p>
+<ul>
+<li><code>0.0</code> — next selected</li>
+<li><code>0.3</code> — station 3</li>
+<li><code>0.4</code> — station 4</li>
+<li><code>0.5</code> — station 5</li>
+<li><code>0.6</code> — station 6</li>
+</ul>
+<h3 id="10040--set-lts"><a class="header" href="#10040--set-lts"><code>10040</code> — Set LTS</a></h3>
+<ul>
+<li><code>0</code> — remove LTS</li>
+<li><code>1</code> — set LTS</li>
+</ul>
+<h3 id="10041--hook-selected-waypoint"><a class="header" href="#10041--hook-selected-waypoint"><code>10041</code> — Hook selected waypoint</a></h3>
+<ul>
+<li><code>1.0</code> — hook selected wp</li>
+<li><code>0.0</code> — unhook (if selected)</li>
+</ul>
+<h3 id="10042--direct-to-selected-waypoint"><a class="header" href="#10042--direct-to-selected-waypoint"><code>10042</code> — Direct-to selected waypoint</a></h3>
+<ul>
+<li><code>1.0</code> — direct to selected wp</li>
+</ul>
+<h3 id="10043--steering-mode"><a class="header" href="#10043--steering-mode"><code>10043</code> — Steering mode</a></h3>
+<ul>
+<li><code>0.0</code> — dest</li>
+<li><code>0.33</code> — auto</li>
+<li><code>0.66</code> — ofly</li>
+<li><code>1.0</code> — man</li>
+</ul>
+<h3 id="10044--bdhi-mode"><a class="header" href="#10044--bdhi-mode"><code>10044</code> — BDHI mode</a></h3>
+<ul>
+<li><code>0.0</code> — HUD sync</li>
+<li><code>0.1</code> — FP WP (selected with <code>10037</code>)</li>
+<li><code>0.3</code> — Launch Point</li>
+<li><code>0.4</code> — Target</li>
+</ul>
+<h3 id="10045--tcn--egi-select"><a class="header" href="#10045--tcn--egi-select"><code>10045</code> — TCN / EGI select</a></h3>
+<ul>
+<li><code>0.0</code> — EGI</li>
+<li><code>1.0</code> — TCN</li>
+</ul>
+<h3 id="10046--waypoint-from-ggw-target"><a class="header" href="#10046--waypoint-from-ggw-target"><code>10046</code> — Waypoint from GGW target</a></h3>
+<p>Like <code>10019</code>, but selects the source from a live unit's current position for
+<code>10036</code>.</p>
+<ul>
+<li><code>0.01</code> – <code>0.99</code> — unit named <code>"GGWTarget01"</code>..<code>"GGWTarget99"</code> (value × 100 =
+id)</li>
+</ul>
+<h3 id="10047--izlid-pointzone"><a class="header" href="#10047--izlid-pointzone"><code>10047</code> — IZLID point/zone</a></h3>
+<p>Jester points his IR target designator at the point selected by <code>10019</code> (trigger
+zone) or <code>10046</code> (GGW target). The value scales the lasing duration:</p>
+<ul>
+<li><code>value × 60</code> = seconds (<code>1.0</code> = 60s)</li>
+<li><code>-1</code> — lase until told to stop</li>
+<li><code>0</code> — stop immediately</li>
+</ul>
+<h2 id="iceman-ai-pilot-commands-1"><a class="header" href="#iceman-ai-pilot-commands-1">Iceman (AI Pilot) Commands</a></h2>
+<ul>
+<li><code>10080</code> — set heading (absolute)</li>
+<li><code>10081</code> — set heading (relative)</li>
+<li><code>10082</code> — set speed (absolute)</li>
+<li><code>10083</code> — set speed (relative)</li>
+<li><code>10084</code> — set altitude (absolute)</li>
+<li><code>10085</code> — set altitude (relative)</li>
+<li><code>10086</code> — navigate: fly to steerpoint</li>
+<li><code>10087</code> — navigate: orbit steerpoint</li>
+<li><code>10088</code> — hold current heading/speed/altitude</li>
+</ul>
+<h2 id="sentinel-1"><a class="header" href="#sentinel-1">Sentinel</a></h2>
+<ul>
+<li><code>10099</code> — <code>PROXY_last_command_sentinel</code> (marks the end of the fixed-value
+range; not a usable command).</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="bombing-tool"><a class="header" href="#bombing-tool">Bombing Tool</a></h1>
+<p>In the F-14, the Bombing Tool gives the Pilot a simplified method to transfer
+desired bombing release settings to Jester. The tool is entirely optional to use
+for the pilot, as the traditional method of transferring weapon release settings
+via the Jester Wheel works alongside the bombing tool. The tool simplifies the
+workflow for the Pilot by reducing the time spent in the Jester wheel, if you
+require multiple release settings to be set.</p>
+<p>For the B(U) aircraft variant, the tool also provides a JDAM Manual Release
+Calculator. This can be used to calculate horizontal RMAX (Maximum Release
+Range) &amp; TOF (Time of Flight) at different drop parameters, useful in preparing
+for a TOO JDAM release.</p>
+<p>The tool can be accessed with <strong>RCtrl+B</strong>.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/bombing_tool_example.jpg" alt="Bombing Tool Example"><span class="img-wrapper"><img src="img/bu/bombing_tool_example.jpg" alt="Bombing Tool Example"></span></label></p>
+<h2 id="input"><a class="header" href="#input">Input</a></h2>
+<p>For each release setting, Jester will automatically change the setting once an
+option is entered.</p>
+<h3 id="attack-mode"><a class="header" href="#attack-mode">Attack Mode</a></h3>
+<ul>
+<li>Pilot (PLT)</li>
+<li>Target (TGT)</li>
+<li>Initial Point (IP)</li>
+<li>Manual (MAN)</li>
+</ul>
+<h3 id="electric-fuze-type"><a class="header" href="#electric-fuze-type">Electric Fuze Type</a></h3>
+<ul>
+<li>Instantaneous (INST)</li>
+<li>Preset Time Delay 1 (DLY 1)</li>
+<li>Preset Time Delay 2 (DLY 2)</li>
+<li>Air-burst (VT)</li>
+<li>Safe (SAFE)</li>
+</ul>
+<h3 id="mechanical-fuze-type"><a class="header" href="#mechanical-fuze-type">Mechanical Fuze Type</a></h3>
+<ul>
+<li>Nose</li>
+<li>Nose Tail</li>
+</ul>
+<h3 id="delivery-mode"><a class="header" href="#delivery-mode">Delivery Mode</a></h3>
+<ul>
+<li>Step | Single</li>
+<li>Step | Pairs</li>
+<li>Ripple | Single</li>
+<li>Ripple | Pairs</li>
+</ul>
+<h3 id="ripple-interval"><a class="header" href="#ripple-interval">Ripple Interval</a></h3>
+<p>Tells Jester to set the desired bomb release interval in milliseconds (ms). You
+can set it in 10 ms increments per click.</p>
+<h3 id="ripple-quantity"><a class="header" href="#ripple-quantity">Ripple Quantity</a></h3>
+<p>Tells Jester the desired quantity of bombs to release upon the press of 'weapon
+release'.</p>
+<h2 id="jdam-manual-release-f-14b-upgrade-only"><a class="header" href="#jdam-manual-release-f-14b-upgrade-only">JDAM Manual Release (F-14B Upgrade Only)</a></h2>
+<p>Used to calculate horizontal RMAX (Maximum Release Range) &amp; TOF (Time of Flight)
+at different drop parameters.</p>
+<h3 id="jdam-type"><a class="header" href="#jdam-type">JDAM Type</a></h3>
+<p>Set to desired JDAM type (drag and glide coefficients are adjusted per JDAM
+type).</p>
+<h3 id="release-altitude"><a class="header" href="#release-altitude">Release Altitude</a></h3>
+<p>Enter altitude at which you plan to release the weapon. Values in kft, increment
+of 5 per click.</p>
+<h3 id="impact-angle"><a class="header" href="#impact-angle">Impact Angle</a></h3>
+<p>Set desired final weapon impact angle. Currently only 65 degrees modelled &amp;
+selectable.</p>
+<h3 id="release-aircraft-ground-speed"><a class="header" href="#release-aircraft-ground-speed">Release Aircraft Ground Speed</a></h3>
+<p>Enter the planned ground speed for release. Note it is ground speed and <strong>NOT</strong>
+IAS or TAS. Increment of 50 knots per click.</p>
+<p>Once all parameters are entered, you may click <strong>Save</strong> to add the entry to the
+Saved Solutions list, from which you can refer to later during the flight.</p>
+<blockquote>
+<p>💡 In order to close the bombing tool, make sure to first remove keyboard
+focus from it by clicking anywhere else in the cockpit.</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="kneeboard"><a class="header" href="#kneeboard">Kneeboard</a></h1>
+<p>The kneeboard is present on both Pilot &amp; RIO 3D models, on the left leg. It also
+remains fully interactive on the 3D model, without the need to open it via the
+keybind. The Pilot / RIO 3D models have a default keybinding of
+<kbd>RSHIFT</kbd> + <kbd>P</kbd>.</p>
+<p>In order to cycle kneeboard configurations, the <strong>clamp</strong> at the top of the
+kneeboard must be <strong>clicked</strong>.</p>
+<h2 id="checklist-configuration"><a class="header" href="#checklist-configuration">Checklist Configuration</a></h2>
+<p>The checklists included provides the crew with Normal Procedure, Attack &amp;
+Emergency Checklists, as well as aircraft reference data. The checklist
+procedures are an abridged version of the checklists found in the NAVAIR
+01-F14AAP-1B NATOPS Pocket Checklist (for the F-14B Upgrade).</p>
+<p>The Checklist configuration can be interacted with the mouse in the cockpit.
+Navigation works as follows:</p>
+<ul>
+<li>Each of the 11 sections can be quickly skipped to from the front contents page
+by clicking on the right-hand side section list.</li>
+<li>The pages can also be scrolled manually using the arrows on the bottom
+navigation bar.</li>
+<li>Return to the contents page via the <strong>Home</strong> icon on the bottom right.</li>
+</ul>
+<p>The 2D version of the Checklist configuration has a default keybinding of
+<kbd>RCTRL</kbd> + <kbd>C</kbd>.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/checklist_tool_example.jpg" alt="Checklist Tool Example"><span class="img-wrapper"><img src="img/bu/checklist_tool_example.jpg" alt="Checklist Tool Example"></span></label></p>
+<h2 id="clipboard-configuration"><a class="header" href="#clipboard-configuration">Clipboard Configuration</a></h2>
+<p>The clipboard configuration provides the crew with the familiar DCS kneeboard on
+the Pilot &amp; RIO models.</p>
+<p>Pages can be cycled in desired direction by <strong>clicking</strong> on the left or right
+side of the page.</p>
+<p>In order to access the clipboard configuration, the clamp at the top of the
+kneeboard must be <strong>clicked</strong>. This will cycle through the tool configurations.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/checklist_tool_example_2.jpg" alt="Checklist Tool Example 2"><span class="img-wrapper"><img src="img/bu/checklist_tool_example_2.jpg" alt="Checklist Tool Example 2"></span></label></p>
+<p>Alternatively, you can change pages through using the regular keybinds, default:</p>
+<ul>
+<li><kbd>]</kbd> - Page Up</li>
+<li><kbd>[</kbd> - Page Down</li>
+</ul>
+<p>The 2D version of the Clipboard configuration has a default keybinding of
+<kbd>RSHIFT</kbd> + <kbd>K</kbd>.</p>
+<blockquote>
+<p>💡 In order to close the 2D checklist tool, make sure to first remove keyboard
+focus from it by clicking anywhere else in the cockpit.</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="embedded-manual"><a class="header" href="#embedded-manual">Embedded Manual</a></h1>
+<p>This manual is embedded into the game and can be read while flying.</p>
+<p>It also offers a way to explain switches in the cockpit directly by opening the
+manual scrolled right to the spot explaining the corresponding switch.</p>
+<h2 id="controls-3"><a class="header" href="#controls-3">Controls</a></h2>
+<p>The default bind <kbd>M</kbd> can be used to toggle the manual. When holding it
+down while clicking a switch in the cockpit, the manual will automatically open
+and scroll to the section explaining that switch.</p>
+<p>Additionally, the following binds are available as well:</p>
+<ul>
+<li><kbd>RSHIFT</kbd> + <kbd>M</kbd> - open the manual</li>
+<li><kbd>RCTRL</kbd> + <kbd>M</kbd> - close the manual</li>
+<li><kbd>RALT</kbd> + <kbd>M</kbd> - toggle the manual</li>
+</ul>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/ingame_manual_example.jpg" alt="Checklist Tool Example"><span class="img-wrapper"><img src="img/bu/ingame_manual_example.jpg" alt="Checklist Tool Example"></span></label></p>
+<blockquote>
+<p>💡 In order to close the manual, make sure to first remove keyboard focus from
+it by clicking anywhere else in the cockpit.</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="character"><a class="header" href="#character">Character</a></h1>
+<h2 id="customization"><a class="header" href="#customization">Customization</a></h2>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/character_customization_ui.jpg" alt="Customization Interface"><span class="img-wrapper"><img src="img/character_customization_ui.jpg" alt="Customization Interface"></span></label></p>
+<p>The Pilot and RIO character can be customized through an in-game menu which
+allows, for example, selecting one of the many flight suit variations. This menu
+can be entered via an assignable special bind.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/character_customizer_binds.jpg" alt="Character Customization Binds"><span class="img-wrapper"><img src="img/character_customizer_binds.jpg" alt="Character Customization Binds"></span></label></p>
+<p>The outfit presets can be saved and loaded using the in-game menu. They are
+saved locally at <code>C:\Users\John Doe\Saved Games\DCS_F14\character_presets</code>.
+Presets already stored in that folder can be loaded using the select preset
+dropdown.</p>
+<p>The defaults for the currently selected aircraft livery as shown with the
+<code>(Livery Default)</code> text next to the customization option. If one desires to
+reset their customization back to the livery's defaults, pressing the
+<code>Reset to Livery</code> button will reset the Pilot/RIO customization back to the
+livery's defaults.</p>
+<h3 id="options"><a class="header" href="#options">Options</a></h3>
+<p>Customization options currently include:</p>
+<ul>
+<li>Facial Hair
+<ul>
+<li>Moustache</li>
+<li>None</li>
+</ul>
+</li>
+<li>Head
+<ul>
+<li>Male</li>
+<li>Female</li>
+</ul>
+</li>
+<li>Flight Suit
+<ul>
+<li>Default</li>
+<li>Olive</li>
+<li>Orange</li>
+<li>Blue</li>
+<li>Tan</li>
+<li>Black</li>
+</ul>
+</li>
+<li>Helmet
+<ul>
+<li>HGU-55</li>
+<li>HGU-33</li>
+</ul>
+</li>
+<li>Helmet Cover
+<ul>
+<li>None</li>
+<li>M81 Woodland</li>
+<li>M81 Desert - 3 Color</li>
+<li>M81 Desert - 6 Color</li>
+</ul>
+</li>
+<li>Visor
+<ul>
+<li>Black</li>
+<li>Clear</li>
+<li>Gold</li>
+<li>Yellow</li>
+</ul>
+</li>
+<li>Mask
+<ul>
+<li>MBU-23</li>
+<li>MBU-12</li>
+</ul>
+</li>
+<li>Glasses
+<ul>
+<li>None</li>
+<li>Aviators</li>
+<li>Wraparound</li>
+</ul>
+</li>
+</ul>
+<h2 id="visor-and-oxygen-mask-visibility"><a class="header" href="#visor-and-oxygen-mask-visibility">Visor and Oxygen Mask Visibility</a></h2>
+<p>In addition to the ability to customize the visor and oxygen mask, the visor can
+be lowered and the oxygen mask can be removed using assignable special binds.</p>
+<blockquote>
+<p>💡 Lowering the visor with the
+"<a href="#tinted-visor-effect">Tinted Visor Effect</a>" special option
+enabled will result in the tinted visor effect being shown.</p>
+</blockquote>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/visor_mask_binds.jpg" alt="Visor and Mask Binds"><span class="img-wrapper"><img src="img/visor_mask_binds.jpg" alt="Visor and Mask Binds"></span></label></p>
+<h2 id="selfie-mode"><a class="header" href="#selfie-mode">Selfie Mode</a></h2>
+<p>To enable great screenshots, a special <em>Selfie Mode</em> can be entered via an
+assignable special bind.</p>
+<p>In this mode, the character model is rendered even though the player is
+currently in First-Person-View (<kbd>F1</kbd>).</p>
+<p>The camera can then be moved for example to the front via standard DCS controls:</p>
+<ul>
+<li><kbd>RCtrl</kbd> + <kbd>RShift</kbd> + <kbd>8</kbd> (Numpad): Move up</li>
+<li><kbd>RCtrl</kbd> + <kbd>RShift</kbd> + <kbd>2</kbd> (Numpad): Move down</li>
+<li><kbd>RCtrl</kbd> + <kbd>RShift</kbd> + <kbd>4</kbd> (Numpad): Move left</li>
+<li><kbd>RCtrl</kbd> + <kbd>RShift</kbd> + <kbd>6</kbd> (Numpad): Move right</li>
+<li><kbd>RCtrl</kbd> + <kbd>RShift</kbd> + <kbd>/</kbd> (Numpad): Move forward</li>
+<li><kbd>RCtrl</kbd> + <kbd>RShift</kbd> + <kbd>*</kbd> (Numpad): Move aft</li>
+</ul>
+<p>The view can be turned back to face the pilot by using <kbd>LAlt</kbd> +
+<kbd>C</kbd> and then using the mouse.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/selfie_shot.jpg" alt="Selfie Shot"><span class="img-wrapper"><img src="img/selfie_shot.jpg" alt="Selfie Shot"></span></label></p>
+<p>Additionally, another special bind exists to freeze the character model
+movement.</p>
+<p>By default, the cameras movement area is restricted to avoid glitching the view
+during normal flight (for example when moving the head into a panel during VR).
+This restriction can be lifted by editing
+<code>&lt;DCS Install Folder&gt;/Mods/aircraft/F14/Entry/Views.lua</code>, allowing moving the
+camera anywhere in the cockpit.</p>
+<h2 id="crew-animations"><a class="header" href="#crew-animations">Crew Animations</a></h2>
+<p>There are several special binds available to the Pilot and RIO for special
+animations to be played using the character models.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/pilot_animation_binds.jpg" alt="Pilot Animation Binds"><span class="img-wrapper"><img src="img/pilot_animation_binds.jpg" alt="Pilot Animation Binds"></span></label></p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/rio_animation_binds.jpg" alt="RIO Animation Binds"><span class="img-wrapper"><img src="img/rio_animation_binds.jpg" alt="RIO Animation Binds"></span></label></p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="acronyms-and-abbreviations"><a class="header" href="#acronyms-and-abbreviations">Acronyms and Abbreviations</a></h1>
 <h2 id="a"><a class="header" href="#a">A</a></h2>
