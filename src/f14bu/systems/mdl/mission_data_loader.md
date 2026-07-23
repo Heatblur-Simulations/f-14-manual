@@ -3,9 +3,10 @@
 The Mission Data Loader (MDL) provides bulk storage of mission-essential data.
 
 The Data Transfer Module (DTM) can be edited in the
-[Mission Editor](../../dcs/mission_editor.md) or the ground crew <kbd>F10</kbd>
-menu, with a range of navigation and mission computer data. Navigation data are
-transferred to the CDNU using a special pass-through function of the EGI.
+[Mission Editor](../../../dcs/mission_editor.md) or the ground crew
+<kbd>F10</kbd> menu, with a range of navigation and mission computer data.
+Navigation data are transferred to the CDNU using a special pass-through
+function of the EGI.
 
 The MDL may contain two separate waypoint databases, a magnetic variation
 (MAGVAR) table, up to twelve flight plans, and the current GPS almanac. The

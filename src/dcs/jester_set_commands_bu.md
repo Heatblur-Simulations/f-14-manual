@@ -1,4 +1,4 @@
-# JESTER / ICEMAN SET COMMANDS
+# JESTER / ICEMAN SET COMMANDS (F-14B(U))
 
 Published fixed-value commands from **10000 to 10099** for use by the mission
 editor (trigger action _"X: Set command"_, see `proxy_device.lua`). Because
