@@ -284,6 +284,9 @@ replay_pid*
 ### MdBook ###
 book
 
+# i18n build materializes the shared img/ into every non-default src/<lang>/
+src/fr/img
+
 
 ### NetBeans ###
 **/nbproject/private/

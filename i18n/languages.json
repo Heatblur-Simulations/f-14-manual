@@ -1,0 +1,20 @@
+[
+  {
+    "code": "en",
+    "mdbookLang": "en",
+    "name": "English",
+    "native": "English",
+    "title": "Heatblur F-14 Tomcat",
+    "pdfName": "f14_manual_en.pdf",
+    "default": true
+  },
+  {
+    "code": "fr",
+    "mdbookLang": "fr",
+    "name": "French",
+    "native": "Français",
+    "title": "Heatblur F-14 Tomcat",
+    "pdfName": "f14_manual_fr.pdf",
+    "default": false
+  }
+]
