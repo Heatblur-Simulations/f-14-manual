@@ -14,11 +14,11 @@ functions are also expanded to fit the new systems.
 
 ## Q JESTER
 
-With the addition of QJester the Player can prompt jester to perform specific
-actions based on the master mode selection. In all modes it is possible to
-prompt jester to select specific pages on the PTID. This is achieved by holding
-and releasing the jester context key whilst looking at the desired PTID option
-on the HSD in TID repeat.
+With QJester the Player can prompt jester to perform specific actions based on
+the master mode selection. In all modes it is possible to prompt jester to
+select specific pages on the PTID. This is achieved by holding and releasing the
+jester context key whilst looking at the desired PTID option on the HSD in TID
+repeat.
 
 For example on the PTID tactical page, the player can prompt jester to change
 the TID scale meerly by holding and releasing the QJester indicator on top of
