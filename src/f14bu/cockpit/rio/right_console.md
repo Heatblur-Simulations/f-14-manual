@@ -484,7 +484,9 @@ lighting.
 
 ## IFF Transponder Control Panel
 
-Control panel for the AN/APX-72 IFF transponder (<num>13</num>).
+Control panel for the
+[AN/APX-76 IFF transponder](../../../f14ab/systems/identification_systems.md)
+(<num>13</num>).
 
 ![transponder](../../../img/bu/right_console_iff-03.jpg)
 
