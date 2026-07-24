@@ -5,7 +5,7 @@ the [right console](../cockpit/rio/right_console.md).
 
 ## AN/APX-72 Transponder System
 
-![RIO_iff_control_panel](../../img/bu/right_console_iff-03.jpg)
+![RIO_iff_control_panel](../../img/bu/right_console_iff.jpg)
 
 The transponder automatically responds to challenges from surface or airborne
 radar sets and serves supplementary purposes such as providing momentary
@@ -135,60 +135,6 @@ multiple returns in case of closely grouped targets.
 
 ![RIO](../../img/bu/right_console_aa1-01.jpg)
 
-To challenge friendly or civilian aircraft using the AN/APX-76, the RIO sets the
-interrogation mode on the first roller-display. It can be set to either OFF, or
-Mode 1, 2, 3, 4/A or 4/B (<num>3</num>).
-
-The other four digits are used to set the IFF code to interrogate for Modes 1 to
-3 (<num>3</num>). The code for Mode 4/A and 4/B is set by the ground personal.
-
-Once setup, interrogation can be initiated by either pressing the Challenge
-Button on the Antenna Hand Control Stick or moving the Test/Challenge Switch
-(<num>2</num>) to the CHAL CODE position.
-
-> 💡 The Test/Challenge switch will only send a challenge via the AN/APX-76
-> system, while the Challenge Button includes an interrogation by Combat-Tree,
-> if activated.
-
-The radar screen presents the results of the interrogation with lines around the
-contacts position:
-
-- line above; the aircraft has a matching transponder mode (likely friendly, or
-  at least neutral)
-- line below; the aircraft has a matching transponder code (likely friendly)
-
-> 💡 The Tomcat features a full IFF simulation. In DCS this system also works
-> with any other cooperating aircraft, such as the M-2000C, F1, JF-17, F-15E,
-> Harrier and more. Other aircraft, or AI-controlled aircraft fall back to
-> coalition based transponders, the Phantoms interrogator then assumes their
-> transponder to be set to the correct codes for their corresponding coalition.
-> See chapter [Mission Editor](../dcs/mission_editor.md#iff) for options on
-> AI-controlled aircraft.
-
-![Radar with friendly contacts](../img/radar_iff_friendly.jpg)
-
-Each time the AN/APX-76 is sending an interrogation, the challenge light
-(<num>1</num>) illuminates.
-
-### Test
-
-The interrogation system can be tested by holding the Test/Challenge Switch
-(<num>2</num>) in the TEST position.
-
-During the test, the system will inject two artificial transponder responses at
-ranges 3.5 NM and 4.5 NM.
-
-The test is successful if the challenge lamp (<num>1</num>) illuminates and the
-DSCG screen shows two lines at the corresponding distances that span over the
-entire screen.
-
-![Radar with IFF Test](../img/radar_iff_test.jpg).
-
-### AAI Control Panel
-
-![aa1](../../img/cockpit_detail_rio_aa1.jpg) _AN/APX-76 interrogator control
-panel_
-
 - **1. M4 ALARM OVERRIDE switch**
   - Switch disabling the mode 4 tone alarm in the RIO headset.
 
@@ -209,3 +155,44 @@ panel_
 
 - **5. FAULT light**
   - Light indicating a fault in the AN/APX-76.
+
+To challenge friendly or civilian aircraft using the AN/APX-76, the RIO sets the
+interrogation mode on the first roller-display. It can be set to either OFF, or
+Mode 1, 2, 3, 4/A or 4/B (<num>3</num>).
+
+The other four digits are used to set the IFF code to interrogate for Modes 1 to
+3 (<num>3</num>). The code for Mode 4/A and 4/B is set by the ground personal.
+
+Once setup, interrogation can be initiated by either pressing the IFF button on
+the DDD or moving the Test/Challenge Switch (<num>2</num>) to the CHAL CODE
+position.
+
+> 💡 The Test/Challenge switch will only send a challenge via the AN/APX-76
+> system, while the Challenge Button includes an interrogation by Combat-Tree,
+> if activated.
+
+The radar screen presents the results of the interrogation with lines around the
+contacts position:
+
+- line above; the aircraft has a matching transponder mode (likely friendly, or
+  at least neutral)
+- line below; the aircraft has a matching transponder code (likely friendly)
+
+[DDD with friendly contacts] WIP - INSERT IMAGE
+
+Each time the AN/APX-76 is sending an interrogation, the challenge light
+(<num>4</num>) illuminates.
+
+### Test
+
+The interrogation system can be tested by holding the Test/Challenge Switch
+(<num>2</num>) in the TEST position.
+
+During the test, the system will inject two artificial transponder responses at
+ranges 3.5 NM and 4.5 NM.
+
+The test is successful if the challenge lamp (<num>1</num>) illuminates and the
+DSCG screen shows two lines at the corresponding distances that span over the
+entire screen.
+
+![DDD with IFF Test] WIP - INSERT IMAGE
