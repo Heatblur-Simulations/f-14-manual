@@ -236,14 +236,16 @@ remaining DTM designated jettison-able countermeasures.
 The Mode control switch (<num>10</num>) is a 6-position rotary switch is used to
 select one of six modes of operation.
 
-For a detailed discussion reference the [ALE-47 section](../../systems/defensive_systems/countermeasures/ale_47.md#mode-control-switch)
+For a detailed discussion reference the
+[ALE-47 section](../../systems/defensive_systems/countermeasures/ale_47.md#mode-control-switch)
 of this manual.
 
 ### MANUAL Switch
 
 The Manual switch (<num>11</num>) is a 5-Position rotary that allows selection
-of countermeasure dispense programs 1 through 4 and PROGRAM (PRG). For a detailed
-discussion reference the [ALE-47 section](../../systems/defensive_systems/countermeasures/ale_47.md#manual-switch)
+of countermeasure dispense programs 1 through 4 and PROGRAM (PRG). For a
+detailed discussion reference the
+[ALE-47 section](../../systems/defensive_systems/countermeasures/ale_47.md#manual-switch)
 of this manual.
 
 ### READY/NO GO Display
