@@ -6,9 +6,9 @@
 The Tactical Airborne Reconnaissance Pod System, or TARPS, was developed to
 provide carrier air wings with an organic tactical reconnaissance capability as
 dedicated aircraft such as the RA-5C Vigilante and RF-8G Crusader were withdrawn
-from service. Entering fleet service in the early 1980s, TARPS allowed suitably
-modified F-14s to perform photographic reconnaissance, mapping, maritime
-surveillance, and pre- and post-strike damage assessment.
+from service. Entering fleet service in the early 1980s, TARPS allowed modified
+F-14s to perform photographic reconnaissance, mapping, maritime surveillance,
+and pre- and post-strike damage assessment.
 
 The TARPS pod is carried on weapons station 5, on the starboard side of the
 tunnel between the engine nacelles. It contains three sensor bays. The forward
@@ -36,6 +36,8 @@ Expanded Chaff Adapter and the AN/ALQ-167 electronic-countermeasures pod.
 
 ## Expanded Chaff Adapter
 
+![TARPS Loadout](../../img/tarps_loadout.jpg)
+
 The Expanded Chaff Adapter, or ECA, was an additional expendable-countermeasure
 dispenser developed to increase the F-14's relatively limited internal chaff
 capacity. It provided an significant increase in the countermeasure count of the
@@ -57,8 +59,8 @@ associated with TARPS missions because those missions presented a potential high
 requirement for additional chaff.
 
 In DCS, the ECA can be used only in the A/G mode with chaff dispenses actuated
-by the pickle button with the ECA station selected and a bomb or ECA selected on
-the RIO's Armament panel weapon wheel.
+by the Pilot's store release button with the ECA station selected and a bomb or
+ECA selected on the RIO's Armament panel weapon wheel.
 
 ## AN/ALQ-167 Electronic-Countermeasures Pod
 
@@ -86,7 +88,7 @@ maintain a predictable flight path inside a hostile radar and missile
 environment.
 
 > 💡 Due to engine limitations, the AN/ALQ-167 does not provide any additional
-> jamming effects over the built-in DECM on the F-14, so thus is purely visual
+> jamming effects over the built-in DECM on the F-14, so thus is purely cosmetic
 > in DCS.
 
 In DCS, TARPS functionality is currently limited to the KS-87D camera configured
@@ -95,3 +97,11 @@ concluded by using the special dedicated keybind. The TARPS control panel,
 navigation and HUD steering integration, automatic camera sequencing, KA-99
 panoramic camera, and AN/AAD-5 infrared line scanner are not currently
 simulated.
+
+![TARPS DCS Controls](../../img/tarps_controls_dcs.jpg)
+
+All TARPS imagery are saved in the `Saved Games/DCS_F14/TARPS` directory. Each
+TARPS image is saved with the associated flight data when the image was taken
+(Mission Date, Lat Long, Altitude, Drift, Heading, Pitch, Roll).
+
+![TARPS Saved Games](../../img/tarps_saved_games.jpg)
