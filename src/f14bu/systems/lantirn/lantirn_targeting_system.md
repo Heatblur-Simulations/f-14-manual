@@ -70,6 +70,12 @@ is too close and has too little thermal detail to point track), the LTS defaults
 to area track mode, except A-A mode in which case the LTS transitions to
 computed rates mode.
 
+> 💡 Point Track with the LANTIRN can only be engaged on object that appear
+> white on a dark background no matter the polarity mode (WHOT or BHOT). In DCS,
+> due to limitations in simulation, Point Track can only be initiated in WHOT
+> mode. Once Point Track is successfully engaged in WHOT, it is possible to
+> change the polarity to BHOT.
+
 ## Q (Cue) Modes
 
 - Q Waypoint: With Q waypoint any of 20 LTS designated waypoints can be toggled
