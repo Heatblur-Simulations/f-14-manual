@@ -492,11 +492,11 @@ Control panel for the
 
 ### Mode 4 Switch
 
-The MODE 4 switch (<num>1</num>) enables Mode 4 operation.
+The MODE 4 switch (<num>8</num>) enables Mode 4 operation.
 
 ### Mode 4 Audio/Light Switch
 
-The MODE 4 AUDIO/LIGHT switch (<num>2</num>) enables Mode 4 audio monitoring
+The MODE 4 AUDIO/LIGHT switch (<num>7</num>) enables Mode 4 audio monitoring
 and/or reply light monitoring.
 
 - AUDIO - Enables Mode 4 audio monitoring and reply light monitoring.
@@ -505,7 +505,7 @@ and/or reply light monitoring.
 
 ### Mode 4 Code Selector
 
-The MODE 4 CODE selector (<num>3</num>) selects which cipher code is used.
+The MODE 4 CODE selector (<num>4</num>) selects which cipher code is used.
 
 - ZERO - Erases both ciphers.
 - B - Selects B cipher.
@@ -514,21 +514,21 @@ The MODE 4 CODE selector (<num>3</num>) selects which cipher code is used.
 
 ### Mode 4 Reply Light
 
-The MODE 4 REPLY light (<num>4</num>) illuminates when a Mode 4 reply is
+The MODE 4 REPLY light (<num>3</num>) illuminates when a Mode 4 reply is
 generated and transmitted.
 
 The light can be pressed to test.
 
 ### Test Light
 
-The TEST light (<num>5</num>) illuminates to indicate a successful test when a
+The TEST light (<num>2</num>) illuminates to indicate a successful test when a
 mode test is performed.
 
 The light can be pressed to test illumination.
 
 ### Master Selector
 
-The MASTER selector (<num>6</num>) selects AN/APX-72 operating state.
+The MASTER selector (<num>1</num>) selects AN/APX-72 operating state.
 
 - OFF - No power.
 - STBY - Standby for immediate operation when another mode is selected.
@@ -539,7 +539,7 @@ The MASTER selector (<num>6</num>) selects AN/APX-72 operating state.
 
 ### Mode Switches
 
-The MODE switches (<num>7</num>) control individual IFF mode operation.
+The MODE switches (<num>6</num>) control individual IFF mode operation.
 
 - TEST - Tests the respective mode; correct operation indicated by TEST light.
 - ON - Enables the mode.
@@ -547,7 +547,7 @@ The MODE switches (<num>7</num>) control individual IFF mode operation.
 
 ### Rad Test / Out / Mon Switch
 
-The RAD TEST-OUT-MON switch (<num>8</num>) controls ground test and monitoring
+The RAD TEST-OUT-MON switch (<num>5</num>) controls ground test and monitoring
 of non-Mode 4 replies.
 
 - RAD TEST - Not used by aircrew.
