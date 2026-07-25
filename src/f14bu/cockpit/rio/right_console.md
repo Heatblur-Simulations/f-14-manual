@@ -408,15 +408,15 @@ The ADDRESS thumbwheel (<num>4</num>) sets the aircraft data link address.
 This sets the two least-significant digits; remaining digits are set by ground
 crew.
 
-## AA1 Control Panel
+## AAI Control Panel
 
 AN/APX-76 interrogator control panel(<num>11</num>).
 
-![aa1](../../../img/bu/right_console_aa1-01.jpg)
+![aaI](../../../img/bu/right_console_aa1-01.jpg)
 
 AN/APX-76 interrogator control panel.
 
-> 💡 Due to DCS limitations in regards to IFF the AA1 control panel is currently
+> 💡 Due to DCS limitations in regards to IFF the AAI control panel is currently
 > non-functional.
 
 ### M4 Alarm Override Switch
