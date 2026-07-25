@@ -86,6 +86,10 @@ Potential Flight Path Marker (PFPM).
 ![FPM](../../../img/dark/hud_fpm_pfpm_small_cutout_thin.svg) _Shown here: Flight
 Path Marker (FPM) and Potential Flight Path Marker (PFPM)_
 
+The FPM is displayed on the HUD only, indicating the actual flight path of the
+aircraft when read against the outside world. The FPM is free to move within the
+entire Total Field Of View (TFOV).
+
 Unlike a fixed pitch reference, which indicates where the nose of the aircraft
 is pointing, the FPM’s position changes based on the dynamic characteristics of
 the aircraft and the atmospheric conditions in which the aircraft is flying
@@ -119,6 +123,12 @@ center.
 
 ![CDM](../../../img/dark/hud_cdm_fpm_pfpm_small_cutout_thin.svg) _Shown here:
 Climb Dive Marker (CDM) and small Flight Path Marker (FPM)_
+
+The CDM displays the current climb/dive angle when read against the climb/dive
+ladder (CDL). The CDM is free to move along the vertical axis within the
+Instantaneous Field Of View (IFOV). In the horizontal axis, the VDI CDM is
+restricted to zero degrees azimuth and the HUD CDM is restricted to ± 5° in
+azimuth.
 
 Supplementing the CDM and FPM is the PFPM, which moves up and down along the
 right side of the CDM or FPM indicating aircraft acceleration or deceleration
@@ -184,8 +194,8 @@ horizon. The negative index lines are dashed and are angled at one half the dive
 angle to the horizon. For example, if the aircraft were in a 30° dive, the CDL
 index lines would be angled at 15° down from the horizon line.
 
-The HUD TFOV will typically display four CDL index lines. The aircraft pitch
-attitude determines the CDL index line displayed on the HUD.
+The HUD Total Field Of View (TFOV) will typically display four CDL index lines.
+The aircraft pitch attitude determines the CDL index line displayed on the HUD.
 
 The CDM indicates aircraft flight path. When the aircraft is at a flight path
 angle/attitude where the horizon line is outside the IFOV, the HUD displays a
