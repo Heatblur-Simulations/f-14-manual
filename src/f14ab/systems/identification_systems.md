@@ -32,9 +32,7 @@ the Crew Chief can be asked to insert them on demand as well.
 > F-15E, Harrier and more. Other aircraft, or AI-controlled aircraft fall back
 > to coalition based interrogation, assuming the Tomcats transponder to always
 > be enabled and set to the correct M4 code for the current coalition, ignoring
-> the real state of the transponder. See chapter
-> [Mission Editor](../dcs/mission_editor.md#iff) for options on AI-controlled
-> aircraft.
+> the real state of the transponder.
 
 ### Self Test operation
 
