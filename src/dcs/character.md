@@ -2,13 +2,13 @@
 
 ## Customization
 
-![Customization Interface](../../img/character_customization_ui.jpg)
+![Customization Interface](../img/character_customization_ui.jpg)
 
 The Pilot and RIO character can be customized through an in-game menu which
 allows, for example, selecting one of the many flight suit variations. This menu
 can be entered via an assignable special bind.
 
-![Character Customization Binds](../../img/character_customizer_binds.jpg)
+![Character Customization Binds](../img/character_customizer_binds.jpg)
 
 The outfit presets can be saved and loaded using the in-game menu. They are
 saved locally at `C:\Users\John Doe\Saved Games\DCS_F14\character_presets`.
@@ -68,7 +68,7 @@ be lowered and the oxygen mask can be removed using assignable special binds.
 > "[Tinted Visor Effect](special_options.md#tinted-visor-effect)" special option
 > enabled will result in the tinted visor effect being shown.
 
-![Visor and Mask Binds](../../img/visor_mask_binds.jpg)
+![Visor and Mask Binds](../img/visor_mask_binds.jpg)
 
 ## Selfie Mode
 
@@ -90,7 +90,7 @@ The camera can then be moved for example to the front via standard DCS controls:
 The view can be turned back to face the pilot by using <kbd>LAlt</kbd> +
 <kbd>C</kbd> and then using the mouse.
 
-![Selfie Shot](../../img/selfie_shot.jpg)
+![Selfie Shot](../img/selfie_shot.jpg)
 
 Additionally, another special bind exists to freeze the character model
 movement.
@@ -106,6 +106,6 @@ camera anywhere in the cockpit.
 There are several special binds available to the Pilot and RIO for special
 animations to be played using the character models.
 
-![Pilot Animation Binds](../../img/pilot_animation_binds.jpg)
+![Pilot Animation Binds](../img/pilot_animation_binds.jpg)
 
-![RIO Animation Binds](../../img/rio_animation_binds.jpg)
+![RIO Animation Binds](../img/rio_animation_binds.jpg)

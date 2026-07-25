@@ -14,7 +14,7 @@ for a TOO JDAM release.
 
 The tool can be accessed with **RCtrl+B**.
 
-![Bombing Tool Example](../../img/bu/bombing_tool_example.jpg)
+![Bombing Tool Example](../img/bu/bombing_tool_example.jpg)
 
 ## Input
 
@@ -58,7 +58,7 @@ can set it in 10 ms increments per click.
 Tells Jester the desired quantity of bombs to release upon the press of 'weapon
 release'.
 
-## JDAM Manual Release
+## JDAM Manual Release (F-14B Upgrade Only)
 
 Used to calculate horizontal RMAX (Maximum Release Range) & TOF (Time of Flight)
 at different drop parameters.
@@ -86,5 +86,5 @@ IAS or TAS. Increment of 50 knots per click.
 Once all parameters are entered, you may click **Save** to add the entry to the
 Saved Solutions list, from which you can refer to later during the flight.
 
-> 💡 In order to close the bombing tool, make sure to first remove keyboard focus from
-> it by clicking anywhere else in the cockpit.
+> 💡 In order to close the bombing tool, make sure to first remove keyboard
+> focus from it by clicking anywhere else in the cockpit.

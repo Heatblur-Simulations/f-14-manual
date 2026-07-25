@@ -4,7 +4,7 @@ To enhance in-flight studies of the aircraft or simply to overcome some
 downtime, a virtual browser can be opened (by default
 <kbd>RCTRL</kbd>+<kbd>V</kbd>).
 
-![Virtual Browser UI](../../img/virtual_browser.jpg)
+![Virtual Browser UI](../img/virtual_browser.jpg)
 
 The browser enables users to
 
@@ -30,4 +30,4 @@ Clearing this folder will reset all browser preferences and settings.
 If required, sound level of the browser can be controlled via the volume mixer
 provided by Windows through the **HeatblurUi.exe** entry.
 
-![Volume Control](../../img/virtual_browser_volume_control.jpg)
+![Volume Control](../img/virtual_browser_volume_control.jpg)

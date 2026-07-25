@@ -15,6 +15,12 @@ in itself only allows for angle tracking which gives imprecise ranging using own
 aircraft position and pod line of sight to calculate target position. It does
 however allow the system to track moving targets.
 
+> 💡 Point Track with the LANTIRN can only be engaged on object that appear
+> white on a dark background no matter the polarity mode (WHOT or BHOT). In DCS,
+> due to limitations in simulation, Point Track can only be initiated in WHOT
+> mode. Once Point Track is successfully engaged in WHOT, it is possible to
+> change the polarity to BHOT.
+
 The last tracking mode has the sensor slewed to a stored location/direction,
 called a Q. The directional Qs do not allow for guidance to a location while the
 location Qs do.

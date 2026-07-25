@@ -17,7 +17,7 @@ Additionally, the following binds are available as well:
 - <kbd>RCTRL</kbd> + <kbd>M</kbd> - close the manual
 - <kbd>RALT</kbd> + <kbd>M</kbd> - toggle the manual
 
-![Checklist Tool Example](../../img/bu/ingame_manual_example.jpg)
+![Checklist Tool Example](../img/bu/ingame_manual_example.jpg)
 
 > 💡 In order to close the manual, make sure to first remove keyboard focus from
 > it by clicking anywhere else in the cockpit.

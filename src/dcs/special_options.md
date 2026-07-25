@@ -3,7 +3,7 @@
 The Tomcat offers several options that can be set within the _Special Option_
 menu in DCS.
 
-![Special Option Menu](../../img/special_options.jpg)
+![Special Option Menu](../img/special_options.jpg)
 
 ## Customized Cockpit
 
@@ -21,7 +21,7 @@ For the F-14B Upgrade, the custom cockpit folder is located at
 
 ## Radio Menu and PTT Behavior
 
-![Radio Menu](../../img/special_options_radio_menu.jpg)
+![Radio Menu](../img/special_options_radio_menu.jpg)
 
 Dropdown to select the behavior of the push to talk bind for the radio.
 
@@ -206,7 +206,7 @@ Jester UI being centered on the screen.
 
 ### Domain Access
 
-![Domain Access Types](../../img/hb_ui_domain_access_option.jpg)
+![Domain Access Types](../img/hb_ui_domain_access_option.jpg)
 
 Defines which domains the HB UI is allowed to access.
 
@@ -245,7 +245,7 @@ version of this Manual and more.
 
 ### Theme
 
-![UI Theme](../../img/special_option_hb_ui_theme.jpg)
+![UI Theme](../img/special_option_hb_ui_theme.jpg)
 
 Allows to select which color theme is used by the UI. All UI elements support a
 light and a dark theme.
