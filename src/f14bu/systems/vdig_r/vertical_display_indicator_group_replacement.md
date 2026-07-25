@@ -535,9 +535,10 @@ CRUISE mode with Dest Steering symbology is depicted in the figure below.
 Zulu Time. TTG and ETA to selected waypoint.
 
 Only in cruise Command Mach and Command Altitude are displayed in the bottom
-left corner. These always reference the next EGI steering waypoint. The values
-are dependent on set waypoint altitude and set waypoint TOT or Ground Speed. The
-Settings can be input in mission planning or during flight on the
+left corner. These always reference the next steering waypoint, either EGI
+Fly-To or Destination. The values are dependent on set waypoint altitude and set
+waypoint TOT or Ground Speed. The Settings can be input in mission planning or
+during flight on the
 [waypoint Edit 1/2 page](../nav_com/cdnu/control_display_navigation_unit.md#waypoint-edit-page-12).
 
 ## Air-To-Air
