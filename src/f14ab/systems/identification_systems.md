@@ -176,21 +176,56 @@ contacts position:
   at least neutral)
 - line below; the aircraft has a matching transponder code (likely friendly)
 
-[DDD with friendly contacts] WIP - INSERT IMAGE
-
 Each time the AN/APX-76 is sending an interrogation, the challenge light
 (<num>4</num>) illuminates.
 
-### Test
+### IFF Displays
 
-The interrogation system can be tested by holding the Test/Challenge Switch
-(<num>2</num>) in the TEST position.
+Display formats for IFF operation are shown below. During IFF interrogation, the
+radar continues its normal operations. With the radar in a pulse mode (search,
+track, or acquisitions), the IFF returns are mixed with the radar video and
+appropriate pulse radar display formats are displayed on the DDD. The IFF range
+scale is defined by the radar range scale. If the RIO commands an IFF
+interrogation during any pulse Doppler single target track or pulse single
+target track mode (PDSTT or PSTT) or when a target is designated (hooked) on the
+TID, an expanded IFF range display is generated on the DDD. The nominal target
+range is displayed at the vertical center of the DDD. The range scale is
+indicated on the range scale indicator at ±10 and it cannot be changed. The
+azimuth of the current radar mode is retained in the expanded IFF format. By
+unhooking the single-target track, normal range vs. azimuth is displayed along
+with the IFF display.
 
-During the test, the system will inject two artificial transponder responses at
-ranges 3.5 NM and 4.5 NM.
+With the radar operating in the pulse Doppler mode, the DDD presentation is
+switched to a B-scan format. In this format, the pulse Doppler antenna scan
+pattern is retained but IFF range sweeps are displayed. A computer-generated
+symbol representing actual target range is displayed along with the IFF video on
+the DDD. The IFF scale is indicated on the range indicator. It may be changed by
+pressing the range-select pushbutton. In the pulse-Doppler, STT mode, the attack
+symbols are retained and the IFF sweep is displayed at the azimuth of the AWG-9
+tracking antenna.
 
-The test is successful if the challenge lamp (<num>1</num>) illuminates and the
-DSCG screen shows two lines at the corresponding distances that span over the
-entire screen.
+When a target is detected, the RIO must tell the computer whether the target is
+friend or foe. The APX-76 cannot perform this function. It can only determine if
+IFF is being utilized by the target.
 
-![DDD with IFF Test] WIP - INSERT IMAGE
+### DDD TWS positive IFF response
+
+![DDD TWS positive IFF response](../../img/dark/tws_iff_ddd.svg)
+
+(<num>1</num>) Transponder Mode detected.
+
+(<num>2</num>) Transponder Code detected.
+
+(<num>3</num>) [DDD](../systems/radar/interface.md#detail-data-display) Radar
+Range Gate.
+
+(<num>4</num>) [AGC Trace](../systems/radar/interface.md#detail-data-display).
+
+### DDD STT positive IFF response
+
+![DDD STT positive IFF response](../../img/dark/stt_iff_ddd.svg)
+
+(<num>1</num>) STT target azimuth indicator.
+
+(<num>2</num>) STT track with IFF bars. Two bars are shown positive transponder
+mode and code detected.
