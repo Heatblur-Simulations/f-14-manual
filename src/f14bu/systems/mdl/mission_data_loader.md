@@ -70,11 +70,11 @@ settings for the Tactical Imaging Set.
 (<num>2</num>) In the flight plan drop-down, the operator may select a flight
 plan for modification. The first flight plan is always defined as the standard
 Mission Editor route. All subsequent flight plans are planned in the DTM. Flight
-plans should be named in the box to the right of the drop-down; this name is
-displayed on the CDNU FPLN page. Waypoints may be assigned a 5-character
-alphanumeric label. See the section below for special waypoint designations.
-Desired ground speed, Time on Target, and latitude/longitude may also be
-entered.
+plans **must** be named in the box to the right of the drop-down for the FPLN to
+be selectable on the CDNU MDL FPLN page; this name is displayed on the CDNU FPLN
+page and the CDNU MDL page. Waypoints may be assigned a 5-character alphanumeric
+label. See the section below for special waypoint designations. Desired ground
+speed, Time on Target, and latitude/longitude may also be entered.
 
 (<num>3</num>) Plot line waypoints in the CDNU are the same as normal flight
 plan waypoints. The DTM menu allows for the quick insertion of plot line
