@@ -179,9 +179,9 @@ you can still switch the TIS on from the cockpit switch or the Jester wheel.
 
 ### Resolution Override
 
-User interface elements, such as the Jester Wheel, the manual, virtual browser
-and others are scaled and positioned via a fixed resolution that must match the
-resolution of the in-game surface they are rendered on.
+User interface elements, such as the manual, virtual browser and others are
+scaled and positioned via a fixed resolution that must match the resolution of
+the in-game surface they are rendered on.
 
 With the option unchecked, this resolution is automatically determined based on
 screen settings. However, in certain situations, especially when using VR or
