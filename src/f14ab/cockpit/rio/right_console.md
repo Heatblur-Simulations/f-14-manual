@@ -227,7 +227,7 @@ and command countermeasure release.
 
 ## AA1 Control Panel
 
-![aa1](../../../img/cockpit_detail_rio_aa1.jpg)
+![aa1](../../../img/bu/right_console_aa1-01.jpg)
 
 AN/APX-76 interrogator control panel.
 
