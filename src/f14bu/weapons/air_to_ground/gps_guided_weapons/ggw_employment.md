@@ -397,8 +397,8 @@ Coordinates in the CDNU can be entered multiple ways:
 3. Conduct normal ACP weapons setup (Sta Select, Fuze, Weapon Type).
 4. Select Manual on ACP ATTACK options. Pilot gets TMAX, TOPT, TMIN timers.
 5. LANTIRN Target Designated.
-6. Depress S-7 (FOV) Hat on LANTIRN for 2 seconds. Waypoint 51 and up is created
-   in flight plan.
+6. Depress **S-7 (FOV)** Hat on LANTIRN for 2 seconds. Waypoint 51 and up is
+   created in flight plan.
 7. Select newly created LTS waypoint on CDNU.
 8. Horizontal scroll to Waypoint Edit 2/2 Page.
 9. Open JMSN page via PTID Tac Page.
