@@ -47,8 +47,6 @@ launcher on the port forward Phoenix pallet and provided space for as many as
 120 additional expendable cartridges. On combat reconnaissance missions these
 were normally loaded primarily or entirely with chaff.
 
-> 💡 In DCS, the ECA is only loaded with chaff countermeasures.
-
 The ECA gave a TARPS crew a substantially larger supply of expendables with
 which to defend the aircraft during an extended reconnaissance run or withdrawal
 through a defended area.
