@@ -1,7 +1,5 @@
 # Training Lessons
 
-> 🚧 Work in Progress
-
 ## Introduction
 
 Welcome! Since its arrival in DCS in 2019, the F-14 Tomcat has set the standard
@@ -191,7 +189,7 @@ measures:
 
 - If you then still suspect the same issue, please open a new ticket in the DCS
   forum: English > Licensed Third Party Projects > Heatblur Simulations > DCS:
-  F-14B(U) > [Problems](https://forum.dcs.world/forum/1434-bugs-problems) Please
+  F-14B(U) > Problems <https://forum.dcs.world/forum/1434-bugs-problems> Please
   add as much information as possible in order to help us finding the issue.
   Best is to add a track file of your flight. We apologize for that, and also
   thank you in advance for your efforts reporting a possible bug!
