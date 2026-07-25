@@ -15,6 +15,8 @@ In DCS, the instant camera can be opened with a keybind, and the shutter can be
 activated with a separate keybind. The text below the image can be modified
 during flight by selecting the text field with the mouse cursor.
 
+> 💡 Due to current limitations, the Instant Camera cannot be used in VR.
+
 ![Instant Camera Controls](../img/bu/instant_camera_keybinds.jpg)
 
 Your Instant Camera shots are stored in the `Saved Games/DCS_F14/Instant Camera`
