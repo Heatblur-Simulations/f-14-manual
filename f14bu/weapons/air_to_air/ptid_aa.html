@@ -223,6 +223,10 @@ as LT or RT for left or right of nose. Alternatively target aspect is displayed
 in GND Stab mode. In ATTK or A/C STAB the PTID presents a vector that accounts
 not only for bandit heading and speed but also for own heading and speed.</p>
 <h3 id="track-files-in-aircraft-or-attack-stabilized-mode"><a class="header" href="#track-files-in-aircraft-or-attack-stabilized-mode">Track Files in Aircraft or Attack Stabilized mode</a></h3>
+<p>Velocity vector emanating from center dot of tracks when velocity vector display
+is selected. Vector direction represents track heading and length represents
+track speed so that the max indicated speed (1,800 knots) is 1.5 inches on the
+TID.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../../../img/dark/ac_stab_hafu.svg" alt="HAFU AC STAB"><span class="img-wrapper"><img src="../../../img/dark/ac_stab_hafu.svg" alt="HAFU AC STAB"></span></label></p>
 <p>(<num>1</num>) Target Altitude in thousands of feet.</p>
 <p>(<num>2</num>) Own Ship / Bandit Heading Vector. (Blue arrow: Ownship vector.
@@ -232,6 +236,8 @@ Red arrow: track vector).</p>
 only).</p>
 <p>(<num>5</num>) Unknown/Bogey Radar Track.</p>
 <h3 id="track-files-in-ground-stabilized-mode"><a class="header" href="#track-files-in-ground-stabilized-mode">Track Files in Ground Stabilized mode</a></h3>
+<p>In PTID ground stabilized mode the vector direction represents track true
+heading and the vector length represents track ground speed.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../../../img/dark/gnd_stab_hafu.svg" alt="HAFU GND STAB"><span class="img-wrapper"><img src="../../../img/dark/gnd_stab_hafu.svg" alt="HAFU GND STAB"></span></label></p>
 <p>(<num>1</num>) Target Altitude in thousands of feet.</p>
 <p>(<num>2</num>) Target Aspect Angle.</p>
@@ -239,6 +245,22 @@ only).</p>
 <p>(<num>4</num>) Firing Order Number (FONO). (Displayed with AIM-54 selected
 only).</p>
 <p>(<num>5</num>) Unknown/Bogey Radar Track.</p>
+<h2 id="firing-order-number"><a class="header" href="#firing-order-number">Firing Order Number</a></h2>
+<p>With AIM-54 selected the number right of any TWS track presents the Firing order
+number (FONO).</p>
+<p>FONO Indicates AIM-54 phoenix target prioritization (1 to 6) in WCS when in the
+TWS mode. Next missile launch will target track with number 1 and remove the
+number from that track to advance the other 5 track numbers one step to prepare
+for next launch. Mandatory attack selection on a target forces the WCS to always
+include that target in the prioritization. Next launch selection automatically
+sets hooked target as number one.</p>
+<p>FONO can be manually set to 1 (next launch) by hooking the desried TWS track and
+depressing the Next Launch button.</p>
+<h2 id="time-to-impact-tti"><a class="header" href="#time-to-impact-tti">Time-to-Impact (TTI)</a></h2>
+<p>After AIM-54 launch the firing order number on a track is replaced with the TTI
+or time-to-impact indication, showing WCS calculated time until missile
+intercepts the target track. When the AIM-54 active command is sent the TTI
+numbers flash to indicate this.</p>
 <h2 id="ptid-attack-stab"><a class="header" href="#ptid-attack-stab">PTID Attack Stab</a></h2>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../../../img/dark/ptid_attk_stab_aa_guide.svg" alt="PTID Attack Stab"><span class="img-wrapper"><img src="../../../img/dark/ptid_attk_stab_aa_guide.svg" alt="PTID Attack Stab"></span></label></p>
 <p>(<num>1</num>) Hooked Track files are highlighted.</p>
