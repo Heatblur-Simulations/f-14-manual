@@ -46,6 +46,11 @@ not only for bandit heading and speed but also for own heading and speed.
 
 ### Track Files in Aircraft or Attack Stabilized mode
 
+Velocity vector emanating from center dot of tracks when velocity vector display
+is selected. Vector direction represents track heading and length represents
+track speed so that the max indicated speed (1,800 knots) is 1.5 inches on the
+TID.
+
 ![HAFU AC STAB](../../../img/dark/ac_stab_hafu.svg)
 
 (<num>1</num>) Target Altitude in thousands of feet.
@@ -62,6 +67,9 @@ only).
 
 ### Track Files in Ground Stabilized mode
 
+In PTID ground stabilized mode the vector direction represents track true
+heading and the vector length represents track ground speed.
+
 ![HAFU GND STAB](../../../img/dark/gnd_stab_hafu.svg)
 
 (<num>1</num>) Target Altitude in thousands of feet.
@@ -74,6 +82,28 @@ only).
 only).
 
 (<num>5</num>) Unknown/Bogey Radar Track.
+
+## Firing Order Number
+
+With AIM-54 selected the number right of any TWS track presents the Firing order
+number (FONO).
+
+FONO Indicates AIM-54 phoenix target prioritization (1 to 6) in WCS when in the
+TWS mode. Next missile launch will target track with number 1 and remove the
+number from that track to advance the other 5 track numbers one step to prepare
+for next launch. Mandatory attack selection on a target forces the WCS to always
+include that target in the prioritization. Next launch selection automatically
+sets hooked target as number one.
+
+FONO can be manually set to 1 (next launch) by hooking the desried TWS track and
+depressing the Next Launch button.
+
+## Time-to-Impact (TTI)
+
+After AIM-54 launch the firing order number on a track is replaced with the TTI
+or time-to-impact indication, showing WCS calculated time until missile
+intercepts the target track. When the AIM-54 active command is sent the TTI
+numbers flash to indicate this.
 
 ## PTID Attack Stab
 
