@@ -262,7 +262,8 @@ The five waypoints most recently passed are also maintained in the flight plan.
 These waypoints along with the associated altitude, Flight Mode and planned time
 of arrival may be reviewed by scrolling the Flight Plan page with the up arrow
 key. These waypoint definitions may not be edited or deleted but they may be
-used with Direct-To.
+used with Direct-To. History waypoint data may be reviewed by using the
+[Waypoint Info Page](#waypoint-info-page).
 
 ## Data Entry
 
@@ -887,6 +888,38 @@ STEP 1: Press the F3 Key
 (<num>3</num>) Edit Latitude
 
 (<num>4</num>) Coordinate Format Selection (cycles between DMS/DMM)
+
+### Waypoint Info Page
+
+Scrolling up on the flight plan page using the arrow keys allows aircrew to
+select one of 5 history waypoints. Selection of a waypoint is achieved by
+depressing the LSK adjacent to the desired waypoint. Once selected the waypoint
+info page will appear allowing for review of the history waypoint. The history
+waypoints location can be copied into the scratchpad using the
+[Copy What?](#data-forcopy-what) function using the F7 key.
+
+STEP 1: Press FPLN Key
+
+STEP 2: Scoll up.
+
+STEP 3: Press LSK adjacent to desired history waypoint.
+
+![Waypoint info page](../../../../img/dark/cdnu_waypoint_info_page_guide.svg)
+
+(<num>1</num>) Waypoint ID and UDL. If no UDL is stored with the waypoint the
+waypoints coordinates are displayed.
+
+(<num>2</num>) Heading and Distance to Waypoint.
+
+(<num>3</num>) Waypoint Horizontal location, format can be changed between DMM
+and MGRS. Coordiantes can be copied using the [Copy What?](#data-forcopy-what)
+function.
+
+(<num>4</num>) Returns to FPLN page.
+
+(<num>5</num>) Estimated time Enroute to waypoint.
+
+(<num>6</num>) Waypoint elevation.
 
 ### Direct Steering
 
