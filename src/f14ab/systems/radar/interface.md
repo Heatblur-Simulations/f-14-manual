@@ -222,8 +222,6 @@ generated target symbol is at the correct azimuth instead. In pulse doppler STT
 the AGC TRACE is added as well to give an indication of jamming strength. For
 information about the attack symbology see the VDIG section.
 
-> 💡 AGC TRACE not yet implemented.
-
 When the IFF interrogator is activated it superimposes the IFF information on
 top of the normal radar picture if in pulse search. In pulse doppler search the
 DDD switches to range vs azimuth at the previously set range scale while the IFF

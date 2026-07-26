@@ -236,14 +236,16 @@ remaining DTM designated jettison-able countermeasures.
 The Mode control switch (<num>10</num>) is a 6-position rotary switch is used to
 select one of six modes of operation.
 
-For a detailed discussion reference the [ALE-47 section](../../systems/defensive_systems/countermeasures/ale_47.md#mode-control-switch)
+For a detailed discussion reference the
+[ALE-47 section](../../systems/defensive_systems/countermeasures/ale_47.md#mode-control-switch)
 of this manual.
 
 ### MANUAL Switch
 
 The Manual switch (<num>11</num>) is a 5-Position rotary that allows selection
-of countermeasure dispense programs 1 through 4 and PROGRAM (PRG). For a detailed
-discussion reference the [ALE-47 section](../../systems/defensive_systems/countermeasures/ale_47.md#manual-switch)
+of countermeasure dispense programs 1 through 4 and PROGRAM (PRG). For a
+detailed discussion reference the
+[ALE-47 section](../../systems/defensive_systems/countermeasures/ale_47.md#manual-switch)
 of this manual.
 
 ### READY/NO GO Display
@@ -406,15 +408,15 @@ The ADDRESS thumbwheel (<num>4</num>) sets the aircraft data link address.
 This sets the two least-significant digits; remaining digits are set by ground
 crew.
 
-## AA1 Control Panel
+## AAI Control Panel
 
 AN/APX-76 interrogator control panel(<num>11</num>).
 
-![aa1](../../../img/bu/right_console_aa1-01.jpg)
+![aaI](../../../img/bu/right_console_aa1-01.jpg)
 
 AN/APX-76 interrogator control panel.
 
-> 💡 Due to DCS limitations in regards to IFF the AA1 control panel is currently
+> 💡 Due to DCS limitations in regards to IFF the AAI control panel is currently
 > non-functional.
 
 ### M4 Alarm Override Switch
@@ -482,17 +484,19 @@ lighting.
 
 ## IFF Transponder Control Panel
 
-Control panel for the AN/APX-72 IFF transponder (<num>13</num>).
+Control panel for the
+[AN/APX-72 IFF transponder](../../../f14ab/systems/identification_systems.md)
+(<num>13</num>).
 
-![transponder](../../../img/bu/right_console_iff-03.jpg)
+![transponder](../../../img/bu/right_console_iff.jpg)
 
 ### Mode 4 Switch
 
-The MODE 4 switch (<num>1</num>) enables Mode 4 operation.
+The MODE 4 switch (<num>8</num>) enables Mode 4 operation.
 
 ### Mode 4 Audio/Light Switch
 
-The MODE 4 AUDIO/LIGHT switch (<num>2</num>) enables Mode 4 audio monitoring
+The MODE 4 AUDIO/LIGHT switch (<num>7</num>) enables Mode 4 audio monitoring
 and/or reply light monitoring.
 
 - AUDIO - Enables Mode 4 audio monitoring and reply light monitoring.
@@ -501,7 +505,7 @@ and/or reply light monitoring.
 
 ### Mode 4 Code Selector
 
-The MODE 4 CODE selector (<num>3</num>) selects which cipher code is used.
+The MODE 4 CODE selector (<num>4</num>) selects which cipher code is used.
 
 - ZERO - Erases both ciphers.
 - B - Selects B cipher.
@@ -510,21 +514,21 @@ The MODE 4 CODE selector (<num>3</num>) selects which cipher code is used.
 
 ### Mode 4 Reply Light
 
-The MODE 4 REPLY light (<num>4</num>) illuminates when a Mode 4 reply is
+The MODE 4 REPLY light (<num>3</num>) illuminates when a Mode 4 reply is
 generated and transmitted.
 
 The light can be pressed to test.
 
 ### Test Light
 
-The TEST light (<num>5</num>) illuminates to indicate a successful test when a
+The TEST light (<num>2</num>) illuminates to indicate a successful test when a
 mode test is performed.
 
 The light can be pressed to test illumination.
 
 ### Master Selector
 
-The MASTER selector (<num>6</num>) selects AN/APX-72 operating state.
+The MASTER selector (<num>1</num>) selects AN/APX-72 operating state.
 
 - OFF - No power.
 - STBY - Standby for immediate operation when another mode is selected.
@@ -535,7 +539,7 @@ The MASTER selector (<num>6</num>) selects AN/APX-72 operating state.
 
 ### Mode Switches
 
-The MODE switches (<num>7</num>) control individual IFF mode operation.
+The MODE switches (<num>6</num>) control individual IFF mode operation.
 
 - TEST - Tests the respective mode; correct operation indicated by TEST light.
 - ON - Enables the mode.
@@ -543,7 +547,7 @@ The MODE switches (<num>7</num>) control individual IFF mode operation.
 
 ### Rad Test / Out / Mon Switch
 
-The RAD TEST-OUT-MON switch (<num>8</num>) controls ground test and monitoring
+The RAD TEST-OUT-MON switch (<num>5</num>) controls ground test and monitoring
 of non-Mode 4 replies.
 
 - RAD TEST - Not used by aircrew.
