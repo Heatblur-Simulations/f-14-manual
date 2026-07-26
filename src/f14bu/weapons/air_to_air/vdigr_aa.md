@@ -37,6 +37,23 @@ seconds) will be displayed to the right of the TD box.
 "Whiskers" indicate associated track is hooked, shape indicates track
 classification (UNKNOWN, FRIEND, HOSTILE).
 
+### Firing Order Number
+
+With AIM-54 selected and in TWS mode all TWS tracks are designated with a Firing
+Order Number (FONO). FONO is shown right of TD box. FONO 1 is always the next
+launch target. RIO can manually redesignate FONO 1 using the next launch button.
+Shown in the
+[TWS AIM-54 Typical A/A Cues during intercept](#tws-aim-54-typical-aa-cues-during-intercept)
+below. Once AIM-54 is launched (Post LTE cycle), Time to Active is displayed
+right of TD box until Active Parameters are met.
+
+### Time to Impact indicator
+
+With Sparrow selected after sparrow launch, the sparrow time to impact indicator
+is shown on right of the Target Designate box. Shown in the
+[STT AIM-7 Typical A/A Cues after LTE](#stt-aim-7-typical-aa-cues-after-lte)
+graphic below.
+
 ### Active Cue "ACT"
 
 indicates AIM−54C Active parameters met.

@@ -101,6 +101,7 @@
 | FLIR         | Forward Looking Infrared            |
 | FMC          | F-14 Mission Computer               |
 | FMR          | Frequency Ranging                   |
+| FONO         | Firing Order Number                 |
 | FOV          | Field of View                       |
 | FRL          | Fuselage Reference Line             |
 | FSK          | Frequency-Shift-Keyed               |
