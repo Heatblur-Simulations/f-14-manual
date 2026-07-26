@@ -124,9 +124,9 @@ display on the LTS display.
 
 The RIO may create a new CDNU flight plan waypoint directly from a LANTIRN
 target designation. After establishing a valid LANTIRN target designation,
-holding the **S-7** switch on the LANTIRN Control Panel (LCP) for at least **2
-seconds** stores the designated target coordinates (latitude/longitude) and GPS
-Figure of Merit (FOM) as a new waypoint in the active flight plan. New
+holding the **S-7 FOV** switch on the LANTIRN Control Panel (LCP) for at least
+**2 seconds** stores the designated target coordinates (latitude/longitude) and
+GPS Figure of Merit (FOM) as a new waypoint in the active flight plan. New
 LTS-generated waypoints are assigned the next available waypoint number
 beginning with **Waypoint 51**.
 
@@ -163,7 +163,7 @@ the GPS Figure of Merit is **1** ("`/LT**1`"), the target altitude displayed by
 the LANTIRN is transferred to the waypoint. If these conditions are not met, the
 waypoint altitude is set to 0 feet.
 
-Holding the **S-7** switch for more than two seconds always creates a new
+Holding the **S-7 FOV** switch for more than two seconds always creates a new
 waypoint. If valid target coordinates are not currently displayed on the FLIR,
 such as when operating in QHUD mode, the last available target coordinates are
 stored instead. Likewise, if the LANTIRN is cued to a GPS-Guided Weapon (GGW)
