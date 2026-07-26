@@ -957,8 +957,10 @@ STEP 2: Vertical Scroll to desired waypoint and select with left LSK
 (<num>3</num>) Scrolling down to the desired Direct-To-Waypoint (DDD) and
 pressing the associated LSK will make that waypoint the new active waypoint.
 
-> 💡 All passed waypoints (In this case 01;02;03) pass into history. Any
-> waypoints after the one DIR TO is selected remain in the flight plan as
+> 💡 The previously active waypoint (01) and the computer generated turn point
+> pass into history. If the waypoint selected for the Direct-To operation is a
+> future waypoint, all intermediate waypoints are deleted from the flight plan.
+> Any waypoints after the one DIR TO is selected remain in the flight plan as
 > normal. The last 5 history waypoints can be recalled and steered DIR TO again.
 
 RESULT
