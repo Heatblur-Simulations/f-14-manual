@@ -225,13 +225,13 @@ and command countermeasure release.
 - STBY - No release.
 - SGL - Single release.
 
-## AA1 Control Panel
+## AAI Control Panel
 
-![aa1](../../../img/cockpit_detail_rio_aa1.jpg)
+![aaI](../../../img/cockpit_detail_rio_aa1.jpg)
 
 AN/APX-76 interrogator control panel.
 
-> 💡 Due to DCS limitations in regards to IFF the AA1 control panel is currently
+> 💡 Due to DCS limitations in regards to IFF the AAI control panel is currently
 > non-functional.
 
 ### M4 Alarm Override Switch
