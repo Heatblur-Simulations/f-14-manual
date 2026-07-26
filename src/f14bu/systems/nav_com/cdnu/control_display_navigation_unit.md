@@ -766,7 +766,8 @@ a FOM of 1 (`**1`), then the displayed target altitude will be sent to the new
 waypoint file. If not `**1`, then the altitude for the new waypoint will be set
 to zero.
 
-STEP 1: Depress the S-7 FOV hat on the LTS controller for more than 2 seconds
+STEP 1: Depress the **S-7 FOV** hat on the LTS controller for more than 2
+seconds
 
 ![LTS GRIP](../../../../img/dark/lts_grip_lantirn.svg)
 

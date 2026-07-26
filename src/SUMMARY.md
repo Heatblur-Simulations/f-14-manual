@@ -67,6 +67,7 @@
     - [AN/AXX-1 TCS](./f14ab/systems/tcs.md)
     - [LANTIRN](./f14ab/systems/lantirn/overview.md)
       - [Modes](./f14ab/systems/lantirn/modes.md)
+    - [TARPS](./f14ab/systems/tarps.md)
     - [Defensive Systems](./f14ab/systems/defensive_systems/overview.md)
       - [Countermeasures](./f14ab/systems/defensive_systems/countermeasures/overview.md)
         - [ALE-39](./f14ab/systems/defensive_systems/countermeasures/ale_39.md)

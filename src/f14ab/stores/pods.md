@@ -21,5 +21,21 @@ integrations of the LANTIRN, the pod being carried only on station 8B and
 hardwired to the control panel in the RIO cockpit and to the video input on the
 TID/VDI.
 
-For more information regarding the use of the LANTIRN pod, see the section about
-it under the General Design and Systems Overview chapter.
+For more information regarding the use of the LANTIRN pod, see
+[the section about it](../systems/lantirn/overview.md) under the General Design
+and Systems Overview chapter.
+
+## TARPS
+
+![TARPS](../../img/tarps_pod_on_skid.jpg) _U.S. Navy photo by Photographers Mate
+2nd Class Gloria J. Barry. (980320-N-4541B-008)_
+
+The Tactical Airborne Reconnaissance Pod System, or TARPS, was developed to
+provide carrier air wings with an organic tactical reconnaissance capability as
+dedicated aircraft such as the RA-5C Vigilante and RF-8G Crusader were withdrawn
+from service, allowing modified F-14s to perform photographic reconnaissance,
+mapping, maritime surveillance, and pre- and post-strike damage assessment.
+
+For more information regarding the use of the TARPS pod, see
+[the section about it](../systems/tarps.md) under the General Design and Systems
+Overview chapter.
