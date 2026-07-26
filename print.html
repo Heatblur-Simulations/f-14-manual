@@ -13754,11 +13754,11 @@ what sub-mode the pilot has chosen.</p>
 <p>EGI Steering provides the aircrew with steering information to the currently
 active flight plan waypoint. The currently active flight plan waypoint is shown
 on the FLPN page, and is denoted by the Hot-Dog symbol on the PTID. The CDNU has
-4 steering modes, the default steering mode is MAN. In MAN steering the flight
-plan does not advance automatically, it can only be advanced through using the
-DIR function. The DIR function will pass all bypassed waypoints into history. In
-AUTO or OFLY the EGI automatically sequences the waypoints once passed. This has
-the advantage of lowering crew tasks during critical phases of flight. It is
+4 steering modes, MAN, AUTO and OFLY. In MAN steering the flight plan does not
+advance automatically, it can only be advanced through using the DIR function.
+The DIR function will pass all bypassed waypoints into history. In AUTO or OFLY
+the EGI automatically sequences the waypoints once passed. This has the
+advantage of lowering crew tasks during critical phases of flight. It is
 particularly helpful for long routes and low level navigation, where a lot of
 waypoints need to be passed in short order.</p>
 <p>AUTO and OFLY have the disadvantage of passing waypoints into history, only 5
@@ -15662,7 +15662,7 @@ waypoint is displayed with the "Hot Dog" Symbol.</p>
 <label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dark/cdnu_dir_impromptu_verctor_guide.svg" alt="DIR to Impromptu"><span class="img-wrapper"><img src="img/dark/cdnu_dir_impromptu_verctor_guide.svg" alt="DIR to Impromptu"></span></label></p>
 <p>(<num>1</num>) Enter desired vector into SP.</p>
 <p>(<num>2</num>) Press LSK 1. New waypoint is entered as new EGI Fly To Point (51)
-into flight plan. A cumputer generated turn point is also entereted into the
+into flight plan. A computer generated turn point is also entereted into the
 flight plan and numbered 52. This waypoint will pass into history immidiately.</p>
 <p>(<num>3</num>) After new waypoint has been passed normal flight plan sequencing
 will continue.</p>
@@ -17238,6 +17238,9 @@ pitch attitude).</p>
 Potential Flight Path Marker (PFPM).</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dark/hud_fpm_pfpm_small_cutout_thin.svg" alt="FPM"><span class="img-wrapper"><img src="img/dark/hud_fpm_pfpm_small_cutout_thin.svg" alt="FPM"></span></label> <em>Shown here: Flight
 Path Marker (FPM) and Potential Flight Path Marker (PFPM)</em></p>
+<p>The FPM is displayed on the HUD only, indicating the actual flight path of the
+aircraft when read against the outside world. The FPM is free to move within the
+entire Total Field Of View (TFOV).</p>
 <p>Unlike a fixed pitch reference, which indicates where the nose of the aircraft
 is pointing, the FPM’s position changes based on the dynamic characteristics of
 the aircraft and the atmospheric conditions in which the aircraft is flying
@@ -17267,6 +17270,11 @@ However, the CDM will occlude the FPM when the FPM is within 15 mils of the CDM
 center.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/dark/hud_cdm_fpm_pfpm_small_cutout_thin.svg" alt="CDM"><span class="img-wrapper"><img src="img/dark/hud_cdm_fpm_pfpm_small_cutout_thin.svg" alt="CDM"></span></label> <em>Shown here:
 Climb Dive Marker (CDM) and small Flight Path Marker (FPM)</em></p>
+<p>The CDM displays the current climb/dive angle when read against the climb/dive
+ladder (CDL). The CDM is free to move along the vertical axis within the
+Instantaneous Field Of View (IFOV). In the horizontal axis, the VDI CDM is
+restricted to zero degrees azimuth and the HUD CDM is restricted to ± 5° in
+azimuth.</p>
 <p>Supplementing the CDM and FPM is the PFPM, which moves up and down along the
 right side of the CDM or FPM indicating aircraft acceleration or deceleration
 along the flight path. The PFPM can thus be used to:</p>
@@ -17322,8 +17330,8 @@ lines numbered in 5° increments.</p>
 horizon. The negative index lines are dashed and are angled at one half the dive
 angle to the horizon. For example, if the aircraft were in a 30° dive, the CDL
 index lines would be angled at 15° down from the horizon line.</p>
-<p>The HUD TFOV will typically display four CDL index lines. The aircraft pitch
-attitude determines the CDL index line displayed on the HUD.</p>
+<p>The HUD Total Field Of View (TFOV) will typically display four CDL index lines.
+The aircraft pitch attitude determines the CDL index line displayed on the HUD.</p>
 <p>The CDM indicates aircraft flight path. When the aircraft is at a flight path
 angle/attitude where the horizon line is outside the IFOV, the HUD displays a
 Ghost Horizon Line at the edge of the IFOV closest to the actual horizon.</p>
@@ -18033,11 +18041,11 @@ settings for the Tactical Imaging Set.</p>
 <p>(<num>2</num>) In the flight plan drop-down, the operator may select a flight
 plan for modification. The first flight plan is always defined as the standard
 Mission Editor route. All subsequent flight plans are planned in the DTM. Flight
-plans should be named in the box to the right of the drop-down; this name is
-displayed on the CDNU FPLN page. Waypoints may be assigned a 5-character
-alphanumeric label. See the section below for special waypoint designations.
-Desired ground speed, Time on Target, and latitude/longitude may also be
-entered.</p>
+plans <strong>must</strong> be named in the box to the right of the drop-down for the FPLN to
+be selectable on the CDNU MDL FPLN page; this name is displayed on the CDNU FPLN
+page and the CDNU MDL page. Waypoints may be assigned a 5-character alphanumeric
+label. See the section below for special waypoint designations. Desired ground
+speed, Time on Target, and latitude/longitude may also be entered.</p>
 <p>(<num>3</num>) Plot line waypoints in the CDNU are the same as normal flight
 plan waypoints. The DTM menu allows for the quick insertion of plot line
 waypoints that are loaded into the aircraft with the plot lines already drawn.
@@ -18361,8 +18369,8 @@ lock is detected by the ALR-67, Program 5 will be selected.</p>
 the RIO center handhold and are used to initiate release of countermeasures.</p>
 <p>The switches are functionally mirrored.</p>
 <ul>
-<li><strong>Up</strong> - Initiates CMS program 6.</li>
-<li><strong>Down</strong> - Initiates CMS program 5.</li>
+<li><strong>Up</strong> - Initiates CMS program 5.</li>
+<li><strong>Down</strong> - Initiates CMS program 6.</li>
 <li><strong>Inboard</strong> - Initiates CMS program 1-4, depending on which semi-automatic
 program is selected or which program is selected on the DCDU.</li>
 <li><strong>Outboard</strong> - Initiates CMS program 7.</li>
@@ -20528,9 +20536,6 @@ googles.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="img/bu/lsr_dsgntr_example.jpg" alt="Laser Pointer Designator Example"><span class="img-wrapper"><img src="img/bu/lsr_dsgntr_example.jpg" alt="Laser Pointer Designator Example"></span></label></p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="training-lessons"><a class="header" href="#training-lessons">Training Lessons</a></h1>
-<blockquote>
-<p>🚧 Work in Progress</p>
-</blockquote>
 <h2 id="introduction-2"><a class="header" href="#introduction-2">Introduction</a></h2>
 <p>Welcome! Since its arrival in DCS in 2019, the F-14 Tomcat has set the standard
 for double seater aircraft. Now, we are proud to introduce the upgraded
