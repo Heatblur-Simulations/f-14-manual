@@ -424,7 +424,8 @@ displayed at the same time.</li>
 These waypoints along with the associated altitude, Flight Mode and planned time
 of arrival may be reviewed by scrolling the Flight Plan page with the up arrow
 key. These waypoint definitions may not be edited or deleted but they may be
-used with Direct-To.</p>
+used with Direct-To. History waypoint data may be reviewed by using the
+<a href="#waypoint-info-page">Waypoint Info Page</a>.</p>
 <h2 id="data-entry"><a class="header" href="#data-entry">Data Entry</a></h2>
 <p>This section describes acceptable data entry formats, valid data ranges and
 display formats.</p>
@@ -882,6 +883,26 @@ using PTID JMSN page.</p>
 <p>(<num>2</num>) Edit Longitude</p>
 <p>(<num>3</num>) Edit Latitude</p>
 <p>(<num>4</num>) Coordinate Format Selection (cycles between DMS/DMM)</p>
+<h3 id="waypoint-info-page"><a class="header" href="#waypoint-info-page">Waypoint Info Page</a></h3>
+<p>Scrolling up on the flight plan page using the arrow keys allows aircrew to
+select one of 5 history waypoints. Selection of a waypoint is achieved by
+depressing the LSK adjacent to the desired waypoint. Once selected the waypoint
+info page will appear allowing for review of the history waypoint. The history
+waypoints location can be copied into the scratchpad using the
+<a href="#data-forcopy-what">Copy What?</a> function using the F7 key.</p>
+<p>STEP 1: Press FPLN Key</p>
+<p>STEP 2: Scoll up.</p>
+<p>STEP 3: Press LSK adjacent to desired history waypoint.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../../../../img/dark/cdnu_waypoint_info_page_guide.svg" alt="Waypoint info page"><span class="img-wrapper"><img src="../../../../img/dark/cdnu_waypoint_info_page_guide.svg" alt="Waypoint info page"></span></label></p>
+<p>(<num>1</num>) Waypoint ID and UDL. If no UDL is stored with the waypoint the
+waypoints coordinates are displayed.</p>
+<p>(<num>2</num>) Heading and Distance to Waypoint.</p>
+<p>(<num>3</num>) Waypoint Horizontal location, format can be changed between DMM
+and MGRS. Coordiantes can be copied using the <a href="#data-forcopy-what">Copy What?</a>
+function.</p>
+<p>(<num>4</num>) Returns to FPLN page.</p>
+<p>(<num>5</num>) Estimated time Enroute to waypoint.</p>
+<p>(<num>6</num>) Waypoint elevation.</p>
 <h3 id="direct-steering"><a class="header" href="#direct-steering">Direct Steering</a></h3>
 <p>Direct to steering is available with:</p>
 <p>A. Impromptu waypoints:</p>
@@ -938,8 +959,10 @@ Direct-To function has no affect on waypoint sequencing (AUTO/OFLY/MAN).</p>
 <p>(<num>3</num>) Scrolling down to the desired Direct-To-Waypoint (DDD) and
 pressing the associated LSK will make that waypoint the new active waypoint.</p>
 <blockquote>
-<p>💡 All passed waypoints (In this case 01;02;03) pass into history. Any
-waypoints after the one DIR TO is selected remain in the flight plan as
+<p>💡 The previously active waypoint (01) and the computer generated turn point
+pass into history. If the waypoint selected for the Direct-To operation is a
+future waypoint, all intermediate waypoints are deleted from the flight plan.
+Any waypoints after the one DIR TO is selected remain in the flight plan as
 normal. The last 5 history waypoints can be recalled and steered DIR TO again.</p>
 </blockquote>
 <p>RESULT</p>
