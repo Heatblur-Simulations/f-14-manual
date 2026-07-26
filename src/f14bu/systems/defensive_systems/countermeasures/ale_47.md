@@ -222,8 +222,8 @@ the RIO center handhold and are used to initiate release of countermeasures.
 
 The switches are functionally mirrored.
 
-- **Up** - Initiates CMS program 6.
-- **Down** - Initiates CMS program 5.
+- **Up** - Initiates CMS program 5.
+- **Down** - Initiates CMS program 6.
 - **Inboard** - Initiates CMS program 1-4, depending on which semi-automatic
   program is selected or which program is selected on the DCDU.
 - **Outboard** - Initiates CMS program 7.

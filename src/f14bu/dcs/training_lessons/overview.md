@@ -1,7 +1,5 @@
 # Training Lessons
 
-> 🚧 Work in Progress
-
 ## Introduction
 
 Welcome! Since its arrival in DCS in 2019, the F-14 Tomcat has set the standard

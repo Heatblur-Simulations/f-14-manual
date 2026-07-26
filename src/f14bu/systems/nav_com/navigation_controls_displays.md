@@ -231,11 +231,11 @@ what sub-mode the pilot has chosen.
 EGI Steering provides the aircrew with steering information to the currently
 active flight plan waypoint. The currently active flight plan waypoint is shown
 on the FLPN page, and is denoted by the Hot-Dog symbol on the PTID. The CDNU has
-4 steering modes, the default steering mode is MAN. In MAN steering the flight
-plan does not advance automatically, it can only be advanced through using the
-DIR function. The DIR function will pass all bypassed waypoints into history. In
-AUTO or OFLY the EGI automatically sequences the waypoints once passed. This has
-the advantage of lowering crew tasks during critical phases of flight. It is
+4 steering modes, MAN, AUTO and OFLY. In MAN steering the flight plan does not
+advance automatically, it can only be advanced through using the DIR function.
+The DIR function will pass all bypassed waypoints into history. In AUTO or OFLY
+the EGI automatically sequences the waypoints once passed. This has the
+advantage of lowering crew tasks during critical phases of flight. It is
 particularly helpful for long routes and low level navigation, where a lot of
 waypoints need to be passed in short order.
 

@@ -985,7 +985,7 @@ Direct STEP 1: Press the DIR key
 (<num>1</num>) Enter desired vector into SP.
 
 (<num>2</num>) Press LSK 1. New waypoint is entered as new EGI Fly To Point (51)
-into flight plan. A cumputer generated turn point is also entereted into the
+into flight plan. A computer generated turn point is also entereted into the
 flight plan and numbered 52. This waypoint will pass into history immidiately.
 
 (<num>3</num>) After new waypoint has been passed normal flight plan sequencing
