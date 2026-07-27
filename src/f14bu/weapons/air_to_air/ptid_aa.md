@@ -40,23 +40,41 @@ Shape: The top and bottom elements of the HAFU can have three shapes:
 ## Target Aspect
 
 In the Tomcat TA is displayed as a readout on the top left of the PTID. Either
-as LT or RT for left or right of nose. Alternatively target aspect is displayed
-in GND Stab mode. In ATTK or A/C STAB the PTID presents a vector that accounts
-not only for bandit heading and speed but also for own heading and speed.
+as LT or RT for left or right of nose.
 
 ### Track Files in Aircraft or Attack Stabilized mode
 
-Velocity vector emanating from center dot of tracks when velocity vector display
-is selected. Vector direction represents track heading and length represents
-track speed so that the max indicated speed (1,800 knots) is 1.5 inches on the
-TID.
+In attack or aircraft stab the TID shows vectors emminating from the center of
+tracks as relative velocity vectors. The vector displayed is the difference
+between the targets vector and ownship vector. It is depended on the heading and
+speed of both aircraft. Any change in ownship heading or speed will change the
+displayed vector even if target speed and heading are constant. The vectors
+lenght is eqivalent to closure so that the max indicated speed (1,800 knots) is
+1.5 inches on the TID.
+
+Rather than depicting the target's actual flight path, the vector indicates how
+the target will move across the display relative to ownship if both aircraft
+maintain their current velocity. It therefore provides an immediate indication
+of the developing intercept geometry.
+
+For example when a vector in ATTACK or AIRCRAFT Stabilised mode points towards
+ownship an intercept course has been achieved.
+
+For a target ahead of ownship:
+
+- A vector pointing below the target indicates positive closure.
+- A vector pointing below the target indicates opening.
+- A vector pointing left or right inidcates the direction in which the target
+  will drift across the display.
+- A vector pointing directly at the ownship symbol indicates a collision course,
+  with no lateral drift between the aircraft.
 
 ![HAFU AC STAB](../../../img/dark/ac_stab_hafu.svg)
 
 (<num>1</num>) Target Altitude in thousands of feet.
 
-(<num>2</num>) Own Ship / Bandit Heading Vector. (Blue arrow: Ownship vector.
-Red arrow: track vector).
+(<num>2</num>) Relative Velocity Vector. (Blue arrow: Ownship vector. Red arrow:
+track vector).
 
 (<num>3</num>) Hostile/Bandit Datalink Track.
 
