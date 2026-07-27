@@ -74,7 +74,7 @@ heading and the vector length represents track ground speed.
 
 (<num>1</num>) Target Altitude in thousands of feet.
 
-(<num>2</num>) Target Aspect Angle.
+(<num>2</num>) Target Heading.
 
 (<num>3</num>) Hostile/Bandit Datalink Track.
 
