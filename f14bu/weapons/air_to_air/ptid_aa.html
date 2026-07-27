@@ -219,18 +219,34 @@ the selection of ground stab or aircraft/attack stab</p>
 </div>
 <h2 id="target-aspect"><a class="header" href="#target-aspect">Target Aspect</a></h2>
 <p>In the Tomcat TA is displayed as a readout on the top left of the PTID. Either
-as LT or RT for left or right of nose. Alternatively target aspect is displayed
-in GND Stab mode. In ATTK or A/C STAB the PTID presents a vector that accounts
-not only for bandit heading and speed but also for own heading and speed.</p>
+as LT or RT for left or right of nose.</p>
 <h3 id="track-files-in-aircraft-or-attack-stabilized-mode"><a class="header" href="#track-files-in-aircraft-or-attack-stabilized-mode">Track Files in Aircraft or Attack Stabilized mode</a></h3>
-<p>Velocity vector emanating from center dot of tracks when velocity vector display
-is selected. Vector direction represents track heading and length represents
-track speed so that the max indicated speed (1,800 knots) is 1.5 inches on the
-TID.</p>
+<p>In attack or aircraft stab the TID shows vectors emminating from the center of
+tracks as relative velocity vectors. The vector displayed is the difference
+between the targets vector and ownship vector. It is depended on the heading and
+speed of both aircraft. Any change in ownship heading or speed will change the
+displayed vector even if target speed and heading are constant. The vectors
+lenght is eqivalent to closure so that the max indicated speed (1,800 knots) is
+1.5 inches on the TID.</p>
+<p>Rather than depicting the target's actual flight path, the vector indicates how
+the target will move across the display relative to ownship if both aircraft
+maintain their current velocity. It therefore provides an immediate indication
+of the developing intercept geometry.</p>
+<p>For example when a vector in ATTACK or AIRCRAFT Stabilised mode points towards
+ownship an intercept course has been achieved.</p>
+<p>For a target ahead of ownship:</p>
+<ul>
+<li>A vector pointing below the target indicates positive closure.</li>
+<li>A vector pointing below the target indicates opening.</li>
+<li>A vector pointing left or right inidcates the direction in which the target
+will drift across the display.</li>
+<li>A vector pointing directly at the ownship symbol indicates a collision course,
+with no lateral drift between the aircraft.</li>
+</ul>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../../../img/dark/ac_stab_hafu.svg" alt="HAFU AC STAB"><span class="img-wrapper"><img src="../../../img/dark/ac_stab_hafu.svg" alt="HAFU AC STAB"></span></label></p>
 <p>(<num>1</num>) Target Altitude in thousands of feet.</p>
-<p>(<num>2</num>) Own Ship / Bandit Heading Vector. (Blue arrow: Ownship vector.
-Red arrow: track vector).</p>
+<p>(<num>2</num>) Relative Velocity Vector. (Blue arrow: Ownship vector. Red arrow:
+track vector).</p>
 <p>(<num>3</num>) Hostile/Bandit Datalink Track.</p>
 <p>(<num>4</num>) Firing Order Number (FONO). (Displayed with AIM-54 selected
 only).</p>
@@ -240,7 +256,7 @@ only).</p>
 heading and the vector length represents track ground speed.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../../../img/dark/gnd_stab_hafu.svg" alt="HAFU GND STAB"><span class="img-wrapper"><img src="../../../img/dark/gnd_stab_hafu.svg" alt="HAFU GND STAB"></span></label></p>
 <p>(<num>1</num>) Target Altitude in thousands of feet.</p>
-<p>(<num>2</num>) Target Aspect Angle.</p>
+<p>(<num>2</num>) Target Heading.</p>
 <p>(<num>3</num>) Hostile/Bandit Datalink Track.</p>
 <p>(<num>4</num>) Firing Order Number (FONO). (Displayed with AIM-54 selected
 only).</p>
