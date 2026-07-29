@@ -22,11 +22,11 @@ Displays oil pressure for each engine. Range is 0 - 100 psi, normal range is
 
 ![Exhaust Nozzle Position Indicator](../../../img/bu/left_knee_panel_exhaust_nozzle_indicator.jpg)
 
-Displays position of engine nozzles. Range 0 - 5 with 5 being fully open.
+Displays position of engine nozzles as a percentage from 0 to 100%.
 
-## Electronic Instrument Group
+## Engine Instrument Group
 
-![Electronic Instrument Group](../../../img/bu/left_knee_panel_electronic_instrument_group.jpg)
+![Engine Instrument Group](../../../img/bu/left_knee_panel_electronic_instrument_group.jpg)
 
 Displays engine RPM (High-pressure compressor rotor speed (N2)), EGT (Exhaust
 Gas Temperature) and FF (Fuel Flow) for respective engine.

@@ -20,17 +20,22 @@ Displays oil pressure for each engine. Range is 0 - 100 psi, normal range is
 
 ## Exhaust Nozzle Position Indicator
 
-![Exhaust Nozzle Position Indicator](../../../img/cockpit_detail_pilot_exhaust.jpg)
+![Exhaust Nozzle Position Indicator F-14A](../../../img/cockpit_detail_pilot_exhaust.jpg)
 
-Displays position of engine nozzles. Range 0 - 5 with 5 being fully open.
+![Exhaust Nozzle Position Indicator F-14B](../../../img/bu/left_knee_panel_exhaust_nozzle_indicator.jpg)
 
-## Electronic Instrument Group
+Displays position of engine nozzles. On the F-14A, it is shown as a range from
+0 - 5 with 5 being fully open. On the F-14B, it is shown as a percentage range
+from 0% to 100%.
 
-![Electronic Instrument Group](../../../img/cockpit_detail_pilot_instrument-group.jpg)
+## Engine Instrument Group
 
-Displays engine RPM (High-pressure compressor rotor speed (N2)), EGT (Exhaust
-Gas Temperature) and FF (Fuel Flow) for respective engine.
+![Engine Instrument Group F-14A](../../../img/cockpit_detail_pilot_instrument-group.jpg)
 
-> 💡 Image shows TF-30 engine instruments, F110 EIG coming soon.
->
-> FF is not indicated for the additional fuel used in afterburner.
+![Engine Instrument Group F-14B](../../../img/bu/left_knee_panel_electronic_instrument_group.jpg)
+
+Displays engine RPM (High-pressure compressor rotor speed (N2)), TIT (Turbine
+Inlet Temperature) for the F-14A or EGT (Exhaust Gas Temperature) for the F-14B,
+and FF (Fuel Flow) for respective engine.
+
+> 💡 FF is not indicated for the additional fuel used in afterburner.
