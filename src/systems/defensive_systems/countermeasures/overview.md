@@ -1,7 +1,5 @@
-# Countermeasures
+# 对抗措施
 
-In order to defend against incoming missile threats the Tomcat can be equipped
-with either the [ALE-39](ale_39.md) or [LAU-138](lau_138.md) countermeasure
-dispensing system launching chaff and flares.
+为了防御来袭的导弹威胁，“雄猫”可安装 [ALE-39](ale_39.md) 或 [LAU-138](lau_138.md) 对抗措施布撒系统，用于发射箔条和红外干扰弹。
 
 ![CMS](../../../img/cms_crash.jpg)

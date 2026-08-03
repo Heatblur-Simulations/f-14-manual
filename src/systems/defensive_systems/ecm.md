@@ -1,54 +1,32 @@
-# Electronic Countermeasures - AN/ALQ-100 & 126 DECM (Defensive Electronic CounterMeasures)
+# 电子对抗 - AN/ALQ-100 和 126 DECM （防御性电子对抗）
 
-The AN/ALQ-100 and 126 jammers are designed to detect radar threats, analyze
-them, select the optimum countermeasure technique available and apply it.
-Available techniques for jamming are amongst others, mainlobe blanking, inverse
-con-scan, range-gate pull-off and swept square modes.
+AN/ALQ-100 和 126 干扰机用于探测雷达威胁、分析威胁、选择可用的最佳对抗技术并加以应用。可用的干扰技术包括主瓣匿隐、逆圆锥扫描干扰、距离门拖离干扰和扫掠方波干扰模式。
 
-In real life these two systems differ greatly with the AN/ALR-126 being by far
-the most effective system. In DCS both are modelled as a simple noise jammers
-due to engine limitations but controlled by the DECM logic as to when it’s on or
-off and thus work the same.
+在现实生活中，两个系统的差别很大，AN/ALQ-126 是目前最有效的系统。
+但在 DCS 中，由于引擎限制，两个系统都建模为简单的噪声干扰机，但都由 DECM 逻辑进行控制何时开启或关闭，以此两者的功能相同。
 
-## DECM Controls and Indicators
+## DECM 控制开关/按钮和指示器
 
 ![Control Panel](../../img/general_alq-126_control.jpg)
 
-The controls for the DECM are all located on the right horizontal panel in the
-RIO pit, panel as image above. In addition there are two indication lights
-co-located with the RWR threat indicators on the right side of the TID.
+DECM 的控制开关/按钮位于 RIO 驾驶舱内的右侧控制台上，面板如图所示。此外，在 TID 的右侧，还有两个与 RWR 威胁指示器处于同个位置的指示灯。
 
-The two indication lights on the threat advisory are RCV (recieve) and XMIT
-(transmit). RCV illuminates up when the system detects and analyzes a threat
-while the XMIT illuminates up when it's actively jamming a threat.
+威胁提示灯上的两个指示灯分别是 RCV (接收)和 XMIT（发射）。RCV 指示灯在系统探测并分析一个威胁时亮起，而当系统开启，正在干扰威胁时 XMIT 指示灯将会亮起。
 
-The control panel itself contains a STANDBY indicator light, a mode selector
-knob and an AUDIO volume knob.
+控制面板本身包含一个 STANDBY 指示灯、一个模式选择旋钮和一个 AUDIO 音量控制旋钮。
 
-The STANDBY light indicates that system warmup is not yet completed and when
-completed turns off. At other times, illumination of this indicator indicates
-the presence of a fault in the system.
+STANDBY 指示灯表示系统预热尚未完成，当系统预热完成时便会熄灭。在其它时候，指示灯亮起意味着系统中存在故障。
 
-The AUDIO (volume) knob controls the audio volume of the RIO sound from the
-system. The pilot has no access to this audio unless he put his amplifier
-selector to **EMER** (to use RIO amplifier). The audio itself is generated based
-on radar signal characteristics (mainly PRF).
+AUDIO（音量）旋钮用于控制系统中的 RIO 头戴的声音音量。
+除非飞行员将其放大器选择旋钮拨至 **EMER** （使用 RIO 放大器）否则飞行员无法听到该音频。音频本身由接收到雷达信号特征（主要为 PRF）生成。
 
-The mode selector knob controls power and operational mode that the system is
-in.
+模式选择旋钮用于控制系统的电源和运行模式。
 
-- **OFF** turns off power to the system. **STBY** begins pre-warming of the
-  system, taking in all around 5 minutes.
-- **TEST - HOLD 3 SEC** is used to prepare the system for BIT, after 3 seconds
-  in this mode, turn the knob to TEST - ACT.
-- **TEST - ACT** starts the BIT in the system. The BIT takes approximately 30
-  seconds and the RCV light will be illuminated the whole time while the XMIT
-  light will flash twice. If the STANDBY light illuminates it indicates that a
-  no-go condition exists in the system.
-- **REC** enables the system in recieve only mode, enabling analysis of threats
-  and also the threat audio.
-- **RPT** enables full system functionality, in addition to REC it also now
-  tries to jam threats according to selected method.
+- **OFF** 用于关闭系统的电源。**STBY** 让系统进入预热状态，整体预热时间为5分钟。
+- **TEST - HOLD 3 SEC** 用于准备系统的 BIT，进入该模式3秒后，转动旋钮至 TEST-ACT 档位。
+- **TEST - ACT** 用于启动系统的 BIT。整个 BIT 程序需要大约30秒，并且 RCV 指示灯会亮起，而 XMIT 指示灯会闪烁两次。
+如果 STANDBY 指示灯亮起，则表示“NO-GO”条件存在于系统中。
+- **REC** 用来将系统设置为仅接收模式，在这个模式下系统可以进行威胁分析和播放威胁音频。
+- **RPT** 用于启用系统的完整功能，除了 REC 外，系统还将尝试根据选定的方法来干扰威胁。
 
-> 💡 In DCS jamming is always done with noise jamming, turning on as a threat is
-> detected.
+> 💡 DCS 中干扰始终为噪声干扰，当探测到威胁时就会开启。
