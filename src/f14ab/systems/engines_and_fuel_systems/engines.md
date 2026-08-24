@@ -188,12 +188,12 @@ Flow) to the pilot to allow for engine monitoring.
 On the F-14A, a tachometer generator on the engine accessory gearbox provides a
 signal to the pilot’s rpm indicator for displaying the rpm of the high pressure
 compressor rotor. The readout is in percent, with 100 percent equivalent to an
-rpm of 14,583 rpm. No display is provided for the low−pressure compressor rotor
-speed since the two compressors are aerodynamically balanced, however, failure
-of the exhaust nozzle to close upon afterburner shutdown or during high−power,
-non-afterburner operation can induce an N1 rotor overspeed condition because of
-the low back−pressure on the fan. This will illuminate the corresponding L or R
-OVSP/VALVE caution light.
+rpm of 14,583 rpm, with a range of 0 to 110 percent. No display is provided for
+the low−pressure compressor rotor speed since the two compressors are
+aerodynamically balanced, however, failure of the exhaust nozzle to close upon
+afterburner shutdown or during high−power, non-afterburner operation can induce
+an N1 rotor overspeed condition because of the low back−pressure on the fan.
+This will illuminate the corresponding L or R OVSP/VALVE caution light.
 
 On the F-14B, the RPM indicators have a range of 0 to 110 percent. The tape
 display steps in 5-percent increments and the upper segment flashes to indicate
@@ -222,7 +222,7 @@ TIT at high steady−state thrust. If either L or R engine TIT exceeds 1,215 ±
 pilot’s headset. This tone continues for 10 seconds or until overtemperature
 condition is removed, whichever occurs first. The 1,215 ± 15°C overtemperature
 detection function is per formed by the engine stall/overtemperature detection
-system.
+system. There is a TIT reading for each engine.
 
 ### Engine Exhaust Gas Temperature (EGT) Indicator (F-14B Only)
 
@@ -246,9 +246,10 @@ of the scale ranges from 5,000 to 13,000 pph on the F-14A and 5,000 to 17,000
 pph on the F-14B. On the F-14B, the display moves in 100-pph increments in the
 expanded portion and in 500-pph increments in the compressed portion of the
 display. Normal indications on deck are 350 pph starting, 950 to 1,400 pph at
-idle, and approximately 10,100 pph at military and above. **The fuel flow
-reading for each engine indicates only basic engine consumption and does not
-indicate AB fuel flow.**
+idle, and approximately 10,100 pph at military and above.
+
+> 💡 The fuel flow reading for each engine indicates only basic engine
+> consumption and does not indicate afterburner fuel flow.
 
 ![exhaust F-14A](../../../img/general_engine_exhaust.jpg)
 
