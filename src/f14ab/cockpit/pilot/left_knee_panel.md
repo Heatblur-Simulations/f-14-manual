@@ -39,3 +39,7 @@ Inlet Temperature) for the F-14A or EGT (Exhaust Gas Temperature) for the F-14B,
 and FF (Fuel Flow) for respective engine.
 
 > 💡 FF is not indicated for the additional fuel used in afterburner.
+
+For more information, refer to the
+[Engine Instrument Group (EIG), Related Indicators and Caution Lights](../../systems/engines_and_fuel_systems/engines.md#engine-instrument-group-eig-related-indicators-and-caution-lights)
+section.

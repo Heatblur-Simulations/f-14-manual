@@ -32,3 +32,7 @@ Displays engine RPM (High-pressure compressor rotor speed (N2)), EGT (Exhaust
 Gas Temperature) and FF (Fuel Flow) for respective engine.
 
 > 💡 FF is not indicated for the additional fuel used in afterburner.
+
+For more information, refer to the
+[Engine Instrument Group (EIG), Related Indicators and Caution Lights](../../../f14ab/systems/engines_and_fuel_systems/engines.md#engine-instrument-group-eig-related-indicators-and-caution-lights)
+section.
