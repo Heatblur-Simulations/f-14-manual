@@ -164,7 +164,12 @@ extension.
 
 If a fault exists preventing retraction of flaps the **FLAP** handle should be
 moved to the **UP** position and then moved outboard and up to the **EMER UP**
-position, overriding faulty interlocks.
+position, overriding faulty interlocks. The **EMERG DOWN** position has no
+function.
+
+> 💡 In DCS, the failures that would necessitate the usage of the **EMERG UP**
+> position are not modeled. In addition, the **EMERG UP** position does not fix
+> issues where the flaps are unable to go up due to damage.
 
 The other mode is the maneuver flap system in which the CADC uses the flaps and
 slats automatically to improve aircraft performance. In this mode the flaps
