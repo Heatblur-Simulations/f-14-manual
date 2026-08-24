@@ -43,31 +43,35 @@ illuminate when the countermeasure type is inhibited from dispensing.
 
 #### OTHER 1 Button
 
-The (O1) button (<num>1</num>) Inhibits countermeasure type O1.
+The (O1) button (<num>1</num>) inhibits dispense of countermeasure type O1.
 
 #### OTHER 2 Button
 
-The (O2) button (<num>2</num>) Inhibits countermeasure type O1.
+The (O2) button (<num>2</num>) inhibits dispense of countermeasure type O2.
 
 #### CHAFF Button
 
-The (CH) button (<num>3</num>) Inhibits countermeasure type chaff.
+The (CH) button (<num>3</num>) inhibits dispense of countermeasure type chaff.
 
 #### FLARES Button
 
-The (FL) button (<num>4</num>) Inhibits countermeasure type flares.
+The (FL) button (<num>4</num>) inhibits dispense of countermeasure type flares.
 
 #### Radar Warning Receiver Button
 
 The RWR button is (<num>5</num>) not utilized.
 
+> 💡 Not functional.
+
 #### Missile Warning System Button
 
-The MWS button (<num>6</num>) Inhibits dispense programs 7 and 8.
+The MWS button (<num>6</num>) inhibits dispense of programs 7 and 8.
+
+> 💡 The F-14B Upgrade is not equipped with a Missile Warning System.
 
 #### JAMMER Button
 
-The JAMMER button is (<num>7</num>) Not utilized.
+The JAMMER button is (<num>7</num>) not utilized.
 
 > 💡 Not functional.
 
