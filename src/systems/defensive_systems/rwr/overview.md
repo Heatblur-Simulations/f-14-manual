@@ -1,9 +1,9 @@
-# Radar Warning Receiver
+# 雷达告警接收机
 
-Two sets of Radar Warning Receivers are available for the Tomcat. The ALR-45/50
-and the later ALR-67.
+“雄猫”可安装两款雷达警告接收机：ALR-45/50
+以及后续型号 ALR-67。
 
-They are capable of passively detect radar threats, increasing situational
-awareness of the crew.
+这些雷达警告接收机能够被动探测雷达威胁，从而提高
+机组人员的态势感知能力。
 
 ![Flying](../../../img/rwr_overview.jpg)

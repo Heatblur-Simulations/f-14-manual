@@ -1,14 +1,13 @@
-# Defensive Systems
+# 防御系统
 
-The Tomcat can equip either the [ALE-39](countermeasures/ale_39.md) or the
-[LAU-138](countermeasures/lau_138.md) in order to defend itself against threats
-by dispensing chaff or flares.
+“雄猫” 可装备 [ALE-39](countermeasures/ale_39.md) 或
+[LAU-138](countermeasures/lau_138.md)，通过释放箔条或红外干扰弹来进行防御。
 
-Also installed on the aircraft is either the [ALR-67](rwr/alr_67.md) or
-[ALR-45/50](rwr/alr_45-50.md) Radar Warning Receiver to increase passive
-situational awareness by detecting airborne and surface-to-air radar threats.
+飞机还安装了 [ALR-67](rwr/alr_67.md) 或
+[ALR-45/50](rwr/alr_45-50.md) 雷达警告接收机，通过探测空中和地空雷达威胁，
+增强被动态势感知能力。
 
-For extended protection and radar jamming it can also carry the
+为了增强防护能力和雷达干扰，该机还可挂载
 [ECM Pods](ecm.md).
 
 ![Defensive](../../img/cms_flares.jpg)
