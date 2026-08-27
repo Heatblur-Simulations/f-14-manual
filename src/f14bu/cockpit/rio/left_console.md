@@ -308,9 +308,14 @@ headset.
 
 ### KY Mode Switch
 
-The KY MODE switch (<num>5</num>) is only functional with KY-58 encryption.
+The KY MODE switch (<num>5</num>) controls frequency ranges encrypted by the KY-58.
 
-The simulated aircraft uses KY-58; this switch is non-functional.
+- BB - Normal mode for FM transmission.
+- AUTO - Provides automatic selection of BB/FM and DP/AM. Changes as the frequency on
+the ARC-182 is changed.
+- DP - Normal mode for AM transmission.
+
+UHF 1 (ARC-159) is capable of DP mode only.
 
 ## Radar Beacon Control Panel
 
@@ -364,9 +369,18 @@ The ZEROIZE switch (<num>1</num>) clears all encryption keys when actuated.
 
 The power-mode switch (<num>2</num>) selects KY-58 operating mode.
 
+- P/OFF - UHF radio is used as a plain language receiver/transmitter. Removes power from the system.
+- C - Applies power to KY-58 system and is used to transmit and receive
+secure voice communications over the UHF radio.
+- DELAY - Provides a time delay between push-to-talk and actual transmit.
+
 ### Radio Select Switch
 
 The radio select switch (<num>3</num>) selects which radio is encrypted.
+
+- RELAY - Relay position: re-transmits information between other facilities. (Relay position is not operational.)
+- RAD-2 - Selects V/UHF 2 for secure voice.
+- RAD-1 - Selects UHF 1 for secure voice.
 
 ## Oxygen-Vent Airflow Control Panel
 
