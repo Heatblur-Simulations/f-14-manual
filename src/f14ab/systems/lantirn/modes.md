@@ -21,6 +21,10 @@ however allow the system to track moving targets.
 > mode. Once Point Track is successfully engaged in WHOT, it is possible to
 > change the polarity to BHOT.
 
+> 💡 Point Track may not be established or maintained if the current scene
+> within the LANTIRN FOV is too cluttered. This means if there are too many
+> objects in the FOV, Point Track may fail.
+
 The last tracking mode has the sensor slewed to a stored location/direction,
 called a Q. The directional Qs do not allow for guidance to a location while the
 location Qs do.
