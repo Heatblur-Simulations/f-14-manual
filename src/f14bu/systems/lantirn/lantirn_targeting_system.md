@@ -76,6 +76,10 @@ computed rates mode.
 > mode. Once Point Track is successfully engaged in WHOT, it is possible to
 > change the polarity to BHOT.
 
+> 💡 Point Track may not be established or maintained if the current scene
+> within the LANTIRN FOV is too cluttered. This means if there are too many
+> objects in the FOV, Point Track may fail.
+
 ## Q (Cue) Modes
 
 - Q Waypoint: With Q waypoint any of 20 LTS designated waypoints can be toggled
