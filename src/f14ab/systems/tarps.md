@@ -96,11 +96,12 @@ switches between the different respective KS-87D positions with the OFF position
 inhibiting images from being taken while the FILM switch is in MARK or RUN.
 
 Photography is initiated and concluded by using the RIO's FILM switch or with
-the Pilot's Store Release button. The MARK position allows for individual images
-to be taken while the RUN position takes a picture once every second from both
-cameras (unless the FRAME switch is set to OFF) until the switch is moved to OFF
-or until the available film is used up. The KS-87 frame camera can take a total
-of 2700 images and the KA-99 panoramic camera can take a total of 750 images.
+the Pilot's Store Release button. The MARK position allows for individual
+"marked" images to be taken while the RUN position takes a picture once every
+second from both cameras (unless the FRAME switch is set to OFF) until the
+switch is moved to OFF or until the available film is used up. The KS-87 frame
+camera can take a total of 2700 images and the KA-99 panoramic camera can take a
+total of 750 images.
 
 All TARPS switches are exclusively controlled by the RIO. When flying with
 Jester, the Pilot can change the TARPS settings or initiate TARPS photography by
@@ -115,9 +116,11 @@ the Jester Main Menu.
 
 All TARPS imagery are saved in the `Saved Games/DCS_F14/TARPS` directory. Each
 camera's image is saved in their respective folders with the associated flight
-data when the image was taken (Mission Date, Lat Long, Altitude, Drift, Heading,
-Pitch, Roll). The images are only visible after finishing the flight in which
-the TARPS was used and cannot be viewed mid-flight.
+data when the image was taken (Mission Time and Date, Lat Long, Altitude, Drift,
+Heading, Pitch, Roll). Images taken with the FILM switch on the MARK position
+have MARK at the end of their file names. The images are only visible after
+finishing the flight in which the TARPS was used and cannot be viewed
+mid-flight.
 
 ![TARPS Saved Games KS-87](../../img/tarps_saved_games.jpg)
 
