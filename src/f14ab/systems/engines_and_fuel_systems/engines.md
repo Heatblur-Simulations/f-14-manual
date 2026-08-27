@@ -175,19 +175,89 @@ system, the **AUTO** position enables the system if icing is detected and the
 
 ## Engine Instrument Group (EIG), Related Indicators and Caution Lights
 
-![instrument-group](../../../img/cockpit_detail_pilot_instrument-group.jpg)
+![instrument-group F-14A](../../../img/cockpit_detail_pilot_instrument-group.jpg)
+
+![instrument-group F-14B](../../../img/bu/left_knee_panel_electronic_instrument_group.jpg)
 
 The **ENGINE INSTRUMENT GROUP** displays engine **RPM**, **TIT** (Turbine Inlet
-Temperature, F-14A) or **EGT** (Exhaust Gas Temperature, F14B) and **FF** (fuel
-flow) to the pilot to allow for engine monitoring.
+Temperature, F-14A) or **EGT** (Exhaust Gas Temperature, F-14B) and **FF** (Fuel
+Flow) to the pilot to allow for engine monitoring.
 
-> 💡 Pictured above are the TF30 engine indicators, F110 EIG coming soon.
+### Engine RPM Indicator
 
-![exhaust](../../../img/general_engine_exhaust.jpg)
+On the F-14A, a tachometer generator on the engine accessory gearbox provides a
+signal to the pilot’s rpm indicator for displaying the rpm of the high pressure
+compressor rotor. The readout is in percent, with 100 percent equivalent to an
+rpm of 14,583 rpm, with a range of 0 to 110 percent. No display is provided for
+the low−pressure compressor rotor speed since the two compressors are
+aerodynamically balanced, however, failure of the exhaust nozzle to close upon
+afterburner shutdown or during high−power, non-afterburner operation can induce
+an N1 rotor overspeed condition because of the low back−pressure on the fan.
+This will illuminate the corresponding L or R OVSP/VALVE caution light.
+
+On the F-14B, the RPM indicators have a range of 0 to 110 percent. The tape
+display steps in 5-percent increments and the upper segment flashes to indicate
+rpm increasing at more than 0.4-percent per second from 0 to 60-percent rpm. The
+tape steps in 1-percent increments when greater than 60-percent rpm. Nominal
+indications are 62 to 78 percent at idle and 95 to 104 percent at military and
+above. At 107.7 percent and above, the affected engine(s) exceeded portions of
+the chevrons will flash at a rate of two to three flashes per second. At
+20-percent rpm, a horizontal segment will illuminate, giving an indication of
+proper motoring speed to start the engine.
+
+> 💡 An overspeed condition in excess of 110-percent will result in momentary
+> loss of rpm indication until N2 rpm falls below 110 ± 0.5 percent. EGT and
+> fuel flow indicators will continue to function normally.
+
+### Engine Turbine Inlet Temperature (TIT) Indicator (F-14A Only)
+
+The TIT indicators provide a nonlinear vertical scale with a range of 0 to
+1,400°C. The compressed lower portion has a range of 0 to 600°C. The TIT signal
+is not the result of a direct measurement on the engine, but is indirectly
+computed from measurements of compressor inlet temperature, compressor−discharge
+temperature, and turbine−exhaust temperature. The TIT limiter compares the TIT
+signal to the cockpit with a preset maximum allowable value (1,175°C) to limit
+TIT at high steady−state thrust. If either L or R engine TIT exceeds 1,215 ±
+15°C, a switch in the indicator activates an overtemperature alarm tone in the
+pilot’s headset. This tone continues for 10 seconds or until overtemperature
+condition is removed, whichever occurs first. The 1,215 ± 15°C overtemperature
+detection function is per formed by the engine stall/overtemperature detection
+system. There is a TIT reading for each engine.
+
+### Engine Exhaust Gas Temperature (EGT) Indicator (F-14B Only)
+
+The EGT indicators provide a nonlinear vertical scale with a range of 0 to
+1,100°C. The compressed lower portion has a range of 0 to 600°C. The expanded
+upper portion of the scale has a range of 600 to 1,100°C. The display moves in
+50° increments in the compressed portion and 10° increments in the expanded
+portion of the display. The normal indications are 350 to 650°C at idle and 780
+to 935°C at MIL and above. Above 940°C the affected engine(s) exceeded portions
+of the chevrons flash. With a reading of 940°C the stall warning light and aural
+warning tone will be activated signifying an engine overtemperature condition.
+The tone is present for a maximum of 10 seconds unless the fault clears sooner.
+There is an EGT reading for each engine.
+
+### Engine Fuel Flow Indicator
+
+The fuel flow indicators have a nonlinear vertical scale, with a range of 0 to
+13,000 pph on the F-14A and 0 to 17,000 pph on the F-14B. The expanded lower
+portion of the scale has a range of 0 to 5,000 pph. The compressed upper portion
+of the scale ranges from 5,000 to 13,000 pph on the F-14A and 5,000 to 17,000
+pph on the F-14B. On the F-14B, the display moves in 100-pph increments in the
+expanded portion and in 500-pph increments in the compressed portion of the
+display. Normal indications on deck are 350 pph starting, 950 to 1,400 pph at
+idle, and approximately 10,100 pph at military and above.
+
+> 💡 The fuel flow reading for each engine indicates only basic engine
+> consumption and does not indicate afterburner fuel flow.
+
+![exhaust F-14A](../../../img/general_engine_exhaust.jpg)
+
+![exhaust F-14B](../../../img/bu/left_knee_panel_exhaust_nozzle_indicator.jpg)
 
 The exhaust nozzle position indicators display respective engine’s current
 engine exhaust nozzle position, with zero being fully closed and full clockwise
-rotation being fully open. The F-14A indicates 0 to 6 units while the F-14B
+rotation being fully open. The F-14A indicates 0 to 5 units while the F-14B
 indicates 0 to 100 percent open (tens indicated on gauge).
 
 ![oil](../../../img/general_engine_oil.jpg)
