@@ -134,55 +134,71 @@ in the LANTIRN system and the **IBIT** button (<num>7</num>) initiates the IBIT
 
 ### Control Stick
 
-The control stick for the LANTIRN operates the LANTIRN’s sensor itself, note
-though that the stick itself does not move, the buttons and hats on the stick
-are used to control the pod.
+Located on the left side of the cockpit, the LANTIRN Control Stick is fixed,
+and features the controls to operate the pod.
 
 ![Control Stick](../../../img/general_lantirn_stick.jpg)
 
-The left four-way hat, S3, (<num>1</num>) allows selection of QWp- and QWp+
-(left/right) in addition to Point Track (up) and Area Track (down) modes.
+**S3 HAT (<num>1</num>)**
+The S3 hat is a 4-way hat located on the left of the grip, and controls the following functions :
 
-The center slew hat (<num>2</num>) is used to slew the sensor line of sight
-itself and depression of this hat switches between white hot (WHOT) and black
-hot (BHOT) sensor modes.
+_Left: **Queue Waypoint-**. Slews the LANTIRN to the **previous waypoint** in the system.
+_Right: **Queue Waypoint+**. Slews the LANTIRN to the **next waypoint** in the system.
+_Up: Selects **Point Track** mode, which attempts to lock a high contrast spot. 
+  This mode can be useful when light and weather conditions allow, as well as for moving targets.
+_Down: Selects **Area Track** mode, which stabilises the LANTIRN to a point on the ground.
+  This mode does not rely on the target contrasting against the surrounding scenery,
+and reduces the chances of the track being lost during LGB employment.
 
-The right four-way hat, S4, (<num>3</num>) allows for selection of QADL/QHUD
-(up), QDES (right) and QSNO (down) in addition to declutter level which is
-cycled by momentary depression of the hat. The left slider additionally changes
-the right hat function as detailed further down.
+**Slew HAT (<num>2</num>)**
+Located in the middle of the stick grip, the slew hat is used to manually slew the LANTIRN's line of sight around.
+Depressing the hat toggles the polarity of the Infrared (IR) image between White Hot (WHOT) and Black Hot (BHOT).
 
-The red button on top (<num>4</num>) is used to cycle between the three fields
+**S4 HAT (<num>3</num>)**
+The S4 hat is a 4-way hat located on the right of the grip, and controls the following functions :
+_Left: No function
+_Right: **Queue Designation*. Slews the LANTIRN to the last stored designation.
+_Up: **Queue ADL** (Armament Datum Line) or **Queue HUD** (Waterline Symbol) depending on the LANTIRN operation mode (**A/A** or **A/G** respectively)
+_Down: **Queue Snowplow**. A fixed setting looking forwards at a fixed depression to scan below and ahead of the aircraft's flightpath.
+
+**FOV Toggle (<num>4</num>)**
+The red button on top is used to cycle between the three fields
 of view (zoom levels) of the IR sensor.
 
-The two-way hat on the side (<num>5</num>) selects either the A/G or A/A modes
-of operation for the pod.
+**LANTIRN Operation Mode Select Switch (<num>5</num>)**
+The two-way hat on the side selects the mode of operation for the pod.
+_Forwards: Air to Ground Mode.
+_Backwards: Air to Air Mode.
 
-Located on the left side of the stick head is a two way slider (<num>6</num>),
+**Slider**
+Located on the left side of the stick grip is a two way slider (<num>6</num>),
 spring-loaded to return to center. This switch changes the function of the right
 four-way hat.
 
-Sliding it forwards allows for selection of manual gain while releasing and
-sliding it forwards again re-selects automatic gain. Change of the manual gain
-with manual gain already selected can be done by sliding the switch forwards and
-holding it for 2 seconds. With this mode active up/down on the right hat
-increases and decreases the gain while left/right decreases and increases level.
+_Forwards:
+  _Short: Selects Manual Gain Control **MGC** and enables setting a custom image gain
+  using **S4 Hat Up/Down**, and custom image level with **S4 Hat Right/Left**.
+  Pressing again sets the custom gain value.
+  Pressing a third time returns the image gain to Automatic Gain Control **AGC**.
 
-Sliding the switch aft momentarily allows selection of used laser code, while
-sliding it aft and holding allows for focus control. When set to laser code
-change, the right four-way hat selects digit to change with left/right and
-increases and decreases the selected digit with up/down. In focus control
-up/down increases and decreases focus.
+  _Long: Pressing and holding for 2 seconds enters **MGC** in customizable mode.
+  
+_Aft:
+  _Short: Selects laser code editing mode. Use **S4 Hat Left/Right** to scroll through
+  the laser code digits and **S4 Hat Up/Down** to increase/decrease the value for each digit.
 
-Located on the front of the stick (<num>7</num>) is a two-stage trigger, first
-detent manually lasing while the second detent fires the laser and designates
-QDES at current sensor position.
+  _Long: Selects **Manual Focus Control**, using **S4 Hat Up/Down** to adjust the image focus.
 
-Lastly on the front side of the stick (<num>8</num>) is the latched laser fire
-button. Selecting it fires the laser for 60 seconds which can be overridden by
-the pressing and releasing the first trigger detent. A renewed press on the
-laser latch button resets the latched laser fire timer to 60 seconds, beginning
-a new 60 second countdown.
+
+**LANTIRN Trigger (<num>7</num>)**
+Located on the front of the stick is a two-stage trigger.
+_First detent: Manual firing of the Laser.
+_Second detent: Fires the laser and stores a target designation in the system at the location under the LANTIRN's line of sight.
+
+**Laser Latch Button (<num>8</num>)**
+Located at the front on the bottom of the stick grip. Fires the laser for 60 seconds.
+Press the **LANTIRN Trigger First Stage** to stop the laser and reset the 60 second timer.
+
 
 ## Startup
 
