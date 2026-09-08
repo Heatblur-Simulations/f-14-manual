@@ -5,11 +5,11 @@ Photographer’s Mate 2nd Class Felix Garza Jr. (030325-N-4142G-009)_
 
 The LANTIRN or Low Altitude Navigation and Targeting Infrared for Night began
 life as combined targeting and navigation pods designed for the F-15E and F-16.
-When the US Navy became interested in using the F-14 Tomcat in the A/G role
+When the US Navy became interested in using the F-14 Tomcat in the A/G role,
 Martin Marietta (now Lockheed Martin) began its own program to show that the
 LANTIRN could quickly be adapted for F-14 use.
 
-As the pod was adapted for the F-14 the secondary navigational pod was deleted,
+As the pod was adapted for the F-14, the secondary navigation pod was deleted,
 keeping only the targeting pod. The pod was wired up to its own control panel as
 the F-14 didn’t have the required 1553-bus for complete integration. The control
 panel was patched into the TCS to TID video feed allowing it to select either
@@ -40,67 +40,89 @@ data readout for the crew’s use. This video-feed can be viewed both on the TID
 (in TV-mode) and on the VDI (also in TV-mode) when the FLIR feed is selected on
 the control panel.
 
-Amongst other things the displays show own aircraft position, target position as
-well as targeting cues to the crew. When using the LANTIRN for A/G attack these
-readouts are also used as targeting and release cues.
-
 ![FLIR](../../../img/general_lantirn_flir.jpg)
 
-Own aircraft data is shown in the upper left corner (<num>1</num>), showing
-position, altitude, groundspeed and pitch angle (dive).
+#### **Ownship data block (<num>1</num>)**
 
-On the left side (<num>2</num>) the pod displays whether it’s using white hot or
-black hot (WHOT and BHOT) as well as if the AGC (Automatic Gain Control) or MGC
-(Manual Gain Control) is in use.
+Data for the aircraft is displayed in the upper left corner of the screen:
 
-The lower left data-block (<num>3</num>) shows pod information, SR is slant
-range (line of sight range), AZ and EL is pod line of sight azimuth and
-elevation relative aircraft ADL (with AZ having L or R for left or right of
-aircraft heading). Below that is current UTC time and then IBIT codes below
-that.
+- Own aircraft position (Lat/Long with Decimal Minutes)
+- Own aircraft altitude
+- Own aircraft speed (Knots Ground Speed)
+- Own aircraft pitch angle
+
+#### **Image settings block (<num>2</num>)**
+
+Below the ownship data are the settings for the LANTIRN image:
+
+- **WHOT/BHOT**: IR image polarity (Black Hot or White Hot).
+- **AGC/MGC**: Image gain control mode (Automatic Gain Control or Manual Gain Control)
+
+#### **LANTIRN pod data block (<num>3</num>)**
+
+Data for the pod is displayed in the lower left corner of the screen:
+
+- Slant Range (**SRA**) between the aircraft and the location at the center of the crosshairs.
+- Pod Azimuth (**AZ**) relative to the aircraft's Armament Datum Line (**ADL**).
+- Pod Elevation (**EL**) relative to the aircraft's Armament Datum Line (**ADL**).
+- Current UTC time.
+- IBIT codes
 
 > 💡 IBIT codes are not implemented currently and the clock will show local
 > time.
 
-The lower middle (<num>4</num>) shows current pod mode (A/A or A/G) and track
-mode (AREA, POINT or Q designations) on the left side. The right side shows
-currently selected weapon and laser code while above and in the center an L is
-shown when the laser is armed and flashing when firing the laser.
+#### **Tracking and Weapon data block (<num>4</num>)**
 
-The lower right (<num>5</num>) shows data for currently selected Q (slew-point)
-except for QSNO, QADL and QHUD, TTG being time to go until on top of currently
-selected Q, the rows below that, bearing and range to Q, ELEV indicating
-elevation in feet of Q and lastly, below that, Q location.
+Data regarding tracking or queueing modes and weapon information is located in the middle at the bottom of the screen:
 
-<num>6</num> is the crosshairs showing tracked position, in this case we have a
-bounding box, indicating currently tracked target in point mode. The two widest
-zoom modes will have boxes showing the field of view for the next, narrower,
-mode. Additionally there’s a small white square (FLIR pointing cue) moving
-around showing the current pod line of sight relative to aircraft from a top
-down perspective. In this case it’s right next to the upside down ^, top center,
-indicating that the pod is looking ahead of the aircraft. If the square is
-centered the pod is looking straight down and below center it indicates the pod
-looking aft.
+- LANTIRN Operation Mode: **A/A** or **A/G**
+- Tracking/Queuing mode: Point or Area track, QDES/QADL/QHUD/QWPX/QSNO, RATES
+- Selected Weapon
+- Laser code
+- Laser status: Steady L when the Laser is armed, flashing L when the laser is firing.
 
-Finally, <num>7</num> is the steering guidance towards the selected Q, the top
-one being commanded heading and the vertical one on the right the bomb release
-cue.
+#### **Target/Queue point data block (<num>5</num>)**
 
-The commanded heading shows current aircraft heading above the inverted ^, with
-the commanded heading being displayed as a relative bearing either L (Left) or R
-(Right) of current aircraft heading below the line. The commanded heading is
-also indicated by a vertical line bisecting the horizontal one.
+Data regarding the current Target or Queue point (except QADL/QHUD/QSNO) is located in the bottom right corner of the screen:
 
-The right, bomb release cue, is only shown if the selected Q is QDES and shows a
-vertical line along which a release cue travels downwards. This release cue is
-only visible with a valid weapon selection (bomb) and when it reaches the two
-tick marks, that’s the cue to release. Below the line is the indicated TREL
-(Time to Release) in seconds, changing to TIMP (Time to Impact) after release.
+- Time to Go (**TTG**): Time until the aircraft is above the selected point.
+- Bearing and Range to the point.
+- Elevation (**ELEV**): Altitude above Mean Sea Level of the point (ft).
+- Position of the point (Lat Long with Decimal Minutes)
 
-Around this all is the masking curve, indicating at what angles the pod will be
-masked by own aircraft (looking into the aircraft hull). This is relative to the
-FLIR pointing cue, when the cue moves outside the masking curve the sensor will
-be blocked by the hull.
+#### **Crosshairs (<num>6</num>)**
+
+Located in the center of the screen, they indicate the LANTIRN's exact Line of Sight (**LOS**), i.e where the pod is actually pointing.
+
+When using the wider Fields of View (**FOV**), the Field of View of the next narrower setting will be indicated by corner markers around the crosshair.
+
+Additionally, a small white square indicates the direction relative to the aircraft the pod is pointing:
+
+- Up/Down : Elevation of the pod. When the square is in the upper half of the screen, the pod is looking ahead. When the square is in the bottom half, the pod
+is looking behind the aircraft. When the square is in the middle of the screen, the pod is looking straight down.
+- Left/Right: Azimuth of the pod. The further the square is from the centerline of the screen, the further it is looking Left/Right from the flightpath.
+
+The pod is limited in the amount of deflection it can achieve both by its mechanical limits and by its installation on the aircraft, which will mask the view
+in certain positions.
+
+This is indicated on the screen by a **Masking Line** drawn around the screen. When the white square intersects this line, the pod is masked by the aicraft.
+Maneuver the aircraft to place the target within the viewing limits of the LANTIRN.
+
+Finally, when tracking an object in **Point Track** mode, a bounding box around the object will be displayed.
+
+#### **Steering and release guidance (<num>7</num>)**
+
+Located on top of the screen is the **Lateral Steering Cue**.
+
+It displays:
+
+- Ownship heading
+- Heading error relative to the target (Left/Right degrees to go towards the target).
+
+On the right side of the screen is the **Bomb Release Cue**. It provides a visual cue for the release of the weapon as well as numeric data:
+
+- **TREL**: Time until Release
+- **TIMP**: Time until Weapon Impact. Displayed once the weapon is released
 
 ### Control Panel
 
@@ -134,55 +156,84 @@ in the LANTIRN system and the **IBIT** button (<num>7</num>) initiates the IBIT
 
 ### Control Stick
 
-The control stick for the LANTIRN operates the LANTIRN’s sensor itself, note
-though that the stick itself does not move, the buttons and hats on the stick
-are used to control the pod.
+Located on the left side of the cockpit, the LANTIRN Control Stick is fixed,
+and features the controls to operate the pod.
 
 ![Control Stick](../../../img/general_lantirn_stick.jpg)
 
-The left four-way hat, S3, (<num>1</num>) allows selection of QWp- and QWp+
-(left/right) in addition to Point Track (up) and Area Track (down) modes.
+#### **S3 Hat (<num>1</num>)**
 
-The center slew hat (<num>2</num>) is used to slew the sensor line of sight
-itself and depression of this hat switches between white hot (WHOT) and black
-hot (BHOT) sensor modes.
+The S3 hat is a 4-way hat located on the left of the grip, and controls the following functions :
 
-The right four-way hat, S4, (<num>3</num>) allows for selection of QADL/QHUD
-(up), QDES (right) and QSNO (down) in addition to declutter level which is
-cycled by momentary depression of the hat. The left slider additionally changes
-the right hat function as detailed further down.
+- Left: **Queue Waypoint -**. Slews the LANTIRN to the **previous waypoint** in the system.
 
-The red button on top (<num>4</num>) is used to cycle between the three fields
+- Right: **Queue Waypoint +**. Slews the LANTIRN to the **next waypoint** in the system.
+
+- Up: Selects **Point Track** mode, which attempts to lock a high contrast spot.
+
+    This mode can be useful when light and weather conditions allow, as well as for moving targets.
+  
+- Down: Selects **Area Track** mode, which stabilises the LANTIRN to a point on the ground.
+
+    This mode does not rely on the target contrasting against the surrounding scenery,
+    and reduces the chances of the track being lost during LGB employment.
+
+#### **Slew Hat (<num>2</num>)**
+Located in the middle of the stick grip, the slew hat is used to manually slew the LANTIRN's line of sight around.
+
+Depressing the hat toggles the polarity of the Infrared (IR) image between White Hot (WHOT) and Black Hot (BHOT).
+
+#### **S4 Hat (<num>3</num>)**
+The S4 hat is a 4-way hat located on the right of the grip, and controls the following functions :
+- Left: No function
+
+- Right: **Queue Designation**. Slews the LANTIRN to the last stored designation.
+
+- Up: **Queue ADL** (Armament Datum Line) or **Queue HUD** (Waterline Symbol) depending on the LANTIRN operation mode (**A/A** or **A/G** respectively)
+
+- Down: **Queue Snowplow**. A fixed setting looking forwards at a fixed depression to scan below and ahead of the aircraft's flightpath.
+
+#### **FOV Toggle (<num>4</num>)**
+The red button on top is used to cycle between the three fields
 of view (zoom levels) of the IR sensor.
 
-The two-way hat on the side (<num>5</num>) selects either the A/G or A/A modes
-of operation for the pod.
+#### **LANTIRN Operation Mode Select Switch (<num>5</num>)**
+The two-way hat on the side selects the mode of operation for the pod.
 
-Located on the left side of the stick head is a two way slider (<num>6</num>),
-spring-loaded to return to center. This switch changes the function of the right
-four-way hat.
+- Forwards: Air to Ground Mode.
+- Backwards: Air to Air Mode.
 
-Sliding it forwards allows for selection of manual gain while releasing and
-sliding it forwards again re-selects automatic gain. Change of the manual gain
-with manual gain already selected can be done by sliding the switch forwards and
-holding it for 2 seconds. With this mode active up/down on the right hat
-increases and decreases the gain while left/right decreases and increases level.
+#### **Slider (<num>6</num>)**
+Located on the left side of the stick grip is a two way slider,
+spring-loaded to return to center. It is used as a modifier for the **S4 Hat**
 
-Sliding the switch aft momentarily allows selection of used laser code, while
-sliding it aft and holding allows for focus control. When set to laser code
-change, the right four-way hat selects digit to change with left/right and
-increases and decreases the selected digit with up/down. In focus control
-up/down increases and decreases focus.
+- Forwards:
 
-Located on the front of the stick (<num>7</num>) is a two-stage trigger, first
-detent manually lasing while the second detent fires the laser and designates
-QDES at current sensor position.
+    - Short: Selects Manual Gain Control **MGC** and enables setting a custom image gain
+    using **S4 Hat Up/Down**, and custom image level with **S4 Hat Right/Left**.    
+        - Pressing again sets the custom gain value.    
+        - Pressing a third time returns the image gain to Automatic Gain Control **AGC**.
 
-Lastly on the front side of the stick (<num>8</num>) is the latched laser fire
-button. Selecting it fires the laser for 60 seconds which can be overridden by
-the pressing and releasing the first trigger detent. A renewed press on the
-laser latch button resets the latched laser fire timer to 60 seconds, beginning
-a new 60 second countdown.
+    - Long: Pressing and holding for 2 seconds enters **MGC** in customizable mode.
+ 
+ 
+- Aft:
+  
+  - Short: Selects laser code editing mode. 
+  Use **S4 Hat Left/Right** to scroll through the laser code digits and **S4 Hat Up/Down** to increase/decrease the value for each digit.
+
+  - Long: Selects **Manual Focus Control**, using **S4 Hat Up/Down** to adjust the image focus.
+
+
+#### **LANTIRN Trigger (<num>7</num>)**
+Located on the front of the stick is a two-stage trigger.
+
+- First detent: Manual firing of the Laser.
+- Second detent: Fires the laser and stores a target designation in the system at the location under the LANTIRN's line of sight.
+
+#### **Laser Latch Button (<num>8</num>)**
+Located at the front on the bottom of the stick grip. Fires the laser for 60 seconds.
+Press the **LANTIRN Trigger First Stage** to stop the laser and reset the 60 second timer.
 
 ## Startup
 
