@@ -90,16 +90,41 @@ environment.
 > in DCS.
 
 In DCS, TARPS functionality is currently limited to the KS-87D camera configured
-in the vertical, looking straight down position. Photography is initiated and
-concluded by using the special dedicated keybind. The TARPS control panel,
-navigation and HUD steering integration, automatic camera sequencing, KA-99
-panoramic camera, and AN/AAD-5 infrared line scanner are not currently
-simulated.
+in the vertical position (looking straight down) or the forward position (45°
+forward-oblique) and the KA-99 panoramic camera. The FRAME switch binding
+switches between the different respective KS-87D positions with the OFF position
+inhibiting images from being taken while the FILM switch is in MARK or RUN.
+
+Photography is initiated and concluded by using the RIO's FILM switch or with
+the Pilot's Store Release button. The MARK position allows for individual
+"marked" images to be taken while the RUN position takes a picture once every
+second from both cameras (unless the FRAME switch is set to OFF) until the
+switch is moved to OFF or until the available film is used up. The KS-87 frame
+camera can take a total of 2700 images and the KA-99 panoramic camera can take a
+total of 750 images.
+
+All TARPS switches are exclusively controlled by the RIO. When flying with
+Jester, the Pilot can change the TARPS settings or initiate TARPS photography by
+using the Utilities menu under the Jester Air to Ground submenu accessed from
+the Jester Main Menu.
+
+> 💡 The TARPS control panel, navigation and HUD steering integration, automatic
+> camera sequencing, and AN/AAD-5 infrared line scanner are not currently
+> simulated.
 
 ![TARPS DCS Controls](../../img/tarps_controls_dcs.jpg)
 
 All TARPS imagery are saved in the `Saved Games/DCS_F14/TARPS` directory. Each
-TARPS image is saved with the associated flight data when the image was taken
-(Mission Date, Lat Long, Altitude, Drift, Heading, Pitch, Roll).
+camera's image is saved in their respective folders with the associated flight
+data when the image was taken (Mission Time and Date, Lat Long, Altitude, Drift,
+Heading, Pitch, Roll). Images taken with the FILM switch on the MARK position
+have MARK at the end of their file names. The images are only visible after
+finishing the flight in which the TARPS was used and cannot be viewed
+mid-flight.
 
-![TARPS Saved Games](../../img/tarps_saved_games.jpg)
+![TARPS Saved Games KS-87](../../img/tarps_saved_games.jpg)
+
+Within each TARPS image, if there are units found within the image, they are
+circled and labeled.
+
+![TARPS KS-87 Example](../../img/tarps_ks_87_example.jpg)

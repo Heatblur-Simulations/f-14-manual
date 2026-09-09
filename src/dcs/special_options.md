@@ -177,6 +177,13 @@ you can still switch the TIS on from the cockpit switch or the Jester wheel.
 
 ## HB UI
 
+### Disable Grease Pencil multicrew sync
+
+Enable this if DCS freezes for you in multicrew. The grease pencil keeps working
+normally in your own cockpit, but your drawings may not reach the other crew
+member. This is a temporary workaround while we investigate; it only affects
+your own machine.
+
 ### Resolution Override
 
 User interface elements, such as the manual, virtual browser and others are
