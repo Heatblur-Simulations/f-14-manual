@@ -6,6 +6,10 @@
 
 文档中的图片和文字资料均来自官方在线手册。
 
+## 文章合集
+
+[Heatblur F-14A/B开发日志系列](https://www.bilibili.com/read/readlist/rl334861?spm_id_from=333.1387.0.0)
+
 ## 中文本地化制作
 
 ### DCS: F-14 “雄猫” 中文飞行手册（MD Book 版本）
@@ -74,7 +78,3 @@ Cai, Jiutian “北欧式的简单”
 感谢油布搜集、整理并翻译游戏内相关文件，以及提供各种建议和技术支持。
 
 感谢 “深海彡夕” 制作的交互式JESTER AI环形菜单汉化参照页。
-
-## 文章合集
-
-[Heatblur F-14A/B开发日志系列](https://www.bilibili.com/read/readlist/rl334861?spm_id_from=333.1387.0.0)
